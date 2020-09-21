@@ -1,0 +1,17 @@
+body {font-size:large;}
+
+h1,h2,h3 {font-size:large;}
+h4,h5,p,span,dt,div {font-size:large;}
+td {font-size:large;}
+a {font-size:large;}
+a.toptitle {font-size:large;}
+a.hometitle {font-size:large;}
+
+div.sortoption {font-size:medium;}
+a.sort {font-size:medium;}
+a.sorthl {font-size:medium;}
+b.sort {font-size:medium;}
+
+p.page {font-size:large;}
+b.page {font-size:large;}
+a.page {font-size:large;}

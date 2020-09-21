@@ -1,0 +1,17 @@
+body {font-size:medium;}
+
+h1,h2,h3 {font-size:medium;}
+h4,h5,p,span,dt,div {font-size:medium;}
+td {font-size:medium;}
+a {font-size:medium;}
+a.toptitle {font-size:medium;}
+a.hometitle {font-size:medium;}
+
+div.sortoption {font-size:small;}
+a.sort {font-size:small;}
+a.sorthl {font-size:small;}
+b.sort {font-size:small;}
+
+p.page {font-size:medium;}
+b.page {font-size:medium;}
+a.page {font-size:medium;}

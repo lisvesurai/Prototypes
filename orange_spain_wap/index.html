@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>Orange Spain Wap Mockup</title>
+<style type="text/css">
+a {color:#666666;font-size:10px;font-weight:normal;font-family:sans-serif;margin:0;}
+a:active {color:#ff6600;}
+a:hover {color:#ff6600;}
+body{background:#ffffff;color:#666666;font:normal 10px sans-serif;margin:0px;}
+h1{color:#ff6600;font:bold 12px sans-serif;margin:5px 5px;text-decoration:underline;}
+h2{color:#666;font:bold 11px tahoma,sans-serif;margin:0;}
+p{margin:2px 0;}
+dl{margin:0 0 5px 5px;padding:0;}
+dt{margin:2px 0;padding:0;}
+td{vertical-align:top;padding:0 10px 0 0;font:normal 10px sans-serif;}
+
+input{background:#D4D0C8;border:1px solid #000;width:100%;height:20px;font-size:10px;font-weight:bold;margin:0;padding:0;text-transform:uppercase;position:relative;}
+iframe, form{margin:0 10px 0 0;padding:0;position:relative !important;}
+iframe {border:1px solid #000;}
+hr{border:none;border-bottom:1px solid #8f001e;height:1px;width:100%;margin:0;}
+
+.linkButton{position:relative;margin:5px 0 5px 5px !important;padding:5px;border:1px solid #666666;font-size:11px;height:20px;}
+.linkButton:hover{background:#e9f1bb;}
+.Hl{background:#cade5c;}
+
+@media screen {
+li ul{margin:8px 0 8px 22px;}
+.hide{display:none;visibility:hidden;}
+.toggle{font-family:courier,monospace;font-weight:normal;line-height:10px;margin:0 10px 0 0;}
+}
+
+@media handheld {
+.hide_for_cell{display:none;}
+}
+</style>
+<script type="text/javascript">
+function toggle (y) {
+	x = 'toggle' + y;
+
+	if ( document.getElementById(x).innerHTML == '+' )
+	{
+		document.getElementById(y).className = '';
+		document.getElementById(x).innerHTML = '-';
+	}
+	else
+	{
+		document.getElementById(y).className = 'hide';
+		document.getElementById(x).innerHTML = '+';
+	}
+}
+
+function showLink(elm)
+{
+	top.phoneDisplay.location.href=elm;
+	return false;
+}
+</script>
+</head>
+<body>
+<table border="0">
+<tr valign="top">
+<td width="200">
+<h1>Orange Spain Wap Mockup</h1>
+<dl>
+	<dt><a onClick="return showLink(this);" href='home.jsp?t=Tienda+de+aplicaciones'>Home</a></dt>
+	<dt><a onClick="return showLink(this);" href='home_about.jsp?t=Tienda+de+aplicaciones'>Home with about</a></dt>
+<!--	
+	<dt><a onClick="return showLink(this);" href='genres_browse.jsp?t=Categorías'>Categorías</a></dt>
+ -->
+	<dt><a onClick="return showLink(this);" href='genres_list.jsp?t=Travel'>Browse Category</a></dt>
+<!--
+	<dt><a onClick="return showLink(this);" href='subgenres.jsp?t=Family'>SubCategorías under Family Category</a></dt>
+	<dt><a onClick="return showLink(this);" href='genres_list2.jsp?t=Productivity'>Items and SubCategorías under Productivity Category</a></dt>
+ -->
+	<dt><a onClick="return showLink(this);" href='list.jsp?t=Nuevas+Aplicaciones'>Nuevas Aplicaciones</a></dt>
+	<dt><a onClick="return showLink(this);" href='item.jsp?t=Driving%20Log'>Item - Details</a></dt>
+	<dt><a onClick="return showLink(this);" href='item_preview.jsp?t=Driving%20Log'>Item - Preview Image</a></dt>
+	<dt><a onClick="return showLink(this);" href='terms.jsp?t=Driving%20Log'>Términos y Condiciones</a></dt>
+	<dt><a onClick="return showLink(this);" href='confirm_purchase.jsp?t=Confirm+payment'>Confirm payment</a></dt>
+	<dt><a onClick="return showLink(this);" href='purchase_pending.jsp?t=Cobro+pendiente'>Cobro pendiente</a></dt>
+	<dt><a onClick="return showLink(this);" href='purchase_fail.jsp?t=Compra+fallida'>Compra fallida</a></dt>
+	<dt><a onClick="return showLink(this);" href='receipt.jsp?t=Compra+completada'>Receipt</a></dt>
+	<dt><a onClick="return showLink(this);" href='search_results.jsp?t=Buscar+resultados&keyword=Keyword'>Search Results</a></dt>
+	<dt><a onClick="return showLink(this);" href='previous_purchases.jsp?t=Compras+anteriores'>Compras anteriores</a></dt>
+	<dt><a onClick="return showLink(this);" href='purchase_details.jsp?t=Detalles+de+compra&order=100234&title=Driving+Log+2&price=3&date=Feb+10,+2009&provider=Concrete+Software'>Detalles de compra - not yet download</a></dt>
+	<dt><a onClick="return showLink(this);" href='purchase_details2.jsp?t=Detalles+de+compra&order=100234&title=Driving+Log+2&price=3&date=Feb+10,+2009&provider=Concrete+Software'>Detalles de compra - already downloaded</a></dt>
+	<dt><a onClick="return showLink(this);" href="help.jsp?t=Ayuda">Help</a></dt>
+	
+	<dt><b>Error Messages</b></dt>
+	<dt><a onClick="return showLink(this);" href="error.jsp?">error</a></dt>
+	<dt><a onClick="return showLink(this);" href="error_already_purchased.jsp?">error_already_purchased</a></dt>
+	<dt><a onClick="return showLink(this);" href="error_download_canceled.jsp?">error_download_canceled</a></dt>
+	<dt><a onClick="return showLink(this);" href="error_download_failed.jsp?">error_download_failed</a></dt>
+	<dt><a onClick="return showLink(this);" href="error_no_content.jsp?">error_no_content</a></dt>
+	<dt><a onClick="return showLink(this);" href="error_no_results.jsp?">error_no_results</a></dt>
+	<dt><a onClick="return showLink(this);" href="error_no_search_result.jsp?">error_no_search_result</a></dt>
+	<dt><a onClick="return showLink(this);" href="error_not_available_for_phone.jsp?">error_not_available_for_phone</a></dt>
+	<dt><a onClick="return showLink(this);" href="error_process.jsp?">error_process</a></dt>
+	<dt><a onClick="return showLink(this);" href="error_technical_difficulty.jsp?">error_technical_difficulty</a></dt>
+	<dt><a onClick="return showLink(this);" href="error_unavailable.jsp?">error_unavailable</a></dt>
+	<dt><a onClick="return showLink(this);" href="error_unidentify_phone.jsp?">error_unidentify_phone</a></dt>
+</dl>
+
+<script type="text/javascript">
+<!--
+function showLink(elm)
+{
+	top.phoneDisplay1.location.href=elm+"&ui=wml&f=xx-small";
+	top.phoneDisplay2.location.href=elm+"&ui=basic&f=xx-small";
+	top.phoneDisplay3.location.href=elm+"&ui=ideal&f=x-small";
+	return false;
+}
+
+function refreshMockup()
+{
+	top.phoneDisplay1.location.reload();
+	top.phoneDisplay2.location.reload();
+	top.phoneDisplay3.location.reload();
+}
+//-->
+</script>
+
+</td>
+<!--<td colspan="3">
+<form name="refreshMockup" action="javascript:refreshMockup()">
+<input type="submit" value="Refresh Mockup"/>
+</form>
+</td>
+</tr>
+<tr>-->
+	<td>
+		<h2>WML</h2>
+		<iframe width="144" height="180" scrolling="yes" name="phoneDisplay1" id="phoneDisplay1" src="home.jsp?ui=wml&f=xx-small&t=Tienda+de+aplicaciones"></iframe>
+	</td>
+	<td>
+		<h2>xHTML Basic</h2>
+		<iframe width="144" height="180" scrolling="yes" name="phoneDisplay2" id="phoneDisplay2" src="home.jsp?ui=basic&f=xx-small&t=Tienda+de+aplicaciones"></iframe>
+	</td>
+	<td>
+		<h2>xHTML Ideal</h2>
+		<iframe width="192" height="260" scrolling="yes" name="phoneDisplay3" id="phoneDisplay3" src="home.jsp?ui=ideal&f=x-small&t=Tienda+de+aplicaciones"></iframe>
+	</td>
+</tr>
+<tr>
+	<td></td>
+	<td colspan="3"><p>Note: WML mockups are for display only. They are not written in WML.</p></td>
+</tr>
+</table>
+</body>
+</html>

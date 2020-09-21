@@ -1,0 +1,107 @@
+#container {
+	padding: 20px 10px 10px 10px;
+}
+
+#logo2
+{
+	margin-bottom:20px;
+}
+
+.text_type1
+{
+	margin-bottom:20px;
+	text-align: justify;
+}
+
+.text_type2
+{
+	font-size:18px;
+	text-decoration:underline;
+	margin-top: 30px;
+	margin-bottom: 20px;  
+}
+
+div.iconic
+{
+  text-align: center;
+  float: left;
+  width: 135px;
+  height: 65px;
+}
+
+div.iconic img
+{
+  width: 60px;
+  height: 60px;
+}
+
+div.clrr
+{
+  clear: both;
+}
+
+div.text_icon
+{
+  text-align: center;
+  float: left;
+  width: 135px;
+  height: 30px;
+}
+
+
+
+div.iconic2
+{
+  text-align: center;
+  float: left;
+  width: 190px;
+  height: 200px;
+}
+
+div.text_icon2
+{
+  text-align: left;
+  float: left;
+  width: 170px;  
+  padding : 0px 10px;
+}
+
+div.iconic_arrow
+{
+  text-align: center;
+  width: 50px;
+  float: left;
+  padding-top: 85px;
+}
+
+
+
+
+div.iconic3
+{
+  text-align: center;
+  float: left;
+  width: 160px;
+  height: 180px;
+}
+
+div.iconic3 img
+{
+  width: 150px;
+}
+
+div.text_icon3
+{
+  text-align: left;
+  float: left;
+  width: 140px;
+  height: 90px;
+  padding : 0px 10px;
+}
+
+div.spacer
+{
+  width: 10px;
+  float: left;
+}
+

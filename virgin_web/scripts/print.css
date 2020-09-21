@@ -1,0 +1,37 @@
+/*************************************************************
+*  	/print.css
+*
+*	This CSS file should hold all style definitions
+*	needed for the global scope of the web site in the print media. 
+*	This file will be included automatically at runtime for all pages. 
+*	All styles specific to a sub-section should be maintained in 
+*	/{subsection}/common.css. Any page-specific CSS definitions should 
+*	be created in a CSS file specific to the target page and 
+*	included manually on that page.
+*
+*	For the definitions that are known to reside in one 
+*	functional location, there should be a begin and end
+*	block documented.  The primary purpose of which is 
+*	to facilitate the refactoring process.  Any block
+*	relating to a specific page should be a candidate to
+*	move into a page-specific include.
+*
+***************************************************************/
+
+
+body {
+	background-image: none;
+	background-color: #fff;
+}
+#head {
+	background-color: #fff;
+	height: 80px!important;
+}
+
+#util,
+#nav,
+.c19_printPage,
+#foot,
+#siteMap {
+	display: none;
+}

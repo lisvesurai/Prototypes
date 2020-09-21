@@ -1,0 +1,49 @@
+body,h1,h2,h3,p,a,td,div{font-size:16px;}
+a.tab span, a.tabhl span {font-size:22px;}
+td.title a {font-size:16px;}
+td.price {font-size:14px;}
+
+div.search{background:#252525 url(../../images/games/350_bg_search.gif) center center repeat-x;}
+div.searchl{background:url(../../images/games/350_bg_search_l.gif) center left no-repeat;}
+div.searchr{background:url(../../images/games/350_bg_search_r.gif) center right no-repeat;height:37px;}
+td.srchtext {padding:7px 0 0 18px;}
+td.srchbtn {padding:7px 8px 0 0;width:20px;}
+input.srchtext {height:23px;}
+td.gth {width:56px;}
+dt.mnr2 {background:#000000 url(../../images/games/350_bg_large_arrow.gif) right center no-repeat;padding-right:37px;}
+dt.mnr2:hover {background:#33b5e6 url(../../images/games/350_bg_large_arrow_hl.gif) right center no-repeat;}
+dt.mnr3 {background:#267391 url(../../images/games/350_bg_arrow.gif) center right no-repeat;padding-right:23px;}
+dt.mnr3:hover {background:#2c94bb url(../../images/games/350_bg_arrow_hl.gif) center right no-repeat;}
+
+td.star {background:url(../../images/games/stars/350.gif) left center no-repeat;}
+td.blk:hover td.star {background:url(../../images/games/stars/350_hl.gif) left center no-repeat;}
+
+td.star5 {background:url(../../images/games/stars/350_5.gif) left center no-repeat;}
+td.blk:hover td.star5 {background:url(../../images/games/stars/350_5_hl.gif) left center no-repeat;}
+
+td.starI {background:url(../../images/games/stars/350_I.gif) left center no-repeat;}
+td.blk:hover td.starI {background:url(../../images/games/stars/350_I_hl.gif) left center no-repeat;}
+
+td.starI5 {background:url(../../images/games/stars/350_I5.gif) left center no-repeat;}
+td.blk:hover td.starI5 {background:url(../../images/games/stars/350_I5_hl.gif) left center no-repeat;}
+
+td.starII {background:url(../../images/games/stars/350_II.gif) left center no-repeat;}
+td.blk:hover td.starII {background:url(../../images/games/stars/350_II_hl.gif) left center no-repeat;}
+
+td.starII5 {background:url(../../images/games/stars/350_II5.gif) left center no-repeat;}
+td.blk:hover td.starII5 {background:url(../../images/games/stars/350_II5_hl.gif) left center no-repeat;}
+
+td.starIII {background:url(../../images/games/stars/350_III.gif) left center no-repeat;}
+td.blk:hover td.starIII {background:url(../../images/games/stars/350_III_hl.gif) left center no-repeat;}
+
+td.starIII5 {background:url(../../images/games/stars/350_III5.gif) left center no-repeat;}
+td.blk:hover td.starIII5 {background:url(../../images/games/stars/350_III5_hl.gif) left center no-repeat;}
+
+td.starIIII {background:url(../../images/games/stars/350_IIII.gif) left center no-repeat;}
+td.blk:hover td.starIIII {background:url(../../images/games/stars/350_IIII_hl.gif) left center no-repeat;}
+
+td.starIIII5 {background:url(../../images/games/stars/350_IIII5.gif) left center no-repeat;}
+td.blk:hover td.starIIII5 {background:url(../../images/games/stars/350_IIII5_hl.gif) left center no-repeat;}
+
+td.starIIIII {background:url(../../images/games/stars/350_IIIII.gif) left center no-repeat;}
+td.blk:hover td.starIIIII {background:url(../../images/games/stars/350_IIIII_hl.gif) left center no-repeat;}

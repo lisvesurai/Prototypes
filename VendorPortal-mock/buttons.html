@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js macosx" lang="en">
+<!--<![endif]-->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta charset="utf-8">
+<meta name="author" content="Research In Motion">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link href="favicon.ico" rel="SHORTCUT ICON" />
+<title>BlackBerry Vendor Portal</title>
+
+<!--[if lt IE 9]>
+<script src="webroot/js/common/html5.js"></script>
+<style type="text/css">
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+</style>
+<![endif]-->
+
+<link type="text/css" rel="stylesheet" href="webroot/css/common/normalize.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.fonts.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/foundation.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/foundation.override.css" />
+<!--[if lt IE 9]>
+    <link type="text/css" rel="stylesheet" href="webroot/css/common/foundation.ie8.css">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="webroot/css/common/foundicon.general.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.base.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.layout.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.navigation.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.components.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/ext.tiptip.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.site.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.portals.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.documentations.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.downloads.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.references.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.sampleapps.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.screenshot.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.vp.components.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.vp.fonts.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.vp.login.css" />
+<script src="webroot/js/common/modernizr.custom.88393.js"></script>
+<script type="text/javascript" src="webroot/js/common/bb.global.js"></script>
+<link rel="stylesheet" href="webroot/css/font-awesome/css/font-awesome.min.css" />
+<!--[if IE 7]>
+  <link rel="stylesheet" href="webroot/css/font-awesome/css/font-awesome-ie7.min.css">
+<![endif]-->
+<link rel="stylesheet" href="webroot/css/common/jquery-ui-1.8.22.custom.css" />
+<script src="webroot/js/common/jquery-1.10.2.min.js"></script>
+<script src="webroot/js/common/jquery-ui-1.10.3.min.js"></script>
+<link rel="stylesheet" href="webroot/js/select2/select2.css" />
+<script src="webroot/js/select2/select2.min.js"></script>
+</head>
+<body class="portals vendorportal">
+<div id="myModal" class="reveal-modal"></div>
+<div id="myModalSmall" class="reveal-modal small"></div>
+<div id="myModalMedium" class="reveal-modal medium"></div>
+<div id="myModalLarge" class="reveal-modal large"></div>
+<div id="myModalXlarge" class="reveal-modal xlarge"></div>
+<div id="myModalExpand" class="reveal-modal expand"></div>
+<div class="fixed">
+  <div>
+    <nav class="top-bar user-bar hide-for-small">
+      <ul class="title-area">
+        <li class="name"> <a href="http://developer.blackberry.com/" class="logo"> <img src="webroot/img/common/blackberry_logo.png" alt="BlackBerry"> Developer </a> </li>
+        <li class="toggle-topbar"><a href="#"><span>Useful links</span></a></li>
+      </ul>
+      <section class="top-bar-section">
+        <ul class="left">
+          <li class="divider hide-for-small"> </li>
+          <li><a href="http://devblog.blackberry.com" target="_blank">Blog</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li><a href="http://www.youtube.com/blackberrydev/" target="_blank">YouTube</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li><a href="http://supportforums.blackberry.com/t5/Developer-Support-Forums/ct-p/blackberrydev" target="_blank">Forum</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li><a href="https://www.blackberry.com/SignedKeys/codesigning.html" target="_blank">Signing</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li class="last"><a href="https://www.blackberry.com/jira/secure/Dashboard.jspa" target="_blank">Feedback</a></li>
+          <li class="divider hide-for-small"> </li>
+        </ul>
+        <ul class="right">
+          <li class="divider hide-for-small login-in-bar"> </li>
+          <li><a href="login.html" class="icon_login login-in-bar">Logout</a></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+</div>
+<header class="nav-header">
+  <div class="topbar">
+    <nav>
+      <div class="nav-text"> <a href="login.html"> <span class="h1">Vendor Portal for BlackBerry World</span> </a> </div>
+    </nav>
+  </div>
+</header>
+<div id="browser-msg" class="row hide">
+  <div class="large-12 columns">
+    <div class="notice warning">
+      <p>Sorry about the red box, but we really need you to update your browser. Read <a href="http://www.smashingmagazine.com/2012/07/10/dear-web-user-please-upgrade-your-browser/">this excellent article</a> if you're wondering why we are no longer supporting this browser version. Go to <a href="http://browsehappy.com/">Browse Happy</a> for browser suggestions and how to update.</p>
+    </div>
+  </div>
+</div>
+<div id="main" class="main" role="main">
+  <div class="row">
+    <div class="large-8 columns large-centered">
+      <div id="mainContentBody">
+        <button>Button 1</button>
+        <a class="button">Button 2</a>
+      </div>
+    </div>
+  </div>
+</div>
+<footer id="footer" class="footer">
+  <div class="inner_footer">
+    <div class="row">
+      <div class="columns grid_footer technologies">
+        <h2 class="h5">Technologies</h2>
+        <ul>
+          <li><a href="http://developer.blackberry.com/native/">Native</a></li>
+          <li><a href="http://developer.blackberry.com/html5/">HTML5</a></li>
+          <li><a href="http://developer.blackberry.com/air/">AIR</a></li>
+          <li><a href="http://developer.blackberry.com/android/">Android</a></li>
+          <li><a href="http://developer.blackberry.com/playbook/">PlayBook</a></li>
+          <li><a href="http://developer.blackberry.com/bbos/">BlackBerry OS</a></li>
+          <li><a href="http://developer.blackberry.com/develop/platform_partners/">Platform Partners</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer programs">
+        <h2 class="h5">Programs</h2>
+        <ul>
+          <li><a href="https://www.blackberry.com/beta/" target="_blank">Beta Zone</a></li>
+          <li><a href="https://partners.blackberry.com/web/guest/home/" target="_blank">Alliance programs</a></li>
+          <li><a href="http://us.blackberry.com/ataglance/academic/" target="_blank">Academic programs</a></li>
+          <li><a href="https://developer.blackberry.com/jamcommunity/groups/">Developer groups</a></li>
+          <li><a href="https://developer.blackberry.com/blackberry10devalpha/">BlackBerry 10 Dev Alpha</a></li>
+          <li><a href="https://developer.blackberry.com/builtforblackberry/">Built for BlackBerry</a></li>
+          <li><a href="http://developer.blackberry.com/blackberrybuilder/">BlackBerry Builder</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer support">
+        <h2 class="h5">Support</h2>
+        <ul>
+          <li><a href="https://bdsc.webapps.blackberry.com/CodeSigningHelp/" target="_blank">Code Signing Help</a></li>
+          <li><a href="http://www.youtube.com/blackberrydev/" target="_blank">YouTube Channel</a></li>
+          <li><a href="http://supportforums.blackberry.com/t5/Developer-Support-Forums/ct-p/blackberrydev" target="_blank">Developer forums</a></li>
+          <li><a href="https://www.blackberry.com/jira/secure/Dashboard.jspa" target="_blank">Developer Issue Tracker</a></li>
+          <li><a href="http://supportforums.blackberry.com/t5/Application-Platforms/tkbc-p/app_plat" target="_blank">Knowledge Base</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer app_store">
+        <h2 class="h5">BlackBerry World</h2>
+        <ul>
+          <li><a href="https://www.blackberry.com/SignedKeys/codesigning.html" target="_blank">Sign your app</a></li>
+          <li><a href="http://developer.blackberry.com/blackberryworld/">Submitting your app</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer_last social">
+        <h2 class="h5">Follow us on:</h2>
+        <ul class="inline-list">
+          <li><a href="http://www.facebook.com/BlackBerryDeveloperCommunity" title="Follow us on Facebook" class="icon-20 facebook" target="_blank"><span class="hide">Facebook</span></a></li>
+          <li><a href="http://www.youtube.com/blackberrydev/" title="Catch us on YouTube" class="icon-20 youtube" target="_blank"><span class="hide">YouTube</span></a></li>
+          <li><a href="http://twitter.com/blackberrydev" title="Hear the BlackBerry tweet" class="icon-20 twitter" target="_blank"><span class="hide">Twitter</span></a></li>
+          <li><a href="http://devblog.blackberry.com/" title="Developer Blogs" class="icon-20 blackberry" target="_blank"><span class="hide">BlackBerry Blogs</span></a></li>
+          <li><a href="#bbmchannelcode" title="BBM Channels" class="icon-20 channels lightboxtrigger"><span class="hide">BBM Channels</span></a></li>
+        </ul>
+        <div style='display:none'>
+          <div id='bbmchannelcode' class="lightbox">
+            <div class="lightbox-desc" style="width:400px;"> <img src="webroot/img/common/channelonwhite.png" alt="BBM Channels" /> </div>
+            <div class="lightbox-desc" style="width:370px;">
+              <div class="lightbox-text" style="margin: 40px 100px 0px 0px;">
+                <h1 style="margin-left:0px;">BBM Channels</h1>
+                <p>Developer Relations is on BBM Channels! Join the conversation by <a href="https://beta.webapps.blackberry.com/BBMChannels/" target="_blank">signing up for the beta program</a> and scanning the barcode to the right.</p>
+                <a href="https://beta.webapps.blackberry.com/BBMChannels/" target="_blank"> Register for BBM Channels beta &rsaquo;</a> </div>
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li><a href="http://www.blackberry.com/legal/" target="_blank">Legal &amp; Trademarks</a> </li>
+        </ul>
+      </div>
+      <div class="copyright_notice">Copyright &copy; 2014 BlackBerry Limited, unless otherwise noted.</div>
+    </div>
+  </div>
+</footer>
+<!-- Included JS Files (Uncompressed) --> 
+<script type="text/javascript" src="webroot/js/common/foundation.min.js"></script> 
+<script type="text/javascript" src="webroot/js/common/foundation/foundation.joyride.js"></script> 
+<script type="text/javascript" src="webroot/js/common/foundation/foundation.backnav.js"></script> 
+<script type="text/javascript" src="webroot/js/common/jquery.easing.1.3.js"></script> 
+<script type="text/javascript" src="webroot/js/common/bb.dropdown.js"></script> 
+<script type="text/javascript" src="webroot/js/common/bb.searchbar.js"></script> 
+<script type="text/javascript" src="webroot/js/common/bb.expandable.js"></script> 
+<script type="text/javascript" src="webroot/js/common/bb.nav.doc.js"></script> 
+<script type="text/javascript" src="webroot/js/bb.segment_hover.js"></script> 
+<script type="text/javascript" src="webroot/js/jquery.tipTip.minified.js"></script> 
+<script type="text/javascript" src="webroot/js/jquery.colorbox.js"></script> 
+<script type="text/javascript" src="webroot/js/bb.site.js"></script> 
+<script type="text/javascript" src="webroot/js/bb.focuscontrol.js"></script> 
+<script type="text/javascript" src="webroot/js/bb.nav.js"></script> 
+
+<!-- Note should this be a separate .js file or be part of bb.site.js  --> 
+
+<script type="text/javascript">
+	  global.init('', 'portals', 'index', '', 'webroot/');
+	  global.setFocus('cascades');
+  </script> 
+<script type="text/javascript" src="webroot/js/pageload.js"></script> 
+
+<!-- Piwik --> 
+<script type="text/javascript">
+	  var pkBaseURL, server, pkId;
+	  server = 'dxlab013qbolabvm.labqbo.testnet.rim.net/stats/';
+	  pkId = -1;
+	  pkBaseURL = (("https:" == document.location.protocol) ? "https://"+server : "http://"+server);
+	  document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+	  </script><script type="text/javascript">
+	  try {
+	  var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", -1);
+	  piwikTracker.trackPageView();
+	  piwikTracker.enableLinkTracking();
+  } catch( err ) {}
+  </script>
+      <noscript>
+      <p><img src="http://dxlab013qbolabvm.labqbo.testnet.rim.net/stats/piwik.php?idsite=-1" style="border:0" alt="" /></p>
+</noscript>
+      <!-- End Piwik Tracking Code --> 
+      <!--[if lt IE 7 ]>
+  <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+  <script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+<![endif]--> 
+
+      <script>
+  $(document).ready(function() {
+	$('.reveal-modal').css({
+	  maxHeight: $(window).height() - 150 + 'px'
+	});
+  });
+  $(window).resize(function() {
+	$('.reveal-modal').css({
+	  maxHeight: $(window).height() - 150 + 'px'
+	});
+  });
+</script>
+</body>
+</html>

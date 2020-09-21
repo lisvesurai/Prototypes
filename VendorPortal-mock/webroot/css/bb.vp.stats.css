@@ -1,0 +1,163 @@
+#charts {
+  padding: 10px 0;
+}
+
+svg {
+  font: 10px sans-serif;
+}
+
+path {
+  fill: #008ab8;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: #008ab8;
+  stroke-width: 1.5px;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus circle {
+  fill: none;
+  stroke: #008ab8;
+}
+
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
+.link-box {
+	margin-top: 46px;
+	padding: 20px 0 0 0;
+}
+.link-box p {
+	text-align: center;
+}
+
+.quote-box {
+	background: url('../img/mockimages/devices.png') center bottom no-repeat;
+	border-bottom: 1px solid #DFDFDF;
+	margin-bottom: 46px;
+	height: 276px;
+	width: 100%;
+}
+
+.login-box {
+	text-align: center;
+	margin-bottom: 46px;
+}
+
+.login-box h3 {
+	margin-top: 0.133em;
+}
+
+.login-box a {
+	margin-top: 23px;
+}
+
+.vendorportal .changerequest-list section {
+	border-bottom: 1px solid #dddddd;
+}
+
+.vendorportal .changerequest-list section div.changerequest-item {
+	clear: both;
+	height: 51px;
+}
+
+.vendorportal .changerequest-list section .list-item h3 {
+	font-size: 13px;
+}
+
+.vendorportal .changerequest-list section .list-item .promo_name h3 {
+	font-size: 1.2em;
+	padding-top:.4em;
+}
+
+.vendorportal .changerequest-list section .list-item .promo_days {
+	width:115px !important;
+}
+
+.vendorportal .changerequest-list section .list-item .promo_status {
+	width:140px !important;
+}
+
+.vendorportal .changerequest-list section div.changerequest-body {
+	clear: both;
+	width:100%;
+	padding:.2em .2em 2em;
+}
+
+p.title img {
+	width: 24px;
+	height: 24px;
+	margin: 0 10px 0 0;
+}
+
+.section-container > section p.title span.change-name,
+.section-container > section.active p.title span.change-name {
+	color: #262626;
+}
+
+.changerequest-list section div.content {
+	padding-bottom: 20px;
+}
+
+section p.title span.change-short {
+}
+
+section p.title span.change-date,
+section p.title span.change-id {
+	margin: 7px 50px 0 0;
+	font-size: 13px;
+}
+section p.title span.change-status{
+	margin: 7px 25px 0 0;
+	font-size: 13px;
+}
+section p.title span.change-date {
+	width: 120px;
+}
+
+section div.content div.change-info h5,
+section div.content div.change-before h5,
+section div.content div.change-after h5 {
+	margin-top: 0;
+}
+
+section div.content div.change-after {
+	border-right: 1px solid #dfdfdf;
+}
+
+section div.content div.change-arrow {
+	margin-top: 20px;
+}
+
+section div.content div.change-info {
+	color: #909090;
+}
+
+section div.content div.change-info p {
+	margin: 0;
+}
+
+section div.content div.change-info span.change-field {
+	color: #262626;
+}
+

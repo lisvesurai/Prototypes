@@ -1,0 +1,142 @@
+div.mytext {
+font-size:250%;
+}
+
+div.leftpane {
+float: left;
+font-size: 15pt;
+}
+
+div.titlebar {
+position: absolute;
+top: 4px;
+left: 20px;
+height: 29px;
+width: 200px;
+color: #FF0000;
+font-size: inherit;
+opacity: 0;
+text-align: center;
+vertical-align: middle;
+border: 1px solid transparent;
+}
+
+div.mylabel {
+position: absolute;
+left: 20px;
+top: 44px;
+height: 29px;
+width: 200px;
+color: #FF0000;
+font-size: inherit;
+opacity: 0;
+text-align: center;
+vertical-align: middle;
+border: 1px solid transparent;
+}
+
+div.mybutton {
+position: absolute;
+left: 20px;
+top: 70px;
+height: 29px;
+width: 200px;
+color: #FF0000;
+font-size: inherit;
+opacity: 0;
+text-align: center;
+vertical-align: middle;
+border: 1px solid transparent;
+}
+
+div.segmented{
+position: absolute;
+left: 20px;
+top: 105px;
+height: 23px;
+width: 200px;
+color: #FF0000;
+font-size: inherit;
+opacity: 0;
+text-align: center;
+vertical-align: middle;
+border: 1px solid transparent;
+}
+
+div.tabbedpane {
+position: absolute;
+left: 20px;
+top: 292px;
+height: 34px;
+width: 200px;
+color: #FF0000;
+font-size: inherit;
+opacity: 0;
+text-align: center;
+vertical-align: middle;
+border: 1px solid transparent;
+}
+
+
+div.ident {
+position: relative;
+left: 20px;
+}
+
+div.control {
+color: #007585;
+display: inline;
+font-weight: bold;
+}
+
+div.member {
+color: #497219;
+display: inline;
+}
+
+div.type {
+color: #007585;
+display: inline;
+}
+
+div.text {
+color: #7A2D0A;
+font-style: italic;
+display: inline;
+}
+
+
+div.noframe {
+border: 1px solid transparent;
+width: 300px;
+}
+
+div.myhighlight {
+border: 1px solid red;
+background: yellow;
+opacity: 0.5;
+
+}
+
+img.notshown {
+visibility: hidden;
+}
+
+img.shown {
+visibility: shown;
+border: 1px solid red;
+}
+
+div.rightpane {
+padding-left: 10px;
+width: 400px;
+float: left;
+font-family: Consolas;
+font-size: 10pt;
+}
+
+div.floatpane {
+position: absolute;
+left: -400px;
+
+}

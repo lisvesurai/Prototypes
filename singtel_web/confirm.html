@@ -1,0 +1,444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<link rel="shortcut icon" href="singtelUI/images/favicon.ico"/>
+<link rel="icon" type="image/gif" href="singtelUI/images/animated_favicon1.gif"/>
+<title>SingTel App Store</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<script type="text/javascript" src="js/prototype-1.5.js"></script>
+<script type="text/javascript" src="scripts/pager.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js"></script>
+<script type="text/javascript" src="js/overlibmws.js"></script>
+<script type="text/javascript" src="js/ajaxtags-1.2-beta2.js"></script>
+<script type="text/javascript" src="js/fleegix.js"></script>
+<script src='js/HashMap.js' language="javascript" type="text/javascript"></script>
+<script src='js/validations.js' language="javascript" type="text/javascript"></script>
+<script type="text/javascript" src="js/ascii_utility.js"></script>
+<script src='scripts/cm.js' language="javascript" type="text/javascript"></script>
+<!-- Filed Needed for prototype validation -->
+<script type="text/javascript" src="js/effects.js"></script>
+<script type="text/javascript" src="js/prototype-validation.js"></script>
+<link rel="stylesheet" type="text/css" href="styles/prototype-validation-style.css" />
+<script type="text/javascript" src="scripts/nav.js"></script>
+<script type="text/javascript" src="scripts/global_imageMouseovers.js"></script>
+<script type="text/javascript" src="scripts/c3_productViewer.js"></script>
+<script type="text/javascript" src="scripts/nav_cart.js"></script>
+<script type="text/javascript" src="scripts/c19_printPage.js"></script>
+<script type="text/javascript" src="scripts/init.js"></script>
+<script type="text/javascript" src="scripts/JavaScriptFlashGateway.js"></script>
+<script type="text/javascript" src="scripts/accessoryPopup.js"></script>
+<script type="text/javascript" src="scripts/singtel.js"></script>
+<script type="text/javascript" src="scripts/paging.js"></script>
+<!-- New JS Files -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script src="singtelUI/js/animatedcollapse.js" type="text/javascript"></script>
+<script type="text/javascript">
+	animatedcollapse.addDiv('menuExpand', 'fade=1,height=262px')
+	animatedcollapse.ontoggle=function($, divobj, state){ //fires each time a DIV is expanded/contracted
+		//$: Access to jQuery
+		//divobj: DOM reference to DIV being expanded/ collapsed. Use "divobj.id" to get its ID
+		//state: "block" or "none", depending on state
+	}
+	animatedcollapse.init()
+</script>
+<script type="text/javascript" src="singtelUI/js/prototype.js"></script>
+<script type="text/javascript" src="singtelUI/js/stars.js"></script>
+<script type="text/javascript" src="singtelUI/js/cm.js"></script>
+<!-- Adding CSS here  -->
+<link rel="stylesheet" type="text/css" href="singtelUI/css/main.css"/>
+<!-- script type="text/javascript">
+  //document.write('<div id="PreviewLayer" style="display:none;left:0px;top:0px;"></div>');
+  //document.onmousemove=followmouse;
+</script -->
+<script language="javascript">
+	Event.observe(window, 'load', page_loaded, false); 
+</script>
+</head>
+<body>
+<div id="topbar">
+	<div class="innercontainer">
+		<!-- start singtel header -->
+		<a href="http://www.singtel.com/"><img src="singtelUI/images/logo.png" alt="SingTel" align="left" border="0"></a>
+		<form>
+			<select name="select" onchange="goURL(this)">
+				<option value="">SingTel Global Sites</option>
+				<option value="http://www.singtel.com">Singapore</option>
+				<option value="http://www.optus.com.au">Australia</option>
+				<option value="http://www.singtel.com/bd">Bangladesh</option>
+				<option value="http://business.singtel.com/singtel_cn/default.asp">China</option>
+				<option value="http://business.singtel.com/singtel_eu/default.asp">Europe</option>
+				<option value="http://business.singtel.com/singtel_hk/default.asp">Hong Kong</option>
+				<option value="http://business.singtel.com/singtel_in/default.asp">India</option>
+				<option value="http://business.singtel.com/singtel_id/default.asp">Indonesia</option>
+				<option value="http://business.singtel.com/singtel_jp/select_language.asp?language_=japanese">Japan</option>
+				<option value="http://business.singtel.com/singtel_kr/select_language.asp?language_=korean">Korea</option>
+				<option value="http://business.singtel.com/singtel_my/default.asp">Malaysia</option>
+				<option value="http://www.singtel.com/me">Middle East</option>
+				<option value="http://business.singtel.com/singtel_ph/default.asp">Philippines</option>
+				<option value="http://business.singtel.com/singtel_tw/select_language.asp?language_=chinese">Taiwan</option>
+				<option value="http://business.singtel.com/singtel_th/default.asp">Thailand</option>
+				<option value="http://business.singtel.com/singtel_us/default.asp">USA</option>
+				<option value="http://business.singtel.com/singtel_vn/default.asp">Vietnam</option>
+			</select>
+		</form>
+		<ul>
+			<li> <a href="http://home.singtel.com/about_singtel/company_profile/default.asp" target="_blank"> about SingTel </a> </li>
+			<li> <a href="http://home.singtel.com/consumer/consumer_default.asp" target="_blank"> consumer </a> </li>
+			<li> <a href="http://business.singtel.com/sme/" target="_blank"> business </a> </li>
+			<li> <a href="http://home.singtel.com/customer_service/default.asp" target="_blank"> customer service </a> </li>
+			<li> <a href="http://home.singtel.com/customer_service/cust_serv_callus.asp" target="_blank"> contact us </a> </li>
+		</ul>
+	</div>
+	<!-- end singtel header -->
+</div>
+<input type="hidden" name="itemtype" value="" id="itemtype"/>
+<input type="hidden" name="itemtypeId" value="" id="itemtypeId"/>
+<input type="hidden" name="searchby" value="" id="searchby"/>
+<input type="hidden" name="formname" value="" id="formname"/>
+<input type="hidden" name="viewallvalue" value="" id="viewallvalue"/>
+<input type="hidden" name="selectedcategorytext" value="" id="selectedcategorytext"/>
+<input type="hidden" name="rowcount" value="" id="rowcount"/>
+<input type="hidden" name="categorysearchvalue" value="" id="categorysearchvalue"/>
+<input type="hidden" name="searchvalue" value="Title" id="searchvalue"/>
+<input type="hidden" name="rtsearchtype" value="" id="rtsearchtype"/>
+<input type="hidden" name="sortby" value="" id="sortby"/>
+<input type="hidden" name="sortorder" value="" id="sortorder"/>
+<input type="hidden" name="itemId" value="" id="itemId"/>
+<input type="hidden" name="companyId" value="0" id="companyId"/>
+<input type="hidden" name="listid" value="" id="listid"/>
+<input type="hidden" name="command" value="" id="command"/>
+<input type="hidden" name="alphaletter" value="" id="alphaletter"/>
+<input type="hidden" name="pagetype" value="" id="pagetype"/>
+<input type="hidden" name="artist" value="" id="artist"/>
+<input type="hidden" name="categorydisplaypath" value="" id="categorydisplaypath"/>
+<input type="hidden" name="developerName" value="" id="developerName"/>
+<input type="hidden" name="deviceDisplayName" value="" id="deviceDisplayName"/>
+<input type="hidden" name="viewalllisttext" value="" id="viewalllisttext"/>
+<input type="hidden" name="fileExtrank" value="0" id="fileExtrank"/>
+<input type="hidden" name="album_art" value="" id="album_art"/>
+<input type="hidden" name="album_name" value="" id="album_name"/>
+<input type="hidden" name="categorybreadcrumb" value="" id="categorybreadcrumb"/>
+<input type="hidden" name="prevpageurl" value="" id="prevpageurl"/>
+<!-- url related hidden variables -->
+<input type=hidden name="txtdisplayContenturl" id="txtdisplayContenturl"/>
+<input type=hidden name="txtdeviceId" id="txtdeviceId"/>
+<input type=hidden name="txtcontentDetailsurl" id="txtcontentDetailsurl"/>
+<div id="middle">
+	<script src="spripts/singtel.js" type="text/javascript"></script>
+	<script type="text/javascript">
+var bExe = false;
+function checkMenuStatus() {
+	
+	try {
+		if(!bExe) {
+			toggleMenu('menuExpand');
+			bExe=true;
+		}
+	}
+	catch (e) {
+		if(!bExe)
+			setTimeout(checkMenuStatus,1000); 
+	}
+	
+	
+}
+</script>
+	<div id="menu" onreadystatechange="checkMenuStatus();">
+		<div class="innercontainer">
+			<div id="menuExpand" style="display:none;">
+				<!-- Categories -->
+				<div id="categoriesNav">
+					<h2>Categories</h2>
+					<ul>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1001');return false;"> Games </a>
+							<ul>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1008');return false;"> Action  & Adventure </a> </li>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1003');return false;"> Card & Board </a> </li>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1007');return false;"> En Espanol </a> </li>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1005');return false;"> Kids & Family </a> </li>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1006');return false;"> Puzzle </a> </li>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1002');return false;"> Retro & Arcade </a> </li>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1009');return false;"> Sports & Racing </a> </li>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1004');return false;"> TV & Movie </a> </li>
+							</ul>
+						</li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1019');return false;"> Family </a> </li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1015');return false;"> Lifestyle </a> </li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1012');return false;"> Productivity </a> </li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1017');return false;"> Sports & Entertainment </a> </li>
+					</ul>
+				</div>
+				<!-- Categories Ends -->
+				<div class="phoneSelector_bg">
+					<div class="phoneSelector_img">
+						<img src="http://singtelcontent-staging.cellmania.com/device_images/N95_Black_70x141.png"/>
+					</div>
+					<div class="phoneSelector_txt">
+						<p class="phoneModel">Nokia N95</p>
+						<p class="txt">View apps compatible with:</p>
+						<div id="phoneBrandSelect">
+							<select name="mfg" id="mfg" onchange="getDevice(this.value);">
+								<option value="-1"
+    >-- Select Model --</option>
+								<option value="12">Apple</option>
+								<option value="8">Blackberry</option>
+								<option value="9">HTC</option>
+								<option value="3">LG</option>
+								<option value="10">Motorola</option>
+								<option value="5">Nokia</option>
+								<option value="4">Samsung</option>
+								<option value="7">Sony Ericsson</option>
+							</select>
+						</div>
+						<div id="phoneModelSelect">
+							<select id="selDevice" name="device" onChange="reloadPage(this.value); return false;" disabled>
+								<option value="-1">-- Select Phone -- </option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="sidebar">
+					<div id="accountStatus">
+						<h3>Hello, 6598212199</h3>
+						<p class="my_fav" onclick="goToPage('content_viewMyFav.do');return false;">My Favourites</p>
+						<p class="my_purchases" onclick="goToPage('content_viewMyPurchase.do');return false;">My Purchases</p>
+						<p class="my_account" onclick="location.href='http://staging.ideas.singtel.com/appmanager/ideas/web?_nfpb=true&_pageLabel=web_uam_changepassword';">My Account </p>
+						<!-- p class="logout_btn" onclick="logout('content_orderConfirm.do?ddN=Wicked Hockey&ordTot=3.99&deviceId=102&pmId=1002&stNm=58U&slPr=3.99&iid=1010&stId=106&');return false;">Log out</p -->
+					</div>
+					<div id="cm_search">
+						<h2>Search for an app:</h2>
+						<fieldset>
+						<input type="text" class="txt" id="keyword" name="keyword"  
+			value="Enter Keyword" 
+			onfocus="this.style.color='#333';this.value='';" 
+			onblur="if(this.value==''){this.style.color='#999';this.value='Enter Keyword';}"
+			onKeyPress="if(event.which==13||(window.event && window.event.keyCode==13)){searchKeyword();return false;}"/>
+						<span onclick="searchKeyword();return false;" class="search_btn"/>Go</span>
+						</fieldset>
+					</div>
+					<div id="advancedSearch">
+						<h2>Search by title or developer</h2>
+						<fieldset>
+						<input class="txt" id="txtTitle" name="txtTitle" 
+				   type="text" value="Search by title" 
+				   onfocus="this.style.color='#333';this.value='';" 
+				   onblur="if(this.value==''){this.style.color='#b9b9b9';this.value='Search by title';}"
+				   onKeyPress="if(event.which==13||(window.event && window.event.keyCode==13)){searchTitleDev(true,false);return false;}"/>
+						<span onclick="searchTitleDev(true,false);return false" class="search_btn">Go</span>
+						</fieldset>
+						<fieldset>
+						<input class="txt" id="txtDeveloper" name="txtDeveloper" 
+				   type="text" value="Search by developer" 
+				   onfocus="this.style.color='#333';this.value='';" 
+				   onblur="if(this.value==''){this.style.color='#b9b9b9';this.value='Search by developer';}"
+				   onKeyPress="if(event.which==13||(window.event && window.event.keyCode==13)){searchTitleDev(false,true);return false;}"/>
+						<span onclick="searchTitleDev(false,true);return false;" class="search_btn">Go</span>
+						</fieldset>
+					</div>
+					<form name="srchForm" id="srchForm" method="post" action="gs_searchByKeyword.do">
+						<input type="hidden" name="keyWord" value="">
+						<input type="hidden" name="sartIndex" value="0">
+						<input type="hidden" name="totalItems" value="-1">
+						<input type="hidden" name="title" value="">
+						<input type="hidden" name="developer" value="">
+					</form>
+					<script type="text/javascript">
+<!--
+	function searchKeyword(){
+		var objFrm = document.getElementById("srchForm");
+		var vKey = document.getElementById('keyword').value;
+		if(vKey=="Enter Keyword") {
+			vKey="";
+		}
+		var alpha_chars = 0;
+		var special_chars = 0;
+		if(vKey.length<3) {
+			 alert('Search Field must have atleast 3 alphanumeric characters');
+			 return false;
+		}
+		for(var j=0; j<vKey.length; j++)
+		{
+		  var alphaa = vKey.charAt(j);
+		  var hh = alphaa.charCodeAt(0);
+		  if((hh > 47 && hh<58) || (hh > 64 && hh<91) || (hh > 96 && hh<123))
+		  {
+		  		alpha_chars = 1;
+		  }
+		  else	{
+		  	 special_chars = 1;
+			
+		  }
+		}		
+		if (alpha_chars == 0 && special_chars == 1) {
+			 alert('Search Field must have atleast 3 alphanumeric characters');
+			 return false;
+		}
+		objFrm.keyWord.value=vKey;
+		objFrm.submit();
+	}
+	
+	function searchTitleDev(isTitle,isDev) {
+		var objFrm = document.getElementById("srchForm");
+		
+		var vTitle = document.getElementById('txtTitle').value;
+		if(vTitle=='Search by title')
+			vTitle = "";
+			
+		var vDev = document.getElementById('txtDeveloper').value;
+		if(vDev=='Search by developer')
+			vDev = "";
+		
+		if(vTitle.length<3 && vDev.length<3) {
+			 alert('Search Field must have atleast 3 alphanumeric characters');
+			 return false;
+		}
+		
+		objFrm.action="gs_searchByTD.do";
+		if(isTitle)
+			objFrm.title.value=vTitle;
+		if(isDev)
+			objFrm.developer.value=vDev;
+		objFrm.submit();
+	}
+//-->
+</script>
+				</div>
+				<div class="clear">
+				</div>
+			</div>
+			<script type="text/javascript">
+	function toggleMenu (y) {
+		x = 'toggle_' + y;
+	
+		if ( document.getElementById(x).innerHTML == '+' ) {
+			animatedcollapse.toggle(y);
+			document.getElementById(x).innerHTML = '-';
+			document.getElementById(x).className = 'hl';
+			ajaxLoader('ajax_turnOnOffMenu.do?menuFlag=OPEN','tempDiv')
+			
+		}
+		else {
+			animatedcollapse.toggle(y);
+			document.getElementById(x).innerHTML = '+';
+			document.getElementById(x).className = '';
+			ajaxLoader('ajax_turnOnOffMenu.do?menuFlag=CLOSE','tempDiv')
+		}
+	}
+	
+	function getDevice(mfgId) {
+		if(mfgId<0){
+			document.getElementById('selDevice').disabled=true;
+			return;
+		}
+		var url = 'ajax_getDevices.do?mfgId='+mfgId;
+		//alert(url);
+		ajaxLoader(url,'phoneModelSelect');
+		
+	}
+	
+	function reloadPage(deviceId){
+		if(deviceId>0) {
+			var url2Redirect = "content_orderConfirm.do?ddN=Wicked Hockey&ordTot=3.99&deviceId=102&pmId=1002&stNm=58U&slPr=3.99&iid=1010&stId=106&";
+			if(103 == deviceId) {
+				url2Redirect = "ajax_iPhone.do";
+			}
+			
+			if(url2Redirect=='') { 
+				url2Redirect = "home.do"
+			}
+			onChangeOfPhone(deviceId,url2Redirect);
+		}
+		//alert(deviceId);
+	}
+	
+	
+		document.getElementById('mfg').value = 5;
+		getDevice(5);
+		checkAndSetDevice();
+		
+		function checkAndSetDevice(){
+			if(document.getElementById('selDevice')){
+				document.getElementById('selDevice').value = 102;
+			}
+			else {
+				setTimeout(checkAndSetDevice,1000);
+			}
+		}
+	
+	
+	</script>
+			<div id="mainMenu">
+				<span id="toggle_menuExpand" onclick="toggleMenu('menuExpand');">+</span> <a href="home.do"><img src="singtelUI/images/SingTelAppZone_logo.png" alt="SingTel App Zone" border="0" /></a>
+			</div>
+			<div id="tempDiv" style="display:none;">
+			</div>
+		</div>
+	</div>
+	<div class="menuShadow">
+	</div>
+	<div class="content">
+		<h2 class="breadcrumb"> <a href="javascript:void 0" onclick="getCatItems('1009');return false;">Sports & Racing</a> Wicked Hockey </h2>
+		<h2 class="pagetitle">Confirm Order!!</h2>
+		<div id="itemDetals">
+			<div id="previewImages">
+				<img id="imgPreview" 
+					src="/prototypes/placeholder/10.jpg"  border="0">
+			</div>
+			<div id="details" style="width:550px">
+				<h4> You have selected 'Wicked Hockey' at '$ 3.99'. To complete your purchase, please click on confirm to proceed. </h4>
+				<p>&nbsp;</p>
+				<p> By clicking on 'CONFIRM', we deemed that you have read and understood and have accepted the <u><a href="javascript:void 0;" onClick="tandC();">Terms and Conditions</a></u> of the service. </p>
+				<p>&nbsp;</p>
+				<p> <a href="javascript:void 0" onclick="cancel();return false;"><span id="btnCancel" class="cancel">Cancel</span></a> <a href="javascript:void 0" onclick="purchaseItem();return false;"><span id="btnSubmit" class="confirm">Confirm</span></a> </p>
+			</div>
+		</div>
+		<form action="content_placeOrder.do" method="post" name="purchaseForm" id="purchaseForm">
+			<input type="hidden" name="iid" value="1010">
+			<input type="hidden" name="ddN" value="Wicked Hockey">
+			<input type="hidden" name="stId" value="106">
+			<input type="hidden" name="stNm" value="58U">
+			<input type="hidden" name="pmId" value="1002">
+			<input type="hidden" name="slPr" value="3.99">
+			<input type="hidden" name="ordTot" value="3.99">
+			<input type="hidden" name="deviceId" value="102">
+		</form>
+	</div>
+	<script>
+function tandC() {
+	var objFrm = document.getElementById('purchaseForm');
+
+	if(isEmptyStr(objFrm.deviceId.value)) {
+		alert("No device selected. Please select one to proceed.");
+		return;
+	}
+	objFrm.action="content_tAndC.do";
+	objFrm.submit();
+}
+
+function cancel() {
+	var pageUrl = "content_getItemDetails.do?iid=1010&ddN=Wicked Hockey";
+	goToPage(pageUrl);
+}
+
+function purchaseItem() {
+	var objFrm = document.getElementById('purchaseForm');
+	
+	
+	document.getElementById("btnSubmit").style.display="none"
+	objFrm.submit();
+}
+</script>
+	<div style="clear: both;">
+	</div>
+</div>
+<div id="footer">
+	<div id="footer-left" class="footer-font">
+		<a href="http://welcome.singtel.com/customer_service/cust_serv_callus.asp">Contact us </a> | <a href="http://home.singtel.com/copyright/default.asp">Copyright</a> | <a href="http://home.singtel.com/singtel/index.html">Privacy policy</a> | <a href="http://home.singtel.com/terms/default.asp?source=general">Standard agreements</a> | <a href="http://home.singtel.com/singtel/careers/default.asp">Careers</a> | <a href="forDeveloper.jsp">For Developers</a> | <a href="content_tAndC.do">Terms & Conditions</a> | <a href="content_faq.do">FAQ.</a> | <a href="http://home.singtel.com/sitemap_consumer.asp">Site map</a>
+	</div>
+	<div id="footer-right">
+		(C) SingTel (CRN: 199201624D) All Rights Reserved
+	</div>
+</div>
+</body>
+</html>

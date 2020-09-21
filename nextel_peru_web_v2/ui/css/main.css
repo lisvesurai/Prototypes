@@ -1,0 +1,1285 @@
+/* Handy CSS Debugging Snippet
+  * { outline: 2px dotted red }
+  * * { outline: 2px dotted green }
+  * * * { outline: 2px dotted orange }
+  * * * * { outline: 2px dotted blue }
+  * * * * * { outline: 1px solid red }
+  * * * * * * { outline: 1px solid green }
+  * * * * * * * { outline: 1px solid orange }
+  * * * * * * * * { outline: 1px solid blue }
+*/
+
+body {margin:0;padding:0;font-family:Arial, Helvetica, sans-serif;font-size:10px;color:#666666;behavior: url("ui/css/csshover3.htc");}
+img {border:0;}
+div, p, img {margin:0;padding:0;}
+a {color:#666666;cursor:pointer;}
+a:hover {color:#333333;text-decoration:underline;}
+
+#pageContainer {width:1000px;margin:0 auto;background:#e8e8e8 url(../images/page_bg_repeat.png) repeat-y;position:relative;}
+#pageContainer.home {background:#e8e8e8 url(../images/page_bg_repeat_home.png) repeat-y;}
+
+/***** HEADER *****/
+#header {background:#fff;height:118px;position:relative;}
+#header #logo {position:absolute;top:12px;left:12px;}
+#header #menu {position:absolute;right:6px;top:51px;}
+#header #submenu {position:absolute;right:15px;top:35px;}
+#header ul {margin:0;padding:0;}
+#header ul li{float:left;list-style:none;}
+#header ul li a {display:block;text-indent:-9999px;}
+#header ul li a.music {background:url(../images/m_music.gif) no-repeat;width:68px;height:33px;}
+#header ul li a.games {background:url(../images/m_games.gif) no-repeat;width:59px;height:33px;}
+#header ul li a.wp {background:url(../images/m_wp.gif) no-repeat;width:74px;height:33px;}
+#header ul li a.apps {background:url(../images/m_apps.gif) no-repeat;width:92px;height:33px;}
+#header ul li a.videos {background:url(../images/m_videos.gif) no-repeat;width:57px;height:33px;}
+#header ul li a.promo {background:url(../images/m_promo.gif) no-repeat;width:96px;height:33px;}
+#header ul li a.sms {background:url(../images/m_sms.gif) no-repeat;width:97px;height:33px;}
+#header ul li a.home {background:url(../images/m_home.gif) bottom left no-repeat;width:41px;height:9px;margin-right:20px;}
+#header ul li a.contact {background:url(../images/m_contact.gif) bottom left no-repeat;width:78px;height:9px;margin-right:20px;}
+#header ul li a.faq {background:url(../images/m_faq.gif) bottom left no-repeat;width:127px;height:9px;}
+
+#middle {background:#fff;width:1000px;height:300px;position:relative;overflow:hidden;}
+
+#banner1 {background:#343434 url(../images/bg_device.jpg) top right no-repeat;width:199px;height:233px;position:absolute;top:22px;left:0;z-index:4;overflow:hidden;}
+#banner1 img.phone {position:absolute;top:30px;left:10px;width:50px;height:75px;}
+#banner1 p {position:absolute;top:55px;left:65px;width:120px;height:75px;color:#000;font-size:14px;font-weight:bold;}
+#banner1 a {position:absolute;bottom:42px;left:21px;}
+
+#banner2 {width:516px;height:255px;position:absolute;top:0;left:199px;z-index:1;}
+#device {width:285px;height:172px;overflow:hidden;background:url(../images/bg_device.png) top left no-repeat;position:absolute;top:52px;right:0;z-index:3;}
+#loginMsg {width:265px;height:30px;position:absolute;top:5px;right:0;z-index:4;font-size:10px;font-weight:bold;color:#5aacd6;}
+#login {width:285px;height:172px;overflow:hidden;background:url(../images/bg_device_login.png) top right no-repeat;position:absolute;top:0;right:0;z-index:3;}
+#login h2 {text-indent:-9999px;}
+#login div.username, #login div.password {color:#999;font-size:11px;position:absolute;vertical-align:top;height:20px;}
+#login div.username span, #login div.password span {padding:0 3px 0 0;line-height:20px;vertical-align:center;float:left;}
+#login input.username, #login input.password {font-size:9px;background:url(../images/bg_device_login_text.gif) top left no-repeat;width:108px;height:20px;line-height:20px;border:0;padding:0 3px;}
+#login div.username {top:54px;right:95px;}
+#login div.password {top:78px;right:95px;}
+#login .login_btn {background:url(../images/btn_enter.png) top left no-repeat;width:67px;height:23px;display:block;position:absolute;top:77px;right:22px;text-indent:-9999px;cursor:pointer;}
+#login div.links {position:absolute;bottom:34px;left:32px;color:#666;}
+#login div.links p {margin:0;padding:3px 0 0 0;clear:both;}
+#login div.links p span {float:left;}
+#login div.links .clickhere {background:url(../images/btn_click_here.gif) center right no-repeat;text-indent:-9999px;width:67px;height:14px;display:block;margin:0 0 0 5px;}
+html>body #login div.links .clickhere {float:left;}
+#device #selectedDevice {width:285px;height:172px;overflow:hidden;background:url(../images/bg_welcome.png) top left no-repeat;position:absolute;top:0;right:0;z-index:3;}
+
+/***** BANNERS *****/
+div.banner_mask {width:1000px;height:76px;background:url(../images/page_bg_banner_mask_generic.png) top left no-repeat;position:absolute;bottom:0;right:0;z-index:2;}
+#banner_mask_home {background:url(../images/page_bg_banner_mask_home.png) top left no-repeat;}
+#banner_mask_apps {background:url(../images/page_bg_banner_mask_apps.png) top left no-repeat;}
+#banner_mask_games {background:url(../images/page_bg_banner_mask_games.png) top left no-repeat;}
+#banner_mask_music {background:url(../images/page_bg_banner_mask_music.png) top left no-repeat;}
+#banner_mask_promo {background:url(../images/page_bg_banner_mask_promo.png) top left no-repeat;}
+#banner_mask_search {background:url(../images/page_bg_banner_mask_search.png) top left no-repeat;}
+#banner_mask_videos {background:url(../images/page_bg_banner_mask_videos.png) top left no-repeat;}
+#banner_mask_wp {background:url(../images/page_bg_banner_mask_wp.png) top left no-repeat;}
+
+/***** SEARCH *****/
+#cm_search_bg {width:230px;height:57px;background:url(../images/bg_search.png) top right no-repeat;position:absolute;bottom:15px;right:20px;z-index:6;}
+#cm_search {width:230px;height:54px;position:absolute;bottom:15px;right:20px;z-index:6;}
+#cm_search .txt {position:absolute;top:15px;left:59px;width:124px;height:17px;line-height:17px;font-size:9px;border:0;padding:0;background:none;vertical-align:middle;}
+#cm_search .search_btn {width:26px;height:27px;position:absolute;top:10px;right:15px;text-indent:-9999px;}
+#cm_search .advancedlink {color:#e05206;font-size:10px;position:absolute;bottom:0px;right:15px;}
+
+/***** BACKGROUND FOR EACH PAGE *****/
+div.content {width:1000px;background:url(../images/page_bg_content_generic.png) top left no-repeat;position:relative;}
+#content_home {background:url(../images/page_bg_content_home.png) top left no-repeat;}
+#content_apps {background:url(../images/page_bg_content_apps.png) top left no-repeat;}
+#content_games {background:url(../images/page_bg_content_games.png) top left no-repeat;}
+#content_music {background:url(../images/page_bg_content_music.png) top left no-repeat;}
+#content_promo {background:url(../images/page_bg_content_promo.png) top left no-repeat;}
+#content_search {background:url(../images/page_bg_content_search.png) top left no-repeat;}
+#content_videos {background:url(../images/page_bg_content_videos.png) top left no-repeat;}
+#content_wp {background:url(../images/page_bg_content_wp.png) top left no-repeat;}
+
+/***** RANK NUMBERS *****/
+div.content li .rank1,
+div.content p#gamerank1 {width:12px;height:25px;background:url(../images/numbers/1.gif) top left no-repeat;text-indent:-9999px;}
+div.content li:hover .rank1,
+div.content p#gamerank1:hover,
+div.content p#gamerank1.hl {width:12px;height:25px;background:url(../images/numbers/1_ro.gif) top left no-repeat;}
+
+div.content li .rank2,
+div.content p#gamerank2 {width:12px;height:25px;background:url(../images/numbers/2.gif) top left no-repeat;text-indent:-9999px;}
+div.content li:hover .rank2,
+div.content p#gamerank2:hover,
+div.content p#gamerank2.hl {width:12px;height:25px;background:url(../images/numbers/2_ro.gif) top left no-repeat;}
+
+div.content li .rank3,
+div.content p#gamerank3 {width:12px;height:25px;background:url(../images/numbers/3.gif) top left no-repeat;text-indent:-9999px;}
+div.content li:hover .rank3,
+div.content p#gamerank3:hover,
+div.content p#gamerank3.hl {width:12px;height:25px;background:url(../images/numbers/3_ro.gif) top left no-repeat;}
+
+div.content li .rank4,
+div.content p#gamerank4 {width:12px;height:25px;background:url(../images/numbers/4.gif) top left no-repeat;text-indent:-9999px;}
+div.content li:hover .rank4,
+div.content p#gamerank4:hover,
+div.content p#gamerank4.hl {width:12px;height:25px;background:url(../images/numbers/4_ro.gif) top left no-repeat;}
+
+div.content li .rank5,
+div.content p#gamerank5 {width:12px;height:25px;background:url(../images/numbers/5.gif) top left no-repeat;text-indent:-9999px;}
+div.content li:hover .rank5,
+div.content p#gamerank5:hover,
+div.content p#gamerank5.hl {width:12px;height:25px;background:url(../images/numbers/5_ro.gif) top left no-repeat;}
+
+div.content li .rank6,
+div.content p#gamerank6 {width:12px;height:25px;background:url(../images/numbers/6.gif) top left no-repeat;text-indent:-9999px;}
+div.content li:hover .rank6,
+div.content p#gamerank6:hover,
+div.content p#gamerank6.hl {width:12px;height:25px;background:url(../images/numbers/6_ro.gif) top left no-repeat;}
+
+div.content li .rank7,
+div.content p#gamerank7 {width:12px;height:25px;background:url(../images/numbers/7.gif) top left no-repeat;text-indent:-9999px;}
+div.content li:hover .rank7,
+div.content p#gamerank7:hover,
+div.content p#gamerank7.hl {width:12px;height:25px;background:url(../images/numbers/7_ro.gif) top left no-repeat;}
+
+div.content li .rank8,
+div.content p#gamerank8 {width:12px;height:25px;background:url(../images/numbers/8.gif) top left no-repeat;text-indent:-9999px;}
+div.content li:hover .rank8,
+div.content p#gamerank8:hover,
+div.content p#gamerank8.hl {width:12px;height:25px;background:url(../images/numbers/8_ro.gif) top left no-repeat;}
+
+div.content li .rank9,
+div.content p#gamerank9 {width:12px;height:25px;background:url(../images/numbers/9.gif) top left no-repeat;text-indent:-9999px;}
+div.content li:hover .rank9,
+div.content p#gamerank9:hover,
+div.content p#gamerank9.hl {width:12px;height:25px;background:url(../images/numbers/9_ro.gif) top left no-repeat;}
+
+div.content li .rank0,
+div.content p#gamerank0 {width:12px;height:25px;background:url(../images/numbers/0.gif) top left no-repeat;text-indent:-9999px;}
+div.content li:hover .rank0,
+div.content p#gamerank0:hover,
+div.content p#gamerank0.hl {width:12px;height:25px;background:url(../images/numbers/0_ro.gif) top left no-repeat;}
+
+div.content div.list ul li:hover {z-index:100;}
+
+/***** ACTION BUTTONS *****/
+p.actions {width:75px;height:24px;text-indent:-9999px;}
+p.actions a {width:25px;height:24px;display:block;position:absolute;}
+p.actions a.listen {background:url(../images/btn_preview_music.gif) top left no-repeat;left:0px;display:}
+p.actions a.preview {background:url(../images/btn_preview.gif) top left no-repeat;left:0px;}
+p.actions a.rate {background:url(../images/btn_rate.gif) top left no-repeat;left:25px;}
+p.actions a.buy {background:url(../images/btn_buy.gif) top left no-repeat;left:50px;}
+
+p.actions img {background:url(../images/btn_preview_music.gif) top left no-repeat;left:0px;width:25px;height:24px;display:block;position:absolute;}
+p.actions span {position:absolute;top:-30px;left:0px;}
+p.actions object, p.actions embed {width:80px;}
+
+
+/***** *****/
+p.content_type_music,
+p.content_type_games,
+p.content_type_apps,
+p.content_type_wp,
+p.content_type_videos {width:68px;height:18px;text-indent:-9999px;}
+p.content_type_music {background:url(../images/t_music.png) top left no-repeat;}
+p.content_type_games {background:url(../images/t_games.png) top left no-repeat;}
+p.content_type_apps {background:url(../images/t_apps.png) top left no-repeat;}
+p.content_type_wp {background:url(../images/t_wp.png) top left no-repeat;}
+p.content_type_videos {background:url(../images/t_videos.png) top left no-repeat;}
+
+
+/***** TABS *****/
+div.tabs {width:412px;height:22px;position:absolute;top:318px;left:155px;z-index:2;}
+div.tabs ul {margin:0;padding:0;list-style:none;}
+div.tabs ul li {margin:7px 0 0 6px;padding:0;text-indent:-9999px;float:left;cursor:pointer;display:block;}
+div.tabs ul li.hl {cursor:default;}
+div.tabs ul li#games_tab{background:url(../images/tab_games.gif) top left no-repeat;width:60px;height:22px;}
+div.tabs ul li#games_tab.hl{background:url(../images/tab_games_hl.gif) top left no-repeat;width:60px;height:22px;}
+div.tabs ul li#apps_tab{background:url(../images/tab_apps.gif) top left no-repeat;width:92px;height:22px;}
+div.tabs ul li#apps_tab.hl{background:url(../images/tab_apps_hl.gif) top left no-repeat;width:92px;height:22px;}
+div.tabs ul li#wp_tab{background:url(../images/tab_wp.gif) top left no-repeat;width:126px;height:22px;}
+div.tabs ul li#wp_tab.hl{background:url(../images/tab_wp_hl.gif) top left no-repeat;width:126px;height:22px;}
+div.tabs ul li#real_tones_tab{background:url(../images/tab_real_tones.gif) top left no-repeat;width:92px;height:22px;}
+div.tabs ul li#real_tones_tab.hl{background:url(../images/tab_real_tones_hl.gif) top left no-repeat;width:92px;height:22px;}
+div.tabs ul li#poly_tones_tab{background:url(../images/tab_poly_tones.gif) top left no-repeat;width:105px;height:22px;}
+div.tabs ul li#poly_tones_tab.hl{background:url(../images/tab_poly_tones_hl.gif) top left no-repeat;width:105px;height:22px;}
+div.tabs ul li#sound_tones_tab{background:url(../images/tab_sound_tones.gif) top left no-repeat;width:74px;height:22px;}
+div.tabs ul li#sound_tones_tab.hl{background:url(../images/tab_sound_tones_hl.gif) top left no-repeat;width:74px;height:22px;}
+div.tabs ul li#songs_tab{background:url(../images/tab_songs.gif) top left no-repeat;width:76px;height:22px;}
+div.tabs ul li#songs_tab.hl{background:url(../images/tab_songs_hl.gif) top left no-repeat;width:76px;height:22px;}
+div.tabs ul li#videos_tab{background:url(../images/tab_videos.gif) top left no-repeat;width:58px;height:22px;}
+div.tabs ul li#videos_tab.hl{background:url(../images/tab_videos_hl.gif) top left no-repeat;width:58px;height:22px;}
+
+div.tabs ul li#content_music_tab{background:url(../images/tab_music.gif) top left no-repeat;width:54px;height:22px;}
+div.tabs ul li#content_music_tab.hl{background:url(../images/tab_music_hl.gif) top left no-repeat;width:54px;height:22px;}
+div.tabs ul li#content_games_tab{background:url(../images/tab_games.gif) top left no-repeat;width:60px;height:22px;}
+div.tabs ul li#content_games_tab.hl{background:url(../images/tab_games_hl.gif) top left no-repeat;width:60px;height:22px;}
+div.tabs ul li#content_apps_tab{background:url(../images/tab_apps.gif) top left no-repeat;width:92px;height:22px;}
+div.tabs ul li#content_apps_tab.hl{background:url(../images/tab_apps_hl.gif) top left no-repeat;width:92px;height:22px;}
+div.tabs ul li#content_wp_tab{background:url(../images/tab_wp2.gif) top left no-repeat;width:70px;height:22px;}
+div.tabs ul li#content_wp_tab.hl{background:url(../images/tab_wp2_hl.gif) top left no-repeat;width:70px;height:22px;}
+div.tabs ul li#content_videos_tab{background:url(../images/tab_videos.gif) top left no-repeat;width:58px;height:22px;}
+div.tabs ul li#content_videos_tab.hl{background:url(../images/tab_videos_hl.gif) top left no-repeat;width:58px;height:22px;}
+div.tabs ul li#content_symbian_tab{background:url(../images/tab_symbian.gif) top left no-repeat;width:64px;height:22px;}
+div.tabs ul li#content_symbian_tab.hl{background:url(../images/tab_symbian_hl.gif) top left no-repeat;width:64px;height:22px;}
+
+/**** PAGINATION ****/
+div.pagination {width:100%;position:absolute;bottom:0;text-align:center;font-size:11px;color:#666;}
+div.pagination span.hl {color:#e05206;}
+div.pagination a {color:#666;text-decoration:none;}
+div.pagination a:hover {color:#333;text-decoration:underline;}
+
+/***** CATEGORIES *****/
+#categories {width:114px;position:absolute;top:318px;left:33px;z-index:2;}
+#categories h2 {background:url(../images/t_categories.png) top left no-repeat;width:72px;height:28px;position:absolute;margin:0;padding:0;top:5px;left:8px;text-indent:-9999px;}
+#categories ul {list-style:none;margin:0;padding:0;position:absolute;top:35px;left:11px;overflow:hidden;}
+#categories ul li {/*color:#e05206;display:block;background:url(../images/bg_categories.gif) top right no-repeat;width:78px;height:14px;margin:0 0 4px 0;padding:0 10px 0 3px;font-size:10px;cursor:pointer;*/}
+#categories ul li.long {background:url(../images/bg_categories2.gif) top right no-repeat;width:78px;height:27px;margin:0 0 4px 0;padding:0 10px 0 3px;font-size:10px;cursor:pointer;}
+#categories ul li a{color:#e05206;display:block;background:url(../images/bg_categories.gif) top right no-repeat;width:78px;height:14px;margin:0 0 4px 0;padding:0 10px 0 3px;font-size:10px;text-decoration:none;}
+#categories p.scrollcontrol {text-align:center;position:absolute;bottom:0;left:25px;}
+
+/***** SURVEY *****/
+#survey {position:absolute;bottom:40px;right:35px;width:303px;height:266px;z-index:2;}
+#survey p {position:absolute;top:77px;left:60px;font-weight:bold;font-size:11px;color:#666;}
+#survey fieldset {position:relative;top:97px;left:70px;font-size:11px;color:#666;border:0;margin:0;padding:0;}
+#survey a.vote {display:block;background:url(../images/btn_vote.gif) top left no-repeat;width:75px;height:23px;position:relative;top:107px;left:80px;/*bottom:62px;right:145px;*/text-indent:-9999px;}
+#survey_bg {position:absolute;bottom:40px;right:35px;width:303px;height:266px;background:url(../images/bg_survey.png) top left no-repeat;z-index:2;}
+
+/***** HOMEPAGE *****/
+#content_home {height:931px;}
+#content_home #home_left_bg {background:url(../images/bg_home_left.png) top left no-repeat;width:535px;height:853px;position:absolute;top:47px;left:30px;z-index:1;}
+#content_home #home_right_bg {background:url(../images/bg_home_right.png) top left no-repeat;width:285px;height:841px;position:absolute;top:9px;right:30px;z-index:1;}
+
+#content_home #top_music_bg {background:url(../images/bg_home_top_music.png) top left no-repeat;width:553px;height:243px;position:absolute;top:-3px;left:46px;z-index:1;}
+#content_home #top_games_bg {background:url(../images/bg_home_top_games.png) top left no-repeat;width:530px;height:188px;position:absolute;top:246px;left:45px;z-index:1;}
+#content_home #top_wp_bg {background:url(../images/bg_home_top_wp.png) top left no-repeat;width:558px;height:217px;position:absolute;top:450px;left:31px;z-index:1;}
+#content_home #top_apps_bg {background:url(../images/bg_home_top_apps.png) top left no-repeat;width:281px;height:191px;position:absolute;top:684px;left:45px;z-index:1;}
+#content_home #survey_bg {background:url(../images/bg_survey.png) top left no-repeat;width:303px;height:266px;position:absolute;top:686px;right:10px;z-index:1;}
+
+#contentBlock {position:absolute;z-index:2;}
+
+#content_home #top_music {width:567px;height:215px;position:absolute;top:6px;left:45px;z-index:2;}
+#content_home #top_music  div.category {position:absolute;top:114px;width:129px;z-index:10;}
+#content_home #top_music  div.category p {color:#8d7378;font-size:9px;text-align:right;}
+#content_home #top_music  div.category div.category_select {background:#b6b6b6 url(../images/bg_select_down.gif) top right no-repeat;width:90px;cursor:pointer;position:absolute;right:0;margin-top:3px;}
+#content_home #top_music  div.category div.category_select:hover {background:#b6b6b6 url(../images/bg_select_up.gif) top right no-repeat;}
+#content_home #top_music  div.category div.category_select div.cattitle {height:20px;line-height:20px;color:#fff;text-transform:uppercase;font-size:11px;vertical-align:middle;padding:0 20px 0 7px;}
+#content_home #top_music  div.category div.category_select ul {display:none;margin:0;padding:0;}
+#content_home #top_music  div.category div.category_select:hover ul {display:block;}
+#content_home #top_music  div.category div.category_select ul li {list-style:none;color:#fff;cursor:pointer;text-align:left;margin:0;padding:3px 7px;border-bottom:1px solid #eee;}
+#content_home #top_music  div.category div.category_select ul li:hover {background:#eee;color:#333;}
+#content_home #top_music div.list {width:327px;position:absolute;top:45px;left:151px;}
+#content_home #top_music div.list ul {list-style:none;margin:0;padding:0;}
+#content_home #top_music div.list ul li {width:327px;height:30px;margin:-3px 0 0 0;padding:0;position:relative;background:url(../images/bg_top_music.gif) top left no-repeat;}
+html>body #content_home #top_music div.list ul li {margin:0}
+#content_home #top_music div.list ul li.first {margin:0;}
+#content_home #top_music div.list ul li.last {background:none;}
+#content_home #top_music div.list ul li p{margin:0;padding:0;position:absolute;}
+#content_home #top_music div.list ul li p.bg {width:327px;height:33px;background:url(../images/bg_top_music_ro.png) top left no-repeat;display:none;margin:-1px 0 0 -4px;}
+#content_home #top_music div.list ul li:hover p.bg {display:block;}
+#content_home #top_music div.list ul li p.rank1, 
+#content_home #top_music div.list ul li p.rank2, 
+#content_home #top_music div.list ul li p.rank3, 
+#content_home #top_music div.list ul li p.rank4, 
+#content_home #top_music div.list ul li p.rank5 {top:3px;left:5px;}
+#content_home #top_music div.list ul li p.title {top:5px;left:24px;color:#e05206;font-size:11px;}
+#content_home #top_music div.list ul li:hover p.title {font-weight:bold;}
+#content_home #top_music div.list ul li p.price {top:18px;left:24px;color:#5aacd6;font-size:9px;}
+#content_home #top_music div.list ul li:hover p.price {display:none;}
+#content_home #top_music div.list ul li p.type {display:none;top:5px;left:151px;color:#e05206;font-size:10px;line-height:12px;}
+#content_home #top_music div.list ul li p.type b {display:block;font-size:11px;}
+#content_home #top_music div.list ul li:hover p.type {display:block;}
+#content_home #top_music div.list ul li p.rating {display:none;top:17px;left:32px;}
+#content_home #top_music div.list ul li:hover p.rating {display:block;}
+#content_home #top_music div.list ul li p.actions {display:none;text-indent:-9999px;top:4px;right:5px;}
+#content_home #top_music div.list ul li:hover p.actions {display:block;}
+#content_home #top_music a.more {display:block;background:url(../images/btn_more.gif) top left no-repeat;width:54px;height:14px;position:absolute;bottom:0;left:308px;text-indent:-9999px;}
+
+#content_home #top_games {width:530px;height:188px;position:absolute;top:246px;left:45px;z-index:2;}
+#content_home #top_games  div.category {position:absolute;bottom:39px;right:70px;width:300px;z-index:10;}
+#content_home #top_games  div.category p {color:#8d7378;font-size:9px;text-align:right;position:absolute;width:210px;height:20px;top:5px;right:95px;}
+#content_home #top_games  div.category div.category_select {background:#b6b6b6 url(../images/bg_select_down.gif) top right no-repeat;width:90px;cursor:pointer;position:absolute;right:0;margin-top:3px;}
+#content_home #top_games  div.category div.category_select:hover {background:#b6b6b6 url(../images/bg_select_up.gif) top right no-repeat;}
+#content_home #top_games  div.category div.category_select div.cattitle {height:20px;line-height:20px;color:#fff;text-transform:uppercase;font-size:11px;vertical-align:middle;padding:0 20px 0 7px;}
+#content_home #top_games  div.category div.category_select ul {display:none;margin:0;padding:0;}
+#content_home #top_games  div.category div.category_select:hover ul {display:block;}
+#content_home #top_games  div.category div.category_select ul li {list-style:none;color:#fff;cursor:pointer;text-align:left;margin:0;padding:3px 7px;border-bottom:1px solid #eee;}
+#content_home #top_games  div.category div.category_select ul li:hover {background:#eee;color:#333;}
+#content_home #top_games div.rank  {width:180px;height:188px;position:absolute;margin:0;padding:0;list-style:none;}
+#content_home #top_games div.rank p{position:absolute;cursor:pointer;}
+#content_home #top_games div.rank p#gamerank1 {top:32px;left:130px;}
+#content_home #top_games div.rank p#gamerank2 {top:80px;left:150px;}
+#content_home #top_games div.rank p#gamerank3 {top:128px;left:130px;}
+#content_home #top_games div.rank p#gamerank4 {top:148px;left:81px;}
+#content_home #top_games div.rank p#gamerank5 {top:128px;left:34px;}
+#content_home #top_games div.rank p#gamerank6 {top:80px;left:13px;}
+#content_home #top_games div.rank p#gamerank7 {top:32px;left:34px;}
+#content_home #top_games div.rank p#gamerank8 {top:15px;left:81px;}
+#content_home #top_games div.list{width:290px;height:128px;position:absolute;top:0;left:180px;}
+#content_home #top_games div.list ul {list-style:none;margin:0;padding:0;}
+#content_home #top_games div.list ul li {width:290px;height:128px;margin:0;padding:0;position:absolute;display:none;}
+#content_home #top_games div.list ul li.hl{display:block;}
+#content_home #top_games div.list ul li p{margin:0;padding:0;position:absolute;}
+#content_home #top_games div.list ul li p.th {top:22px;left:20px;width:98px;height:110px;}
+#content_home #top_games div.list p.thmask {position:absolute;margin:0;padding:0;top:22px;left:20px;width:98px;height:110px;background:url(../images/bg_top_games_mask.png) top left no-repeat;z-index:10 !important;}
+#content_home #top_games div.list ul li p.th img {width:98px;height:110px;z-index:2;}
+#content_home #top_games div.list ul li p.title {top:33px;left:130px;color:#e05206;font-size:11px;}
+#content_home #top_games div.list ul li p.price {top:48px;left:130px;color:#5aacd6;font-size:9px;}
+#content_home #top_games div.list ul li p.type {top:83px;left:130px;color:#e05206;font-size:10px;line-height:12px;}
+#content_home #top_games div.list ul li p.type b {display:block;font-size:11px;}
+#content_home #top_games div.list ul li p.rating {top:60px;left:130px;}
+#content_home #top_games div.list ul li p.actions {text-indent:-9999px;top:45px;right:0;z-index:5;}
+#content_home #top_games a.more {display:block;background:url(../images/btn_more.gif) top left no-repeat;width:54px;height:14px;position:absolute;bottom:56px;left:310px;text-indent:-9999px;}
+
+#content_home #top_wp {width:558px;height:217px;position:absolute;top:450px;left:31px;z-index:2;}
+#content_home #top_wp div.th{width:100px;height:128px;position:absolute;top:70px;left:173px;}
+#content_home #top_wp div.th ul {position:absolute;list-style:none;margin:0;padding:0;}
+#content_home #top_wp div.th ul li {width:47px;height:56px;margin:0;padding:0;position:absolute;}
+#content_home #top_wp div.th ul li#topwpitem1 {top:0;left:0;}
+#content_home #top_wp div.th ul li#topwpitem2 {top:0;left:57px;}
+#content_home #top_wp div.th ul li#topwpitem3 {top:66px;left:0;}
+#content_home #top_wp div.th ul li#topwpitem4 {top:66px;left:57px;}
+#content_home #top_wp div.th ul li p{margin:0;padding:0;position:absolute;display:none;}
+#content_home #top_wp div.th ul li p.th {display:block;cursor:pointer;}
+#content_home #top_wp div.th ul li p.th img {border:1px solid #a87d7d;width:47px;height:56px;}
+#content_home #top_wp div.th ul li p.th img:hover {border:1px solid #e05206;}
+#content_home #top_wp div.list{width:240px;height:128px;position:absolute;top:36px;left:300px;}
+#content_home #top_wp div.list ul {list-style:none;margin:0;padding:0;}
+#content_home #top_wp div.list ul li {width:240px;height:128px;margin:0;padding:0;position:absolute;}
+#content_home #top_wp div.list ul li p{margin:0;padding:0;position:absolute;}
+#content_home #top_wp div.list ul li p.th {top:22px;left:16px;}
+#content_home #top_wp div.list ul li p.th img {border:1px solid #a87d7d;width:104px;height:123px;}
+#content_home #top_wp div.list ul li p.title {top:23px;left:130px;color:#e05206;font-size:11px;line-height:11px;}
+#content_home #top_wp div.list ul li p.price {top:48px;left:130px;color:#5aacd6;font-size:9px;}
+#content_home #top_wp div.list ul li p.type {top:83px;left:130px;color:#e05206;font-size:10px;line-height:12px;}
+#content_home #top_wp div.list ul li p.type b {display:block;font-size:11px;}
+#content_home #top_wp div.list ul li p.rating {top:60px;left:130px;}
+#content_home #top_wp div.list ul li p.actions {text-indent:-9999px;top:110px;left:130px;z-index:5;}
+#content_home #top_wp a.more {display:block;background:url(../images/btn_more.gif) top left no-repeat;width:54px;height:14px;position:absolute;bottom:0;left:173px;text-indent:-9999px;}
+
+#content_home #top_apps {width:289px;height:206px;position:absolute;top:686px;left:42px;z-index:2;}
+#content_home #top_apps div.list {width:289px;position:absolute;top:30px;left:2px;}
+#content_home #top_apps div.list ul {list-style:none;margin:0;padding:0;}
+#content_home #top_apps div.list ul li {width:289px;height:30px;margin:-3px 0 0 0;padding:0;position:relative;background:url(../images/bg_top_apps.gif) bottom left no-repeat;}
+html>body #content_home #top_apps div.list ul li {margin:0}
+#content_home #top_apps div.list ul li.first {margin:0;}
+#content_home #top_apps div.list ul li.last {background:none;}
+#content_home #top_apps div.list ul li p{margin:0;padding:0;position:absolute;}
+#content_home #top_apps div.list ul li p.bg {width:289px;height:33px;margin:-1px 0 0 -4px;background:url(../images/bg_top_apps_ro.png) top left no-repeat;display:none;}
+#content_home #top_apps div.list ul li:hover p.bg {display:block;}
+#content_home #top_apps div.list ul li p.rank1, 
+#content_home #top_apps div.list ul li p.rank2, 
+#content_home #top_apps div.list ul li p.rank3, 
+#content_home #top_apps div.list ul li p.rank4, 
+#content_home #top_apps div.list ul li p.rank5 {top:3px;left:14px;}
+#content_home #top_apps div.list ul li p.th {top:1px;left:32px;width:27px;height:27px;}
+#content_home #top_apps div.list ul li p.th img {width:27px;height:27px;}
+#content_home #top_apps div.list ul li p.title {top:3px;left:68px;color:#e05206;font-size:11px;}
+#content_home #top_apps div.list ul li:hover p.title {font-weight:bold;}
+#content_home #top_apps div.list ul li p.price {top:16px;left:68px;color:#5aacd6;font-size:9px;}
+#content_home #top_apps div.list ul li:hover p.price {display:none;}
+#content_home #top_apps div.list ul li p.rating {display:none;top:14px;left:76px;}
+#content_home #top_apps div.list ul li:hover p.rating {display:block;}
+#content_home #top_apps div.list ul li p.actions {display:none;text-indent:-9999px;top:4px;right:10px;}
+#content_home #top_apps div.list ul li:hover p.actions {display:block;}
+#content_home #top_apps a.more {display:block;background:url(../images/btn_more.gif) top left no-repeat;width:54px;height:14px;position:absolute;bottom:0;left:228px;text-indent:-9999px;}
+
+#content_home #whatsnew {width:289px;height:275px;position:absolute;top:10px;right:28px;z-index:2;}
+#content_home #whatsnew h2 {background:url(../images/t_new.png) top left no-repeat;width:87px;height:26px;position:absolute;margin:0;padding:0;top:12px;right:12px;text-indent:-9999px;}
+#content_home #whatsnew div.list {width:289px;position:absolute;top:38px;left:0;}
+#content_home #whatsnew div.list ul {list-style:none;margin:0;padding:0;}
+#content_home #whatsnew div.list ul li {width:289px;height:44px;margin:-3px 0 0 0;padding:0;position:relative;background:url(../images/bg_new.gif) bottom left no-repeat;}
+html>body #content_home #whatsnew div.list ul li {margin:0;}
+#content_home #whatsnew div.list ul li.first {margin:0;}
+#content_home #whatsnew div.list ul li.last {background:none;}
+#content_home #whatsnew div.list ul li p{margin:0;padding:0;position:absolute;}
+#content_home #whatsnew div.list ul li p.bg {width:289px;height:45px;background:url(../images/bg_whatsnew_ro.png) top left no-repeat;display:none;margin:-2px 0 0 0;}
+#content_home #whatsnew div.list ul li:hover p.bg {display:block;}
+#content_home #whatsnew div.list ul li p.rank1, 
+#content_home #whatsnew div.list ul li p.rank2, 
+#content_home #whatsnew div.list ul li p.rank3, 
+#content_home #whatsnew div.list ul li p.rank4, 
+#content_home #whatsnew div.list ul li p.rank5 {top:8px;left:15px;}
+#content_home #whatsnew div.list ul li p.th {top:3px;left:32px;width:35px;height:35px;}
+#content_home #whatsnew div.list ul li p.th img {width:35px;height:35px;}
+#content_home #whatsnew div.list ul li p.content_type_music,
+#content_home #whatsnew div.list ul li p.content_type_games,
+#content_home #whatsnew div.list ul li p.content_type_apps,
+#content_home #whatsnew div.list ul li p.content_type_wp,
+#content_home #whatsnew div.list ul li p.content_type_videos {top:0;left:68px;}
+#content_home #whatsnew div.list ul li p.title {top:15px;left:74px;color:#666;font-size:11px;}
+#content_home #whatsnew div.list ul li:hover p.title {color:#e05206;font-weight:bold;}
+#content_home #whatsnew div.list ul li p.price {top:28px;left:74px;color:#5aacd6;font-size:9px;}
+#content_home #whatsnew div.list ul li:hover p.price {display:none;}
+#content_home #whatsnew div.list ul li p.type {display:none;top:5px;left:211px;color:#e05206;font-size:10px;line-height:12px;}
+#content_home #whatsnew div.list ul li p.type b {display:block;font-size:11px;}
+#content_home #whatsnew div.list ul li:hover p.type {display:block;}
+#content_home #whatsnew div.list ul li p.rating {display:none;top:27px;left:82px;}
+#content_home #whatsnew div.list ul li:hover p.rating {display:block;}
+#content_home #whatsnew div.list ul li p.actions {display:none;text-indent:-9999px;top:8px;right:5px;}
+#content_home #whatsnew div.list ul li:hover p.actions {display:block;}
+#content_home #whatsnew a.more {display:block;background:url(../images/btn_more.gif) top left no-repeat;width:54px;height:14px;position:absolute;bottom:0;right:10px;text-indent:-9999px;}
+
+#content_home #top_videos {width:289px;height:320px;position:absolute;top:300px;right:28px;z-index:2;}
+#content_home #top_videos h2 {background:url(../images/t_top_videos.png) top left no-repeat;width:85px;height:26px;position:absolute;margin:0;padding:0;top:12px;left:12px;text-indent:-9999px;}
+#content_home #top_videos div.list {width:289px;position:absolute;top:36px;left:0;}
+#content_home #top_videos div.list ul {list-style:none;margin:0;padding:0;}
+#content_home #top_videos div.list ul li {width:289px;height:54px;margin:-3px 0 0 0;padding:0;position:relative;background:url(../images/bg_new.gif) bottom left no-repeat;}
+html>body #content_home #top_videos div.list ul li {margin:0;}
+#content_home #top_videos div.list ul li.first {margin:0;}
+#content_home #top_videos div.list ul li.last {background:none;}
+#content_home #top_videos div.list ul li p{margin:0;padding:0;position:absolute;}
+#content_home #top_videos div.list ul li p.bg {margin-top:-9px;width:289px;height:98px;background:url(../images/bg_top_videos_ro.png) top center no-repeat;display:none;}
+#content_home #top_videos div.list ul li:hover p.bg {display:block;}
+#content_home #top_videos div.list ul li p.rank1, 
+#content_home #top_videos div.list ul li p.rank2, 
+#content_home #top_videos div.list ul li p.rank3, 
+#content_home #top_videos div.list ul li p.rank4, 
+#content_home #top_videos div.list ul li p.rank5 {top:17px;left:17px;}
+#content_home #top_videos div.list ul li:hover p.rank1, 
+#content_home #top_videos div.list ul li:hover p.rank2, 
+#content_home #top_videos div.list ul li:hover p.rank3, 
+#content_home #top_videos div.list ul li:hover p.rank4, 
+#content_home #top_videos div.list ul li:hover p.rank5 {display:none;}
+#content_home #top_videos div.list ul li p.th {top:1px;left:35px;width:42px;height:28px;}
+#content_home #top_videos div.list ul li p.th span {display:block;width:80px;height:48px;position:absolute;overflow:hidden;}
+#content_home #top_videos div.list ul li p.th img {width:80px;height:48px;position:absolute;border:1px solid #c3c2c3;}
+#content_home #top_videos div.list ul li p.th embed, 
+#content_home #top_videos div.list ul li p.th object {display:none;}
+#content_home #top_videos div.list ul li p.th a {width:0px;height:0px;display:none;text-indent:-9999px;}
+#content_home #top_videos div.list ul li:hover p.th span {display:block;width:120px;height:72px;border:1px solid #c3c2c3;}
+#content_home #top_videos div.list ul li:hover p.th img {display:none;}
+#content_home #top_videos div.list ul li:hover p.th embed, 
+#content_home #top_videos div.list ul li:hover p.th object {width:120px !important;height:92px !important;display:block;}
+/*#content_home #top_videos div.list ul li:hover p.th a {display:block;}*/
+#content_home #top_videos div.list ul li p.title {top:15px;left:125px;color:#666;font-size:11px;}
+#content_home #top_videos div.list ul li:hover p.title {color:#e05206;/*font-weight:bold;*/left:165px;}
+#content_home #top_videos div.list ul li p.price {top:28px;left:125px;color:#5aacd6;font-size:9px;}
+#content_home #top_videos div.list ul li:hover p.price {display:none;}
+#content_home #top_videos div.list ul li p.type {display:none;top:5px;left:211px;color:#e05206;font-size:10px;line-height:12px;}
+#content_home #top_videos div.list ul li p.type b {display:block;font-size:11px;}
+#content_home #top_videos div.list ul li:hover p.type {display:block;}
+#content_home #top_videos div.list ul li p.rating {display:none;top:27px;left:165px;}
+#content_home #top_videos div.list ul li:hover p.rating {display:block;}
+#content_home #top_videos div.list ul li p.actions {display:none;text-indent:-9999px;top:44px;left:165px;}
+#content_home #top_videos div.list ul li:hover p.actions {display:block;}
+#content_home #top_videos a.more {display:block;background:url(../images/btn_more.gif) top left no-repeat;width:54px;height:14px;position:absolute;bottom:0;right:10px;text-indent:-9999px;}
+
+#content_home #promo {width:248px;height:229px;position:absolute;top:670px;left:333px;z-index:2;}
+#content_home #promo2 {width:267px;height:163px;position:absolute;top:670px;right:40px;z-index:2;}
+
+/***** MUSIC HOMEPAGE *****/
+#content_music {height:630px;}
+#content_music #home_left_bg {background:url(../images/bg_contenthome2_left.png) top left no-repeat;width:535px;height:547px;position:absolute;top:50px;left:33px;z-index:1;}
+#content_music #home_right_bg {background:url(../images/bg_contenthome2_right.png) top left no-repeat;width:285px;height:545px;position:absolute;top:50px;right:33px;z-index:1;}
+
+#content_music #top_bg {background:url(../images/bg_musichome_left.png) top left no-repeat;width:527px;height:289px;position:absolute;top:-7px;left:43px;z-index:1;}
+#content_music #top {width:567px;height:215px;position:absolute;top:6px;left:45px;z-index:2;}
+#content_music #top div.list {width:327px;position:absolute;top:100px;left:110px;}
+#content_music #top div.list ul {list-style:none;margin:0;padding:0;}
+#content_music #top div.list ul li {width:232px;height:30px;margin:-3px 0 0 0;padding:0;position:relative;background:url(../images/bg_top_music2.gif) bottom left no-repeat;}
+html>body #content_music #top div.list ul li {margin:0}
+#content_music #top div.list ul li.first {margin:0;}
+#content_music #top div.list ul li.last {background:none;}
+#content_music #top div.list ul li p{margin:0;padding:0;position:absolute;}
+#content_music #top div.list ul li p.bg {width:223px;height:33px;background:url(../images/bg_top_music2_ro.png) top left no-repeat;display:none;margin:-2px 0 0 20px;}
+#content_music #top div.list ul li:hover p.bg {display:block;}
+#content_music #top div.list ul li p.rank1, 
+#content_music #top div.list ul li p.rank2, 
+#content_music #top div.list ul li p.rank3, 
+#content_music #top div.list ul li p.rank4, 
+#content_music #top div.list ul li p.rank5 {top:1px;left:25px;}
+#content_music #top div.list ul li p.title {top:0px;left:45px;color:#e05206;font-size:11px;}
+#content_music #top div.list ul li:hover p.title {font-weight:bold;}
+#content_music #top div.list ul li p.price {top:15px;left:45px;color:#5aacd6;font-size:9px;}
+#content_music #top div.list ul li:hover p.price {display:none;}
+#content_music #top div.list ul li p.type {top:1px;left:170px;color:#e05206;font-size:10px;line-height:12px;}
+#content_music #top div.list ul li p.type b {display:block;font-size:11px;}
+#content_music #top div.list ul li:hover p.type {display:none;}
+#content_music #top div.list ul li p.rating {display:none;top:14px;left:50px;}
+#content_music #top div.list ul li:hover p.rating {display:block;}
+#content_music #top div.list ul li p.actions {display:none;text-indent:-9999px;top:2px;right:2px;}
+#content_music #top div.list ul li:hover p.actions {display:block;}
+
+#content_music div.tabs {top:293px;}
+#content_music #categories {top:298px;}
+#content_music #survey {bottom:23px;}
+#content_music #survey_bg {bottom:23px;}
+#content_music #categories {height:290px;}
+#content_music #categories ul {height:230px;}
+
+#content_music #catlist {width:412px;height:270px;position:absolute;top:310px;left:155px;z-index:2;}
+#content_music #catlist div.list {width:327px;position:absolute;top:11px;left:0px;}
+#content_music #catlist div.list ul {list-style:none;margin:0;padding:0;}
+#content_music #catlist div.list ul li {width:413px;height:30px;margin:-3px 0 0 0;padding:0;position:relative;background:url(../images/bg_cat_list.gif) bottom left no-repeat;}
+html>body #content_music #catlist div.list ul li {margin:0}
+#content_music #catlist div.list ul li.first {margin:0;}
+/*#content_music #catlist div.list ul li.last {background:none;}*/
+#content_music #catlist div.list ul li p{margin:0;padding:0;/*position:absolute;*/float:left;}
+#content_music #catlist div.list ul li p.title {color:#e05206;font-size:11px;margin:6px 7px 0 11px;}
+#content_music #catlist div.list ul li p.price {color:#5aacd6;font-size:9px;margin:8px 10px 0 0;}
+#content_music #catlist div.list ul li p.rating {margin:6px 0 0 0;}
+#content_music #catlist div.list ul li p.actions {text-indent:-9999px;top:1px;right:15px;position:absolute;}
+
+#content_music #whatsnew {width:289px;height:275px;position:absolute;top:60px;right:31px;z-index:2;}
+#content_music #whatsnew h2 {background:url(../images/t_new_music.png) top left no-repeat;width:198px;height:37px;position:absolute;margin:0;padding:0;top:0px;left:12px;text-indent:-9999px;}
+#content_music #whatsnew div.list {width:289px;position:absolute;top:38px;left:0;}
+#content_music #whatsnew div.list ul {list-style:none;margin:0;padding:0;}
+#content_music #whatsnew div.list ul li {width:289px;height:30px;margin:-3px 0 0 0;padding:0;position:relative;background:url(../images/bg_new_music.gif) bottom left no-repeat;}
+html>body #content_music #whatsnew div.list ul li {margin:0;}
+#content_music #whatsnew div.list ul li.first {margin:0;}
+/*#content_music #whatsnew div.list ul li.last {background:none;}*/
+#content_music #whatsnew div.list ul li p{margin:0;padding:0;position:absolute;}
+#content_music #whatsnew div.list ul li p.bg {width:275px;height:33px;background:url(../images/bg_new_music_ro.png) top left no-repeat;display:none;margin:-2px 0 0 8px;}
+#content_music #whatsnew div.list ul li:hover p.bg {display:block;}
+#content_music #whatsnew div.list ul li p.title {top:0px;left:16px;color:#e05206;font-size:11px;}
+#content_music #whatsnew div.list ul li:hover p.title {font-weight:bold;}
+#content_music #whatsnew div.list ul li p.price {top:15px;left:16px;color:#5aacd6;font-size:9px;}
+#content_music #whatsnew div.list ul li:hover p.price {display:none;}
+#content_music #whatsnew div.list ul li p.type {top:1px;left:161px;color:#e05206;font-size:10px;line-height:12px;}
+#content_music #whatsnew div.list ul li p.type b {display:block;font-size:11px;}
+#content_music #whatsnew div.list ul li:hover p.type {left:145px;}
+#content_music #whatsnew div.list ul li p.rating {display:none;top:14px;left:20px;}
+#content_music #whatsnew div.list ul li:hover p.rating {display:block;}
+#content_music #whatsnew div.list ul li p.actions {display:none;text-indent:-9999px;top:2px;right:15px;}
+#content_music #whatsnew div.list ul li:hover p.actions {display:block;}
+#content_music #whatsnew a.more {display:block;background:url(../images/btn_more.gif) top left no-repeat;width:54px;height:14px;position:absolute;bottom:0;right:10px;text-indent:-9999px;}
+
+/***** GAMES HOMEPAGE *****/
+#content_games {height:730px;}
+#content_games #home_left_bg {background:url(../images/bg_contenthome_left.png) top left no-repeat;width:535px;height:647px;position:absolute;top:50px;left:33px;z-index:1;}
+#content_games #home_right_bg {background:url(../images/bg_contenthome_right.png) top left no-repeat;width:285px;height:628px;position:absolute;top:50px;right:33px;z-index:1;}
+
+#content_games #top_bg {background:url(../images/bg_gameshome_left.png) top left no-repeat;width:526px;height:252px;position:absolute;top:67px;left:41px;z-index:1;}
+#content_games #top {width:567px;height:215px;position:absolute;top:6px;left:45px;z-index:2;}
+#content_games #top div.list {width:327px;position:absolute;top:100px;left:120px;}
+#content_games #top div.list ul {list-style:none;margin:0;padding:0;}
+#content_games #top div.list ul li {width:289px;height:39px;margin:-3px 0 0 0;padding:0;position:relative;background:url(../images/bg_top_games.gif) bottom left no-repeat;}
+html>body #content_games #top div.list ul li {margin:0}
+#content_games #top div.list ul li.first {margin:0;}
+#content_games #top div.list ul li.last {background:none;}
+#content_games #top div.list ul li p{margin:0;padding:0;position:absolute;}
+#content_games #top div.list ul li p.bg {width:275px;height:96px;background:url(../images/bg_contenthome_ro.png) top left no-repeat;display:none;margin:-30px 0 0 28px;}
+#content_games #top div.list ul li:hover p.bg {display:block;}
+#content_games #top div.list ul li p.rank1, 
+#content_games #top div.list ul li p.rank2, 
+#content_games #top div.list ul li p.rank3, 
+#content_games #top div.list ul li p.rank4, 
+#content_games #top div.list ul li p.rank5 {top:8px;left:15px;}
+#content_games #top div.list ul li p.th {top:0px;left:30px;width:35px;height:35px;}
+#content_games #top div.list ul li p.th img {width:35px;height:35px;}
+#content_games #top div.list ul li:hover p.th {top:-24px;left:34px;width:80px;height:80px;}
+#content_games #top div.list ul li:hover p.th img {width:80px;height:80px;}
+#content_games #top div.list ul li p.title {top:5px;left:70px;color:#e05206;font-size:11px;}
+#content_games #top div.list ul li:hover p.title {top:-15px;left:120px;color:#e05206;font-weight:bold;}
+#content_games #top div.list ul li p.price {top:18px;left:70px;color:#5aacd6;font-size:9px;}
+#content_games #top div.list ul li:hover p.price {display:none;}
+#content_games #top div.list ul li p.type {top:5px;left:190px;color:#e05206;font-size:10px;line-height:12px;}
+#content_games #top div.list ul li p.type b {display:block;font-size:11px;}
+#content_games #top div.list ul li:hover p.type {top:25px;left:120px;}
+#content_games #top div.list ul li p.rating {display:none;top:2px;left:120px;}
+#content_games #top div.list ul li:hover p.rating {display:block;}
+#content_games #top div.list ul li p.actions {display:none;text-indent:-9999px;bottom:15px;right:0px;}
+#content_games #top div.list ul li:hover p.actions {display:block;}
+
+#content_games #categories {height:370px;}
+#content_games #categories ul {height:320px;}
+
+#content_games #catlist {width:412px;height:340px;position:absolute;top:340px;left:155px;z-index:2;}
+#content_games #catlist div.list {width:327px;position:absolute;top:11px;left:0px;}
+#content_games #catlist div.list ul {list-style:none;margin:0;padding:0;}
+#content_games #catlist div.list ul li {width:413px;height:40px;margin:-3px 0 0 0;padding:0;position:relative;background:url(../images/bg_cat_list.gif) bottom left no-repeat;}
+html>body #content_games #catlist div.list ul li {margin:0}
+#content_games #catlist div.list ul li.first {margin:0;}
+#content_games #catlist div.list ul li.last {background:none;}
+#content_games #catlist div.list ul li p{margin:0;padding:0;position:absolute;}
+#content_games #catlist div.list ul li p.th {top:0px;left:8px;width:35px;height:35px;}
+#content_games #catlist div.list ul li p.th img {width:35px;height:35px;}
+#content_games #catlist div.list ul li p.title {top:6px;left:50px;color:#e05206;font-size:11px;}
+#content_games #catlist div.list ul li p.price {top:19px;left:50px;color:#5aacd6;font-size:9px;}
+#content_games #catlist div.list ul li p.rating {top:11px;left:178px;}
+#content_games #catlist div.list ul li p.actions {text-indent:-9999px;top:6px;right:30px;}
+
+#content_games #whatsnew {width:289px;height:275px;position:absolute;top:60px;right:31px;z-index:2;}
+#content_games #whatsnew h2 {background:url(../images/t_new_games.png) top left no-repeat;width:193px;height:37px;position:absolute;margin:0;padding:0;top:0px;left:8px;text-indent:-9999px;}
+#content_games #whatsnew div.list {width:289px;position:absolute;top:38px;left:0;}
+#content_games #whatsnew div.list ul {list-style:none;margin:0;padding:0;}
+#content_games #whatsnew div.list ul li {width:289px;height:39px;margin:-3px 0 0 0;padding:0;position:relative;background:url(../images/bg_new.gif) bottom left no-repeat;}
+html>body #content_games #whatsnew div.list ul li {margin:0;}
+#content_games #whatsnew div.list ul li.first {margin:0;}
+/*#content_games #whatsnew div.list ul li.last {background:none;}*/
+#content_games #whatsnew div.list ul li p{margin:0;padding:0;position:absolute;}
+#content_games #whatsnew div.list ul li p.bg {width:275px;height:96px;background:url(../images/bg_contenthome_ro.png) top left no-repeat;display:none;margin:-30px 0 0 8px;}
+#content_games #whatsnew div.list ul li:hover p.bg {display:block;}
+#content_games #whatsnew div.list ul li p.th {top:0px;left:12px;width:35px;height:35px;}
+#content_games #whatsnew div.list ul li p.th img {width:35px;height:35px;}
+#content_games #whatsnew div.list ul li:hover p.th {top:-24px;left:14px;width:80px;height:80px;}
+#content_games #whatsnew div.list ul li:hover p.th img {width:80px;height:80px;}
+#content_games #whatsnew div.list ul li p.title {top:7px;left:55px;color:#e05206;font-size:11px;}
+#content_games #whatsnew div.list ul li:hover p.title {top:-15px;left:100px;color:#e05206;font-weight:bold;}
+#content_games #whatsnew div.list ul li p.price {top:20px;left:55px;color:#5aacd6;font-size:9px;}
+#content_games #whatsnew div.list ul li:hover p.price {display:none;}
+#content_games #whatsnew div.list ul li p.type {top:5px;left:211px;color:#e05206;font-size:10px;line-height:12px;}
+#content_games #whatsnew div.list ul li p.type b {display:block;font-size:11px;}
+#content_games #whatsnew div.list ul li:hover p.type {top:25px;left:100px;}
+#content_games #whatsnew div.list ul li p.rating {display:none;top:2px;left:100px;}
+#content_games #whatsnew div.list ul li:hover p.rating {display:block;}
+#content_games #whatsnew div.list ul li p.actions {display:none;text-indent:-9999px;bottom:15px;right:15px;}
+#content_games #whatsnew div.list ul li:hover p.actions {display:block;}
+#content_games #whatsnew a.more {display:block;background:url(../images/btn_more.gif) top left no-repeat;width:54px;height:14px;position:absolute;bottom:0;right:10px;text-indent:-9999px;}
+
+/***** APPS HOMEPAGE *****/
+#content_apps {height:730px;}
+#content_apps #home_left_bg {background:url(../images/bg_contenthome_apps_left.png) top left no-repeat;width:569px;height:647px;position:absolute;top:50px;left:0px;z-index:1;}
+#content_apps #home_right_bg {background:url(../images/bg_contenthome_right.png) top left no-repeat;width:285px;height:628px;position:absolute;top:50px;right:33px;z-index:1;}
+
+#content_apps #top_bg {background:url(../images/bg_appshome_left.png) top left no-repeat;width:563px;height:252px;position:absolute;top:67px;left:5px;z-index:1;}
+#content_apps #top {width:567px;height:215px;position:absolute;top:8px;left:45px;z-index:2;}
+#content_apps #top div.list {width:327px;position:absolute;top:100px;left:120px;}
+#content_apps #top div.list ul {list-style:none;margin:0;padding:0;}
+#content_apps #top div.list ul li {width:289px;height:39px;margin:-3px 0 0 0;padding:0;position:relative;background:url(../images/bg_top_games.gif) bottom left no-repeat;}
+html>body #content_apps #top div.list ul li {margin:0}
+#content_apps #top div.list ul li.first {margin:0;}
+#content_apps #top div.list ul li.last {background:none;}
+#content_apps #top div.list ul li p{margin:0;padding:0;position:absolute;}
+#content_apps #top div.list ul li p.bg {width:275px;height:96px;background:url(../images/bg_contenthome_ro.png) top left no-repeat;display:none;margin:-30px 0 0 28px;}
+#content_apps #top div.list ul li:hover p.bg {display:block;}
+#content_apps #top div.list ul li p.rank1, 
+#content_apps #top div.list ul li p.rank2, 
+#content_apps #top div.list ul li p.rank3, 
+#content_apps #top div.list ul li p.rank4, 
+#content_apps #top div.list ul li p.rank5 {top:8px;left:15px;}
+#content_apps #top div.list ul li p.th {top:0px;left:30px;width:35px;height:35px;}
+#content_apps #top div.list ul li p.th img {width:35px;height:35px;}
+#content_apps #top div.list ul li:hover p.th {top:-24px;left:34px;width:80px;height:80px;}
+#content_apps #top div.list ul li:hover p.th img {width:80px;height:80px;}
+#content_apps #top div.list ul li p.title {top:5px;left:70px;color:#e05206;font-size:11px;}
+#content_apps #top div.list ul li:hover p.title {top:-15px;left:120px;color:#e05206;font-weight:bold;}
+#content_apps #top div.list ul li p.price {top:18px;left:70px;color:#5aacd6;font-size:9px;}
+#content_apps #top div.list ul li:hover p.price {display:none;}
+#content_apps #top div.list ul li p.type {top:5px;left:190px;color:#e05206;font-size:10px;line-height:12px;}
+#content_apps #top div.list ul li p.type b {display:block;font-size:11px;}
+#content_apps #top div.list ul li:hover p.type {top:25px;left:120px;}
+#content_apps #top div.list ul li p.rating {display:none;top:2px;left:120px;}
+#content_apps #top div.list ul li:hover p.rating {display:block;}
+#content_apps #top div.list ul li p.actions {display:none;text-indent:-9999px;bottom:15px;right:0px;}
+#content_apps #top div.list ul li:hover p.actions {display:block;}
+
+#content_apps #categories {height:370px;}
+#content_apps #categories ul {height:320px;}
+
+#content_apps #catlist {width:412px;height:340px;position:absolute;top:340px;left:156px;z-index:2;}
+#content_apps #catlist div.list {width:327px;position:absolute;top:10px;left:0px;}
+#content_apps #catlist div.list ul {list-style:none;margin:0;padding:0;}
+#content_apps #catlist div.list ul li {width:413px;height:40px;margin:-3px 0 0 0;padding:0;position:relative;background:url(../images/bg_cat_list.gif) bottom left no-repeat;}
+html>body #content_apps #catlist div.list ul li {margin:0}
+#content_apps #catlist div.list ul li.first {margin:0;}
+#content_apps #catlist div.list ul li.last {background:none;}
+#content_apps #catlist div.list ul li p{margin:0;padding:0;position:absolute;}
+#content_apps #catlist div.list ul li p.th {top:0px;left:8px;width:35px;height:35px;}
+#content_apps #catlist div.list ul li p.th img {width:35px;height:35px;}
+#content_apps #catlist div.list ul li p.title {top:6px;left:50px;color:#e05206;font-size:11px;}
+#content_apps #catlist div.list ul li p.price {top:19px;left:50px;color:#5aacd6;font-size:9px;}
+#content_apps #catlist div.list ul li p.rating {top:11px;left:178px;}
+#content_apps #catlist div.list ul li p.actions {text-indent:-9999px;top:6px;right:30px;}
+
+#content_apps #whatsnew {width:289px;height:275px;position:absolute;top:60px;right:31px;z-index:2;}
+#content_apps #whatsnew h2 {background:url(../images/t_new_apps.png) top left no-repeat;width:247px;height:37px;position:absolute;margin:0;padding:0;top:0px;left:8px;text-indent:-9999px;}
+#content_apps #whatsnew div.list {width:289px;position:absolute;top:38px;left:0;}
+#content_apps #whatsnew div.list ul {list-style:none;margin:0;padding:0;}
+#content_apps #whatsnew div.list ul li {width:289px;height:39px;margin:-3px 0 0 0;padding:0;position:relative;background:url(../images/bg_new.gif) bottom left no-repeat;}
+html>body #content_apps #whatsnew div.list ul li {margin:0;}
+#content_apps #whatsnew div.list ul li.first {margin:0;}
+/*#content_apps #whatsnew div.list ul li.last {background:none;}*/
+#content_apps #whatsnew div.list ul li p{margin:0;padding:0;position:absolute;}
+#content_apps #whatsnew div.list ul li p.bg {width:275px;height:96px;background:url(../images/bg_contenthome_ro.png) top left no-repeat;display:none;margin:-30px 0 0 8px;}
+#content_apps #whatsnew div.list ul li:hover p.bg {display:block;}
+#content_apps #whatsnew div.list ul li p.th {top:0px;left:12px;width:35px;height:35px;}
+#content_apps #whatsnew div.list ul li p.th img {width:35px;height:35px;}
+#content_apps #whatsnew div.list ul li:hover p.th {top:-24px;left:14px;width:80px;height:80px;}
+#content_apps #whatsnew div.list ul li:hover p.th img {width:80px;height:80px;}
+#content_apps #whatsnew div.list ul li p.title {top:7px;left:55px;color:#e05206;font-size:11px;}
+#content_apps #whatsnew div.list ul li:hover p.title {top:-15px;left:100px;color:#e05206;font-weight:bold;}
+#content_apps #whatsnew div.list ul li p.price {top:20px;left:55px;color:#5aacd6;font-size:9px;}
+#content_apps #whatsnew div.list ul li:hover p.price {display:none;}
+#content_apps #whatsnew div.list ul li p.type {top:5px;left:211px;color:#e05206;font-size:10px;line-height:12px;}
+#content_apps #whatsnew div.list ul li p.type b {display:block;font-size:11px;}
+#content_apps #whatsnew div.list ul li:hover p.type {top:25px;left:100px;}
+#content_apps #whatsnew div.list ul li p.rating {display:none;top:2px;left:100px;}
+#content_apps #whatsnew div.list ul li:hover p.rating {display:block;}
+#content_apps #whatsnew div.list ul li p.actions {display:none;text-indent:-9999px;bottom:15px;right:15px;}
+#content_apps #whatsnew div.list ul li:hover p.actions {display:block;}
+#content_apps #whatsnew a.more {display:block;background:url(../images/btn_more.gif) top left no-repeat;width:54px;height:14px;position:absolute;bottom:0;right:10px;text-indent:-9999px;}
+
+/***** WALLPAPERS HOMEPAGE *****/
+#content_wp {height:730px;}
+#content_wp #home_left_bg {background:url(../images/bg_contenthome_left.png) top left no-repeat;width:535px;height:647px;position:absolute;top:50px;left:33px;z-index:1;}
+#content_wp #home_right_bg {background:url(../images/bg_contenthome_right.png) top left no-repeat;width:285px;height:628px;position:absolute;top:50px;right:33px;z-index:1;}
+
+#content_wp #top_bg {background:url(../images/bg_wphome_left.png) top left no-repeat;width:526px;height:252px;position:absolute;top:62px;left:43px;z-index:1;}
+#content_wp #top {width:567px;height:215px;position:absolute;top:6px;left:45px;z-index:2;}
+#content_wp #top div.list {width:327px;position:absolute;top:100px;left:120px;}
+#content_wp #top div.list ul {list-style:none;margin:0;padding:0;}
+#content_wp #top div.list ul li {width:289px;height:39px;margin:-3px 0 0 0;padding:0;position:relative;background:url(../images/bg_top_games.gif) bottom left no-repeat;}
+html>body #content_wp #top div.list ul li {margin:0}
+#content_wp #top div.list ul li.first {margin:0;}
+#content_wp #top div.list ul li.last {background:none;}
+#content_wp #top div.list ul li p{margin:0;padding:0;position:absolute;}
+#content_wp #top div.list ul li p.bg {width:275px;height:96px;background:url(../images/bg_contenthome_ro.png) top left no-repeat;display:none;margin:-30px 0 0 28px;}
+#content_wp #top div.list ul li:hover p.bg {display:block;}
+#content_wp #top div.list ul li p.rank1, 
+#content_wp #top div.list ul li p.rank2, 
+#content_wp #top div.list ul li p.rank3, 
+#content_wp #top div.list ul li p.rank4, 
+#content_wp #top div.list ul li p.rank5 {top:8px;left:15px;}
+#content_wp #top div.list ul li p.th {top:0px;left:30px;width:35px;height:35px;}
+#content_wp #top div.list ul li p.th img {width:35px;height:35px;}
+#content_wp #top div.list ul li:hover p.th {top:-24px;left:34px;width:80px;height:80px;}
+#content_wp #top div.list ul li:hover p.th img {width:80px;height:80px;}
+#content_wp #top div.list ul li p.title {top:5px;left:70px;color:#e05206;font-size:11px;}
+#content_wp #top div.list ul li:hover p.title {top:-15px;left:120px;color:#e05206;font-weight:bold;}
+#content_wp #top div.list ul li p.price {top:18px;left:70px;color:#5aacd6;font-size:9px;}
+#content_wp #top div.list ul li:hover p.price {display:none;}
+#content_wp #top div.list ul li p.type {top:5px;left:190px;color:#e05206;font-size:10px;line-height:12px;}
+#content_wp #top div.list ul li p.type b {display:block;font-size:11px;}
+#content_wp #top div.list ul li:hover p.type {top:25px;left:120px;}
+#content_wp #top div.list ul li p.rating {display:none;top:2px;left:120px;}
+#content_wp #top div.list ul li:hover p.rating {display:block;}
+#content_wp #top div.list ul li p.actions {display:none;text-indent:-9999px;bottom:15px;right:0px;}
+#content_wp #top div.list ul li:hover p.actions {display:block;}
+
+#content_wp #categories {height:370px;}
+#content_wp #categories ul {height:320px;}
+
+#content_wp #catlist {width:412px;height:340px;position:absolute;top:340px;left:155px;z-index:2;}
+#content_wp #catlist div.list {width:327px;position:absolute;top:10px;left:0px;}
+#content_wp #catlist div.list ul {list-style:none;margin:0;padding:0;}
+#content_wp #catlist div.list ul li {width:413px;height:40px;margin:-3px 0 0 0;padding:0;position:relative;background:url(../images/bg_cat_list.gif) bottom left no-repeat;}
+html>body #content_wp #catlist div.list ul li {margin:0}
+#content_wp #catlist div.list ul li.first {margin:0;}
+#content_wp #catlist div.list ul li.last {background:none;}
+#content_wp #catlist div.list ul li p{margin:0;padding:0;position:absolute;}
+#content_wp #catlist div.list ul li p.th {top:0px;left:8px;width:35px;height:35px;}
+#content_wp #catlist div.list ul li p.th img {width:35px;height:35px;}
+#content_wp #catlist div.list ul li p.title {top:6px;left:50px;color:#e05206;font-size:11px;}
+#content_wp #catlist div.list ul li p.price {top:19px;left:50px;color:#5aacd6;font-size:9px;}
+#content_wp #catlist div.list ul li p.rating {top:11px;left:178px;}
+#content_wp #catlist div.list ul li p.actions {text-indent:-9999px;top:6px;right:30px;}
+
+#content_wp #whatsnew {width:289px;height:275px;position:absolute;top:60px;right:31px;z-index:2;}
+#content_wp #whatsnew h2 {background:url(../images/t_new_wp.png) top left no-repeat;width:220px;height:37px;position:absolute;margin:0;padding:0;top:0px;left:8px;text-indent:-9999px;}
+#content_wp #whatsnew div.list {width:289px;position:absolute;top:38px;left:0;}
+#content_wp #whatsnew div.list ul {list-style:none;margin:0;padding:0;}
+#content_wp #whatsnew div.list ul li {width:289px;height:39px;margin:-3px 0 0 0;padding:0;position:relative;background:url(../images/bg_new.gif) bottom left no-repeat;}
+html>body #content_wp #whatsnew div.list ul li {margin:0;}
+#content_wp #whatsnew div.list ul li.first {margin:0;}
+/*#content_wp #whatsnew div.list ul li.last {background:none;}*/
+#content_wp #whatsnew div.list ul li p{margin:0;padding:0;position:absolute;}
+#content_wp #whatsnew div.list ul li p.bg {width:275px;height:96px;background:url(../images/bg_contenthome_ro.png) top left no-repeat;display:none;margin:-30px 0 0 8px;}
+#content_wp #whatsnew div.list ul li:hover p.bg {display:block;}
+#content_wp #whatsnew div.list ul li p.th {top:0px;left:12px;width:35px;height:35px;}
+#content_wp #whatsnew div.list ul li p.th img {width:35px;height:35px;}
+#content_wp #whatsnew div.list ul li:hover p.th {top:-24px;left:14px;width:80px;height:80px;}
+#content_wp #whatsnew div.list ul li:hover p.th img {width:80px;height:80px;}
+#content_wp #whatsnew div.list ul li p.title {top:7px;left:55px;color:#e05206;font-size:11px;}
+#content_wp #whatsnew div.list ul li:hover p.title {top:-15px;left:100px;color:#e05206;font-weight:bold;}
+#content_wp #whatsnew div.list ul li p.price {top:20px;left:55px;color:#5aacd6;font-size:9px;}
+#content_wp #whatsnew div.list ul li:hover p.price {display:none;}
+#content_wp #whatsnew div.list ul li p.type {top:5px;left:211px;color:#e05206;font-size:10px;line-height:12px;}
+#content_wp #whatsnew div.list ul li p.type b {display:block;font-size:11px;}
+#content_wp #whatsnew div.list ul li:hover p.type {top:25px;left:100px;}
+#content_wp #whatsnew div.list ul li p.rating {display:none;top:17px;left:100px;}
+#content_wp #whatsnew div.list ul li:hover p.rating {display:block;}
+#content_wp #whatsnew div.list ul li p.actions {display:none;text-indent:-9999px;bottom:15px;right:15px;}
+#content_wp #whatsnew div.list ul li:hover p.actions {display:block;}
+#content_wp #whatsnew a.more {display:block;background:url(../images/btn_more.gif) top left no-repeat;width:54px;height:14px;position:absolute;bottom:0;right:10px;text-indent:-9999px;}
+
+/***** VIDEOS HOMEPAGE *****/
+#content_videos {height:1036px;}
+#content_videos #home_left_bg {background:url(../images/bg_contenthome3_left.png) top left no-repeat;width:535px;height:957px;position:absolute;top:50px;left:33px;z-index:1;}
+#content_videos #home_right_bg {background:url(../images/bg_contenthome3_right.png) top left no-repeat;width:285px;height:978px;position:absolute;top:50px;right:33px;z-index:1;}
+
+#content_videos #top_bg {background:url(../images/bg_videoshome_left.png) top left no-repeat;width:519px;height:323px;position:absolute;top:64px;left:48px;z-index:1;}
+#content_videos #top {width:567px;height:215px;position:absolute;top:58px;left:155px;z-index:2;}
+#content_videos #top h2 {background:url(../images/t_top_videos.png) top left no-repeat;width:85px;height:26px;position:absolute;margin:0;padding:0;top:12px;left:12px;text-indent:-9999px;}
+#content_videos #top div.list {width:289px;position:absolute;top:36px;left:0;}
+#content_videos #top div.list ul {list-style:none;margin:0;padding:0;}
+#content_videos #top div.list ul li {width:289px;height:54px;margin:-3px 0 0 0;padding:0;position:relative;background:url(../images/bg_new.gif) bottom left no-repeat;}
+html>body #content_videos #top div.list ul li {margin:0;}
+#content_videos #top div.list ul li.first {margin:0;}
+#content_videos #top div.list ul li.last {background:none;}
+#content_videos #top div.list ul li p{margin:0;padding:0;position:absolute;}
+#content_videos #top div.list ul li p.bg {margin-top:-9px;width:289px;height:98px;background:url(../images/bg_top_videos_ro.png) top center no-repeat;display:none;}
+#content_videos #top div.list ul li:hover p.bg {display:block;}
+#content_videos #top div.list ul li p.rank1, 
+#content_videos #top div.list ul li p.rank2, 
+#content_videos #top div.list ul li p.rank3, 
+#content_videos #top div.list ul li p.rank4, 
+#content_videos #top div.list ul li p.rank5 {top:17px;left:17px;}
+#content_videos #top div.list ul li:hover p.rank1, 
+#content_videos #top div.list ul li:hover p.rank2, 
+#content_videos #top div.list ul li:hover p.rank3, 
+#content_videos #top div.list ul li:hover p.rank4, 
+#content_videos #top div.list ul li:hover p.rank5 {display:none;}
+#content_videos #top div.list ul li p.th {top:1px;left:35px;width:42px;height:28px;}
+#content_videos #top div.list ul li p.th span {display:block;width:80px;height:48px;position:absolute;overflow:hidden;}
+#content_videos #top div.list ul li p.th img {width:80px;height:48px;position:absolute;border:1px solid #c3c2c3;}
+#content_videos #top div.list ul li p.th embed, 
+#content_videos #top div.list ul li p.th object {display:none;}
+#content_videos #top div.list ul li p.th a {width:0px;height:0px;display:none;text-indent:-9999px;}
+#content_videos #top div.list ul li:hover p.th span {display:block;width:120px;height:72px;border:1px solid #c3c2c3;}
+#content_videos #top div.list ul li:hover p.th img {display:none;}
+#content_videos #top div.list ul li:hover p.th embed, 
+#content_videos #top div.list ul li:hover p.th object {width:120px !important;height:92px !important;display:block;}
+#content_videos #top div.list ul li p.title {top:15px;left:125px;color:#666;font-size:11px;}
+#content_videos #top div.list ul li:hover p.title {color:#e05206;/*font-weight:bold;*/left:165px;}
+#content_videos #top div.list ul li p.price {top:28px;left:125px;color:#5aacd6;font-size:9px;}
+#content_videos #top div.list ul li:hover p.price {display:none;}
+#content_videos #top div.list ul li p.type {display:none;top:5px;left:211px;color:#e05206;font-size:10px;line-height:12px;}
+#content_videos #top div.list ul li p.type b {display:block;font-size:11px;}
+#content_videos #top div.list ul li:hover p.type {display:block;}
+#content_videos #top div.list ul li p.rating {display:none;top:27px;left:165px;}
+#content_videos #top div.list ul li:hover p.rating {display:block;}
+#content_videos #top div.list ul li p.actions {display:none;text-indent:-9999px;top:44px;left:165px;}
+#content_videos #top div.list ul li:hover p.actions {display:block;}
+
+#content_videos div.tabs {top:400px;}
+#content_videos #categories {top:400px;}
+#content_videos #survey {bottom:176px;}
+#content_videos #survey_bg {bottom:176px;}
+#content_videos #categories {height:600px;}
+#content_videos #categories ul {height:540px;}
+
+#content_videos #catlist {width:412px;height:560px;position:absolute;top:430px;left:155px;z-index:2;}
+#content_videos #catlist div.list {width:327px;position:absolute;top:10px;left:0px;}
+#content_videos #catlist div.list ul {list-style:none;margin:0;padding:0;}
+#content_videos #catlist div.list ul li {width:413px;height:66px;margin:-3px 0 0 0;padding:0;position:relative;background:url(../images/bg_vdo_list.gif) bottom left no-repeat;}
+html>body #content_videos #catlist div.list ul li {margin:0}
+#content_videos #catlist div.list ul li.first {margin:0;}
+#content_videos #catlist div.list ul li p{margin:0;padding:0;position:absolute;}
+#content_videos #catlist div.list ul li p.th {top:9px;left:24px;width:80px;height:48px;}
+#content_videos #catlist div.list ul li p.th img {width:80px;height:48px;position:absolute;border:1px solid #c3c2c3;}
+#content_videos #catlist div.list ul li p.title {top:22px;left:115px;color:#e05206;font-size:11px;}
+#content_videos #catlist div.list ul li p.price {top:35px;left:115px;color:#5aacd6;font-size:9px;}
+#content_videos #catlist div.list ul li p.rating {top:28px;left:213px;}
+#content_videos #catlist div.list ul li p.actions {text-indent:-9999px;top:22px;right:36px;}
+
+#content_videos #whatsnew {width:289px;height:320px;position:absolute;top:60px;right:31px;z-index:2;}
+#content_videos #whatsnew h2 {background:url(../images/t_new_videos.png) top left no-repeat;width:191px;height:32px;position:absolute;margin:0;padding:0;top:2px;left:15px;text-indent:-9999px;}
+#content_videos #whatsnew div.list {width:289px;position:absolute;top:40px;left:0;}
+#content_videos #whatsnew div.list ul {list-style:none;margin:0;padding:0;}
+#content_videos #whatsnew div.list ul li {width:289px;height:54px;margin:-3px 0 0 0;padding:0;position:relative;background:url(../images/bg_new.gif) bottom left no-repeat;}
+html>body #content_videos #whatsnew div.list ul li {margin:0;}
+#content_videos #whatsnew div.list ul li.first {margin:0;}
+/*#content_videos #whatsnew div.list ul li.last {background:none;}*/
+#content_videos #whatsnew div.list ul li p{margin:0;padding:0;position:absolute;}
+#content_videos #whatsnew div.list ul li p.bg {margin-top:-9px;width:289px;height:98px;background:url(../images/bg_top_videos_ro.png) top center no-repeat;display:none;}
+#content_videos #whatsnew div.list ul li:hover p.bg {display:block;}
+#content_videos #whatsnew div.list ul li p.th {top:1px;left:18px;width:80px;height:48px;}
+#content_videos #whatsnew div.list ul li p.th span {display:block;width:80px;height:48px;position:absolute;overflow:hidden;}
+#content_videos #whatsnew div.list ul li p.th img {width:80px;height:48px;position:absolute;border:1px solid #c3c2c3;}
+#content_videos #whatsnew div.list ul li p.th embed, 
+#content_videos #whatsnew div.list ul li p.th object {display:none;}
+#content_videos #whatsnew div.list ul li p.th a {width:0px;height:0px;display:none;text-indent:-9999px;}
+#content_videos #whatsnew div.list ul li:hover p.th span {display:block;width:120px;height:72px;border:1px solid #c3c2c3;}
+#content_videos #whatsnew div.list ul li:hover p.th img {display:none;}
+#content_videos #whatsnew div.list ul li:hover p.th embed, 
+#content_videos #whatsnew div.list ul li:hover p.th object {width:120px !important;height:92px !important;display:block;}
+#content_videos #whatsnew div.list ul li:hover p.th {top:1px;left:35px;}
+#content_videos #whatsnew div.list ul li p.title {top:15px;left:110px;color:#e05206;font-size:11px;}
+#content_videos #whatsnew div.list ul li:hover p.title {top:13px;left:125px;color:#e05206;/*font-weight:bold;*/left:165px;}
+#content_videos #whatsnew div.list ul li p.price {top:28px;left:110px;color:#5aacd6;font-size:9px;}
+#content_videos #whatsnew div.list ul li:hover p.price {display:none;}
+#content_videos #whatsnew div.list ul li p.type {display:none;top:5px;left:211px;color:#e05206;font-size:10px;line-height:12px;}
+#content_videos #whatsnew div.list ul li p.type b {display:block;font-size:11px;}
+#content_videos #whatsnew div.list ul li:hover p.type {display:block;}
+#content_videos #whatsnew div.list ul li p.rating {display:none;top:27px;left:165px;}
+#content_videos #whatsnew div.list ul li:hover p.rating {display:block;}
+#content_videos #whatsnew div.list ul li p.actions {display:none;text-indent:-9999px;top:44px;left:165px;}
+#content_videos #whatsnew div.list ul li:hover p.actions {display:block;}
+#content_videos #whatsnew a.more {display:block;background:url(../images/btn_more.gif) top left no-repeat;width:54px;height:14px;position:absolute;bottom:0;right:10px;text-indent:-9999px;}
+
+/***** PROMO HOMEPAGE *****/
+#content_promo {height:836px;}
+#content_promo #home_left_bg {background:url(../images/bg_contenthome4_left.png) top left no-repeat;width:535px;height:757px;position:absolute;top:50px;left:33px;z-index:1;}
+#content_promo #home_right_bg {background:url(../images/bg_contenthome4_right.png) top left no-repeat;width:285px;height:734px;position:absolute;top:50px;right:33px;z-index:1;}
+
+#content_promo #bundles {width:539px;height:359px;position:absolute;top:50px;left:45px;z-index:2;}
+#content_promo #bundles h2 {background:url(../images/t_combos.png) top left no-repeat;width:112px;height:43px;position:absolute;margin:0;padding:0;top:18px;left:0px;text-indent:-9999px;}
+#content_promo #bundles div.list {width:413px;position:absolute;top:20px;left:110px;}
+#content_promo #bundles div.list ul {list-style:none;margin:0;padding:0;}
+#content_promo #bundles div.list ul li {width:413px;height:71px;margin:-3px 0 0 0;padding:0;position:relative;background:url(../images/bg_bundle_list.gif) bottom left no-repeat;}
+html>body #content_promo #bundles div.list ul li {margin:0}
+#content_promo #bundles div.list ul li.first {margin:0;}
+#content_promo #bundles div.list ul li.last {/*background:none;*/}
+#content_promo #bundles div.list ul li p{margin:0;padding:0;position:absolute;}
+#content_promo #bundles div.list ul li p.th {top:13px;left:23px;width:160px;height:45px;}
+#content_promo #bundles div.list ul li p.th img {width:160px;height:45px;}
+#content_promo #bundles div.list ul li p.title {top:21px;left:200px;color:#e05206;font-size:11px;width:68px;height:15px;overflow:hidden;}
+#content_promo #bundles div.list ul li p.price {top:37px;left:200px;color:#5aacd6;font-size:9px;}
+#content_promo #bundles div.list ul li p.actions {text-indent:-9999px;bottom:27px;right:26px;}
+#content_promo #bundles div.pagination {width:413px;position:absolute;bottom:30px;left:110px;text-align:center;font-size:11px;color:#666;}
+
+#content_promo #categories {top:420px;}
+#content_promo #categories {height:370px;}
+#content_promo #categories ul {height:320px;}
+
+#content_promo #promolist {width:413px;height:360px;position:absolute;top:420px;left:155px;z-index:2;}
+#content_promo #promolist h2 {background:url(../images/t_promotions.png) top left no-repeat;width:116px;height:28px;position:absolute;margin:0;padding:0;top:10px;left:10px;text-indent:-9999px;}
+#content_promo #promolist div.list {width:327px;position:absolute;top:44px;left:0px;}
+#content_promo #promolist div.list ul {list-style:none;margin:0;padding:0;}
+#content_promo #promolist div.list ul li {width:413px;height:39px;margin:-3px 0 0 0;padding:0;position:relative;background:url(../images/bg_promo_list.gif) bottom left no-repeat;}
+html>body #content_promo #promolist div.list ul li {margin:0}
+#content_promo #promolist div.list ul li.first {margin:0;}
+#content_promo #promolist div.list ul li.last {/*background:none;*/}
+#content_promo #promolist div.list ul li p{margin:0;padding:0;position:absolute;}
+#content_promo #promolist div.list ul li p.bg {width:413px;height:40px;background:url(../images/bg_promo_list_ro.png) top left no-repeat;margin:-1px 0 0 0;display:none;}
+#content_promo #promolist div.list ul li:hover p.bg {display:block;}
+#content_promo #promolist div.list ul li p.th {top:1px;left:14px;width:35px;height:35px;}
+#content_promo #promolist div.list ul li p.th img {width:35px;height:35px;}
+#content_promo #promolist div.list ul li p.content_type_music,
+#content_promo #promolist div.list ul li p.content_type_games,
+#content_promo #promolist div.list ul li p.content_type_apps,
+#content_promo #promolist div.list ul li p.content_type_wp,
+#content_promo #promolist div.list ul li p.content_type_videos {top:5px;left:50px;}
+#content_promo #promolist div.list ul li p.title {top:20px;left:55px;color:#e05206;font-size:11px;}
+#content_promo #promolist div.list ul li p.strikeoutprice {top:11px;left:167px;color:#5aacd6;font-size:9px;padding:10px 0 0 0;background:url(../images/t_before.gif) top left no-repeat;text-decoration:line-through;}
+#content_promo #promolist div.list ul li:hover p.strikeoutprice {display:none;}
+#content_promo #promolist div.list ul li p.discountprice {top:11px;left:273px;color:#5aacd6;font-size:9px;padding:10px 0 0 0;background:url(../images/t_now.gif) top left no-repeat;}
+#content_promo #promolist div.list ul li:hover p.discountprice {display:none;}
+#content_promo #promolist div.list ul li p.rating {top:11px;left:167px;display:none;}
+#content_promo #promolist div.list ul li:hover p.rating {display:block;}
+#content_promo #promolist div.list ul li p.actions {text-indent:-9999px;top:6px;right:30px;display:none;}
+#content_promo #promolist div.list ul li:hover p.actions {display:block;}
+
+#content_promo #subscriptions {width:285px;height:465px;position:absolute;top:60px;right:33px;z-index:2;}
+#content_promo #subscriptions h2 {background:url(../images/t_subscriptions.png) top left no-repeat;width:218px;height:28px;position:absolute;margin:0;padding:0;top:0;left:10px;text-indent:-9999px;}
+#content_promo #subscriptions h3 {font-size:9px;font-weight:normal;color:#666;position:absolute;top:27px;left:13px;margin:0;padding:0;}
+#content_promo #subscriptions div.list {width:289px;position:absolute;top:38px;left:0;}
+#content_promo #subscriptions div.list ul {list-style:none;margin:0;padding:0;}
+#content_promo #subscriptions div.list ul li {width:289px;height:136px;margin:-3px 0 0 0;padding:0;position:relative;background:url(../images/bg_new.gif) bottom left no-repeat;}
+html>body #content_promo #subscriptions div.list ul li {margin:0;}
+#content_promo #subscriptions div.list ul li.first {margin:0;}
+#content_promo #subscriptions div.list ul li.last {/*background:none;*/}
+#content_promo #subscriptions div.list ul li p{margin:0;padding:0;position:absolute;}
+#content_promo #subscriptions div.list ul li p.banner {top:30px;left:14px;}
+#content_promo #subscriptions div.list ul li p.banner img {width:160px;height:45px;}
+#content_promo #subscriptions div.list ul li p.th {top:30px;left:14px;width:35px;height:35px;width:70px;text-align:center;}
+#content_promo #subscriptions div.list ul li p.th img {width:35px;height:35px;}
+#content_promo #subscriptions div.list ul li p.title {top:12px;left:15px;color:#e05206;font-size:11px;}
+#content_promo #subscriptions div.list ul li p.type {top:67px;left:14px;color:#e05206;font-size:11px;width:70px;text-align:center;}
+#content_promo #subscriptions div.list ul li p.price {top:80px;left:15px;color:#5aacd6;font-size:9px;}
+#content_promo #subscriptions div.list ul li p.subscribe {top:95px;left:15px;}
+#content_promo #subscriptions div.list ul li p.subscribe a.subscribe {display:block;background:url(../images/btn_subscribe.gif) top left no-repeat;width:100px;height:14px;text-indent:-9999px;}
+
+
+/***** DETAILS *****/
+div.details {height:934px !important;}
+div.details #details_left_bg {background:url(../images/bg_details_left.png) top left no-repeat;width:535px;height:792px;position:absolute;top:47px;left:32px;z-index:1;}
+div.details #details_right_bg {background:url(../images/bg_details_right.png) top left no-repeat;width:285px;height:852px;position:absolute;top:47px;right:31px;z-index:1;}
+
+div.details #preview {position:absolute;top:57px;left:42px;z-index:2;}
+div.details #preview a.listen {background:url(../images/btn_listen.gif) top left no-repeat;width:99px;height:14px;display:block;position:absolute;top:182px;left:36px;text-indent:-9999px;}
+div.details #preview img.listen {background:url(../images/btn_listen.gif) top left no-repeat;width:99px;height:14px;display:block;position:absolute;top:182px;left:36px;text-indent:-9999px;}
+div.details #preview img.previewImg {width:174px;height:174px;position:absolute;top:0px;left:0px;}
+div.details #preview span {position:absolute;top:165px;left:0px;}
+html>body div.details #preview span.listen {top:163px;}
+div.details #preview span.listen object, div.details #preview span.listen embed {width:174px;height:25px;}
+
+div.details #previewvideo {position:absolute;top:57px;left:42px;z-index:2;}
+div.details #previewvideo img.previewImg {width:174px;height:174px;position:absolute;top:0px;left:0px;z-index:3000;}
+div.details #previewvideo a.play {background:url(../images/btn_play.png) center center no-repeat;width:28px;height:28px;position:absolute;top:73px;left:73px;z-index:3001;display:block !important;text-indent:-999px;}
+div.details #previewvideo span {width:174px;height:174px;position:absolute;top:0px;left:0px;background:#fff;/*display:none;*/}
+div.details #previewvideo object, div.details #previewvideo embed {width:120px;height:92px;position:absolute;top:51px;left:27px;}
+/*
+div.details #previewvideo:hover img.previewImg{display:none;}
+div.details #previewvideo:hover span{display:block;}
+div.details #previewvideo:hover a{display:none !important;}
+*/
+
+div.details #description {position:absolute;top:57px;left:236px;width:333px;height:227px;z-index:2;}
+div.details #description h3.cat {color:#e05206;font-size:11px;font-weight:normal;margin:0;padding:0;position:absolute;left:12px;top:10px;}
+div.details #description h1.title {color:#e05206;font-size:20px;font-weight:normal;margin:0;padding:0 0 2px 0;position:absolute;left:12px;top:36px;background:url(../images/bg_item_title.gif) bottom left no-repeat;width:306px;}
+div.details #description p.desc {color:#666;font-size:11px;font-weight:normal;margin:0;padding:0;position:absolute;left:28px;top:89px;}
+div.details #description p.desctxt {color:#5aacd6;font-size:11px;font-weight:normal;margin:0;padding:0;position:absolute;left:95px;top:89px;width:223px;height:70px;overflow:hidden;}
+div.details #description a.multiple_phones {margin:0;padding:0;position:absolute;left:68px;top:163px;width:182px;height:14px;display:block;background:url(../images/btn_multiple_phones.gif) top left no-repeat;text-indent:-9999px;}
+
+div.details #purchase {position:absolute;top:310px;left:106px;width:444px;height:553px;z-index:2;}
+div.details #purchase h2 {color:#e05206;font-size:13px;font-weight:bold;margin:0;padding:0 0 18px 0;}
+div.details #purchase p {color:#5aacd6;font-size:11px;font-weight:normal;margin:0;padding:0;}
+div.details #purchase #steps {vertical-align:middle;background:url(../images/bg_item_title.gif) bottom left repeat-x;width:439px;height:32px;margin:0;padding:0;}
+div.details #purchase #steps span {text-indent:-9999px;display:block;width:22px;height:25px;float:left;margin:0;padding:0;}
+div.details #purchase #steps.step1 span {background:url(../images/numbers/1.gif) top left no-repeat;}
+div.details #purchase #steps.step2 span {background:url(../images/numbers/2.gif) top left no-repeat;}
+div.details #purchase #steps.step3 span {background:url(../images/numbers/3.gif) top left no-repeat;}
+div.details #purchase #steps.step4 span {background:url(../images/numbers/4.gif) top left no-repeat;}
+div.details #purchase #steps.step2 p {line-height:22px;vertical-align:middle;}
+div.details #purchase #steps.step3 p {line-height:22px;vertical-align:middle;}
+div.details #purchase a.compatible_divices {margin:12px 0 35px 22px;padding:0;width:151px;height:14px;display:block;background:url(../images/btn_compatible_phones.gif) top left no-repeat;text-indent:-9999px;}
+
+div.details #purchase #priceoption div {float:left;width:222px;margin:0;padding:0;}
+div.details #purchase #priceoption input {vertical-align:middle;float:left;margin:0 3px 0 20px !important;width:12px;height:12px;}
+div.details #purchase #priceoption h4 {color:#666;font-weight:bold;font-size:11px;vertical-align:middle;margin:0;padding:2px 0;clear:right;}
+html>body div.details #purchase #priceoption h4 {padding:0;}
+div.details #purchase #priceoption p {margin:0;padding:0 0 0 22px;}
+div.details #purchase a.tc {margin:5px 0 47px 22px;padding:0;width:162px;height:14px;display:block;background:url(../images/btn_t_and_c.gif) top left no-repeat;text-indent:-9999px;}
+
+div.details #purchase #sendtophone {position:absolute;width:439px;}
+div.details #purchase #sendtophone span {float:left;color:#666;font-size:11px;padding:15px 0 0 2px;}
+div.details #purchase #sendtophone div {float:left;}
+div.details #purchase #sendtophone p {color:#666;margin:0;padding:5px 0 0 22px;}
+div.details #purchase #sendtophone input.areacode {background:url(../images/bg_phone_areacode.gif) top left no-repeat;width:36px;height:17px;margin:0 0 0 8px;padding:2px 4px;border:0;}
+div.details #purchase #sendtophone input.phonenumber {background:url(../images/bg_phone_number.gif) top left no-repeat;width:120px;height:17px;margin:5px 0 0 22px;padding:2px 4px;border:0;}
+
+div.details #purchase #sendtophone div.select {clear:both !important;float:none !important;background:url(../images/bg_select_138x17.gif) top right no-repeat;width:138px;cursor:pointer;position:absolute;top:40px;left:22px;}
+div.details #purchase #sendtophone div.select:hover {background:#b6b6b6 url(../images/bg_select_138x17_up.gif) top right no-repeat;}
+div.details #purchase #sendtophone div.select div.selected {clear:both !important;float:none !important;height:17px;line-height:17px;color:#666;font-size:11px;vertical-align:middle;padding:0 20px 0 7px;}
+div.details #purchase #sendtophone div.select:hover div.selected {color:#fff;}
+div.details #purchase #sendtophone div.select ul {display:none;margin:0;padding:0;}
+div.details #purchase #sendtophone div.select:hover ul {display:block;}
+div.details #purchase #sendtophone div.select ul li {list-style:none;color:#fff;cursor:pointer;text-align:left;margin:0;padding:3px 7px;border-bottom:1px solid #eee;}
+div.details #purchase #sendtophone div.select ul li:hover {background:#eee;color:#333;}
+div.details #purchase #sendtophone a.send {position:absolute;top:66px;left:23px;padding:0;width:62px;height:14px;display:block;background:url(../images/btn_send.gif) top left no-repeat;text-indent:-9999px;}
+div.details #purchase #sendtophone p.error {position:absolute;top:62px;left:85px;color:#e05206 !important;font-weight:bold;}
+
+div.details #purchase #steps.step4 {position:absolute;bottom:60px;left:0px;}
+
+div.details #tellfriend {position:absolute;top:375px;right:38px;width:267px;height:236px;z-index:2;font-size:11px;}
+div.details #tellfriend h2 {background:url(../images/t_tell_friend.png) top left no-repeat;width:189px;height:34px;display:block;text-indent:-9999px;margin:0;padding:0;}
+div.details #tellfriend #tellfriend_item {background:url(../images/bg_item_title.gif) top left repeat-x;padding:6px 10px;width:237px;}
+div.details #tellfriend #tellfriend_item img {float:left;width:35px;height:35px;}
+div.details #tellfriend #tellfriend_item h1.title {color:#666;font-size:11px;font-weight:bold;height:35px;line-height:35px;overflow:hidden;margin:0;padding:0 0 0 5px;}
+
+div.details #tellfriend  h5 {float:left;width:115px;height:17px;line-height:17px;text-align:right;margin:0 0 5px 0;font-size:11px;font-weight:normal;}
+
+div.details #tellfriend #tellfriend_form {background:url(../images/bg_item_title.gif) top left repeat-x;padding:6px 5px 0;width:247px;}
+div.details #tellfriend #tellfriend_form input.txt {font-size:11px;background:url(../images/bg_txt_126x17.gif) top left no-repeat;width:120px;height:17px;line-height:17px;border:0;margin:0 0 5px 5px;padding:0 3px;float:left;}
+div.details #tellfriend #tellfriend_form div {float:left;}
+div.details #tellfriend #tellfriend_form input.radio {vertical-align:middle;float:left;line-height:12px;margin:0 3px 0 5px !important;width:12px;height:12px;}
+div.details #tellfriend #tellfriend_form label {color:#666;font-weight:normal;font-size:11px;vertical-align:middle;margin:0;padding:2px 0 0 0;line-height:12px;float:left;}
+html>body div.details #tellfriend #tellfriend_form label {padding:0;}
+
+div.details #tellfriend #tellfriendphone {position:relative;padding:0 5px;width:247px;height:85px;}
+div.details #tellfriend #tellfriendphone span {float:left;color:#666;font-size:11px;padding:15px 0 0 2px;}
+div.details #tellfriend #tellfriendphone div {float:left;}
+div.details #tellfriend #tellfriendphone p {color:#666;margin:0;padding:0 0 0 4px;}
+div.details #tellfriend #tellfriendphone input.recipient_areacode {background:url(../images/bg_friendphone_areacode.gif) top left no-repeat;width:15px;height:17px;margin:0 0 0 4px;padding:2px 4px;border:0;}
+div.details #tellfriend #tellfriendphone input.recipient_phonenumber {background:url(../images/bg_friendphone_number.gif) top left no-repeat;width:66px;height:17px;margin:0 0 0 4px;padding:2px 4px;border:0;}
+div.details #tellfriend #tellfriendphone div.select {clear:both !important;float:none !important;background:url(../images/bg_select_121x17.gif) top right no-repeat;width:121px;cursor:pointer;position:absolute;top:40px;right:8px;}
+div.details #tellfriend #tellfriendphone div.select:hover {background:#b6b6b6 url(../images/bg_select_121x17_up.gif) top right no-repeat;}
+div.details #tellfriend #tellfriendphone div.select div.selected {clear:both !important;float:none !important;height:17px;line-height:17px;color:#666;font-size:11px;vertical-align:middle;padding:0 20px 0 7px;}
+div.details #tellfriend #tellfriendphone div.select:hover div.selected {color:#fff;}
+div.details #tellfriend #tellfriendphone div.select ul {display:none;margin:0;padding:0;}
+div.details #tellfriend #tellfriendphone div.select:hover ul {display:block;}
+div.details #tellfriend #tellfriendphone div.select ul li {list-style:none;color:#fff;cursor:pointer;text-align:left;margin:0;padding:3px 7px;border-bottom:1px solid #eee;}
+div.details #tellfriend #tellfriendphone div.select ul li:hover {background:#eee;color:#333;}
+
+div.details #tellfriend #tellfriendemail {position:relative;padding:0 5px;width:247px;height:40px;}
+div.details #tellfriend #tellfriendemail input.txt {font-size:11px;background:url(../images/bg_txt_126x17.gif) top left no-repeat;width:120px;height:17px;line-height:17px;border:0;margin:0 0 5px 5px;padding:0 3px;float:left;}
+
+div.details #tellfriend a.send {position:absolute;top:45px;left:100px;padding:0;width:62px;height:14px;display:block;background:#f00 url(../images/btn_send.gif) top left no-repeat;text-indent:-9999px;}
+div.details #tellfriend p.error {position:absolute;top:90px;left:0px;color:#e05206 !important;font-weight:bold;}
+div.details #tellfriend p.recommend_info {position:absolute;top:90px;left:0px;color:#e05206;}
+
+#content_games.details #tellfriend {top:335px;}
+#content_games.details #survey {bottom:23px;}
+#content_games.details #survey_bg {bottom:23px;}
+
+#content_apps.details #tellfriend {top:335px;}
+#content_apps.details #survey {bottom:23px;}
+#content_apps.details #survey_bg {bottom:23px;}
+
+#content_wp.details #tellfriend {top:335px;}
+#content_wp.details #survey {bottom:23px;}
+#content_wp.details #survey_bg {bottom:23px;}
+
+#content_videos.details #tellfriend {top:395px;}
+#content_videos.details #survey {bottom:23px;}
+#content_videos.details #survey_bg {bottom:23px;}
+
+#content_promo.details #details_right_bg {background:url(../images/bg_contenthome2_right.png) top left no-repeat;width:285px;height:545px;position:absolute;top:47px;right:31px;z-index:1;}
+#content_promo.details #tellfriend {top:50px;}
+#content_promo.details #survey {top:338px;}
+#content_promo.details #survey_bg {top:338px;}
+
+div.details #ratingBox {margin:10px 10px 0 0;float:right;width:100px;}
+div.details #ratingBox img {width:12px;height:13px;}
+div.details #ratingBox div.starsContainer {width:70px !important;height:14px;margin-right:5px;}
+div.details #ratingBox span.by {display:block;}
+
+/***** THANKYOU *****/
+#content_tks {width:560px !important;height:340px !important;}
+#content_tks #tks_left_bg {background:url(../images/bg_tks_left.png) top left no-repeat;width:535px;height:277px;position:absolute;top:47px;left:32px;z-index:1;}
+/*#content_tks #tks_right_bg {background:url(../images/bg_tks_right.png) top left no-repeat;width:285px;height:253px;position:absolute;top:47px;right:31px;z-index:1;}*/
+
+#content_tks  #page_content {width:535px;height:277px;position:absolute;top:47px;left:32px;z-index:2;}
+#content_tks  #page_content h2 {background:url(../images/t_thank_you.png) top left no-repeat;width:113px;height:43px;text-indent:-9999px;position:absolute;left:12px;top:18px;margin:0;padding:0;}
+#content_tks  #page_content p {position:absolute;left:147px;top:84px;font-size:13px;color:#5aacd6;}
+#content_tks  #page_content a.btn_home {position:absolute;bottom:108px;left:270px;padding:0;width:106px;height:14px;display:block;background:url(../images/btn_home.gif) top left no-repeat;text-indent:-9999px;}
+
+/***** COMMON PAGE *****/
+#common_header {background:url(../images/bg_content_header.png) top left no-repeat;width:528px;height:67px;position:relative;top:60px;left:32px;z-index:2;}
+#common_header h2 {font-size:20px;font-weight:normal;color:#e05206;line-height:49px;vertical-align:middle;padding:0 12px;}
+#common_body {background:url(../images/bg_content_body.png) bottom left no-repeat;width:528px;z-index:2;position:relative;top:60px;left:32px;margin:0 0 30px 0;padding:0 0 20px 0;font-size:11px;}
+#common_body h3 {font-size:11px;font-weight:bold;color:#666;padding:0 12px;}
+#common_body ul {margin:0 15px 10px 25px;padding:0;}
+#common_body ul li {margin:0 0 8px 0;padding:0;}
+#common_body p {margin:0 15px 10px;padding:0;}
+#common_right_bg {background:url(../images/bg_tks_right.png) top left no-repeat;width:285px;height:253px;position:absolute;top:60px;right:31px;z-index:1;}
+#common #survey_bg {top:59px;right:32px;}
+#common #survey {top:59px;right:32px;}
+
+/***** SELECT PHONE PAGE *****/
+#phone_selection {height:770px;}
+#phone_selection_left_bg {background:url(../images/bg_phone_selection.png) top left no-repeat;width:535px;height:734px;position:absolute;top:50px;left:36px;z-index:1;}
+#phone_selection_content {width:535px;height:734px;position:absolute;top:50px;left:36px;z-index:2;}
+#phone_selection_content h2 {background:url(../images/t_select_your_nextel.png) top left no-repeat;width:196px;height:30px;text-indent:-9999px;position:absolute;left:12px;top:16px;margin:0;padding:0;}
+#phone_selection_content .inside {position:relative;top:90px;left:75px;font-size:11px;width:450px;}
+#phone_selection_content .inside p {margin:0 0 10px;padding:0;color:#5aacd6;}
+#phone_selection #survey_bg {top:59px;right:32px;}
+#phone_selection #survey {top:59px;right:32px;}
+
+#phone_selection #phones {margin:0 0 0 2px;height:348px;overflow:auto;}
+#phone_selection #phones ul {margin:0 5px 5px 0;list-style:none;display:block;float:left;width:132px;height:82px;display:inline-block;cursor:pointer;}
+#phone_selection #phones ul:hover {background:#e8e8e8;}
+#phone_selection #phones ul li.img{float:left;margin:1px 5px 1px 1px;}
+#phone_selection #phones ul li.img img {width:50px;height:75px;}
+#phone_selection #phones ul li.phonemodel{color:#5aacd6;font-size:11px;margin:20px 0 0 0;}
+#phone_selection #phones ul li.checked{color:#666666;font-size:9px;background:url(../images/i_checked.gif) left top no-repeat;padding:0 0 0 16px;height:16px;line-height:16px;vertical-align:bottom;display:inline-block;}
+#phone_selection #phones ul li.unchecked{color:#c9c9c9;font-size:9px;background:url(../images/i_unchecked.gif) left top no-repeat;padding:0 0 0 16px;height:16px;line-height:16px;vertical-align:bottom;display:inline-block;}
+
+/***** SEARCH RESULTS *****/
+#content_search #survey_bg {top:59px;right:32px;}
+#content_search #survey {top:59px;right:32px;}
+
+#content_search #common_body ol {margin:0;padding:0 23px 0 23px;color:#5aacd6;font-size:11px;list-style:none;}
+#content_search #common_body ol li {background:url(../images/bg_hline.gif) bottom left repeat-x;padding:15px 0 12px 0;position:relative !important;}
+#content_search #common_body ol li span {float:right;width:400px;display:block;position:relative !important}
+#content_search #common_body ol li p {margin:0;padding:0;}
+#content_search #common_body ol li p.num {float:left;width:30px;text-align:center;font-weight:bold;}
+#content_search #common_body ol li p.th {float:left;width:35px;margin-right:11px;}
+#content_search #common_body ol li p.title {color:#e05206;}
+#content_search #common_body ol li p.desc {margin:2px 0;}
+#content_search #common_body ol li p.type {color:#e05206;}
+#content_search #common_body ol li a.more {display:block;background:url(../images/btn_more.gif) top left no-repeat;width:54px;height:14px;text-indent:-9999px;position:relative !important;margin:10px 0 0 0;}
+
+#content_search #common_body div.pagination {position:relative !important;padding:20px 0 !important;}
+
+/***** ADVANCED SEARCH *****/
+#advanced_search fieldset {color:#5aacd6;margin:0 0 0 215px;padding:0;border:0;}
+#advanced_search fieldset.perpage {margin:0;text-align:center;position:relative;}
+#advanced_search fieldset.perpage p {margin:0 0 0 -46px;}
+#advanced_search fieldset.perpage div.select {clear:both !important;float:none !important;background:url(../images/bg_select_41x17.gif) top right no-repeat;width:41px;cursor:pointer;position:absolute;top:0;left:300px;}
+#advanced_search fieldset.perpage div.select:hover {background:#b6b6b6 url(../images/bg_select_121x17_up.gif) top right no-repeat;}
+#advanced_search fieldset.perpage div.select div.selected {clear:both !important;float:none !important;height:17px;line-height:17px;color:#666;font-size:11px;vertical-align:middle;padding:0 20px 0 7px;}
+#advanced_search fieldset.perpage div.select:hover div.selected {color:#fff;}
+#advanced_search fieldset.perpage div.select ul {display:none;margin:0;padding:0;}
+#advanced_search fieldset.perpage div.select:hover ul {display:block;}
+#advanced_search fieldset.perpage div.select ul li {list-style:none;color:#fff;cursor:pointer;text-align:left;margin:0;padding:3px 7px;border-bottom:1px solid #eee;}
+#advanced_search fieldset.perpage div.select ul li:hover {background:#eee;color:#333;}
+
+/*#advanced_search fieldset input.chbx{margin:0;padding:0;border:0;background:#fff url(../images/bg_checkbox.gif) top left no-repeat;width:10px;height:10px;}*/
+#advanced_search fieldset input.txt {font-size:11px;background:url(../images/bg_txt_126x17.gif) top left no-repeat;width:120px;height:17px;line-height:17px;border:0;margin:0;padding:0 3px;}
+#advanced_search a.search {display:block;background:url(../images/btn_search.gif) top left no-repeat;width:66px;height:14px;text-indent:-9999px;position:relative !important;margin:10px auto;}
+
+#advanced_search  div.hr {background:url(../images/bg_hline.gif) bottom left repeat-x;clear:both;float:none;margin:20px auto;padding:0;border:0;width:494px;height:2px;}
+/***** FOOTER *****/
+#footer {background:url(../images/bg_footer.png) bottom left no-repeat;height:78px;}
+#footerp {width:910px;padding:0 29px;height:30px;line-height:30px;vertical-align:middle;position:absolute;bottom:0;z-index:2;}
+#footerp p {width:520px;}
+#footerp p.browser {width:335px;float:right;font-style:italic;}
+
+/***********************/
+.clear {clear:both !important;float:none !important;}
+.hide {display:none;visibility:hidden;}
+input {font-family:Arial, Helvetica, sans-serif;font-size:11px;color:#666666;background-attachment:fixed !important;}
+html>body input {background-attachment:scroll !important;}
+
+/***********/
+#cm #multipleNumbersHeader {background:#fff;width:749px;margin:0;padding:0;}
+#cm #multipleNumbersMsg{font-size:11px;}
+#cm #multipleNumbersHeader h3,
+#cm #multipleNumbersMsg h3,
+#cm #multipleNumbers h3 {margin:0;padding:3px;font-size:12px;color:#5aacd6;}
+#cm #multipleNumbersHeader p{margin:0;padding:0 3px;}
+#cm #multipleNumbersHeader table {width:730px;}
+#cm #multipleNumbers table tr th{background:#5aacd6;color:#fff !important;border-right:1px solid #999999 !important;border-bottom:1px solid #999999 !important; text-align:center;font-size:10px;}
+
+#cm #multipleNumbersMsg {	
+	width: 750px;
+	height: 390px; 	/* must be greater than tbody*/
+	overflow: auto;
+	margin: 20px 0 0 18px;
+	overflow-x: hidden;
+	vertical-align:middle;
+	}
+
+#cm #multipleNumbers {	
+	width: 770px;
+	height: 340px; 	/* must be greater than tbody*/
+	overflow: auto;
+	margin: 0 0 0 8px;
+	overflow-x: hidden;
+	}
+
+#cm #multipleNumbers table {
+	width: 755px;
+	border: none;
+	}
+	
+#cm #multipleNumbers table>tbody	{  /* child selector syntax which IE6 and older do not support*/
+	overflow: auto; 
+	overflow-x: hidden;
+	}
+	
+#cm #multipleNumbers thead tr	{
+	position:relative; 
+	top: expression(offsetParent.scrollTop); /*IE5+ only*/
+	}
+
+#cm #multipleNumbers td:last-child {padding-right: 20px;} /*prevent Mozilla scrollbar from hiding cell content*/
+#cm #multipleNumbers table tr td{border-right:1px solid #999999 !important;border-bottom:1px solid #999999 !important; text-align:center;font-size:11px;height:19px;}
+
+#cm #multipleNumbersHeader table .chBox,
+#cm #multipleNumbers table .chBox {width:35px;}
+#cm #multipleNumbersHeader table .long,
+#cm #multipleNumbers table .long {width:325px;}
+#cm #multipleNumbersHeader table .medium,
+#cm #multipleNumbers table .medium {width:90px;}
+#cm #multipleNumbersHeader table .short,
+#cm #multipleNumbers table .short {width:40px;}
+#cm #multipleNumbers table tr.readonly {background:#ccc;}
+#cm #multipleNumbers table tr.hl {background:#fc0;}
+
+#cm #multipleNumbersHeader div.legend {float:right;font-size:9px;margin:10px 0 0 0;padding:0;border:1px solid #eee;}
+#cm #multipleNumbersHeader div.legend p {margin:2px 0;}
+#cm #multipleNumbersHeader div.legend p span {display:block;float:left;width:10px;height:10px;margin:0 4px 0 0;}
+#cm #multipleNumbersHeader div.legend p.readonly span {background:#ccc;}
+#cm #multipleNumbersHeader div.legend p.hl span {background:#fc0;}
+
+#cm p.submitMultipleNumbers {width:730px;text-align:center;margin:10px 0;position:absolute;bottom:40px;}
+
+.popup select.page {float:right;margin:0 20px 0 0;font-size:9px;}
+.popup #pagination {width:780px;height:50px;text-align:center;position:absolute;bottom:0px;}
+.popup #pagination a{margin:0 5px;}
+.popup #pagination a:hover{margin:0 5px;background:#ccc;}
+.popup #pagination span {font-size:12px;font-weight:bold;color:#fff;background:#56595C;padding:2px;}
+
+.popup #login {/*top:180px;right:264px;*/width:280px;position:relative;margin:20px auto;}
+.popup #logo {margin:30px 0 0 30px;}
+.popup h1 {text-align:center;font-weight:normal;font-size:20px;padding:10px 20px 10px;}
+
+.popup #preview {float:right;}
+
+#content_search div.tabs {width:510px;position:relative;top:0;left:0;margin:0;padding:0;}
+#content_search div.tabs ul {width:510px;position:relative;top:0;left:0;margin:0 10px;padding:0;}
+#content_search #content_music, 
+#content_search #content_games, 
+#content_search #content_apps, 
+#content_search #content_wp, 
+#content_search #content_videos {background:none;position:relative;top:0;left:0;height:auto;}
+#content_search #catlist {background:none;position:relative;top:0;left:0;width:510px;height:auto;margin:0 10px;}
+#content_search #catlist div.list {width:100%;position:relative;top:0;left:0;}
+#content_search #catlist div.list ul li {width:100%;background:url(../images/bg_search_catlist.gif) bottom left repeat-x;}
+#content_search div.pagination {position:relative;}
+#content_search span.total {float:right;margin:18px 20px 0 0;font-size:13px;}
+
+#content_city_code  table{border-top:1px solid #666;border-left:1px solid #666;width:100%;}
+#content_city_code  table th{border-right:1px solid #666;border-bottom:1px solid #666;text-align:left;padding:5px;width:50%;}
+#content_city_code  table td{border-right:1px solid #666;border-bottom:1px solid #666;padding:5px;}
+
+p.note {margin:0 0 5px 0 !important;}
+html>body p.note {margin:5px 0 !important;}
+.red {color:#e05206;}

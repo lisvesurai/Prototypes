@@ -1,0 +1,65 @@
+#contentRatingFrm {padding-top:0;}
+#contentRatingFrm h5 {margin-top:1.5em;font-size:1.4em;}
+#contentRatingFrm label {font-size:0.9em;font-weight:normal;}
+#contentRatingFrm div.action {margin-top:1em;}
+
+fieldset {
+	border: none;
+	border-bottom: 1px solid #e6e6e6;
+    margin: 0;
+    padding: 0;
+	padding-bottom:22px;
+	margin-bottom: 23px !important;
+}
+fieldset h3 {
+    margin-top: -2px;
+    margin-bottom: 16px;
+
+}
+
+fieldset h3 + p{
+	font-size: 15px;
+	line-height: 23px;
+	font-weight: 200;
+	font-family: 'TradeGothicNext', Helvetica, Arial, sans-serif;
+	color: #606060;
+	padding-top: 7px;
+	margin-top: -23px;
+	margin-bottom: 16px;
+}
+
+legend  {
+	font-size:1.5em;
+	font-family: 'TradeGothicNext', Helvetica, Arial, sans-serif;
+	background:none;
+}
+
+.section-container > section > .title span {
+	color:#909090;
+	margin: 0px;
+	padding:0;
+	line-height:1.2em;
+}
+
+fieldset.languages h3 {
+	font-weight:bold;
+	font-size:1.5em;
+	margin-top:0;
+}
+
+.vendorportal .release-list section a.list-item.release-title h3.title {
+	position:absolute;
+	left:140px;
+}
+
+.radio_choice {
+	padding: 0 0 23px 0;
+}
+
+a.viewprice {
+	position:absolute;
+	top:-17px;
+	right: 10px;
+	font-size:.8em;
+	color:#008AB8;
+}

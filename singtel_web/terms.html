@@ -1,0 +1,514 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<link rel="shortcut icon" href="singtelUI/images/favicon.ico"/>
+<link rel="icon" type="image/gif" href="singtelUI/images/animated_favicon1.gif"/>
+<title>SingTel App Store</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<script type="text/javascript" src="js/prototype-1.5.js"></script>
+<script type="text/javascript" src="scripts/pager.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js"></script>
+<script type="text/javascript" src="js/overlibmws.js"></script>
+<script type="text/javascript" src="js/ajaxtags-1.2-beta2.js"></script>
+<script type="text/javascript" src="js/fleegix.js"></script>
+<script src='js/HashMap.js' language="javascript" type="text/javascript"></script>
+<script src='js/validations.js' language="javascript" type="text/javascript"></script>
+<script type="text/javascript" src="js/ascii_utility.js"></script>
+<script src='scripts/cm.js' language="javascript" type="text/javascript"></script>
+<!-- Filed Needed for prototype validation -->
+<script type="text/javascript" src="js/effects.js"></script>
+<script type="text/javascript" src="js/prototype-validation.js"></script>
+<link rel="stylesheet" type="text/css" href="styles/prototype-validation-style.css" />
+<script type="text/javascript" src="scripts/nav.js"></script>
+<script type="text/javascript" src="scripts/global_imageMouseovers.js"></script>
+<script type="text/javascript" src="scripts/c3_productViewer.js"></script>
+<script type="text/javascript" src="scripts/nav_cart.js"></script>
+<script type="text/javascript" src="scripts/c19_printPage.js"></script>
+<script type="text/javascript" src="scripts/init.js"></script>
+<script type="text/javascript" src="scripts/JavaScriptFlashGateway.js"></script>
+<script type="text/javascript" src="scripts/accessoryPopup.js"></script>
+<script type="text/javascript" src="scripts/singtel.js"></script>
+<script type="text/javascript" src="scripts/paging.js"></script>
+<!-- New JS Files -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script src="singtelUI/js/animatedcollapse.js" type="text/javascript"></script>
+<script type="text/javascript">
+	animatedcollapse.addDiv('menuExpand', 'fade=1,height=262px')
+	animatedcollapse.ontoggle=function($, divobj, state){ //fires each time a DIV is expanded/contracted
+		//$: Access to jQuery
+		//divobj: DOM reference to DIV being expanded/ collapsed. Use "divobj.id" to get its ID
+		//state: "block" or "none", depending on state
+	}
+	animatedcollapse.init()
+</script>
+<script type="text/javascript" src="singtelUI/js/prototype.js"></script>
+<script type="text/javascript" src="singtelUI/js/stars.js"></script>
+<script type="text/javascript" src="singtelUI/js/cm.js"></script>
+<!-- Adding CSS here  -->
+<link rel="stylesheet" type="text/css" href="singtelUI/css/main.css"/>
+<!-- script type="text/javascript">
+  //document.write('<div id="PreviewLayer" style="display:none;left:0px;top:0px;"></div>');
+  //document.onmousemove=followmouse;
+</script -->
+<script language="javascript">
+	Event.observe(window, 'load', page_loaded, false); 
+</script>
+</head>
+<body>
+<div id="topbar">
+	<div class="innercontainer">
+		<!-- start singtel header -->
+		<a href="http://www.singtel.com/"><img src="singtelUI/images/logo.png" alt="SingTel" align="left" border="0"></a>
+		<form>
+			<select name="select" onchange="goURL(this)">
+				<option value="">SingTel Global Sites</option>
+				<option value="http://www.singtel.com">Singapore</option>
+				<option value="http://www.optus.com.au">Australia</option>
+				<option value="http://www.singtel.com/bd">Bangladesh</option>
+				<option value="http://business.singtel.com/singtel_cn/default.asp">China</option>
+				<option value="http://business.singtel.com/singtel_eu/default.asp">Europe</option>
+				<option value="http://business.singtel.com/singtel_hk/default.asp">Hong Kong</option>
+				<option value="http://business.singtel.com/singtel_in/default.asp">India</option>
+				<option value="http://business.singtel.com/singtel_id/default.asp">Indonesia</option>
+				<option value="http://business.singtel.com/singtel_jp/select_language.asp?language_=japanese">Japan</option>
+				<option value="http://business.singtel.com/singtel_kr/select_language.asp?language_=korean">Korea</option>
+				<option value="http://business.singtel.com/singtel_my/default.asp">Malaysia</option>
+				<option value="http://www.singtel.com/me">Middle East</option>
+				<option value="http://business.singtel.com/singtel_ph/default.asp">Philippines</option>
+				<option value="http://business.singtel.com/singtel_tw/select_language.asp?language_=chinese">Taiwan</option>
+				<option value="http://business.singtel.com/singtel_th/default.asp">Thailand</option>
+				<option value="http://business.singtel.com/singtel_us/default.asp">USA</option>
+				<option value="http://business.singtel.com/singtel_vn/default.asp">Vietnam</option>
+			</select>
+		</form>
+		<ul>
+			<li> <a href="http://home.singtel.com/about_singtel/company_profile/default.asp" target="_blank"> about SingTel </a> </li>
+			<li> <a href="http://home.singtel.com/consumer/consumer_default.asp" target="_blank"> consumer </a> </li>
+			<li> <a href="http://business.singtel.com/sme/" target="_blank"> business </a> </li>
+			<li> <a href="http://home.singtel.com/customer_service/default.asp" target="_blank"> customer service </a> </li>
+			<li> <a href="http://home.singtel.com/customer_service/cust_serv_callus.asp" target="_blank"> contact us </a> </li>
+		</ul>
+	</div>
+	<!-- end singtel header -->
+</div>
+<input type="hidden" name="itemtype" value="" id="itemtype"/>
+<input type="hidden" name="itemtypeId" value="" id="itemtypeId"/>
+<input type="hidden" name="searchby" value="" id="searchby"/>
+<input type="hidden" name="formname" value="" id="formname"/>
+<input type="hidden" name="viewallvalue" value="" id="viewallvalue"/>
+<input type="hidden" name="selectedcategorytext" value="" id="selectedcategorytext"/>
+<input type="hidden" name="rowcount" value="" id="rowcount"/>
+<input type="hidden" name="categorysearchvalue" value="" id="categorysearchvalue"/>
+<input type="hidden" name="searchvalue" value="Title" id="searchvalue"/>
+<input type="hidden" name="rtsearchtype" value="" id="rtsearchtype"/>
+<input type="hidden" name="sortby" value="" id="sortby"/>
+<input type="hidden" name="sortorder" value="" id="sortorder"/>
+<input type="hidden" name="itemId" value="" id="itemId"/>
+<input type="hidden" name="companyId" value="0" id="companyId"/>
+<input type="hidden" name="listid" value="" id="listid"/>
+<input type="hidden" name="command" value="" id="command"/>
+<input type="hidden" name="alphaletter" value="" id="alphaletter"/>
+<input type="hidden" name="pagetype" value="" id="pagetype"/>
+<input type="hidden" name="artist" value="" id="artist"/>
+<input type="hidden" name="categorydisplaypath" value="" id="categorydisplaypath"/>
+<input type="hidden" name="developerName" value="" id="developerName"/>
+<input type="hidden" name="deviceDisplayName" value="" id="deviceDisplayName"/>
+<input type="hidden" name="viewalllisttext" value="" id="viewalllisttext"/>
+<input type="hidden" name="fileExtrank" value="0" id="fileExtrank"/>
+<input type="hidden" name="album_art" value="" id="album_art"/>
+<input type="hidden" name="album_name" value="" id="album_name"/>
+<input type="hidden" name="categorybreadcrumb" value="" id="categorybreadcrumb"/>
+<input type="hidden" name="prevpageurl" value="" id="prevpageurl"/>
+<!-- url related hidden variables -->
+<input type=hidden name="txtdisplayContenturl" id="txtdisplayContenturl"/>
+<input type=hidden name="txtdeviceId" id="txtdeviceId"/>
+<input type=hidden name="txtcontentDetailsurl" id="txtcontentDetailsurl"/>
+<div id="middle">
+	<script src="spripts/singtel.js" type="text/javascript"></script>
+	<script type="text/javascript">
+var bExe = false;
+function checkMenuStatus() {
+	
+}
+</script>
+	<div id="menu" onreadystatechange="checkMenuStatus();">
+		<div class="innercontainer">
+			<div id="menuExpand" style="display:none;">
+				<!-- Categories -->
+				<div id="categoriesNav">
+					<h2>Categories</h2>
+					<ul>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1001');return false;"> Games </a>
+							<ul>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1008');return false;"> Action  & Adventure </a> </li>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1003');return false;"> Card & Board </a> </li>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1007');return false;"> En Espanol </a> </li>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1018');return false;"> Finance </a> </li>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1005');return false;"> Kids & Family </a> </li>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1006');return false;"> Puzzle </a> </li>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1002');return false;"> Retro & Arcade </a> </li>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1009');return false;"> Sports & Racing </a> </li>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1004');return false;"> TV & Movie </a> </li>
+							</ul>
+						</li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1013');return false;"> Business Solutions </a> </li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1016');return false;"> En Espanol </a> </li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1019');return false;"> Family </a> </li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1018');return false;"> Finance </a> </li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1011');return false;"> GPS </a> </li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1015');return false;"> Lifestyle </a> </li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1014');return false;"> News </a> </li>
+					</ul>
+					<ul>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1012');return false;"> Productivity </a> </li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1017');return false;"> Sports & Entertainment </a> </li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1020');return false;"> Weather </a> </li>
+					</ul>
+				</div>
+				<!-- Categories Ends -->
+				<div class="phoneSelector_bg">
+					<div class="phoneSelector_img">
+						<img src="images/phones/no_phone_image.gif"/>
+					</div>
+					<div class="phoneSelector_txt">
+						<p class="phoneModel">No Device Selected. </p>
+						<p class="txt">View apps compatible with:</p>
+						<div id="phoneBrandSelect">
+							<select name="mfg" id="mfg" onchange="getDevice(this.value);">
+								<option value="-1"
+    >-- Select Model --</option>
+								<option value="12">Apple</option>
+								<option value="8">Blackberry</option>
+								<option value="9">HTC</option>
+								<option value="3">LG</option>
+								<option value="10">Motorola</option>
+								<option value="5">Nokia</option>
+								<option value="4">Samsung</option>
+								<option value="7">Sony Ericsson</option>
+							</select>
+						</div>
+						<div id="phoneModelSelect">
+							<select id="selDevice" name="device" onChange="reloadPage(this.value); return false;" disabled>
+								<option value="-1">-- Select Phone -- </option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="sidebar">
+					<div id="accountStatus">
+						<form>
+							<h2>Log In:</h2>
+							<p class="login_btn" onclick="login('content_tAndC.do?');return false;">Log In</p>
+							<p><a href="http://staging.ideas.singtel.com/RedirectFile.jsp?type=signup">Not a member? Sign up! </a></p>
+						</form>
+					</div>
+					<div id="cm_search">
+						<h2>Search for an app:</h2>
+						<fieldset>
+						<input type="text" class="txt" id="keyword" name="keyword"  
+			value="Enter Keyword" 
+			onfocus="this.style.color='#333';this.value='';" 
+			onblur="if(this.value==''){this.style.color='#999';this.value='Enter Keyword';}"
+			onKeyPress="if(event.which==13||(window.event && window.event.keyCode==13)){searchKeyword();return false;}"/>
+						<span onclick="searchKeyword();return false;" class="search_btn"/>Go</span>
+						</fieldset>
+					</div>
+					<div id="advancedSearch">
+						<h2>Search by title or developer</h2>
+						<fieldset>
+						<input class="txt" id="txtTitle" name="txtTitle" 
+				   type="text" value="Search by title" 
+				   onfocus="this.style.color='#333';this.value='';" 
+				   onblur="if(this.value==''){this.style.color='#b9b9b9';this.value='Search by title';}"
+				   onKeyPress="if(event.which==13||(window.event && window.event.keyCode==13)){searchTitleDev(true,false);return false;}"/>
+						<span onclick="searchTitleDev(true,false);return false" class="search_btn">Go</span>
+						</fieldset>
+						<fieldset>
+						<input class="txt" id="txtDeveloper" name="txtDeveloper" 
+				   type="text" value="Search by developer" 
+				   onfocus="this.style.color='#333';this.value='';" 
+				   onblur="if(this.value==''){this.style.color='#b9b9b9';this.value='Search by developer';}"
+				   onKeyPress="if(event.which==13||(window.event && window.event.keyCode==13)){searchTitleDev(false,true);return false;}"/>
+						<span onclick="searchTitleDev(false,true);return false;" class="search_btn">Go</span>
+						</fieldset>
+					</div>
+					<form name="srchForm" id="srchForm" method="post" action="gs_searchByKeyword.do">
+						<input type="hidden" name="keyWord" value="">
+						<input type="hidden" name="sartIndex" value="0">
+						<input type="hidden" name="totalItems" value="-1">
+						<input type="hidden" name="title" value="">
+						<input type="hidden" name="developer" value="">
+					</form>
+					<script type="text/javascript">
+<!--
+	function searchKeyword(){
+		var objFrm = document.getElementById("srchForm");
+		var vKey = document.getElementById('keyword').value;
+		if(vKey=="Enter Keyword") {
+			vKey="";
+		}
+		var alpha_chars = 0;
+		var special_chars = 0;
+		if(vKey.length<3) {
+			 alert('Search Field must have atleast 3 alphanumeric characters');
+			 return false;
+		}
+		for(var j=0; j<vKey.length; j++)
+		{
+		  var alphaa = vKey.charAt(j);
+		  var hh = alphaa.charCodeAt(0);
+		  if((hh > 47 && hh<58) || (hh > 64 && hh<91) || (hh > 96 && hh<123))
+		  {
+		  		alpha_chars = 1;
+		  }
+		  else	{
+		  	 special_chars = 1;
+			
+		  }
+		}		
+		if (alpha_chars == 0 && special_chars == 1) {
+			 alert('Search Field must have atleast 3 alphanumeric characters');
+			 return false;
+		}
+		objFrm.keyWord.value=vKey;
+		objFrm.submit();
+	}
+	
+	function searchTitleDev(isTitle,isDev) {
+		var objFrm = document.getElementById("srchForm");
+		
+		var vTitle = document.getElementById('txtTitle').value;
+		if(vTitle=='Search by title')
+			vTitle = "";
+			
+		var vDev = document.getElementById('txtDeveloper').value;
+		if(vDev=='Search by developer')
+			vDev = "";
+		
+		if(vTitle.length<3 && vDev.length<3) {
+			 alert('Search Field must have atleast 3 alphanumeric characters');
+			 return false;
+		}
+		
+		objFrm.action="gs_searchByTD.do";
+		if(isTitle)
+			objFrm.title.value=vTitle;
+		if(isDev)
+			objFrm.developer.value=vDev;
+		objFrm.submit();
+	}
+//-->
+</script>
+				</div>
+				<div class="clear">
+				</div>
+			</div>
+			<script type="text/javascript">
+	function toggleMenu (y) {
+		x = 'toggle_' + y;
+	
+		if ( document.getElementById(x).innerHTML == '+' ) {
+			animatedcollapse.toggle(y);
+			document.getElementById(x).innerHTML = '-';
+			document.getElementById(x).className = 'hl';
+			ajaxLoader('ajax_turnOnOffMenu.do?menuFlag=OPEN','tempDiv')
+			
+		}
+		else {
+			animatedcollapse.toggle(y);
+			document.getElementById(x).innerHTML = '+';
+			document.getElementById(x).className = '';
+			ajaxLoader('ajax_turnOnOffMenu.do?menuFlag=CLOSE','tempDiv')
+		}
+	}
+	
+	function getDevice(mfgId) {
+		if(mfgId<0){
+			document.getElementById('selDevice').disabled=true;
+			return;
+		}
+		var url = 'ajax_getDevices.do?mfgId='+mfgId;
+		//alert(url);
+		ajaxLoader(url,'phoneModelSelect');
+		
+	}
+	
+	function reloadPage(deviceId){
+		if(deviceId>0) {
+			var url2Redirect = "content_tAndC.do?";
+			if(103 == deviceId) {
+				url2Redirect = "ajax_iPhone.do";
+			}
+			
+			if(url2Redirect=='') { 
+				url2Redirect = "home.do"
+			}
+			onChangeOfPhone(deviceId,url2Redirect);
+		}
+		//alert(deviceId);
+	}
+	
+	
+	
+	</script>
+			<div id="mainMenu">
+				<span id="toggle_menuExpand" onclick="toggleMenu('menuExpand');">+</span> <a href="home.do"><img src="singtelUI/images/SingTelAppZone_logo.png" alt="SingTel App Zone" border="0" /></a>
+			</div>
+			<div id="tempDiv" style="display:none;">
+			</div>
+		</div>
+	</div>
+	<div class="menuShadow">
+	</div>
+	<div class="content">
+		<h2 class="breadcrumb"> Terms & Conditions </h2>
+		<h2 class="tandCtitle">SingTel Mobile Specific Terms and Conditions for SingTel App Zone Service</h2>
+		<div id="tAndC">
+			<ol>
+				<li><u class="heading">Incorporation by Reference</u>
+					<p>In addition to:-</p>
+					<ol>
+						<li>the General Terms (available at :<a href="http://home.singtel.com/terms/default.asp?source=general&product_name=general">http://home.singtel.com/terms/default.asp?source=general&product_name=general</a>)</li>
+						<li>Specific Terms (available at:<a href="http://home.singtel.com/terms/default.asp?source=mobile">http://home.singtel.com/terms/default.asp?source=mobile</a></li>
+						<li>Billing Terms and Conditions (available at :<a href="http://home.singtel.com/customer_service/all_about_bills/default.asp?cat_id_=9526DD99-F1DF-4A00-87A2-12A6FF53C389">http://home.singtel.com/customer_service/all_about_bills/default.asp?cat_id_=9526DD99-F1DF-4A00-87A2-12A6FF53C389</a> which terms and conditions are deemed incorporated by reference, the Customer shall be bound by the following Specific Terms and Conditions of SingTel Mobile's SingTel App Zone Service ("SingTel App Zone Terms"). In the event of any conflict or inconsistency between:
+							<ol>
+								<li>The General Terms, SingTel's Billing Terms and Conditions and/or these SingTel App Zone Terms, such conflict or inconsistency shall be resolved in accordance with the provisions of the General Terms; or</li>
+								<li>Any provision of the Specific Terms and any provision of these SingTel App Zone Terms, these SingTel App Zone Terms shall prevail over the Specific Terms.</li>
+							</ol>
+						</li>
+					</ol>
+				</li>
+				<li> <u class="heading">Definition and Interpretation</u>
+					<ol>
+						<li>In these SingTel App Zone Terms, the following words and expressions shall have the following meanings:
+							<ol>
+								<li>"Application" means mobile applications, downloads, games, information, tools and/or content made available through the Service.</li>
+								<li>"Customer" means the customer of SingTel Mobile who uses or accesses the Service.</li>
+								<li>"SingTel" means Singapore Telecommunications Limited (CRN: 199201624D).</li>
+								<li>"SingTel Mobile" means Singapore Telecom Mobile Pte Ltd (CRN: 199406031E).</li>
+								<li>"SingTel Group Company" means SingTel and each related corporation of SingTel within the meaning given in the Companies Act.</li>
+								<li>"Service" means the service known as SingTel App Zone which allows Customers to access, download and/or use Applications in accordance with these SingTel App Zone Terms.</li>
+								<li>"Territory" means the Republic of Singapore.</li>
+								<li>"Working Days" means Mondays to Fridays excluding gazetted public holidays in the Territory.</li>
+							</ol>
+						</li>
+						<li>The headings or titles to the Clauses in these SingTel App Zone Terms are to facilitate reference and shall not be referred to or relied upon in the construction of any provision of these SingTel App Zone Terms. </li>
+					</ol>
+				</li>
+				<li><u class="heading">Target Market</u>
+					<ol>
+						<li>The Service is available to all SingTel Mobile postpaid and prepaid customers.</li>
+					</ol>
+				</li>
+				<li><u class="heading">Commencement of Service and Fees and Charges  for the Service</u>
+					<ol>
+						<li>Prior to commencement of Service, the Customer must register an account with a username and password.</li>
+						<li>SingTel Mobile shall at its sole discretion be entitled to determine from time to time any fees and/or charges and the terms and mode of payment of such fees and/or charges in relation to the Service including but not limited to the charges for any download, use and/or licence of any Application.</li>
+						<li>Where a Customer opts to pay by credit card or other modes of payment, the Customer shall be responsible for the accuracy of information submitted and for the timely payment of the charges when due.</li>
+					</ol>
+				</li>
+				<li><u class="heading">Customer Obligations and Acknowledgments</u>
+					<ol>
+						<li>The Customer agrees not to use and not to allow or permit any other person to use the Service to:
+							<ol>
+								<li>violate or infringe any other person's rights or interfere with another person's use of the Service or which may adversely affect SingTel Mobile's network;</li>
+								<li>violate any laws, policies, guidelines or regulations of the Territory, including but not limited to any laws, policies, guidelines or regulations applicable to the business and operations of SingTel Mobile and/or any SingTel Group Company;</li>
+								<li>carry out any activities which SingTel Mobile considers to be actually or potentially injurious to other Customers or persons, or to the operation or reputation of SingTel Mobile and/or any SingTel Group Company; and / or</li>
+								<li>do any act that may at any time be prohibited by SingTel's Acceptable Use Policy which can be found at URL : <a href ="http://home.singtel.com/terms/default.asp?source=mobile&product_name=mobile_aup">http://home.singtel.com/terms/default.asp?source=mobile&product_name=mobile_aup</a></li>
+							</ol>
+						</li>
+						<li>The Customer acknowledges and agrees that:
+							<ol>
+								<li>any access to and/or use of the Service shall be deemed as acceptance to be bound by all the terms and conditions herein contained.</li>
+								<li>the Customer shall be solely responsible for the confidentiality and security of the user account including the username and password and all activities carried out through the account.</li>
+								<li>SingTel Mobile reserves the right at its absolute discretion to discontinue and/or suspend the Service or any Application without any liability whatsoever to the Customer.</li>
+								<li>the prevailing data charges of SingTel Mobile is applicable for any access to and/or use of the Service.</li>
+								<li>the Application and the Service is provided on an "as is" basis.</li>
+								<li>the Application is licensed to a Customer for a Customer's personal use.</li>
+								<li>the Customer is responsible for obtaining access to the Service and complying with any instructions which may be given by SingTel Mobile and these SingTel App Zone Terms.</li>
+								<li>the Customer is responsible for all Application that the Customer licenses through the Service.</li>
+								<li>the Service and the Application including but not limited to graphics, user interface, audio clips, editorial Application, and the scripts and software used to implement the Service, contains proprietary information and material that is owned by SingTel Mobile and/or the SingTel Group and/or third parties and is protected by applicable intellectual property and other laws, including but not limited to copyright, and the Customer shall not use such proprietary information or material in any way except for use of the Service in accordance with these SingTel App Zone Terms.</li>
+								<li>the Customer shall comply with all applicable laws including copyright laws when using the Service and/or the Application.</li>
+								<li>the Customer shall ensure that no Application is obtained, stored, copied, distributed, used or misused, rented, leased, loaned, exploited, reproduced or modified in any manner without the consent of SingTel Mobile and/or any relevant third party.</li>
+							</ol>
+						</li>
+					</ol>
+				</li>
+				<li><u class="heading">No Responsibility for third-party materials or web sites</u>
+					<ol>
+						<li>The Application may include materials from third parties. In addition, the Service may provide links to certain third party websites.</li>
+						<li>The Customer acknowledges and agrees that SingTel Mobile is not responsible for examining or evaluating the Application or verifying the legality, adequacy, integrity, safety, timeliness, suitability, appropriateness and/or accuracy of any such third-party material or websites.</li>
+						<li>SingTel Mobile does not warrant or endorse and does not assume and will not have any liability or responsibility whatsoever in respect of any third-party materials or websites or for any other materials, products, or services of third parties made available through the Service.</li>
+						<li>Links to other websites are provided solely as a convenience to the Customer. </li>
+						<li>The Customer agrees that the Customer shall not use any third-party materials in any manner that would infringe or violate the rights of any third parties, and that SingTel Mobile is not in any way responsible for any such use by the Customer.</li>
+						<li>The Customer is subject to and shall comply with all terms and conditions which may be imposed by third parties who participate in the Service and SingTel Mobile shall not be responsible in any way whatsoever for any failure by the Customer to comply with such terms and conditions.</li>
+					</ol>
+				</li>
+				<li><u class="heading">Disclaimers</u>
+					<ol>
+						<li>The Customer accepts and agrees that SingTel Mobile does not warrant the Application and/or Service will be provided uninterrupted or free from errors or that any identified defect will be corrected; further, no such warranty is given that the Service is free from any virus or other malicious, destructive or corrupting code or program.</li>
+						<li>The Customer further acknowledges and agrees that SingTel Mobile:
+							<ol>
+								<li>expressly excludes any guarantee, representation, warranty, condition, term, or undertaking of any kind, express or implied, statutory or otherwise or any representations  or warranties arising from usage or custom or trade or by operation of law, including (without limitation) as to the sequence, originality, correctness, completeness, accuracy, timeliness, completeness, currency, non-infringement, merchantability, or fitness for any particular purpose in relation to the Application and/or Service;</li>
+								<li>shall not be liable to the Customer for any loss, liability, costs and/or damage whatsoever (whether direct, indirect or consequential) in respect of any matter howsoever arising (whether in tort, negligence or otherwise) in connection with the provision and/or use of the Application and/or Service; and</li>
+								<li>to the fullest extent permitted by law exclude all warranties, rights and remedies (including warranties implied by statue or otherwise) that the Customer would otherwise be entitled to by law.</li>
+							</ol>
+						</li>
+					</ol>
+				</li>
+				<li><u class="heading">General</u>
+					<ol>
+						<li>SingTel Mobile reserves the right to alter, modify, add to or otherwise vary these SingTel App Zone Terms from time to time by notice to the Customer in such manner as SingTel Mobile deems appropriate. The Customer shall be bound by the terms and conditions so amended. In any event, if the Customer continues to use the Service after such notice, the Customer shall be deemed to have accepted the amendments.</li>
+						<li>Any clause in the General Terms, the Specific Terms, the Acceptable Use Policy or any other terms and conditions as may be agreed or accepted by the Customer, that is invalid, unenforceable or illegal shall be enforced as nearly as possible in accordance with its terms, but shall otherwise be deemed severed and shall not affect the enforceability of any other clauses, which clauses shall continue to be valid and enforceable to the fullest extent permitted by law.</li>
+					</ol>
+				</li>
+			</ol>
+		</div>
+		<form action="content_placeOrder.do" method="post" name="purchaseForm" id="purchaseForm">
+			<input type="hidden" name="iid" value="">
+			<input type="hidden" name="ddN" value="">
+			<input type="hidden" name="stId" value="">
+			<input type="hidden" name="stNm" value="">
+			<input type="hidden" name="pmId" value="">
+			<input type="hidden" name="slPr" value="">
+			<input type="hidden" name="ordTot" value="">
+			<input type="hidden" name="deviceId" value="">
+		</form>
+	</div>
+	<script type="text/javascript">
+function backToConfirm() {
+	var objFrm = document.getElementById('purchaseForm');
+	objFrm.action="content_orderConfirm.do";
+	objFrm.submit();
+}
+
+function purchaseItem() {
+	var objFrm = document.getElementById('purchaseForm');
+	if(isEmptyStr(objFrm.deviceId.value)) {
+		alert("No device selected. Please select one to proceed.");
+		return;
+	}
+	
+		var loginUrl = "content_getItemDetails.do?iid=&ddN=";
+		login(loginUrl);
+		return;
+	
+	
+	document.getElementById("btnSubmit").style.display="none"
+	objFrm.submit();
+}
+</script>
+	<div style="clear: both;">
+	</div>
+</div>
+<div id="footer">
+	<div id="footer-left" class="footer-font">
+		<a href="http://welcome.singtel.com/customer_service/cust_serv_callus.asp">Contact us </a> | <a href="http://home.singtel.com/copyright/default.asp">Copyright</a> | <a href="http://home.singtel.com/singtel/index.html">Privacy policy</a> | <a href="http://home.singtel.com/terms/default.asp?source=general">Standard agreements</a> | <a href="http://home.singtel.com/singtel/careers/default.asp">Careers</a> | <a href="forDeveloper.jsp">For Developers</a> | <a href="content_tAndC.do">Terms & Conditions</a> | <a href="content_faq.do">FAQ.</a> | <a href="http://home.singtel.com/sitemap_consumer.asp">Site map</a>
+	</div>
+	<div id="footer-right">
+		(C) SingTel (CRN: 199201624D) All Rights Reserved
+	</div>
+</div>
+</body>
+</html>

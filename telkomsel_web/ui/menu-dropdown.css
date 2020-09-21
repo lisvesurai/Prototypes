@@ -1,0 +1,72 @@
+ul.topnav {
+	list-style: none;
+	color:#000;
+}
+
+ul.topnav li {
+	float: left;
+	color:#000;
+	position: relative; /*--Declare X and Y axis base for sub navigation--*/
+}
+
+ul.topnav li a{
+	display: block;
+	text-decoration: none;
+	float: left;
+	color:#000;
+}
+
+
+ul.topnav li ul.subnav {
+	list-style: none;
+	position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+	background: #f0f0f0;
+	display: none;
+	float: left;
+	margin:0px;
+	width:200px;
+	color:#000;
+	left:-5px;
+    border-top:0;
+    border-right: 0;
+    z-index:9999;
+    padding:0;
+    padding-bottom: 4px;
+	
+}
+
+ul.topnav li ul.subnav li{
+	clear: both;
+	color:#000;
+    z-index:9999;
+    padding:0;
+}
+
+html ul.topnav li ul.subnav li a {
+	color:#000;
+	background: #f0f0f0 ;
+        padding:6px;
+        padding-right: 0;
+        padding-left: 10px;
+	font-size:12px;
+
+        min-width: 190px;
+	text-align:left;
+        z-index:9999;
+}
+
+html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
+	background: #e42c36 ;
+	color:#FFF;
+}
+
+html ul.topnav li ul.subnav li a:active{
+        background: #e42c36 ;
+        color:#FFF;
+}
+
+html ul.topnav li ul.subnav li a.selected{
+        background: #e42c36 ;
+        color:#FFF;
+}
+

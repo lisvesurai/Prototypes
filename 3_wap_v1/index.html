@@ -1,0 +1,173 @@
+<html>
+<head>
+<title>Three Wap Phase 3 Mockup</title>
+<style type="text/css">
+a {color:#666666;font-size:10px;font-weight:normal;font-family:sans-serif;margin:0;}
+a:active {color:#e00030;}
+a:hover {color:#e00030;}
+body{background:#ffffff;color:#666666;font:normal 10px sans-serif;margin:0px;}
+h1{color:#194F1F;font:bold 12px sans-serif;margin:5px 5px;text-decoration:underline;}
+h2{color:#666;font:bold 11px tahoma,sans-serif;margin:0;}
+p{margin:2px 0;}
+dl{margin:0 0 5px 5px;padding:0;}
+dt{margin:2px 0;padding:0;}
+td{vertical-align:top;padding:0 10px 0 0;font:normal 10px sans-serif;}
+
+input{background:#D4D0C8;border:1px solid #000;width:100%;height:20px;font-size:10px;font-weight:bold;margin:0;padding:0;text-transform:uppercase;position:relative;}
+iframe, form{margin:0 10px 0 0;padding:0;position:relative !important;}
+iframe {border:1px solid #000;}
+hr{border:none;border-bottom:1px solid #8f001e;height:1px;width:100%;margin:0;}
+
+.linkButton{position:relative;margin:5px 0 5px 5px !important;padding:5px;border:1px solid #666666;font-size:11px;height:20px;}
+.linkButton:hover{background:#e9f1bb;}
+.Hl{background:#cade5c;}
+
+@media screen {
+li ul{margin:8px 0 8px 22px;}
+.hide{display:none;visibility:hidden;}
+.toggle{font-family:courier,monospace;font-weight:normal;line-height:10px;margin:0 10px 0 0;}
+}
+
+@media handheld {
+.hide_for_cell{display:none;}
+}
+</style>
+<script type="text/javascript">
+function toggle (y) {
+	x = 'toggle' + y;
+
+	if ( document.getElementById(x).innerHTML == '+' )
+	{
+		document.getElementById(y).className = '';
+		document.getElementById(x).innerHTML = '-';
+	}
+	else
+	{
+		document.getElementById(y).className = 'hide';
+		document.getElementById(x).innerHTML = '+';
+	}
+}
+</script>
+</head>
+<body>
+<table border="0">
+<tr valign="top">
+<td width="200" rowspan="2">
+<h1>Three Wap Phase 3 Mockup</h1>
+<dl>
+	<dt><a onClick="return showLink(this);" href='home.jsp?'>Home</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='list_grid.jsp?'>List - Grid View (default)</a></dt>
+	<dt><a onClick="return showLink(this);" href='list.jsp?'>List</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='genres_browse.jsp?'>Category Index</a></dt>
+	<dt><a onClick="return showLink(this);" href='genres_list_grid.jsp?'>Category - Items Listing - Grid View (default)</a></dt>
+	<dt><a onClick="return showLink(this);" href='genres_list.jsp?'>Category - Items Listing</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='search.jsp?'>Search Page</a></dt>
+	<dt><a onClick="return showLink(this);" href='search_results.jsp?'>Search Results</a></dt>
+	<dt><a onClick="return showLink(this);" href='search.jsp?msg=3'>Search Page - error 1</a></dt>
+	<dt><a onClick="return showLink(this);" href='search.jsp?msg=4'>Search Page - error 2</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='item.jsp?'>Item - Details</a></dt>
+	<dt><a onClick="return showLink(this);" href='item.jsp?msg=5'>Item - Details - rated</a></dt>
+	<dt><a onClick="return showLink(this);" href='item.jsp?msg=6'>Item - Details - added to wishlist</a></dt>
+	<dt><a onClick="return showLink(this);" href='item.jsp?msg=7'>Item - Details - removed from wishlist</a></dt>
+	<dt><a onClick="return showLink(this);" href='item_rate.jsp?'>Item - Rate</a></dt>
+	<dt><a onClick="return showLink(this);" href='receipt.jsp?'>Receipt</a></dt>
+	<dt><a onClick="return showLink(this);" href='purchase_fail.jsp?'>Purchase Fail</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='item_free.jsp?'>FREE - Item - Details</a></dt>
+	<dt><a onClick="return showLink(this);" href='item_free.jsp?msg=5'>FREE - Item - Details - rated</a></dt>
+	<dt><a onClick="return showLink(this);" href='item_free.jsp?msg=6'>FREE - Item - Details - added to wishlist</a></dt>
+	<dt><a onClick="return showLink(this);" href='item_free.jsp?msg=7'>FREE - Item - Details - removed from wishlist</a></dt>
+	<dt><a onClick="return showLink(this);" href='item_free_rate.jsp?'>FREE - Item - Rate</a></dt>
+	<dt><a onClick="return showLink(this);" href='receipt_free.jsp?'>FREE - Receipt</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='my_wishlist.jsp?'>My Wishlist</a></dt>
+	<dt><a onClick="return showLink(this);" href='my_wishlist.jsp?msg=1'>My Wishlist - added item</a></dt>
+	<dt><a onClick="return showLink(this);" href='my_wishlist.jsp?msg=2'>My Wishlist - removed item</a></dt>
+	<dt><a onClick="return showLink(this);" href='my_wishlist_no_item.jsp?'>My Wishlist - - no items</a></dt>
+	<dt><hr/></dt>
+	<dt><a onClick="return showLink(this);" href='my_rec.jsp?'>My Recommendations</a></dt>
+	<dt><a onClick="return showLink(this);" href='my_rec_no_item.jsp?'>My Recommendations - no items</a></dt>
+	<dt><hr/></dt>
+	<dt><a onClick="return showLink(this);" href='my_apps.jsp?'>My Apps</a></dt>
+	<dt><a onClick="return showLink(this);" href='redownload.jsp?'>Redownload</a></dt>
+	<dt><a onClick="return showLink(this);" href='item_own.jsp?'>Item - Details</a></dt>
+	<dt><a onClick="return showLink(this);" href='my_apps_no_item.jsp?'>My Apps - no item</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='feedback.jsp?'>Feedback</a></dt>
+	<dt><a onClick="return showLink(this);" href='feedback_sent.jsp?'>Feedback - Sent</a></dt>
+	<dt><a onClick="return showLink(this);" href='support.jsp?'>Support</a></dt>
+	<dt><a onClick="return showLink(this);" href='faq.jsp?'>FAQ</a></dt>
+	<dt><a onClick="return showLink(this);" href='terms.jsp?'>Terms and Conditions</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='bundle_details.jsp?'>Bundle - Details</a></dt>
+	<dt><a onClick="return showLink(this);" href='bundle_item_details.jsp?'>Bundle - Item Details</a></dt>
+	<dt><a onClick="return showLink(this);" href='bundle_download_fail.jsp?'>Bundle - Download Fail</a></dt>
+	<dt><a onClick="return showLink(this);" href='bundle_error_not_available.jsp?'>Bundle - Not Available</a></dt>
+	<dt><a onClick="return showLink(this);" href='bundle_error_not_enough_credit.jsp?'>Bundle - Not Enough Credit</a></dt>
+	<dt><a onClick="return showLink(this);" href='bundle_receipt.jsp?'>Bundle - Receipt/Download</a></dt>
+	<dt><hr/></dt>
+</dl>
+
+<script type="text/javascript">
+<!--
+function showLink(elm)
+{
+	top.phoneDisplay1.location.href=elm+"&w=120&f=xx-small";
+	top.phoneDisplay2.location.href=elm+"&w=172&f=x-small";
+	top.phoneDisplay3.location.href=elm+"&w=240&f=small";
+	top.phoneDisplay4.location.href=elm+"&w=320&f=medium";
+	top.phoneDisplay5.location.href=elm+"&w=350&f=large";
+	top.phoneDisplay6.location.href=elm+"&w=350&f=large";
+	return false;
+}
+
+function refreshMockup()
+{
+	top.phoneDisplay1.location.reload();
+	top.phoneDisplay2.location.reload();
+}
+//-->
+</script>
+
+</td>
+	<td>
+		<h2>120</h2>
+		<iframe width="136" height="180" scrolling="yes" name="phoneDisplay1" id="phoneDisplay1" src="home.jsp?w=120&f=xx-small"></iframe>
+	</td>
+	<td>
+		<h2>172</h2>
+		<iframe width="184" height="260" scrolling="yes" name="phoneDisplay2" id="phoneDisplay2" src="home.jsp?w=172&f=x-small"></iframe>
+	</td>
+	<td>
+		<h2>240</h2>
+		<iframe width="251" height="340" scrolling="yes" name="phoneDisplay3" id="phoneDisplay3" src="home.jsp?w=240&f=small"></iframe>
+	</td>
+	<td rowspan="2">
+		<h2>320</h2>
+		<iframe width="331" height="260" scrolling="yes" name="phoneDisplay4" id="phoneDisplay4" src="home.jsp?w=320&f=medium"></iframe>
+		<br><br>
+		<h2>350</h2>
+		<iframe width="361" height="436" scrolling="yes" name="phoneDisplay5" id="phoneDisplay5" src="home.jsp?w=350&f=large"></iframe>
+	</td>
+</tr>
+<tr>
+	<td colspan="3">
+		<h2>480</h2>
+		<iframe width="491" height="340" scrolling="yes" name="phoneDisplay6" id="phoneDisplay6" src="home.jsp?w=350&f=large"></iframe>
+	</td>
+</tr>
+</table>
+</body>
+</html>

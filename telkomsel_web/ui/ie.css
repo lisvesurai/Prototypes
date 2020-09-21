@@ -1,0 +1,5 @@
+/* for Internet Explorer only */
+.midheader {padding:5px 20px 10px;}
+.topmenu {padding-top:0;}
+#footer {padding:10px 25px 0;}
+ul#crumbs li a { color:#FFFFFF; text-decoration:none; padding:0 15px 0 5px; height:16px;}

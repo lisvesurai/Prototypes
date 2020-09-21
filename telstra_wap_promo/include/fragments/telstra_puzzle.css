@@ -1,0 +1,30 @@
+*,h1,h2,h3,p {/*font-size:x-small;*/font-family:sans-serif;color:#000;}
+
+a {color:#102b72;/*font-size:x-small;*/font-family:sans-serif;text-decoration:none;}
+a:active {color: #ffffff}
+a.mjr {color:#102b72;text-decoration:none;margin-left:2px;}
+a.mjr:active {color: #ffffff}
+
+body {background:#0071AC;margin:0;padding:0;}
+body,div,h1,h2,hr,p {margin:0;padding:0;border:none;}
+
+h1.title{text-align:center;color:#ffffff;padding:3px;}
+
+div.promo {background:#000;color:#ffffff;text-align:center;border:0;padding:0 0 3px 0;margin:0;}
+img.promo {border:0;padding:0;margin:0;width:100%;height:auto;}
+a.promo {color:#ffffff;}
+
+div.mjr {margin:0;padding:0;border:2px solid #0071AC;}
+h2.mjr {background:#CEEBF7 url(../../images/805/t_bg_mjr_home.gif) repeat-y top left;color:#102b72;border:1px solid #fff;margin:1px 1px 2px 1px;}
+
+div.ico {padding:2px 0;}
+table.ico {padding:0;width:100%;background:#0071AC;}
+td.icons {text-align:center;vertical-align:top;width:50%;padding:3px;background:#ffffff;}
+
+#body {margin:0;}
+#header {background:#fff;padding-bottom:3px;}
+
+#footer{margin:0;padding:5px 5px 5px 7px;color:#0033FF;vertical-align:middle;border-top: solid 1px #102B72;background:#ffffff;}
+.afooterlink{text-decoration:none;/*font-size:x-small;*/}
+dl.ftr {margin:0;padding:0;}
+dt.ftr {margin:0 3px;}

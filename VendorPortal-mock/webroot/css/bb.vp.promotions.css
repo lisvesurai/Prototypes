@@ -1,0 +1,11 @@
+img.appth {
+	width: 29px;
+	height: 29px;
+	margin: 0 10px 1px 0;
+}
+#promoAppList input,
+.promoDateTime input,
+.promoDateTime select,
+.promoDateTime .custom.dropdown {
+	margin-bottom: 0 !important;
+}

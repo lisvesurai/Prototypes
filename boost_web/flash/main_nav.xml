@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+	<Config>
+		<!-- AllowDomain = comma delimited list of domains from which to allow import -->
+		<Param key="AllowDomains" value="www.boostmobile.com,contests.boostmobile.com,teamsite" />
+	</Config>
+	<Links>
+		<!--
+			id      = identifier for the link
+			label   = the disaply name of the link
+			url     = the url to link to
+			target  = the link target window
+		-->
+		<Link id="products" label="Products" url="http://www.boostmobile.com/products/" target="">
+			<Link id="phones" label="Phones" url="http://www.boostmobile.com/products/phones/" target="" />
+			<Link id="accessories" label="Accessories" url="http://www.boostmobile.com/products/phones/accessories" target="" />
+			<Link id="live" label="Boost LIVE" url="http://www.boostlive.com" target="" />
+			<Link id="ringtones" label="Ringtones" url="http://boostrtwpstore.cellmania.com/boostweb/ringtones.do?pagetype=5" target="" />
+			<Link id="wallpapers" label="Wallpapers" url="http://boostrtwpstore.cellmania.com/boostweb/wallpapers.do" target="" />
+			<Link id="promotions" label="Promotions" url="http://www.boostmobile.com/products/phones/promotions.html" target="" />
+		</Link>
+		<Link id="plans" label="Plans and Services" url="http://www.boostmobile.com/plans/" target="">
+			<Link id="payasyougo" label="Pay As You Go" url="http://www.boostmobile.com/plans/payasyougo/gettingstarted/" target="" />
+			<Link id="premiumprepaid" label="Premium Prepaid" url="http://www.boostmobile.com/plans/premiumprepaid/gettingstarted/" target="" />
+			<Link id="coverage" label="Coverage Maps" url="http://www.boostmobile.com/plans/coverage/" target="" />
+		</Link>
+		<Link id="activate" label="Activate" url="https://www.boostmobile.com/boostApp/activationLanding.do" target="" />
+		<Link id="reboost" label="Re-boost" url="http://www.boostmobile.com/reboost/" target="" />
+		<Link id="community" label="Community" url="http://www.boostmobilecommunity.com/" target="">
+			<Link id="teamriders" label="Boost Family" url="http://www.boostmobilecommunity.com/family/" target="" />
+			<Link id="events" label="Events" url="http://www.boostmobilecommunity.com/events/" target="" />
+			<Link id="videos" label="Videos" url="http://www.boostmobilecommunity.com/videos/" target="" />
+			<Link id="contests" label="Contests" url="http://www.boostmobilecommunity.com/contests/" target="" />
+			<Link id="entertainment" label="Entertainment" url="http://www.boostmobilecommunity.com/entertainment/" target="" />
+		</Link>
+		<Link id="support" label="Support" url="http://www.boostmobile.com/support/" target="">
+			<Link id="service" label="Service and Repair" url="http://www.boostmobile.com/support/service_repair" target="" />
+			<Link id="guides" label="User Guides" url="http://www.boostmobile.com/support/users_guides" target="" />
+			<Link id="policies" label="Service Policies" url="http://www.boostmobile.com/support/service_policies" target="" />
+			<Link id="contact" label="Contact Customer Care" url="http://www.boostmobile.com/support/contact_customer_care" target="" />
+			<Link id="faqs" label="FAQS" url="http://www.boostmobile.com/support/faqs" target="" />
+		</Link>
+	</Links>
+</Menu>

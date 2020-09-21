@@ -1,0 +1,10 @@
+body {font-size:xx-large;}
+
+h1,h2,h3 {font-size:larger;}
+h4,h5,p,dt {font-size:xx-large;}
+td {font-size:xx-large;}
+.page, #breadcrumb dt {font-size:smaller;}
+
+input.text {font-size:smaller;}
+input.srch {font-size:smaller;}
+input.btn {font-size:smaller;}

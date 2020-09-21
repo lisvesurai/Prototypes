@@ -1,0 +1,146 @@
+/*
+//  portlet.css
+
+*/
+* .portlet-msg-alert {
+	font-weight: bold;
+	font-style: italic;
+}
+
+* .portlet-section-selected {
+	color: rgb(255, 255, 255);;
+	background-color: #d6e1ee
+}
+
+* .portlet-section-footer {
+	font-size: 80%;
+	font-weight: bold;
+}
+
+* .portlet-menu {
+	
+}
+
+* .portlet-msg-error {
+	color: #b44800;;
+	font-weight: bold
+}
+
+* .portlet-msg-status {
+	font-style: italic;
+}
+
+* .portlet-section-alternate {
+	background-color: #d6e1ee
+}
+
+* .portlet-menu-item-selected {
+	
+}
+
+* .portlet-font {
+	color: rgb(0, 0, 0);
+}
+
+* .portlet-section-body {
+	background-color: #d6e1ee
+}
+
+* .portlet-menu-cascade-item-selected {
+	
+}
+
+* .portlet-dlg-icon-label {
+	
+}
+
+* .portlet-section-header {
+	font-size: 16px;
+	border-style: dotted;
+	color: rgb(51, 51, 153);
+	font-weight: bold;
+	padding: 2px 0px;
+	border-width: 1px 0px;
+}
+
+* .portlet-msg-success {
+	color: rgb(0, 153, 0);
+	font-weight: bold;
+}
+
+* .portlet-menu-caption {
+	
+}
+
+* .portlet-menu-item-hover {
+	
+}
+
+* .portlet-icon-label {
+	
+}
+
+* .portlet-section-text {
+	
+}
+
+* .portlet-menu-cascade-item {
+	
+}
+
+* .portlet-font-dim {
+	color: rgb(153, 153, 153);
+}
+
+* .portlet-msg-info {
+	font-weight: bold;
+}
+
+* .portlet-form-field-label {
+	
+}
+
+* .portlet-font,* .portlet-font-dim {
+	font-family: Arial, helvetica, Arial, sans-serif;
+	font-size: small;
+}
+
+* .portlet-menu-item {
+	
+}
+
+* .portlet-form-input-field {
+	
+}
+
+* .portlet-form-field {
+	
+}
+
+* .portlet-form-button {
+	
+}
+
+* .portlet-form-label {
+	
+}
+
+* .portlet-menu-description {
+	
+}
+
+* .portlet-section-subheader {
+	color: rgb(102, 102, 204);
+	font-weight: bold;
+	padding: 2px 0px;
+}
+
+* .portlet-menu-item-hover-selected {
+	
+}
+
+* .portlet-login {
+	margin: 5px;;
+	padding: 5px;;
+	border: solid 1px #395db4
+}

@@ -1,0 +1,71 @@
+.vendorportal .changerequest-list section {
+	border-bottom: 1px solid #dddddd;
+}
+
+.vendorportal .changerequest-list section div.changerequest-item {
+	clear: both;
+	height: 51px;
+}
+
+.vendorportal .changerequest-list section div.changerequest-body {
+	clear: both;
+	width:100%;
+	padding:.2em .2em 2em;
+}
+
+p.title img {
+	width: 24px;
+	height: 24px;
+	margin: 0 10px 0 0;
+}
+
+.section-container > section p.title span.change-name,
+.section-container > section.active p.title span.change-name {
+	color: #262626;
+}
+
+.changerequest-list section div.content {
+	padding-bottom: 20px;
+}
+
+section p.title span.change-short {
+}
+
+section p.title span.change-date,
+section p.title span.change-id {
+	margin: 7px 50px 0 0;
+	font-size: 13px;
+}
+section p.title span.change-status{
+	margin: 7px 25px 0 0;
+	font-size: 13px;
+}
+section p.title span.change-date {
+	width: 120px;
+}
+
+section div.content div.change-info h5,
+section div.content div.change-before h5,
+section div.content div.change-after h5 {
+	margin-top: 0;
+}
+
+section div.content div.change-after {
+	border-right: 1px solid #dfdfdf;
+}
+
+section div.content div.change-arrow {
+	margin-top: 20px;
+}
+
+section div.content div.change-info {
+	color: #909090;
+}
+
+section div.content div.change-info p {
+	margin: 0;
+}
+
+section div.content div.change-info span.change-field {
+	color: #262626;
+}

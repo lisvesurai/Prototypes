@@ -1,0 +1,481 @@
+/*.box{
+	width: 280px;
+	height: 297px;
+	border: 1px solid #d5d5d5;
+	margin: 0px 0px 20px 0px;
+}*/
+.ie7 .develops .box{
+	cursor: pointer;
+}
+h3, .h3{
+	margin-bottom: 16px;
+}
+.box_wide{
+	width: 440px;
+	height: 277px;
+	border: 1px solid #d5d5d5;
+	margin: 40px 0px;
+}
+
+.dev_main  .box {
+	border: 1px solid #D5D5D5;
+		height: 361px;
+		margin: 0 0 20px;
+		width: 280px;
+}
+
+.box:hover {
+	text-decoration: none;
+	background: #d4e1e7;
+}
+
+.box_wide:hover {
+	text-decoration: none;
+	background: #d4e1e7;
+}
+
+a.platform_choice_link:hover {
+	text-decoration: none;
+}
+
+a.platform_choice_link span.link {
+	padding-left: 12px;
+	background:url('../img/common/sprite-doublearrow.png') 0 6px no-repeat;
+}
+/*
+ * Custom edits for BB10 platform
+ */
+a.platform_choice_link span.link.bb10 {
+	position: relative;
+	top: 30px;
+	right: 5px;
+}
+/*
+ * Custom edits per platform
+ */
+a.platform_choice_link span.link.native {
+	position: relative;
+	top: 30px;
+	right: 5px;
+}
+a.platform_choice_link span.link.html5 {
+	position: relative;
+	top: 11px;
+	right: 5px;
+}
+a.platform_choice_link span.link.air {
+	position: relative;
+	top: 30px;
+	right: 5px;
+}
+a.platform_choice_link span.link.android {
+	position: relative;
+	top: 30px;
+	right: 5px;
+}
+a.platform_choice_link span.link.java {
+	position: relative;
+	top: 30px;
+	right: 5px;
+}
+a.platform_choice_link span.link.theme {
+	position: relative;
+	top: 30px;
+	right: 5px;
+}
+/*
+ * End of custom edits
+ */
+a.platform_choice_link:hover span.link,
+a.platform_choice_link:active span.link {
+	text-decoration: none;
+	color: #007cc6;
+}
+a.platform_choice_link:visited span.link {
+	text-decoration: none;
+	color: #7e4897;
+}
+
+.dev_main .top_area{
+	height: 198px;
+	padding: 14px 14px 14px 14px;
+}
+.top_area{
+	height: 60px;
+	padding: 14px 14px 14px 14px;
+}
+.text_area{
+	height: 190px;
+}
+.text_area_wide{
+	height: 170px;
+}
+.version_support_area{
+	height: 20px;
+	border-top: 1px solid #c0c1c3;
+	background-color: #d1d7dc;
+	padding: 6px 14px 6px 0px;
+}
+.version_support_area_ndk{
+	height: 20px;
+	border-top: 1px solid #c0c1c3;
+	background-color: #d1d7dc;
+	padding: 6px 14px 6px 0px;
+	width: 97.2%;
+}
+.version_support_area img{
+	padding: 0px 0px 0px 14px;
+}
+.box .text_area p{
+	color: #272727;
+	padding: 0px 14px 14px 14px;
+	margin: 0px;
+	line-height: 1.5;
+}
+.box_wide .text_area p{
+	color: #272727;
+	padding: 0px 14px 14px 14px;
+	margin: 0px;
+	line-height: 1.5;
+}
+.ie7 .box .text_area p{
+	cursor: pointer;
+}
+.box .top_area .titles, .box .top_area img{
+	float: left;
+}
+.box .top_area .titles h2, .box .top_area .titles h3{
+	margin: 0px;
+	padding: 0 12px;
+	color: #57697a;
+	font-family: 'TradeGothicNext', Helvetica, Arial, sans-serif;
+}
+.box .top_area .titles_develop h2, .box .top_area .titles_develop h3{
+	font-size: 1.714em;
+	margin: 0px;
+	padding: 0;
+	color: #57697a;
+	font-family: 'TradeGothicNext', Helvetica, Arial, sans-serif;
+}
+
+.ie7 .box .top_area .titles h2, .ie7 .box .top_area .titles h3{
+	cursor: pointer;
+}
+.box .top_area .titles h2{
+	font-size: 1.714em;
+}
+.box .top_area .titles h3{
+	font-size: 1.429em;
+}
+.ie7 .box_wide .text_area p{
+	cursor: pointer;
+}
+.box_wide .top_area .titles, .box_wide .top_area img{
+	float: left;
+}
+.box_wide .top_area .titles h2, .box_wide .top_area .titles h3{
+	margin: 0px;
+	padding: 0px 0px 0px 12px;
+	color: #57697a;
+	font-family: 'TradeGothicNext', Helvetica, Arial, sans-serif;
+}
+.ie7 .box_wide .top_area .titles h2, .ie7 .box_wide .top_area .titles h3{
+	cursor: pointer;
+}
+.box_wide .top_area .titles h2{
+	font-size: 1.714em;
+}
+.box_wide .top_area .titles h3{
+	font-size: 1.429em;
+}
+
+h3.ingress{
+	font-family: 'TradeGothicNext', Helvetica, Arial, sans-serif;
+	font-weight: lighter;
+	font-style: italic;
+	font-size: 1.571em;
+	line-height: 1.2em;
+	color: #262626;
+}
+.text_area a{
+	background: url("../img/common/sprite-doublearrow.png") no-repeat scroll 0 7px transparent;
+	padding-left: 12px;
+}
+
+
+/* NATIVE LAYER CAKE STYLES */
+
+.develops .ndk .layercake {
+	position: relative;
+	height: 440px;
+	background: url("../img/platforms/layercake.png") no-repeat center center transparent;
+}
+
+.develops .ndk .layercake .figuretext {
+	position: absolute;
+	top: 5px;
+	right: 30px;
+	color: #909090;
+}
+.ie7 .develops .ndk .layercake .figuretext {
+	width: 180px;
+}
+
+.develops .ndk .layercake .cascades_box {
+	position: absolute;
+	top: 33px;
+	left: 38px;
+}
+
+.ie7 .develops .ndk .layercake .cascades_box {
+	width: 185px;
+}
+
+.develops .ndk .layercake .native_box {
+	position: absolute;
+	top: 243px;
+	left: 715px;
+}
+
+.ie7 .develops .ndk .layercake .native_box {
+	width: 200px;
+	left: 714px;
+}
+
+.develops .ndk .layercake .playbook_box {
+	position: absolute;
+	top: 395px;
+	left: 715px;
+}
+
+.ie7 .develops .ndk .layercake .playbook_box {
+	width: 200px;
+	left: 714px;
+}
+
+.develops .ndk .bottomlink {
+	position: relative;
+	height: 50px;
+	padding-top: 40px;
+}
+
+.develops .ndk .bottomlink .quicklink {
+	position: absolute;
+}
+
+.develops .ndk a {
+	color: #262626;
+}
+
+.develops .ndk a:hover {
+	text-decoration: none;
+}
+
+.develops .ndk a span.chevron_big {
+	background: url("../img/platforms/layercake_link_chevron_big.png") no-repeat right 3px transparent;
+	font-family: 'TradeGothicNext', Helvetica, Arial, sans-serif;
+	padding-right: 35px;
+	display: block;
+	color: #444444;
+}
+.develops .ndk a:hover span.chevron_big {
+	padding-right: 37px;
+}
+
+.develops .ndk a span.chevron_small {
+	background: url("../img/platforms/layercake_link_chevron_small.png") no-repeat right 3px transparent;
+	font-family: 'TradeGothicNext', Helvetica, Arial, sans-serif;
+	padding-right: 25px;
+	display: block;
+	float: left;
+	color: #444444;
+}
+.develops .ndk a:hover span.chevron_small {
+	padding-right: 27px;
+}
+
+.develops .ndk span.logo {
+	padding-left: 40px;
+	display: block;
+}
+
+.develops .ndk span.cascades {
+	background: url("../img/platforms/layercake_cascades_logo.png") no-repeat 0 1px transparent;
+	padding-right: 3px;
+}
+
+.develops .ndk span.native {
+	background: url("../img/platforms/layercake_native_logo.png") no-repeat 0 0 transparent;
+}
+
+.develops .ndk span.playbook {
+	background: url("../img/platforms/layercake_playbook_logo.png") no-repeat 0 2px transparent;
+}
+
+.develops .ndk a span.title {
+	font-size: 24px;
+}
+.develops .ndk a:hover span.title {
+	color: #262626;
+}
+
+.develops .ndk a span.bottomtitle {
+	font-size: 24px;
+	line-height: 34px;
+}
+.develops .ndk a:hover span.bottomtitle {
+	color: #262626;
+}
+
+.develops .ndk a span.betatitle {
+	font-size: 14px;
+	line-height: 26px;
+}
+.develops .ndk a:hover span.betatitle {
+	color: #262626;
+}
+
+
+.develops .ndk a span.subtitle {
+	display: block;
+	font-family: 'TradeGothicNext', Helvetica, Arial, sans-serif !important;
+	font-style: italic;
+	font-weight: bold;
+	margin-top: -4px;
+	color: #606060;
+}
+
+.develops .ndk a:hover span.subtitle {
+	color: #262626;
+}
+
+.develops .ndk .layercake a div.bullets {
+	padding-left: 0px;
+	padding-top: 10px;
+	color: #606060;
+}
+
+.develops .ndk .layercake a:hover div.bullets {
+	color: #262626;
+}
+
+.develops .ndk .layercake a div.bullets ul {
+	padding-left: 20px;
+	margin: 0px;
+}
+
+.develops .ndk .layercake a div.bullets ul li {
+	font-family: 'TradeGothicNext', Helvetica, Arial, sans-serif;
+}
+
+.develops .ndk .message_divider {
+	position: relative;
+	margin-bottom: 100px;
+	border-top: 1px solid #bebebe;
+	border-bottom: 1px solid #bebebe;
+	text-align: center;
+}
+
+.develops .ndk .message_divider h2 {
+	margin-top: 15px;
+	font-family: 'TradeGothicNext', Helvetica, Arial, sans-serif;
+	font-style: italic;
+}
+
+.develops .ndk .message_divider h2 span.normal {
+	font-family: 'TradeGothicNext', Helvetica, Arial, sans-serif;
+	font-style: italic;
+}
+
+.develops .ndk .vertical_divider {
+	border-left: 1px solid #bebebe;
+	padding-left: 19px;
+}
+
+.develops .ndk .sdktitles {
+	font-family: 'TradeGothicNext', Helvetica, Arial, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1.2308em; /* 16px */
+	line-height: 1.1875em; /* 19px */
+}
+.develops .ndk .sdktitles .logo {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	line-height: 35px;
+	color: #606060;
+}
+.develops .ndk .sdktitles .logo.small {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.develops .ndk .copy_box {
+	position: relative;
+	padding: 25px 15px 10px 15px;
+	background: #e0e0e0;
+}
+
+.develops .ndk .img_box img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.develops .ndk .img_box.signaturelook {
+	padding-top: 30px;
+}
+.develops .ndk .img_box.beautifului {
+	padding-top: 5px;
+}
+.develops .ndk .img_box.tooling {
+	padding-top: 50px;
+}
+.develops .ndk .img_box.porting {
+	padding-top: 40px;
+}
+.develops .ndk .img_box.gaming {
+	padding-top: 40px;
+}
+.develops .ndk .img_box.posix {
+	padding-top: 40px;
+}
+.develops .ndk .img_box.integration {
+	padding-top: 8px;
+}
+.develops .ndk .img_box.embedded {
+	padding-top: 0px;
+}
+
+.develops .ndk .notch {
+	position: absolute;
+		margin: 0;
+		padding: 0;
+		width: 0;
+		height: 0;
+}
+
+.develops .ndk .notch-bottom.notch-border {
+	border-top-color: #bebebe;
+	bottom: -21px;
+}
+
+.develops .ndk .notch-bottom {
+	bottom: -20px;
+	right: 50%;
+	margin-right: -20px;
+		border-top: 20px solid #ececec;
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-bottom: 0;
+}
+
+.develops .ndk .notch-right {
+	top: 50%;
+	right: -15px;
+	margin-top: -15px;
+		border-top: 15px solid transparent;
+		border-left: 15px solid #e0e0e0;
+		border-right: 0;
+		border-bottom: 15px solid transparent;
+}

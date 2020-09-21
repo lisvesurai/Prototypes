@@ -1,0 +1,216 @@
+<html>
+<head>
+<title>Optus Wap Phase 2 Mockup</title>
+<style type="text/css">
+a {color:#666666;font-size:10px;font-weight:normal;font-family:sans-serif;margin:0;}
+a:active {color:#e00030;}
+a:hover {color:#e00030;}
+body{background:#ffffff;color:#666666;font:normal 10px sans-serif;margin:0px;}
+h1{color:#073643;font:bold 12px sans-serif;margin:5px 5px;text-decoration:underline;}
+h2{color:#666;font:bold 11px tahoma,sans-serif;margin:0;}
+p{margin:2px 0;}
+dl{margin:0 0 5px 5px;padding:0;}
+dt{margin:2px 0;padding:0;}
+td{vertical-align:top;padding:0 10px 0 0;font:normal 10px sans-serif;}
+
+input{background:#D4D0C8;border:1px solid #000;width:100%;height:20px;font-size:10px;font-weight:bold;margin:0;padding:0;text-transform:uppercase;position:relative;}
+iframe, form{margin:0 10px 0 0;padding:0;position:relative !important;}
+iframe {border:1px solid #000;}
+hr{border:none;border-bottom:1px solid #073643;height:1px;width:100%;margin:0;}
+
+.linkButton{position:relative;margin:5px 0 5px 5px !important;padding:5px;border:1px solid #666666;font-size:11px;height:20px;}
+.linkButton:hover{background:#e9f1bb;}
+.Hl{background:#cade5c;}
+
+@media screen {
+li ul{margin:8px 0 8px 22px;}
+.hide{display:none;visibility:hidden;}
+.toggle{font-family:courier,monospace;font-weight:normal;line-height:10px;margin:0 10px 0 0;}
+}
+
+@media handheld {
+.hide_for_cell{display:none;}
+}
+</style>
+<script type="text/javascript">
+function toggle (y) {
+	x = 'toggle' + y;
+
+	if ( document.getElementById(x).innerHTML == '+' )
+	{
+		document.getElementById(y).className = '';
+		document.getElementById(x).innerHTML = '-';
+	}
+	else
+	{
+		document.getElementById(y).className = 'hide';
+		document.getElementById(x).innerHTML = '+';
+	}
+}
+</script>
+</head>
+<body>
+<table border="0">
+<tr valign="top">
+<td width="200" rowspan="5">
+<h1>Optus Wap Phase 2 Mockup</h1>
+<dl>
+	<dt><a onClick="return showLink(this);" href='home.jsp?'>Home (Popular)</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='list.jsp?t=New&hl=2'>New</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='genres_browse.jsp?'>Categories</a></dt>
+	<dt><a onClick="return showLink(this);" href='genres_list.jsp?t=Travel'>Categories - Items Listing</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='list.jsp?t=Featured&hl=4'>Featured</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='search_results.jsp?keyword=Keyword'>Search Results</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='promos.jsp?'>Promos</a></dt>
+	<dt><a onClick="return showLink(this);" href='promo_details.jsp?'>Promo - Details</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='bundles_item.jsp?'>Bundles - Details</a></dt>
+	<dt><a onClick="return showLink(this);" href='bundles_item_reviews.jsp?'>Bundles - Reviews</a></dt>
+	<dt><a onClick="return showLink(this);" href='bundles_receipt.jsp?'>Bundles - Receipt</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='item.jsp?'>Item - Details</a></dt>
+	<dt><a onClick="return showLink(this);" href='item_reviews.jsp?'>Item - Reviews</a></dt>
+	<dt><hr/></dt>
+	<dt><a onClick="return showLink(this);" href='item2.jsp?'>Item - Details - Free</a></dt>
+	<dt><a onClick="return showLink(this);" href='item2_reviews.jsp?'>Item - Reviews - Free</a></dt>
+	<dt><hr/></dt>
+	<dt><a onClick="return showLink(this);" href='item_sub.jsp?'>Item - Details - Subscriptions</a></dt>
+	<dt><a onClick="return showLink(this);" href='item_sub_reviews.jsp?'>Item - Reviews - Subscriptions</a></dt>
+	<dt><hr/></dt>
+	<dt><a onClick="return showLink(this);" href='eula.jsp?'>End User License Agreement (shows if users has not agree)</a></dt>
+	<dt><a onClick="return showLink(this);" href='eula2.jsp?'>End User License Agreement - 2  (shows long page after clicking from eula short page)</a></dt>
+	<dt><a onClick="return showLink(this);" href='tc.jsp?'>T&amp;C (shows when user click T&amp;C link under buy or install buttons)</a></dt>
+	<dt><a onClick="return showLink(this);" href='receipt.jsp?'>Receipt</a></dt>
+	<dt><hr/></dt>
+
+	<!--<dt><a onClick="return showLink(this);" href='item_promo_success.jsp?'>Item - Promo Success</a></dt>
+	<dt><a onClick="return showLink(this);" href='promo_tc.jsp?'>Promo T&amp;C</a></dt>
+	<dt><hr/></dt>-->
+
+	<dt><a onClick="return showLink(this);" href='my_purchases.jsp?'>My Apps</a></dt>
+	<dt><a onClick="return showLink(this);" href='item_rate.jsp?'>Item - Rate/Review</a></dt>
+	<dt><a onClick="return showLink(this);" href='my_purchases.jsp?msg=1'>Item - Rate/Review Submitted</a></dt>
+	<dt><a onClick="return showLink(this);" href='item_sub_cancel.jsp?'>Item - Subscription Cancelled</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='mip.jsp?'>Mobile Internet Packs</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='faq.jsp?'>FAQ</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='site_terms.jsp?'>Site Terms (clicked from footer)</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='app_agreement.jsp?'>App Agreement</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='error.jsp?'>Error Message</a></dt>
+	<dt><hr/></dt>
+</dl>
+
+<script type="text/javascript">
+<!--
+function showLink(elm)
+{
+	top.phoneDisplay1.location.href=elm+"&w=120&f=xx-small";
+	top.phoneDisplay2.location.href=elm+"&w=172&f=x-small";
+	top.phoneDisplay3.location.href=elm+"&w=240&f=small";
+	top.phoneDisplay4.location.href=elm+"&w=320&f=small";
+	top.phoneDisplay5.location.href=elm+"&w=350&f=medium";
+	top.phoneDisplay6.location.href=elm+"&w=480&f=medium";
+	top.phoneDisplayBiz1.location.href=elm+"&ui=biz&w=120&f=xx-small";
+	top.phoneDisplayBiz2.location.href=elm+"&ui=biz&w=172&f=x-small";
+	top.phoneDisplayBiz3.location.href=elm+"&ui=biz&w=240&f=small";
+	top.phoneDisplayBiz4.location.href=elm+"&ui=biz&w=320&f=small";
+	top.phoneDisplayBiz5.location.href=elm+"&ui=biz&w=350&f=medium";
+	top.phoneDisplayBiz6.location.href=elm+"&ui=biz&w=480&f=medium";
+	return false;
+}
+//-->
+</script>
+
+</td>
+	<td colspan="5"><b>BUSINESS</b></td>
+</tr>
+<tr>
+	<td>
+		<h2>120</h2>
+		<iframe width="136" height="160" scrolling="yes" name="phoneDisplayBiz1" id="phoneDisplayBiz1" src="home.jsp?ui=biz&w=120&f=xx-small"></iframe>
+	</td>
+	<td>
+		<h2>172</h2>
+		<iframe width="192" height="240" scrolling="yes" name="phoneDisplayBiz2" id="phoneDisplayBiz2" src="home.jsp?ui=biz&w=172&f=x-small"></iframe>
+	</td>
+	<td>
+		<h2>240</h2>
+		<iframe width="260" height="320" scrolling="yes" name="phoneDisplayBiz3" id="phoneDisplayBiz3" src="home.jsp?ui=biz&w=240&f=small"></iframe>
+	</td>
+	<td>
+		<h2>320</h2>
+		<iframe width="340" height="260" scrolling="yes" name="phoneDisplayBiz4" id="phoneDisplayBiz4" src="home.jsp?ui=biz&w=320&f=small"></iframe>
+	</td>
+	<td>
+		<h2>350</h2>
+		<iframe width="370" height="436" scrolling="yes" name="phoneDisplayBiz5" id="phoneDisplayBiz5" src="home.jsp?ui=biz&w=350&f=medium"></iframe>
+	</td>
+	<td>
+		<h2>480</h2>
+		<iframe width="500" height="340" scrolling="yes" name="phoneDisplayBiz6" id="phoneDisplayBiz6" src="home.jsp?ui=biz&w=480&f=medium"></iframe>
+	</td>
+</tr>
+<tr>
+	<td colspan="5"><b>CONSUMER</b></td>
+</tr>
+<tr>
+	<td>
+		<h2>120</h2>
+		<iframe width="136" height="160" scrolling="yes" name="phoneDisplay1" id="phoneDisplay1" src="home.jsp?w=120&f=xx-small"></iframe>
+	</td>
+	<td>
+		<h2>172</h2>
+		<iframe width="192" height="240" scrolling="yes" name="phoneDisplay2" id="phoneDisplay2" src="home.jsp?w=172&f=x-small"></iframe>
+	</td>
+	<td>
+		<h2>240</h2>
+		<iframe width="260" height="320" scrolling="yes" name="phoneDisplay3" id="phoneDisplay3" src="home.jsp?w=240&f=small"></iframe>
+	</td>
+	<td>
+		<h2>320</h2>
+		<iframe width="340" height="260" scrolling="yes" name="phoneDisplay4" id="phoneDisplay4" src="home.jsp?w=320&f=small"></iframe>
+	</td>
+	<td>
+		<h2>350</h2>
+		<iframe width="370" height="436" scrolling="yes" name="phoneDisplay5" id="phoneDisplay5" src="home.jsp?w=350&f=medium"></iframe>
+	</td>
+	<td>
+		<h2>480</h2>
+		<iframe width="500" height="340" scrolling="yes" name="phoneDisplay6" id="phoneDisplay6" src="home.jsp?w=480&f=medium"></iframe>
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+		<h2>iPhone - Business</h2>
+		<iframe width="340" height="500" scrolling="yes" name="phoneDisplayBiz5" id="phoneDisplayBiz5" src="iphone.jsp?ui=biz&w=320&f=small"></iframe>
+	</td>
+	<td colspan="2">
+		<h2>iPhone - Consumer</h2>
+		<iframe width="340" height="500" scrolling="yes" name="phoneDisplay5" id="phoneDisplay5" src="iphone.jsp?w=320&f=small"></iframe>
+	</td>
+</tr>
+
+</table>
+</body>
+</html>

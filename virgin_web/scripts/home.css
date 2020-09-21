@@ -1,0 +1,92 @@
+/*************************************************************
+*  	/home.css
+*
+*	This CSS file should hold all style definitions
+*	specific to the stuff homepage. This file has been included
+*	manually in the home.jsp file. All global screen styles 
+*	should be maintained in /common.css. Any page-specific CSS 
+*	definitions should be created in a CSS file specific to 
+*	the target page and included manually on that page.
+*
+*	For the definitions that are known to reside in one 
+*	functional location, there should be a begin and end
+*	block documented.  The primary purpose of which is 
+*	to facilitate the refactoring process.  Any block
+*	relating to a specific page should be a candidate to
+*	move into a page-specific include.
+*
+***************************************************************/
+
+
+.c15_featureList {
+	padding: 25px 12px 0 10px;
+	height: 215px;
+	background-color: #000;
+	margin-bottom: 5px;
+}
+
+.c15_variation_light {
+	padding-top: 0;
+	background-color: #fff;
+	color: #000;
+}
+
+.c15_featureList ol.global_numeric {
+	padding-left: 20px;
+	color: #CD0404;
+}
+
+.c15_variation_light ol.global_numeric {
+	color: #333;
+	font-weight: bold;
+}
+
+.c15_featureList ol.global_numeric span {
+	color: #cecece;
+	display: block;
+}
+
+.c15_variation_light ol.global_numeric span  {
+	color: #666;
+}
+
+.c15_featureList ol.global_numeric span a:link,
+.c15_featureList ol.global_numeric span a:visited {
+	color: #fff;
+}
+
+.c15_variation_light ol.global_numeric span a:link,
+.c15_variation_light ol.global_numeric span a:visited {
+	font-weight: bold;
+	color: #CD0404;
+}
+
+.c15_continuationLink {
+	padding-left: 20px;
+}
+
+.c14_featureGraphic {
+	padding: 0px 0 0 12px;
+	background: url(../images/virgin/c14_bg.jpg) bottom right no-repeat #000;
+	height: 252px;
+	margin-bottom: 5px;
+}
+
+.c14_featureGraphic_home {
+	padding: 0px 0 0 20px;
+	height: 195px;
+	margin-bottom: 3px;
+}
+
+.stgg_bg {
+	background-color: #e1e1e1;
+}
+.calloutFlag {
+	background-color: #cc0000; 
+	color: #ffffff; 
+	padding-right: 5px; 
+	padding-left: 5px; 
+	font-weight: bold;
+}
+
+html, body {height: 100%;}

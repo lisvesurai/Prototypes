@@ -1,0 +1,45 @@
+div.graph-container {
+	border: none;
+	border-top: 1px solid #e6e6e6;
+    margin: 0;
+    padding: 0;
+	padding-top:22px;
+	margin-bottom: 23px !important;
+}
+
+div.graph-container h3 {
+    margin-top: -3px;
+    margin-bottom: 16px;
+
+}
+
+div.graph-container h3 + p{
+	font-size: 15px;
+	line-height: 23px;
+	font-weight: 200;
+	font-family: 'TradeGothicNext', Helvetica, Arial, sans-serif;
+	color: #606060;
+	padding-top: 7px;
+	margin-top: -23px;
+	margin-bottom: 16px;
+}
+
+div.today {
+	padding: 45px 0 55px 0;
+}
+
+div.today p {
+	font-family: 'TradeGothicNext', Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+
+div.today p.value {
+	font-size: 35px;
+	font-weight: 600;
+	margin: 0;
+}
+
+div.today p.title {
+	font-size: 24px;
+	font-weight: 200;
+}

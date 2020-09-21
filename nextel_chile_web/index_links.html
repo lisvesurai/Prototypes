@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Nextel Chile Web Mockup</title>
+<style type="text/css">
+a{color:#000;text-decoration:none;margin:0;}
+a:active,a:focus{font-weight:bold;}
+body{background:#fff;color:#000;font:normal 10px/12px tahoma,sans-serif;margin:5px;}
+h1{color:#8f001e;font:bold 12px/14px tahoma,sans-serif;margin:0 0 5px 0;text-decoration:underline;}
+h2{color:#000;font:bold 12px/14px tahoma,sans-serif;margin:0 0 5px 0;}
+p{margin:0;}
+ul{list-style:none;margin:0 0 5px 0;padding:0;}
+li{margin:5px 0 0 0;padding:0;}
+li li{margin:0;border-bottom:1px solid #ccc;}
+li li a:visited{color:#333;}
+li li p{margin:0;}
+li li p a:visited{color:#000;}
+li p{font-weight:bold;line-height:10px;margin:0 0 5px 0;text-transform:uppercase;}
+li ul{margin:0 0 8px 18px;}
+.hide{display:none;visibility:hidden;}
+.toggle{font-family:courier,monospace;font-weight:normal;line-height:10px;margin:0 10px 0 0;}
+</style>
+<script type="text/javascript">
+function toggle (y) {
+	x = 'toggle' + y;
+
+	if ( document.getElementById(x).innerHTML == '+' )
+	{
+		document.getElementById(y).className = '';
+		document.getElementById(x).innerHTML = '-';
+	}
+	else
+	{
+		document.getElementById(y).className = 'hide';
+		document.getElementById(x).innerHTML = '+';
+	}
+}
+</script>
+</head>
+<body>
+<h1>Nextel Chile Web Mockup</h1>
+<h2>Unauthenticated User - No Phone Selected</h2>
+<ul>
+	<li><p><a href="home.jsp?u=out&nophone=yes" target="viewMockups">Home</a></p></li>
+	<li><a href="select_phone.jsp?u=out&nophone=yes" target="viewMockups">Select Phone</a></li>
+</ul>
+<hr />
+<h2>Unauthenticated User - with Selected Phone</h2>
+<ul>
+	<li><p><a href="home.jsp?u=out" target="viewMockups">Home</a></p></li>
+	<li><a href="select_phone.jsp?u=out" target="viewMockups">Select Phone</a></li>
+	<li><a href="search.jsp?u=out" target="viewMockups">Advanced Search</a></li>
+	<li><a href="search_results.jsp?u=out" target="viewMockups">Search Results</a></li>
+	<li>
+		<p><a href="javascript: void 0" onclick="toggle('Music')"><span class="toggle" id="toggleMusic">+</span>Music</a></p>
+		<ul id="Music" class="hide">
+			<li><a href="music.jsp?u=out&menu=rt" target="viewMockups">Music - Default</a></li>
+			<li><a href="music_details.jsp?u=out&menu=rt" target="viewMockups">Music - Details</a></li>
+		</ul>
+	</li>
+	<li>
+		<p><a href="javascript: void 0" onclick="toggle('Games')"><span class="toggle" id="toggleGames">+</span>Games</a></p>
+		<ul id="Games" class="hide">
+			<li><a href="games.jsp?u=out&menu=games" target="viewMockups">Games - Default</a></li>
+			<li><a href="games_details.jsp?u=out&menu=games" target="viewMockups">Games - Details</a></li>
+		</ul>
+	</li>
+	<li>
+		<p><a href="javascript: void 0" onclick="toggle('Wallpapers')"><span class="toggle" id="toggleWallpapers">+</span>Wallpapers</a></p>
+		<ul id="Wallpapers" class="hide">
+			<li><a href="wp.jsp?u=out&menu=wp" target="viewMockups">Wallpapers - Default</a></li>
+			<li><a href="wp_details.jsp?u=out&menu=wp" target="viewMockups">Wallpapers - Details</a></li>
+		</ul>
+	</li>
+	<li>
+		<p><a href="javascript: void 0" onclick="toggle('Apps')"><span class="toggle" id="toggleApps">+</span>Apps</a></p>
+		<ul id="Apps" class="hide">
+			<li><a href="apps.jsp?u=out&menu=apps" target="viewMockups">Apps - Default</a></li>
+			<li><a href="apps_details.jsp?u=out&menu=apps" target="viewMockups">Apps - Details</a></li>
+		</ul>
+	</li>
+	<li>
+		<p><a href="javascript: void 0" onclick="toggle('Videos')"><span class="toggle" id="toggleVideos">+</span>Videos</a></p>
+		<ul id="Videos" class="hide">
+			<li><a href="videos.jsp?u=out&menu=ishots" target="viewMockups">Videos - Default</a></li>
+			<li><a href="videos_details.jsp?u=out&menu=ishots" target="viewMockups">Videos - Details</a></li>
+		</ul>
+	</li>
+	<li><a href="promo.jsp?u=out&menu=promo" target="viewMockups">Promotions</a></li>
+	<li><a href="bundle_details.jsp?u=out&menu=promo" target="viewMockups">Bundle Details</a></li>
+	<li><a href="sms.jsp?u=out&menu=promo" target="viewMockups">SMS Premium</a></li>
+	<li><a href="faq.jsp?u=out&menu=promo" target="viewMockups">FAQ</a></li>
+	<li><a href="terms.jsp?u=out&menu=promo" target="viewMockups">T&amp;C</a></li>
+	<li><a href="contact.jsp?u=out&menu=promo" target="viewMockups">Contact</a></li>
+</ul>
+<hr />
+<h2>Authenticated User</h2>
+<ul>
+	<li><p><a href="home.jsp?u=in" target="viewMockups">Home</a></p></li>
+	<li><a href="select_phone.jsp?u=in" target="viewMockups">Select Phone</a></li>
+	<li><a href="search.jsp?u=in" target="viewMockups">Advanced Search</a></li>
+	<li><a href="search_results.jsp?u=in" target="viewMockups">Search Results</a></li>
+	<li>
+		<p><a href="javascript: void 0" onclick="toggle('Music2')"><span class="toggle" id="toggleMusic2">+</span>Music</a></p>
+		<ul id="Music2" class="hide">
+			<li><a href="music.jsp?u=in&menu=rt" target="viewMockups">Music - Default</a></li>
+			<li><a href="music_details.jsp?u=in&menu=rt" target="viewMockups">Music - Details</a></li>
+		</ul>
+	</li>
+	<li>
+		<p><a href="javascript: void 0" onclick="toggle('Games2')"><span class="toggle" id="toggleGames2">+</span>Games</a></p>
+		<ul id="Games2" class="hide">
+			<li><a href="games.jsp?u=in&menu=games" target="viewMockups">Games - Default</a></li>
+			<li><a href="games_details.jsp?u=in&menu=games" target="viewMockups">Games - Details</a></li>
+		</ul>
+	</li>
+	<li>
+		<p><a href="javascript: void 0" onclick="toggle('Wallpapers2')"><span class="toggle" id="toggleWallpapers2">+</span>Wallpapers</a></p>
+		<ul id="Wallpapers2" class="hide">
+			<li><a href="wp.jsp?u=in&menu=wp" target="viewMockups">Wallpapers - Default</a></li>
+			<li><a href="wp_details.jsp?u=in&menu=wp" target="viewMockups">Wallpapers - Details</a></li>
+		</ul>
+	</li>
+	<li>
+		<p><a href="javascript: void 0" onclick="toggle('Apps2')"><span class="toggle" id="toggleApps2">+</span>Apps</a></p>
+		<ul id="Apps2" class="hide">
+			<li><a href="apps.jsp?u=in&menu=apps" target="viewMockups">Apps - Default</a></li>
+			<li><a href="apps_details.jsp?u=in&menu=apps" target="viewMockups">Apps - Details</a></li>
+		</ul>
+	</li>
+	<li>
+		<p><a href="javascript: void 0" onclick="toggle('Videos2')"><span class="toggle" id="toggleVideos2">+</span>Videos</a></p>
+		<ul id="Videos2" class="hide">
+			<li><a href="videos.jsp?u=in&menu=ishots" target="viewMockups">Videos - Default</a></li>
+			<li><a href="videos_details.jsp?u=in&menu=ishots" target="viewMockups">Videos - Details</a></li>
+		</ul>
+	</li>
+	<li><a href="promo.jsp?u=in&menu=promo" target="viewMockups">Promotions</a></li>
+	<li><a href="bundle_details.jsp?u=in&menu=promo" target="viewMockups">Bundle Details</a></li>
+	<li><a href="sms.jsp?u=in&menu=promo" target="viewMockups">SMS Premium</a></li>
+	<li><a href="faq.jsp?u=in&menu=promo" target="viewMockups">FAQ</a></li>
+	<li><a href="terms.jsp?u=in&menu=promo" target="viewMockups">T&amp;Cs</a></li>
+	<li><a href="contact.jsp?u=in&menu=promo" target="viewMockups">Contact</a></li>
+</ul>
+
+</body>
+</html>

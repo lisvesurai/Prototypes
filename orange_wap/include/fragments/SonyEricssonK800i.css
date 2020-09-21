@@ -1,0 +1,17 @@
+h1,h2,h3 {font-size:16px !important; border-top:1px solid #000000; width:100%;}
+h4,h5,p,dt {font-size:14px !important;}
+h4,dt {width:100%;}
+td {font-size:14px !important;}
+.page, .page dt, #breadcrumb dt {font-size:12px !important;}
+
+input.text {font-size:12px !important;}
+input.srch {font-size:12px !important;}
+input.btn {font-size:12px !important;}
+
+img.prvw {width:100% !important;}
+img.sshot {width:100% !important;}
+
+dt.mnr_page_next {float:right;}
+#breadcrumb dt {float:left; white-space:nowrap;}
+
+dt.buy a {margin:1px 5px 0 20px !important;}

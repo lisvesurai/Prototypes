@@ -1,0 +1,426 @@
+/* Dots for MyAccount Implementation
+ * Created By: Matthew Elliott
+ * Updated: 2008/2/6
+ */
+ 
+ 
+/***** BEGIN CONDENSED THEME STYLES *****/
+
+.ebiz-condensed-theme {
+}
+
+.ebiz-condensed-theme .ebiz-portlet-container {
+	background: #fbfbfb url(../images/cont_add_bottom_bg.gif) no-repeat bottom right;
+	font-size: 12px;
+	margin-bottom: 12px;
+	width: 100%;
+}
+
+.ebiz-condensed-theme .ebiz-portlet-content {
+	background: url(../images/cont_add_left_bg.gif) no-repeat bottom left;
+	padding: 0px 9px 10px;
+}
+
+.ebiz-condensed-theme .ebiz-portlet-title-container {
+	background: url(../images/cont_add_head.gif) no-repeat left top;
+	font: normal 18px Arial, Helvetica, sans-serif;
+	height: 35px;
+	color: #2850A0;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+
+.ebiz-condensed-theme .ebiz-portlet-title {
+	background: url(../images/cont_add_head_right.gif) no-repeat right top;
+	padding: 8px 15px;
+	height: 19px;
+	display: block;
+	color: #333;
+	margin: 0px;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+* html .ebiz-condensed-theme .ebiz-portlet-title {
+	margin-bottom: -2px;
+}
+
+.ebiz-condensed-theme .ebiz-highlight-box {
+	margin: 0px -9px -5px;
+}
+
+.ebiz-condensed-theme .ebiz-portlet-container-highlight {
+	background-color: #f0f8ff;
+}
+
+.ebiz-condensed-theme .ebiz-nohighlight-box {
+	background: none;
+	margin-top: 4px;
+}
+
+/***** END CONDENSED THEME STYLES *****/
+
+
+/***** BEGIN VANILLA THEME STYLES *****/
+
+.ebiz-vanilla-theme {
+}
+
+.ebiz-vanilla-theme .ebiz-portlet-container {
+}
+
+.ebiz-vanilla-theme .ebiz-portlet-content {
+}
+
+.ebiz-vanilla-theme .ebiz-portlet-title-container {
+}
+
+.ebiz-vanilla-theme .ebiz-portlet-title {
+}
+
+/***** END VANILLA THEME STYLES *****/
+
+
+/***** BEGIN FATTY THEME STYLES *****/
+
+.ebiz-fatty-theme {
+}
+
+.ebiz-fatty-theme .ebiz-portlet-container {
+	background: url(../images/cont_add_left_bg.gif) no-repeat bottom left;
+	padding: 0px 9px 10px;
+}
+
+.ebiz-fatty-theme .ebiz-portlet-content {
+	background: #fbfbfb url(../images/cont_add_bottom_bg.gif) no-repeat bottom right;
+	font-size: 12px;
+	margin-bottom: 12px;
+	width: 100%;
+}
+
+.ebiz-fatty-theme .ebiz-portlet-title-container {
+}
+
+.ebiz-fatty-theme .ebiz-portlet-title {
+}
+
+/***** END FATTY THEME STYLES *****/
+
+
+/***** BEGIN FATTYWHITE THEME STYLES *****/
+
+.ebiz-fattywhite-theme {
+}
+
+.ebiz-fattywhite-theme .ebiz-portlet-container {
+	background: #fbfbfb url(../images/cont_add_bottom_bg.gif) no-repeat bottom right;
+	width: 100%;
+}
+
+.ebiz-fattywhite-theme .ebiz-portlet-content {
+	background: url(../images/cont_add_left_bg.gif) no-repeat bottom left;
+	padding: 0px 20px 20px;
+}
+
+.ebiz-fattywhite-theme .ebiz-portlet-title-container {
+	background: url(../images/cont_fatty_white.gif) no-repeat left top;
+	font: bold 23px Arial, Helvetica, sans-serif;
+	height: 46px;
+	color: #2850A0;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+
+.ebiz-fattywhite-theme .ebiz-portlet-title {
+	background: url(../images/cont_fatty_right_white.gif) no-repeat right top;
+	padding: 12px 20px 11px;
+	height: 23px;
+	display: block;
+	color: #2850a0;
+}
+
+/***** END FATTYWHITE THEME STYLES *****/
+
+
+/***** BEGIN FATTYBLUE THEME STYLES *****/
+
+.ebiz-fattyblue-theme {
+}
+
+.ebiz-fattyblue-theme .ebiz-portlet-container {
+	background: url(../images/cont_add_left_bg.gif) no-repeat bottom left;
+	padding: 0px 9px 10px;
+	padding: 22px;
+	width: 328px;
+	height: 33em;
+	position: relative;
+}
+
+.ebiz-fattyblue-theme .ebiz-portlet-content {
+	background: #dce6f1 url(../images/cont_add_bottom_bg.gif) no-repeat bottom right;
+	font-size: 12px;
+	margin-bottom: 12px;
+	width: 100%;
+}
+
+.ebiz-fattyblue-theme .ebiz-portlet-title-container {
+}
+
+.ebiz-fattyblue-theme .ebiz-portlet-title {
+}
+
+/***** END FATTYBLUE THEME STYLES *****/
+
+
+/***** BEGIN TABLE THEME STYLES *****/
+
+.ebiz-table-theme {
+}
+
+.ebiz-table-theme .ebiz-portlet-container {
+	background: url(../images/cont_add_left_bg.gif) no-repeat bottom left;
+	padding: 0px;
+}
+
+.ebiz-table-theme .ebiz-portlet-content {
+	font-size: 12px;
+	margin-bottom: 12px;
+	width: 100%;
+}
+
+.ebiz-table-theme .ebiz-portlet-title-container {
+}
+
+.ebiz-table-theme .ebiz-portlet-title {
+}
+
+.ebiz-table-theme h3 {
+	background: white url(../images/cont_table_head.gif) no-repeat left top;
+	font: normal 22px Arial, Helvetica, sans-serif;
+	height: 52px;
+	color: #4777BF;
+	padding: 0px;
+	margin: 0px;
+}
+
+.ebiz-table-theme h3 span {
+	background: url(../images/cont_table_head_right.gif) no-repeat right top;
+	padding: 13px 15px 16px;
+	height: 23px;
+	display: block;
+}
+
+* html .ebiz-table-theme h3 span {
+	padding-bottom: 14px;
+}
+
+.ebiz-table-theme h4 {
+	color:#FFFFFF;
+	background-color:#8E8E8E;
+	padding:8px 20px;
+	margin:0px;
+	border: solid #dcdcdc 1px;
+	border-bottom-width:0px;
+}
+
+.ebiz-table-theme .ebiz-head-foot-button {
+	float:right;
+	margin-left:20px;
+	vertical-align:middle;
+}
+
+.ebiz-table-theme .ebiz-last-row .ebiz-first-col {
+	padding: 0px;
+}
+
+.ebiz-table-theme .ebiz-last-row .ebiz-first-col div {
+	background: url(../images/cont_add_left_bg.gif) no-repeat bottom left;
+	height: 100%;
+	margin: 0px;
+}
+
+.ebiz-table-theme .ebiz-last-row .ebiz-last-col {
+	background: url(../images/cont_add_bottom_bg.gif) no-repeat bottom right;
+}
+
+.ebiz-table-theme .ebiz-last-row td, .ebiz-table-content-container .ebiz-last-row th {
+	background: url(../images/cont_add_bottom_bg.gif) no-repeat bottom left;
+}
+
+/***** END TABLE THEME STYLES *****/
+
+
+/***** BEGIN SHARED THEME STYLES *****/
+
+.ebiz-portlet-container *:first-child {
+	margin-top: 0px;
+}
+
+.ebiz-portlet-container {
+	margin-bottom: 10px;
+}
+
+.ebiz-portlet-container label {
+	float: left;
+	width: 210px;
+	text-align: right;
+	font-weight: bold;
+	clear: both;
+	padding-right: 8px;
+	padding-top: 4px;
+}
+
+.ebiz-portlet-container-highlight {
+}
+
+/***** END SHARED THEME STYLES *****/
+
+
+/***** BEGIN PORTAL ERROR STYLES *****/
+
+.portal-error {
+	border: solid #990000 3px;
+	padding: 3px;
+}
+
+.portal-error-desc {
+	font-size: 12px;
+	color: #990000;
+}
+
+.portal-error img {
+	float: left;
+	margin: 12px 6px 6px !important;
+}
+
+/***** END PORTAL ERROR STYLES *****/
+
+
+/***** BEGIN TAB NAVIGATION *****/
+
+.ebiz-portlet-tabs {
+	height: 37px;
+	position: relative;
+	top: 1px;
+	z-index: 2;
+	margin: 0px;
+	padding: 0px;
+	margin-top: -1px;
+	vertical-align: middle;
+	list-style-type: none;
+}
+
+.ebiz-portlet-tab {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	width: 108px;
+	float: left;
+	margin-left: -4px;
+}
+
+.ebiz-portlet-tabs a {
+	display: block;
+	height: 29px;
+	width: 108px;
+	color: white;
+	font-size: 16px;
+	font-weight: normal;
+	font-family: helvetica, sans-serif;
+	background-image: url(../images/condensed_tab_inactive.gif);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 8px;
+	vertical-align: middle;
+}
+
+.ebiz-portlet-tabs a:hover, .ebiz-portlet-tabs a:link {
+	color: white;
+}
+
+.ebiz-portlet-tab-leftend, .ebiz-portlet-tab-leftend a {
+	width: 108px;
+}
+
+.ebiz-portlet-tabs a.ebiz-active, .ebiz-portlet-tabs a.ebiz-active:hover, .ebiz-portlet-tabs a.ebiz-active:link {
+	color: #094d9c;
+	background-image: url(../images/condensed_tab.gif);
+}
+
+.ebiz-portlet-tab-leftend a.ebiz-active, .ebiz-portlet-tab-leftend a.ebiz-active:hover, .ebiz-portlet-tab-leftend a.ebiz-active:link {
+	background-image: url(../images/condensed_tab_leftend.gif);
+}
+
+.ebiz-portlet-tabs .ebiz-bigTab a {
+	font-size: 12px !important;
+	border: solid red 0px;
+	padding-top: 4px;
+	height: 33px;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+/***** END CONDENSED TAB NAVIGATION *****/
+
+
+/***** BEGIN COLUMN CONTROLS STYLES *****/
+
+.ebiz-column-date {
+	float: left;
+	width: 145px;
+}
+
+.ebiz-column-content {
+	margin-left: 145px;
+	margin-right: 110px;
+}
+
+.ebiz-column-controls {
+	float: right;
+	width: 100px;
+	font-weight: normal;
+	font-size: .9em;
+	vertical-align: middle;
+	margin-top: -3px;
+	text-align: right;
+}
+
+.ebiz-column-controls * {
+	vertical-align: middle;
+	border-width: 0px;
+}
+
+.ebiz-column-controls a, .ebiz-column-controls a:hover {
+	text-decoration: none;
+}
+
+.ebiz-column-controls a span {
+	text-decoration: underline;
+}
+
+.ebiz-column-content-complete {
+	display: none;
+}
+
+.ebiz-highlight-box .ebiz-column-content h4 {
+	margin-top: -20px !important;
+	background: none;
+}
+
+*+html .ebiz-highlight-box .ebiz-column-content h4 {
+	padding-top: 3px;
+}
+
+* html .ebiz-highlight-box .ebiz-column-content h4 {
+	padding-top: 3px;
+}
+
+/***** END COLUMN CONTROLS STYLES *****/
+
+.ebiz-or {
+	background-color: #FCFCFC;
+}

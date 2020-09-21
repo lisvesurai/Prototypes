@@ -1,0 +1,708 @@
+/* NOTE
+	All CSS is valid here except for the use of cursor:hand;
+	Although this is not recognised as valid, it is required
+	by Internet Explorer, please don't remove.
+
+/*========================================================================
+
+
+/* BODY STYLES */
+* {font-family:arial, helvetica, sans-serif;}
+body {margin:0; padding:0;}
+#downloads, #generic, #downloadsHome {margin:0; width:auto; padding:0 0 20px 16px; font-size:100.01%; color:#666; }
+img, form {border:0; margin:0;}
+p {padding:0; margin:12px 0 15px 0; clear:both;}
+a {text-decoration:none; color:#FF6600;}
+h1, h2, h3, h4, h5 {margin:0; padding:0; font-size:100.01%;}
+select, input {font-size:100.01%; border:solid 1px #696867; color:#666;}
+ul, li {margin:0; padding:0;}
+ul {list-style:none;}
+
+.clear {clear:both;}
+.left {float:left;}
+.right {float:right;}
+
+.blackText {color:#000;}
+
+/* HIDDEN TEXT */
+span, .hidden, caption {position:absolute; left:0px; top:-100px; width:0px; height:0px; overflow:hidden;}
+
+/* IMAGE REPLACEMENT */
+.replace {position:relative; overflow:hidden;}
+.replace em, .replace a {display:block; position:absolute; top:0; left:0; z-index:1; width:100%; height:100%;}
+* html>body .replace {overflow:visible; font-size:5px;}
+
+
+/*========================================================================
+	CONTAINERS AND STYLES USED ACROSS ALL SECTIONS
+=========================================================================*/
+
+
+/* ========= CONTAINERS =========
+
+/* MAIN CONTAINER
+this wraps around the entire content and holds the bottom bg image (default is for the generic pages) */
+#mainContainer {width: 780px; margin-left:-1px; background:url(../images/orange/mainContainerBg.gif) left top repeat-y; text-align:left;}
+#mainContainer .mainContainerBottom {height:20px; background:url(../images/orange/mainContainerBottom.gif) left top no-repeat;}
+#downloadsHome #mainContainer {background:url(../images/orange/mainContainerBg.gif) left bottom repeat-y; text-align:left;}
+#downloadsHome #mainContainer .mainContainerBottom {height:24px; background:url(../images/orange/mainContainerBottom.gif) left top no-repeat;}
+#downloads #mainContainer {background:url(../images/orange/mainContainerBg.gif) left bottom repeat-y;}
+#gamesAlt #mainContainer {background:url(../images/orange/mainContainerBg.gif) left bottom repeat-y;}
+#downloads #mainContainer .mainContainerBottom {height:21px; background:url(../images/orange/mainContainerBottom.gif) left top no-repeat;}
+#termsAndConditions #mainContainer {background:url(../images/orange/mainContainerBgNoNav.gif) left bottom repeat-y;}
+#termsAndConditions #mainContainer .mainContainerBottom {height:23px; background:url(../images/orange/mainContainerBottomNoNav.gif) left top no-repeat;}
+#mainContainer .mainContainerBottom,
+#gamesAlt #mainContainer .mainContainerBottom {height:20px;background:url(../images/orange/mainContainerBottom.gif) left top no-repeat;}
+
+/* CONTENT CONTAINERS (default is for the generic pages) */
+#contentContainer {float:left; width:611px; background:url(../images/orange/listAreaTopBgGeneric.gif) left top no-repeat; background-position:0 110px;}
+#downloadsHome #contentContainer, #downloads #contentContainer {background:url(../images/orange/listAreaTopBg.gif) left top no-repeat; background-position:0 110px;}
+#downloadsHome #contentContainer {font-size:65%; width:770px; w\idth:753px; min-height:400px; padding:13px 0 0 17px; background:url(../images/orange/containerHomeTopBg.gif) left top no-repeat;}
+#gamesAlt #contentContainer {background:url(../images/orange/gamesAlternativeBg.gif) left top no-repeat; background-position:0 110px;}
+#contentContainer:after {content: "."; display:block; height:0; clear:both; visibility:hidden;}
+#contentContainer, #contentContainer a {color:#666;}
+
+
+/* ========= OTHER STYLES ========= */
+
+/* GO AND SEARCH BUTTONS */
+a.goButton {display:block; width:33px; height:19px; background:url(../images/orange/buttonGo.gif) left top no-repeat;}
+a:hover.goButton {background-position:0 -19px;}
+.goInput {background:#FF8A13; border:solid 1px #65381C; color:#FFF; padding:1px 5px 2px 5px; cursor:pointer;}
+a.searchButton {display:block; width:56px; height:19px; background:url(../images/orange/buttonSearch.gif) 0 -19px no-repeat;}
+a:hover.searchButton {display:block; background:url(../images/orange/buttonSearch.gif) 0 0px no-repeat; width:56px; height:19px;}
+.searchInput {background:#FF8A13; border:solid 1px #65381C; color:#FFF; padding:1px 5px 2px 5px; cursor:pointer;}
+
+/* PNG THUMBNAIL */
+.thumbnail {width:84px; padding:3px 0 0 3px; background:url(../images/orange/thumbnailBordertop.gif) left top no-repeat;}
+.thumbnail .image {width:75px; height:75px; position:relative; left:0; top:0; z-index:0;}
+.thumbnail .image img {width:100%; height:100%;}
+.thumbnail .border {display:block; text-indent:-800px; overflow:hidden; decoration:none; width:75px; height:75px; color:#707070 !important; position:absolute; left:0; top:0; z-index:1; background:url(../images/orange/thumbnailWindow.png) left top no-repeat;}
+* html .thumbnail .border {background:url(../images/orange/thumbnailWindow.gif) left top no-repeat;}
+* html>body .thumbnail .border {background:url(../images/orange/thumbnailWindow.png) left top no-repeat;}
+* html>body#games .thumbnail .border {background:url(../images/orange/gamesThumbnailWindow.png) left top no-repeat;}
+.thumbnail a:hover.border {color:#FF6600 !important; background-position:0 -75px; text-decoration:none !important;}
+* html .thumbnail a:hover.border {background-position:0 0;}
+* html>body .thumbnail a:hover.border {background-position:0 -75px;}
+.thumbnail .border .link {padding-top:70px; text-align:center;}
+.thumbnail .linkBg {display:block; margin:-3px 0 0 -3px; padding:0 0 13px 0; width:84px; background:url(../images/orange/thumbnailBorderBottom.gif) left bottom no-repeat;}
+* html .thumbnail .linkBg {padding:0 0 0 0;}
+* html>body .thumbnail .linkBg {padding:0 0 13px 0;}
+.thumbnail span {display:block; font-weight:normal; position:static; height:auto; width:auto;}
+
+
+/*========================================================================
+	TOP NAV AND RIGHT HAND SIDE PROMO COLUMN
+=========================================================================*/
+
+/* GLOBAL NAVIGATION (the rest of the styles for this are part of the Orange include) */
+#OrangeNavigation {margin-left:-16px;}
+#OrangeNavigation #home_link span {position:static; height:auto; width:auto;}
+
+/* ENTERTAINMENT NAVIGATION */
+#localNavigation {position:relative; left:-2px; height:74px; width:774px; background:url(../images/orange/mainBg.gif) left top repeat-x;}
+* html #localNavigation {margin-left:-1px;}
+#localNavigation .leftBorder {height:74px; background:url(../images/orange/mainLeftBorder.gif) left top no-repeat;}
+#localNavigation .rightBorder {height:74px; background:url(../images/orange/mainRightBorder.gif) right top no-repeat;}
+#localNavigation li a {position:relative; overflow:hidden;}
+#localNavigation li a em {position:absolute; top:0; left:0; z-index:1; width:100%; height:100%; background-repeat:no-repeat;}
+* html>body #localNavigation li a {overflow:visible; font-size:5px;}
+
+
+/* ========= PRIMARY NAV ========= */
+#primaryNav {position:absolute; width:751px; top:12px; left:12px; z-index:1; font-size:70%; text-align:right;}
+#primaryNav li {float:left;}
+#primaryNav li div {height:28px;}
+* html>body #primaryNav li div {float:left;}
+#primaryNav li.mobileDownloads div, #primaryNav li.mobileDownloads em {width:173px; background:url(../images/orange/level1MobileDownloads.gif) left top no-repeat;}
+
+
+/* ========= SECONDARY NAV ========= */
+#secondaryNav {position:absolute; top:39px; left:10px; z-index:0; width:748px; height:23px; font-size:70%; background:url(../images/orange/level2Bg.gif) right top no-repeat;}
+#secondaryNav li {float:left;}
+#secondaryNav li a {height:23px;}
+* html>body #secondaryNav li a {float:left;}
+#secondaryNav li.home a, #secondaryNav li.home em {width:58px; background:url(../images/orange/level2Home.gif) left top no-repeat;}
+#secondaryNav li.ringtones a, #secondaryNav li.ringtones em {width:79px; background:url(../images/orange/level2Ringtones.gif) left top no-repeat;}
+#secondaryNav li.pictures a, #secondaryNav li.pictures em {width:73px; background:url(../images/orange/level2Pictures.gif) left top no-repeat;}
+#secondaryNav li.games a, #secondaryNav li.games em {width:64px; background:url(../images/orange/level2Games.gif) left top no-repeat;}
+#secondaryNav li.callingTunes a, #secondaryNav li.callingTunes em {width:97px; background:url(../images/orange/level2CallingTunes.gif) left top no-repeat;}
+#secondaryNav li.help a, #secondaryNav li.help em {width:50px; background:url(../images/orange/level2Help.gif) left top no-repeat;}
+#secondaryNav li.termsAndConditions a, #secondaryNav li.termsAndConditions em {width:146px; background:url(../images/orange/level2Terms.gif) left top no-repeat;}
+#secondaryNav li a {display:block;}
+#secondaryNav li a:hover em {background-position:0 -23px !important;}
+
+/* SECONDARY NAV SELECTED STATES */
+#home #secondaryNav li.home em,
+#ringtones #secondaryNav li.ringtones em,
+#pictures #secondaryNav li.pictures em,
+#games #secondaryNav li.games em,
+#callingTunes #secondaryNav li.callingTunes em,
+#help #secondaryNav li.help em {background-position:0 -46px !important;}
+#termsAndConditions #secondaryNav li.termsAndConditions em {background-position:0 -46px !important;}
+
+/* FOOTER LINKS */
+#footercontainer {clear:both; position:relative; left:-16px;}
+
+/* PROMO COLUMN */
+#promoColumn {float:left; padding:17px 19px 0 19px; width:157px; w\idth:121px; min-height:524px; background:url(../images/orange/promoColumnBorderTop.gif) left top no-repeat;}
+#promoColumn li a {text-decoration:none; color:#3B3B3B;}
+#promoColumn li a:hover {color:#FFF !important; cursor:hand; c\ursor:pointer;}
+#promoColumn li img {margin:10px 0 0 25px;}
+/*
+* html #promoColumn li img {float:left; margin:2px 2px; ma\rgin:2px 2px;}
+* html>body #promoColumn li img {float:none;}
+*/
+#promoColumn li span {background:url(../images/orange/spacer.gif) center top; font-size:75%; line-height:1em; padding:79px 3px 6px 3px; margin:0 0 -79px 0; font-weight:normal; display:block; position:static; height:auto; width:auto;}
+#promoColumn li span {position:relative; top:-79px; left:0; z-index:1; width:124px; w\idth:118px; text-align:center;}
+/*
+#promoColumn li span.over {background:url(../images/orange/rolloverBorder.png) center top no-repeat; cursor:hand; c\ursor:pointer;}
+#promoColumn li span.overGIF {background:url(../images/orange/rolloverBorder.gif) center top no-repeat; cursor:hand; c\ursor:pointer;}
+#promoColumn li span.out {background:none;}
+#promoColumn li span:after {content: "."; display:block; height:0; clear:both; visibility:hidden;}
+*/
+/* Opera needs to have a float:left on the LI tag or the links move on hover state */
+@media all and (min-width:0px){#promoColumn li {float:left; height:125px;}}
+
+/* IE5 Mac doesn't seem to recognise the span correctly */
+* html>body #promoColumn li {padding-bottom:20%;}
+
+
+/*========================================================================
+	FEATURE AREAS 
+	(the feature is the main graphic area with the drop down menus)
+=========================================================================*/
+	
+/* FEATURE AREA (default is for the generic sections) */
+#feature {float:left; overflow:auto; width:611px; height:110px; background:url(../images/orange/featureMainImg.jpg) left top no-repeat; margin-bottom:15px;}
+* html>body #feature {overflow:visible;}
+#feature .title {padding:14px 0 17px 19px;}
+#feature .title h2 {color:#FF6600; font-size:70%;}
+#feature .title h2 strong {display:block; font-weight:normal; font-size:180%; color:#666;}
+#feature ul {font-size:65%; margin-left:19px;}
+#feature label {position:absolute; left:0px; top:-100px; width:0px; height:0px; overflow:hidden;}
+#feature li {padding-right:8px; float:left; text-align:left;}
+#feature li.phoneSelect {padding:0 4px 0 0;}
+#feature li.phoneSelect select {width:13.4em; display:block;}
+#feature li.downloadTypeSelect {padding:0 8px 0 4px;}
+#feature li.downloadTypeSelect select {width:13.4em; display:block;}
+#feature li.downloadTypeSearch {padding:0 7px 0 7px;}
+#feature li.downloadTypeSearch input {width:128px; w\idth:123px; padding-left:5px;}
+* html>body #feature li.downloadTypeSearch input {height:1.6em; padding-left:0;}
+#feature li.buttonArea {padding:0 18px 0 0;}
+
+/* other feature main images */
+#ringtones #feature {background:url(../images/orange/featureMainImgRingtones.jpg) left top no-repeat;}
+#pictures #feature {background:url(../images/orange/featureMainImgPictures.jpg) left top no-repeat;}
+#games #feature {background:url(../images/orange/featureMainImgGames.jpg) left top no-repeat;}
+#help #feature {background:url(../images/orange/featureMainImgHelp.jpg) left top no-repeat;}
+#termsAndConditions #feature {background:url(../images/orange/featureTermsAndConditions.jpg) left top no-repeat; text-indent:-1000px;}
+
+/* titles */
+#fireplayer #feature .title h2,
+#fireplayer #feature .title em {width:166px; height:64px; background:url(../images/orange/featureFirepayerTitle.gif) left top no-repeat;}
+#help #feature .title h2#helpOverviewTitle,
+#help #feature .title h2#helpOverviewTitle em {width:197px; height:64px; background:url(../images/orange/featureTitleHelpOverview.gif) left top no-repeat;}
+#help #feature .title h2#helpRingtonesTitle,
+#help #feature .title h2#helpRingtonesTitle em {width:145px; height:64px; background:url(../images/orange/featureTitleHelpRingtones.gif) left top no-repeat;}
+#help #feature .title h2#helpPicturesTitle,
+#help #feature .title h2#helpPicturesTitle em {width:132px; height:64px; background:url(../images/orange/featureTitleHelpPictures.gif) left top no-repeat;}
+#help #feature .title h2#helpGamesTitle,
+#help #feature .title h2#helpGamesTitle em {width:119px; height:64px; background:url(../images/orange/featureTitleHelpGames.gif) left top no-repeat;}
+#sitemap #feature .title h2,
+#sitemap #feature .title h2 em {width:106px; height:50px; background:url(../images/orange/titleSitemap.gif) left top no-repeat;}
+
+/*========================================================================
+	GENERIC STYLE PAGES (including help, fireplayer, sitemap)
+=========================================================================*/
+
+/* LEFT NAVIGATION */
+#generic #leftNavigation {float:left; width:178px; font-size:65%; margin-top:-8px;}
+#generic #leftNavigation li {padding:0; display:inline;}
+#generic #leftNavigation li span {padding:4px 4px 5px 11px; display:block; position:static; width:178px; w\idth:163px; height:auto; background:url(../images/orange/leftNavBgOut.gif) left bottom no-repeat;}
+#generic #leftNavigation li.selected span {background:url(../images/orange/leftNavBgSelected.gif) left bottom no-repeat;}
+#generic #leftNavigation li a {padding:0 0 0 13px; display:block; float:left; fl\oat:none; text-decoration:none; background:url(../images/orange/leftNavArrowOrange.gif) left top no-repeat;}
+#generic #leftNavigation li.selected a {color:#333; background:url(../images/orange/leftNavArrowWhite.gif) left top no-repeat;}
+#generic #leftNavigation li a:hover {color:#FF6600;}
+
+#generic #contentArea {float:left; padding:32px 5px 10px 16px; width:411px; w\idth:386px; font-size:65%;}
+#generic #contentArea h3 {font-size:110%;}
+#generic #contentArea a {color:#FF6600;}
+
+/* ======= GAMES ALTERNATIVE ========= */
+#gamesAlt #box {float:left; width:576px;font-size:70%;padding:0 0 0 18px;}
+#gamesAlt #boxTop {padding-top:10px;width:576px;height:27px; float:left; background:url(../images/orange/gamesAlternativeTop.gif) left bottom no-repeat;}
+#gamesAlt #boxBottom {width:576px;height:11px; float:left; background:url(../images/orange/gamesAlternativeBottom.gif) left top no-repeat;}
+#gamesAlt #boxSides {width:576px; float:left; padding-left:5px;background:url(../images/orange/gamesAlternativeBox.gif) left bottom repeat-y;}
+#gamesAlt .gamesInfusio {float:left;padding: 5px 0 10px 222px;min-height:184px;background:url(../images/orange/inFusio.jpg) left top no-repeat;}
+#gamesAlt .gamesInfusio p,
+#gamesAlt .gamesHandandgo {width:320px;}
+#gamesAlt .gamesHandandgo {float:left;padding: 5px 0 10px 222px;min-height:140px;background:url(../images/orange/handandgo.jpg) left top no-repeat;}
+* html #gamesAlt .gamesInfusio {height:184px;}
+* html #gamesAlt .gamesHandandgo {height:140px;}
+
+/* ======= HELP ========= */
+
+/*overview page */
+#help .overviewRingtones {float:left; width:120px; margin:30px 13px 0 0;}
+#help .overviewPictures {float:left; width:120px; margin:30px 13px 0 0;}
+#help .overviewGames {float:left; width:117px; margin:30px 0 0 0;} 
+#help .dottedLine {padding:7px 21px 9px 0; margin-bottom:5px; background:url(../images/orange/dottedLine.gif) left bottom repeat-x;}
+#help .overviewPictures .dottedLine {padding-bottom:22px;}
+#help .overviewGames .dottedLine {padding-bottom:22px;}
+#help a.findOutMoreLink {display:block; float:left; padding:0 0 0 13px; font-weight:normal !important; color:#666 !important; text-decoration:none; background:url(../images/orange/contentArrowOrange.gif) left top no-repeat;}
+#help a:hover.findOutMoreLink {color:#FF6600 !important; text-decoration:none !important;}
+#help .overviewRingtones h3, #help .overviewRingtones em {width:72px; height:17px; background:url(../images/orange/helpTitleRingtones.gif) left top no-repeat;}
+#help .overviewPictures h3, #help .overviewPictures em {width:60px; height:17px; background:url(../images/orange/helpTitlePictures.gif) left top no-repeat;}
+#help .overviewGames h3, #help .overviewGames em {width:52px; height:17px; background:url(../images/orange/helpTitleGames.gif) left top no-repeat;}
+
+/* general help pages */
+#help #faqLinks {padding-bottom:17px; background:url(../images/orange/contentSeperator.gif) left bottom repeat-x;}
+#help #faqLinks a {display:block; font-weight:normal !important; text-decoration:none; color:#666; padding:0 0 0 13px; background:url(../images/orange/contentArrowOrange.gif) left top no-repeat;}
+* html #help #faqLinks a {float:left;}
+* html>body#help #faqLinks a {float:none;}
+#help #faqLinks a:hover {color:#FF6600; text-decoration:none !important;}
+#help #contentArea h4 {display:block; font-size:110%; margin-top:28px; padding:0 0 0 20px; background:url(../images/orange/iconQuestion.gif) left top no-repeat;}
+#help #contentArea h4 a {text-decoration:none; color:#666 !important;}
+#help #contentArea h4 a:hover {text-decoration:none !important;}
+#help #contentArea h5 {font-size:110%; color:#999;}
+#help #contentArea .answer {display:block; padding:0 0 0 20px; background:url(../images/orange/iconAnswer.gif) left top no-repeat;}
+#help #contentArea .dataTable {margin-top:12px; font-size:100%; color:#666;}
+#help #contentArea .dataTable th {font-size:110%; font-weight:bold; color:#999;}
+#help #contentArea .dataTable td, #help .dataTable th {padding:0 0 4px 0;/* padd\ing:0 12px 0 0;*/ text-align:left; vertical-align:top; /*white-space:nowrap;*/}
+#help #contentArea .dataTable .right {text-align:right;}
+#help #contentArea  strong {color:#000;}
+#help #contentArea #contentArea a {font-weight:bold;}
+#help #contentArea a:hover {text-decoration:underline;}
+#help #contentArea a.backToTop {display:block; padding:0 0 0 13px; color:#666 !important; text-decoration:none; background:url(../images/orange/leftNavArrowOrange.gif) left top no-repeat;}
+#help #contentArea a:hover.backToTop {color:#FF6600 !important; text-decoration:none !important;}
+
+/* ======= TERMS AND CONDITIONS ========= */
+#termsAndConditions #selectBit {padding-left: 250px;}
+#termsAndConditions #selectBit ul {margin:0 0 0 20px;}
+#termsAndConditions #selectBit li {display:block; padding-bottom: 20px;}
+#termsAndConditions #selectBit li h4 {margin-bottom:5px;}
+#termsAndConditions #selectBit li select {width:12em; font-size: 80%;}
+#termsAndConditions a#termsAndConditionsButton {display:block; width:115px; height:19px; background:url(../images/orange/buttonTermsAndConditions.gif) 0 0 no-repeat;}
+#termsAndConditions a:hover#termsAndConditionsButton {background-position:0 -19px;}
+
+/* titles */
+#termsAndConditions #selectBit h4#selectNetwork, #termsAndConditions #selectBit h4#selectNetwork em, #help #selectBit h4#selectNetwork, #help #selectBit h4#selectNetwork em {width:100px; height:11px; background:url(../images/orange/title1SelectNetwork.gif) left top no-repeat;}
+#termsAndConditions #selectBit h4#selectPhone, #termsAndConditions #selectBit h4#selectPhone em, #help #selectBit h4#selectPhone, #help #selectBit h4#selectPhone em {width:100px; height:11px; background:url(../images/orange/title2SelectPhone.gif) left top no-repeat;}
+#termsAndConditions #selectBit h4#viewTermsAndConditions, #termsAndConditions #selectBit h4#viewTermsAndConditions em {width:130px; height:11px; background:url(../images/orange/title3ViewTermsAndConditions.gif) left top no-repeat;}
+
+/* ======= HELP  ========= */
+#help #selectBit {padding-left: 250px;}
+#help #selectBit ul {margin:0 0 0 20px;}
+#help #selectBit li {display:block; padding-bottom: 20px;}
+#help #selectBit li h4 {margin-bottom:5px;}
+#help #selectBit li select {width:12em; font-size: 80%;}
+#help a#helpButton {display:block; width:61; height:19px; background:url(../images/orange/buttonHelp.gif) 0 0 no-repeat;}
+#help a:hover#helpButton {background-position:0 -19px;}
+
+/* titles */
+#help #selectBit  h4#viewHelp, #help #selectBit h4#viewHelp em 
+{width:130px; height:11px; background:url(../images/orange/title3ViewHelp.gif) left top no-repeat;}
+
+
+/* ========= SITEMAP ========= */
+#sitemap #contentArea {width:575px; padding-right:0;}
+#sitemap #contentArea h3 {font-size:180%; font-weight:normal; margin-bottom:6px;}
+#sitemap .dottedLine {font-size:110%; padding:7px 0 20px 0; margin:0; background:url(../images/orange/bgFireplayerDottedLine.gif) left top repeat-x;}
+#sitemap .dottedLine a {font-weight:bold;}
+#sitemap .dottedLine a:hover {text-decoration:underline;}
+
+
+/*========================================================================
+	DOWNLOADS HOME PAGE
+=========================================================================*/
+
+/* TOP AREA */
+#home #topArea {background:url(../images/orange/topAreaBg.gif) left top repeat-y;}
+#home #topArea:after {content: "."; display:block; height:0; clear:both; visibility:hidden;}
+
+/* PHONE SELECTOR */
+#home #phoneSelector {float:left;}
+#home #phoneSelector form {width:440px;}
+#home #phoneSelector .fine {background:url(../images/orange/phoneSelectorBg.jpg) left bottom no-repeat;}
+#home #phoneSelector .error {background:url(../images/orange/phoneSelectorBgError.jpg) left bottom no-repeat;}
+#home #phoneSelector .topBorder {width:440px; w\idth:423px; padding:19px 0 0 17px; background:url(../images/orange/phoneSelectorTopBorder.gif) left top no-repeat;}
+#home #phoneSelector h2, #home #phoneSelector em {width:309px; height:34px; background:url(../images/orange/phoneSelectorTitle.gif) left top no-repeat;}
+#home #phoneSelector ul {margin-top:9px;}
+* html #home #phoneSelector ul {float:left;}
+#home #phoneSelector li {float:left; font-size:65%; padding-right:8px;}
+#home #phoneSelector select {width:142px; display:block;}
+#home #phoneSelector .link {font-size:65%; clear:both; display:block; padding:7px 0 8px 0; width:350px;}
+* html>body #home #phoneSelector .link {padding:9px 0 10px 0;}
+#home #phoneSelector a {color:#3F3F3F; display:block; text-decoration:none; font-weight:bold;}
+#home #phoneSelector a strong {color:#FF6600; text-decoration:none;}
+#home #phoneSelector a:hover {text-decoration:underline; color:#3F3F3F;}
+#home #phoneSelector a:hover strong {color:#FF6600; text-decoration:underline;}
+
+/* FLASH CONTENT */
+#home #flashContent {float:left; width:333px; height:110px;}
+#home #flashContent img {display:block; clear:both;}
+
+/* TITLES (ie - ringtones, pictures and games sections) */
+#home .titleText {width:142px; padding:12px 0 0 0; background:url(../images/orange/ringtonesTitleTop.gif) left top no-repeat;}
+#home #pictureList .titleText {width:323px; background:url(../images/orange/picturesTitleTop.gif) left top no-repeat;}
+#home #gamesList .titleText {width:241px; background:url(../images/orange/gamesTitleTop.gif) left top no-repeat;}
+#home .titleText .bottomBorder {font-weight:normal; line-height:1.1em; padding:0 13px 9px 12px; background:url(../images/orange/ringtonesTitleBottom.gif) left bottom no-repeat;}
+#home #pictureList .bottomBorder {background:url(../images/orange/picturesTitleBottom.gif) left bottom no-repeat;}
+#home #gamesList .bottomBorder {background:url(../images/orange/gamesTitleBottom.gif) left bottom no-repeat;}
+#home #ringtoneList .titleText a {display:block; width:71px; height:17px; background:url(../images/orange/titleRingtones.gif) left top no-repeat;}
+#home #pictureList .titleText a {display:block; width:61px; height:17px; background:url(../images/orange/titlePictures.gif) left top no-repeat;}
+#home #gamesList .titleText a {display:block; width:52px; height:17px; background:url(../images/orange/titleGames.gif) left top no-repeat;}
+* html>body #home .titleText a {float:left; margin-bottom:5px;}
+#home .titleText a:hover {background-position:0 -17px !important;}
+#home .titleText p {display:block; margin:5px 0 0 0; padding:8px 0 0 0; background:url(../images/orange/titleDottedLine.gif) left top repeat-x;}
+
+/* RINGTONE DOWNLOAD LIST */
+#home #ringtoneList {width:142px; float:left;}
+#home #ringtoneList li a {display:block; width:142px; w\idth:110px; padding:4px 25px 5px 8px; min-height:26px; text-decoration:none; cursor:hand; c\ursor:pointer; background:url(../images/orange/ringtonesBgLight.gif) left bottom no-repeat;} 
+* html>body #home #ringtoneList li a {padding-top:7px; padding-bottom:6px;}
+/* Hide from ie mac \*/
+ * html #home #ringtoneList li a { height:26px;he\ight:26px; } /* ie treats height as min height*/
+#home #ringtoneList li.dark a {background:url(../images/orange/ringtonesBgDark.gif) left bottom no-repeat;}
+#home #ringtoneList a:after, #home #ringtoneList li:after  {content: "."; display:block; height:0; clear:both; visibility:hidden;}
+* html #home #ringtoneList li a {float:left;}
+#home #ringtoneList span {float:left; position:static; height:auto; width:auto; background:none;}
+#home #ringtoneList span.number {width:14px; color:#FF6600; font-size:90%;}
+#home #ringtoneList span.track {width:94px;}
+* html>body #home #ringtoneList span.track {width:93px;}
+#home #ringtoneList span.track strong {display:block;}
+#home #ringtoneList li a * {font-weight:normal;}
+#home #ringtoneList li a:hover {background-position:0 -155px !important; color:#FF6600;}
+
+/* PICTURE DOWNLOAD LIST */
+#home #pictureList {width:323px; float:left; margin-left:16px;}
+* html #home #pictureList {ma\rgin-left:15px;}
+* html>body #home #pictureList {margin-left:14px;}
+#home #pictureList li {float:left; padding-left:7px; min-height:94px;}
+#home #pictureList .row1 {padding-top:7px; background:url(../images/orange/picturesBg1.gif) left bottom no-repeat;}
+#home #pictureList .row2 {padding-top:7px; background:url(../images/orange/picturesBg2.gif) left bottom no-repeat;}
+#home #pictureList .row3 {padding:7px 0 2px 0; background:url(../images/orange/picturesBg1.gif) left bottom no-repeat;}
+#home #pictureList .padding {padding:0 0 7px 4px; margin:0 0 0 0;}
+#home #pictureList .row1:after, #home #pictureList .row2:after, #home #pictureList .row3:after {content: "."; display:block; height:0; clear:both; visibility:hidden;}
+
+/* GAMES DOWNLOAD LIST */
+#home #gamesList {width:241px; float:left; margin-left:16px;}
+#home #gamesList li {padding:8px 14px 0 12px; padd\ing:8px 14px 8px 12px; float:left; f\loat:none;}
+#home #gamesList li.row1 {background:url(../images/orange/gamesBg1.gif) left bottom no-repeat;}
+#home #gamesList li.row2 {background:url(../images/orange/gamesBg2.gif) left bottom no-repeat;}
+#home #gamesList li.row3 {padding-bottom:3px; padd\ing-bottom:10px; background:url(../images/orange/gamesBg1.gif) left bottom no-repeat;}
+#home #gamesList .imageArea {float:left; padding:0 11px 0 0; width:93px; height:100px;}
+#home #gamesList .textArea {padding:3px 0 0 0; line-height:1.1em; float:left; width:110px; w\idth:107px;}
+#home #gamesList .textArea h3 {font-size:110%; margin-bottom:3px;}
+#home #gamesList .textArea h3 a {background:none; padding:0;}
+#home #gamesList .textArea a:hover {color:#FF6600;}
+#home #gamesList .textArea p {padding:0; margin:15px 0 0 0;}
+#home #gamesList .textArea img {display:block; margin:3px 0 0 0;}
+#home #gamesList .textArea strong {color:#000;}
+
+/* BOTTOM LINKS (underneath lists) */
+#home .bottomLink {padding:4px 14px 0 12px; display:block; font-size:110%;}
+#home .bottomLink a, #gamesAlt .arrowLink a {display:block; padding:0 0 0 12px !important; text-decoration:none; background:url(../images/orange/iconOrangeArrow.gif) left top no-repeat !important;}
+#gamesAlt .arrowLink a {background:url(../images/orange/iconOrangeArrow.gif) left top no-repeat !important;}
+#gamesAlt .arrowLink {padding:0 0 12px; display:block;}
+#home .bottomLink a:hover, #gamesAlt .arrowLink a:hover {color:#FF6600 !important;}
+
+/*========================================================================
+	DOWNLOADS INNER PAGES
+=========================================================================*/
+
+/* =======SEARCH AREA BELOW FEATURE ========= */
+#downloads #searchArea {f\loat:left; clear:both; width:611px; w\idth:583px; padding:9px 0 6px 25px; margin-top:-15px; background:url(../images/orange/searchAreaBg.gif) left top no-repeat;}
+#downloads #searchArea ul {font-size:65%;}
+#downloads #searchArea li {float:left;}
+#downloads #searchArea li:after {content: "."; display:block; height:0; clear:both; visibility:hidden;}
+* html>body #downloads #searchArea li a {float:left;}
+#downloads #searchArea li.searchBox {padding-top:1px;}
+#downloads #searchArea li.searchBox input {width:13.84em; padding-left:3px;}
+* html>body #downloads #searchArea li.searchBox input {padding:3px; background:#FFF;}
+#downloads #searchArea li.buttonArea {width:58px; padding:0 13px 0 4px;}
+#downloads #searchArea li.buyARingtone {padding:3px 12px 0 0; width:360px; w\idth:348px;}
+* html #downloads #searchArea li.buyARingtone {w\idth:344px;}
+* html>body #downloads #searchArea li.buyARingtone {w\idth:348px;}
+#downloads #searchArea li.buyARingtone h3 {font-size:110%;} 
+
+
+/* ========= LEFT NAVIGATION ========= */
+#downloads #leftNavigation {float:left; width:196px; font-size:65%; padding:0 0 0 18px;}
+#downloads #leftNavigation .title {width:196px; padding:9px 0 0 0; background:url(../images/orange/leftNavTitleTop.gif) left top no-repeat;}
+#downloads #leftNavigation .title h2 {font-size:110%; padding:0 0 5px 22px; background:url(../images/orange/leftNavTitleBottom.gif) left bottom no-repeat;}
+#downloads #leftNavigation li {padding:0; display:inline;}
+#downloads #leftNavigation li span {padding:5px 4px 5px 22px; display:block; position:static; width:196px; w\idth:170px; height:auto;}
+#downloads #leftNavigation li a {padding:0 0 0 13px; display:block; float:left; fl\oat:none; text-decoration:none; background:url(../images/orange/leftNavArrowLightest.gif) left top no-repeat;}
+* html>body #downloads #leftNavigation li span, * html>body #downloads #leftNavigation ul {float:left;}
+
+/* darkest background for each level */
+#downloads #leftNavigation #fiveLevels li span {background:url(../images/orange/leftNavBgDarkest.gif) left bottom no-repeat;}
+#downloads #leftNavigation #fiveLevels li a {color:#FFF; background:url(../images/orange/leftNavArrowDarkest.gif) left top no-repeat;}
+
+/* dark background for each level */
+#downloads #leftNavigation #fourLevels li span,
+#downloads #leftNavigation #fiveLevels li ul li span {background:url(../images/orange/leftNavBgDark.gif) left bottom no-repeat;}
+#downloads #leftNavigation #fourLevels li a,
+#downloads #leftNavigation #fiveLevels li ul li a {color:#FFF; background:url(../images/orange/leftNavArrowDark.gif) left top no-repeat;}
+
+/* medium background for each level */
+#downloads #leftNavigation #threeLevels li span {background:url(../images/orange/leftNavBgMedium.gif) left bottom no-repeat;}
+#downloads #leftNavigation #fourLevels li ul li span,
+#downloads #leftNavigation #fiveLevels li ul li ul li span {background:url(../images/orange/leftNavBgMedium.gif) left bottom no-repeat;}
+#downloads #leftNavigation #threeLevels li a,
+#downloads #leftNavigation #fourLevels li ul li a,
+#downloads #leftNavigation #fiveLevels li ul li ul li a {color:#FFF; background:url(../images/orange/leftNavArrowMedium.gif) left top no-repeat;}
+
+/* medium-light background for each level */
+#downloads #leftNavigation #twoLevels li span {background:url(../images/orange/leftNavBgMediumLight.gif) left bottom no-repeat;}
+#downloads #leftNavigation #threeLevels li ul li span,
+#downloads #leftNavigation #fourLevels li ul li ul li span,
+#downloads #leftNavigation #fiveLevels li ul li ul li ul li span {background:url(../images/orange/leftNavBgMediumLight.gif) left bottom no-repeat;}
+#downloads #leftNavigation #twoLevels li a,
+#downloads #leftNavigation #threeLevels li ul li a,
+#downloads #leftNavigation #fourLevels li ul li ul li a,
+#downloads #leftNavigation #fiveLevels li ul li ul li ul li a {color:#FFF; background:url(../images/orange/leftNavArrowMediumLight.gif) left top no-repeat;}
+
+/* light background for each level */
+#downloads #leftNavigation #oneLevels li span {background:url(../images/orange/leftNavBgLight.gif) left bottom no-repeat;}
+#downloads #leftNavigation #twoLevels li ul li span,
+#downloads #leftNavigation #threeLevels li ul li ul li span,
+#downloads #leftNavigation #fourLevels li ul li ul li ul li span,
+#downloads #leftNavigation #fiveLevels li ul li ul li ul li ul li span {background:url(../images/orange/leftNavBgLight.gif) left bottom no-repeat;}
+#downloads #leftNavigation #oneLevels li a,
+#downloads #leftNavigation #twoLevels li ul li a,
+#downloads #leftNavigation #threeLevels li ul li ul li a,
+#downloads #leftNavigation #fourLevels li ul li ul li ul li a,
+#downloads #leftNavigation #fiveLevels li ul li ul li ul li ul li a {color:#333; background:url(../images/orange/leftNavArrowLight.gif) left top no-repeat;}
+
+/* lightest (bottom level) content */
+#downloads #leftNavigation #oneLevels li ul li span,
+#downloads #leftNavigation #twoLevels li ul li ul li span,
+#downloads #leftNavigation #threeLevels li ul li ul li ul li span,
+#downloads #leftNavigation #fourLevels li ul li ul li ul li ul li span,
+#downloads #leftNavigation #fiveLevels li ul li ul li ul li ul li ul li span {background:url(../images/orange/leftNavBgLightest.gif) left bottom no-repeat;}
+#downloads #leftNavigation #oneLevels li ul li a,
+#downloads #leftNavigation #twoLevels li ul li ul li a,
+#downloads #leftNavigation #threeLevels li ul li ul li ul li a,
+#downloads #leftNavigation #fourLevels li ul li ul li ul li ul li a,
+#downloads #leftNavigation #fiveLevels li ul li ul li ul li ul li ul li a {color:#666; background:url(../images/orange/leftNavArrowLightest.gif) left top no-repeat;}
+
+/* down arrow and rollover colour */
+#downloads #leftNavigation li a:hover {color:#FF6600 !important;}
+#downloads #leftNavigation li.defaultLink span {background:url(../images/orange/leftNavBgLightest.gif) left bottom no-repeat;}
+#downloads #leftNavigation li.defaultLink a {color:#FF6600 !important; background:none !important;}
+#downloads #leftNavigation li.defaultLink a:hover {color:#666 !important;}
+#downloads #leftNavigation li.selected a {color:#FF6600 !important; background:none !important;}
+#downloads #leftNavigation li.selected a:hover {color:#666 !important;}
+#downloads #leftNavigation li.noChildren a {background:none !important;}
+
+/* LEFT NAV TEXT AREA STYLES */
+#downloads #leftNavigation .textArea {padding:5px 14px 5px 22px; width:178px; w\idth:142px;}
+#downloads #leftNavigation .textArea .intro {font-size:110%;}
+#downloads #leftNavigation .textArea strong {color:#000;}
+#downloads #leftNavigation .textArea a {color:#FF6600; font-weight:bold;}
+#downloads #leftNavigation .textArea li a {padding:0; background:none;}
+#downloads #leftNavigation .textArea a:hover {text-decoration:underline;}
+#downloads #leftNavigation .textArea ol {margin:0; padding:0; list-style-type:decimal; list-style-position:inside;}
+#downloads #leftNavigation .textArea ol li {margin:10px 0 0 0; display:list-item; color:#FF6600;}
+#downloads #leftNavigation .textArea ol li div {display:inline; color:#666;}
+
+
+/* ========= DOWNLOAD LISTS ========= */
+
+/* TITLE AREA */
+#downloads #downloadList {float:left; width:364px; font-size:65%; padding-left:16px;}
+#downloads #downloadList .title {width:364px; padding:9px 0 0 0; background:url(../images/orange/downloadListTitleTop.gif) left top no-repeat;}
+#downloads #downloadList .title h2 {font-size:110%; padding:0 13px 6px 22px; background:url(../images/orange/downloadListTitleBottom.gif) left bottom no-repeat;}
+#downloads #downloadList .title strong {float:right; font-weight:normal; color:#A1A1A1;}
+
+/* RINGTONE LIST */
+#downloads #downloadList #ringtoneList a {display:block; width:364px; w\idth:339px; min-height:13px; padding:5px 5px 5px 22px; text-decoration:none; cursor:hand; c\ursor:pointer; background:url(../images/orange/ringtoneListBgLight.gif) left bottom no-repeat;} 
+* html>body #downloads #downloadList #ringtoneList a {padding:5px 5px 7px 22px;}
+* html #downloads #downloadList #ringtoneList a {float:left;}
+#downloads #downloadList #ringtoneList a:after, #downloads #downloadList #ringtoneList li:after, #downloads #downloadList #ringtoneList strong:after  {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+#downloads #downloadList #ringtoneList .dark a {background:url(../images/orange/ringtoneListBgDark.gif) left bottom no-repeat;}
+#downloads #downloadList #ringtoneList li.headings strong {display:block; width:364px; w\idth:339px; font-weight:normal; float:left; padding:3px 5px 5px 22px; background:url(../images/orange/ringtoneListBgHeadings.gif) left bottom no-repeat; color:#9E9E9E;}
+#downloads #downloadList #ringtoneList span {display:block; float:left; position:static; height:auto; width:auto;}
+#downloads #downloadList #ringtoneList span.track {width:149px; w\idth:144px; padding-right:5px;}
+#downloads #downloadList #ringtoneList span.artist {width:125px; w\idth:120px; padding-right:5px;}
+#downloads #downloadList #ringtoneList span.listen {width:67px; w\idth:62px; overflow:visible;}
+#downloads #downloadList #ringtoneList a:hover {background-position:0 -277px !important; color:#FF6600;}
+
+/* GAMES DOWNLOAD LIST (The following styles overide ones specified in the generic section) */
+#downloads #downloadList #gamesList li {padding:7px 15px 12px 17px; float:left; f\loat:none; background:url(../images/orange/gamesListBgDark.gif) left bottom no-repeat;}
+#downloads #downloadList #gamesList li.light {background:url(../images/orange/gamesListBgLight.gif) left bottom no-repeat;}
+#downloads #downloadList #gamesList .imageArea {float:left; padding:0 11px 0 0; width:93px; height:100px;}
+#downloads #downloadList #gamesList .textArea {padding:3px 0 0 0; float:left; width:220px;}
+#downloads #downloadList #gamesList .textArea h3 {font-size:110%; font-weight:bold;}
+#downloads #downloadList #gamesList .textArea h3 a {background:none; padding:0;}
+#downloads #downloadList #gamesList .textArea a:hover {color:#FF6600;}
+#downloads #downloadList #gamesList .textArea p {padding:0; margin:10px 0 0 0;}
+#downloads #downloadList #gamesList .textArea img {display:block; margin:3px 0 0 0; mar\gin:2px 0 0 0;}
+#downloads #downloadList #gamesList .textArea strong {color:#000;}
+
+/* PICTURES LIST */
+#downloads #downloadList #pictureList {clear:both; padding:11px 0 0 0; background:url(../images/orange/imageListBg.gif) left bottom repeat-x;}
+* html>body #downloads #downloadList #pictureList {padding-top:0;}
+#downloads #downloadList #pictureList li {float:left; padding:0 0 8px 16px;}
+#downloads #downloadList #pictureList li a {display:block;}
+* html>body #downloads #downloadList #pictureList li a {display:inline;}
+#downloads #downloadList #pictureList .padding {margin:0 7px;}
+* html>body #downloads #downloadList #pictureList .padding {padding:11px 0 10px 0;}
+
+/* PAGINATION LINKS */
+#downloads #downloadList .paginationTop strong {display:block; text-align:right; width:364px; w\idth:326px; font-weight:normal; float:left; padding:3px 13px 5px 22px; background:url(../images/orange/ringtoneListBgHeadings.gif) left bottom no-repeat; color:#9E9E9E;}
+#downloads #downloadList .paginationBottom strong {display:block; text-align:right; width:364px; w\idth:326px; font-weight:normal; float:left; padding:3px 13px 5px 22px; background:url(../images/orange/ringtoneListBgHeadings.gif) left bottom no-repeat; color:#9E9E9E;} 
+#ringtones #downloads #downloadList .paginationBottom strong {background:none;}
+#pictures #downloads #downloadList .paginationBottom strong {padding-top:6px; background:url(../images/orange/paginationBottomBg.gif) left top no-repeat;}
+#downloads #downloadList .paginationTop strong em,
+#downloads #downloadList .paginationBottom strong em {font-weight:bold; color:#000; font-style:normal;}
+#downloads #downloadList .paginationTop a,
+#downloads #downloadList .paginationBottom a {display:inline; color:#FF6600 !important; width:auto; padding:0; text-decoration:none; background:none;}
+#downloads #downloadList .paginationTop a:hover,
+#downloads #downloadList .paginationBottom a:hover {color:#666 !important;}
+#downloads #downloadList .paginationTop a:after,
+#downloads #downloadList .paginationBottom a:after {content:"";}
+#downloads #downloadList .paginationTop:after,
+#downloads #downloadList .paginationBottom:after {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+
+/* NO SEARCH RESULTS */
+#downloads .noSearchResults {padding:20px 13px 5px 22px;}
+#downloads .noSearchResults h3 {font-size:110%;}
+#downloads .noSearchResults strong {color:#000; font-weight:normal;}
+/* ========= PREVIEW ========= */
+
+/* TITLE AREA */
+#downloads #preview {float:left; width:364px; font-size:70%; padding-left:16px;}
+#downloads #preview .title {width:364px; padding:9px 0 0 0; background:url(../images/orange/downloadListTitleTop.gif) left top no-repeat;}
+#downloads #preview .title h2 {font-size:110%; padding:0 13px 6px 22px; background:url(../images/orange/downloadListTitleBottom.gif) left bottom no-repeat;}
+#downloads #preview .title strong {float:right; font-weight:normal; color:#A1A1A1;}
+
+/* RINGTONE PREVIEW */
+
+/* details */
+#downloads #preview #details {padding:7px 15px 12px 17px; width:364px; w\idth:332px; font-size:110%; float:left; f\loat:none; background:url(../images/orange/previewListBgDark.gif) left bottom no-repeat;}
+#downloads #preview #details h2 strong {display:block; color:#FF6600; font-size:150%;}
+
+/* details for pics and games */
+#downloads #preview #details #picText {float left; width: 50%;}
+#downloads #preview #details #gameText {float left; width: 45%;}
+#downloads #preview #details #image {float: right; padding-left: 2px;}
+#downloads #preview #details .price {margin-top: 55px;}
+#downloads #preview #details .priceNoInstr {margin-top: 75px;}
+
+/* play buttons */
+#downloads #preview #playArea {clear:both; display:block; float:left;}
+#downloads #preview #playArea li {display:block; float:left; floa\t:none; width:361px; padding:6px 7px 6px 10px; background:url(../images/orange/previewListBgLight.gif) left bottom no-repeat;}
+* html>body #downloads #preview #playArea li {float:left; width:100%; display:block;}
+#downloads #preview #playArea li:after {content: "."; display:block; height:0; clear:both; visibility:hidden;}
+#downloads #preview #playArea li div {float:left; padding:0 9px; vertical-align:middle; background:url(../images/orange/playAreaSeperator.gif) 0 2px no-repeat;}
+#downloads #preview #playArea li .type {width:125px; w\idth:107px; color:#000; background:none;}
+#downloads #preview #playArea li .type em.copyright {color:#999; font-style:normal; font-weight:normal;}
+#downloads #preview #playArea li .buttons {display:inline; width:182px; w\idth:166px; padding:2px 6px 0 12px;}
+#downloads #preview #playArea li .noneAvailable {width:182px; w\idth:166px; padding:0 6px 0 12px;}
+#downloads #preview #playArea li .price {width:48px; w\idth:30px; color:#000;}
+#downloads #preview #playArea li .noFlashText {margin-top:-2px; width:161px; height:10px; background:none; padding:0;}
+
+/* links */
+#downloads #preview #links {padding:7px 0 12px 17px; width:360px; float:left; display:block; background:url(../images/orange/previewListBgDark.gif) left bottom no-repeat;}
+#downloads #preview #links ul:after {content: "."; display:block; height:0; clear:both; visibility:hidden;}
+#downloads #preview #links li {float:left; display:block; padding:0 10px 0 0;}
+#downloads #preview #links li a {display:block; padding:0 0 0 13px; background:url(../images/orange/contentArrowOrange.gif) left top no-repeat;}
+#downloads #preview #links li a:hover {color:#FF6600;}
+
+/* buying instructions */
+#downloads #preview #buyingInstructions {padding:15px 15px 22px 17px; width:364px; w\idth:332px; background:url(../images/orange/previewListBgLight.gif) left bottom no-repeat;}
+#downloads #preview #buyingInstructions .mainText {font-size:110%;}
+* html #downloads #preview #buyingInstructions .mainText {height:1px;}
+#downloads #preview #buyingInstructions h3, #downloads #preview #buyingInstructions h3 em {width:144px; height:17px; background:url(../images/orange/titleBuyingInstructions.gif) left top no-repeat;}
+#downloads #preview #buyingInstructions ol {display:block; padding:0 0 10px 17px; margin:10px 0 10px 0; background:url(../images/orange/dottedLine.gif) left bottom repeat-x;}
+#downloads #preview #buyingInstructions ol li {color:#000; font-weight:bold;}
+#downloads #preview #buyingInstructions ol li span {position:static; height:auto; width:auto; color:#666; font-weight:normal;}
+#downloads #preview #buyingInstructions ol li:after {content: "."; display:block; height:0; clear:both; visibility:hidden;}
+#downloads #preview #buyingInstructions ol li em {font-style:normal; font-weight:bold; color:#000;}
+#downloads #preview #buyingInstructions p {margin:4px 0;}
+#downloads #preview #buyingInstructions a {color: #ff6600;}
+#downloads #preview #buyingInstructions a:hover {text-decoration: underline;}
+#downloads #preview #buyingInstructions strong {color:#000;}
+
+#downloads #preview #checkAvailable {padding:15px 15px 22px 17px; width:364px; w\idth:332px; background:url(../images/orange/previewListBgLight.gif) left bottom no-repeat;}
+#downloads #preview #checkAvailable h3#checkAvailability,
+#downloads #preview #checkAvailable h3#checkAvailability em {width:260px; height:17px; background:url(../images/orange/titleCheckAvailability2.gif) left top no-repeat;}
+* html>body #downloads #preview #checkAvailable h3#checkAvailability {padding-top:17px; overflow:hidden;}
+#downloads #preview #checkAvailable ol li {color:#000; font-weight:bold; padding-bottom: 4px;}
+#downloads #preview #checkAvailable ol li div {color:#666666; font-weight:normal;}
+#downloads #preview #checkAvailable h4#checkAvailabilityLabel,
+#downloads #preview #checkAvailable h4#checkAvailabilityLabel em {display:block; width:95px; height:11px; background:url(../images/orange/title2CheckAvailability.gif) left top no-repeat;}
+#downloads #preview #checkAvailable a.checkAvailabilityButton {display:block; width:108px; height:21px; background:url(../images/orange/buttonCheckAvailability.gif) left top no-repeat;}
+
+#downloads #preview #checkAvailable a:hover.checkAvailabilityButton,
+#downloads #preview #notAvailable a:hover.enterFullDownloads {background-position:0 -21px;}
+
+#downloads #preview #notAvailable {padding:15px 15px 22px 17px; width:364px; w\idth:332px; background:url(../images/orange/previewListBgLight.gif) left bottom no-repeat;}
+#downloads #preview #notAvailable h3#apologies,
+#downloads #preview #notAvailable h3#apologies em {width:344px; height:17px; background:url(../images/orange/titleApologiesThisIsnt3.gif) left top no-repeat;}
+#downloads #preview #notAvailable a.enterFullDownloads {display:block; width:179px; height:21px; background:url(../images/orange/buttonEnterFull.gif) left top no-repeat;}
+
+/* HELP PAGE */
+#downloads #preview #helpArea {padding:15px 15px 10px 18px; background:url(../images/orange/previewListBgLight.gif)  left bottom no-repeat;}
+#downloads #preview #helpArea #content {height:480px; padding: 5px; overflow:auto;}
+#downloads #preview #helpArea strong.phoneType {display:block; font-size:110%; margin:0; padding:0 0 8px 0;}
+#downloads #preview #popup #helpArea {height:266px; hei\ght:256px;}
+#downloads #preview #helpArea h3 {display:block; width:107px; height:17px; background:#FFF url(../images/orange/titleHelpAndFAQs2.gif) left top no-repeat;}
+* html>body #downloads #preview #helpArea h3 {float:left;}
+#downloads #preview #helpArea ul {clear:both;}
+#downloads #preview #helpArea ol {margin:0; padding:0 0 0 20px;}
+#downloads #preview #helpArea li a {padding:0 0 0 15px; display:block; color:#666; background:url(../images/orange/iconArrow.gif) left top no-repeat;}
+#downloads #preview #helpArea li a:hover {text-decoration:none; color:#FF6600;}
+* html #downloads #preview #helpArea li a {float:left;}
+* html>body #downloads #preview #helpArea li a {float:none;}
+#downloads #preview #helpArea h4 {display:block; font-size:110%; margin-top:28px; padding:0 0 0 20px; background:url(../images/orange/iconQuestion.gif) left top no-repeat;}
+#downloads #preview #helpArea h4 a {text-decoration:none; color:#666 !important;}
+#downloads #preview #helpArea h4 a:hover {text-decoration:none !important;}
+#downloads #preview #helpArea h5 {color:#000; font-weight:normal;}
+#downloads #preview #helpArea h5.warningText {padding:8px 0;}
+#downloads #preview #helpArea ol h5 {margin-top:10px;}
+#downloads #preview #helpArea .answer {display:block; padding:0 0 0 20px; background:url(../images/orange/iconAnswer.gif) left top no-repeat;}
+#downloads #preview #helpArea a.backToTop {display:block; padding:0 0 0 13px; color:#666 !important; text-decoration:none; background:url(../images/orange/iconArrowOrange.gif) left top no-repeat;}
+#downloads #preview #helpArea a:hover.backToTop {color:#FF6600 !important; text-decoration:none !important;}
+#downloads #preview #helpArea .dataTable {margin-top:12px; font-size:100%; color:#666;}
+#downloads #preview #helpArea .dataTable th {font-size:110%; padding-right:8px; font-weight:bold; color:#999; text-align:left;}
+#downloads #preview #helpArea .dataTable td, #help .dataTable th {padding:0 12px 4px 0; padd\ing:0 12px 0 0; text-align:left; vertical-align:top; /*white-space:nowrap;*/}
+#downloads #preview #helpArea .dataTable .right {text-align:right;}
+
+#preview #moreArea {padding-top: 10px;}
+#preview #moreArea h3 {margin-left:18px;}
+#preview #moreArea li {background: none;}
+#preview #moreArea h3 {width:121px; height:14px; padding-bottom: 5px; background:url(../images/orange/titleMoreFromArtist2.gif) left top no-repeat;}
+#preview #moreArea ul {padding-top:3px; margin-bottom: 10px;}
+#preview #moreArea li a {display:block; color:#666; width:313px; w\idth:313px; padding:5px 20px 6px 18px; min-height:13px; text-decoration:none; cursor:hand; c\ursor:pointer; background:url(../images/orange/ringtoneListBgLight.gif) left bottom no-repeat;}
+* html>body #preview #moreArea li a {padding:6px 20px 7px 18px;}
+#preview #moreArea li a:hover, #preview #moreArea li.dark a:hover {color:#FF6600 !important; background-position:0 -276px !important;}
+#preview #moreArea li.dark a {background:url(../images/orange/ringtoneListBgDark.gif) left bottom no-repeat;}
+#preview #moreArea a:after, #preview #bottomArea #moreArea li:after  {content: "."; display:block; height:0; clear:both; visibility:hidden;}
+* html #preview #moreArea li a {float:left;}
+#preview #moreArea span {float:left; position:static; height:auto; width:auto; background:none;}
+#preview #moreArea span.hidden {position:absolute; left:0px; top:-100px; width:0px; height:0px; overflow:hidden;}
+#preview #moreArea .bottomLink a { padding-left: 20px; }
+#preview #moreArea #sorry { padding: 10px 0 0 20px; }
+#preview #moreArea span.tracktitle {width:250px; w\idth:254px; padding-right:7px;}
+
+/* ERROR AREA */
+
+#error {margin-left: 70px; margin-right: auto; text-align: center;}  
+#error h2, #popup #topArea #error h2 em {height:101px; background:url(../images/orange/titleWeApologise.gif) center top no-repeat;}  
+#error ul {clear:both; display:block; }  
+#error li {display:block; padding:6px 10px 6px 6px; padd\ing-left:20px;}
+
+/*========================================================================;
+	HACKS/FIXES
+========================================================================*/
+
+/*** HOLLY HACK, see http://www.positioniseverything.net/easyclearing.html ***/
+.clearfix:after {content: "."; display:block; height:0; clear:both; visibility:hidden;}
+
+/*
+Stop the double click tracking tags from breaking the navigation layout.
+*/

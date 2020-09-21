@@ -1,0 +1,47 @@
+*,h1,h2,h3,h4,h5,p {font-family:sans-serif;}
+* {border:0;margin:0;padding:0;}
+body {background:#0687a3;color:#333;font-family:sans-serif;}
+a {color:#006685;}
+a:visited {color:#333;}
+a:hover {color:#006685;}
+h1 {color:#666;margin:0 10px 5px;font-size:large;}
+
+div#freetobrowse {text-align:right;height:14px;background:#a6c92f url(img/320/bg_free_to_browse.gif) top left repeat-x;color:#fff;}
+img.freetobrowse {margin:3px 2px 0;}
+
+div#topnav {background:#4ea7b6 url(img/iphone/bg_tab.gif) bottom left repeat-x;border-top:1px solid #0c5561;border-bottom:1px solid #073643;text-align:center;}
+table.topnav {border:0;margin:0 auto;}
+td.topnav {text-align:center;padding:0 2px;}
+
+div#logo {text-align:center;background:#073643;color:#000;font-weight:bold;}
+
+div#content {background:#073643;text-align:center;}
+
+div.itemdetails {margin:0px auto;padding:0 0 3px 0;width:318px;background:#073643;text-align:left;}
+div.itemdetailsinner {background:#fff;}
+div.itemdetailsinner2 {background:url(img/320/bg_whitecorner_bl.gif) bottom left no-repeat;}
+div.itemdetailsinner3 {padding:0 0 10px 0;background:url(img/320/bg_whitecorner_br.gif) bottom right no-repeat;}
+
+div.listing {background:#fff;margin:0 1px;}
+div.item {padding:4px;margin:0 4px;}
+div.itemalt {background:#e7e7e7;padding:4px;margin:0 4px;}
+div.th {width:70px;height:70px;padding-top:2px;float:left;}
+div.th img {width:60px;height:60px;}
+div.details {width:230px;float:left;}
+p.itemtitle {margin:0 !important;padding:0 !important;}
+a.itemtitle {color:#157c9b;font-weight:bold;text-decoration:none;font-size:large;}
+p.cat {margin:0 0 5px 0 !important;padding:0 !important;color:#999;}
+p.desc {margin:0 0 5px 0 !important;padding:0 !important;color:#333;}
+p.price {background:url(img/iphone/bg_price.gif) top left no-repeat;font-weight:bold;margin:2px 5px 8px 0;padding:2px 0 0 20px;width:78px;height:21px;line-height:23px;float:left;color:#010101;}
+
+div#ftrlinks {color:#fff;margin:5px 8px;}
+div#ftrlinks td {white-space:nowrap;}
+a.ftrlinks {color:#fff;text-decoration:none;}
+
+div#footer {background:#0687a3 url(img/iphone/bg_ftr.gif) top left repeat-x;color:#fff;padding:5px 8px;}
+a.footer {text-decoration:none;font-weight:bold;color:#fff;}
+div.footer {color:#fff;margin:0;}
+div.footerhdr {color:#f9f3c1;font-weight:bold;margin:0;}
+
+hr {border-top:1px solid #b9dde9;height:1px;background:#b9dde9;}
+.clear {clear:both;}

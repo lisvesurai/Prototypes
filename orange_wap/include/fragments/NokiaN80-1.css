@@ -1,0 +1,16 @@
+h1,h2,h3 {font-size:12px !important;}
+h4,h5,p,dt {font-size:10px !important;}
+td {font-size:10px !important;}
+.page, .page dt, #breadcrumb dt {font-size:9px !important;}
+
+input.text {font-size:9px !important;}
+input.srch {font-size:9px !important;}
+input.btn {font-size:9px !important;}
+
+img.prvw {width:100% !important;}
+img.sshot {width:100% !important;}
+
+dt.mnr_page_next {float:right;}
+#breadcrumb dt {float:left; white-space:nowrap;}
+
+hr {margin:3px 0 5px 0 !important;}

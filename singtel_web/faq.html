@@ -1,0 +1,500 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<link rel="shortcut icon" href="singtelUI/images/favicon.ico"/>
+<link rel="icon" type="image/gif" href="singtelUI/images/animated_favicon1.gif"/>
+<title>SingTel App Store</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<script type="text/javascript" src="js/prototype-1.5.js"></script>
+<script type="text/javascript" src="scripts/pager.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js"></script>
+<script type="text/javascript" src="js/overlibmws.js"></script>
+<script type="text/javascript" src="js/ajaxtags-1.2-beta2.js"></script>
+<script type="text/javascript" src="js/fleegix.js"></script>
+<script src='js/HashMap.js' language="javascript" type="text/javascript"></script>
+<script src='js/validations.js' language="javascript" type="text/javascript"></script>
+<script type="text/javascript" src="js/ascii_utility.js"></script>
+<script src='scripts/cm.js' language="javascript" type="text/javascript"></script>
+<!-- Filed Needed for prototype validation -->
+<script type="text/javascript" src="js/effects.js"></script>
+<script type="text/javascript" src="js/prototype-validation.js"></script>
+<link rel="stylesheet" type="text/css" href="styles/prototype-validation-style.css" />
+<script type="text/javascript" src="scripts/nav.js"></script>
+<script type="text/javascript" src="scripts/global_imageMouseovers.js"></script>
+<script type="text/javascript" src="scripts/c3_productViewer.js"></script>
+<script type="text/javascript" src="scripts/nav_cart.js"></script>
+<script type="text/javascript" src="scripts/c19_printPage.js"></script>
+<script type="text/javascript" src="scripts/init.js"></script>
+<script type="text/javascript" src="scripts/JavaScriptFlashGateway.js"></script>
+<script type="text/javascript" src="scripts/accessoryPopup.js"></script>
+<script type="text/javascript" src="scripts/singtel.js"></script>
+<script type="text/javascript" src="scripts/paging.js"></script>
+<!-- New JS Files -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script src="singtelUI/js/animatedcollapse.js" type="text/javascript"></script>
+<script type="text/javascript">
+	animatedcollapse.addDiv('menuExpand', 'fade=1,height=262px')
+	animatedcollapse.ontoggle=function($, divobj, state){ //fires each time a DIV is expanded/contracted
+		//$: Access to jQuery
+		//divobj: DOM reference to DIV being expanded/ collapsed. Use "divobj.id" to get its ID
+		//state: "block" or "none", depending on state
+	}
+	animatedcollapse.init()
+</script>
+<script type="text/javascript" src="singtelUI/js/prototype.js"></script>
+<script type="text/javascript" src="singtelUI/js/stars.js"></script>
+<script type="text/javascript" src="singtelUI/js/cm.js"></script>
+<!-- Adding CSS here  -->
+<link rel="stylesheet" type="text/css" href="singtelUI/css/main.css"/>
+<!-- script type="text/javascript">
+  //document.write('<div id="PreviewLayer" style="display:none;left:0px;top:0px;"></div>');
+  //document.onmousemove=followmouse;
+</script -->
+<script language="javascript">
+	Event.observe(window, 'load', page_loaded, false); 
+</script>
+</head>
+<body>
+<div id="topbar">
+	<div class="innercontainer">
+		<!-- start singtel header -->
+		<a href="http://www.singtel.com/"><img src="singtelUI/images/logo.png" alt="SingTel" align="left" border="0"></a>
+		<form>
+			<select name="select" onchange="goURL(this)">
+				<option value="">SingTel Global Sites</option>
+				<option value="http://www.singtel.com">Singapore</option>
+				<option value="http://www.optus.com.au">Australia</option>
+				<option value="http://www.singtel.com/bd">Bangladesh</option>
+				<option value="http://business.singtel.com/singtel_cn/default.asp">China</option>
+				<option value="http://business.singtel.com/singtel_eu/default.asp">Europe</option>
+				<option value="http://business.singtel.com/singtel_hk/default.asp">Hong Kong</option>
+				<option value="http://business.singtel.com/singtel_in/default.asp">India</option>
+				<option value="http://business.singtel.com/singtel_id/default.asp">Indonesia</option>
+				<option value="http://business.singtel.com/singtel_jp/select_language.asp?language_=japanese">Japan</option>
+				<option value="http://business.singtel.com/singtel_kr/select_language.asp?language_=korean">Korea</option>
+				<option value="http://business.singtel.com/singtel_my/default.asp">Malaysia</option>
+				<option value="http://www.singtel.com/me">Middle East</option>
+				<option value="http://business.singtel.com/singtel_ph/default.asp">Philippines</option>
+				<option value="http://business.singtel.com/singtel_tw/select_language.asp?language_=chinese">Taiwan</option>
+				<option value="http://business.singtel.com/singtel_th/default.asp">Thailand</option>
+				<option value="http://business.singtel.com/singtel_us/default.asp">USA</option>
+				<option value="http://business.singtel.com/singtel_vn/default.asp">Vietnam</option>
+			</select>
+		</form>
+		<ul>
+			<li> <a href="http://home.singtel.com/about_singtel/company_profile/default.asp" target="_blank"> about SingTel </a> </li>
+			<li> <a href="http://home.singtel.com/consumer/consumer_default.asp" target="_blank"> consumer </a> </li>
+			<li> <a href="http://business.singtel.com/sme/" target="_blank"> business </a> </li>
+			<li> <a href="http://home.singtel.com/customer_service/default.asp" target="_blank"> customer service </a> </li>
+			<li> <a href="http://home.singtel.com/customer_service/cust_serv_callus.asp" target="_blank"> contact us </a> </li>
+		</ul>
+	</div>
+	<!-- end singtel header -->
+</div>
+<input type="hidden" name="itemtype" value="" id="itemtype"/>
+<input type="hidden" name="itemtypeId" value="" id="itemtypeId"/>
+<input type="hidden" name="searchby" value="" id="searchby"/>
+<input type="hidden" name="formname" value="" id="formname"/>
+<input type="hidden" name="viewallvalue" value="" id="viewallvalue"/>
+<input type="hidden" name="selectedcategorytext" value="" id="selectedcategorytext"/>
+<input type="hidden" name="rowcount" value="" id="rowcount"/>
+<input type="hidden" name="categorysearchvalue" value="" id="categorysearchvalue"/>
+<input type="hidden" name="searchvalue" value="Title" id="searchvalue"/>
+<input type="hidden" name="rtsearchtype" value="" id="rtsearchtype"/>
+<input type="hidden" name="sortby" value="" id="sortby"/>
+<input type="hidden" name="sortorder" value="" id="sortorder"/>
+<input type="hidden" name="itemId" value="" id="itemId"/>
+<input type="hidden" name="companyId" value="0" id="companyId"/>
+<input type="hidden" name="listid" value="" id="listid"/>
+<input type="hidden" name="command" value="" id="command"/>
+<input type="hidden" name="alphaletter" value="" id="alphaletter"/>
+<input type="hidden" name="pagetype" value="" id="pagetype"/>
+<input type="hidden" name="artist" value="" id="artist"/>
+<input type="hidden" name="categorydisplaypath" value="" id="categorydisplaypath"/>
+<input type="hidden" name="developerName" value="" id="developerName"/>
+<input type="hidden" name="deviceDisplayName" value="" id="deviceDisplayName"/>
+<input type="hidden" name="viewalllisttext" value="" id="viewalllisttext"/>
+<input type="hidden" name="fileExtrank" value="0" id="fileExtrank"/>
+<input type="hidden" name="album_art" value="" id="album_art"/>
+<input type="hidden" name="album_name" value="" id="album_name"/>
+<input type="hidden" name="categorybreadcrumb" value="" id="categorybreadcrumb"/>
+<input type="hidden" name="prevpageurl" value="" id="prevpageurl"/>
+<!-- url related hidden variables -->
+<input type=hidden name="txtdisplayContenturl" id="txtdisplayContenturl"/>
+<input type=hidden name="txtdeviceId" id="txtdeviceId"/>
+<input type=hidden name="txtcontentDetailsurl" id="txtcontentDetailsurl"/>
+<div id="middle">
+	<script src="spripts/singtel.js" type="text/javascript"></script>
+	<script type="text/javascript">
+var bExe = false;
+function checkMenuStatus() {
+	
+}
+</script>
+	<div id="menu" onreadystatechange="checkMenuStatus();">
+		<div class="innercontainer">
+			<div id="menuExpand" style="display:none;">
+				<!-- Categories -->
+				<div id="categoriesNav">
+					<h2>Categories</h2>
+					<ul>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1083');return false;"> Games </a>
+							<ul>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1133');return false;"> 3D </a> </li>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1134');return false;"> Action </a> </li>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1135');return false;"> Arcade </a> </li>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1136');return false;"> Casino </a> </li>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1137');return false;"> Kids & Family </a> </li>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1138');return false;"> Lifestyle </a> </li>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1140');return false;"> Puzzle </a> </li>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1141');return false;"> Racing </a> </li>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1142');return false;"> Role Playing </a> </li>
+								<li> <a href="javascript:void 0" onclick="getCatItems('1143');return false;"> Sports </a> </li>
+							</ul>
+						</li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1100');return false;"> Entertainment </a> </li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1101');return false;"> Utilities </a> </li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1102');return false;"> Social Networking </a> </li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1128');return false;"> Business & Finance </a> </li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1116');return false;"> Music </a> </li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1145');return false;"> Lifestyle </a> </li>
+					</ul>
+					<ul>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1131');return false;"> Books & Education </a> </li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1147');return false;"> Themes </a> </li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1117');return false;"> Productivity </a> </li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1123');return false;"> Navigation </a> </li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1121');return false;"> Travel </a> </li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1124');return false;"> Health & Fitness </a> </li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1120');return false;"> Reference </a> </li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1146');return false;"> Sports </a> </li>
+						<li> <a href="javascript:void 0" onclick="getCatItems('1125');return false;"> News & Weather </a> </li>
+					</ul>
+				</div>
+				<!-- Categories Ends -->
+				<div class="phoneSelector_bg">
+					<div class="phoneSelector_img">
+						<img src="images/phones/no_phone_image.gif"/>
+					</div>
+					<div class="phoneSelector_txt">
+						<p class="phoneModel">No Device Selected. </p>
+						<p class="txt">View apps compatible with:</p>
+						<div id="phoneBrandSelect">
+							<select name="mfg" id="mfg" onchange="getDevice(this.value);">
+								<option value="-1"
+    >-- Select Model --</option>
+								<option value="21">Acer</option>
+								<option value="11">Alcatel</option>
+								<option value="12">Apple</option>
+								<option value="8">Blackberry</option>
+								<option value="9">HTC</option>
+								<option value="14">Huawei</option>
+								<option value="24">Lenovo</option>
+								<option value="3">LG</option>
+								<option value="10">Motorola</option>
+								<option value="5">Nokia</option>
+								<option value="4">Samsung</option>
+								<option value="7">Sony Ericsson</option>
+							</select>
+						</div>
+						<div id="phoneModelSelect">
+							<select id="selDevice" name="device" onChange="reloadPage(this.value); return false;" disabled>
+								<option value="-1">-- Select Phone -- </option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="sidebar">
+					<div id="accountStatus">
+						<form>
+							<h2>Log In:</h2>
+							<p class="login_btn" onclick="login('content_faq.do?');return false;">Log In</p>
+							<p><a href="http://www.ideas.singtel.com/RedirectFile.jsp?type=signup">Not a member? Sign up! </a></p>
+						</form>
+					</div>
+					<div id="cm_search">
+						<h2>Search for an app:</h2>
+						<fieldset>
+						<input type="text" class="txt" id="keyword" name="keyword"  
+			value="Enter Keyword" 
+			onfocus="this.style.color='#333';this.value='';" 
+			onblur="if(this.value==''){this.style.color='#999';this.value='Enter Keyword';}"
+			onKeyPress="if(event.which==13||(window.event && window.event.keyCode==13)){searchKeyword();return false;}"/>
+						<span onclick="searchKeyword();return false;" class="search_btn"/>Go</span>
+						</fieldset>
+					</div>
+					<div id="advancedSearch">
+						<h2>Search by title or developer</h2>
+						<fieldset>
+						<input class="txt" id="txtTitle" name="txtTitle" 
+				   type="text" value="Search by title" 
+				   onfocus="this.style.color='#333';this.value='';" 
+				   onblur="if(this.value==''){this.style.color='#b9b9b9';this.value='Search by title';}"
+				   onKeyPress="if(event.which==13||(window.event && window.event.keyCode==13)){searchTitleDev(true,false);return false;}"/>
+						<span onclick="searchTitleDev(true,false);return false" class="search_btn">Go</span>
+						</fieldset>
+						<fieldset>
+						<input class="txt" id="txtDeveloper" name="txtDeveloper" 
+				   type="text" value="Search by developer" 
+				   onfocus="this.style.color='#333';this.value='';" 
+				   onblur="if(this.value==''){this.style.color='#b9b9b9';this.value='Search by developer';}"
+				   onKeyPress="if(event.which==13||(window.event && window.event.keyCode==13)){searchTitleDev(false,true);return false;}"/>
+						<span onclick="searchTitleDev(false,true);return false;" class="search_btn">Go</span>
+						</fieldset>
+					</div>
+					<form name="srchForm" id="srchForm" method="post" action="gs_searchByKeyword.do">
+						<input type="hidden" name="keyWord" value="">
+						<input type="hidden" name="sartIndex" value="0">
+						<input type="hidden" name="totalItems" value="-1">
+						<input type="hidden" name="title" value="">
+						<input type="hidden" name="developer" value="">
+					</form>
+					<script type="text/javascript">
+<!--
+	function searchKeyword(){
+		var objFrm = document.getElementById("srchForm");
+		var vKey = document.getElementById('keyword').value;
+		if(vKey=="Enter Keyword") {
+			vKey="";
+		}
+		var alpha_chars = 0;
+		var special_chars = 0;
+		if(vKey.length<3) {
+			 alert('Search Field must have atleast 3 alphanumeric characters');
+			 return false;
+		}
+		for(var j=0; j<vKey.length; j++)
+		{
+		  var alphaa = vKey.charAt(j);
+		  var hh = alphaa.charCodeAt(0);
+		  if((hh > 47 && hh<58) || (hh > 64 && hh<91) || (hh > 96 && hh<123))
+		  {
+		  		alpha_chars = 1;
+		  }
+		  else	{
+		  	 special_chars = 1;
+			
+		  }
+		}		
+		if (alpha_chars == 0 && special_chars == 1) {
+			 alert('Search Field must have atleast 3 alphanumeric characters');
+			 return false;
+		}
+		objFrm.keyWord.value=vKey;
+		objFrm.submit();
+	}
+	
+	function searchTitleDev(isTitle,isDev) {
+		var objFrm = document.getElementById("srchForm");
+		
+		var vTitle = document.getElementById('txtTitle').value;
+		if(vTitle=='Search by title')
+			vTitle = "";
+			
+		var vDev = document.getElementById('txtDeveloper').value;
+		if(vDev=='Search by developer')
+			vDev = "";
+		
+		if(vTitle.length<3 && vDev.length<3) {
+			 alert('Search Field must have atleast 3 alphanumeric characters');
+			 return false;
+		}
+		
+		objFrm.action="gs_searchByTD.do";
+		if(isTitle)
+			objFrm.title.value=vTitle;
+		if(isDev)
+			objFrm.developer.value=vDev;
+		objFrm.submit();
+	}
+//-->
+</script>
+				</div>
+				<div class="clear">
+				</div>
+			</div>
+			<script type="text/javascript">
+	function toggleMenu (y) {
+		x = 'toggle_' + y;
+	
+		if ( document.getElementById(x).innerHTML == '+' ) {
+			animatedcollapse.toggle(y);
+			document.getElementById(x).innerHTML = '-';
+			document.getElementById(x).className = 'hl';
+			ajaxLoader('ajax_turnOnOffMenu.do?menuFlag=OPEN','tempDiv')
+			
+		}
+		else {
+			animatedcollapse.toggle(y);
+			document.getElementById(x).innerHTML = '+';
+			document.getElementById(x).className = '';
+			ajaxLoader('ajax_turnOnOffMenu.do?menuFlag=CLOSE','tempDiv')
+		}
+	}
+	
+	function getDevice(mfgId) {
+		if(mfgId<0){
+			document.getElementById('selDevice').disabled=true;
+			return;
+		}
+		var url = 'ajax_getDevices.do?mfgId='+mfgId;
+		//alert(url);
+		ajaxLoader(url,'phoneModelSelect');
+		
+	}
+	
+	function reloadPage(deviceId){
+		if(deviceId>0) {
+			var url2Redirect = "content_faq.do?";
+			if(344 == deviceId) {
+				url2Redirect = "ajax_iPhone.do";
+			}
+			
+			if(url2Redirect=='') { 
+				url2Redirect = "home.do"
+			}
+			onChangeOfPhone(deviceId,url2Redirect);
+		}
+		//alert(deviceId);
+	}
+	
+	
+	
+	</script>
+			<div id="mainMenu">
+				<span id="toggle_menuExpand" onclick="toggleMenu('menuExpand');">+</span> <a href="home.do"><img src="singtelUI/images/SingTelAppZone_logo.png" alt="SingTel App Zone" border="0" /></a>
+			</div>
+			<div id="tempDiv" style="display:none;">
+			</div>
+		</div>
+	</div>
+	<div class="menuShadow">
+	</div>
+	<div class="content">
+		<h2 class="breadcrumb"> FAQ. </h2>
+		<h2 class="faqTitle">FAQ.</h2>
+		<div id="faq">
+			<ol>
+				<li><u class="heading">About The Service</u>
+					<ol>
+						<li>What is SingTel App Zone?</li>
+						<p>SingTel App Zone allows SingTel Mobile customers to search, purchase and download mobile applications and games. It is accessible via the mobile browser (dial *APPS or *2777 for WAP-enabled phones), or via the PC WEB browser (<a href="www.singtel.com/appzone">www.singtel.com/appzone</a>).</p>
+					</ol>
+				</li>
+				<li> <u class="heading">Getting Started</u>
+					<ol>
+						<li>Who is eligible for the Service?</li>
+						<p>The Service is available to all SingTel Mobile Postpaid and Prepaid customers.</p>
+						<li>What do I need to do before downloading a game?</li>
+						<p>Please ensure that you are able to access data on your mobile phone (e.g. via IDEAS WAP), and there is sufficient memory space on your phone. The size of each application is listed in SingTel App Zone for your reference, which may range from 50kb to a few megabytes. </p>
+					</ol>
+				</li>
+				<li><u class="heading">Charges</u>
+					<ol>
+						<li>How much does the application cost?</li>
+						<p>There are free and paid applications. Paid applications range starting from $0.99. Please refer to SingTel App Zone for the price of each application.</p>
+						<li>How will the paid application be billed to me?</li>
+						<p>For SingTel Postpaid customers, purchase will be charged through your monthly bill. For SingTel Prepaid customers, the purchase will be deducted through your prepaid credits (kindly ensure you have enough credits for the purchase). Please note that purchase of iPhone apps will be made via your Apple account as per existing iTunes process.</p>
+						<li>Are there any data charges for browsing through SingTel App Zone on my mobile browser?</li>
+						<p>Yes, prevailing data charges apply.</p>
+						<li>Are there any data charges for downloading the application?</li>
+						<p>No, the data charges for downloading the application are waived till 31 December 2009. Please ensure you select IDEAS WAP or HiCard as the access point. For BBOM subscribers, there will be no deduction from data bundle if the download is accessed via IDEAS WAP.</p>
+						<li>Are there any data charges for using the applications?</li>
+						<p>Some interactive applications, such as news or weather applications, may incur data charges when you access them.</p>
+					</ol>
+				</li>
+				<li><u class="heading">How To Use</u>
+					<ol>
+						<li>How do I access the Service?</li>
+						<p>You may access SingTel App Zone via the following methods:</p>
+						<ol>
+							<li>For mobile browser (WAP-enabled phones): Dial *2777. You will receive a WAP link. Please select IDEAS WAP or HiCard as the access point.</li>
+							<li>For iPhone and Android devices: Please access the web browser, select "SingTel IDEAS" in the bookmarks, and click on "SingTel Services".
+								For iPhone apps, you will be redirected to the Apple App Store for purchase. You are required to login with Apple account. </li>
+							<li>For PC WEB browser: Visit <a href="www.singtel.com/appzone">www.singtel.com/appzone</a>, and login with your mobile number and IDEAS password.</li>
+						</ol>
+						<li>How do I know if the application is compatible with my mobile phone?</li>
+						<p>On your mobile browser, only supported applications will be displayed in SingTel App Zone. For PC WEB browser, you may select your mobile phone's brand & model by clicking on "Show Menu". After the phone selection, only supported applications will be displayed. </p>
+					</ol>
+				</li>
+				<li><u class="heading">Usage</u>
+					<ol>
+						<li>How to purchase and install an application?</li>
+						<p>The steps to purchase & install an application vary according to handset. Below is an example using a WAP-enabled handset:</p>
+						<ol>
+							<li>Dial *APPS (*2777)</li>
+							<li>You will receive a WAP service message. Click on the URL (please select IDEAS WAP or HiCard as the access point)</li>
+							<li>Browse through What's New, Top Free, Top Paid or the categories</li>
+							<li>Select an application of your choice and click 'Buy'</li>
+							<li>Once you have confirmed the purchase, click on 'Download' to begin the installation </li>
+							<li>After the installation is completed, locate the application from your phone menu and start using it </li>
+						</ol>
+						<li>What are the applications available?</li>
+						<p>There is a wide range of applications available in various categories such as Games, Entertainment, Social Networking, Productivity, Lifestyle, Sports, News, Finance, Weather and more. Click on "Show Menu" on the WEB to select a category of your choice.</p>
+						<li>What will happen if I do not have enough value in my Prepaid Card for WAP browsing or content download?</li>
+						<p>Your WAP access will be dropped. The browser will either hang or you will automatically get out of the browser (there will be no error prompt to indicate the low value). Please top up your Prepaid Mobile card value and try again.</p>
+						<li>Can I purchase the application and download to 2 different handsets that I'm holding?</li>
+						<p>For paid application, you are only allowed to download once upon of successful purchase. However, for free application, you can enjoy unlimited downloads.</p>
+						<li>Is there a limit to number of applications that I can purchase in SingTel App Zone?</li>
+						<p>Yes, monthly limit of $60 worth of applications purchase applies. </p>
+						<li>Why can't I download the application after purchase from SingTel App Zone website?</li>
+						<p>You must have GPRS enabled on your mobile phone before you can proceed to download the application.</p>
+						<li>What should I do if my current mobile phone does not have any supported applications in SingTel App Zone?</li>
+						<p>We are getting more handsets to be supported and bringing in more applications to suit your mobile needs. Do visit SingTel App Zone again soon.</p>
+						<li>How do I feedback to the application developer if the application does not work on my mobile, or if I have comments/suggestions for improvement?</li>
+						<p>You may email the application developer directly. The email address can be found under the application listing in "My Purchase History". Please provide your application title, mobile model and details of the feedback in your email. </p>
+						<li>I have accidentally cancelled the download in the middle of the process, what should I do?</li>
+						<p>Please access "My Purchase History" or open the service message that you received earlier to initiate a download again. Do note that the download will start from the beginning and it is free.</p>
+						<li>I have accidentally deleted/uninstalled the application. Can I download the content again?</li>
+						<p>You may download the application again. However, if it is a paid application, you have to make a purchase again. </p>
+						<li>My download was interrupted, what should I do? </li>
+						<p>If the application download is incomplete due to out of network coverage, battery flat, or cancelled accidentally, you may download it again for free within 24 hours of your transaction from "My Purchases".</p>
+						<li>Do I have to pay for the data charges incurred even though the download of the application is interrupted?</li>
+						<p>Yes, you will be charged for any data charges incurred during the browsing of SingTel App Zone on your mobile browser. However, data charges for downloading the application are waived till 31 December 2009. Please ensure you select IDEAS WAP or HiCard as the access point. </p>
+						<li>How do I go about re-downloading the applications that I have purchased within the 24 hours?</li>
+						<p>You may go to "My Purchases" page in SingTel App Zone to initiate a re-download of the application if the installation has not been incomplete.</p>
+						<li>I have purchased a paid application but have not downloaded it. Can I download it after 24 hours?</li>
+						<p>No, you can't. Please make sure you download it within 24 hours.</p>
+						<li>I have purchased and downloaded a paid application successfully. Can I re-download it again?</li>
+						<p>No, you can't. You are only allowed 1 successful download per purchase and the download must occur within 24 hours of the purchase.</p>
+						<li>I have lost my mobile phone, how can I recover all the applications that I have purchased?</li>
+						<p>For free applications, you can download them again for free. For paid applications, you have to purchase them again.</p>
+					</ol>
+				</li>
+				<li><u class="heading">Troubleshooting</u>
+					<ol>
+						<li>I have purchased an application from SingTel App Zone but cannot download or install it, what should I do?</li>
+						<p>Please follow the guide below if the download is interrupted or if you have encountered any of these error messages during the download process:</p>
+						<ol>
+							<li>Unknown Error</li>
+							<li>Invalid File</li>
+							<li>Unable to Install</li>
+							<li>Operation Failed</li>
+							<li>Compulsory Attributes Missing</li>
+						</ol>
+						<li>Troubleshooting Guide:</li>
+						<ol>
+							<li>Disconnect the current WAP session (usually by pressing the 'end-call' key) or you may restart your mobile phone. Re-download the application either by accessing the WAP service message or initiate it via "My Purchase" in SingTel App Zone.</li>
+							<li>Please ensure there is sufficient memory on your mobile phone. You may choose to delete some mobile contents.</li>
+							<li>Please ensure that the time and date settings on the handset are correct.</li>
+							<li>Please clear the cache on your handset before the re-download.</li>
+						</ol>
+					</ol>
+				</li>
+			</ol>
+		</div>
+	</div>
+	<div style="clear: both;">
+	</div>
+</div>
+<div id="footer">
+	<div id="footer-left" class="footer-font">
+		<a href="http://welcome.singtel.com/customer_service/cust_serv_callus.asp">Contact us </a> | <a href="http://home.singtel.com/copyright/default.asp">Copyright</a> | <a href="http://home.singtel.com/singtel/index.html">Privacy policy</a> | <a href="http://home.singtel.com/terms/default.asp?source=general">Standard agreements</a> | <a href="http://home.singtel.com/singtel/careers/default.asp">Careers</a> | <a href="forDeveloper.jsp">For Developers</a> | <a href="content_tAndC.do">Terms & Conditions</a> | <a href="content_faq.do">FAQ.</a> | <a href="http://home.singtel.com/sitemap_consumer.asp">Site map</a>
+	</div>
+	<div id="footer-right">
+		(C) SingTel (CRN: 199201624D) All Rights Reserved
+	</div>
+</div>
+</body>
+</html>

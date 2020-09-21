@@ -1,0 +1,180 @@
+
+/* Focus colors */
+.cascades .fcs-brdr,
+.cascades-brdr {
+	border-color: #2b95a3;
+}
+.cascades .fcs-bg,
+.cascades-bg {
+	background-color: #2b95a3;
+	color: #FFF;
+}
+.cascades .fcs-txt,
+.cascades-txt {
+	color: #2b95a3;
+}
+
+.core .fcs-brdr,
+.core-brdr {
+	border-color: #75a340;
+}
+.core .fcs-bg,
+.core-bg {
+	background-color: #75a340;
+	color: #FFF;
+}
+.core .fcs-txt,
+.core-txt {
+	color: #75a340;
+}
+
+.nav-titleArea {
+	position: relative;
+}
+.focusControl {
+	position: absolute;
+	bottom:0;
+	margin-left:20px;
+}
+
+.focusControl .fcs-wrap {
+	position: relative;
+}
+.cascades .focusControl .fcs-selected,
+.cascades .focusControl .fcs-highlight {
+	background-color: #2b95a3;
+}
+.cascades .focusControl .fcs-highlight{
+	border-bottom: 1px solid #2b95a3;
+}
+.cascades .focusControl .fcs-items > li:hover {
+		color: #75a340; /* opposite */
+}
+.cascades .focusControl .disabled {
+		color: #2b95a3 !important;
+}
+.cascades .nav-header ul.link-list li.active a {
+		border-bottom-color: #2b95a3 !important;
+}
+
+.core .focusControl .fcs-selected,
+.core .focusControl .fcs-highlight {
+	background: #75a340;
+}
+
+.core .focusControl .fcs-highlight {
+	border-bottom: 1px solid #75a340;
+}
+
+.core .focusControl .fcs-items > li:hover {
+		color: #2b95a3; /* opposite */
+}
+.core .focusControl .disabled {
+		color: #75a340 !important;
+}
+.core .nav-header ul.link-list li.active a {
+		border-bottom-color: #75a340 !important;
+}
+
+
+.focusControl .fcs-highlight {
+	position: absolute;
+	bottom:0;
+	z-index: 50;
+	width: 920px;
+	height: 5px;
+}
+.focusControl .fcs-selected,
+.focusControl .fcs-items {
+	width: 130px;
+}
+
+.focusControl .fcs-selected {
+	position: absolute;
+	right:0;
+	bottom:0;
+	z-index: 100;
+	width: 130px;
+	padding-left:10px;
+	font-size: 1.25em;
+	line-height: 2em;
+	color: #FFF;
+	cursor: pointer;
+
+}
+
+.focusControl .fcs-items {
+	display:none;
+	list-style-type: none;
+	position: absolute;
+	top: -40px;
+	right: 0;
+	z-index: 200;
+	width: 170px;
+	background: #FFF;
+	border: 3px solid #A0A0A0;
+}
+.focusControl .fcs-items > li {
+	border-bottom: 1px dashed #A0A0A0;
+	margin: 0 8px;
+	cursor: pointer;
+		line-height: 3.25em;
+		padding-left: 31px;
+		font-weight: bold;
+}
+.focusControl .fcs-items > li:last-child {
+	border-bottom: 0;
+}
+
+.focusControl .fcs-items li.disabled {
+	cursor: default;
+	padding-left: 0;
+}
+.focusControl .fcs-items li.disabled .icon {
+		margin-left: 6px;
+		margin-right: 6px;
+		border: none !important;
+		height:14px;
+		background-position: -1px -62px;
+}
+
+
+.focusControl .fcs-selected .icon,
+.focusControl .fcs-open .fcs-selected .icon {
+		width: 11px;
+		background-repeat: no-repeat;
+		background-image: url('../img/common/sprite-components.png');
+		background-position: -1px -99px;
+		float:right;
+		margin: 11px 12px 0 0
+}
+.focusControl .fcs-open .fcs-selected .icon {
+		background-position: -37px -99px;
+}
+.focusControl .fcs-selected:hover .icon {
+		background-position: -13px -99px;
+}
+.focusControl  .fcs-open .fcs-selected:hover .icon {
+		background-position: -25px -99px;
+}
+
+/**********************************************
+ * For article pages
+ *********************************************/
+
+.article-list .thick {
+	margin: 40px 0;
+}
+.article-list article h2 {
+}
+
+.articles nav .no-bullet {
+	padding-left:0;
+	margin-left:0;
+}
+.articles .image-featured {
+	margin-bottom: 20px;
+}
+.articles article h1 {
+	margin-bottom: 0px;
+}

@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js macosx" lang="en">
+<!--<![endif]-->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta charset="utf-8">
+<meta name="author" content="Research In Motion">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link href="favicon.ico" rel="SHORTCUT ICON" />
+<title>BlackBerry Vendor Portal</title>
+
+<!--[if lt IE 9]>
+<script src="webroot/js/common/html5.js"></script>
+<style type="text/css">
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+</style>
+<![endif]-->
+
+<link type="text/css" rel="stylesheet" href="webroot/css/common/normalize.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.fonts.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/foundation.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/foundation.override.css" />
+<!--[if lt IE 9]>
+    <link type="text/css" rel="stylesheet" href="webroot/css/common/foundation.ie8.css">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="webroot/css/common/foundicon.general.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.base.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.layout.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.navigation.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.components.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/ext.tiptip.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.site.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.portals.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.documentations.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.downloads.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.references.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.sampleapps.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.screenshot.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.vp.components.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.vp.fonts.css" />
+<script src="webroot/js/common/modernizr.custom.88393.js"></script>
+<script type="text/javascript" src="webroot/js/common/bb.global.js"></script>
+<link rel="stylesheet" href="webroot/css/font-awesome/css/font-awesome.min.css" />
+<!--[if IE 7]>
+  <link rel="stylesheet" href="webroot/css/font-awesome/css/font-awesome-ie7.min.css">
+<![endif]-->
+<link rel="stylesheet" href="webroot/css/common/jquery-ui-1.8.22.custom.css" />
+<script src="webroot/js/common/jquery-1.10.2.min.js"></script>
+<script src="webroot/js/common/jquery-ui-1.10.3.min.js"></script>
+
+<link rel="stylesheet" href="webroot/js/select2/select2.css" />
+<script src="webroot/js/select2/select2.min.js"></script>
+</head>
+<body class="portals vendorportal">
+<div id="myModal" class="reveal-modal"></div>
+<div id="myModalSmall" class="reveal-modal small"></div>
+<div id="myModalMedium" class="reveal-modal medium"></div>
+<div id="myModalLarge" class="reveal-modal large"></div>
+<div id="myModalXlarge" class="reveal-modal xlarge"></div>
+<div id="myModalExpand" class="reveal-modal expand"></div>
+  <div class="fixed">
+  <div>
+    <nav class="top-bar user-bar hide-for-small">
+      <ul class="title-area">
+        <li class="name"> <a href="http://developer.blackberry.com/" class="logo"> <img src="webroot/img/common/blackberry_logo.png" alt="BlackBerry"> Developer </a> </li>
+        <li class="toggle-topbar"><a href="#"><span>Useful links</span></a></li>
+      </ul>
+      <section class="top-bar-section">
+        <ul class="left">
+          <li class="divider hide-for-small"> </li>
+          <li><a href="http://devblog.blackberry.com" target="_blank">Blog</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li><a href="http://www.youtube.com/blackberrydev/" target="_blank">YouTube</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li><a href="http://supportforums.blackberry.com/t5/Developer-Support-Forums/ct-p/blackberrydev" target="_blank">Forum</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li><a href="https://www.blackberry.com/SignedKeys/codesigning.html" target="_blank">Signing</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li class="last"><a href="https://www.blackberry.com/jira/secure/Dashboard.jspa" target="_blank">Feedback</a></li>
+          <li class="divider hide-for-small"> </li>
+        </ul>
+        <ul class="right">
+          <li class="divider hide-for-small login-in-bar"> </li>
+          <li><a href="login.html" class="icon_login login-in-bar">Logout</a></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+</div>
+  <header class="nav-header">
+    <div class="topbar">
+      <nav>
+        <div class="nav-text">
+          <a href="index.html"> <span class="h1">Vendor Portal for BlackBerry World</span> </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div id="browser-msg" class="row hide">
+    <div class="large-12 columns">
+      <div class="notice warning">
+        <p>Sorry about the red box, but we really need you to update your browser. Read <a href="http://www.smashingmagazine.com/2012/07/10/dear-web-user-please-upgrade-your-browser/">this excellent article</a> if you're wondering why we are no longer supporting this browser version. Go to <a href="http://browsehappy.com/">Browse Happy</a> for browser suggestions and how to update.</p>
+      </div>
+    </div>
+  </div>
+  <div id="main" class="main" role="main">
+    <div class="row">
+      <nav role="navigation" class="large-3 columns side-nav-vp sticky">
+        <ul class="v-card">
+          <li class="vendor-name">Rovio Entertainment Ltd</li>
+          <li class="user-name light italic">Johan Alexandersson</li>
+        </ul>
+        <div class="button-bar">
+          <button type="button"> <span><i class="icon-save blue"></i> Save</span> </button>
+        </div>
+        <div class="link-block">
+          <ul class="links">
+            <li><a href="settings.html">Public Information</a></li>
+            <li><a href="settings_about.html" class="selected">Information About You</a></li>
+            <li><a href="settings_payment.html">Payment Services</a></li>
+            <li><a href="settings_license.html">License Agreement</a></li>
+            <li><a href="settings_changehistory.html">Change History</a></li>
+          </ul>
+          <ul id="top-level-links" class="top-level-links backnav-content links">
+            <li><a href="index.html">Products</a></li>
+            <li><a href="promotions.html">Promotions</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="changerequests.html">Change Requests</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="testing.html">Testers</a></li>
+            <li><a href="settings.html">Settings</a></li>
+          </ul>
+          <div class="backnav">
+            <a href="#" data-backnav-id="top-level-links"><i class="icon-chevron-left"></i></a>
+          </div>
+        </div>
+      </nav>
+      <div class="large-9 columns">
+        <div id="mainContentBody">
+          <h1>Information About You</h1>
+          
+          <form id="saveterms" name="regtermsform" action="#" class="custom" method="post">
+            <div class="row">
+              <div class="small-12 columns">
+                <fieldset>                
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <h3>A little about you or your company</h3>
+                      <p class="description">Hey, we need some more info about you or your company so that we know that you are real.</p>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="step-ok">
+                        1
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <label>Legal status</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <select name="vendorDTO.vendorLegalStatusDTO.id" id="vLegalStatusList">
+                        <option value="-1">Please Select a Legal Status</option>
+                        <option value="1">Individual</option>
+                        <option value="2" selected>Corporation</option>
+                        <option value="3">Partnership</option>
+                        <option value="4">Trust</option>
+                        <option value="5">Government or International Organization</option>
+                        <option value="6">Other</option>
+                      </select>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>                    
+                  </div>
+                </fieldset>
+                  
+                <fieldset>                
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <h3>Address</h3>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="step-ok">
+                        2
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <label>Street address</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <input type="text" name="step2dt.address1" maxlength="75" value="Keilaranta 17" id="step2_address1" autocomplete="off"/>
+                      <input type="text" name="step2dt.address2" maxlength="75" value="FI-02150" id="step2_address2" autocomplete="off"/>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>                    
+                  </div>
+
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <label>City</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <input type="text" name="step2dt.city" maxlength="50" value="Espoo" id="step2_city" autocomplete="off"/>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>                    
+                  </div>
+
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <label>Country</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <select name="step2dt.countryId" id="step2_countryId">
+                        <option value=""></option>
+                        <option value="3">Afghanistan</option>
+                        <option value="6">Albania</option>
+                        <option value="60">Algeria</option>
+                        <option value="12">American Samoa</option>
+                        <option value="1">Andorra</option>
+                        <option value="9">Angola</option>
+                        <option value="5">Anguilla</option>
+                        <option value="10">Antarctica</option>
+                        <option value="4">Antigua and Barbuda</option>
+                        <option value="11">Argentina</option>
+                        <option value="7">Armenia</option>
+                        <option value="15">Aruba</option>
+                        <option value="14">Australia</option>
+                        <option value="13">Austria</option>
+                        <option value="16">Azerbaijan</option>
+                        <option value="30">Bahamas, The</option>
+                        <option value="23">Bahrain</option>
+                        <option value="19">Bangladesh</option>
+                        <option value="18">Barbados</option>
+                        <option value="20">Belgium</option>
+                        <option value="35">Belize</option>
+                        <option value="25">Benin</option>
+                        <option value="26">Bermuda</option>
+                        <option value="31">Bhutan</option>
+                        <option value="28">Bolivia</option>
+                        <option value="245">BONAIRE, SAINT EUSTATIUS AND SABA</option>
+                        <option value="17">Bosnia and Herzegovina</option>
+                        <option value="33">Botswana</option>
+                        <option value="32">Bouvet Island</option>
+                        <option value="29">Brazil</option>
+                        <option value="101">British Indian Ocean Territory</option>
+                        <option value="27">Brunei</option>
+                        <option value="22">Bulgaria</option>
+                        <option value="21">Burkina Faso</option>
+                        <option value="24">Burundi</option>
+                        <option value="111">Cambodia</option>
+                        <option value="45">Cameroon</option>
+                        <option value="36">Canada</option>
+                        <option value="51">Cape Verde</option>
+                        <option value="118">Cayman Islands</option>
+                        <option value="39">Central African Republic</option>
+                        <option value="204">Chad</option>
+                        <option value="44">Chile</option>
+                        <option value="46">China</option>
+                        <option value="52">Christmas Island</option>
+                        <option value="37">Cocos (Keeling) Islands</option>
+                        <option value="47">Colombia</option>
+                        <option value="113">Comoros</option>
+                        <option value="40">Congo</option>
+                        <option value="38">Congo (DRC)</option>
+                        <option value="43">Cook Islands</option>
+                        <option value="48">Costa Rica</option>
+                        <option value="94">Croatia</option>
+                        <option value="239">Curacao</option>
+                        <option value="53">Cyprus</option>
+                        <option value="54">Czech Republic</option>
+                        <option value="42">Côte d'Ivoire</option>
+                        <option value="57">Denmark</option>
+                        <option value="56">Djibouti</option>
+                        <option value="58">Dominica</option>
+                        <option value="59">Dominican Republic</option>
+                        <option value="61">Ecuador</option>
+                        <option value="63">Egypt</option>
+                        <option value="200">El Salvador</option>
+                        <option value="84">Equatorial Guinea</option>
+                        <option value="64">Eritrea</option>
+                        <option value="62">Estonia</option>
+                        <option value="66">Ethiopia</option>
+                        <option value="69">Falkland Islands (Islas Malvinas)</option>
+                        <option value="71">Faroe Islands</option>
+                        <option value="68">Fiji Islands</option>
+                        <option value="67" selected>Finland</option>
+                        <option value="72">France</option>
+                        <option value="77">French Guiana</option>
+                        <option value="167">French Polynesia</option>
+                        <option value="205">French Southern and Antarctic Lands</option>
+                        <option value="73">Gabon</option>
+                        <option value="81">Gambia, The</option>
+                        <option value="76">Georgia</option>
+                        <option value="55">Germany</option>
+                        <option value="78">Ghana</option>
+                        <option value="79">Gibraltar</option>
+                        <option value="85">Greece</option>
+                        <option value="80">Greenland</option>
+                        <option value="75">Grenada</option>
+                        <option value="83">Guadeloupe</option>
+                        <option value="88">Guam</option>
+                        <option value="87">Guatemala</option>
+                        <option value="244">Guernsey</option>
+                        <option value="82">Guinea</option>
+                        <option value="89">Guinea-Bissau</option>
+                        <option value="90">Guyana</option>
+                        <option value="95">Haiti</option>
+                        <option value="92">Heard Island and McDonald Islands</option>
+                        <option value="93">Honduras</option>
+                        <option value="91">Hong Kong SAR</option>
+                        <option value="96">Hungary</option>
+                        <option value="104">Iceland</option>
+                        <option value="100">India</option>
+                        <option value="97">Indonesia</option>
+                        <option value="241">Iran</option>
+                        <option value="102">Iraq</option>
+                        <option value="98">Ireland</option>
+                        <option value="243">Isle of Man</option>
+                        <option value="99">Israel</option>
+                        <option value="105">Italy</option>
+                        <option value="106">Jamaica</option>
+                        <option value="108">Japan</option>
+                        <option value="242">Jersey</option>
+                        <option value="107">Jordan</option>
+                        <option value="119">Kazakhstan</option>
+                        <option value="109">Kenya</option>
+                        <option value="112">Kiribati</option>
+                        <option value="117">Kuwait</option>
+                        <option value="110">Kyrgyzstan</option>
+                        <option value="120">Laos</option>
+                        <option value="129">Latvia</option>
+                        <option value="121">Lebanon</option>
+                        <option value="126">Lesotho</option>
+                        <option value="125">Liberia</option>
+                        <option value="130">Libya</option>
+                        <option value="123">Liechtenstein</option>
+                        <option value="127">Lithuania</option>
+                        <option value="128">Luxembourg</option>
+                        <option value="140">Macao SAR</option>
+                        <option value="136">Macedonia, Former Yugoslav Republic of</option>
+                        <option value="134">Madagascar</option>
+                        <option value="148">Malawi</option>
+                        <option value="150">Malaysia</option>
+                        <option value="147">Maldives</option>
+                        <option value="137">Mali</option>
+                        <option value="145">Malta</option>
+                        <option value="135">Marshall Islands</option>
+                        <option value="142">Martinique</option>
+                        <option value="143">Mauritania</option>
+                        <option value="146">Mauritius</option>
+                        <option value="235">Mayotte</option>
+                        <option value="149">Mexico</option>
+                        <option value="70">Micronesia</option>
+                        <option value="133">Moldova</option>
+                        <option value="132">Monaco</option>
+                        <option value="139">Mongolia</option>
+                        <option value="144">Montserrat</option>
+                        <option value="131">Morocco</option>
+                        <option value="151">Mozambique</option>
+                        <option value="152">Namibia</option>
+                        <option value="161">Nauru</option>
+                        <option value="160">Nepal</option>
+                        <option value="158">Netherlands</option>
+                        <option value="8">Netherlands Antilles</option>
+                        <option value="153">New Caledonia</option>
+                        <option value="163">New Zealand</option>
+                        <option value="157">Nicaragua</option>
+                        <option value="154">Niger</option>
+                        <option value="156">Nigeria</option>
+                        <option value="162">Niue</option>
+                        <option value="155">Norfolk Island</option>
+                        <option value="141">Northern Mariana Islands</option>
+                        <option value="159">Norway</option>
+                        <option value="164">Oman</option>
+                        <option value="170">Pakistan</option>
+                        <option value="177">Palau</option>
+                        <option value="175">Palestinian Authority</option>
+                        <option value="165">Panama</option>
+                        <option value="168">Papua New Guinea</option>
+                        <option value="178">Paraguay</option>
+                        <option value="166">Peru</option>
+                        <option value="169">Philippines</option>
+                        <option value="173">Pitcairn Islands</option>
+                        <option value="171">Poland</option>
+                        <option value="176">Portugal</option>
+                        <option value="174">Puerto Rico</option>
+                        <option value="179">Qatar</option>
+                        <option value="181">Romania</option>
+                        <option value="182">Russia</option>
+                        <option value="183">Rwanda</option>
+                        <option value="180">Réunion</option>
+                        <option value="190">Saint Helena</option>
+                        <option value="114">Saint Kitts and Nevis</option>
+                        <option value="122">Saint Lucia</option>
+                        <option value="172">Saint Pierre and Miquelon</option>
+                        <option value="226">Saint Vincent and the Grenadine</option>
+                        <option value="233">Samoa</option>
+                        <option value="195">San Marino</option>
+                        <option value="184">Saudi Arabia</option>
+                        <option value="196">Senegal</option>
+                        <option value="49">Serbia and Montenegro</option>
+                        <option value="186">Seychelles</option>
+                        <option value="194">Sierra Leone</option>
+                        <option value="189">Singapore</option>
+                        <option value="193">Slovakia</option>
+                        <option value="191">Slovenia</option>
+                        <option value="185">Solomon Islands</option>
+                        <option value="197">Somalia</option>
+                        <option value="236">South Africa</option>
+                        <option value="86">South Georgia and the South Sandwich Islands</option>
+                        <option value="116">South Korea</option>
+                        <option value="65">Spain</option>
+                        <option value="124">Sri Lanka</option>
+                        <option value="240">St. Maarten</option>
+                        <option value="198">Suriname</option>
+                        <option value="192">Svalbard and Jan Mayen</option>
+                        <option value="202">Swaziland</option>
+                        <option value="188">Sweden</option>
+                        <option value="41">Switzerland</option>
+                        <option value="199">São Tomé and Príncipe</option>
+                        <option value="217">Taiwan</option>
+                        <option value="208">Tajikistan</option>
+                        <option value="218">Tanzania</option>
+                        <option value="207">Thailand</option>
+                        <option value="210">Timor-Leste</option>
+                        <option value="206">Togo</option>
+                        <option value="209">Tokelau</option>
+                        <option value="213">Tonga</option>
+                        <option value="215">Trinidad and Tobago</option>
+                        <option value="212">Tunisia</option>
+                        <option value="214">Turkey</option>
+                        <option value="211">Turkmenistan</option>
+                        <option value="203">Turks and Caicos Islands</option>
+                        <option value="216">Tuvalu</option>
+                        <option value="221">U.S. Minor Outlying Islands</option>
+                        <option value="220">Uganda</option>
+                        <option value="219">Ukraine</option>
+                        <option value="2">United Arab Emirates</option>
+                        <option value="74">United Kingdom</option>
+                        <option value="222">United States</option>
+                        <option value="223">Uruguay</option>
+                        <option value="255">USA2</option>
+                        <option value="224">Uzbekistan</option>
+                        <option value="231">Vanuatu</option>
+                        <option value="225">Vatican City</option>
+                        <option value="227">Venezuela</option>
+                        <option value="230">Vietnam</option>
+                        <option value="228">Virgin Islands, British</option>
+                        <option value="229">Virgin Islands, U.S.</option>
+                        <option value="232">Wallis and Futuna</option>
+                        <option value="234">Yemen</option>
+                        <option value="237">Zambia</option>
+                        <option value="238">Zimbabwe</option>
+                      </select>
+                      <script>
+						$(document).ready(function() {
+						  $("#step2_countryId").select2({
+							  placeholder: "Select a country",
+							  allowClear: true						  
+						  });
+						});
+					  </script>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>                    
+                  </div>
+
+				  <div class="hide">
+                    <div class="row">
+                      <div class="small-11 columns">
+                        <label>State / Province</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="small-11 columns">
+                        <select name="step2dt.stateprovinceId" id="step2_stateProvinceId">
+                          <option value=""></option>
+                          <option value="98">Alabama</option>
+                          <option value="97">Alaska</option>
+                          <option value="198">American Samoa</option>
+                          <option value="101">Arizona</option>
+                          <option value="99">Arkansas</option>
+                          <option value="105">California</option>
+                          <option value="106">Colorado</option>
+                          <option value="107">Connecticut</option>
+                          <option value="109">Delaware</option>
+                          <option value="108">District of Columbia</option>
+                          <option value="111">Florida</option>
+                          <option value="114">Georgia</option>
+                          <option value="115">Guam</option>
+                          <option value="118">Hawaii</option>
+                          <option value="120">Idaho</option>
+                          <option value="121">Illinois</option>
+                          <option value="122">Indiana</option>
+                          <option value="119">Iowa</option>
+                          <option value="123">Kansas</option>
+                          <option value="124">Kentucky</option>
+                          <option value="125">Louisiana</option>
+                          <option value="129">Maine</option>
+                          <option value="199">Marshall Islands</option>
+                          <option value="128">Maryland</option>
+                          <option value="126">Massachusetts</option>
+                          <option value="202">Mexico2</option>
+                          <option value="131">Michigan</option>
+                          <option value="195">Micronesia</option>
+                          <option value="132">Minnesota</option>
+                          <option value="135">Mississippi</option>
+                          <option value="133">Missouri</option>
+                          <option value="136">Montana</option>
+                          <option value="140">Nebraska</option>
+                          <option value="149">Nevada</option>
+                          <option value="142">New Hampshire</option>
+                          <option value="143">New Jersey</option>
+                          <option value="144">New Mexico</option>
+                          <option value="151">New York</option>
+                          <option value="138">North Carolina</option>
+                          <option value="139">North Dakota</option>
+                          <option value="197">Northern Mariana Islands</option>
+                          <option value="152">Ohio</option>
+                          <option value="153">Oklahoma</option>
+                          <option value="155">Oregon</option>
+                          <option value="196">Palau</option>
+                          <option value="156">Pennsylvania</option>
+                          <option value="158">Puerto Rico</option>
+                          <option value="162">Rhode Island</option>
+                          <option value="164">South Carolina</option>
+                          <option value="165">South Dakota</option>
+                          <option value="170">Tennessee</option>
+                          <option value="171">Texas</option>
+                          <option value="200">U.S. Minor Outlying Islands</option>
+                          <option value="172">Utah</option>
+                          <option value="176">Vermont</option>
+                          <option value="201">Virgin Islands, U.S.</option>
+                          <option value="173">Virginia</option>
+                          <option value="177">Washington</option>
+                          <option value="179">West Virginia</option>
+                          <option value="178">Wisconsin</option>
+                          <option value="180">Wyoming</option>
+                        </select>
+						<script>
+                          $(document).ready(function() {
+                            $("#step2_stateProvinceId").select2({
+                                placeholder: "Select a state",
+                                allowClear: true						  
+                            });
+                          });
+                        </script>
+                      </div>
+                      <div class="small-1 columns">
+                        <div class="error-info">
+                          
+                        </div>
+                      </div>                    
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <label>ZIP / Postal code <span class="optional">(optional)</span></label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <input type="text" name="step2dt.zip" maxlength="50" value="" id="step2_zip" autocomplete="off"/>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>                    
+                  </div>
+                </fieldset>
+                  
+                <fieldset>                
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <h3>Contacts</h3>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="step-ok">
+                        3
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <label>Email</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <input type="text" name="step2dt.email" maxlength="75" value="contact@rovio.com" id="step2_email" autocomplete="off"/>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>                    
+                  </div>
+
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <label>Phone</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <input type="text" name="step2dt.phone" maxlength="50" value="+358 207 888 300 " id="step2_phone" autocomplete="off"/>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>                    
+                  </div>
+
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <label>Fax number <span class="optional">(optional)</span></label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <input type="text" name="step2dt.fax" maxlength="50" value="+358 207 888 333" id="step2_fax" autocomplete="off"/>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>                    
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="footer" class="footer">
+  <div class="inner_footer">
+    <div class="row">
+      <div class="columns grid_footer technologies">
+        <h2 class="h5">Technologies</h2>
+        <ul>
+          <li><a href="http://developer.blackberry.com/native/">Native</a></li>
+          <li><a href="http://developer.blackberry.com/html5/">HTML5</a></li>
+          <li><a href="http://developer.blackberry.com/air/">AIR</a></li>
+          <li><a href="http://developer.blackberry.com/android/">Android</a></li>
+          <li><a href="http://developer.blackberry.com/playbook/">PlayBook</a></li>
+          <li><a href="http://developer.blackberry.com/bbos/">BlackBerry OS</a></li>
+          <li><a href="http://developer.blackberry.com/develop/platform_partners/">Platform Partners</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer programs">
+        <h2 class="h5">Programs</h2>
+        <ul>
+          <li><a href="https://www.blackberry.com/beta/" target="_blank">Beta Zone</a></li>
+          <li><a href="https://partners.blackberry.com/web/guest/home/" target="_blank">Alliance programs</a></li>
+          <li><a href="http://us.blackberry.com/ataglance/academic/" target="_blank">Academic programs</a></li>
+          <li><a href="https://developer.blackberry.com/jamcommunity/groups/">Developer groups</a></li>
+          <li><a href="https://developer.blackberry.com/blackberry10devalpha/">BlackBerry 10 Dev Alpha</a></li>
+          <li><a href="https://developer.blackberry.com/builtforblackberry/">Built for BlackBerry</a></li>
+          <li><a href="http://developer.blackberry.com/blackberrybuilder/">BlackBerry Builder</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer support">
+        <h2 class="h5">Support</h2>
+        <ul>
+          <li><a href="https://bdsc.webapps.blackberry.com/CodeSigningHelp/" target="_blank">Code Signing Help</a></li>
+          <li><a href="http://www.youtube.com/blackberrydev/" target="_blank">YouTube Channel</a></li>
+          <li><a href="http://supportforums.blackberry.com/t5/Developer-Support-Forums/ct-p/blackberrydev" target="_blank">Developer forums</a></li>
+          <li><a href="https://www.blackberry.com/jira/secure/Dashboard.jspa" target="_blank">Developer Issue Tracker</a></li>
+          <li><a href="http://supportforums.blackberry.com/t5/Application-Platforms/tkbc-p/app_plat" target="_blank">Knowledge Base</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer app_store">
+        <h2 class="h5">BlackBerry World</h2>
+        <ul>
+          <li><a href="https://www.blackberry.com/SignedKeys/codesigning.html" target="_blank">Sign your app</a></li>
+          <li><a href="http://developer.blackberry.com/blackberryworld/">Submitting your app</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer_last social">
+        <h2 class="h5">Follow us on:</h2>
+        <ul class="inline-list">
+          <li><a href="http://www.facebook.com/BlackBerryDeveloperCommunity" title="Follow us on Facebook" class="icon-20 facebook" target="_blank"><span class="hide">Facebook</span></a></li>
+          <li><a href="http://www.youtube.com/blackberrydev/" title="Catch us on YouTube" class="icon-20 youtube" target="_blank"><span class="hide">YouTube</span></a></li>
+          <li><a href="http://twitter.com/blackberrydev" title="Hear the BlackBerry tweet" class="icon-20 twitter" target="_blank"><span class="hide">Twitter</span></a></li>
+          <li><a href="http://devblog.blackberry.com/" title="Developer Blogs" class="icon-20 blackberry" target="_blank"><span class="hide">BlackBerry Blogs</span></a></li>
+          <li><a href="#bbmchannelcode" title="BBM Channels" class="icon-20 channels lightboxtrigger"><span class="hide">BBM Channels</span></a></li>
+        </ul>
+        <div style='display:none'>
+          <div id='bbmchannelcode' class="lightbox">
+            <div class="lightbox-desc" style="width:400px;"> <img src="webroot/img/common/channelonwhite.png" alt="BBM Channels" /> </div>
+            <div class="lightbox-desc" style="width:370px;">
+              <div class="lightbox-text" style="margin: 40px 100px 0px 0px;">
+                <h1 style="margin-left:0px;">BBM Channels</h1>
+                <p>Developer Relations is on BBM Channels! Join the conversation by <a href="https://beta.webapps.blackberry.com/BBMChannels/" target="_blank">signing up for the beta program</a> and scanning the barcode to the right.</p>
+                <a href="https://beta.webapps.blackberry.com/BBMChannels/" target="_blank"> Register for BBM Channels beta &rsaquo;</a> </div>
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li><a href="http://www.blackberry.com/legal/" target="_blank">Legal &amp; Trademarks</a> </li>
+        </ul>
+      </div>
+      <div class="copyright_notice">Copyright &copy; 2014 BlackBerry Limited, unless otherwise noted.</div>
+    </div>
+  </div>
+</footer>
+  <!-- Included JS Files (Uncompressed) --> 
+  <script type="text/javascript" src="webroot/js/common/foundation.min.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/foundation/foundation.topbar.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/foundation/foundation.joyride.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/foundation/foundation.backnav.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/jquery.easing.1.3.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/bb.dropdown.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/bb.searchbar.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/bb.expandable.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/bb.nav.doc.js"></script> 
+  <script type="text/javascript" src="webroot/js/bb.segment_hover.js"></script> 
+  <script type="text/javascript" src="webroot/js/jquery.tipTip.minified.js"></script> 
+  <script type="text/javascript" src="webroot/js/jquery.colorbox.js"></script> 
+  <script type="text/javascript" src="webroot/js/bb.site.js"></script> 
+  <script type="text/javascript" src="webroot/js/bb.focuscontrol.js"></script> 
+  <script type="text/javascript" src="webroot/js/bb.nav.js"></script> 
+  
+  <!-- Note should this be a separate .js file or be part of bb.site.js  --> 
+  
+  <script type="text/javascript">
+	  global.init('', 'portals', 'index', '', 'webroot/');
+	  global.setFocus('cascades');
+  </script> 
+  <script type="text/javascript" src="webroot/js/pageload.js"></script> 
+  
+  <!-- Piwik --> 
+  <script type="text/javascript">
+	  var pkBaseURL, server, pkId;
+	  server = 'dxlab013qbolabvm.labqbo.testnet.rim.net/stats/';
+	  pkId = -1;
+	  pkBaseURL = (("https:" == document.location.protocol) ? "https://"+server : "http://"+server);
+	  document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+	  </script><script type="text/javascript">
+	  try {
+	  var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", -1);
+	  piwikTracker.trackPageView();
+	  piwikTracker.enableLinkTracking();
+  } catch( err ) {}
+  </script>
+  <noscript>
+  <p><img src="http://dxlab013qbolabvm.labqbo.testnet.rim.net/stats/piwik.php?idsite=-1" style="border:0" alt="" /></p>
+  </noscript>
+  <!-- End Piwik Tracking Code --> 
+  <!--[if lt IE 7 ]>
+  <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+  <script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+<![endif]-->
+
+<script>
+  $(document).ready(function() {
+	$('.reveal-modal').css({
+	  maxHeight: $(window).height() - 150 + 'px'
+	});
+  });
+  $(window).resize(function() {
+	$('.reveal-modal').css({
+	  maxHeight: $(window).height() - 150 + 'px'
+	});
+  });
+</script>
+
+</body>
+</html>

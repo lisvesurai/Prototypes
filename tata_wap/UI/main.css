@@ -1,0 +1,93 @@
+/* Handy CSS Debugging Snippet
+  * { outline: 2px dotted red }
+  * * { outline: 2px dotted green }
+  * * * { outline: 2px dotted orange }
+  * * * * { outline: 2px dotted blue }
+  * * * * * { outline: 1px solid red }
+  * * * * * * { outline: 1px solid green }
+  * * * * * * * { outline: 1px solid orange }
+  * * * * * * * * { outline: 1px solid blue }
+*/
+
+*{font-family:verdana, sans-serif;font-size:11px;}
+body{margin:0;padding:0;background:#fff;color:#000;font-family:verdana, sans-serif;font-size:11px;}
+div,h1,h2,hr,table,form, dl, dt, a,img{margin:0;padding:0;border:0;font-family:verdana, sans-serif;font-size:11px;}
+a {text-decoration:none;color:#000;}
+td {color:#000;}
+p {margin:0 0 5px 0;}
+div#logo {background:#F36E21;color:#fff;text-align:center;}
+
+div.banner{text-align:center;margin:2px 0;}
+img.banner {margin:0;padding:0;border:0;}
+a.banner{border:0;}
+a.banner:active{border:1px dashed #0000ff;}
+
+div.fb_banner{text-align:center;}
+div.fb_banner p{text-align:left;margin:3px 0 0 5px;}
+a.fb_banner{text-align:center;}
+img.fb_banner {margin:5px 0 8px;text-align:center;}
+
+img.ftbanner {margin:0;padding:0;border:0;}
+div.ftbanner a{border:0;}
+div.ftbanner a:active{border:1px dashed #0000ff;}
+p.ftdesc {margin:0;}
+
+p.err {background:#fff;color:#ff0000 !important;border:2px solid #263B66;padding:3px;}
+a.err {color:#ff0000 !important;}
+b.hl {color:#000 !important;}
+p.msg {background:#fff;color:#000 !important;margin-bottom:5px;border:2px solid #263B66;padding:3px;}
+a.msg {color:#000 !important;}
+p.msg2 {color:#000 !important;font-weight:bold;padding:3px 0;margin:0;}
+
+div.item {padding-bottom:5px;border-bottom:1px solid #ccc;}
+td.itemth {width:45px;vertical-align:top;table-layout:fixed;}
+td.itemdesc {vertical-align:top;table-layout:fixed;}
+img.itemth {width:40px;height:40px;}
+a.itemtitle {color:#000;font-weight:bold;text-decoration:none;}
+b.itemtitle {color:#000;font-weight:bold;text-decoration:none;}
+div.action {clear:both;margin:0 0 0 45px;}
+div.action2 {clear:both;margin:0;text-align:center;}
+a.action {color:#000;}
+td.item img {margin-top:2px;}
+
+div.blocktitle {background:#F36E21;color:#fff;vertical-align:middle;font-weight:bold;padding:3px;}
+div.blocktitle table {table-layout:fixed;width:100%;}
+div.blocktitle td {table-layout:fixed;color:#fff;}
+td.blocktitle_240 {width:160px}
+td.blocktitle_320 {width:240px}
+td.blocktitle_480 {width:400px}
+td.more {width:60px;text-align:right;vertical-align:bottom;color:#fff;}
+a.blocktitle {color:#fff;font-weight:bold;}
+
+table.featured {table-layout:fixed;margin:5px 0;}
+table.genres {table-layout:fixed;margin:0 0 5px 0;width:100%;}
+table.genres td {border-bottom:1px solid #ccc;padding:3px 0;}
+
+dt.cat {border-top:1px solid #ccc;margin:0;}
+a.cat {text-decoration:none;}
+a.mnr {text-decoration:none;}
+
+div.ftr {background:#F36E21;color:#fff;padding:0;text-align:center;border-top:1px solid #fff;}
+dl.ftr {margin:0;padding:0 3px;}
+a.ftr {text-decoration:none;color:#fff;}
+p.ftr {vertical-align:middle;margin:0;}
+img.ftr {vertical-align:top;margin-bottom:2px;}
+
+form.searchform {text-align:center;}
+input.text {width:48%;}
+textarea.textarea {width:98%;}
+input.btn {margin:5px 0 0 0;color:#fff;background:#F36E21;}
+
+p.price {margin-top:5px !important;}
+p.share {margin:5px 0 0 2px;}
+
+div.screenshots {text-align:center;}
+img.ss {margin:5px 15px;}
+
+dt.first {border:0 !important;}
+
+a.more {color:#fff;font-weight:normal;text-decoration:none;}
+
+div.page {margin:5px 0 0 0;}
+
+div.contentpad a {text-decoration:underline;}

@@ -1,0 +1,1333 @@
+html, body, table {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+
+body {
+	background-color: #FFFFFF;
+	margin: 0px;
+}
+
+/* Add all DHTML sub menu styles to here */
+#aCompanyMenu, #aInvestorMenu, #aMediaMenu, #aPublicPolicyMenu, #aRegulatoryDocumentsMenu, #aConsumerProtectionMenu, #aQwestMenu, #dslCustomerMenu, #dslGetStartedMenu, #dslLearnMenu,#dslManageMenu, #dslOrderMenu, #aCareersMenu, #jEventsMenu, #jManagementMenu, #jOccupationMenu, #lbCustomerMenu, #lbManageMenu, #lbProductsMenu, #lbRequestMenu, #lbSolutionsMenu, #orderNowMenu, #pBecomeMenu, #pDetailsMenu, #pPartnerMenu, #pProductMenu, #pProgramMenu, #pProviderMenu, #pQLoginMenu, #pQpartnerMenu, #pServiceMenu, #rInCustomerMenu, #rInManageMenu, #rInOrderMenu, #rInProductsMenu, #rOutCustomerMenu, #rOutManageMenu, #rOutOrderMenu, #rOutProductsMenu, #sbInCartMenu, #sbInCustomerMenu, #sbInGrowMenu, #sbInManageMenu, #sbInOrderMenu, #sbInProductsMenu, #sbOutCustomerMenu, #sbOutManageMenu, #sbOutProductsMenu, #sbOutRequestMenu, #SoAcustomerassistanceMenu, #SoAhomeMenu, #SoAlinksMenu, #SoAmanageaccountMenu, #VdslDenverMenu, #VdslLearnMenu, #VdslOmahaMenu, #VdslPhoenixMenu, #whCustomerMenu, #whNetworkMenu, #whProductMenu, #whResourcesMenu, #whSystemsMenu, #whTrainingMenu, #wireCustomerMenu, #wireLearnMenu, #wirelessManageAcctMenu, #wirelessPhonesMenu, #wirelessServicePlansMenu, #wireManageMenu, #wireOrderMenu {
+	left: 0px;
+	width: 0px;
+	clip: rect(0px 0px 1px 0px);
+	position: relative;
+	top: 0px;
+	height: 1px;
+}
+
+
+
+*#form0    {
+
+	position: relative;
+
+	top: 10px;
+
+	left: 0px;
+
+	height: 20px;
+
+	visibility: inherit;
+
+}
+
+
+
+*#home, *#home2    {
+
+	position: relative;
+
+	left: 0px;
+
+	top: 0px;
+
+	width: 0px;
+
+	clip: rect(0px, 0px, 0px, 0px);
+
+}
+
+
+
+
+
+
+
+
+
+*#search    {
+
+	position: relative;
+
+	left: 0px;
+
+	top: 0px;
+
+	width: 0px;
+
+}
+
+
+
+
+
+*.bkHd    {
+
+	font-size: 12px;
+
+	font-weight: bold;
+
+	color: #000000;
+
+	text-decoration: none;
+
+}
+
+
+
+*.blueBold    {
+
+	font-size: 12px;
+
+	color: #003399;
+
+	font-weight: bold;
+
+}
+
+
+
+*.blueBoldunderline    {
+
+	font-size: 12px;
+
+	color: #094D9C;
+
+	font-weight: bold;
+
+	text-decoration: underline;
+
+}
+
+
+
+*.blueHead    {
+
+	font-size: 12px;
+
+	color: #006EB8;
+
+	font-weight: bold;
+
+	text-decoration: none;
+
+}
+
+
+
+*.blueHead1    {
+
+	font-size: 20px;
+
+	color: #006EB8;
+
+	font-weight: bold;
+
+	text-decoration: none;
+
+}
+
+
+
+*.blueSpacer    {
+
+	position: relative;
+
+	left: 0px;
+
+	top: 0px;
+
+	background-color: #0066CC;
+
+}
+
+
+
+*.blueText    {
+
+	font-size: 12px;
+
+	color: #006EB8;
+
+	text-decoration: none;
+
+}
+
+
+
+*.bold_094D9C    {
+
+	color: #094D9C;
+
+	font-weight: bold;
+
+}
+
+
+
+*.bold11    {
+
+	font-size: 11px;
+
+	font-weight: bold;
+
+}
+
+
+
+*.bold13    {
+
+	font-size: 13px;
+
+	font-weight: bold;
+
+}
+
+
+
+*.colLeftCenter    {
+
+	color: #B44800;
+
+	font-size: 12px;
+
+	font-weight: bold;
+
+}
+
+
+
+*.colRight    {
+
+	color: #B44800;
+
+	font-size: 10px;
+
+	font-weight: bold;
+
+}
+
+
+
+*.colLeftCenter_about    {
+
+	color: #094D9C;
+
+	font-size: 12px;
+
+	font-weight: bold;
+
+}
+
+
+
+*.colRight_about    {
+
+	color: #000000;
+
+	font-size: 10px;
+
+	text-decoration: none;
+
+}
+
+
+
+*.colRight_333333    {
+
+	color: #333333;
+
+	font-size: 10px;
+
+	font-weight: bold;
+
+	text-decoration: none;
+
+}
+
+
+
+*.darkGHead    {
+
+	font-size: 12px;
+
+	color: #254866;
+
+	font-weight: bold;
+
+	text-decoration: none;
+
+}
+
+
+
+*.default    {
+
+	font-size: 12px;
+
+	color: #000000;
+
+}
+
+
+
+*.disclaimer    {
+
+	font-size: 10px;
+
+	color: #000000;
+
+	text-decoration: none;
+
+}
+
+
+
+*.dslMenuLink    {
+
+	font-size: 11px;
+
+	padding-left: 5px;
+
+	padding-top: 3px;
+
+	padding-bottom: 2px;
+
+	text-decoration: none;
+
+	color: #006EB8;
+
+}
+
+
+
+*.fineprint, *.footnote    {
+
+	font-size: 10px;
+
+	color: #000000;
+
+}
+
+
+
+*.footer    {
+
+	font-size: 11px;
+
+	color: #999999;
+
+}
+
+*.footerbold    {
+
+	font-size: 11px;
+
+	color: #999999;
+
+	font-weight: bold;
+
+}
+
+
+
+*.footerlink    {
+
+	font-size: 11px;
+
+	color: #003399;
+
+}
+
+
+
+
+
+*.form    {
+
+	font-size: 12px;
+
+	color: #000000;
+
+}
+
+
+
+*.formheading    {
+
+	font-size: 12px;
+
+	color: #003399;
+
+	font-weight: bold;
+
+}
+
+
+
+*.formlink    {
+
+	font-size: 12px;
+
+	color: #003399;
+
+	text-decoration: none;
+
+}
+
+
+
+*.grayHead    {
+
+	font-size: 12px;
+
+	color: #0A4D9C;
+
+	font-weight: bold;
+
+}
+
+
+
+*.greenBold    {
+
+	font-size: 12px;
+
+	color: #339900;
+
+	font-weight: bold;
+
+}
+
+
+
+*.header    {
+
+	font-size: 12px;
+
+	color: #000000;
+
+	font-weight: bold;
+
+}
+
+
+
+*.headerplain    {
+
+	font-size: 12px;
+
+	font-weight: bold;
+
+	color: #000000;
+
+	text-decoration: none;
+
+}
+
+
+
+*.headline    {
+
+	font-size: 12px;
+
+	color: #000000;
+
+	font-weight: bold;
+
+}
+
+
+
+*.menuLink    {
+
+	font-size: 11px;
+
+	padding-left: 5px;
+
+	padding-top: 3px;
+
+	padding-bottom: 2px;
+
+	text-decoration: none;
+
+	color: #FFFFFF;
+
+}
+
+
+
+*.menuLinkOver    {
+
+	font-size: 11px;
+
+	padding-left: 5px;
+
+	padding-top: 3px;
+
+	padding-bottom: 2px;
+
+	text-decoration: none;
+
+	color: #000000;
+
+}
+
+
+
+*.message    {
+
+	font-size: 12px;
+
+	color: #000000;
+
+}
+
+
+
+*.pageTitle    {
+
+	font-size: 22pt;
+
+	font-style: normal;
+
+	font-weight: bolder;
+
+	color: #990000;
+
+}
+
+
+
+*.pgHd    {
+
+	font-size: 16px;
+
+	font-weight: bold;
+
+	color: #000000;
+
+}
+
+
+
+*.prodSearch    {
+
+	font-size: 10px;
+
+	line-height: 1em;
+
+	text-decoration: none;
+
+}
+
+
+
+*.promoBlack    {
+
+	color: #000000;
+
+	font-size: 12px;
+
+}
+
+
+
+*.promoGray    {
+
+	color: #999999;
+
+	font-size: 10px;
+
+}
+
+
+
+*.qent    {
+
+	font-size: 11px;
+
+	font-weight: bold;
+
+	color: #999999;
+
+	text-transform: uppercase;
+
+}
+
+
+
+*.red    {
+
+	font-size: 12px;
+
+	color: #CC0000;
+
+}
+
+
+
+*.redBold    {
+
+	font-size: 12px;
+
+	color: #CC0000;
+
+	font-weight: bold;
+
+}
+
+
+
+*.redBold1    {
+
+	font-size: 16px;
+
+	color: #CC0000;
+
+	font-weight: bold;
+
+}
+
+
+
+*.smallText    {
+
+	font-size: 10px;
+
+	color: #000000;
+
+}
+
+
+
+*.smallText_link    {
+
+	font-size: 10px;
+
+	color: #003399;
+
+}
+
+
+
+*.smgry    {
+
+	font-size: 11px;
+
+	color: #999999;
+
+	text-decoration: none;
+
+}
+
+
+
+*.smgryBold    {
+
+	font-size: 12px;
+
+	color: #999999;
+
+	font-weight: bold;
+
+}
+
+
+
+*.smtext    {
+
+	font-size: 11px;
+
+	color: #000000;
+
+}
+
+
+
+*.smtextblue    {
+
+	font-size: 11px;
+
+	color: #003399;
+
+}
+
+
+
+*.smtextdkblue    {
+
+	font-size: 11px;
+
+	color: #006EB8;
+
+}
+
+
+
+*.smtextgray    {
+
+	font-size: 11px;
+
+	color: #254866;
+
+}
+
+
+
+*.smtextred    {
+
+	font-size: 11px;
+
+	color: #FF0000;
+
+}
+
+
+
+*.stockblackText    {
+
+	font-size: 10px;
+
+	color: #000000;
+
+}
+
+
+
+*.stockbluelink    {
+
+	font-size: 12px;
+
+	color: #006EB8;
+
+	text-decoration: none;
+
+}
+
+
+
+*.stockbluelinksmaller    {
+
+	font-family: arial,helvetica,sans-serif;
+
+	font-size: 9px;
+
+	color: #006EB8;
+
+}
+
+
+
+*.stockblueText    {
+
+	font-family: arial,helvetica,sans-serif;
+
+	font-size: 12px;
+
+	color: #006EB8;
+
+	text-decoration: none;
+
+}
+
+
+
+*.stockcontactbluegray    {
+
+	font-size: 10px;
+
+	font-weight: bold;
+
+	color: #A0B5C6;
+
+}
+
+
+
+*.stockgrayText    {
+
+	font-family: arial,helvetica,sans-serif;
+
+	font-size: 10px;
+
+	color: #999999;
+
+}
+
+
+
+*.stockquotetitle    {
+
+	font-family: arial,helvetica,sans-serif;
+
+	font-size: 10px;
+
+	color: #ffffff;
+
+	text-transform: uppercase;
+
+}
+
+
+
+*.subsubsectionTitleBlack    {
+
+	font-size: 10pt;
+
+	font-style: normal;
+
+	font-weight: bold;
+
+	color: #000000;
+
+	line-height: 15pt;
+
+	font-variant: normal;
+
+	text-transform: none;
+
+	text-decoration: none;
+
+}
+
+
+
+*.text    {
+
+	font-size: 12px;
+
+	color: #000000;
+
+}
+
+
+
+*.whHd    {
+
+	font-size: 12px;
+
+	font-weight: bold;
+
+	color: #ffffff;
+
+}
+
+
+
+*.whiteBold    {
+
+	font-size: 12px;
+
+	color: #FFFFFF;
+
+	font-weight: bold;
+
+}
+
+
+
+*.whitefootnote    {
+
+	font-size: 10px;
+
+	color: #ffffff;
+
+}
+
+
+
+*.whiteHead    {
+
+	font-size: 12px;
+
+	color: #FFFFFF;
+
+	font-weight: bold;
+
+}
+
+
+
+*.white    {
+
+	font-size: 12px;
+
+	color: #FFFFFF;
+
+}
+
+
+
+a    {
+
+	color: #003399;
+
+	text-decoration: none;
+
+}
+
+
+
+a.homeNews    {
+
+	color: #000000;
+
+	text-decoration: none;
+
+}
+
+
+
+
+
+b    {
+	color: #000000;
+	font-weight: bold;
+}
+
+b.blue    {
+
+	font-size: 12px;
+
+	color: #006EB8;
+
+	font-weight: bold;
+
+}
+
+
+
+b.darkGHead    {
+
+	font-size: 12px;
+
+	color: #254866;
+
+	font-weight: bold;
+
+	text-decoration: none;
+
+}
+
+
+
+blockquote    {
+
+	font-size: 12px;
+
+	color: #000000;
+
+}
+
+
+
+body    {
+
+	font-size: 12px;
+
+	color: #000000;
+
+	background-color: #FFFFFF;
+
+	margin: 0px;
+
+}
+
+
+
+form.nopadding    {
+
+	margin: 0px;
+
+}
+
+
+
+input    {
+
+	font-size: 12px;
+
+	text-decoration: none;
+
+}
+
+select    {
+
+	font-family: verdana,arial,helvetica,sans-serif;
+
+	text-decoration: none;
+
+}
+
+
+
+sup, sub {
+	font-size: 9px;
+}
+
+ul.noindent    {
+
+	list-style-type: disc;
+
+	margin-left: 15px;
+
+}
+
+
+
+*.reslink12    {
+
+	color: #B44800;
+
+	font-size: 12px;
+
+	font-weight: bold;
+
+}
+
+
+
+*.resrightbox11_link    {
+
+	color: #B44800;
+
+	font-size: 11px;
+
+	font-weight: bold;
+
+}
+
+
+
+*.colrightbox_content    {
+
+	color: #000000;
+
+	font-size: 11px;
+
+	font-weight: normal;
+
+}
+
+
+
+*.colRightBoxHeader    {
+
+	color: #333333;
+
+	font-size: 11px;
+
+	font-weight: bold;
+
+}
+
+
+
+*.maincontentheader    {
+
+	color: #333333;
+
+	font-size: 12px;
+
+	font-weight: bold;
+
+}
+
+
+
+*.breadcrumb    {
+
+	color: #094d9c;
+
+	font-size: 10pt;
+
+}
+
+
+
+td.statusHeader    {
+
+	color: #ffffff;
+
+	font-weight: bold;
+
+	background-color: #094d9c;
+
+}
+
+
+
+td.statusList    {
+
+	background-color: #e1ebf6;
+
+	font-weight: bold;
+
+	text-decoration: underline;
+
+	color: #000000;
+
+}
+
+
+
+*.rightRail    {
+
+	font-size: 11pt;
+
+	color: #094d9c;
+
+	text-decoration: underline;
+
+}
+
+
+
+*.rightRailHeader    {
+
+	font-size: 12pt;
+
+	font-weight: bold;
+
+	color: #094d9c;
+
+}
+
+
+
+td.formWithBg    {
+
+	background-color: #e1ebf6;
+
+}
+
+
+
+*.formHeader    {
+
+	color: #000000;
+
+	font-weight: bold;
+
+	font-size: 11px;
+
+}
+
+
+
+*.normal11    {
+
+	color: #000000;
+
+	font-size: 11px;
+
+}
+
+
+
+*.normal12    {
+
+	color: #000000;
+
+	font-size: 12px;
+
+}
+
+
+
+*.formTextLight    {
+
+	font-size: 11px;
+
+	color: #666666;
+
+}
+
+
+
+*.formText    {
+
+	color: #000000;
+
+	font-size: 11px;
+
+}
+
+
+
+a.normal12:active    {
+
+	text-decoration: underline;
+
+	color: #094d9c;
+
+	font-size: 12px;
+
+}
+
+
+
+a.normal12:visited    {
+
+	text-decoration: underline;
+
+	font-size: 12px;
+
+	color: #094d9c;
+
+}
+
+
+
+a.normal12:link    {
+
+	text-decoration: underline;
+
+	font-size: 12px;
+
+	color: #094d9c;
+
+}
+
+
+
+a.normal12    {
+
+	color: #094d9c;
+
+	font-size: 12px;
+
+}
+
+
+
+*.strong11    {
+
+	font-size: 11px;
+
+	font-weight: bold;
+
+	color: #000000;
+
+}
+
+
+
+*.strong12    {
+
+	color: #000000;
+
+	font-weight: bold;
+
+	font-size: 12px;
+
+}
+
+
+
+*.heading    {
+
+	font-size: 14px;
+
+	font-weight: bold;
+
+	color: #000000;
+
+}
+
+
+
+.popupTitle, .popupCloseButton {
+	background-color: #094D9C;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.popupTitle {
+	padding-left: 15px;
+	width: 200px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.popupCloseButton {
+	padding-right: 15px;
+	text-align: right;
+}
+.popupCopy {
+	padding: 0px 15px;
+	font-size: 12px;
+	clear: both;
+}
+
+.subheader {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+	font-size: 11px;
+
+	font-weight: bold;
+
+	color: #000000;
+
+}
+
+
+
+
+
+.csLink {
+	font-size: 11px;
+	text-decoration: underline;
+}
+.csLinkBold {
+	font-size: 11px;
+	text-decoration: underline;
+	font-weight: bold;
+	margin-top: 10px;
+}
+.csBox {
+	font-size: 11px;
+	text-decoration: none;
+	font-weight: normal;
+}
+.csBoxHeading {
+	font-size: 11px;
+	text-decoration: none;
+	font-weight: bold;
+}
+.csBoxHeadingWhite {
+	font-size: 11px;
+	text-decoration: none;
+	font-weight: bold;
+	color: ffffff
+}
+.csBoxSmall {
+	font-size: 10px;
+	text-decoration: none;
+	font-weight: normal;
+}
+*.resHeadingTxt {
+	font-size:18px;
+	color:#B44800;
+	font-weight:700;
+}
+*.resHeadingSubTxt {
+	font-weight:400;
+}
+
+

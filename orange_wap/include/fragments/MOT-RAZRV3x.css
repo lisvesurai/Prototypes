@@ -1,0 +1,21 @@
+h1,h2,h3 {font-size:small !important; font-style:bold !important;}
+h4,h5,p,dt {font-size:small !important; font-style:normal !important;}
+td {font-size:small !important;}
+.page {font-size:small !important;}
+.page, .page dt, #breadcrumb dt {font-size:small !important;}
+
+input.text {font-size:small !important;}
+input.srch {font-size:small !important;}
+input.btn {font-size:small !important;}
+
+img.prvw {width:100% !important;}
+img.sshot {width:100% !important;}
+
+.preview input {width:40%;}
+
+dt.mnr_page_next {float:right;}
+#breadcrumb dt {float:left; }
+
+.navtd {width:20% !important;}
+.navtdhl {width:20% !important;}
+.navtdlast {white-space:nowrap !important; width:40% !important;}

@@ -1,0 +1,4 @@
+h1,h2,h3,div.toptitleinner, div.hdrinner, div.hdr2inner {font-size:x-large;}
+body, h4,h5,p,span,dt,div,td,a,select,input,b,textarea {font-size:large;}
+p.itemdesc, p.rateby, a.ftrlinks, td.sorttxt, a.backToTop, td.cat {font-size:medium;}
+h4.price {font-size:x-large;}

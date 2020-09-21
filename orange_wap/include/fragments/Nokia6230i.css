@@ -1,0 +1,12 @@
+h1,h2,h3 {font-size:11px !important;}
+h4,h5,p,dt {font-size:10px !important;}
+td {font-size:10px !important;}
+.page {font-size:9px !important;}
+.page, .page dt, #breadcrumb dt {font-size:9px !important;}
+
+input.text {font-size:9px !important;}
+input.srch {font-size:9px !important;}
+input.btn {font-size:9px !important;}
+
+img.prvw {width:204px !important;}
+img.sshot {width:204px !important;}

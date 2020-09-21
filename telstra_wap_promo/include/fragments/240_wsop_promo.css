@@ -1,0 +1,39 @@
+*,h1,h2,h3,p,td {font-family:sans-serif;color:#000;}
+
+a {color:#000;font-family:sans-serif;text-decoration:none;}
+a:active {color:#005f92}
+
+body {background:#fff;margin:0;padding:0 0 10px 0;}
+div,h1,h2,hr,p,table,tr,td,dl {margin:0;padding:0;border:none;}
+td {vertical-align:top;}
+form {text-align:center;}
+
+#body {margin:0;}
+#header {padding-bottom:3px;}
+
+h1.title{padding:0;margin:0;text-align:center;background:url(../../images/805/wsop_promo_header_bg_240.gif) top left repeat-x;}
+
+div.promo {background:#f5f6f5;border:0;padding:0;margin:0;text-align:center;}
+img.promo {border:0;padding:0;margin:0;}
+a.promo {color:#fff;}
+div.promo_shadow {background:#0071ad url(../../images/805/promo_bg_promo_blue_shadow.gif) bottom left repeat-x;border:0;padding:0 0 4px 0;margin:0;}
+
+div.promo2 {background:#fff url(../../images/805/promo_bg_promo2.gif) top left repeat;color:#005f92;text-align:center;border:0;padding:8px 0 2px 0;margin:0;}
+a.promo2 {color:#005f92;}
+
+div.desc {background:#fff url(../../images/805/promo_bg_desc.gif) top left repeat;padding:5px 8px;}
+img.prod_img {float:left; margin:5px 0 10px 0;}
+h2.desc{color:#002c61;text-align:center;}
+p.desc{margin:0 0 5px 0;}
+p.hl{margin:0 0 5px 0;color:#002c61;}
+
+div.link, div.results {margin:0;padding:0;}
+dt.mnr {font-weight:bold;background:#4775cd url(../../images/805/wsop_promo_dt_bg.gif) top left repeat-x;padding:0 0 0 8px;}
+img.mnr {margin:1px 3px 1px 0;}
+
+a.page {color:#002c61;}
+
+div.shadow {background:#fff url(../../images/805/promo_bg_shadow.gif) top left repeat-x;/*padding:5px 0 0 0;*/height:5px;}
+
+#footer {margin:0;padding:0 0 0 8px;}
+img.ftr {margin:0 4px 0 0;}

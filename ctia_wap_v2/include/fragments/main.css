@@ -1,0 +1,73 @@
+/* Created by Lis Vesurai */
+body {background:#7f9fd3;margin:0;padding:0;}
+*,div.h1,div.h2,div.h2_schedule,div.h3,div.h4,p,dt,li {color:#333333;font-family:sans-serif;}
+
+div.h1,div.h2,div.h2_schedule,div.h3,div.h4 {font-size:.95em;}
+p,dt,li {font-size:.90em;}
+
+img{border:none;}
+
+div.container{background:#fafcfe url(../../images/ctia/bg_container.gif) bottom left repeat-x;}
+
+div.h1{margin:0;padding:2px 1px 2px 3px;background:#000000 url(../../images/ctia/nav_bg.gif) top left repeat-x;color:#ffffff;font-weight:bold;display:block;border-bottom:1px solid #bcc3c7;}
+div.h2{margin:0 0 2px 0;padding:0 1px 0 3px;color:#336699;font-weight:bold;display:block;}
+div.h3{margin:0 0 2px 0;padding:0 1px 0 3px;color:#af873d;font-weight:normal;display:block;}
+div.h4{margin:0 0 5px 0;padding:0 1px 0 3px;color:#333333;font-weight:normal;font-style:italic;display:block;}
+p{margin:0;padding:0 3px 10px 3px;}
+hr{border:none;border-bottom:1px solid #254764;height:1px;margin:0;}
+
+a{color:#333333;padding:0;text-decoration:none;}
+a:focus{background:#e1c297;}
+
+div.banner{background:#ffffff url(../../images/ctia/bg_banner.gif) top left repeat-x;margin:0;padding:3px 0;text-align:center;}
+div.banner img{border:1px solid #000000;}
+div.banner a:focus img{border:1px solid #0000cc;}
+
+div.home{margin:0;padding:0;}
+dl.home{margin:0;padding:2px 3px 2px 2px;vertical-align:middle;} 
+dt.home{color:#ffffff;vertical-align:middle;margin:0 0 2px 0;padding:2px;font-weight:bold;background:#566d92 url(../../images/ctia/nav_bg_home2.gif) top left repeat-x;}
+a.home {color:#ffffff;vertical-align:middle;}
+a.home:focus {background:#af873d;}
+
+dt.home2{color:#000000;vertical-align:middle;border:1px solid #999999;margin:2px 2px 3px 20px;padding:0 0 0 3px;font-weight:normal;background:#e5effa;}
+a.home2 {background:#e5effa;color:#000000;vertical-align:middle;}
+a.home2:focus {background:#e1c297;}
+
+div.schedule{color:#000000;margin:0;padding:0;}
+dl.schedule{color:#000000;margin:0;padding:2px 3px 0 2px;vertical-align:middle;} 
+dt.schedule{color:#ffffff;vertical-align:middle;margin:0 0 2px 0;padding:2px;font-weight:bold;border-bottom:1px solid #6699cc;/*background:#566d92 url(../../images/ctia/nav_bg_home2.gif) top left repeat-x;*/}
+a.schedule {/**/color:#000000;}
+/*a.schedule:focus{background:#bbbbbb;}*/
+div.h2_schedule{margin:0 0 2px 0;padding:0 1px 0 3px;color:#af873d;font-weight:bold;}
+
+div.sche_d{color:#336699;margin:0;padding:0;}
+dl.sche_d{color:#336699;border-top:1px solid #666666;margin:0;padding:2px 3px 0 2px;vertical-align:middle;}
+dt.sche_d{color:#336699;font-weight:normal;margin:0;padding:0;}
+dt.sche_db{color:#336699;font-weight:bold;margin:0;padding:0;}
+dt.sche_t{color:#666666;font-weight:normal;margin:0;padding:0;}
+a.sche_d {color:#336699;}
+a.sche_db {color:#336699;font-weight:bold;}
+/*a.sche_d:focus{background:#333333;}*/
+
+dt.right{color:#333333;padding:0 0 2px 0;font-weight:normal;font-style:italic;margin:0;}
+span.right{text-align:right;color:#333333;font-weight:normal;font-style:italic;}
+img.pass{margin:0;}
+
+div.news{color:#000000;margin:0;padding:0;}
+dl.news{color:#000000;margin:0;padding:2px 3px 0 2px;vertical-align:middle;} 
+dt.news{color:#ffffff;vertical-align:middle;margin:0 0 2px 0;padding:2px;font-size:.80em;font-weight:bold;border-bottom:1px solid #6699cc;/*background:#566d92 url(../../images/ctia/nav_bg_home2.gif) top left repeat-x;*/}
+a.news {/**/color:#000000;}
+/*a.news:focus {background:#bbbbbb;}*/
+
+div.bc{background:#7f9fd3;color:#ffffff;margin:0;padding:0;}
+dl.bc{background:#7f9fd3;color:#ffffff;font-size:.80em;margin:0;padding:2px 3px 0 2px;vertical-align:middle;} 
+dt.bc{background:#7f9fd3;color:#ffffff;margin:0;padding:0;font-weight:normal;}
+a.bc {background:#7f9fd3;color:#ffffff;vertical-align:middle;}
+/*a.bc:focus {background:#bbbbbb;}*/
+
+div.footer{background:#7f9fd3;color:#ffffff;margin:0;padding:10px 0;}
+dl.footer{background:#7f9fd3;color:#ffffff;margin:0;padding:3px;font-size:.75em;margin:0;padding:2px 3px 0 2px;vertical-align:middle;}
+dt.footer{background:#7f9fd3;color:#ffffff;font-weight:normal;text-align:center;}
+span.footer{background:#7f9fd3;color:#ffffff;}
+
+dt.clear{clear:both;float:none;}

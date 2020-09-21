@@ -1,0 +1,674 @@
+/*<agl.folder "Default Window Styles">*/
+.bea-portal-window{}
+.bea-portal-window-alt{}
+.bea-portal-window-titlebar-container{}
+
+.bea-portal-window-content{	margin-right: 2px; }
+
+.bea-portal-window-titlebar {
+	background: #85A7CD url("../images/dark_blue_header_bg.gif") repeat-x bottom right;
+	margin: 0px;
+	color: white;
+	padding: 0px;
+	min-height: 35px;
+}
+
+* html .bea-portal-window-titlebar { height: 35px; }
+
+.bea-portal-window-titlebar-title {
+	font: bold 13px;
+	padding: 4px 8px 8px;
+	margin: 0px;
+	color: white;
+}
+
+/* These styles deviate from default list of theme styles */			
+.bea-portal-window h3 {
+	background: #85A7CD url("../images/dark_blue_header_bg.gif") repeat-x bottom right;
+	font: bold 13px;
+	margin: 0px -2px 0px 0px;
+	padding: 6px 10px 10px;
+	color: white;
+	min-height: 19px;
+}
+		
+* html .bea-portal-window h3 { height: 19px; }
+
+.bea-portal-window-content h4 {
+	font: bold 1em;
+	margin: 1em 0px 0px;
+}
+/* End deviated styles */
+/*</agl.folder>*/
+
+/*<agl.folder "qwest-vanilla Theme Styles">*/
+.bea-portal-window-vanilla {}
+.bea-portal-window-alt-vanilla {}
+.bea-portal-window-titlebar-container-vanilla {}
+.bea-portal-window-titlebar-title-vanilla {}
+
+.bea-portal-window-content-vanilla {
+	padding: 0px;
+	margin: 0px;
+}
+
+.bea-portal-window-titlebar-vanilla { display:none; }
+
+/* These styles deviate from default list of theme styles */			
+.bea-portal-window-vanilla h3 {
+	background: #85A7CD url("../images/dark_blue_header_bg.gif") repeat-x bottom right;
+	font: bold 13px;
+	margin: 0px -2px 0px 0px;
+	padding: 6px 10px 10px;
+	color: white;
+	min-height: 19px;
+}
+		
+* html .bea-portal-window-vanilla h3 { height: 19px; }
+		
+.bea-portal-window-vanilla td, th { padding: 4px 0px; }
+/* End deviating styles */
+/*** End qwest-vanilla theme styles ***/
+
+/*<agl.folder "qwest-standard Theme Styles">*/
+
+.bea-portal-layout-placeholder-standard { margin-bottom: 20px; }
+
+.bea-portal-window-standard { margin-bottom: 20px; }
+
+.bea-portal-layout-placeholder-standard .bea-portal-window-standard { margin-bottom: 0px; }
+
+.bea-portal-window-alt-standard {}
+.bea-portal-window-content-standard {}
+.bea-portal-window-titlebar-standard {}
+
+.bea-portal-window-titlebar-container-standard {
+	background: url(../images/cont_stan_head.gif) no-repeat left top;
+	font: normal 18px Arial, Helvetica, sans-serif;
+	height: 35px;
+	color: #2850A0;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+
+.bea-portal-window-titlebar-title-standard {
+	background: url(../images/cont_stan_head_right.gif) no-repeat right top;
+	padding: 13px 15px 6px;
+	height: 19px;
+	display: block;
+	color: #2850A0;
+}
+
+* html .bea-portal-window-titlebar-title-standard {	padding-bottom: 4px; }
+*+html .bea-portal-window-titlebar-title-standard { padding-bottom: 4px; }
+
+/* These styles deviate from default list of theme styles */
+
+.bea-portal-window-standard h3 {
+	background: white url(../images/cont_stan_head.gif) no-repeat top left;
+	font: normal 20px;
+	height: 38px;
+	color: #4777BF;
+	padding: 0px;
+	margin: 0px;
+}
+
+.bea-portal-window-standard h3 span {
+	background: url(../images/cont_stan_head_right.gif) no-repeat right top;
+	padding: 13px 15px 6px;
+	height: 21px;
+	display: block;
+}
+
+* html .bea-portal-window-standard h3 span { padding-bottom: 8px; }
+
+.bea-portal-window-content-standard h4 {
+	font: bold 1em;
+	margin-bottom: 0px;
+	margin-top: 1em;
+}
+/* End deviated styles */
+/*** End qwest.standard theme styles ***/
+
+/*<agl.folder "qwest-condensed Theme Styles">*/
+
+.bea-portal-layout-placeholder-condensed { margin-bottom: 20px; }
+
+.bea-portal-window-condensed { margin-bottom: 20px; }
+
+.bea-portal-layout-placeholder-condensed .bea-portal-window-condensed { margin-bottom: 0px; }
+		
+.bea-portal-window-alt-condensed {}
+.bea-portal-window-content-condensed {}
+
+.bea-portal-window-content-condensednotitle { height:9em; overflow:hidden; }
+
+.bea-portal-window-titlebar-condensed { display: none;}
+
+.bea-portal-window-titlebar-condensednotitle { display:none; }
+
+* html .bea-portal-window-titlebar-title-condensed { padding-bottom: 4px; }
+*+html .bea-portal-window-titlebar-title-condensed { padding-bottom: 4px; }
+
+/* These styles deviate from default list of theme styles */
+
+.bea-portal-window-condensed h3 {
+	background: white url(../images/cont_add_head.gif) no-repeat top left;
+	font: normal 20px;
+	height: 35px;
+	color: #333;
+	padding: 0px;
+	margin: 0px;
+}
+
+.bea-portal-window-condensed h3 span {
+	background: url(../images/cont_add_head_right.gif) no-repeat right top;
+	padding: 8px 15px 8px;
+	height: 19px;
+	display: block;
+}
+
+* html .bea-portal-window-condensed h3 span { padding-bottom: 8px; }
+/* End deviated styles */
+/*** End qwest.condensed theme styles ***/
+
+/*<agl.folder "qwest-fatty Theme Styles">*/
+
+.bea-portal-layout-placeholder-fatty { margin-bottom: 20px; }
+
+.bea-portal-window-fatty { margin-bottom: 20px; }
+
+.bea-portal-layout-placeholder-fatty .bea-portal-window-fatty { margin-bottom: 0px; }
+		
+.bea-portal-window-alt-fatty {}
+.bea-portal-window-content-fatty {}
+.bea-portal-window-titlebar-fatty {}
+
+.bea-portal-window-titlebar-container-fatty {
+	background: url(../images/cont_fatty_gray.gif) no-repeat left top;
+	font: bold 23px Arial, Helvetica, sans-serif;
+	height: 46px;
+	color: #2850A0;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+
+.bea-portal-window-titlebar-title-fatty {
+	background: url(../images/cont_fatty_right_gray.gif) no-repeat right top;
+	padding: 12px 15px 11px;
+	height: 23px;
+	display: block;
+	color: #2850a0;
+}
+
+* html .bea-portal-window-titlebar-title-fatty { padding-bottom: 4px; }
+*+html .bea-portal-window-titlebar-title-fatty { padding-bottom: 4px; }
+
+/* These styles deviate from default list of theme styles */
+
+.bea-portal-window-fatty h3 {
+	background: none;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+	color: #2850a0;
+}
+
+/* End deviated styles */
+/*** End qwest.fatty theme styles ***/
+
+/*<agl.folder "qwest-fattyblue Theme Styles">*/
+
+.bea-portal-layout-placeholder-fattyblue { margin-bottom: 20px; }
+
+.bea-portal-window-fattyblue { margin-bottom: 20px; }
+
+.bea-portal-layout-placeholder-fattyblue .bea-portal-window-fattyblue { margin-bottom: 0px; }
+		
+.bea-portal-window-alt-fattyblue {}
+.bea-portal-window-content-fattyblue {}
+.bea-portal-window-titlebar-fattyblue {}
+
+.bea-portal-window-titlebar-container-fattyblue {
+	background: url(../images/cont_fatty_blue.gif) no-repeat left top;
+	font: bold 23px Arial, Helvetica, sans-serif;
+	height: 46px;
+	color: #2850A0;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+
+.bea-portal-window-titlebar-title-fattyblue {
+	background: url(../images/cont_fatty_right_blue.gif) no-repeat right top;
+	padding: 12px 15px 11px;
+	height: 23px;
+	display: block;
+	color: #2850a0;
+}
+
+* html .bea-portal-window-titlebar-title-fattyblue { padding-bottom: 4px; }
+*+html .bea-portal-window-titlebar-title-fattyblue { padding-bottom: 4px; }
+
+/* These styles deviate from default list of theme styles */
+
+.bea-portal-window-fattyblue h3 {
+	background: none;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+	color: #2850a0;
+}
+/* End deviated styles */
+/*** End qwest.fatty theme styles ***/
+
+/*<agl.folder "qwest-fattywhite Theme Styles">*/
+
+.bea-portal-layout-placeholder-fattywhite { margin-bottom: 20px; }
+
+.bea-portal-window-fattywhite { margin-bottom: 20px; }
+
+.bea-portal-layout-placeholder-fattywhite .bea-portal-window-fattywhite { margin-bottom: 0px; }
+		
+.bea-portal-window-alt-fattywhite {}
+.bea-portal-window-content-fattywhite {}
+.bea-portal-window-titlebar-fattywhite { display: none; }
+
+* html .bea-portal-window-titlebar-title-fattywhite { padding-bottom: 4px; }
+*+html .bea-portal-window-titlebar-title-fattywhite { padding-bottom: 4px; }
+
+/* These styles deviate from default list of theme styles */
+
+.bea-portal-window-fattywhite h3 {
+	background: none;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+	color: #2850a0;
+}
+
+/* End deviated styles */
+/*** End qwest.fattywhite theme styles ***/
+
+
+/*<agl.folder "qwest-table Theme Styles">*/
+
+.bea-portal-layout-placeholder-table { margin-bottom: 20px; }
+
+.bea-portal-window-table { margin-bottom: 20px; }
+
+.bea-portal-layout-placeholder-table .bea-portal-window-table { margin-bottom: 0px; }
+		
+.bea-portal-window-alt-table {}
+.bea-portal-window-content-table {}
+.bea-portal-window-titlebar-table {}
+
+.bea-portal-window-titlebar-container-table {
+	/*background: url(../images/cont_table_head.gif) no-repeat left top;
+	font: normal 22px Arial, Helvetica, sans-serif;
+	height: 52px;
+	color: #4777bf;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;*/
+	display: none;
+}
+
+.bea-portal-window-titlebar-title-table {
+	/*background: url(../images/cont_table_head_right.gif) no-repeat right top;
+	padding: 13px 15px 16px;
+	height: 23px;
+	display: block;
+	color: #4777bf;*/
+	display: none;
+}
+
+* html .bea-portal-window-titlebar-title-table { padding-bottom: 4px; }
+*+html .bea-portal-window-titlebar-title-table { padding-bottom: 4px; }
+
+/* These styles deviate from default list of theme styles */
+
+.bea-portal-window-table h3 {
+	background: white url(../images/cont_table_head.gif) no-repeat top left;
+	font: normal 22px;
+	height: 52px;
+	color: #4777bf;
+	padding: 0px;
+	margin: 0px;
+}
+
+.bea-portal-window-table h3 span {
+	background: url(../images/cont_table_head_right.gif) no-repeat right top;
+	padding: 13px 15px 16px;
+	height: 23px;
+	display: block;
+}
+
+* html .bea-portal-window-table h3 span { padding-bottom: 8px; }
+/* End deviated styles */
+/*** End qwest.table theme styles ***/
+
+/*<agl.folder "qwest-additional Theme Styles">*/
+
+.bea-portal-layout-placeholder-additional { margin-bottom: 20px; }
+
+.bea-portal-window-additional { margin-bottom: 20px; }
+
+.bea-portal-layout-placeholder-additional .bea-portal-window-additional { margin-bottom: 0px; }
+		
+.bea-portal-window-alt-additional {}
+.bea-portal-window-content-additional {}
+.bea-portal-window-titlebar-additional {}
+
+.bea-portal-window-titlebar-container-additional { display: none; }
+
+.bea-portal-window-titlebar-title-additional { display: none; }
+
+* html .bea-portal-window-titlebar-title-additional { padding-bottom: 4px; }
+*+html .bea-portal-window-titlebar-title-additional { padding-bottom: 4px; }
+
+/* These styles deviate from default list of theme styles */
+
+.bea-portal-window-additional h3 {
+	background: white url(../images/cont_add_head.gif) no-repeat top left;
+	font: normal 15px Arial, Helvetica, sans-serif;
+	height: 35px;
+	color: #333;
+	padding: 0px;
+	margin: 0px;
+	letter-spacing: -1px;
+}
+
+.bea-portal-window-additional h3 span {
+	background: url(../images/cont_add_head_right.gif) no-repeat right top;
+	padding: 8px 11px 8px 12px;
+	height: 21px;
+	display: block;
+}
+
+* html .bea-portal-window-additional h3 span { padding-bottom: 6px; }
+
+.bea-portal-window-content-additional h4 {
+	font: bold 1em;
+	margin-bottom: 0px;
+	margin-top: 1em;
+}
+/* End deviated styles */
+/*** End qwest.additional theme styles ***/
+
+/*<agl.folder "qwest-promo Theme Styles">*/
+.bea-portal-layout-placeholder-promo {}
+.bea-portal-window-promo {background:url(../images/promo_fade_orange_bottom.jpg) bottom left no-repeat #FFFFFF;}
+.bea-portal-window-alt-promo {}
+.bea-portal-window-titlebar-container-promo {}
+.bea-portal-window-titlebar-title-promo {}
+.bea-portal-window-content-promo {
+	padding: 0px;
+	margin: 0px;	
+}
+
+.bea-portal-window-titlebar-promo { display:none; }
+
+/* These styles deviate from default list of theme styles */			
+.bea-portal-window-promo h3 {
+	background:url(../images/promo_fade_orange_top.jpg) top left no-repeat #FFFFFF; 
+	color:#333333; font-size:23px; 
+	padding:20px 24px 20px; 
+	font-weight:normal; 
+	font-family:Helvetica, Arial, sans-serif; margin:0px;
+}
+		
+.bea-portal-window-promo h4 {
+	color:#d66416; 
+	margin:0px; 
+	padding:0px; 
+	font:bold 17px Arial, helvetica, sans-serif; 
+}
+
+.bea-portal-window-promo p {
+	margin-top:4px; 
+	margin-bottom:4px;
+}
+
+/* End deviating styles */
+/*** End qwest-promo theme styles ***/
+
+/*<agl.folder "qwest-promo-broadband Theme Styles">*/
+.bea-portal-layout-placeholder-promo-broadband {}
+.bea-portal-window-promo-broadband { margin-bottom:20px;}
+.bea-portal-window-alt-promo-broadband {}
+.bea-portal-window-titlebar-container-promo-broadband {}
+.bea-portal-window-titlebar-title-promo-broadband {}
+.bea-portal-window-content-promo-broadband {
+	padding: 0px;
+	margin: 0px;	
+}
+
+.bea-portal-window-titlebar-promo-broadband { display:none; }
+
+/* These styles deviate from default list of theme styles */			
+.bea-portal-window-promo-broadband h3 {
+	color:#333333; font-size:22px; 
+	padding:20px 10px 16px 160px; 
+	font-weight:normal; 
+	font-family:Helvetica, Arial, sans-serif; margin:0px;
+}
+		
+.bea-portal-window-promo-broadband h4 {
+	color:#d66416; 
+	margin:0px; 
+	padding:0px; 
+	font:bold 17px Arial, helvetica, sans-serif; 
+}
+
+.bea-portal-window-promo-broadband p {
+	margin-top:4px; 
+	margin-bottom:4px;
+	font-size:11px;
+}
+
+/* End deviating styles */
+/*** End qwest-promo-broadband theme styles ***/
+
+/*<agl.folder "qwest-promo-broadband-upgrade Theme Styles">*/
+.bea-portal-layout-placeholder-promo-broadband-upgrade {}
+.bea-portal-window-promo-broadband-upgrade { margin-bottom:20px;}
+.bea-portal-window-alt-promo-broadband-upgrade {}
+.bea-portal-window-titlebar-container-promo-broadband-upgrade {}
+.bea-portal-window-titlebar-title-promo-broadband-upgrade {}
+.bea-portal-window-content-promo-broadband-upgrade {
+	padding: 0px;
+	margin: 0px;	
+}
+
+.bea-portal-window-titlebar-promo-broadband-upgrade { display:none; }
+
+/* These styles deviate from default list of theme styles */			
+.bea-portal-window-promo-broadband-upgrade h3 {
+	color:#333333; font-size:20px; 
+	padding:14px 20px 16px 160px; 
+	font-weight:normal; 
+	font-family:Helvetica, Arial, sans-serif; margin:0px;
+}
+		
+.bea-portal-window-promo-broadband-upgrade h4 {
+	color:#d66416; 
+	margin:0px; 
+	padding:0px; 
+	font:bold 17px Arial, helvetica, sans-serif; 
+}
+
+.bea-portal-window-promo-broadband-upgrade p {
+	margin-top:4px; 
+	margin-bottom:4px;
+	font-size:11px;
+}
+
+/* End deviating styles */
+/*** End qwest-promo-broadband-upgrade theme styles ***/
+
+/*<agl.folder "qwest-questions Theme Styles">*/
+
+.bea-portal-layout-placeholder-tertiary {
+	margin-bottom: 10px;
+	padding: 0px;
+}
+
+.bea-portal-window-tertiary{
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	font-size: .9em;
+}
+
+.bea-portal-layout-placeholder-tertiary .bea-portal-window-tertiary {
+	margin-bottom: 0px;
+}
+
+.bea-portal-window-content-tertiary {
+	background-color: #F1F1F1;
+	padding: 10px;
+	margin-right: 0px;
+}
+
+*+html .bea-portal-window-content-tertiary {}
+.bea-portal-window-titlebar-container-tertiary{}
+
+.bea-portal-window-titlebar-tertiary {
+	margin: 0px;
+	background-color: white;
+	color: white;
+	padding: 0px;
+}
+
+.bea-portal-window-titlebar-title-tertiary {
+	font: bold 13px;
+	color: #1F5DA6;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	vertical-align: middle;
+}
+
+.bea-portal-window-titlebar-title-tertiary img {
+	margin: 0px;
+	padding: 0px;
+	display: block;
+}
+			
+.bea-portal-window-content-tertiary ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+			
+.bea-portal-window-content-tertiary li {
+	margin: 0;
+	margin-bottom: 1em;
+}
+
+
+/*<agl.folder "qwest-colnav Theme Styles">*/
+
+.bea-portal-layout-placeholder-colnav {
+	margin-bottom: 10px;
+	padding: 0px;
+}
+
+.bea-portal-window-colnav {
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	font-size: .9em;
+}
+
+.bea-portal-layout-placeholder-colnav .bea-portal-window-colnav {
+	margin-bottom: 0px;
+}
+
+.bea-portal-window-content-colnav {
+	background-color: white;
+	padding: 0px;
+	margin-right: 0px;
+}
+
+*+html .bea-portal-window-content-colnav {}
+.bea-portal-window-titlebar-container-colnav{}
+
+.bea-portal-window-titlebar-colnav {
+	margin: 0px;
+	background-color: white;
+	color: white;
+	padding: 0px;
+}
+
+.bea-portal-window-titlebar-title-colnav {
+	font: bold 13px;
+	color: #1F5DA6;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	vertical-align: middle;
+}
+
+.bea-portal-window-titlebar-title-colnav img {
+	margin: 0px;
+	padding: 0px;
+	display: block;
+}
+			
+.bea-portal-window-content-colnav ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+			
+.bea-portal-window-content-colnav li {
+	margin: 0;
+	margin-bottom: 1em;
+}
+
+
+/*</agl.folder>*/
+.bea-portal-window-titlebar-buttons {
+	text-align: right;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+.bea-portal-window-icon {
+	margin: 0px 4px 0px 0px;
+	vertical-align: middle;
+}
+
+.bea-portal-window-buttonbar {
+	padding: 0px 4px;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	border-color: #cccce5;
+	height: 14px;
+	background-color: #f0f0f0;
+}
+
+.bea-portal-window-buttonbar-layout {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.bea-portal-window-buttonbar-layout-standard {
+	margin: 0px;
+	padding: 0px;
+	text-align: right;
+}
+
+.bea-portal-window-buttonbar-layout-extensions {
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}

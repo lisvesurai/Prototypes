@@ -1,0 +1,35 @@
+
+.documentations .main .feedback span{
+	background: url('../img/common/feedback_black.png') no-repeat left top;
+	height: 30px;
+	width: 461px;
+	color: #fff;
+	display: block;
+	float:  left;
+	padding: 5px 0px 4px 8px;
+}
+
+.documentations .main .feedback a {
+	background: url("../img/common/feedback_linkblue.png") no-repeat scroll 469px top;
+	color: #fff;
+	display: block;
+	float: none;
+	height: 26px;
+	padding: 5px 0 0 469px;
+	text-align: center;
+	width: 130px;
+}
+
+.ie7 .documentations .main .feedback a {
+	display: inline;
+	float: right;
+	padding-left: 0;
+	background-position-x: 0px;
+}
+
+.documentations .thankyou .thankyou_wrapper {
+	width: 400px;
+	margin: auto auto;
+	text-align: center;
+}
+

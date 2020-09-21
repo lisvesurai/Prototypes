@@ -1,0 +1,146 @@
+.sampleapps .qml, .sampleapps .cplus{
+
+	background-position: top right, 0 0;
+	background-repeat: no-repeat, repeat;
+	background-image: url('../img/sampleapps/qmlbadge.png'),url('../img/common/carbon.png');
+	padding: 10px 10px 10px 10px;
+	width: 550px;
+	height: 64px;
+}
+.sampleapps .cplus{
+		background-image: url('../img/sampleapps/cplusbadge.png'),url('../img/common/carbon.png');
+		margin-top: 20px;
+}
+.ie7 .sampleapps .qml, .ie8 .sampleapps .qml, .ie9 .sampleapps .qml{
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-image: url('../img/sampleapps/qmlbadge.png');
+	background-color: #222f34;
+}
+.ie7 .sampleapps .cplus, .ie8 .sampleapps .cplus, .ie9 .sampleapps .cplus{
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-image: url('../img/sampleapps/cplusbadge.png');
+	background-color: #222f34;
+}
+
+.sampleapps .goldbutton, .sampleapps .leftdownloadbutton{
+		display: inline-block;
+		float: left;
+		padding-right: 40px;
+		padding-left: 20px;
+}
+
+
+.sampleapps .multiplebgs .goldbutton a.btn-small span.btn-icon-download {
+background: url('../img/downloads/button_download_icon_small_gold.png') no-repeat 4px 0;
+}
+
+.sampleapps .multiplebgs .leftdownloadbutton a.btn-small span.btn-icon-download {
+background: url('../img/common/button_download_icon_small.png') no-repeat 4px 0;
+}
+
+.sampleapps  .goldbutton a.btn-small {
+		background-color: #ddc355;
+		color: #7e5d17;
+}
+
+.sampleapps .multiplebgs .goldbutton a.btn-small {
+		background-color: #ddc355;
+		background-repeat: no-repeat, repeat;
+		background-image: url('../img/downloads/button_divider_large_gold.png'),url('../img/downloads/golden-download-button.png');
+		color: #7e5d17;
+}
+
+
+
+.sampleapps .multiplebgs .goldbutton a.btn-small:hover,
+.sampleapps .multiplebgs .goldbutton a.btn-small:active {
+		background-image: url('../img/downloads/button_divider_large_gold.png'),url('../img/downloads/golden-download-button-hover.png');
+}
+
+.sampleapps .fl_content {
+		overflow:hidden;
+		background-color:#93a6b8;
+}
+.sampleapps .fl_content img,
+.sampleapps .fl_content .sample_overlay {
+		position:absolute;
+		padding:0; margin:0;
+		display:block;
+		left:0;
+		width:100%;
+		height:100%;
+}
+.sampleapps .fl_content img {
+		background: url('../img/common/pattern-carbon.png') 0 0 repeat;
+		top:0;
+}
+.sampleapps .fl_content .sample_overlay {
+		background:  url('../img/common/transparent-bl_85.png') 0 0 repeat;
+}
+.sampleapps .fl_content .sample_overlay p,
+.sampleapps .fl_content .sample_overlay h2,
+.sampleapps .fl_content .sample_overlay span.sample-actions,
+.sampleapps .fl_content .sample_overlay span.sample-subtitle {
+		margin-left:20px; margin-right:20px;
+}
+.sampleapps .fl_content .sample_overlay h2 {
+		font-size: 	1.077em;
+		color: #6bb8d1;
+		font-style: italic;
+		margin-top:20px;
+		margin-bottom: 10px;
+		line-height:0.577em;
+}
+.sampleapps .fl_content .sample_overlay span.sample-subtitle {
+		color: #FFF;
+		font-size: 1.385em;
+}
+.sampleapps .fl_content .sample_overlay li {
+		color: #909090;
+}
+.sampleapps .fl_content .sample_overlay p {
+		color: #909090;
+		font-size: 	1.077em;
+		margin-top: 27px;
+}
+
+.sampleapps .fl_segment .sample_overlay,
+.sampleapps .fl_segment.vert-two.no_fill .fl_content .sample_overlay,
+.sampleapps .fl_segment.vert-three.no_fill .fl_content .sample_overlay {
+		top:193px;
+}
+.sampleapps .fl_segment.vert-three .fl_content.vert-two .sample_overlay,
+.sampleapps .fl_segment.vert-two .fl_content .sample_overlay {
+		top:473px;
+}
+.sampleapps .fl_segment.vert-three .fl_content .sample_overlay {
+		top:742px;
+}
+.sampleapps .fl_content .sample_overlay span.sample-actions {
+		position: absolute;
+		bottom:20px;
+}
+.sampleapps .fl_content .sample_overlay span.sample-actions a.github,
+.sampleapps .fl_content .sample_overlay span.sample-actions a.github:visited {
+		color: #0090bf;
+}
+.ie7 .sampleapps .fl_content .sample_overlay span.sample-actions a.github {
+		line-height:26px;
+}
+.sampleapps .lightbox-desc .descbox {
+	width: 100%;
+}
+
+.sampleapps .lightbox-desc .descbox_third {
+	width: 33%;
+	float: left;
+}
+
+.sampleapps .apisamples ul {
+	padding-left: 20px;
+}
+.sampleapps .apisamples li {
+		list-style: none;
+}

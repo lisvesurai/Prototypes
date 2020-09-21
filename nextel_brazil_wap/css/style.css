@@ -1,0 +1,82 @@
+body, html {height:100%;font-family:Arial, Helvetica, sans-serif;font-size:1em;margin:0;padding:0;/*text-align:center;*/background:#731522;}
+* {border:0;margin:0;padding:0}
+.left {text-align:left}
+
+.logo {text-align:center;margin-bottom:9px;padding:3px;border-bottom: 1px solid #737A7A}
+
+.banner {text-align:center;background:#FB7729; color:#fff;font-size:0.7em;margin:6px 0 0 0;}
+.banner1 {text-align:center;}
+.aBanner {color:#FFF;text-decoration:underline}
+
+.titulo {background:#737A7A;color:#FFF;font-size:1em;text-align:left;padding-left:5px;}
+
+.m {width:100%;margin:9px 0 0 0}
+.imparM01 {background:#ACAFB0;border-bottom:1px;border-style:solid; border-color:#731522;text-align:left}
+.parM01 {background:#737A7A;border-bottom:1px;border-style:solid; border-color:#731522;text-align:left}
+
+.imparM02 {background:#FFF;border-bottom:1px;border-style:solid; border-color:#731522;text-align:left}
+.parM02 {background:#FFF;border-bottom:1px;border-style:solid; border-color:#731522;text-align:left}
+
+.linkM01 {color:#FFF;text-decoration:none;}
+.linkM02 {color:#731522;text-decoration:none;}
+
+.aLeft {color:#FFF;text-decoration:none}
+
+.conteudo {background:#FFF;padding:5px;text-align:left;}
+
+img{border:none;}
+img.banner {margin:0;padding:0;border:0;width:100%;}
+div.banner {margin:0;padding:0;}
+
+dl{margin:0;padding:0;vertical-align:middle;}
+dt{margin:0;padding:0 2px;color:#000;white-space:nowrap;text-align:left;}
+dt.mnr{background:#FFF;color:#731522;border-bottom:1px;border-style:solid; border-color:#731522;text-align:left;}
+
+dt img{margin:0;padding:0;vertical-align:middle;}
+p{background:#fff;margin:0;padding:0 3px;text-align:left;}
+a{color:#731522;text-decoration:none;}
+hr{border:none;border-bottom:1px solid #e9edef;height:1px;margin:0;}
+
+
+h1{background:#737A7A;color:#FFF;font-size:1em;text-align:left;padding-left:5px;}
+h2{background:#fff;color:#000;font-size:1em;text-align:left;margin:0;padding:3px 0 0 3px;}
+
+.title{font-weight:bold;}
+.order_num{font-weight:bold;}
+.msg{color:#8b0014;font-weight:normal;}
+.star{text-decoration:none;font-weight:bold;font-size:xx-large;line-height:20px;height:15px;vertical-align:middle;}
+.red{color:#8b0014;}
+
+.discountPrice{color:#8b0014;font-weight:bold;}
+.strikeoutPrice{text-decoration:line-through;}
+
+.results dt{margin:0;padding:0 2px;color:#000;}
+
+.wp, .vdo, .theme{width:100%;text-align:center;padding-top:5px;}
+.screenshot{width:100%;text-align:center;padding-top:5px;}
+
+div.localimg {text-align:center;padding-top:5px;}
+
+.box_icon { margin:0 5px 5px 0; vertical-align:middle; }
+.box_ok { background:#fff; /*border:2px solid #008e46;*/ color:#008e46; padding:3px; margin:0; font-weight:bold; vertical-align:middle; }
+.box_attn { background:#fff; /*border:2px solid #fea700;*/ color:#fea700; padding:3px; margin:0; font-weight:bold; vertical-align:middle; }
+.box_error { background:#fff; /*border:2px solid #8e001c;*/ color:#8e001c; padding:3px; margin:0; font-weight:bold; vertical-align:middle; }
+.box_alert { background:#fff; /*border:2px solid #8e001c;*/ color:#8e001c; padding:3px; margin:0; font-weight:bold; vertical-align:middle; }
+
+
+form{margin:0;padding:0;background:#fff;}
+input.text{background:#eee;color:#000000;border:1px solid #999;height:24px;width:95%;vertical-align:middle;margin:0 0 5px 3px;padding:0;}
+textarea{background:#eee;color:#000000;border:1px solid #999;width:95%;margin:0 0 5px 3px;padding:0;}
+
+.search {color:#000;margin:0;padding:0;/*border-top:1px solid #999;border-bottom:1px solid #999;*/}
+.searchform {background:#fff;margin:0;padding:2px 0;vertical-align:middle;text-align:center;}
+.searchp {background:none;margin:0; padding:0;color:#000;font-weight:bold;}
+input.srchtext {background:#eee;color:#000000;width:55%;border:1px solid #999;margin:0;vertical-align:middle;}
+input.srch {background:/*#8b0014*/#fff;color:/*#ffffff*/#000;margin:0 2px;padding:0px; text-align:center;vertical-align:middle;}
+input.btn {background:/*#8b0014*/#ccc;color:/*#ffffff*/#000;border:1px solid #cccccc;margin:0 2px;padding:1px; text-align:center;vertical-align:middle;}
+
+div.screenshot {background:#fff;}
+dl.page {background:#fff;}
+
+dl.footer {background:#731522;}
+a.white {color:#fff;}

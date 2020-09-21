@@ -1,0 +1,27 @@
+div.banner, div.content, div.ftr {width:160px;}
+div.blocktitle {background:#06380c url(img/172/bg_title_bar.gif) top left no-repeat;height:26px;line-height:18px;padding-left:6px;}
+p.ftdesc {padding:3px 7px;}
+div.sepdot {background:url(img/172/div_dot.gif) center left repeat-x;height:2px;border-top:4px solid #fff;border-bottom:4px solid #fff;}
+div.sepsolid {background:url(img/172/div_solid.gif) center left repeat-x;height:2px;}
+div.topcurve {background:#06380c url(img/172/top_curve.gif) top left no-repeat;height:10px;}
+div.endcurve {background:#06380c url(img/172/end_curve.gif) top left no-repeat;height:17px;}
+div.ftrcurve {background:#06380c url(img/172/ftr_curve.gif) top left no-repeat;height:10px;}
+div.tabcurve {background:#06380c url(img/172/tab_curve.gif) top left no-repeat;height:8px;}
+div.contentpad {/*padding:0 0 5px 5px;*/border-right:5px solid #fff;border-bottom:5px solid #fff;border-left:5px solid #fff;}
+div.contentpad p {padding:3px 0 2px;}
+dt {padding:3px 3px 1px 7px;}
+dt.cat {padding:3px 3px 3px 7px;}
+td.pl3th {width:30px;}
+td.pl3title {width:53px;}
+/*img.ss {width:100px;}*/
+img.ss2{width:40px;margin:0 0 0 3px;}
+img.ftbanner {width:160px;height:61px;}
+img.pl3th {width:30px;height:26px;}
+dt.ftr, dt.ftr2 {padding-top:2px;padding-bottom:2px;}
+div.topbanner{border-top:4px solid #06380c;}
+img.itemth {width:30px;height:30px;}
+td.itemth {width:33px;}
+td.item {height:10px;}
+td.arrow {border-right:3px solid #fff;height:10px;}
+td.price {height:10px;}
+table.pagination {border-right:2px solid #fff;border-left:2px solid #fff;}

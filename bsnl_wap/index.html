@@ -1,0 +1,153 @@
+<html>
+<head>
+<title>BSNL Wap Mockup</title>
+<style type="text/css">
+a {color:#666666;font-size:10px;font-weight:normal;font-family:sans-serif;margin:0;}
+a:active {color:#e00030;}
+a:hover {color:#e00030;}
+body{background:#ffffff;color:#666666;font:normal 10px sans-serif;margin:0px;}
+h1{color:#333;font:bold 12px sans-serif;margin:5px 5px;text-decoration:underline;}
+h2{color:#666;font:bold 11px tahoma,sans-serif;margin:0;}
+p{margin:2px 0;}
+dl{margin:0 0 5px 5px;padding:0;}
+dt{margin:2px 0;padding:0;}
+td{vertical-align:top;padding:0 10px 0 0;font:normal 10px sans-serif;}
+
+input{background:#D4D0C8;border:1px solid #000;width:100%;height:20px;font-size:10px;font-weight:bold;margin:0;padding:0;text-transform:uppercase;position:relative;}
+iframe, form{margin:0 10px 0 0;padding:0;position:relative !important;}
+iframe {border:1px solid #000;}
+hr{border:none;border-bottom:1px solid #8f001e;height:1px;width:100%;margin:0;}
+
+.linkButton{position:relative;margin:5px 0 5px 5px !important;padding:5px;border:1px solid #666666;font-size:11px;height:20px;}
+.linkButton:hover{background:#e9f1bb;}
+.Hl{background:#cade5c;}
+
+@media screen {
+li ul{margin:8px 0 8px 22px;}
+.hide{display:none;visibility:hidden;}
+.toggle{font-family:courier,monospace;font-weight:normal;line-height:10px;margin:0 10px 0 0;}
+}
+
+@media handheld {
+.hide_for_cell{display:none;}
+}
+</style>
+<script type="text/javascript">
+function toggle (y) {
+	x = 'toggle' + y;
+
+	if ( document.getElementById(x).innerHTML == '+' )
+	{
+		document.getElementById(y).className = '';
+		document.getElementById(x).innerHTML = '-';
+	}
+	else
+	{
+		document.getElementById(y).className = 'hide';
+		document.getElementById(x).innerHTML = '+';
+	}
+}
+</script>
+</head>
+<body>
+<table border="0">
+<tr valign="top">
+<td width="200">
+<h1>BSNL Wap Mockup</h1>
+<dl>
+	<dt><a onClick="return showLink(this);" href='home.jsp?t=BSNL+App+Store'>Home</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='warning.jsp?t=Warning'>Mature Content Warning</a></dt>
+	<dt><hr/></dt>
+	
+	<dt><a onClick="return showLink(this);" href='list.jsp?t=Recent&hl=2'>Recent</a></dt>
+	<dt><a onClick="return showLink(this);" href='list.jsp?t=Popular&hl=3'>Popular</a></dt>
+	<dt><a onClick="return showLink(this);" href='list_free.jsp?t=Free&hl=4'>Free</a></dt>
+	<!--<dt><a onClick="return showLink(this);" href='list_free.jsp?t=Recent'>Recent - Free</a></dt>-->
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='genres_browse.jsp?t=Categories'>Categories</a></dt>
+	<dt><a onClick="return showLink(this);" href='genres_browse2.jsp?t=Games'>Games - Subcategories</a></dt>
+	<dt><a onClick="return showLink(this);" href='genres_list.jsp?'>Categories - Items Listing</a></dt>
+	<!--<dt><a onClick="return showLink(this);" href='genres_list_free.jsp?'>Categories - Items Listing - Free</a></dt>-->
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='search.jsp?t=Search'>Search</a></dt>
+	<dt><a onClick="return showLink(this);" href='search_results.jsp?t=Search%20Results&keyword=Keyword'>Search Results</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='item.jsp?t=Driving%20Log'>Item - Details</a></dt>
+	<dt><a onClick="return showLink(this);" href='item2.jsp?t=Driving%20Log'>Item - Details - subscription</a></dt>
+	<dt><a onClick="return showLink(this);" href='item3.jsp?t=Zingles'>Item - Details - multiple</a></dt>
+	<dt><a onClick="return showLink(this);" href='item4.jsp?t=Zingles'>Item - Details - free trial only</a></dt>
+	<dt><a onClick="return showLink(this);" href='item_rate.jsp?t=Driving%20Log'>Item - Rate</a></dt>
+	<dt><a onClick="return showLink(this);" href='item_tell_friend.jsp?t=Driving%20Log'>Item - Send Link to Friends mobile</a></dt>
+	<dt><a onClick="return showLink(this);" href='item_tell_friend.jsp?t=Driving%20Log&msg=5'>Item - Tell a Friend - error message</a></dt>
+	<dt><a onClick="return showLink(this);" href='receipt.jsp?t=Receipt'>Receipt</a></dt>
+	<dt><a onClick="return showLink(this);" href='insufficient_funds.jsp?'>Insufficient Funds</a></dt>
+	<dt><a onClick="return showLink(this);" href='insufficient_funds2.jsp?'>Insufficient Funds - multiple</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='my_purchases.jsp?t=My+Purchases'>My Purchases</a></dt>
+	<dt><a onClick="return showLink(this);" href='purchase_details.jsp?t=Driving+Log+2&fav=yes'>Purchase Details</a></dt>
+	<dt><a onClick="return showLink(this);" href='purchase_details2.jsp?t=Driving+Log+2&fav=yes'>Purchase Details - subscription</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='my_favorites.jsp?t=My+Favorites'>My Favorites</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='faq.jsp?'>FAQ</a></dt>
+	<dt><hr/></dt>
+
+	<dt><a onClick="return showLink(this);" href='sms_off.jsp?'>SMS Alert - off</a></dt>
+	<dt><a onClick="return showLink(this);" href='sms_on.jsp?'>SMS Alert - on</a></dt>
+	<dt><hr/></dt>
+</dl>
+
+<script type="text/javascript">
+<!--
+function showLink(elm)
+{
+	top.phoneDisplay1.location.href=elm+"&w=120&f=xx-small";
+	top.phoneDisplay2.location.href=elm+"&w=172&f=x-small";
+	top.phoneDisplay3.location.href=elm+"&w=240&f=x-small";
+	top.phoneDisplay4.location.href=elm+"&w=320&f=small";
+	top.phoneDisplay5.location.href=elm+"&w=350&f=small";
+	top.phoneDisplay6.location.href=elm+"&w=480&f=medium";
+	return false;
+}
+//-->
+</script>
+
+</td>
+	<td>
+		<h2>120</h2>
+		<iframe width="138" height="180" scrolling="yes" name="phoneDisplay1" id="phoneDisplay1" src="home.jsp?w=120&f=xx-small&t=BSNL+App+Store"></iframe>
+	</td>
+	<td>
+		<h2>172</h2>
+		<iframe width="192" height="260" scrolling="yes" name="phoneDisplay2" id="phoneDisplay2" src="home.jsp?w=172&f=x-small&t=BSNL+App+Store"></iframe>
+	</td>
+	<td>
+		<h2>240</h2>
+		<iframe width="260" height="340" scrolling="yes" name="phoneDisplay3" id="phoneDisplay3" src="home.jsp?w=240&f=x-small&t=BSNL+App+Store"></iframe>
+	</td>
+	<td rowspan="2">
+		<h2>320</h2>
+		<iframe width="340" height="260" scrolling="yes" name="phoneDisplay4" id="phoneDisplay4" src="home.jsp?w=320&f=small&t=BSNL+App+Store"></iframe>
+		<br><br>
+		<h2>350</h2>
+		<iframe width="370" height="436" scrolling="yes" name="phoneDisplay5" id="phoneDisplay5" src="home.jsp?w=350&f=small&t=BSNL+App+Store"></iframe>
+	</td>
+</tr>
+<tr>
+	<td></td>
+	<td colspan="3">
+		<h2>480</h2>
+		<iframe width="500" height="340" scrolling="yes" name="phoneDisplay6" id="phoneDisplay6" src="home.jsp?w=480&f=medium&t=BSNL+App+Store"></iframe>
+	</td>
+</tr>
+</table>
+</body>
+</html>

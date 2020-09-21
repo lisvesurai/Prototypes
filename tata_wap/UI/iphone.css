@@ -1,0 +1,13 @@
+div.listing {background:#fff;margin:0;}
+div.item {padding:4px;margin:0;}
+div.itemalt {background:#e7e7e7;padding:4px;margin:0;}
+div.th {width:90px;height:90px;padding-top:2px;float:left;}
+div.th img {width:80px;height:80px;}
+div.details {width:210px;float:left;}
+p.itemtitle {margin:0 !important;padding:0 !important;}
+a.itemtitle {color:#0075bf;font-weight:bold;text-decoration:none;font-size:large;}
+p.cat {margin:0 0 5px 0 !important;padding:0 !important;color:#999;}
+p.desc {margin:0 0 5px 0 !important;padding:0 !important;color:#333;}
+p.price {font-weight:bold;margin:2px 5px 8px 0;padding:2px 0 0 20px;width:78px;height:21px;line-height:23px;float:left;color:#010101;}
+input.btn {background:#004571;font-weight:bold;}
+.clear {clear:both;}

@@ -1,0 +1,11 @@
+*,h1,h2,h3,h4,h5,p {font-family:sans-serif;font-size:xx-small;}
+
+body,div,h1,h2,h3,h4,h5,dl{margin:0 0 5px 0;padding:0;}
+img {display:none;}
+img.prvw {display:block;border:0;}
+img.sshot {display:block;border:0;}
+img.logo {display:block;border:0;}
+img.th {display:block;border:0;width:25px;height:25px;margin:1px 2px;}
+img.nohide {display:inline;border:0;}
+
+hr, #breadcrumb, #footer, h1.toptitle, h2.sectiontitle, h3.title, h3.promo, h3.search, h4.purchase, p.buttons  { background:url(../../images/orange/wml_hline.gif) top left no-repeat;border:0;padding:2px 0 0 0;}

@@ -1,0 +1,52 @@
+#shopwireless {
+	FONT-SIZE: 12px; MARGIN-LEFT: 10px; COLOR: #0062ad; PADDING-TOP: 40px; FONT-FAMILY: arial
+}
+#exploreservices {
+	FONT-SIZE: 12px; MARGIN-LEFT: 10px; COLOR: #0062ad; PADDING-TOP: 40px; FONT-FAMILY: arial
+}
+#findsupport {
+	FONT-SIZE: 12px; MARGIN-LEFT: 10px; COLOR: #0062ad; PADDING-TOP: 40px; FONT-FAMILY: arial
+}
+#shopwireless A {
+	COLOR: #0062ad; TEXT-DECORATION: underline
+}
+#exploreservices A {
+	COLOR: #0062ad; TEXT-DECORATION: underline
+}
+#findsupport A {
+	COLOR: #0062ad; TEXT-DECORATION: underline
+}
+#shopwireless P {
+	MARGIN-LEFT: 44px; LINE-HEIGHT: 1.5em
+}
+#exploreservices P {
+	MARGIN-LEFT: 28px; LINE-HEIGHT: 1.5em
+}
+#findsupport P {
+	MARGIN-LEFT: 14px; LINE-HEIGHT: 1.5em; MARGIN-RIGHT: 20px
+}
+#shopwireless {
+	BACKGROUND: url(../images/shopWireless.gif) no-repeat left top; WIDTH: 259px; HEIGHT: 255px
+}
+#exploreservices {
+	BACKGROUND: url(../images/exploreServices.gif) no-repeat left top; WIDTH: 256px; HEIGHT: 255px
+}
+#findsupport {
+	BACKGROUND: url(../images/findSupport.gif) no-repeat left top; WIDTH: 253px; HEIGHT: 255px
+}
+
+.headerSubMenuLink
+{
+	color:#053368;
+	font-family:verdana,arial,san-serif;
+	font-size:10px;
+	text-decoration:none;
+}
+
+.whitefootnote a:link, .whitefootnote a:active, .whitefootnote a:hover, .whitefootnote a:visited, .headerTopLink a:link, .headerTopLink a:active, .headerTopLink a:hover, .headerTopLink a:visited
+{
+	color: #ffffff;
+	font-family:verdana,arial,san-serif;
+	font-size: 10px;
+	text-decoration:none;
+}

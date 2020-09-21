@@ -1,0 +1,184 @@
+@font-face {
+	font-family: 'bbvpcircles';
+	src:url('bbvpcircles/bbvpcircles.eot');
+	src:url('bbvpcircles/bbvpcircles.eot?#iefix') format('embedded-opentype'),
+		url('bbvpcircles/bbvpcircles.woff') format('woff'),
+		url('bbvpcircles/bbvpcircles.ttf') format('truetype'),
+		url('bbvpcircles/bbvpcircles.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-circleicon]:before {
+	font-family: 'bbvpcircles';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	font-size: 36px;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="circleicon-"] {
+*/
+.circleicon-spark, .circleicon-reviews, .circleicon-reviews-spark, .circleicon-reports, .circleicon-reports-spark, .circleicon-reports-alt, .circleicon-reports-alt-spark, .circleicon-releases, .circleicon-releases-spark, .circleicon-listings, .circleicon-listings-spark, .circleicon-details, .circleicon-details-spark, .circleicon-checkmark-big, .circleicon-9, .circleicon-9-spark, .circleicon-9p, .circleicon-9p-spark, .circleicon-8, .circleicon-8-spark, .circleicon-7, .circleicon-7-spark, .circleicon-6, .circleicon-6-spark, .circleicon-5, .circleicon-5-spark, .circleicon-4, .circleicon-4-spark, .circleicon-3, .circleicon-3-spark, .circleicon-2, .circleicon-2-spark, .circleicon-1, .circleicon-1-spark {
+	font-family: 'bbvpcircles';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	font-size: 36px;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.circleicon-base {
+	position: relative;	
+}
+
+.circleicon-overlay {
+	position: absolute;
+	color: #ff0000 !important;
+	top: 0;
+	left: 0;
+}
+
+.circleicon-spark:before {
+	content: "\e000";
+}
+.circleicon-reviews:before {
+	content: "\e001";
+}
+.circleicon-reviews-spark:before {
+	content: "\e002";
+}
+.circleicon-reports:before {
+	content: "\e003";
+}
+.circleicon-reports-spark:before {
+	content: "\e004";
+}
+.circleicon-reports-alt:before {
+	content: "\e005";
+}
+.circleicon-reports-alt-spark:before {
+	content: "\e006";
+}
+.circleicon-releases:before {
+	content: "\e007";
+}
+.circleicon-releases-spark:before {
+	content: "\e008";
+}
+.circleicon-listings:before {
+	content: "\e009";
+}
+.circleicon-listings-spark:before {
+	content: "\e00a";
+}
+.circleicon-details:before {
+	content: "\e00b";
+}
+.circleicon-details-spark:before {
+	content: "\e00c";
+}
+.circleicon-checkmark-big:before {
+	content: "\e00d";
+}
+.circleicon-9p:before {
+	content: "\e00e";
+}
+.circleicon-9p-spark:before {
+	content: "\e00f";
+}
+.circleicon-9:before {
+	content: "\e010";
+}
+.circleicon-9-spark:before {
+	content: "\e011";
+}
+.circleicon-8:before {
+	content: "\e012";
+}
+.circleicon-8-spark:before {
+	content: "\e013";
+}
+.circleicon-7:before {
+	content: "\e014";
+}
+.circleicon-7-spark:before {
+	content: "\e015";
+}
+.circleicon-6:before {
+	content: "\e016";
+}
+.circleicon-6-spark:before {
+	content: "\e017";
+}
+.circleicon-5:before {
+	content: "\e018";
+}
+.circleicon-5-spark:before {
+	content: "\e019";
+}
+.circleicon-4:before {
+	content: "\e01a";
+}
+.circleicon-4-spark:before {
+	content: "\e01b";
+}
+.circleicon-3:before {
+	content: "\e01c";
+}
+.circleicon-3-spark:before {
+	content: "\e01d";
+}
+.circleicon-2:before {
+	content: "\e01e";
+}
+.circleicon-2-spark:before {
+	content: "\e01f";
+}
+.circleicon-1:before {
+	content: "\e020";
+}
+.circleicon-1-spark:before {
+	content: "\e021";
+}
+
+/*******Placeholder icons for product dashboard*******/
+.state-bfb, .state-bfb-denied, .state-bfb-review,
+.app-state-pendingreview, .app-state-approved, .app-state-denied, .app-state-upforsale, .app-state-killed, .app-state-draft, .app-state-pendingdraft,
+.release-state-draft, .release-state-approved, .release-state-denied, .release-state-underreview, .release-state-suspended, .release-state-pendingdraft
+{width:35px; height:35px;display:inline-block;background-position:center center;background-repeat:no-repeat;}
+
+.state-bfb, .state-bfb-denied, .state-bfb-review {margin-left:8px;}
+
+/* Built for BlackBerry icons */
+.state-bfb {background-image:url(../img/vp/state-bfb.png);}
+.state-bfb-denied {background-image:url(../img/vp/state-bfb-denied.png);}
+.state-bfb-review {background-image:url(../img/vp/state-bfb-review.png);}
+
+/* App status icons */
+.app-state-pendingreview {background-image:url(../img/vp/state-details-review.png);}
+.app-state-approved {background-image:url(../img/vp/state-details-upforsale.png);}
+.app-state-denied {background-image:url(../img/vp/state-details-denied.png);}
+.app-state-upforsale {background-image:url(../img/vp/state-details-upforsale.png);}
+.app-state-draft {background-image:url(../img/vp/state-details-draft.png);}
+
+/* Release status icons */
+.release-state-draft {background-image:url(../img/vp/state-release-draft.png);}
+.release-state-approved {background-image:url(../img/vp/state-release-upforsale.png);}
+.release-state-denied {background-image:url(../img/vp/state-release-actionrequired.png);}
+.release-state-underreview {background-image:url(../img/vp/state-release-review.png);}
+.release-state-suspended {background-image:url(../img/vp/state-release-actionrequired.png);}
+
+

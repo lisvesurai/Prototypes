@@ -1,0 +1,49 @@
+img {behavior: url("ui/css/iepngfix.htc");}
+
+#device #login .login_btn {behavior: url("ui/css/iepngfix.htc");}
+
+div.banner_mask {behavior: url("ui/css/iepngfix.htc");}
+
+#cm_search_bg {behavior: url("ui/css/iepngfix.htc");}
+
+div.content #home_left_bg {behavior: url("ui/css/iepngfix.htc");}
+div.content #home_right_bg {behavior: url("ui/css/iepngfix.htc");}
+div.content h2 {behavior: url("ui/css/iepngfix.htc");}
+div.content div.list ul li p.bg {behavior: url("ui/css/iepngfix.htc");}
+div.content div.list ul li p.thmask {behavior: url("ui/css/iepngfix.htc");}
+div.content div.list ul li p.th a {behavior: url("ui/css/iepngfix.htc");}
+
+div.content #top_music_bg {behavior: url("ui/css/iepngfix.htc");}
+div.content #top_games_bg {behavior: url("ui/css/iepngfix.htc");}
+div.content #top_wp_bg {behavior: url("ui/css/iepngfix.htc");}
+div.content #top_apps_bg {behavior: url("ui/css/iepngfix.htc");}
+div.content #survey_bg {behavior: url("ui/css/iepngfix.htc");}
+
+p.content_type_music,
+p.content_type_games,
+p.content_type_apps,
+p.content_type_wp,
+p.content_type_videos {behavior: url("ui/css/iepngfix.htc");}
+
+#content_games #top_bg {behavior: url("ui/css/iepngfix.htc");}
+#content_apps #top_bg {behavior: url("ui/css/iepngfix.htc");}
+#content_wp #top_bg {behavior: url("ui/css/iepngfix.htc");}
+#content_music #top_bg {behavior: url("ui/css/iepngfix.htc");}
+#content_videos #top_bg {behavior: url("ui/css/iepngfix.htc");}
+
+div.details #details_left_bg {behavior: url("ui/css/iepngfix.htc");}
+div.details #details_right_bg {behavior: url("ui/css/iepngfix.htc");}
+
+#content_tks #tks_left_bg {behavior: url("ui/css/iepngfix.htc");}
+#content_tks #tks_right_bg {behavior: url("ui/css/iepngfix.htc");}
+
+#phone_selection_left_bg {behavior: url("ui/css/iepngfix.htc");}
+
+#common_right_bg,
+#common_header {behavior: url("ui/css/iepngfix.htc");}
+#common_body {background:url(../images/bg_content_body.gif) bottom left no-repeat;}
+
+#survey_bg {behavior: url("ui/css/iepngfix.htc");}
+#footer {behavior: url("ui/css/iepngfix.htc");}
+
+div.details #previewvideo a.play {behavior: url("ui/css/iepngfix.htc");}

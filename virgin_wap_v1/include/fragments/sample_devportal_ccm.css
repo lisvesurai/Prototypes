@@ -1,0 +1,103 @@
+/*** styles from admin portal ***/
+div.styleName1 {
+	white-space:nowrap; /* This is for "Text Wrap", Scroll="white-space:nowrap", Wrap="white-space:normal". The scrolling only works on the phone. */
+	font-size:small;
+	font-weight:bold;
+	font-style:normal;
+	text-decoration:none;
+	text-align:left;
+	background:#00a5e3;
+	color:#ffffff;
+	border:0; /* border:0 is used as default value to reset everything to 0 before applying other borders. */
+	border-top:2px solid #ffffff; /*solid is default to all borders, you will only fetch the border color and size*/
+	border-left:2px solid #ffffff;
+	border-right:2px solid #ffffff;
+	border-bottom:2px solid #ffffff;
+}
+a.styleName1 {color:#ffffff;text-decoration:none;}
+
+div.styleName2 {
+	white-space:nowrap; /* This is for "Text Wrap", Scroll="white-space:nowrap", Wrap="white-space:normal". The scrolling only works on the phone. */
+	font-size:small;
+	font-weight:bold;
+	font-style:normal;
+	text-decoration:none;
+	text-align:left;
+	background:#ffffff;
+	color:#333333;
+	border:0; /* border:0 is used as default value to reset everything to 0 before applying other borders. */
+	border-top:0px solid #ffffff; /*solid is default to all borders, you will only fetch the border color and size*/
+	border-left:0px solid #ffffff;
+	border-right:0px solid #ffffff;
+	border-bottom:0px solid #ffffff;
+}
+a.styleName2 {color:#333333;text-decoration:none;}
+
+div.styleName3 {
+	white-space:nowrap; /* This is for "Text Wrap", Scroll="white-space:nowrap", Wrap="white-space:normal". The scrolling only works on the phone. */
+	font-size:small;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:underline;
+	text-align:center;
+	background:#ffffff;
+	color:#000000;
+	border:0; /* border:0 is used as default value to reset everything to 0 before applying other borders. */
+	border-top:0px solid #ffffff; /*solid is default to all borders, you will only fetch the border color and size*/
+	border-left:0px solid #ffffff;
+	border-right:0px solid #ffffff;
+	border-bottom:0px solid #ffffff;
+}
+a.styleName3 {color:#000000;text-decoration:underline;}
+
+div.styleName4 {
+	white-space:nowrap; /* This is for "Text Wrap", Scroll="white-space:nowrap", Wrap="white-space:normal". The scrolling only works on the phone. */
+	font-size:small;
+	font-weight:bold;
+	font-style:normal;
+	text-decoration:none;
+	text-align:left;
+	background:#00a5e3;
+	color:#ffffff;
+	border:0; /* border:0 is used as default value to reset everything to 0 before applying other borders. */
+	border-top:3px solid #001541; /*solid is default to all borders, you will only fetch the border color and size*/
+	border-left:2px solid #001541;
+	border-right:2px solid #001541;
+	border-bottom:2px solid #001541;
+}
+a.styleName4 {color:#ffffff;text-decoration:none;}
+
+div.styleName5 {
+	white-space:nowrap; /* This is for "Text Wrap", Scroll="white-space:nowrap", Wrap="white-space:normal". The scrolling only works on the phone. */
+	font-size:small;
+	font-weight:bold;
+	font-style:normal;
+	text-decoration:none;
+	text-align:left;
+	background:#001541;
+	color:#ffffff;
+	border:0; /* border:0 is used as default value to reset everything to 0 before applying other borders. */
+	border-top:0px solid #ffffff; /*solid is default to all borders, you will only fetch the border color and size*/
+	border-left:0px solid #ffffff;
+	border-right:0px solid #ffffff;
+	border-bottom:1px solid #00a5e3;
+}
+a.styleName5 {color:#ffffff;text-decoration:none;}
+
+
+div.styleName6 {
+	white-space:nowrap; /* This is for "Text Wrap", Scroll="white-space:nowrap", Wrap="white-space:normal". The scrolling only works on the phone. */
+	font-size:small;
+	font-weight:bold;
+	font-style:normal;
+	text-decoration:underline;
+	text-align:left;
+	background:#e8e8e8;
+	color:#000000;
+	border:0; /* border:0 is used as default value to reset everything to 0 before applying other borders. */
+	border-top:0px solid #ffffff; /*solid is default to all borders, you will only fetch the border color and size*/
+	border-left:0px solid #ffffff;
+	border-right:0px solid #ffffff;
+	border-bottom:0px solid #ffffff;
+}
+a.styleName6 {color:#000000;text-decoration:underline;}

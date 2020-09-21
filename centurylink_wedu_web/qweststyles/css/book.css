@@ -1,0 +1,56 @@
+.bea-portal-book-primary{margin:0;padding:0 0 0 0;width:765px}
+.bea-portal-book-primary-content{padding:0;vertical-align:top}
+.bea-portal-book-primary-page{background-image:url("../../images/custom/bg_middle.gif");background-repeat:repeat-y;background-position:center top;margin:0 0 0 0;padding:0 0 0 0;clear:both}
+.bea-portal-book{margin:5px 0 5px 5px}
+.bea-portal-book-content{}
+.bea-portal-book-page{font-size:10px}
+.bea-portal-book-primary-menu{display:none}
+.bea-portal-book-primary-menu-root{font-size:small;background-color:#d6e1ee;margin:0;padding:2px 0;border-style:solid;border-width:1px 0;border-color:#f0f0ff  #304aa7}
+.bea-portal-book-primary-menu-root-item a, .bea-portal-book-primary-menu-root-item-active a{color:#000000;padding:2px 6px}
+.bea-portal-book-primary-menu-root a{}
+.bea-portal-book-primary-menu-root a:hover{color:#ffffff;font-size:11px;font-family:Arial;background-color:#395db4}
+.bea-portal-book-primary-menu-root ul{list-style:none;display:inline;margin:0;padding:0}
+.bea-portal-book-primary-menu-root li{list-style:none;display:inline;margin:0;padding:0}
+.bea-portal-book-primary-menu-root-item{}
+.bea-portal-book-primary-menu-root-item-active a{color:#ffffff;background-color:#7f7fb2;border-style:solid;border-width:0 1px 1px;border-color:#cccce5 #cccce5 #7f7fb2}
+.bea-portal-book-primary-menu-nested{font-size:x-small;border-width:1px;border-color:#395db4}
+.bea-portal-book-primary-menu-nested-item a, .bea-portal-book-primary-menu-nested-item-sub a, .bea-portal-book-primary-menu-nested-item-active a{display:block;padding:1px 4px;width:150px;border-style:solid;border-width:1px 0;border-color:#f0f0ff}
+.bea-portal-book-primary-menu-nested-item a:hover, .bea-portal-book-primary-menu-nested-item-sub a, .bea-portal-book-primary-menu-nested-item-active a:hover{color:#000033;background-color:#d6e1ee;border-color:#cccce5}
+.bea-portal-book-primary-menu-nested-item a{color:#000066;background-color:#ffffff}
+.bea-portal-book-primary-menu-nested-item-sub a{color:#000033;background-color:#e5ffe5}
+.bea-portal-book-primary-menu-nested-item-active a{color:#000033;background-color:#d6e1ee}
+.bea-portal-book-menu{display:none}
+.bea-portal-book-menu-root{font-size:x-small;background-color:#cedab5;margin:0;padding:2px 0;border-style:solid;border-width:0 0 1px;border-color:#cccce5 #cccce5 #a9be7d}
+.bea-portal-book-menu-root-item a, .bea-portal-book-menu-root-item-active a{color:#000000;padding:2px 4px;border-style:solid;border-width:0 0 1px;border-color:#cccccc}
+.bea-portal-book-menu-root a{}
+.bea-portal-book-menu-root a:hover{color:#ffffff;background-color:#395db4}
+.bea-portal-book-menu-root ul{list-style:none;display:inline;margin:0;padding:0}
+.bea-portal-book-menu-root li{list-style:none;display:inline;margin:0;padding:0}
+.bea-portal-book-menu-root-item{}
+.bea-portal-book-menu-root-item-active a{font-weight:bold;background-color:#ffffff;border-style:solid;border-width:0 1px 1px;border-color:#cccccc #cccccc #ffffff}
+.bea-portal-book-menu-nested{font-size:x-small;border:dotted 1px #cedab5}
+.bea-portal-book-menu-nested-item a, .bea-portal-book-menu-nested-item-sub a, .bea-portal-book-menu-nested-item-active a{display:block;padding:1px 4px;width:150px;border-style:solid;border-width:1px 0;border-color:#f0f0ff}
+.bea-portal-book-menu-nested-item a:hover, .bea-portal-book-menu-nested-item-sub a, .bea-portal-book-menu-nested-item-active a:hover{color:#000033;background-color:#e5e5ff;border-color:#cccce5}
+.bea-portal-book-menu-nested-item a{color:#000066;background-color:#ffffff}
+.bea-portal-book-menu-nested-item-sub a{color:#000033;background-color:#e5ffe5}
+.bea-portal-book-menu-nested-item-active a{color:#000033;background-color:#d6e1ee}
+.bea-portal-book-primary-menu-single-container{color:#333;font-size:10px;font-family:Arial,helvetica,Arial,sans-serif;white-space:nowrap;margin:0;padding:0;width:100%;border-bottom:8px solid #a9be7d}
+.bea-portal-book-primary-menu-single{color:#333;margin:0;padding:2px 0;border-style:solid none;border-width:5px 0 1px;border-color:#fff #cedab5}
+.bea-portal-book-primary-menu-single a, .bea-portal-book-primary-menu-single span{color:#333;font-weight:bold;padding:2px 6px;border-color:#cedab5}
+.bea-portal-book-primary-menu-single a{color:#333;font-weight:bold;background-color:#cedab5;border-top:5px solid #fff;border-right:1px solid #fff;border-bottom:1px solid #cedab5}
+.bea-portal-book-primary-menu-single a:hover{color:#333;font-weight:bold;background-color:#a9be7d;border-style:solid;border-width:5px 1px 1px;border-color:#a9be7d #cedab5}
+.bea-portal-book-primary-menu-single span{color:#333;font-weight:bold;background-color:#a9be7d;border-style:solid;border-width:5px 1px 1px;border-color:#a9be7d}
+.bea-portal-book-primary-menu-single ul{color:#333;list-style:none;display:inline;margin:0;padding:0;border-color:#cedab5}
+.bea-portal-book-primary-menu-single li{color:#333;list-style:none;display:inline;margin:0;padding:0;border-color:#cedab5}
+.bea-portal-book-primary-menu-single-item{color:#333;border-color:#cedab5}
+.bea-portal-book-primary-menu-single-item-active{color:#333;font-weight:bold;background-color:#a9be7d;border-style:solid none none;border-width:5px medium medium;border-color:#a9be7d #cedab5 #cedab5}
+.bea-portal-book-menu-single-container{white-space:nowrap;margin:0;padding:0;width:100%;border-width:0}
+.bea-portal-book-menu-single{font-size:x-small;background-color:#d6e1ee;margin:0;padding:2px 0;border-style:solid;border-width:0 0 1px;border-color:#a4a4bf #a4a4bf #b0cfee}
+.bea-portal-book-menu-single a, .bea-portal-book-menu-single span{color:#000000;padding:2px 4px}
+.bea-portal-book-menu-single a:hover{color:#000;background-color:#dce0ed}
+.bea-portal-book-menu-single span{background-color:#ffffff;border-style:solid;border-width:0 1px 1px;border-color:#cccccc #cccccc #ffffff}
+.bea-portal-book-menu-single ul{list-style:none;display:inline;margin:0;padding:0}
+.bea-portal-book-menu-single li{list-style:none;display:inline;margin:0;padding:0}
+.bea-portal-book-menu-single-item{}
+.bea-portal-book-menu-single-item-active{font-weight:bold}
+.bea-portal-book-primary, .bea-portal-book-primary-content, .bea-portal-book-primary-page{width:100%}

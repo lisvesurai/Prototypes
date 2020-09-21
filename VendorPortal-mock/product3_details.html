@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js macosx" lang="en">
+<!--<![endif]-->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta charset="utf-8">
+<meta name="author" content="Research In Motion">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link href="favicon.ico" rel="SHORTCUT ICON" />
+<title>BlackBerry Vendor Portal</title>
+
+<!--[if lt IE 9]>
+    <script src="webroot/js/common/html5.js"></script>
+    <style type="text/css">
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+    </style>
+<![endif]-->
+
+<link type="text/css" rel="stylesheet" href="webroot/css/common/normalize.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.fonts.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/foundation.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/foundation.override.css" />
+<!--[if lt IE 9]>
+		<link type="text/css" rel="stylesheet" href="webroot/css/common/foundation.ie8.css">
+	<![endif]-->
+<link type="text/css" rel="stylesheet" href="webroot/css/common/foundicon.general.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.base.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.layout.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.navigation.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.components.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/ext.tiptip.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.site.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.portals.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.documentations.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.downloads.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.references.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.sampleapps.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.screenshot.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.vp.components.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.vp.fonts.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.vp.product.details.css" />
+<script src="webroot/js/common/modernizr.custom.88393.js"></script>
+<script type="text/javascript" src="webroot/js/common/bb.global.js"></script>
+<link rel="stylesheet" href="webroot/css/font-awesome/css/font-awesome.min.css" />
+<!--[if IE 7]>
+	  <link rel="stylesheet" href="webroot/css/font-awesome/css/font-awesome-ie7.min.css">
+	<![endif]-->
+<link rel="stylesheet" href="webroot/css/common/jquery-ui-1.8.22.custom.css" />
+<script src="webroot/js/common/jquery-1.10.2.min.js"></script>
+<script src="webroot/js/common/jquery-ui-1.10.3.min.js"></script>
+<link rel="stylesheet" href="webroot/js/select2/select2.css" />
+<script src="webroot/js/select2/select2.min.js"></script>
+</head>
+<body class="portals vendorportal">
+  <div id="myModal" class="reveal-modal"></div>
+  <div id="myModalSmall" class="reveal-modal small"></div>
+  <div id="myModalMedium" class="reveal-modal medium"></div>
+  <div id="myModalLarge" class="reveal-modal large"></div>
+  <div id="myModalXlarge" class="reveal-modal xlarge"></div>
+  <div id="myModalExpand" class="reveal-modal expand"></div>
+  <div class="fixed">
+  <div>
+    <nav class="top-bar user-bar hide-for-small">
+      <ul class="title-area">
+        <li class="name"> <a href="http://developer.blackberry.com/" class="logo"> <img src="webroot/img/common/blackberry_logo.png" alt="BlackBerry"> Developer </a> </li>
+        <li class="toggle-topbar"><a href="#"><span>Useful links</span></a></li>
+      </ul>
+      <section class="top-bar-section">
+        <ul class="left">
+          <li class="divider hide-for-small"> </li>
+          <li><a href="http://devblog.blackberry.com" target="_blank">Blog</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li><a href="http://www.youtube.com/blackberrydev/" target="_blank">YouTube</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li><a href="http://supportforums.blackberry.com/t5/Developer-Support-Forums/ct-p/blackberrydev" target="_blank">Forum</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li><a href="https://www.blackberry.com/SignedKeys/codesigning.html" target="_blank">Signing</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li class="last"><a href="https://www.blackberry.com/jira/secure/Dashboard.jspa" target="_blank">Feedback</a></li>
+          <li class="divider hide-for-small"> </li>
+        </ul>
+        <ul class="right">
+          <li class="divider hide-for-small login-in-bar"> </li>
+          <li><a href="login.html" class="icon_login login-in-bar">Logout</a></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+</div>
+  <header class="nav-header">
+    <div class="topbar">
+      <nav>
+        <div class="nav-text">
+          <a href="index.html"> <span class="h1">Vendor Portal for BlackBerry World</span> </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div id="browser-msg" class="row hide">
+    <div class="large-12 columns">
+      <div class="notice warning">
+        <p>Sorry about the red box, but we really need you to update your browser. Read <a href="http://www.smashingmagazine.com/2012/07/10/dear-web-user-please-upgrade-your-browser/">this excellent article</a> if you're wondering why we are no longer supporting this browser version. Go to <a href="http://browsehappy.com/">Browse Happy</a> for browser suggestions and how to update.</p>
+      </div>
+    </div>
+  </div>
+  <div id="main" class="main" role="main">
+    <div class="row">
+      <nav role="navigation" class="large-3 columns side-nav-vp sticky">
+        <ul class="v-card">
+          <li class="app-name">Angry Birds Space</li>
+        </ul>
+        <div class="button-bar">
+          <button type="button"> <span><i class="icon-save blue"></i> Save</span> </button>
+          <button  data-dropdown="page_actions"> <span><i class="icon-reorder blue"></i> Actions</span> </button>
+          <br>
+          <ul id="page_actions" class="action-dropdown" data-dropdown-content="">
+            <li> <a href="#">Publish</i></a> </li>
+            <li> <a href="#">Something else</a> </li>
+          </ul>
+        </div>
+        <div class="link-block">
+          <ul class="links">
+            <li><a href="product3_details.html" class="selected">Details <i data-tooltip title="Ready to publish" class="right icon-ok-sign"></i></a></li>
+            <li><a href="product3_listings.html">Listings <i data-tooltip title="Ready to publish" class="right icon-ok-sign"></i></a></li>
+            <li><a href="product3_releases.html">Releases <i data-tooltip title="There are still things that needs your attention: <ul><li>Some things</li><li>That needs</li><li>That users</li><li>Attention</li></ul>" class="right icon-circle-blank"></i></a></li>
+            <li><a href="product3_inappprod.html">In-App Products</a></li>
+            <li><a href="product3_reviews.html">Reviews</a></li>
+            <li><a href="product3_stats.html">Stats</a></li>
+          </ul>
+          <ul id="top-level-links" class="top-level-links backnav-content links">
+            <li><a href="index.html">Products</a></li>
+            <li><a href="promotions.html">Promotions</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="changerequests.html">Change Requests</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="testing.html">Testers</a></li>
+            <li><a href="settings.html">Settings</a></li>
+          </ul>
+          <div class="backnav">
+            <a href="#" data-backnav-id="top-level-links"><i class="icon-chevron-left"></i></a>
+          </div>
+        </div>
+      </nav>
+      <div class="large-9 columns">
+        <div id="mainContentBody">
+          <form accept-charset="UTF-8" action="#" class="custom" id="basic_form" method="get" name="product3_form">
+            <h1>Details</h1>
+
+
+            <div class="row">
+              <div class="small-12 columns">
+
+                <fieldset>                
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <h3>Name <span class="help" data-tooltip title="This is the default name for your product"><i class="icon-info-sign"></i></span></h3>
+                      <input type="text" name="app_name" id="app_name" placeholder="Type your awesome app name here" value="Angry Birds Space" />
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="step-ok"> 1 </div>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset>                
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <h3>Category <span class="help" data-tooltip title="Help text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis ante non orci eleifend consectetur ut et sapien."><i class="icon-info-sign"></i></span></h3>
+                      <p class="description">Choose the category in which your application will appear.</p>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="step-ok">
+                        2
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <select name="Category" id="Category" style="width:100%" class="error">
+                        <option></option>
+                        <optgroup label="Applications">
+                          <option value="73">Accounting</option>
+                          <option value="90">Baseball</option>
+                          <option value="52">Blogs</option>
+                          <option value="74">Business Tools</option>
+                          <option value="63">Calculators</option>
+                          <option value="23">Clocks</option>
+                          <option value="75">Data Collection</option>
+                          <option value="55">Dictionaries</option>
+                          <option value="76">Document Tools</option>
+                          <option value="39">eBooks</option>
+                          <option value="115">Education </option>
+                          <option value="69">Expense Tracking</option>
+                          <option value="64">Financial Services</option>
+                          <option value="93">Fitness</option>
+                          <option value="35">Food &amp; Drink</option>
+                          <option value="89">Football &amp; Soccer</option>
+                          <option value="34">Gadgets</option>
+                          <option value="88">Golf</option>
+                          <option value="80">Guides</option>
+                          <option value="92">Health &amp; Diet</option>
+                          <option value="62">Healthcare Services</option>
+                          <option value="81">Instant Messaging</option>
+                          <option value="77">Law</option>
+                          <option value="49">Local Search</option>
+                          <option value="48">Magazines</option>
+                          <option value="84">Maps &amp; Navigation</option>
+                          <option value="78">Medical Guides</option>
+                          <option value="86">Medical</option>
+                          <option value="59">MP3 &amp; Media Players</option>
+                          <option value="60">Music Services</option>
+                          <option value="43">News &amp; Information</option>
+                          <option value="53">News &amp; Scores</option>
+                          <option value="101">Online Shopping</option>
+                          <option value="66">Organization</option>
+                          <option value="58">Other Sports</option>
+                          <option value="91">Outdoor Recreation</option>
+                          <option value="71">Personal Banking</option>
+                          <option value="33">Personalize</option>
+                          <option value="44">Phone Services</option>
+                          <option value="42">Photography</option>
+                          <option value="82">Planning</option>
+                          <option value="67">Productivity</option>
+                          <option value="100">Real Estate</option>
+                          <option value="38">References</option>
+                          <option value="68">Religion</option>
+                          <option value="36">Restaurant Guides</option>
+                          <option value="117">Rugby</option>
+                          <option value="79">Sales &amp; Service</option>
+                          <option value="83">Search</option>
+                          <option value="47">Sharing</option>
+                          <option value="46">Shopping Tools</option>
+                          <option value="57">Social Networking</option>
+                          <option value="70">Stocks &amp; Investment</option>
+                          <option value="102">Test Center</option>
+                          <option value="87">Textbooks</option>
+                          <option value="50">Tickets &amp; Events</option>
+                          <option value="72">Time Tracking</option>
+                          <option value="54">Translation</option>
+                          <option value="56">Utilities</option>
+                          <option value="41">Video &amp; TV</option>
+                          <option value="27">Voice Dictation</option>
+                          <option value="85">Weather</option>
+                          <option value="118">* Thank You Gift *</option>
+                        </optgroup>
+                        <optgroup label="Games">
+                          <option value="113">Action</option>
+                          <option value="114">Arcade</option>
+                          <option value="21">Board Games</option>
+                          <option value="18">Cards</option>
+                          <option value="94">Combat</option>
+                          <option value="95">Movie &amp; TV Themes</option>
+                          <option value="99" selected>Puzzles</option>
+                          <option value="96">Space</option>
+                          <option value="20">Sports</option>
+                          <option value="97">Strategy</option>
+                        </optgroup>
+                      </select>
+                      <script>
+						$(document).ready(function() {
+						  $("#Category").select2({
+							  placeholder: "Select a category",
+							  allowClear: true						  
+						  });
+						});
+					  </script>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        <i data-tooltip title="This is a massive error with a lot of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <ul><li>There can be some html in here as well</li><li>Cool, isn't it?</li></ul>" class="icon-exclamation-sign"></i>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="small-12 columns">
+                <fieldset>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <h3>Content Rating <span class="help" data-tooltip title="Help text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis ante non orci eleifend consectetur ut et sapien."><i class="icon-info-sign"></i></span></h3>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="step-ok">
+                        3
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <span id="ratedG" class="">
+                        <img data-reveal-id="myModal" data-reveal-ajax="modalContentRatingG.html" alt="Rated G - Click to Edit" src="webroot/img/vp/ratedG.png" class="">
+                        <button type="button" class="white" data-reveal-id="myModal" data-reveal-ajax="modalContentRatingG.html"> <span><i class="icon-pencil grey"></i> Edit</span> </button>
+                      </span>
+                      
+                      <span id="ratedT" class="hide">
+                        <img data-reveal-id="myModal" data-reveal-ajax="modalContentRatingT.html" alt="Rated T - Click to Edit" src="webroot/img/vp/ratedT.png" class="">
+                        <button type="button" class="white" data-reveal-id="myModal" data-reveal-ajax="modalContentRatingT.html"> <span><i class="icon-pencil grey"></i> Edit</span> </button>
+                      </span>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        <i data-tooltip title="This is a massive error with a lot of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <ul><li>There can be some html in here as well</li><li>Cool, isn't it?</li></ul>" class="icon-exclamation-sign"></i>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="small-12 columns">
+                <fieldset>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <h3>License Type <span class="help" data-tooltip title="Help text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis ante non orci eleifend consectetur ut et sapien."><i class="icon-info-sign"></i></span></h3>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="step-ok">
+                        4
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <select id="selectLicenseType" name="selectLicenseType" onchange="changeLicenseType();">
+                        <option value="1" selected>Free</option>
+                        <option value="2">Paid</option>
+                        <option value="5">7-Day Subscription</option>
+                        <option value="6">30-Day Subscription</option>
+                      </select>
+                      <script>
+                          function changeLicenseType(){
+                              //alert($('#selectLicenseType').val());
+							$('#contentPrice').addClass('hide');
+							$('#contentSubscriptions').addClass('hide');
+                              $('#contentTaxWitholdings').addClass('hide');
+                              $('#contentLicenseModel').addClass('hide');
+							if($('#selectLicenseType').val()!='1'){
+							  $('#contentPrice').removeClass('hide');
+                                  $('#content'+$('#selectLicenseType').val()).removeClass('hide');
+                                  $('#contentTaxWitholdings').removeClass('hide');
+                                  $('#contentLicenseModel').removeClass('hide');
+                              }
+							if(($('#selectLicenseType').val()=='5')||($('#selectLicenseType').val()=='6')){
+							  $('#contentSubscriptions').removeClass('hide');
+							  document.getElementById('labelPrice').innerHTML="Initial Price";
+							  $.ajax({
+								url: "ajax_content/contentInitialRenewalPeriod"+$('#selectLicenseType').val()+".html",
+								cache: false
+							  }).done(function( html ) {
+								$("#_contentInitialRenewalPeriod").html(html);
+								$("#_contentInitialRenewalPeriod").select2();
+							  });
+							}
+                          }
+                      </script>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="contentPrice" class="hide">
+                    <div class="row"><div class="small-11 columns"><label id="labelPrice">Price</label></div></div>
+                    <div class="row">
+                      <div class="small-11 columns">                     
+                        <select onchange="$('#contentViewPrice').addClass('hide');if(this.value!='')$('#contentViewPrice').removeClass('hide');" class="error">
+                          <option value="">Please choose a price</option>
+                          <option value="41">$0.99</option>
+                          <option value="42">$1.99</option>
+                          <option value="2">$2.99</option>
+                          <option value="3">$3.99</option>
+                          <option value="4">$4.99</option>
+                          <option value="5">$5.99</option>
+                          <option value="6">$6.99</option>
+                          <option value="7">$7.99</option>
+                          <option value="8">$8.99</option>
+                          <option value="9">$9.99</option>
+                          <option value="10">$10.99</option>
+                          <option value="11">$11.99</option>
+                          <option value="12">$12.99</option>
+                          <option value="13">$13.99</option>
+                          <option value="14">$14.99</option>
+                          <option value="15">$15.99</option>
+                          <option value="16">$16.99</option>
+                          <option value="17">$17.99</option>
+                          <option value="18">$18.99</option>
+                          <option value="19">$19.99</option>
+                          <option value="20">$29.99</option>
+                          <option value="21">$39.99</option>
+                          <option value="22">$49.99</option>
+                          <option value="23">$59.99</option>
+                          <option value="24">$69.99</option>
+                          <option value="25">$79.99</option>
+                          <option value="26">$89.99</option>
+                          <option value="27">$99.99</option>
+                          <option value="28">$149.99</option>
+                          <option value="29">$199.99</option>
+                          <option value="30">$249.99</option>
+                          <option value="31">$299.99</option>
+                          <option value="32">$349.99</option>
+                          <option value="33">$399.99</option>
+                          <option value="34">$449.99</option>
+                          <option value="35">$499.99</option>
+                          <option value="36">$599.99</option>
+                        </select>
+                        <a href="#" id="contentViewPrice" class="viewprice hide"><i class="icon-search"></i> View Price in Different Currencies</a>
+                      </div>
+                      <div class="small-1 columns">
+                        <div class="error-info">
+                          <i data-tooltip title="This is a massive error with a lot of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <ul><li>There can be some html in here as well</li><li>Cool, isn't it?</li></ul>" class="icon-exclamation-sign"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="contentSubscriptions" class="hide">
+                    <div class="row"><div class="small-11 columns"><label>Renewal Price</label></div></div>
+                    <div class="row">
+                      <div class="small-11 columns">                     
+                        <select onchange="$('#contentViewPrice3').addClass('hide');if(this.value!='')$('#contentViewPrice3').removeClass('hide');" class="error">
+                          <option value="">Please choose a price</option>
+                          <option value="41">$0.99</option>
+                          <option value="42">$1.99</option>
+                          <option value="2">$2.99</option>
+                          <option value="3">$3.99</option>
+                          <option value="4">$4.99</option>
+                          <option value="5">$5.99</option>
+                          <option value="6">$6.99</option>
+                          <option value="7">$7.99</option>
+                          <option value="8">$8.99</option>
+                          <option value="9">$9.99</option>
+                          <option value="10">$10.99</option>
+                          <option value="11">$11.99</option>
+                          <option value="12">$12.99</option>
+                          <option value="13">$13.99</option>
+                          <option value="14">$14.99</option>
+                          <option value="15">$15.99</option>
+                          <option value="16">$16.99</option>
+                          <option value="17">$17.99</option>
+                          <option value="18">$18.99</option>
+                          <option value="19">$19.99</option>
+                          <option value="20">$29.99</option>
+                          <option value="21">$39.99</option>
+                          <option value="22">$49.99</option>
+                          <option value="23">$59.99</option>
+                          <option value="24">$69.99</option>
+                          <option value="25">$79.99</option>
+                          <option value="26">$89.99</option>
+                          <option value="27">$99.99</option>
+                          <option value="28">$149.99</option>
+                          <option value="29">$199.99</option>
+                          <option value="30">$249.99</option>
+                          <option value="31">$299.99</option>
+                          <option value="32">$349.99</option>
+                          <option value="33">$399.99</option>
+                          <option value="34">$449.99</option>
+                          <option value="35">$499.99</option>
+                          <option value="36">$599.99</option>
+                        </select>
+                        <a href="#" id="contentViewPrice3" class="viewprice hide"><i class="icon-search"></i> View Price in Different Currencies</a>
+                      </div>
+                      <div class="small-1 columns">
+                        <div class="error-info">
+                          <i data-tooltip title="This is a massive error with a lot of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <ul><li>There can be some html in here as well</li><li>Cool, isn't it?</li></ul>" class="icon-exclamation-sign"></i>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="row"><div class="small-11 columns"><label>Initial Trial Period (in days)</label></div></div>
+                    <div class="row">
+                      <div class="small-11 columns">                     
+                        <select name="content.license.initialRenewalPeriod" id="_contentInitialRenewalPeriod">
+                        </select>
+                      </div>
+                      <div class="small-1 columns">
+                        <div class="error-info">
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="contentTaxWitholdings" class="hide">
+                    <div class="row"><div class="small-11 columns"><label>US Withholding Tax Classification <span class="optional">(optional)</span></label></div></div>
+                    <div class="row">
+                      <div class="small-11 columns">                     
+                        <select class="error">
+                          <option value="">Please select a tax classification</option>
+                          <option value="1">One-time</option>
+                          <option value="3">Rental</option>
+                          <option value="2">Service</option>
+                        </select>
+                      </div>
+                      <div class="small-1 columns">
+                        <div class="error-info">
+                          <i data-tooltip title="This is a massive error with a lot of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <ul><li>There can be some html in here as well</li><li>Cool, isn't it?</li></ul>" class="icon-exclamation-sign"></i>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row"><div class="small-11 columns"><label>Canada Withholding Tax Classification <span class="optional">(optional)</span></label></div></div>
+                    <div class="row">
+                      <div class="small-11 columns">                     
+                        <select class="error">
+                          <option value="">Please select a tax classification</option>
+                          <option value="4">One-time</option>
+                          <option value="5">Royalty</option>
+                        </select>
+                      </div>
+                      <div class="small-1 columns">
+                        <div class="error-info">
+                          <i data-tooltip title="This is a massive error with a lot of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <ul><li>There can be some html in here as well</li><li>Cool, isn't it?</li></ul>" class="icon-exclamation-sign"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="contentLicenseModel" class="hide">
+                    <div class="row"><div class="small-11 columns"><label>License Model for BlackBerry OS and PlayBook <span class="optional">(optional)</span></label></div></div>
+                    <div class="row">
+                      <div class="small-11 columns">                     
+                        <select id="selectLicenseModel" onChange="changeLicenseModel()" class="error">
+                          <option value="Static">Static</option>
+                          <option value="Single">Single</option>
+                          <option value="Dynamic">Dynamic</option>
+                          <option value="Pool">Pool</option>
+                        </select>
+                        <script>
+                          function changeLicenseModel(){
+                              //alert($('#selectLicenseType').val());
+                              $('#contentLicenseSingle').addClass('hide');
+                              $('#contentLicenseDynamic').addClass('hide');
+                              $('#contentLicensePool').addClass('hide');
+                              if($('#selectLicenseType').val()!='Free'){
+                                  $('#contentLicense'+$('#selectLicenseModel').val()).removeClass('hide');
+                              }
+                          }
+                        </script>
+                      </div>
+                      <div class="small-1 columns">
+                        <div class="error-info">
+                          <i data-tooltip title="This is a massive error with a lot of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <ul><li>There can be some html in here as well</li><li>Cool, isn't it?</li></ul>" class="icon-exclamation-sign"></i>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="contentLicenseSingle" class="hide">
+                      <div class="row"><div class="small-11 columns"><label>License Key</label></div></div>
+                      <div class="row">
+                        <div class="small-11 columns">                     
+                          <input name="LicenseKey" type="text" class="error">
+                        </div>
+                        <div class="small-1 columns">
+                          <div class="error-info">
+                            <i data-tooltip title="This is a massive error with a lot of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <ul><li>There can be some html in here as well</li><li>Cool, isn't it?</li></ul>" class="icon-exclamation-sign"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div id="contentLicenseDynamic" class="hide">
+                      <div class="row"><div class="small-11 columns"><label>HTTP URL for keys</label></div></div>
+                      <div class="row">
+                        <div class="small-11 columns">                     
+                          <input name="HTTPURLforkeys" type="text" class="error">
+                          <a href="#" class="small button"><i class="icon-retweet"></i> Test</a>
+                        </div>
+                        <div class="small-1 columns">
+                          <div class="error-info">
+                            <i data-tooltip title="This is a massive error with a lot of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <ul><li>There can be some html in here as well</li><li>Cool, isn't it?</li></ul>" class="icon-exclamation-sign"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div id="contentLicensePool" class="hide">
+                      <div class="row"><div class="small-11 columns"><label>License Pool File</label></div></div>
+                      <div class="row">
+                        <div class="small-11 columns">                     
+                          <a href="#" class="small button"><i class="icon-plus"></i> Upload License File</a> <em>.txt files only; one key per line</em>
+                        </div>
+                        <div class="small-1 columns">
+                          <div class="error-info">
+                            <i data-tooltip title="This is a massive error with a lot of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <ul><li>There can be some html in here as well</li><li>Cool, isn't it?</li></ul>" class="icon-exclamation-sign"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                </fieldset>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="small-12 columns">
+                <fieldset>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <h3>Distribution <span class="help" data-tooltip title="Help text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis ante non orci eleifend consectetur ut et sapien."><i class="icon-info-sign"></i></span></h3>
+                      <p>Do you have distribution restrictions?</p>
+                      <div class="row radio_choice">
+                        <div class="small-6 columns">
+                          <label for="restrictionChange1" onClick="$('#restrictions').addClass('hide');">
+                          <input name="restrictionChange" value="0" type="radio" id="restrictionChange1" style="display:none;" checked>
+                          <span class="custom radio checked"></span> Nope, distribute everwhere.</label>
+                        </div>
+                        <div class="small-6 columns">
+                          <label for="restrictionChange2" onClick="$('#restrictions').removeClass('hide');">
+                          <input name="restrictionChange" value="1" type="radio" id="restrictionChange2" style="display:none;">
+                          <span class="custom radio"></span> Yup, I have restrictions.</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="step-ok">
+                        5
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="restrictions" class="hide">                  
+                    <div class="row"><div class="small-11 columns"><label>Country Restrictions</label></div></div>
+                    <div class="row">
+                      <div class="small-11 columns">                     
+                        <select id="selectCountryRestrictions" onchange="changeCountryRestrictions();" class="error">
+                          <option value="0">Available in all countries</option>
+                          <option value="1">Available only in the countries selected below</option>
+                          <option value="2">Available in all countries except for the ones selected below</option>
+                        </select>
+                        <script>
+						  function changeCountryRestrictions(){
+							  if($('#selectCountryRestrictions').val()!='0'){
+								  $('#selectCountryRestrictionsList').removeClass('hide');
+							  } else {
+								  $('#selectCountryRestrictionsList').addClass('hide');
+							  }
+						  }
+						</script>
+                      </div>
+                      <div class="small-1 columns">
+                        <div class="error-info">
+                          <i data-tooltip title="This is a massive error with a lot of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <ul><li>There can be some html in here as well</li><li>Cool, isn't it?</li></ul>" class="icon-exclamation-sign"></i>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div id="selectCountryRestrictionsList" class="hide">
+                      <div class="row">
+                        <div class="small-11 columns">                     
+                          <select name="allCountries" id="allCountries" style="width:100%" multiple="multiple" placeholder="Select Countries" class="error">
+                            <option>Country One</option>
+                            <option>Country Two</option>
+                            <option>Country Three</option>
+                            <option>Country Four</option>
+                            <option>Country Five</option>
+                            <option>Country Six</option>
+                            <option>Country Seven</option>
+                            <option>Country Eight</option>
+                            <option>Country Nine</option>
+                            <option>Country Ten</option>
+                          </select>
+                          <script>
+                            $(document).ready(function() {
+                              $("#allCountries").select2();
+                            });
+                          </script>
+                        </div>
+                        <div class="small-1 columns">
+                          <div class="error-info">
+                            <i data-tooltip title="This is a massive error with a lot of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <ul><li>There can be some html in here as well</li><li>Cool, isn't it?</li></ul>" class="icon-exclamation-sign"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="row"><div class="small-11 columns"><label>Carriers Restrictions</label></div></div>
+                    <div class="row">
+                      <div class="small-11 columns">                     
+                        <select id="selectCarrierRestrictions" onchange="changeCarrierRestrictions();" class="error">
+                          <option value="0">Available on all carriers</option>
+                          <option value="1">Available only on the carriers selected below</option>
+                          <option value="2">Available on all carriers except for the ones selected below</option>
+                        </select>
+                        <script>
+						  function changeCarrierRestrictions(){
+							  if($('#selectCarrierRestrictions').val()!='0'){
+								  $('#selectCarrierRestrictionsList').removeClass('hide');
+							  } else {
+								  $('#selectCarrierRestrictionsList').addClass('hide');
+							  }
+						  }
+						</script>
+                      </div>
+                      <div class="small-1 columns">
+                        <div class="error-info">
+                          <i data-tooltip title="This is a massive error with a lot of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <ul><li>There can be some html in here as well</li><li>Cool, isn't it?</li></ul>" class="icon-exclamation-sign"></i>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div id="selectCarrierRestrictionsList" class="hide">
+                      <div class="row">
+                        <div class="small-11 columns">                     
+                          <select name="allCarriers" id="allCarriers" style="width:100%" multiple="multiple" placeholder="Select Carriers" class="error">
+                            <optgroup label="Country One">
+                              <option>Carrier One</option>
+                              <option>Carrier Two</option>
+                              <option>Carrier Three</option>
+                              <option>Carrier Four</option>
+                              <option>Carrier Five</option>
+                              <option>Carrier Six</option>
+                              <option>Carrier Seven</option>
+                              <option>Carrier Eight</option>
+                              <option>Carrier Nine</option>
+                              <option>Carrier Ten</option>
+                            </optgroup>
+                            <optgroup label="Country Two">
+                              <option>Carrier One</option>
+                              <option>Carrier Two</option>
+                              <option>Carrier Three</option>
+                              <option>Carrier Four</option>
+                              <option>Carrier Five</option>
+                              <option>Carrier Six</option>
+                              <option>Carrier Seven</option>
+                              <option>Carrier Eight</option>
+                              <option>Carrier Nine</option>
+                              <option>Carrier Ten</option>
+                            </optgroup>
+                            <optgroup label="Country Three">
+                              <option>Carrier One</option>
+                              <option>Carrier Two</option>
+                              <option>Carrier Three</option>
+                              <option>Carrier Four</option>
+                              <option>Carrier Five</option>
+                              <option>Carrier Six</option>
+                              <option>Carrier Seven</option>
+                              <option>Carrier Eight</option>
+                              <option>Carrier Nine</option>
+                              <option>Carrier Ten</option>
+                            </optgroup>
+                            <optgroup label="Country Four">
+                              <option>Carrier One</option>
+                              <option>Carrier Two</option>
+                              <option>Carrier Three</option>
+                              <option>Carrier Four</option>
+                              <option>Carrier Five</option>
+                              <option>Carrier Six</option>
+                              <option>Carrier Seven</option>
+                              <option>Carrier Eight</option>
+                              <option>Carrier Nine</option>
+                              <option>Carrier Ten</option>
+                            </optgroup>
+                            <optgroup label="Country Five">
+                              <option>Carrier One</option>
+                              <option>Carrier Two</option>
+                              <option>Carrier Three</option>
+                              <option>Carrier Four</option>
+                              <option>Carrier Five</option>
+                              <option>Carrier Six</option>
+                              <option>Carrier Seven</option>
+                              <option>Carrier Eight</option>
+                              <option>Carrier Nine</option>
+                              <option>Carrier Ten</option>
+                            </optgroup>
+                          </select>
+                          <script>
+                            $(document).ready(function() {
+                              $("#allCarriers").select2();
+                            });
+                          </script>
+                        </div>
+                        <div class="small-1 columns">
+                          <div class="error-info">
+                            <i data-tooltip title="This is a massive error with a lot of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <ul><li>There can be some html in here as well</li><li>Cool, isn't it?</li></ul>" class="icon-exclamation-sign"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="small-12 columns">
+                <fieldset>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <h3>Stock Keeping</h3>
+                      <p class="description">SKU (stock keeping unit) is a handy way to manage and track your products performance across multiple platforms and can be used with analytics tools such as <a href="http://www.flurry.com" target="_blank">Flurry</a></p>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="step-ok">
+                        6
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <label>SKU ID <span class="optional">(optional)</span> <span class="help" data-tooltip title="Help text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis ante non orci eleifend consectetur ut et sapien."><i class="icon-info-sign"></i></span></label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <input name="SKU_ID" type="text" value="SKU1234567" placeholder="some random numbers" class="error">
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        <i data-tooltip title="This is a massive error with a lot of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <ul><li>There can be some html in here as well</li><li>Cool, isn't it?</li></ul>" class="icon-exclamation-sign"></i>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="small-12 columns">
+                <fieldset>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <h3>Connections</h3>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="step-optional">
+                        7
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <label>Facebook <span class="optional">(optional)</span> <span class="help" data-tooltip title="Help text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis ante non orci eleifend consectetur ut et sapien."><i class="icon-info-sign"></i></span></label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <input name="Facebook" type="text" value="https://www.facebook.com/RovioAngryBirdsSpace" placeholder="Facebook URL" class="error">
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        <i data-tooltip title="This is a massive error with a lot of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <ul><li>There can be some html in here as well</li><li>Cool, isn't it?</li></ul>" class="icon-exclamation-sign"></i>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <label>Twitter <span class="optional">(optional)</span> <span class="help" data-tooltip title="Help text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis ante non orci eleifend consectetur ut et sapien."><i class="icon-info-sign"></i></span></label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <input name="Twitter" type="text" value="https://twitter.com/AngryBirds" placeholder="Twitter URL" class="error">
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        <i data-tooltip title="This is a massive error with a lot of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <ul><li>There can be some html in here as well</li><li>Cool, isn't it?</li></ul>" class="icon-exclamation-sign"></i>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <label>E-mail <span class="optional">(optional)</span> <span class="help" data-tooltip title="Help text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis ante non orci eleifend consectetur ut et sapien."><i class="icon-info-sign"></i></span></label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <input name="EMail" type="text" value="support@rovio.com" placeholder="Support E-mail" class="error">
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        <i data-tooltip title="This is a massive error with a lot of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <ul><li>There can be some html in here as well</li><li>Cool, isn't it?</li></ul>" class="icon-exclamation-sign"></i>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row radio_choice">
+                    <div class="small-11 columns">
+                      <label class="forcheckbox" for="chkReceipt">
+                      <input name="chkReceipt" value="1" type="checkbox" id="chkReceipt" style="display:none;" class="hidden-field" checked>
+                      <span class="custom checkbox checked"></span> Show on customer purchase receipt</label>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>                    
+                  </div>
+                  
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <label>URL <span class="optional">(optional)</span> <span class="help" data-tooltip title="Help text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis ante non orci eleifend consectetur ut et sapien."><i class="icon-info-sign"></i></span></label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <input name="SupportURL" type="text" value="http://www.rovio.com/" placeholder="Support URL" class="error">
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        <i data-tooltip title="This is a massive error with a lot of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <ul><li>There can be some html in here as well</li><li>Cool, isn't it?</li></ul>" class="icon-exclamation-sign"></i>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row radio_choice">
+                    <div class="small-11 columns">
+                      <label class="forcheckbox" for="chkReceipt2">
+                      <input name="chkReceipt2" value="1" type="checkbox" id="chkReceipt2" style="display:none;" class="hidden-field" checked>
+                      <span class="custom checkbox checked"></span> Show on customer purchase receipt</label>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>                    
+                  </div>
+                  
+                </fieldset>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="small-12 columns">
+                <fieldset>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <h3>BlackBerry Marketing Campaigns</h3>
+                      <p>By default all external marketing opportunities will be enabled. <a href="#">View policy</a></p>
+                      <div class="radio_choice">
+                      	<div class="row">
+                          <div class="small-6 columns">
+                            <label for="bbCampaign1" onClick="$('#bbCampaignDiv').addClass('hide');">
+                            <input name="bbCampaign" value="0" type="radio" id="bbCampaign1" style="display:none;" checked>
+                            <span class="custom radio checked"></span> Opt-in</label>
+                          </div>                        
+                          <div class="small-6 columns">
+                            <label for="bbCampaign2" onClick="$('#bbCampaignDiv').removeClass('hide');">
+                            <input name="bbCampaign" value="1" type="radio" id="bbCampaign2" style="display:none;">
+                            <span class="custom radio"></span> Opt-out</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="step-ok">
+                        8
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="bbCampaignDiv" class="row hide">
+                    <div class="small-11 columns">
+                      <p>Please check the campaigns you'd like to exclude this app from.</p>
+                        <label class="forcheckbox" for="bbCampaignRestrict1">
+                      <input name="bbCampaignRestrict" value="1" type="checkbox" id="bbCampaignRestrict1" style="display:none;" class="hidden-field">
+                      <span class="custom checkbox"></span> Push/Email Campaigns</label>
+  
+                        <label class="forcheckbox" for="bbCampaignRestrict2">
+                      <input name="bbCampaignRestrict" value="2" type="checkbox" id="bbCampaignRestrict2" style="display:none;" class="hidden-field">
+                      <span class="custom checkbox"></span> Syndication APIs &amp; RSS feeds</label>
+  
+                        <label class="forcheckbox" for="bbCampaignRestrict3">
+                      <input name="bbCampaignRestrict" value="3" type="checkbox" id="bbCampaignRestrict3" style="display:none;" class="hidden-field">
+                      <span class="custom checkbox"></span> Affiliate Programs</label>
+  
+                        <label class="forcheckbox" for="bbCampaignRestrict4">
+                      <input name="bbCampaignRestrict" value="4" type="checkbox" id="bbCampaignRestrict4" style="display:none;" class="hidden-field">
+                      <span class="custom checkbox"></span> Ad Campaigns</label>
+  
+                        <label class="forcheckbox" for="bbCampaignRestrict5">
+                      <input name="bbCampaignRestrict" value="5" type="checkbox" id="bbCampaignRestrict5" style="display:none;" class="hidden-field">
+                      <span class="custom checkbox"></span> Conference Events</label>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>
+                  </div>                  
+                </fieldset>
+              </div>
+            </div>
+
+            <script type="text/javascript" src="webroot/js/autosave/sisyphus.min.js"></script> 
+            <script>
+            $( function() {
+              /*$( "form" ).sisyphus();*/
+            } );
+            </script>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer id="footer" class="footer">
+  <div class="inner_footer">
+    <div class="row">
+      <div class="columns grid_footer technologies">
+        <h2 class="h5">Technologies</h2>
+        <ul>
+          <li><a href="http://developer.blackberry.com/native/">Native</a></li>
+          <li><a href="http://developer.blackberry.com/html5/">HTML5</a></li>
+          <li><a href="http://developer.blackberry.com/air/">AIR</a></li>
+          <li><a href="http://developer.blackberry.com/android/">Android</a></li>
+          <li><a href="http://developer.blackberry.com/playbook/">PlayBook</a></li>
+          <li><a href="http://developer.blackberry.com/bbos/">BlackBerry OS</a></li>
+          <li><a href="http://developer.blackberry.com/develop/platform_partners/">Platform Partners</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer programs">
+        <h2 class="h5">Programs</h2>
+        <ul>
+          <li><a href="https://www.blackberry.com/beta/" target="_blank">Beta Zone</a></li>
+          <li><a href="https://partners.blackberry.com/web/guest/home/" target="_blank">Alliance programs</a></li>
+          <li><a href="http://us.blackberry.com/ataglance/academic/" target="_blank">Academic programs</a></li>
+          <li><a href="https://developer.blackberry.com/jamcommunity/groups/">Developer groups</a></li>
+          <li><a href="https://developer.blackberry.com/blackberry10devalpha/">BlackBerry 10 Dev Alpha</a></li>
+          <li><a href="https://developer.blackberry.com/builtforblackberry/">Built for BlackBerry</a></li>
+          <li><a href="http://developer.blackberry.com/blackberrybuilder/">BlackBerry Builder</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer support">
+        <h2 class="h5">Support</h2>
+        <ul>
+          <li><a href="https://bdsc.webapps.blackberry.com/CodeSigningHelp/" target="_blank">Code Signing Help</a></li>
+          <li><a href="http://www.youtube.com/blackberrydev/" target="_blank">YouTube Channel</a></li>
+          <li><a href="http://supportforums.blackberry.com/t5/Developer-Support-Forums/ct-p/blackberrydev" target="_blank">Developer forums</a></li>
+          <li><a href="https://www.blackberry.com/jira/secure/Dashboard.jspa" target="_blank">Developer Issue Tracker</a></li>
+          <li><a href="http://supportforums.blackberry.com/t5/Application-Platforms/tkbc-p/app_plat" target="_blank">Knowledge Base</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer app_store">
+        <h2 class="h5">BlackBerry World</h2>
+        <ul>
+          <li><a href="https://www.blackberry.com/SignedKeys/codesigning.html" target="_blank">Sign your app</a></li>
+          <li><a href="http://developer.blackberry.com/blackberryworld/">Submitting your app</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer_last social">
+        <h2 class="h5">Follow us on:</h2>
+        <ul class="inline-list">
+          <li><a href="http://www.facebook.com/BlackBerryDeveloperCommunity" title="Follow us on Facebook" class="icon-20 facebook" target="_blank"><span class="hide">Facebook</span></a></li>
+          <li><a href="http://www.youtube.com/blackberrydev/" title="Catch us on YouTube" class="icon-20 youtube" target="_blank"><span class="hide">YouTube</span></a></li>
+          <li><a href="http://twitter.com/blackberrydev" title="Hear the BlackBerry tweet" class="icon-20 twitter" target="_blank"><span class="hide">Twitter</span></a></li>
+          <li><a href="http://devblog.blackberry.com/" title="Developer Blogs" class="icon-20 blackberry" target="_blank"><span class="hide">BlackBerry Blogs</span></a></li>
+          <li><a href="#bbmchannelcode" title="BBM Channels" class="icon-20 channels lightboxtrigger"><span class="hide">BBM Channels</span></a></li>
+        </ul>
+        <div style='display:none'>
+          <div id='bbmchannelcode' class="lightbox">
+            <div class="lightbox-desc" style="width:400px;"> <img src="webroot/img/common/channelonwhite.png" alt="BBM Channels" /> </div>
+            <div class="lightbox-desc" style="width:370px;">
+              <div class="lightbox-text" style="margin: 40px 100px 0px 0px;">
+                <h1 style="margin-left:0px;">BBM Channels</h1>
+                <p>Developer Relations is on BBM Channels! Join the conversation by <a href="https://beta.webapps.blackberry.com/BBMChannels/" target="_blank">signing up for the beta program</a> and scanning the barcode to the right.</p>
+                <a href="https://beta.webapps.blackberry.com/BBMChannels/" target="_blank"> Register for BBM Channels beta &rsaquo;</a> </div>
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li><a href="http://www.blackberry.com/legal/" target="_blank">Legal &amp; Trademarks</a> </li>
+        </ul>
+      </div>
+      <div class="copyright_notice">Copyright &copy; 2014 BlackBerry Limited, unless otherwise noted.</div>
+    </div>
+  </div>
+</footer>
+  <!-- Included JS Files (Uncompressed) --> 
+  <script type="text/javascript" src="webroot/js/common/foundation.min.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/foundation/foundation.topbar.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/foundation/foundation.joyride.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/foundation/foundation.backnav.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/jquery.easing.1.3.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/bb.dropdown.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/bb.searchbar.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/bb.expandable.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/bb.nav.doc.js"></script> 
+  <script type="text/javascript" src="webroot/js/bb.segment_hover.js"></script> 
+  <script type="text/javascript" src="webroot/js/jquery.tipTip.minified.js"></script> 
+  <script type="text/javascript" src="webroot/js/jquery.colorbox.js"></script> 
+  <script type="text/javascript" src="webroot/js/jquery.mockjson.js"></script> 
+  <script type="text/javascript" src="webroot/js/datamockery.js"></script> 
+  <script type="text/javascript" src="webroot/js/bb.site.js"></script> 
+  <script type="text/javascript" src="webroot/js/bb.focuscontrol.js"></script> 
+  <script type="text/javascript" src="webroot/js/bb.nav.js"></script> 
+  
+  <!-- Note should this be a separate .js file or be part of bb.site.js  --> 
+  
+  <script type="text/javascript">
+	  global.init('', 'portals', 'index', '', 'webroot/');
+	  global.setFocus('cascades');
+  </script> 
+  <script type="text/javascript" src="webroot/js/pageload.js"></script> 
+  
+  <!-- Piwik --> 
+  <script type="text/javascript">
+	  var pkBaseURL, server, pkId;
+	  server = 'dxlab013qbolabvm.labqbo.testnet.rim.net/stats/';
+	  pkId = -1;
+	  pkBaseURL = (("https:" == document.location.protocol) ? "https://"+server : "http://"+server);
+	  document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+	  </script><script type="text/javascript">
+	  try {
+	  var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", -1);
+	  piwikTracker.trackPageView();
+	  piwikTracker.enableLinkTracking();
+  } catch( err ) {}
+  </script>
+  <noscript>
+  <p><img src="http://dxlab013qbolabvm.labqbo.testnet.rim.net/stats/piwik.php?idsite=-1" style="border:0" alt="" /></p>
+  </noscript>
+  <!-- End Piwik Tracking Code --> 
+  <!--[if lt IE 7 ]>
+	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+	<script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+  <![endif]--> 
+  
+  <script>
+  $(document).ready(function() {
+	$('.reveal-modal').css({
+	  maxHeight: $(window).height() - 150 + 'px'
+	});
+  });
+  $(window).resize(function() {
+	$('.reveal-modal').css({
+	  maxHeight: $(window).height() - 150 + 'px'
+	});
+  });
+</script>
+</body>
+</html>

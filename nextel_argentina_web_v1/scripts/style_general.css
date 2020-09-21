@@ -1,0 +1,399 @@
+/*//////////////////////////////////////////// NEXTEL .COM .AR ///////////////////////////////////////////////////////*/
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: Verdana;
+	color:#6F767E;
+	font-size:10px;
+	background-image:url(../images/nextelar/background.gif);
+	line-height: 13px;
+}
+body,td,th {
+	color: #666666;
+}
+p {
+margin:0px;
+padding:0px;
+}
+a:link{
+text-decoration:none;
+}
+a:visited{
+text-decoration:none;
+}
+a:active{
+text-decoration:none;
+}
+a:hover{
+text-decoration:none;
+}
+/* tabla index */
+.tabla0{
+background-image:url(../images/nextelar/bg_ffffff.gif);
+border-color:#CECECE;
+border-bottom:1px solid;
+border-left:1px solid;
+border-right:1px solid;
+}
+/* tabla secciones */
+.tabla_secciones{
+background-image:url(../images/nextelar/bg_site.gif);
+border-color:#CECECE;
+border-bottom:1px solid;
+border-left:1px solid;
+border-right:1px solid;
+}
+
+.centrales{ /**************centra el contenido de la pagina***************/
+	padding-top:20px;
+	padding-left:11px;
+	padding-right:15px;
+	padding-bottom:30px
+}
+
+/* //////////////////// LINKS DE COLORES //////////////////////*/
+/* link color: gris a rojo*/
+.grisarojo {text-decoration: none; color:#6f767e;}
+.grisarojo:link {text-decoration: none; color:#6f767e;}
+.grisarojo:hover {text-decoration: underline; color:#83001B;}
+
+/* link color: gris a rojo*/
+.grisarojo2 {text-decoration: none; color:#666666;}
+.grisarojo2:link {text-decoration: none; color:#666666;}
+.grisarojo2:hover {text-decoration: underline; color:#83001B;}
+
+/* link color: rojo a gris */
+.rojoagris {text-decoration: none; color:#83001B;}
+.rojoagris:link {text-decoration: none; color:#83001B;}
+.rojoagris:hover {text-decoration: underline; color:#6f767e;}
+
+/* link color: gris a gris */
+.grisagris {text-decoration: none; color:#6f767e;}
+.grisagris:link {text-decoration: none; color:#6f767e;}
+.grisagris:hover {text-decoration: underline; color:#6f767e;}
+
+
+/* color gris para hipervinculos */
+.color{color:#6F767E; text-decoration:none;}
+/* fin color gris para hipervinculos */
+/* //////////////////// LINKS DE COLORES //////////////////////*/
+
+/* color rojo en bold para titulos */
+.rojo_bold{ color:#89001B; font-weight:bold; }
+/* fin color rojo en bold para titulos */
+
+/* color rojo en bold para titulos */
+.rojo_bold2{
+	color:#89001B;
+	font-weight:bold;
+	font-size: 11px;
+}
+.rojo_bold3{
+font-family: Tahoma, Verdana;
+font-weight:bold;
+color:#89001B;
+font-size: 14px;
+}
+.gris_bold1{
+font-family: Tahoma, Verdana;
+font-weight:bold;
+color:#6f767e;
+font-size: 11px;
+}
+.gris_bold2{
+font-family: Arial;
+font-weight:bold;
+color:#666666;
+font-size: 9px;
+}
+
+/* fin color rojo en bold para titulos */
+
+/* color rojo para textos */
+.rojo{ color:#83001B/*89001B*/; }
+/* fin color rojo para textos */
+
+/* ///////////////////////////// HEADER ///////////////////////////////*/
+/* propiedad para el submenu */
+.bg_botonera{background:url(../images/nextelar/bt_bg.gif) repeat-x;}
+/* fin propiedad para el submenu */
+
+/* logo */
+.contenedor_logo{
+width:770px;
+height:70px;
+background:url(../images/nextelar/bg_barraheader.jpg) repeat-x;
+}
+.logo{
+width:128px;
+height:36px;
+margin-left:13px;
+margin-top:18px;
+background:url(../images/nextelar/logo.gif) no-repeat;
+float:left;
+cursor:pointer;
+}
+/* fin logo */
+
+/* BUSCADOR */
+/* campos de texto imput */
+.imput{
+font-family: Verdana;
+color:#6F767E;
+font-size: 9px;
+}
+#imput{
+font-family: Verdana;
+color:#6F767E;
+font-size: 9px;
+}
+/* fin campos de texto imput */
+
+/* campo de busqueda */
+.buscar{
+/*background: url(../images/buscador/bg.gif) repeat-x;*/
+height:12px;
+width:88px;
+/*margin-top:2px;
+padding-top:2px;*/
+border-width:0px;
+font-family:Verdana;
+font-size:9px;
+color:#56595C;
+background-color:#F2F6F9;
+}
+/* fin campo de busqueda */
+
+/* acomodo campo de busqueda */
+.buscador{
+padding-right:14px;
+padding-top:9px;
+}
+/* fin acomodo campo de busqueda */
+
+/* acomodo los resultados */
+.resultados{
+padding-top:20px;
+}
+/* fin acomodo los resultados */
+/* FIN BUSCADOR*/
+
+/* ///////////////////////////// FIN HEADER ///////////////////////////*/
+
+/* ///////////////////////////// CONTENIDOS ///////////////////////////*/
+/* BOTONERA IZQUIERDA */
+.bt_off{
+width:135px;
+height:31px;
+padding-left:24px;
+padding-top:8px;
+margin-bottom:-8px;
+margin-right:-24px;
+background:url(../images/nextelar/boton_off.gif) no-repeat;
+font-family:Verdana;
+font-size:11px;
+color:#6F767E;
+cursor:pointer;
+text-decoration:none;
+}
+.bt_on{
+width:135px;
+height:31px;
+padding-left:24px;
+padding-top:8px;
+margin-bottom:-8px;
+margin-right:-24px;
+background:url(../images/nextelar/boton_on.gif) no-repeat;
+font-family:Verdana;
+font-size:11px;
+color:#8E001C;
+cursor:pointer;
+text-decoration:none;
+}
+.planesComerciales {
+	font-family: Tahoma, Verdana ;
+	font-weight: bold;
+	font-size: 12px;
+}
+.planesComerciales2 {
+	font-family: Tahoma, Verdana ;
+	font-size: 10px;
+}
+.nw_Estilo2 {
+	font-family: Tahoma, Verdana ;
+	font-size: 10px;
+}
+.nw_Estilo4 {
+	font-family: Tahoma, Verdana ;
+	font-weight: bold;
+	font-size: 10px;
+}
+.nw_Estilo5 {
+font-size: 9px
+}
+
+.formTel{
+width:30px; height:15px; background-color:#efefef; border:solid 1px; border-color:#d4d4d4; font-family:Tahoma, Arial; font-size:10px; padding-top:3px; padding-left:4px; margin-left:8px; margin-right:5px;
+}
+.formTel2{
+width:90px; padding-left:3px; height:15px; background-color:#efefef; border:solid 1px; border-color:#d4d4d4; font-family:Tahoma, Arial; font-size:10px; padding-top:3px; padding-left:2px;
+}
+.formTel3{
+width:165px; padding-left:3px; height:15px; background-color:#ffffff; border:solid 1px; border-color:#d4d4d4; font-family:Tahoma, Arial; font-size:10px; padding-top:3px; padding-left:2px;
+}
+.formmenu4{
+width:170px; padding-left:3px; height:20px; background-color:#ffffff; border:solid 1px; border-color:#d4d4d4; font-family:Tahoma, Arial; font-size:10px; padding-top:3px; padding-left:2px;z-index:0;
+}
+.banner_izq_nw{
+padding-top:3px;
+}
+.banner_servicio_nw{
+padding-left:5px;
+padding-right:2px;
+}
+.banner_1_nw{
+min-height:192px; _height:192px; padding-left:7px; padding-right:3px; padding-top:3px;
+}
+.border_info{
+padding-left:5px; padding-right:2px;
+}
+.area_clientes{
+margin-bottom:3px; padding-left:8px;
+}
+.area_clientes1{
+margin-bottom:20px; padding-left:8px;
+}
+.area_clientes2{
+margin-bottom:8px; padding-right:5px;
+}
+.area_clientes3{
+margin-bottom:6px; padding-left:8px;
+}
+.club_nextel{
+border:solid 1px; border-color:#dedede; width:182px; margin-top:3px; margin-bottom:3px;
+}
+.botonera_der{
+padding-left:7px; padding-right:3px; padding-bottom:2px; height:10px;
+}
+.botonera_login{
+padding-left:7px; padding-right:3px; padding-top:2px; height:22px;
+}
+.botonera_login2{
+margin-bottom:3px;padding-right:5px;margin-top:5px;
+}
+.botonera_der2{
+padding-left:7px; 
+}
+.botonera_der3{
+padding-left:9px; padding-top:3px;
+}
+.preg1{
+position:absolute; width:262px; height:292px; z-index:100; top:337px; left:615px; visibility:hidden;display:none;
+}
+.preg2{
+position:absolute; width:211px; height:116px; z-index:100; top:200px; left:40%;visibility:visible;
+}
+.preg3{
+margin-left:9px;
+}
+
+/*class*/
+#bt_off{
+width:135px;
+height:31px;
+padding-left:24px;
+padding-top:8px;
+margin-bottom:-8px;
+margin-right:-24px;
+background:url(../images/nextelar/boton_off.gif) no-repeat;
+font-family:Verdana;
+font-size:11px;
+color:#6F767E;
+cursor:pointer;
+text-decoration:none;
+}
+#bt_on{
+width:135px;
+height:31px;
+padding-left:24px;
+padding-top:8px;
+margin-bottom:-8px;
+margin-right:-24px;
+background:url(../images/nextelar/boton_on.gif) no-repeat;
+font-family:Verdana;
+font-size:11px;
+color:#8E001C;
+cursor:pointer;
+text-decoration:none;
+}
+#quiero_identificarme{
+display:block;
+}
+/*fin class*/
+/* FIN BOTONERA IZQUIERDA */
+/* ///////////////////////////// FIN CONTENIDOS ///////////////////////*/
+
+
+/*////// BARRA LATERAL DERECHA//////*/
+
+.mi_block{
+padding-left:8px;
+padding-bottom:8px;
+}
+
+.mi_link{
+padding-top:10px;
+}
+/*/////////////////////*/
+/* ///////////////////////////// FOOTER ///////////////////////////////*/
+.footer{
+background:url(../images/nextelar/bg_footer.gif) repeat-x;
+width:770px;
+height:21px;
+text-align:center;
+padding-top:8px;
+}
+.footer_nw{
+width:770px;
+height:58px;
+}
+select{
+font-family: Verdana;
+color:#6f767e;
+font-size:10px;
+width:120px;
+height:15px;
+}
+
+/* ///////////////////////////// FIN FOOTER ///////////////////////////*/
+
+#dropmenudiv{
+text-indent: 3px;
+position:absolute;
+border-bottom:1px solid;
+border-left:1px solid;
+border-right:1px solid;
+border-color:#BBB9B9;
+font:normal 10px Arial;
+line-height:18px;
+background-color:#EDEDED;
+color:#838383;
+}
+#dropmenudiv a{
+display: block;
+text-indent: 3px;
+border-bottom:1px solid;
+border-left:1px solid;
+border-right:1px solid;
+border-color:#BBB9B9;
+text-decoration: none;
+padding-left:8px;
+padding-right:5px;
+background-color:#EDEDED;
+color:#838383;
+}
+#dropmenudiv a:hover{
+color:#89001B;
+}

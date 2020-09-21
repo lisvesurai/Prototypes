@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js macosx" lang="en">
+<!--<![endif]-->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta charset="utf-8">
+<meta name="author" content="Research In Motion">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link href="favicon.ico" rel="SHORTCUT ICON" />
+<title>BlackBerry Vendor Portal</title>
+
+<!--[if lt IE 9]>
+<script src="webroot/js/common/html5.js"></script>
+<style type="text/css">
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+</style>
+<![endif]-->
+
+<link type="text/css" rel="stylesheet" href="webroot/css/common/normalize.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.fonts.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/foundation.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/foundation.override.css" />
+<!--[if lt IE 9]>
+    <link type="text/css" rel="stylesheet" href="webroot/css/common/foundation.ie8.css">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="webroot/css/common/foundicon.general.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.base.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.layout.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.navigation.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.components.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/ext.tiptip.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.site.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.portals.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.documentations.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.downloads.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.references.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.sampleapps.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.screenshot.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.vp.components.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.vp.promotions.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.vp.fonts.css" />
+<script src="webroot/js/common/modernizr.custom.88393.js"></script>
+<script type="text/javascript" src="webroot/js/common/bb.global.js"></script>
+<link rel="stylesheet" href="webroot/css/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="webroot/css/jquery.gridster.css">
+<!--[if IE 7]>
+  <link rel="stylesheet" href="webroot/css/font-awesome/css/font-awesome-ie7.min.css">
+<![endif]-->
+<link rel="stylesheet" href="webroot/css/common/jquery-ui-1.8.22.custom.css" />
+<script src="webroot/js/common/jquery-1.10.2.min.js"></script>
+<script src="webroot/js/common/jquery-ui-1.10.3.min.js"></script>
+
+<link rel="stylesheet" href="webroot/js/select2/select2.css" />
+<script src="webroot/js/select2/select2.min.js"></script>
+</head>
+<body class="portals vendorportal">
+<div id="myModal" class="reveal-modal"></div>
+<div id="myModalSmall" class="reveal-modal small"></div>
+<div id="myModalMedium" class="reveal-modal medium"></div>
+<div id="myModalLarge" class="reveal-modal large"></div>
+<div id="myModalXlarge" class="reveal-modal xlarge"></div>
+<div id="myModalExpand" class="reveal-modal expand"></div>
+  <div class="fixed">
+  <div>
+    <nav class="top-bar user-bar hide-for-small">
+      <ul class="title-area">
+        <li class="name"> <a href="http://developer.blackberry.com/" class="logo"> <img src="webroot/img/common/blackberry_logo.png" alt="BlackBerry"> Developer </a> </li>
+        <li class="toggle-topbar"><a href="#"><span>Useful links</span></a></li>
+      </ul>
+      <section class="top-bar-section">
+        <ul class="left">
+          <li class="divider hide-for-small"> </li>
+          <li><a href="http://devblog.blackberry.com" target="_blank">Blog</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li><a href="http://www.youtube.com/blackberrydev/" target="_blank">YouTube</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li><a href="http://supportforums.blackberry.com/t5/Developer-Support-Forums/ct-p/blackberrydev" target="_blank">Forum</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li><a href="https://www.blackberry.com/SignedKeys/codesigning.html" target="_blank">Signing</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li class="last"><a href="https://www.blackberry.com/jira/secure/Dashboard.jspa" target="_blank">Feedback</a></li>
+          <li class="divider hide-for-small"> </li>
+        </ul>
+        <ul class="right">
+          <li class="divider hide-for-small login-in-bar"> </li>
+          <li><a href="login.html" class="icon_login login-in-bar">Logout</a></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+</div>
+  <header class="nav-header">
+    <div class="topbar">
+      <nav>
+        <div class="nav-text">
+          <a href="index.html"> <span class="h1">Vendor Portal for BlackBerry World</span> </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div id="browser-msg" class="row hide">
+    <div class="large-12 columns">
+      <div class="notice warning">
+        <p>Sorry about the red box, but we really need you to update your browser. Read <a href="http://www.smashingmagazine.com/2012/07/10/dear-web-user-please-upgrade-your-browser/">this excellent article</a> if you're wondering why we are no longer supporting this browser version. Go to <a href="http://browsehappy.com/">Browse Happy</a> for browser suggestions and how to update.</p>
+      </div>
+    </div>
+  </div>
+  <div id="main" class="main" role="main">
+    <div class="row">
+      <nav role="navigation" class="large-3 columns side-nav-vp sticky">
+        <ul class="v-card">
+          <li class="vendor-name">Rovio Entertainment Ltd</li>
+          <li class="user-name light italic">Johan Alexandersson</li>
+        </ul>
+        <div class="link-block">
+          <ul class="links">
+            <li class="first"><a href="index.html">Products</a></li>
+            <li><a href="promotions.html" class="selected">Promotions</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="changerequests.html">Change Requests</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="testing.html">Testers</a></li>
+            <li><a href="settings.html">Settings</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="large-9 columns">
+        <div id="mainContentBody">
+        <form accept-charset="UTF-8" action="#" class="custom" id="basic_form" method="get" name="promotion_form">
+          <h1>Create a New Promotion</h1>
+          
+          <div class="row">
+            <div class="small-12 columns">
+              <fieldset>
+                <div class="row">
+                  <div class="small-11 columns">
+                    <h3>General</h3>
+                  </div>
+                  <div class="small-1 columns">
+                    <div class="step-star"> 1 </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="small-11 columns"><label>Internal Promo Name <span class="help" data-tooltip title="Help text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis ante non orci eleifend consectetur ut et sapien."><i class="icon-info-sign"></i></span></label></div>
+                </div>
+                <div class="row">
+                  <div class="small-11 columns">
+                    <input type="text" name="internal_promo_name" value="">
+                  </div>
+                  <div class="small-1 columns">
+                    <div class="error-info">
+                      
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="small-11 columns"><label>Duration <span class="help" data-tooltip title="Help text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis ante non orci eleifend consectetur ut et sapien."><i class="icon-info-sign"></i></span></label></div>
+                </div>
+                
+                <div class="row">
+                  <div class="small-11 columns">
+                    <div class="row">
+                      <div class="small-6 columns">
+                        <label>Starts</label>
+                      </div>
+                      <div class="small-6 columns">
+                        <label>Ends</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row promoDateTime">
+                  <div class="small-11 columns">
+                    <div class="row">
+                      <div class="small-3 columns">
+                        <input type="text" id="startDate" class="date">
+                      </div>
+                      <div class="small-3 columns">
+                        <div class="row">
+                          <div class="small-6 columns">
+                            <select>
+                              <option>00</option>
+                              <option>01</option>
+                              <option>02</option>
+                              <option>03</option>
+                              <option>04</option>
+                              <option>05</option>
+                              <option>06</option>
+                              <option>07</option>
+                              <option>08</option>
+                              <option>09</option>
+                              <option>10</option>
+                              <option>11</option>
+                              <option>12</option>
+                            </select>
+                          </div>
+                          <div class="small-6 columns">
+                            <select>
+                              <option>00</option>
+                              <option>05</option>
+                              <option>10</option>
+                              <option>15</option>
+                              <option>20</option>
+                              <option>25</option>
+                              <option>30</option>
+                              <option>35</option>
+                              <option>40</option>
+                              <option>45</option>
+                              <option>50</option>
+                              <option>55</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="small-3 columns">
+                        <input type="text" id="endDate" class="date">
+                      </div>
+                      <div class="small-3 columns">
+                        <div class="row">
+                          <div class="small-6 columns">
+                            <select>
+                              <option>00</option>
+                              <option>01</option>
+                              <option>02</option>
+                              <option>03</option>
+                              <option>04</option>
+                              <option>05</option>
+                              <option>06</option>
+                              <option>07</option>
+                              <option>08</option>
+                              <option>09</option>
+                              <option>10</option>
+                              <option>11</option>
+                              <option>12</option>
+                            </select>
+                          </div>
+                          <div class="small-6 columns">
+                            <select>
+                              <option>00</option>
+                              <option>05</option>
+                              <option>10</option>
+                              <option>15</option>
+                              <option>20</option>
+                              <option>25</option>
+                              <option>30</option>
+                              <option>35</option>
+                              <option>40</option>
+                              <option>45</option>
+                              <option>50</option>
+                              <option>55</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+					<script>
+					$(function() {
+					  $( "#startDate" ).datepicker({
+						minDate: 0,
+						changeMonth: true,
+						changeYear: true,
+						onClose: function( selectedDate ) {
+						  $( "#endDate" ).datepicker( "option", "minDate", selectedDate );
+						}
+					  });
+					  $( "#endDate" ).datepicker({
+						minDate: 0,
+						changeMonth: true,
+						changeYear: true,
+						onClose: function( selectedDate ) {
+						  $( "#startDate" ).datepicker( "option", "maxDate", selectedDate );
+						}
+					  });
+					});
+                  </script>
+                  </div>
+                  <div class="small-1 columns">
+                    <div class="error-info">
+                      
+                    </div>
+                  </div>
+                </div>                
+
+                <div class="row" style="top:-20px;">
+                  <div class="small-11 columns">
+                    <div class="row">
+                      <div class="small-6 columns">
+                        <p class="preset">
+                        <a href="#" onclick="presetStartDate('+0');">Today</a>
+                        <a href="#" onclick="presetStartDate('+1');">Tomorrow</a>
+                        <a href="#" onclick="presetStartDate('+1w');">One Week</a>
+                        <a href="#" onclick="presetStartDate('+1m');">One Month</a>
+                        </p>
+                      </div>
+                      <div class="small-6 columns">
+                        <p class="preset">
+                        <a href="#" onclick="presetEndDate('+1w');">One Week</a>
+                        <a href="#" onclick="presetEndDate('+2w');">Two Weeks</a>
+                        <a href="#" onclick="presetEndDate('+1m');">One Month</a>
+                        <a href="#" onclick="presetEndDate('+3m');">Three Months</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <script>
+				function presetStartDate(val){
+				  $('#startDate').datepicker('setDate',val);
+				}
+				function presetEndDate(val){
+				  var startDateVal = $("#startDate").datepicker('getDate');
+				  if (startDateVal == null) {
+					  $('#endDate').datepicker('setDate',val);
+				  } else {
+				  	  var lengthType = val.substr(-1),
+				  	      length = parseInt(val),
+				  	      endDateVal = startDateVal;
+				  	  if (isNaN(length))
+				  	  	return;
+				  	  switch(lengthType)
+				  	  {
+				  	  	case 'd':
+				  	  		endDateVal.setDate(endDateVal.getDate() + length);
+				  	  		break;
+				  	  	case 'w':
+				  	  		endDateVal.setDate(endDateVal.getDate() + (length * 7));
+				  	  		break;
+				  	  	case 'm':
+				  	  		endDateVal.setMonth(endDateVal.getMonth() + length);
+				  	  		break;
+				  	  	case 'y':
+				  	  		endDateVal.setYear(endDateVal.getFullYear() + length);
+				  	  		break;
+				  	  	}
+					  $('#endDate').datepicker('setDate',endDateVal);
+				  }
+				}
+				</script>
+              </fieldset>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="small-12 columns">
+              <fieldset>
+                <div class="row">
+                  <div class="small-11 columns">
+                    <h3>Promo Type <span class="help" data-tooltip title="Help text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis ante non orci eleifend consectetur ut et sapien."><i class="icon-info-sign"></i></span></h3>
+                  </div>
+                  <div class="small-1 columns">
+                    <div class="step-star">
+                      2
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="small-11 columns">
+                    <select id="promoType" name="promoType" onchange="changePromoType();">
+                      <option value="FreeDownload" selected>Free Download</option>
+                      <option value="Sale">Sale</option>
+                    </select>
+                    <script>
+					  function changePromoType(){
+						$('#contentSale').addClass('hide');  
+						$('#content'+$('#promoType').val()).removeClass('hide');
+					  }
+                    </script>
+                  </div>
+                  <div class="small-1 columns">
+                    <div class="error-info">
+                      
+                    </div>
+                  </div>
+                </div>
+
+                <div id="contentSale" class="hide">
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <div class="row radio_choice">
+                        <div class="small-4 columns">
+                          <label for="discount1">
+                          <input name="discount" value="1" type="radio" id="discount1" style="display:none;" checked>
+                          <span class="custom radio checked"></span> Percentage Off</label>
+                        </div>
+                        <div class="small-4 columns">
+                          <label for="discount2">
+                          <input name="discount" value="2" type="radio" id="discount2" style="display:none;">
+                          <span class="custom radio"></span> Amount Off</label>
+                        </div>
+                        <div class="small-4 columns">
+                          <label for="discount3">
+                          <input name="discount" value="3" type="radio" id="discount3" style="display:none;">
+                          <span class="custom radio"></span> Fixed Price</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <input type="text">
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row"><div class="small-11 columns"><label>Promo Code Type</label></div></div>
+                <div class="row">
+                  <div class="small-11 columns">                     
+                    <select id="codeType" name="codeType" onchange="changeCodeType()">
+                      <option value="Single">Single Code</option>
+                      <option value="Unique">Unique Code</option>
+                    </select>
+                    <script>
+					  function changeCodeType(){
+						$('#contentSingle').addClass('hide');
+						$('#contentUnique').addClass('hide');  
+						$('#content'+$('#codeType').val()).removeClass('hide');
+					  }
+                    </script>
+                  </div>
+                  <div class="small-1 columns">
+                    <div class="error-info">
+                      
+                    </div>
+                  </div>
+                </div>
+
+                <div id="contentSingle">
+                  <div class="row"><div class="small-11 columns"><label>Promo Code</label></div></div>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <input type="text">
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row"><div class="small-11 columns"><label>Redemptions Per User</label></div></div>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <input type="text">
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="contentUnique" class="hide">
+                  <div class="row"><div class="small-11 columns"><label>Promo Codes</label></div></div>
+                  <div class="row" id="generatePromoCode">
+                    <div class="small-7 columns">
+                      <input type="text" placeholder="Number of codes">
+                    </div>
+                    <div class="small-4 columns">
+                      <button onclick="generatePromoCode();">Generate Promo Codes</button>
+                      <script>
+					  function generatePromoCode(){
+					  	$("#generatePromoCode").html("<div class='small-11 columns'><p><a href='#'>Download promo codes</a></p></div>");
+					  }
+					  </script>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row"><div class="small-11 columns"><label>Redemptions Per Code</label></div></div>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <input type="text">
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </fieldset>
+            </div>
+          </div>          
+
+          <div class="row">
+            <div class="small-12 columns">
+              <fieldset>
+                <div class="row">
+                  <div class="small-11 columns">
+                    <div id="search" class="right">
+                      <input type="text" placeholder="Search for Apps">
+                      <a href="#" class="button prefix"><i class="icon-search"></i></a>
+                    </div>
+                    <h3>Apps <span class="help" data-tooltip title="Help text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis ante non orci eleifend consectetur ut et sapien."><i class="icon-info-sign"></i></span></h3>
+                  </div>
+                  <div class="small-1 columns">
+                    <div class="step-star"> 3 </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="small-11 columns">
+                    <div id="promoAppList">
+                      <table width="100%">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>Title</th>
+                            <th>Redemption Limit</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody id="promoAppSort">
+                          <tr>
+                            <td><img src="webroot/img/mockimages/app/1.png" class="appth"></td>
+                            <td>American Gangster: The Mobile...</td>
+                            <td><input type="text" size="5"></td>
+                            <td><button type="button" data-dropdown="listitem_actions_1" class="list-item"><i class="icon-reorder"></i><i class="icon-angle-down"></i></button>
+                                <ul id="listitem_actions_1" class="action-dropdown" data-dropdown-content="">
+                                  <li><a href="#">Remove</a></li>
+                                </ul></td>
+                          </tr>
+                          <tr>
+                            <td><img src="webroot/img/mockimages/app/2.png" class="appth"></td>
+                            <td>American Popstar: Road to Cel...</td>
+                            <td><input type="text" size="5"></td>
+                            <td><button type="button" data-dropdown="listitem_actions_2" class="list-item"><i class="icon-reorder"></i><i class="icon-angle-down"></i></button>
+                                <ul id="listitem_actions_2" class="action-dropdown" data-dropdown-content="">
+                                  <li><a href="#">Remove</a></li>
+                                </ul></td>
+                          </tr>
+                          <tr>
+                            <td><img src="webroot/img/mockimages/app/3.png" class="appth"></td>
+                            <td>1 vs 100 个与百</td>
+                            <td><input type="text" size="5"></td>
+                            <td><button type="button" data-dropdown="listitem_actions_3" class="list-item"><i class="icon-reorder"></i><i class="icon-angle-down"></i></button>
+                                <ul id="listitem_actions_3" class="action-dropdown" data-dropdown-content="">
+                                  <li><a href="#">Remove</a></li>
+                                </ul></td>
+                          </tr>
+                          <tr>
+                            <td><img src="webroot/img/mockimages/app/4.png" class="appth"></td>
+                            <td>2006 Real Football</td>
+                            <td><input type="text" size="5"></td>
+                            <td><button type="button" data-dropdown="listitem_actions_4" class="list-item"><i class="icon-reorder"></i><i class="icon-angle-down"></i></button>
+                                <ul id="listitem_actions_4" class="action-dropdown" data-dropdown-content="">
+                                  <li><a href="#">Remove</a></li>
+                                </ul></td>
+                          </tr>
+                        </tbody>
+                      </table>
+					  <script>
+					  $(function() {
+						$( "#promoAppSort" ).sortable();
+					  });
+					  </script>
+                    </div>
+                  </div>
+                  <div class="small-1 columns">
+                    <div class="error-info">
+                      
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="small-12 columns">
+              <fieldset>
+                <div class="row">
+                  <div class="small-11 columns">
+                    <div class="right">
+                      <button type="button" data-reveal-id="myModalSmall" data-reveal-ajax="modalAddNewListing.html"> <span><i class="icon-plus blue"></i> New Listing</span> </button>
+                    </div>
+                    <h3>Listings</h3>
+                  </div>
+                  <div class="small-1 columns">
+                    <div class="step-star">
+                      4
+                    </div>
+                  </div>
+                </div>
+                <div class="section-container accordion" data-section="accordion">
+                  <section id="EnglishListing" class="active">
+                    <p class="title" data-section-title><a href="#">English <span>(Default)</span></a></p>
+                    <div class="content" data-slug="English" data-section-content>
+                      <div class="row">
+                        <div class="small-11 columns">
+                          <label>Promo Name</label>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="small-11 columns">
+                          <input type="text" value="">
+                        </div>
+                        <div class="small-1 columns">
+                          <div class="error-info">
+                            
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="small-4 columns">
+                          <label>Icon <span class="optional">(optional)</span> <span class="help" data-tooltip title="Image must be 480x480, PNG only"><i class="icon-info-sign"></i></span></label>
+                          <img class="image_placeholder dashed" src="webroot/img/icon_placeholder.png" alt="480 x 480 Drag and drop your app icon here or click to browse" />
+                        </div>
+                        <div class="small-7 columns">
+                          <label>Banner image <span class="optional">(optional)</span> <span class="help" data-tooltip title="Image must be 1920x640 (3:1) ratio, PNG only"><i class="icon-info-sign"></i></span></label>
+                          <img class="image_placeholder dashed" src="webroot/img/banner_placeholder.png" alt="1920 x 640 Drag and drop your app icon here or click to browse" />
+                        </div>  
+                        <div class="small-1 columns">
+                          <div></div>
+                        </div>                 
+                      </div>
+
+                      <div class="row">
+                        <div class="small-11 columns">                        
+                          <div class="button-bar right">
+                            <ul class="button-group rich-text-editor" style="margin-left:0;">
+                              <li><a href="#" class="small button"><i class="icon-bold"></i></a></li>
+                              <li><a href="#" class="small button"><i class="icon-italic"></i></a></li>
+                              <li><a href="#" class="small button"><i class="icon-underline"></i></a></li>
+                              <li><a href="#" class="small button"><i class="icon-list-ul"></i></a></li>
+                            </ul>
+                          </div>
+                          <label>Description <span class="optional">(optional)</span></label>
+                        </div>
+                      </div>                    
+                      
+                      <div class="row">
+                        <div class="small-11 columns">
+                          <input type="text" name="promo_short_desc" class="short_desc" placeholder="Short description" value=""/>
+                          <textarea name="promo_long_desc" class="long_desc" placeholder="Long description"></textarea>
+                        </div>
+                        <div class="small-1 columns">
+                          <div class="error-info">
+                            
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="small-11 columns">                        
+                          <div class="button-bar right">
+                            <ul class="button-group rich-text-editor" style="margin-left:0;">
+                              <li><a href="#" class="small button"><i class="icon-bold"></i></a></li>
+                              <li><a href="#" class="small button"><i class="icon-italic"></i></a></li>
+                              <li><a href="#" class="small button"><i class="icon-underline"></i></a></li>
+                              <li><a href="#" class="small button"><i class="icon-list-ul"></i></a></li>
+                            </ul>
+                          </div>
+                          <label>Legal Text <span class="optional">(optional)</span></label>
+                        </div>
+                      </div>                    
+                      
+                      <div class="row">
+                        <div class="small-11 columns">
+                          <textarea name="promo_legal_text" class="long_desc" placeholder="Legal Text"></textarea>
+                        </div>
+                        <div class="small-1 columns">
+                          <div class="error-info">
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section id="FrenchListing" class="hide">
+                    <p class="title" data-section-title><a href="#">French</a></p>
+                    <div class="content" data-slug="English" data-section-content>
+                      <div class="row">
+                        <div class="small-11 columns">
+                          <label>Promo Name</label>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="small-11 columns">
+                          <input type="text" value="">
+                        </div>
+                        <div class="small-1 columns">
+                          <div class="error-info">
+                            
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="small-4 columns">
+                          <label>Icon <span class="optional">(optional)</span> <span class="help" data-tooltip title="Image must be 480x480, PNG only"><i class="icon-info-sign"></i></span></label>
+                          <img class="image_placeholder dashed" src="webroot/img/icon_placeholder.png" alt="480 x 480 Drag and drop your app icon here or click to browse" />
+                        </div>
+                        <div class="small-7 columns">
+                          <label>Banner image <span class="optional">(optional)</span> <span class="help" data-tooltip title="Image must be 1920x640 (3:1) ratio, PNG only"><i class="icon-info-sign"></i></span></label>
+                          <img class="image_placeholder dashed" src="webroot/img/banner_placeholder.png" alt="1920 x 640 Drag and drop your app icon here or click to browse" />
+                        </div>  
+                        <div class="small-1 columns">
+                          <div></div>
+                        </div>                 
+                      </div>
+
+                      <div class="row">
+                        <div class="small-11 columns">                        
+                          <div class="button-bar right">
+                            <ul class="button-group rich-text-editor" style="margin-left:0;">
+                              <li><a href="#" class="small button"><i class="icon-bold"></i></a></li>
+                              <li><a href="#" class="small button"><i class="icon-italic"></i></a></li>
+                              <li><a href="#" class="small button"><i class="icon-underline"></i></a></li>
+                              <li><a href="#" class="small button"><i class="icon-list-ul"></i></a></li>
+                            </ul>
+                          </div>
+                          <label>Description <span class="optional">(optional)</span></label>
+                        </div>
+                      </div>                    
+                      
+                      <div class="row">
+                        <div class="small-11 columns">
+                          <input type="text" name="promo_short_desc" class="short_desc" placeholder="Short description" value=""/>
+                          <textarea name="promo_long_desc" class="long_desc" placeholder="Long description"></textarea>
+                        </div>
+                        <div class="small-1 columns">
+                          <div class="error-info">
+                            
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="small-11 columns">                        
+                          <div class="button-bar right">
+                            <ul class="button-group rich-text-editor" style="margin-left:0;">
+                              <li><a href="#" class="small button"><i class="icon-bold"></i></a></li>
+                              <li><a href="#" class="small button"><i class="icon-italic"></i></a></li>
+                              <li><a href="#" class="small button"><i class="icon-underline"></i></a></li>
+                              <li><a href="#" class="small button"><i class="icon-list-ul"></i></a></li>
+                            </ul>
+                          </div>
+                          <label>Legal Text <span class="optional">(optional)</span></label>
+                        </div>
+                      </div>                    
+                      
+                      <div class="row">
+                        <div class="small-11 columns">
+                          <textarea name="promo_legal_text" class="long_desc" placeholder="Legal Text"></textarea>
+                        </div>
+                        <div class="small-1 columns">
+                          <div class="error-info">
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                  
+                </div>
+              </fieldset>
+            </div>
+          </div>          
+
+          <div class="row">
+              <div class="small-12 columns">
+                <fieldset>
+                  <div class="row">
+                    <div class="small-11 columns">
+                      <h3>Distribution <span class="help" data-tooltip title="Help text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis ante non orci eleifend consectetur ut et sapien."><i class="icon-info-sign"></i></span></h3>
+                      <p>Do you have distribution restrictions?</p>
+                      <div class="row radio_choice">
+                        <div class="small-6 columns">
+                          <label for="restrictionChange1" onClick="$('#restrictions').addClass('hide');">
+                          <input name="restrictionChange" value="0" type="radio" id="restrictionChange1" style="display:none;" checked>
+                          <span class="custom radio checked"></span> Nope, distribute everwhere.</label>
+                        </div>
+                        <div class="small-6 columns">
+                          <label for="restrictionChange2" onClick="$('#restrictions').removeClass('hide');">
+                          <input name="restrictionChange" value="1" type="radio" id="restrictionChange2" style="display:none;">
+                          <span class="custom radio"></span> Yup, I have restrictions.</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="step-star">
+                        5
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="restrictions" class="hide">                  
+                    <div class="row"><div class="small-11 columns"><label>Country Restrictions</label></div></div>
+                    <div class="row">
+                      <div class="small-11 columns">                     
+                        <select id="selectCountryRestrictions" onchange="changeCountryRestrictions();">
+                          <option value="0">Available in all countries</option>
+                          <option value="1">Available only in the countries selected below</option>
+                          <option value="2">Available in all countries except for the ones selected below</option>
+                        </select>
+                        <script>
+						  function changeCountryRestrictions(){
+							  if($('#selectCountryRestrictions').val()!='0'){
+								  $('#selectCountryRestrictionsList').removeClass('hide');
+							  } else {
+								  $('#selectCountryRestrictionsList').addClass('hide');
+							  }
+						  }
+						</script>
+                      </div>
+                      <div class="small-1 columns">
+                        <div class="error-info">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div id="selectCountryRestrictionsList" class="hide">
+                      <div class="row">
+                        <div class="small-11 columns">                     
+                          <select name="allCountries" id="allCountries" style="width:100%" multiple="multiple" placeholder="Select Countries">
+                            <option>Country One</option>
+                            <option>Country Two</option>
+                            <option>Country Three</option>
+                            <option>Country Four</option>
+                            <option>Country Five</option>
+                            <option>Country Six</option>
+                            <option>Country Seven</option>
+                            <option>Country Eight</option>
+                            <option>Country Nine</option>
+                            <option>Country Ten</option>
+                          </select>
+                          <script>
+                            $(document).ready(function() {
+
+                              $("#allCountries").select2();
+                            });
+                          </script>
+                        </div>
+                        <div class="small-1 columns">
+                          <div class="error-info">
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="row"><div class="small-11 columns"><label>Carriers Restrictions</label></div></div>
+                    <div class="row">
+                      <div class="small-11 columns">                     
+                        <select id="selectCarrierRestrictions" onchange="changeCarrierRestrictions();">
+                          <option value="0">Available on all carriers</option>
+                          <option value="1">Available only on the carriers selected below</option>
+                          <option value="2">Available on all carriers except for the ones selected below</option>
+                        </select>
+                        <script>
+						  function changeCarrierRestrictions(){
+							  if($('#selectCarrierRestrictions').val()!='0'){
+								  $('#selectCarrierRestrictionsList').removeClass('hide');
+							  } else {
+								  $('#selectCarrierRestrictionsList').addClass('hide');
+							  }
+						  }
+						</script>
+                      </div>
+                      <div class="small-1 columns">
+                        <div class="error-info">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div id="selectCarrierRestrictionsList" class="hide">
+                      <div class="row">
+                        <div class="small-11 columns">                     
+                          <select name="allCarriers" id="allCarriers" style="width:100%" multiple="multiple" placeholder="Select Carriers">
+                            <optgroup label="Country One">
+                              <option>Carrier One</option>
+                              <option>Carrier Two</option>
+                              <option>Carrier Three</option>
+                              <option>Carrier Four</option>
+                              <option>Carrier Five</option>
+                              <option>Carrier Six</option>
+                              <option>Carrier Seven</option>
+                              <option>Carrier Eight</option>
+                              <option>Carrier Nine</option>
+                              <option>Carrier Ten</option>
+                            </optgroup>
+                            <optgroup label="Country Two">
+                              <option>Carrier One</option>
+                              <option>Carrier Two</option>
+                              <option>Carrier Three</option>
+                              <option>Carrier Four</option>
+                              <option>Carrier Five</option>
+                              <option>Carrier Six</option>
+                              <option>Carrier Seven</option>
+                              <option>Carrier Eight</option>
+                              <option>Carrier Nine</option>
+                              <option>Carrier Ten</option>
+                            </optgroup>
+                            <optgroup label="Country Three">
+                              <option>Carrier One</option>
+                              <option>Carrier Two</option>
+                              <option>Carrier Three</option>
+                              <option>Carrier Four</option>
+                              <option>Carrier Five</option>
+                              <option>Carrier Six</option>
+                              <option>Carrier Seven</option>
+                              <option>Carrier Eight</option>
+                              <option>Carrier Nine</option>
+                              <option>Carrier Ten</option>
+                            </optgroup>
+                            <optgroup label="Country Four">
+                              <option>Carrier One</option>
+                              <option>Carrier Two</option>
+                              <option>Carrier Three</option>
+                              <option>Carrier Four</option>
+                              <option>Carrier Five</option>
+                              <option>Carrier Six</option>
+                              <option>Carrier Seven</option>
+                              <option>Carrier Eight</option>
+                              <option>Carrier Nine</option>
+                              <option>Carrier Ten</option>
+                            </optgroup>
+                            <optgroup label="Country Five">
+                              <option>Carrier One</option>
+                              <option>Carrier Two</option>
+                              <option>Carrier Three</option>
+                              <option>Carrier Four</option>
+                              <option>Carrier Five</option>
+                              <option>Carrier Six</option>
+                              <option>Carrier Seven</option>
+                              <option>Carrier Eight</option>
+                              <option>Carrier Nine</option>
+                              <option>Carrier Ten</option>
+                            </optgroup>
+                          </select>
+                          <script>
+                            $(document).ready(function() {
+                              $("#allCarriers").select2();
+                            });
+                          </script>
+                        </div>
+                        <div class="small-1 columns">
+                          <div class="error-info">
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="row"><div class="small-11 columns"><label>Device Restrictions</label></div></div>
+                    <div class="row">
+                      <div class="small-11 columns">                     
+                        <select id="selectDeviceRestrictions" onchange="changeDeviceRestrictions();">
+                          <option value="0">Available on all devices</option>
+                          <option value="1">Available only on the devices selected below</option>
+                          <option value="2">Available on all devices except for the ones selected below</option>
+                        </select>
+                        <script>
+						  function changeDeviceRestrictions(){
+							  if($('#selectDeviceRestrictions').val()!='0'){
+								  $('#selectDeviceRestrictionsList').removeClass('hide');
+							  } else {
+								  $('#selectDeviceRestrictionsList').addClass('hide');
+							  }
+						  }
+						</script>
+                      </div>
+                      <div class="small-1 columns">
+                        <div class="error-info">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div id="selectDeviceRestrictionsList" class="hide">
+                      <div class="row">
+                        <div class="small-11 columns">                     
+                          <select name="allDevices" id="allDevices" style="width:100%" multiple="multiple" placeholder="Select Devices">
+                            <option>Device One</option>
+                            <option>Device Two</option>
+                            <option>Device Three</option>
+                            <option>Device Four</option>
+                            <option>Device Five</option>
+                            <option>Device Six</option>
+                            <option>Device Seven</option>
+                            <option>Device Eight</option>
+                            <option>Device Nine</option>
+                            <option>Device Ten</option>
+                          </select>
+                          <script>
+                            $(document).ready(function() {
+
+                              $("#allDevices").select2();
+                            });
+                          </script>
+                        </div>
+                        <div class="small-1 columns">
+                          <div class="error-info">
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+
+          <button> <span><i class="icon-plus blue"></i> Create</span> </button>
+		  <script type="text/javascript" src="webroot/js/autosave/sisyphus.min.js"></script> 
+          <script>
+          $( function() {
+            /*$( "form" ).sisyphus();*/
+          } );
+          </script>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="footer" class="footer">
+  <div class="inner_footer">
+    <div class="row">
+      <div class="columns grid_footer technologies">
+        <h2 class="h5">Technologies</h2>
+        <ul>
+          <li><a href="http://developer.blackberry.com/native/">Native</a></li>
+          <li><a href="http://developer.blackberry.com/html5/">HTML5</a></li>
+          <li><a href="http://developer.blackberry.com/air/">AIR</a></li>
+          <li><a href="http://developer.blackberry.com/android/">Android</a></li>
+          <li><a href="http://developer.blackberry.com/playbook/">PlayBook</a></li>
+          <li><a href="http://developer.blackberry.com/bbos/">BlackBerry OS</a></li>
+          <li><a href="http://developer.blackberry.com/develop/platform_partners/">Platform Partners</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer programs">
+        <h2 class="h5">Programs</h2>
+        <ul>
+          <li><a href="https://www.blackberry.com/beta/" target="_blank">Beta Zone</a></li>
+          <li><a href="https://partners.blackberry.com/web/guest/home/" target="_blank">Alliance programs</a></li>
+          <li><a href="http://us.blackberry.com/ataglance/academic/" target="_blank">Academic programs</a></li>
+          <li><a href="https://developer.blackberry.com/jamcommunity/groups/">Developer groups</a></li>
+          <li><a href="https://developer.blackberry.com/blackberry10devalpha/">BlackBerry 10 Dev Alpha</a></li>
+          <li><a href="https://developer.blackberry.com/builtforblackberry/">Built for BlackBerry</a></li>
+          <li><a href="http://developer.blackberry.com/blackberrybuilder/">BlackBerry Builder</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer support">
+        <h2 class="h5">Support</h2>
+        <ul>
+          <li><a href="https://bdsc.webapps.blackberry.com/CodeSigningHelp/" target="_blank">Code Signing Help</a></li>
+          <li><a href="http://www.youtube.com/blackberrydev/" target="_blank">YouTube Channel</a></li>
+          <li><a href="http://supportforums.blackberry.com/t5/Developer-Support-Forums/ct-p/blackberrydev" target="_blank">Developer forums</a></li>
+          <li><a href="https://www.blackberry.com/jira/secure/Dashboard.jspa" target="_blank">Developer Issue Tracker</a></li>
+          <li><a href="http://supportforums.blackberry.com/t5/Application-Platforms/tkbc-p/app_plat" target="_blank">Knowledge Base</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer app_store">
+        <h2 class="h5">BlackBerry World</h2>
+        <ul>
+          <li><a href="https://www.blackberry.com/SignedKeys/codesigning.html" target="_blank">Sign your app</a></li>
+          <li><a href="http://developer.blackberry.com/blackberryworld/">Submitting your app</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer_last social">
+        <h2 class="h5">Follow us on:</h2>
+        <ul class="inline-list">
+          <li><a href="http://www.facebook.com/BlackBerryDeveloperCommunity" title="Follow us on Facebook" class="icon-20 facebook" target="_blank"><span class="hide">Facebook</span></a></li>
+          <li><a href="http://www.youtube.com/blackberrydev/" title="Catch us on YouTube" class="icon-20 youtube" target="_blank"><span class="hide">YouTube</span></a></li>
+          <li><a href="http://twitter.com/blackberrydev" title="Hear the BlackBerry tweet" class="icon-20 twitter" target="_blank"><span class="hide">Twitter</span></a></li>
+          <li><a href="http://devblog.blackberry.com/" title="Developer Blogs" class="icon-20 blackberry" target="_blank"><span class="hide">BlackBerry Blogs</span></a></li>
+          <li><a href="#bbmchannelcode" title="BBM Channels" class="icon-20 channels lightboxtrigger"><span class="hide">BBM Channels</span></a></li>
+        </ul>
+        <div style='display:none'>
+          <div id='bbmchannelcode' class="lightbox">
+            <div class="lightbox-desc" style="width:400px;"> <img src="webroot/img/common/channelonwhite.png" alt="BBM Channels" /> </div>
+            <div class="lightbox-desc" style="width:370px;">
+              <div class="lightbox-text" style="margin: 40px 100px 0px 0px;">
+                <h1 style="margin-left:0px;">BBM Channels</h1>
+                <p>Developer Relations is on BBM Channels! Join the conversation by <a href="https://beta.webapps.blackberry.com/BBMChannels/" target="_blank">signing up for the beta program</a> and scanning the barcode to the right.</p>
+                <a href="https://beta.webapps.blackberry.com/BBMChannels/" target="_blank"> Register for BBM Channels beta &rsaquo;</a> </div>
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li><a href="http://www.blackberry.com/legal/" target="_blank">Legal &amp; Trademarks</a> </li>
+        </ul>
+      </div>
+      <div class="copyright_notice">Copyright &copy; 2014 BlackBerry Limited, unless otherwise noted.</div>
+    </div>
+  </div>
+</footer>
+  
+  <!-- Included JS Files (Uncompressed) --> 
+  <!--
+  <script src="javascripts/jquery.js"></script><script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script><script src="javascripts/jquery.foundation.forms.js"></script><script src="javascripts/jquery.foundation.reveal.js"></script><script src="javascripts/jquery.foundation.orbit.js"></script><script src="javascripts/jquery.foundation.navigation.js"></script><script src="javascripts/jquery.foundation.buttons.js"></script><script src="javascripts/jquery.foundation.tabs.js"></script><script src="javascripts/jquery.foundation.tooltips.js"></script><script src="javascripts/jquery.foundation.accordion.js"></script><script src="javascripts/jquery.placeholder.js"></script><script src="javascripts/jquery.foundation.alerts.js"></script><script src="javascripts/jquery.foundation.topbar.js"></script><script src="javascripts/jquery.foundation.joyride.js"></script><script src="javascripts/jquery.foundation.clearing.js"></script><script src="javascripts/jquery.foundation.magellan.js"></script>
+  --> 
+  
+  <!--<script type="text/javascript" src="webroot/js/common/jquery-1.8.2.min.js"></script>--> 
+  <script type="text/javascript" src="webroot/js/common/foundation.min.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/foundation/foundation.topbar.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/foundation/foundation.joyride.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/foundation/foundation.backnav.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/jquery.easing.1.3.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/bb.dropdown.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/bb.searchbar.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/bb.expandable.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/bb.nav.doc.js"></script> 
+  <script type="text/javascript" src="webroot/js/bb.segment_hover.js"></script> 
+  <script type="text/javascript" src="webroot/js/jquery.tipTip.minified.js"></script> 
+  <script type="text/javascript" src="webroot/js/jquery.colorbox.js"></script> 
+  <script type="text/javascript" src="webroot/js/bb.site.js"></script> 
+  <script type="text/javascript" src="webroot/js/bb.focuscontrol.js"></script> 
+  <script type="text/javascript" src="webroot/js/bb.nav.js"></script> 
+  
+  <!-- Note should this be a separate .js file or be part of bb.site.js  --> 
+  
+  <script type="text/javascript">
+	  global.init('', 'portals', 'index', '', 'webroot/');
+	  global.setFocus('cascades');
+  </script> 
+  <script type="text/javascript" src="webroot/js/pageload.js"></script> 
+  
+  <!-- Piwik --> 
+  <script type="text/javascript">
+	  var pkBaseURL, server, pkId;
+	  server = 'dxlab013qbolabvm.labqbo.testnet.rim.net/stats/';
+	  pkId = -1;
+	  pkBaseURL = (("https:" == document.location.protocol) ? "https://"+server : "http://"+server);
+	  document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+	  </script><script type="text/javascript">
+	  try {
+	  var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", -1);
+	  piwikTracker.trackPageView();
+	  piwikTracker.enableLinkTracking();
+  } catch( err ) {}
+  </script>
+  <noscript>
+  <p><img src="http://dxlab013qbolabvm.labqbo.testnet.rim.net/stats/piwik.php?idsite=-1" style="border:0" alt="" /></p>
+  </noscript>
+  <!-- End Piwik Tracking Code --> 
+  <!--[if lt IE 7 ]>
+  <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+  <script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+<![endif]-->
+
+<script>
+  $(document).ready(function() {
+	$('.reveal-modal').css({
+	  maxHeight: $(window).height() - 150 + 'px'
+	});
+  });
+  $(window).resize(function() {
+	$('.reveal-modal').css({
+	  maxHeight: $(window).height() - 150 + 'px'
+	});
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Nextel Argentina Web Reskin Mockup</title>
+<style type="text/css">
+a{color:#000;text-decoration:none;margin:0;}
+a:active,a:focus{font-weight:bold;background:#ff0;}
+body{background:#fff;color:#000;font:normal 10px/12px tahoma,sans-serif;margin:5px;}
+h1{color:#8f001e;font:bold 12px/14px tahoma,sans-serif;margin:0 0 5px 0;text-decoration:underline;}
+h2{color:#000;font:bold 12px/14px tahoma,sans-serif;margin:0 0 5px 0;}
+p{margin:0;}
+ul{list-style:none;margin:0 0 5px 0;padding:0;}
+li{margin:5px 0 0 0;padding:0;}
+li li{margin:0;border-bottom:1px solid #ccc;}
+li li a:visited{color:#333;}
+li li p{margin:0;}
+li li p a:visited{color:#000;}
+li p{font-weight:bold;line-height:10px;margin:0 0 5px 0;text-transform:uppercase;}
+li ul{margin:0 0 8px 18px;}
+.hide{display:none;visibility:hidden;}
+.toggle{font-family:courier,monospace;font-weight:normal;line-height:10px;margin:0 10px 0 0;}
+</style>
+<script type="text/javascript">
+function toggle (y) {
+	x = 'toggle' + y;
+
+	if ( document.getElementById(x).innerHTML == '+' )
+	{
+		document.getElementById(y).className = '';
+		document.getElementById(x).innerHTML = '-';
+	}
+	else
+	{
+		document.getElementById(y).className = 'hide';
+		document.getElementById(x).innerHTML = '+';
+	}
+}
+</script>
+</head>
+<body>
+<h1>Nextel Argentina Web Reskin Mockup</h1>
+<h2>No Phone Selected</h2>
+<ul>
+	<li><p>- <a href="downloads.jsp?" target="viewMockups">Downloads</a></p></li>
+	<li>- <a href="search_results.jsp?" target="viewMockups">Search Results</a></li>
+	<li>- <a href="search_no_results.jsp?" target="viewMockups">Search Results - No Results Found</a></li>
+	<li>
+		<p><a href="javascript: void 0" onclick="toggle('Ringtones')"><span class="toggle" id="toggleRingtones">+</span>Ringtones</a></p>
+		<ul id="Ringtones" class="hide">
+			<li><a href="rt.jsp?" target="viewMockups">- Default</a></li>
+			<li><a href="rt_category.jsp?" target="viewMockups">- Categories</a></li>
+			<li><a href="rt_subcategory.jsp?" target="viewMockups">- Subcategories</a></li>
+			<li><a href="rt_details.jsp?" target="viewMockups">- Details</a></li>
+		</ul>
+	</li>
+	<li>
+		<p><a href="javascript: void 0" onclick="toggle('Wallpapers')"><span class="toggle" id="toggleWallpapers">+</span>Wallpapers</a></p>
+		<ul id="Wallpapers" class="hide">
+			<li><a href="wp.jsp?" target="viewMockups">- Default</a></li>
+			<li><a href="wp_category.jsp?" target="viewMockups">- Categories</a></li>
+			<li><a href="wp_subcategory.jsp?" target="viewMockups">- Subcategories</a></li>
+			<li><a href="wp_details.jsp?" target="viewMockups">- Details</a></li>
+		</ul>
+	</li>
+	<li>
+		<p><a href="javascript: void 0" onclick="toggle('Games')"><span class="toggle" id="toggleGames">+</span>Games</a></p>
+		<ul id="Games" class="hide">
+			<li><a href="games.jsp?" target="viewMockups">- Default</a></li>
+			<li><a href="games_category.jsp?" target="viewMockups">- Categories</a></li>
+			<li><a href="games_subcategory.jsp?" target="viewMockups">- Subcategories</a></li>
+			<li><a href="games_details.jsp?" target="viewMockups">- Details</a></li>
+		</ul>
+	</li>
+	<li>
+		<p><a href="javascript: void 0" onclick="toggle('Apps')"><span class="toggle" id="toggleApps">+</span>Apps</a></p>
+		<ul id="Apps" class="hide">
+			<li><a href="apps.jsp?" target="viewMockups">- Default</a></li>
+			<li><a href="apps_category.jsp?" target="viewMockups">- Categories</a></li>
+			<li><a href="apps_subcategory.jsp?" target="viewMockups">- Subcategories</a></li>
+			<li><a href="apps_details.jsp?" target="viewMockups">- Details</a></li>
+		</ul>
+	</li>
+	<li>- <a href="terms.jsp?" target="viewMockups">Terms</a></li>
+	<li>- <a href="privacy_policy.jsp?" target="viewMockups">Privacy Policy</a></li>
+</ul>
+
+<hr />
+<h2>Selected Phone</h2>
+<ul>
+	<li><p>- <a href="downloads.jsp?p=I205" target="viewMockups">Downloads</a></p></li>
+	<li>- <a href="search_results.jsp?p=I205" target="viewMockups">Search Results</a></li>
+	<li>- <a href="search_no_results.jsp?p=I205" target="viewMockups">Search Results - No Results Found</a></li>
+	<li>
+		<p><a href="javascript: void 0" onclick="toggle('Ringtones2')"><span class="toggle" id="toggleRingtones2">+</span>Ringtones</a></p>
+		<ul id="Ringtones2" class="hide">
+			<li><a href="rt.jsp?p=I205" target="viewMockups">- Default</a></li>
+			<li><a href="rt_category.jsp?p=I205" target="viewMockups">- Categories</a></li>
+			<li><a href="rt_subcategory.jsp?p=I205" target="viewMockups">- Subcategories</a></li>
+			<li><a href="rt_details.jsp?p=I205" target="viewMockups">- Details</a></li>
+		</ul>
+	</li>
+	<li>
+		<p><a href="javascript: void 0" onclick="toggle('Wallpapers2')"><span class="toggle" id="toggleWallpapers2">+</span>Wallpapers</a></p>
+		<ul id="Wallpapers2" class="hide">
+			<li><a href="wp.jsp?p=I205" target="viewMockups">- Default</a></li>
+			<li><a href="wp_category.jsp?p=I205" target="viewMockups">- Categories</a></li>
+			<li><a href="wp_subcategory.jsp?p=I205" target="viewMockups">- Subcategories</a></li>
+			<li><a href="wp_details.jsp?p=I205" target="viewMockups">- Details</a></li>
+		</ul>
+	</li>
+	<li>
+		<p><a href="javascript: void 0" onclick="toggle('Games2')"><span class="toggle" id="toggleGames2">+</span>Games</a></p>
+		<ul id="Games2" class="hide">
+			<li><a href="games.jsp?p=I205" target="viewMockups">- Default</a></li>
+			<li><a href="games_category.jsp?p=I205" target="viewMockups">- Categories</a></li>
+			<li><a href="games_subcategory.jsp?p=I205" target="viewMockups">- Subcategories</a></li>
+			<li><a href="games_details.jsp?p=I205" target="viewMockups">- Details</a></li>
+		</ul>
+	</li>
+	<li>
+		<p><a href="javascript: void 0" onclick="toggle('Apps2')"><span class="toggle" id="toggleApps2">+</span>Apps</a></p>
+		<ul id="Apps2" class="hide">
+			<li><a href="apps.jsp?p=I205" target="viewMockups">- Default</a></li>
+			<li><a href="apps_category.jsp?p=I205" target="viewMockups">- Categories</a></li>
+			<li><a href="apps_subcategory.jsp?p=I205" target="viewMockups">- Subcategories</a></li>
+			<li><a href="apps_details.jsp?p=I205" target="viewMockups">- Details</a></li>
+		</ul>
+	</li>
+	<li>- <a href="terms.jsp?p=I205" target="viewMockups">Terms</a></li>
+	<li>- <a href="privacy_policy.jsp?p=I205" target="viewMockups">Privacy Policy</a></li>
+</ul>
+
+</body>
+</html>

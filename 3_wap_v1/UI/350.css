@@ -1,0 +1,24 @@
+div.banner, div.content, div.ftr {width:338px;}
+div.blocktitle {background:#06380c url(img/350/bg_title_bar.gif) top left no-repeat;height:55px;line-height:40px;padding-left:13px;}
+p.ftdesc {padding:3px 11px;}
+div.sepdot {background:url(img/350/div_dot.gif) center left repeat-x;height:2px;border-top:4px solid #fff;border-bottom:4px solid #fff;}
+div.sepsolid {background:url(img/350/div_solid.gif) center left repeat-x;height:2px;}
+div.topcurve {background:#06380c url(img/350/top_curve.gif) top left no-repeat;height:21px;}
+div.endcurve {background:#06380c url(img/350/end_curve.gif) top left no-repeat;height:31px;}
+div.ftrcurve {background:#06380c url(img/350/ftr_curve.gif) top left no-repeat;height:20px;}
+div.tabcurve {background:#06380c url(img/350/tab_curve.gif) top left no-repeat;height:20px;}
+div.contentpad {/*padding:0 0 10px 10px;*/border-right:10px solid #fff;border-bottom:10px solid #fff;border-left:10px solid #fff;}
+div.contentpad p {margin:10px 0 5px;}
+td.itemth {width:56px;}
+img.itemth {margin:6px 0 0 6px;}
+div.action {margin:0 0 0 58px;}
+dt {padding:3px 3px 1px 11px;}
+dt.cat {padding:3px 3px 3px 11px;}
+td.pl3th {width:60px;}
+td.pl3title {width:100px;}
+/*img.ss {width:160px;}*/
+img.ftbanner {width:338px;height:129px;}
+img.pl3th {width:60px;height:50px;}
+dt.ftr, dt.ftr2 {padding-top:3px;padding-bottom:3px;}
+div.topbanner {width:345px;}
+table.pagination {border-right:10px solid #fff;border-left:10px solid #fff;}

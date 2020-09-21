@@ -1,0 +1,41 @@
+* {margin:0;padding:0;border:0;}
+body {background:#fff;color:#333;font:11px Verdana, Arial, Helvetica, sans-serif;}
+
+#container {text-align:center;}
+#inner_container {width:762px;text-align:left;margin:0 auto;padding:0;}
+
+#header {padding:0 15px;}
+
+#nav {height:40px;float:none;clear:both;}
+#nav ul {list-style:none;float:none;clear:both;}
+#nav ul li {float:left;}
+#nav ul li a {display:block;font-size:0px;text-indent:-9999px;}
+#nav a#whatis {width:158px;height:32px;background:url(../images/nav_whatis.gif) top left no-repeat;}
+#nav a#whatis.hl, #nav a#whatis:hover {background:url(../images/nav_whatis.gif) bottom left no-repeat;}
+#nav a#why {width:132px;height:32px;background:url(../images/nav_why.gif) top left no-repeat;}
+#nav a#why.hl, #nav a#why:hover {background:url(../images/nav_why.gif) bottom left no-repeat;}
+#nav a#products {width:158px;height:32px;background:url(../images/nav_products.gif) top left no-repeat;}
+#nav a#products.hl, #nav a#products:hover {background:url(../images/nav_products.gif) bottom left no-repeat;}
+#nav a#about {width:97px;height:32px;background:url(../images/nav_about.gif) top left no-repeat;}
+#nav a#about.hl, #nav a#about:hover {background:url(../images/nav_about.gif) bottom left no-repeat;}
+#nav a#contact {width:217px;height:32px;background:url(../images/nav_contact.gif) top left no-repeat;}
+#nav a#contact.hl, #nav a#contact:hover {background:url(../images/nav_contact.gif) bottom left no-repeat;}
+
+#content {width:722px;height:448px;padding:10px 20px 24px 20px;background:url(../images/bg_content.jpg) top left no-repeat;font-size:14px; float:none;clear:both; }
+#content h1 {font-size:18px;margin:0 0 10px 0;color:#a3a3a3;} 
+#content h2 {font-size:14px;} 
+#content p {margin:0 0 15px 0;}
+#content a {color:#FF6600;}
+#content ul {margin:0 0 10px 25px;}
+#content ol {margin:0 0 10px 25px;}
+
+#inner_content {width:722px;height:448px;overflow:auto;}
+
+#home #content {width:762px;height:482px;padding:0;background:url(../images/bg_content_home.jpg) top left no-repeat;position:relative;}
+#home #inner_content {width:280px;height:auto;bottom:20px;right:20px;position:absolute;}
+
+#products #content {width:722px;height:448px;padding:10px 20px 24px 20px;background:url(../images/bg_content_products.jpg) top left no-repeat;position:relative;}
+
+#footer {color:#999;padding:3px 20px;float:none;clear:both;}
+
+.aright {text-align:right;}

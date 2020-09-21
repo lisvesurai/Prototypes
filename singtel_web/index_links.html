@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>SingTel Web Mockups</title>
+<style type="text/css">
+a{color:#000;text-decoration:none;margin:0;}
+a:active,a:focus{text-decoration:underline;background:#ff0;}
+a:hover{background:#0ff;}
+body{background:#fff;color:#000;font:normal 10px/12px tahoma,sans-serif;margin:5px;}
+h1{color:#8f001e;font:bold 12px tahoma,sans-serif;margin:0 0 5px 0;text-decoration:underline;}
+h2{color:#000;font:bold 12px tahoma,sans-serif;margin:0 0 5px 0;}
+p{margin:0;}
+ul{list-style:none;margin:0 0 5px 0;padding:0;}
+li{margin:5px 0 0 0;padding:0;}
+li li{margin:0;/*border-bottom:1px solid #ccc;*/}
+li li a:visited{color:#333;}
+li li p{margin:0;}
+li li p a:visited{color:#000;}
+li p{font-weight:bold;margin:0 0 5px 0;text-transform:uppercase;}
+li ul{margin:0 0 8px 18px;}
+.hide{display:none;visibility:hidden;}
+.toggle{font-family:courier,monospace;font-weight:normal;line-height:10px;margin:0 10px 0 0;}
+</style>
+<script type="text/javascript">
+function toggle (y) {
+	x = 'toggle' + y;
+
+	if ( document.getElementById(x).innerHTML == '+' )
+	{
+		document.getElementById(y).className = '';
+		document.getElementById(x).innerHTML = '-';
+	}
+	else
+	{
+		document.getElementById(y).className = 'hide';
+		document.getElementById(x).innerHTML = '+';
+	}
+}
+</script>
+</head>
+<body>
+<h1>SingTel Web Mockups</h1>
+<h2>Logged Out</h2>
+<ul>
+
+	<li><p><a href="home.jsp?u=out&p=lg_km900&pn=LG+Arena+KM900" target="viewMockups">Home</a></p></li>
+			<li><a href="apps.jsp?u=out&p=lg_km900&pn=LG+Arena+KM900" target="viewMockups"> - Category</a></li>
+			<li><a href="apps_detail.jsp?u=out&p=lg_km900&pn=LG+Arena+KM900" target="viewMockups"> - Details</a></li>
+	<li><a href="search_results.jsp?u=out&p=lg_km900&pn=LG+Arena+KM900" target="viewMockups">Search Results</a></li>
+	<li><p><a href="iphone.jsp?" target="viewMockups">iPhone</a></p></li>
+	<li><p><a href="terms.html?" target="viewMockups">T&amp;C</a></p></li>
+	<li><p><a href="faq.html?" target="viewMockups">FAQ</a></p></li>
+</ul>
+<hr/>
+<h2>Logged In</h2>
+<ul>
+	<li><p><a href="home.jsp?u=in&p=lg_km900&pn=LG+Arena+KM900" target="viewMockups">Home</a></p></li>
+			<li><a href="apps.jsp?u=in&p=lg_km900&pn=LG+Arena+KM900" target="viewMockups"> - Category</a></li>
+			<li><a href="apps_detail.jsp?u=in&p=lg_km900&pn=LG+Arena+KM900" target="viewMockups"> - Details</a></li>
+			<li><a href="apps_detail.jsp?u=in&p=lg_km900&pn=LG+Arena+KM900&fav=yes" target="viewMockups"> - Details - In Favorites</a></li>
+			<li><a href="apps_receipt.jsp?u=in&p=lg_km900&pn=LG+Arena+KM900" target="viewMockups"> - Receipt</a></li>
+			<li><a href="mypurchases.jsp?u=in&p=lg_km900&pn=LG+Arena+KM900" target="viewMockups">My Purchases</a></li>
+			<li><a href="mypurchases_detail.jsp?u=in&p=lg_km900&pn=LG+Arena+KM900&fav=yes" target="viewMockups">My Purchases - Item Detail</a></li>
+	<li><a href="search_results.jsp?u=in&p=lg_km900&pn=LG+Arena+KM900" target="viewMockups">Search Results</a></li>
+	<li><a href="mywishlist.jsp?u=in&p=lg_km900&pn=LG+Arena+KM900" target="viewMockups">My Favorites</a></li>
+	<li><p><a href="terms.html?" target="viewMockups">T&amp;C</a></p></li>
+	<li><p><a href="faq.html?" target="viewMockups">FAQ</a></p></li>
+</ul>
+</body>
+</html>

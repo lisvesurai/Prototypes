@@ -1,0 +1,88 @@
+div.apps {
+	margin:1.5em 0;
+	padding:.5em;
+	height:17.8em;
+	overflow:hidden;
+	overflow-y:scroll;
+	border:1px solid #efefef;
+}
+#mainCharts h6 {margin:.5em 1em;text-align:left;}
+.charts-actions {margin-top:5px;margin-right:5px;}
+.action-dropdown.charts {max-width:2em;margin-top:8px;}
+.action-dropdown.charts a {padding:3px 0;}
+
+.optional {
+	color: #C2C2C2;
+  	font-weight: 200;
+}
+
+.field-middle-word {
+	padding-top: 30px;
+}
+
+#charts {
+  padding: 10px 0;
+}
+
+svg {
+  font: 10px sans-serif;
+}
+
+path {
+  fill: #008ab8;
+}
+rect {
+  fill: #008ab8;
+}
+.bar text {
+  color: #ffffff;
+  font: 15px 'Helvetica';
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: #008ab8;
+  stroke-width: 1.5px;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus circle {
+  fill: none;
+  stroke: #008ab8;
+}
+
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
+.data-dump {
+	display: block;
+	margin-bottom: 10px;
+}
+.data-dump p {
+	margin: 0;
+}
+.data-dump span.status {
+	float: right;
+}
+
+.data-nothing p {
+	text-align: center;
+}

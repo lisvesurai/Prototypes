@@ -1,0 +1,154 @@
+/* ============================================================================================================================================================
+ * Side nav styling for docs type menu
+ * ========================================================================================================================================================= */
+
+.side-nav .menu:hover{
+	color: #0073bc!important; /*TODO: Redundant*/
+	text-decoration: none;
+}
+.side-nav li {
+	display:block;
+	white-space:normal !important;
+}
+.side-nav ul {
+    margin-left: 0;
+	list-style-type:none;
+}
+
+.side-nav span.item {
+	white-space:normal !important;
+}
+
+.side-nav span.item .menu{
+	display:block;
+	white-space:normal !important;
+}
+.side-nav ul.lv_1 li {
+	width:278px;
+}
+.side-nav ul.lv_1 li.closed {
+	background: url('../../img/common/leftnav_lv1_col.png') no-repeat 252px 20px;/*TODO:Add to master Sprite*/
+}
+.side-nav ul.lv_1 li.open {
+	background: url('../../img/common/leftnav_lv1_exp.png') no-repeat 251px 21px;/*TODO:Add to master Sprite*/
+}
+
+.side-nav ul.lv_1 li span.item {
+	display:block;
+	padding:0;
+	width:278px;
+	background: url('../../img/common/carbon_pattern_8percent.png') repeat;
+	border-bottom: 1px solid #bebebe;
+}
+.side-nav ul.lv_1 li.closed:last-child span.item {
+	border-bottom: none;
+}
+.side-nav ul.lv_1 li .menu {
+	width: 278px;
+	padding: 15px 28px 15px 18px;
+}
+.side-nav ul.lv_1 li .menu h3,
+.side-nav ul.lv_1 li .menu .h3 {
+	padding: 0;
+	margin: 0;
+	font-family: "TradeGothicNextW01-Bold";
+}
+
+.core .side-nav ul.lv_1 li .menu h3,
+.core .side-nav ul.lv_1 li .menu .h3 {
+    color:#75a340;
+}
+.cascades .side-nav ul.lv_1 li .menu h3,
+.cascades .side-nav ul.lv_1 li .menu .h3 {
+    color:#2b95a3;
+}
+
+.side-nav ul.lv_1 li.open .menu h3,
+.side-nav ul.lv_1 li.open .menu .h3 {
+	padding: 0;
+}
+.side-nav ul.lv_1 li .menu span.desc {
+	margin: 10px 0px 0px 0px;
+	display: block;
+	color: #555555;
+	font-family: "TradeGothicNextW01-Ital";
+	line-height:1.4971em;
+}
+.side-nav ul.lv_1 li.open span.desc {
+	display: none;
+}
+.side-nav ul.lv_1 li li .menu {
+	font-size: 1em;
+	color: #585858;
+}
+.side-nav ul.lv_2,
+.side-nav ul.lv_2 ul {
+	padding-left: 0;
+}
+.side-nav ul.lv_2 li {
+	background: none;
+	margin-top: 0;
+	border-bottom: 1px solid #dcdcdc;
+}
+.side-nav ul.lv_2 li.open {
+	background: url('../../img/common/leftnav_lv2_exp.png') no-repeat 250px 18px;/*TODO:Add to master Sprite*/
+}
+.side-nav ul.lv_2 li.closed {
+	background: url('../../img/common/leftnav_lv2_col.png') no-repeat 251px 18px;/*TODO:Add to master Sprite*/
+}
+.side-nav ul.lv_2 li:last-child{
+	border-bottom: 1px solid #bebebe;
+}
+.side-nav ul.lv_2 li span.item {
+	background: none;
+	border-bottom: 0;
+}
+.side-nav ul.lv_2 li span.item .menu {
+	font: 1.077em "TradeGothicNextW01-Regu", Arial;
+	color: #272727;
+	margin: 0px;
+	padding:11px 40px 12px 20px;
+}
+.side-nav ul.obfuscated_css li {
+	border-bottom: none !important; /*IE 8*/
+}
+.side-nav ul.lv_3 li.open,
+.side-nav ul.lv_3 li.closed {
+	background: none;
+}
+.side-nav ul.lv_3 li span.item .menu{
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-left: 30px;
+	font-family: "TradeGothicNextW01-Ital",Arial;
+}
+.side-nav ul.lv_4 li span.item {
+	width: 278px;
+	font-size: 1em;
+}
+.side-nav ul.lv_4 li span.item .menu{
+	width: 218px;
+	padding-left: 40px;
+}
+
+.side-nav ul.lv_5 li span.item {
+	width: 141px;
+}
+.side-nav ul.lv_5 li span.item .menu{
+	width: 248px;
+	padding-left: 50px;
+}
+
+.side-nav ul.lv_6 li span.item {
+	width: 248px;
+}
+.side-nav ul.lv_6 li span.item .menu{
+	width: 141px;
+	padding-left: 58px;
+}
+
+.side-nav ul li span.item a.active,
+.side-nav ul li span.item a.active h3,
+.side-nav ul li span.item a.active .h3 {
+	color: #0073bc !important;
+}

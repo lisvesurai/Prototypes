@@ -1,0 +1,18 @@
+h1,h2,h3 {font-size:16px !important; font-style:normal !important; font-weight:normal !important;}
+h4,h5,p,dt {font-size:14px !important; font-style:normal !important; font-weight:normal !important;}
+td {font-size:12px !important; white-space:nowrap !important; font-style:normal !important; font-weight:normal !important;}
+.page {font-size:10px !important;}
+.page, .page dt, #breadcrumb dt {font-size:10px !important;}
+
+input.text {font-size:10px !important;}
+input.srch {font-size:10px !important;}
+input.btn {font-size:10px !important;}
+
+a.abtn {line-height:20px !important;}
+
+img.prvw {width:100% !important;}
+img.sshot {width:100% !important;}
+
+.navtd {text-align:left !important;}
+.navtdhl {text-align:left !important;}
+.navtdlast {text-align:left !important;}

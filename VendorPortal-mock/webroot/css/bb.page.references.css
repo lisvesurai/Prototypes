@@ -1,0 +1,737 @@
+
+
+.references .main {
+}
+
+.references .main h1 {
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #DDD;
+}
+
+
+.references .main .tbl-summary .access { color: #666; }
+.references .main .header_meta .access,
+.references .main .detailed_item .sprite-references { float: right; }
+.references .main .detailed_item .sprite-references { margin-top: 4px; margin-left:6px; }
+.references .main .header_meta .access { font-family: 'TradeGothicNext', Helvetica, Arial, sans-serif; float:right; }
+.ie7 .references .main .header_meta .sprite-references,
+.ie7 .references .main .header_meta .access { float:none; margin-left:6px; }
+
+.ie7 .references .main {
+	width: 100%;
+}
+
+.references .main button,
+.references .main button:active,
+.references .main button:hover,
+.references .main button:focus {
+	background: none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	-o-box-shadow: none !important;
+	-ms-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.references .main .detailed_item {
+	padding-bottom: 6px;
+}
+
+.references .main .ref-index .no_elements {
+	background-color: #FFF;
+	padding:0.5em 1em;
+	margin:0;
+	font-style:italic;
+	border-bottom: 1px solid #DEDEDE;
+
+}
+
+.references .main .tbl-summary td {
+	vertical-align:top;
+}
+
+.references .main .tbl-summary td .in_cell {
+	float:left;
+	clear:none;
+	width:82%;
+}
+.references .main .tbl-summary .no_elements {
+	font-style:italic;
+}
+.references .main .sprite-references {
+	background: transparent url('../img/common/sprite-references.png') -1px -1px no-repeat;
+}
+.references .main .sprite-references.inh-medium { /* 11px*13px */
+	background-position:-13px -1px;
+}
+.references .main .show_inherited:hover .sprite-references,
+.references .main .sprite-references.inh-dark { /* 11px*13px */
+	background-position:-25px -1px;
+}
+
+.references .main img.sprite-references {
+	height:13px;
+}
+
+.references .main tr.inherited td .sprite-references {
+	float:right;
+}
+.references .main tr.inherited td .sprite-references {
+	float:right;
+}
+
+.ie7 .references .main h3 .sprite-references {
+	float:none;
+}
+
+.references .main .inherited {
+	display:none;
+}
+.references .main .init-show-inherited tr.inherited {
+	display: table-row;
+}
+.references .main .init-show-inherited .detailed_item.inherited {
+	display:block;
+}
+
+.references .main .show_inheritance_wrap {
+	text-align: center;
+}
+
+.references .main .ref-index .show_inheritance_wrap {
+	margin-top:10px;
+}
+
+.references .main .show_inherited {
+	color:#404040 !important;
+	white-space: nowrap;
+	padding:0 12px;
+	width:auto;
+	margin:0;
+	cursor: pointer;
+	line-height: 1.425em;
+	background: none;
+}
+.references .main .show_inherited:hover,
+.references .main .show_inherited:active,
+.references .main .show_inherited:focus {
+	background: none;
+	padding:0 12px;
+	margin: 0;
+	text-decoration: underline !important;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.references .main .show_inherited .sprite-references {
+	margin-right: 6px;
+}
+
+.references .main .enum dt {
+	padding-top: 0;
+	padding-left: 1em;
+}
+.references .main .enum dd .brief {
+	padding-top: 0;
+}
+.references .main .enum dt .initalizer {
+	font-weight: normal;
+}
+.references .main .enum .brief {
+	padding-top: 1em;
+}
+.references .main .enum .description {
+	padding-left: 1em;
+}
+
+
+
+/* ----------------------------------------------------
+ * API Reference Content
+ * -------------------------------------------------- */
+.references .main ol li p,
+.references .main ul li p {
+	margin-bottom: 9px;
+}
+
+.references .main .ref-sect-content {
+	/*background: #fff;
+	padding: 11px 0px;*/
+}
+
+.references .main .ref-sect-content .brief.description,
+.references .main .ref-sect-content .brief.description span,
+.references .main .ref-sect-content .brief.description p {
+	font-family: 'TradeGothicNext', Helvetica, Arial, sans-serif !important;
+	font-weight: 200;
+	font-style: italic;
+	font-size: 22px;
+	color: #909090;
+}
+.references .main .ref-sect-content .detailed_item .brief.description,
+.references .main .ref-sect-content .detailed_item .brief.description span {
+	font-family: inherit !important;
+	font-size: inherit;
+	color: inherit;
+}
+
+.references .main .ref-sect-content .para {
+	margin: 0 0 12px 0;
+}
+.references .main .ref-sect-content .para ul {
+	list-style: disc;
+}
+.references .main .ref-sect-content table {
+	font-size: 1em;
+	width: 100%;
+	border-collapse: separate;
+}
+.references .main .ref-sect-content table td {
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 1px solid #dcdcdc;
+}
+.references .main .ref-sect-content table tr:last-child td {
+	border-bottom: none;
+}
+.references .main .ref-sect-content table.inheritance_tree td {
+	border: none;
+	padding: 0px 0px 0px 5px;
+}
+.references .main .ref-sect-content table.inheritance_tree td.cls-item {
+	border: none;
+	padding: 0px 0px 0px 10px;
+}
+.references .main .ref-sect-content table.inheritance_tree td.cls-space {
+	border: none;
+	padding: 0px 0px 0px 5px;
+}
+
+.references .main .ref-sect-content table.inheritance_tree td.cls-last_space {
+	padding-left: 6px;
+}
+.references .main .ref-sect.ref-index .ref-sect-title h2,
+.references .main .ref-sect .ref-sect-title.discrete h2 {
+	font-size: 1.077em;
+	margin:  0px;
+}
+.references .main .ref-sect.ref-index .ref-sect-title,
+.references .main .ref-sect .ref-sect-title.discrete {
+	background: url("../img/common/carbon_pattern_8percent.png") repeat scroll 0 0 transparent;
+	padding: 2px 12px;
+}
+.references .main .ref-sect.ref-index,
+.references .main .ref-sect {
+	/*margin-bottom: 16px;*/
+	margin-bottom: 40px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #dcdcdc;
+}
+.references .main .ref-sect.ref-index,
+.references .main .ref-sect:last-child,
+.references .main .ref-sect:nth-child(-n+3) {
+	border-bottom: none;
+}
+.references .main .ref-sect.ref-index,
+.references .main .ref-sect:nth-child(-n+3) {
+	margin-bottom: 40px;
+	padding-bottom: 0px;
+}
+
+.references .main .ref-sect.ref-index .ref-summary-enum { padding-left:12px; padding-top:6px; padding-bottom:12px;background-color:#FFF; }
+.references .main .ref-sect.ref-index .ref-summary-enum h3 {margin:0; padding-top:0px; }
+.references .main .ref-sect.ref-index .ref-summary-enum p {margin:0; padding:0px; }
+
+.ie7 .references .main .ref-sect,
+.ie8 .references .main .ref-sect,
+.ie9 .references .main .ref-sect {
+	border-bottom: none;
+}
+.references .main .ref-sect .ref-sect-content .header_meta.parameters ul {
+	display: inline;
+	margin: 14px 0 0;
+	padding-left: 0;
+	padding-top: 0;
+}
+.references .main .ref-sect .ref-sect-content .header_meta.parameters ul li.parameter {
+		display: inline;
+		list-style: none outside none;
+		margin-right: 8px;
+}
+.references .main .ref-sect .ref-sect-content .header_meta.parameters ul li.parameter span {
+	padding-left: 4px;
+}
+
+.references .main .ref-sect .ref-sect-content .detailed.description .para,
+.references .main .ref-sect .ref-sect-content .brief.description .para {
+	margin-bottom: 2px;
+}
+.references .main .ref-sect .ref-sect-content .detailed.description table,
+.references .main .ref-sect .ref-sect-content .detailed.description table tr,
+.references .main table.inheritance_tree tr,
+.references .main .ref-sect .ref-sect-content .detailed.description tbody,
+.references .main .ref-sect .ref-sect-content .detailed.description thead{
+	background: none;
+}
+.references .main .ref-sect .ref-sect-content .detailed.description th,
+.references .main .ref-sect .ref-sect-content .detailed.description td {
+	border: 0px;
+	padding: 3px 6px 3px 16px;
+	text-align: left;
+	background: none;
+}
+.references .main .ref-sect .ref-sect-content .detailed.description thead th {
+	font-weight: normal;
+	font-family: 'TradeGothicNext', Helvetica, Arial, sans-serif;
+	font-style: italic;
+}
+
+.references .main .ref-sect .ref-sect-content .detailed.description td .para {
+	margin-bottom: 4px;
+}
+.references .main table.inheritance_tree {
+	padding: 15px 0px;
+	background-color: #fff;
+}
+.references .main table.inheritance_tree tr td.cls-last_space {
+		background: url("../img/common/tree.png") no-repeat scroll 13px 5px transparent;
+}
+.references .main .ref-sect.ref-index table td {
+
+}
+.references .main .ref-sect.ref-index table td.first_column {
+	width:100px !important;
+	text-align: right;
+}
+
+.references .main .ref-sect .ref-sect-title h2 {
+	margin-bottom: 19px;
+}
+
+.references .main .ref-sect .detailed_item.function,
+.references .main .ref-sect .detailed_item.signal,
+.references .main .ref-sect .detailed_item.slot,
+.references .main .ref-sect .detailed_item.variable,
+.references .main .ref-sect .detailed_item.property {
+	margin-bottom: 19px;
+	background: #fff;
+}
+
+.references .main .ref-sect .detailed_item h3 {
+	padding: 4px 8px;
+	margin-bottom: 19px;
+	margin-top: 0px;
+	background: #EBEBEB url('../img/common/pattern-carbon-dark-8p.png') repeat;
+}
+.references .main .ref-sect .detailed_item.enum h3 {
+	margin:19px 0 0 0;
+}
+.references .main .ref-sect .detailed_item h3 span.header_meta.name {
+	font-family: 'TradeGothicNext', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+.references .main .ref-sect .detailed_item h3 .parameter .type {
+	color: #666;
+}
+.references .main .ref-sect .detailed_item.function .brief.description,
+.references .main .ref-sect .detailed_item.signal .brief.description,
+.references .main .ref-sect .detailed_item.slot .brief.description,
+.references .main .ref-sect .detailed_item.variable .brief.description,
+.references .main .ref-sect .detailed_item.property .brief.description {
+	padding: 0px 8px;
+}
+.references .main .ref-sect .detailed_item.function .detailed.description,
+.references .main .ref-sect .detailed_item.signal .detailed.description,
+.references .main .ref-sect .detailed_item.slot .detailed.description,
+.references .main .ref-sect .detailed_item.variable .detailed.description,
+.references .main .ref-sect .detailed_item.property .detailed.description {
+	padding: 0px 8px;
+}
+.references .main .ref-sect .detailed_item.function .detailed.description .syntaxhighlighter,
+.references .main .ref-sect .detailed_item.signal .detailed.description .syntaxhighlighter,
+.references .main .ref-sect .detailed_item.slot .detailed.description .syntaxhighlighter,
+.references .main .ref-sect .detailed_item.variable .detailed.description .syntaxhighlighter,
+.references .main .ref-sect .detailed_item.property .detailed.description .syntaxhighlighter {
+	margin-left: -8px!important;
+	padding: 10px 0px!important;
+}
+
+.references .topics h2 {
+	margin-top: 14px;
+}
+
+.references .topics ul {
+	list-style: none;
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+
+.references .topics ul li {
+	padding: 4px 10px 4px 0;
+}
+
+.references .topics .brief,
+.references .topics .brief p {
+	display:inline !important;
+}
+
+.references .topics .brief p a {
+	color: inherit !important;
+	cursor: default;
+}
+.references .topics .brief p a:hover {
+	text-decoration: none;
+}
+
+.references .topics p {
+	margin-bottom: 10px;
+	padding-top: 4px;
+}
+
+/* ======================================================================================
+ * Special notice styling for since, see also, return etc.
+ * ==================================================================================== */
+
+.references .notice.since *,
+.references .notice.see */*,
+.references .notice.return * */{
+		display: inline;
+}
+
+
+
+/* ======================================================================================
+ * Special styling for enums
+ * ==================================================================================== */
+
+.references .detailed_item.enum p {
+		margin-bottom: 12px;
+}
+.references .detailed_item.enum .notice.since {
+		margin-bottom: 8px;
+		padding: 0;
+}
+
+.references .detailed_item.enum .detailed {
+		margin-bottom: 18px;
+}
+
+/* ============================================================================================================================================================
+ * New Api navigation
+ * ============================================================================================================================================================ */
+
+.references .apiNav,
+.references .apiNav-content {
+	position:relative;
+	z-index: 200;
+}
+
+
+.references .apiNav .apiNav-control ul li img.icon {
+	float:left;
+	margin-top: 3px;
+	margin-right: 8px;
+}
+
+
+
+/* New menu */
+.references .apiNav ul {
+	list-style-type: none;
+}
+
+.references .apiNav #apiNav-menu {
+	position:relative;
+	display:block;
+	width:100%;
+	overflow-x:hidden;
+}
+
+.references #apiNav-menu ul {
+	margin: 0 8px 0 8px;
+	width: 100%;
+	margin-left:0;
+}
+.references #apiNav-menu ul li {
+	display:block;
+	float:left;
+	clear:both;
+	width: 100%;
+	white-space:normal !important;
+	cursor:pointer;
+}
+
+.references #apiNav-menu .notice {
+	border: 0;
+}
+
+.references #apiNav-menu .multi_lvl .apiNav-lvl_0 li {
+	padding-bottom:1px;
+	font: 1.280em 'TradeGothicNext', Helvetica, Arial, sans-serif;
+	margin-top: 8px;
+}
+.references #apiNav-menu .multi_lvl .apiNav-lvl_1 li {
+	padding-top:1px;
+	font: 0.833em Helvetica, Arial, sans-serif;
+	margin-top: 2px;
+	padding-left: 0.667em;
+}
+.references #apiNav-menu .apiNav-lvl_1 a {
+
+}
+.references #apiNav-menu .apiNav-lvl_2 li {
+	font-size: 0.933em;
+	margin-top: 0px;
+}
+.references #apiNav-menu .apiNav-lvl_3 li {
+		font-size: 1em !important;
+}
+
+.references #apiNav-menu ul li a {
+	display:block;
+	float:left;
+	color: #363636;
+	white-space: normal !important;
+	width: 90%;
+}
+.references .apiNav #apiNav-menu ul li.active a,
+.references .apiNav #apiNav-menu ul li.active a:visited
+.references .apiNav #apiNav-menu ul li.active ul li.active a,
+.references .apiNav #apiNav-menu ul li a:hover {
+	color: #0073BC;
+}
+.references .apiNav #apiNav-menu ul a:hover {
+	text-decoration:none;
+	color: #0073BC !important;
+}
+
+.references .apiNav #apiNav-menu ul li.active ul li a,
+.references .apiNav #apiNav-menu ul li.active ul li a:visited {
+	color: #363636;
+}
+.references .apiNav #apiNav-menu ul li.active > a {
+	color: #0073BC !important;
+}
+
+.references .apiNav .apiNav-opener {
+	display:block;
+	float:right;
+	width:22px;
+	height:14px;
+	background: url('../img/common/sprite-references.png') no-repeat -1px -28px;
+	padding-top: 4px;
+}
+
+.references .apiNav #apiNav-menu ul li.active > .apiNav-opener {
+		background-position: -93px -28px;
+}
+.references .apiNav #apiNav-menu ul li.active.open > .apiNav-opener,
+.references .apiNav #apiNav-menu ul li.active:hover > .apiNav-opener {
+		background-position: -116px -28px;
+}
+.references .apiNav #apiNav-menu ul li.open > .apiNav-opener {
+		background-position: -24px -28px;
+}
+.references .apiNav #apiNav-menu ul li:hover > .apiNav-opener {
+		background-position: -70px -28px;
+}
+
+.ie7 .references .references #apiNav-menu,
+.ie8 .references .references #apiNav-menu {
+		overflow: hidden !important;
+		height:auto;
+}
+
+.references #apiNav-menu ::-webkit-scrollbar {
+		width: 9px;
+		height: 13px;
+}
+.references #apiNav-menu ::-webkit-scrollbar-button:start:decrement,
+.references #apiNav-menu ::-webkit-scrollbar-button:end:increment {
+		display: block;
+}
+.references #apiNav-menu ::-webkit-scrollbar-button:vertical:start:increment,
+.references #apiNav-menu ::-webkit-scrollbar-button:vertical:end:decrement {
+		display: none;
+}
+.references #apiNav-menu ::-webkit-scrollbar-button:vertical:increment {
+		display: none;
+
+}
+.references #apiNav-menu ::-webkit-scrollbar-button:vertical:decrement {
+		display: none;
+}
+.references #apiNav-menu ::-webkit-scrollbar-track-piece {
+		background: url('../img/common/api_scroll_bg.png') repeat-y;
+}
+.references #apiNav-menu ::-webkit-scrollbar-thumb:vertical {
+		height: 50px;
+		background-color: #ababab;
+		border-radius: 2px;
+}
+
+.apiNav .activityIndicator {
+		height:3px;
+		width:100%;
+		position:absolute;
+		margin-top: -3px;
+}
+.apiNav .activityIndicator .bar {
+		/*background: #52B7FE;*/
+		width:100%;
+		height:100%;
+		background:url('../img/common/progressbar-bb10.gif') 0 0 repeat-x;
+		position:absolute;
+}
+
+
+/** New shit **/
+
+/* Buttons */
+.apiNav .apiNav-focus button {
+	background-color: white;
+	border-color: #dadada;
+	border-bottom-width: 4px;
+	color: #dadada;
+	width:48%;
+	margin-right:0;
+	font-weight: normal;
+	line-height: 34px;
+	padding:0;
+}
+.apiNav .apiNav-focus button:hover {
+	border-color: #363636;
+	color: #363636;
+}
+.apiNav .apiNav-focus button:first-child {
+	margin-right: 2%;
+}
+.apiNav .apiNav-focus button.active {
+	color: #33a1c6;
+	border-color: #33a1c6;
+}
+
+.apiNav .apiNav-focus button.active[data-focus="core"],
+.apiNav .apiNav-focus button[data-focus="core"]:hover {
+	border-color: #75a340;
+	color: #75a340;
+}
+.apiNav .apiNav-focus button.active[data-focus="cascades"],
+.apiNav .apiNav-focus button[data-focus="cascades"]:hover {
+	border-color: #2b95a3;
+	color: #2b95a3;
+}
+
+/* Dropdowns */
+
+.references .apiNav .apiNav-select {
+	margin: 15px 0 0;
+	border: 1px solid #DCDCDC;
+	line-height: 36px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.references .apiNav .apiNav-select .apiNav-selected {
+	color: #008ab8;
+}
+
+.apiNav-dropdown .apiNav-drop {
+		position:absolute;
+	background: white;
+	border-right: 1px solid #DCDCDC;
+	border-left: 1px solid #DCDCDC;
+	z-index: 900;
+	width: 100%;
+}
+
+.apiNav-dropdown .apiNav-drop ul {
+		padding: 0;
+		margin:0;
+}
+.apiNav-dropdown .apiNav-drop ul li {
+	line-height: 34px;
+	padding: 0 6px 0 12px;
+	border-bottom: 1px solid #DCDCDC;
+	cursor: pointer;
+}
+.apiNav-dropdown .apiNav-drop ul li:hover {
+	color: #008ab8;
+}
+.apiNav-dropdown .apiNav-drop ul li.selected,
+.apiNav-dropdown .apiNav-drop ul li.selected:hover {
+	font-style:italic;
+	color: #868686;
+	cursor: default;
+}
+.apiNav-dropdown .apiNav-select {
+		cursor: pointer;
+		line-height: 2.5em;
+		padding: 0 6px 0 12px;
+}
+
+
+/* filter */
+
+.references .apiNav #apiNav-search {
+	position:relative;
+	z-index:300;
+	margin: 15px 0 0;
+	padding-bottom: 15px;
+	border-bottom: 4px solid #008ab8;
+	line-height: 36px;
+}
+.references .apiNav #apiNav-search input {
+	position:relative;
+	color: #999999;
+	width: 100%;
+	padding: 4px 26px 3px 12px;
+	border: 1px solid #DCDCDC;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	font-style: italic;
+	margin:0;
+}
+.references .apiNav #apiNav-search input.filterActive {
+	color: inherit;
+	font-style: normal;
+	border-color: #008ab8;
+}
+.references .apiNav #apiNav-search input[type="text"]:focus {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+}
+
+.references .apiNav #apiNav-search button {
+	position:absolute;
+	z-index:700;
+	padding:0;
+	top:4px;
+	right:4px;
+	width:24px;
+	height: 25px;
+	border: 0;
+	background: none;
+	color: #999999;
+	font-weight: 100;
+}
+.references .apiNav #apiNav-search button:hover {
+	color: #008ab8;
+}
+
+.references .since {
+	border-bottom: 1px solid #dddddd;
+	padding-bottom: 10px;
+}
+.references .detailed_item .since {
+	border-bottom: 0;
+}

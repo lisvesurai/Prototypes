@@ -1,0 +1,312 @@
+<html>
+<head>
+<title>Qwest WAP mockup</title>
+<style type="text/css">
+a{color:#000;text-decoration:none;margin:0;}
+body{background:#fff;color:#000;font:normal 10px/12px tahoma,sans-serif;margin:5px;}
+td{font:normal 10px/12px tahoma,sans-serif;}
+h1{color:#094d9c;font:bold 12px/12px tahoma,sans-serif;margin:0 0 5px 0;text-decoration:underline;}
+li{margin:0;padding:0;}
+li li{margin:2px 0;}
+li li a:visited{color:#094d9c;}
+li li p{margin:0 0 3px 0;}
+li li p a:visited{color:#000;}
+li p{font-weight:bold;line-height:10px;margin:0 0 5px 0;text-transform:uppercase;}
+p{margin:20px 0;}
+ul{margin:0 0 10px 0;padding:0;}
+input{background:#D4D0C8;border:1px solid #000;width:100%;height:20px;font-size:10px;font-weight:bold;margin:0;padding:0;text-transform:uppercase;}
+iframe, form{margin:0;padding:0;}
+hr{border:none;border-bottom:1px solid #094d9c;height:1px;width:100%;margin:0;}
+
+@media screen {
+li ul{margin:8px 0 8px 22px;}
+.hide{display:none;visibility:hidden;}
+.toggle{font-family:courier,monospace;font-weight:normal;line-height:10px;margin:0 10px 0 0;}
+}
+
+@media handheld {
+.hide_for_cell{display:none;}
+}
+</style>
+<script type="text/javascript">
+function toggle (y) {
+	x = 'toggle' + y;
+
+	if ( document.getElementById(x).innerHTML == '+' )
+	{
+		document.getElementById(y).className = '';
+		document.getElementById(x).innerHTML = '-';
+	}
+	else
+	{
+		document.getElementById(y).className = 'hide';
+		document.getElementById(x).innerHTML = '+';
+	}
+}
+</script>
+</head>
+<body>
+<table border="0">
+<tr valign="top">
+<td width="200">
+<h1>Qwest WAP Mockup</h1>
+<ul>
+<li>
+	<p class="hide_for_cell"><a href="javascript: void 0" onClick="toggle('Main')"><span class="toggle" id="toggleMain">+</span>Main</a></p>
+	<ul id="Main" class="hide">
+		<li><a href="waphome.jsp" target="phoneDisplay">Home</a></li>
+		<li><a href="categories.jsp" target="phoneDisplay">Categories</a></li>
+		<li><a href="links.jsp" target="phoneDisplay">Links</a></li>
+	</ul>
+</li>
+<li>
+	<p class="hide_for_cell"><a href="javascript: void 0" onClick="toggle('qZone')"><span class="toggle" id="toggleqZone">+</span>qZone</a></p>
+	<ul id="qZone" class="hide">
+		<li><a href="downloads.jsp" target="phoneDisplay">qZone</a></li>
+		<hr>
+		<li><a href="promo.jsp" target="phoneDisplay">Promotions</a></li>
+		<li><a href="promo_landing.jsp" target="phoneDisplay">Promotions - Landing</a></li>
+		<li><a href="promo_type.jsp" target="phoneDisplay">Promotions - By Media Type</a></li>
+		<li><a href="promo_cat.jsp" target="phoneDisplay">Promotions - By Genre</a></li>
+		<li><a href="promo_cat_01.jsp" target="phoneDisplay">Promotions - Browse Genre</a></li>
+		<li><a href="promo_item.jsp" target="phoneDisplay">Promotions - By Title</a></li>
+		<hr>
+		<li><a href="recommendations.jsp" target="phoneDisplay">Qwest Recommends</a></li>
+		<li><a href="loyalty_points.jsp" target="phoneDisplay">Loyalty Points</a></li>
+		<li><a href="credits.jsp" target="phoneDisplay">Credits</a></li>
+		<hr>
+		<li><a href="vault.jsp" target="phoneDisplay">Vault</a></li>
+		<li><a href="vault_details.jsp" target="phoneDisplay">Vault - Item Details</a></li>
+		<li><a href="vault_refund.jsp" target="phoneDisplay"> - Refund Reason</a></li>
+		<li><a href="vault_refund_success.jsp" target="phoneDisplay"> - Refund Success Message</a></li>
+		<li><a href="vault_refund_error.jsp" target="phoneDisplay"> - Refund Error Message</a></li>
+		<li><a href="vault_details_monthly.jsp" target="phoneDisplay">Vault - Item Details - Monthly Subscription</a></li>
+		<li><a href="vault_cancel.jsp" target="phoneDisplay"> - Subscription Cancelled Message</a></li>
+		<li><a href="vault_details_cancelled.jsp" target="phoneDisplay">Vault - Item Details - Monthly Subscription - Cancelled</a></li>
+		<hr>
+		<li><a href="search.jsp" target="phoneDisplay">Search</a></li>
+		<li><a href="search_no_results.jsp" target="phoneDisplay">Search - No Results</a></li>
+		<li><a href="search_results.jsp" target="phoneDisplay">Search - Results</a></li>
+		<li><a href="rt_search_results.jsp" target="phoneDisplay">Search - Results - More Ringtones</a></li>
+		<li><a href="wp_search_results.jsp" target="phoneDisplay">Search - Results - More Wallpapers</a></li>
+		<li><a href="theme_search_results.jsp" target="phoneDisplay">Search - Results - More Themes</a></li>
+		<li><a href="music_search_results.jsp" target="phoneDisplay">Search - Results - More Music</a></li>
+		<li><a href="game_search_results.jsp" target="phoneDisplay">Search - Results - More Games</a></li>
+		<li><a href="app_search_results.jsp" target="phoneDisplay">Search - Results - More Applications</a></li>
+	</ul>
+</li>
+<li>
+	<p class="hide_for_cell"><a href="javascript: void 0" onClick="toggle('Ringtones')"><span class="toggle" id="toggleRingtones">+</span>Ringtones</a></p>
+	<ul id="Ringtones" class="hide">
+		<li><a href="rt.jsp" target="phoneDisplay">Ringtones</a></li>
+		<li><a href="rt_top.jsp" target="phoneDisplay">Top Tones</a></li>
+		<li><a href="rt_by_genre.jsp" target="phoneDisplay">Browse By Genre</a></li>
+		<li><a href="rt_by_artist.jsp" target="phoneDisplay">Browse By Artist</a></li>
+		<li><a href="rt_by_title.jsp" target="phoneDisplay">Browse By Title</a></li>
+		<hr>
+		<li><a href="rt_browse_01.jsp" target="phoneDisplay">Browse Genre - Featured Items</a></li>
+		<li><a href="rt_browse_02.jsp" target="phoneDisplay">Browse Genre - More Than 27 Items</a></li>
+		<li><a href="rt_browse_03.jsp" target="phoneDisplay">Browse Genre - Less Than 27 Items</a></li>
+		<li><a href="rt_browse_04.jsp" target="phoneDisplay">Browse Genre - Misc</a></li>
+		<hr>
+		<li><a href="rt_details.jsp" target="phoneDisplay">Details</a></li>
+		<li><a href="rt_details_rate.jsp" target="phoneDisplay">Details - Rate It</a></li>
+		<li><a href="rt_details_rate_save.jsp" target="phoneDisplay">Details - Rating Saved</a></li>
+		<li><a href="rt_details_purchase_error.jsp" target="phoneDisplay">Purchase Error</a></li>
+		<li><a href="rt_receipt.jsp" target="phoneDisplay">Receipt</a></li>
+		<li><a href="rt_receipt_lp.jsp" target="phoneDisplay">Receipt - Loyalty points</a></li>
+		<hr>
+		<li><a href="rt_details_credit.jsp" target="phoneDisplay">Details - Have credit</a></li>
+		<hr>
+		<li><a href="rt_download_success.jsp" target="phoneDisplay">Download - Success</a></li>
+		<li><a href="rt_download_cancel.jsp" target="phoneDisplay">Download - Canceled</a></li>
+		<li><a href="rt_download_error.jsp" target="phoneDisplay">Download - Error</a></li>
+		<li><a href="rt_download_failed.jsp" target="phoneDisplay">Download - Failed</a></li>
+		<hr>
+		<li><a href="rt_tell_friend.jsp" target="phoneDisplay">Tell a Friend</a></li>
+		<li><a href="rt_tell_friend_sent.jsp" target="phoneDisplay">Tell a Friend - Sent</a></li>
+	</ul>
+</li>
+<li>
+	<p class="hide_for_cell"><a href="javascript: void 0" onClick="toggle('Bundle')"><span class="toggle" id="toggleBundle">+</span>Bundle</a></p>
+	<ul id="Bundle" class="hide">
+		<li><a href="rt_details_related_bundles.jsp" target="phoneDisplay">Related Bundles</a></li>
+		<hr>
+		<li><a href="bundle_details.jsp" target="phoneDisplay">Bundle Details</a></li>
+		<li><a href="bundle_details2.jsp" target="phoneDisplay">Bundle Details - with 3 Items</a></li>
+	</ul>
+</li>
+<li>
+	<p class="hide_for_cell"><a href="javascript: void 0" onClick="toggle('ScreenSavers')"><span class="toggle" id="toggleScreenSavers">+</span>Wallpapers</a></p>
+	<ul id="ScreenSavers" class="hide">
+		<li><a href="wp.jsp" target="phoneDisplay">Wallpapers</a></li>
+		<li><a href="wp_top.jsp" target="phoneDisplay">Top Wallpapers</a></li>
+		<li><a href="wp_by_genre.jsp" target="phoneDisplay">Browse By Genre</a></li>
+		<li><a href="wp_by_title.jsp" target="phoneDisplay">Browse By Title</a></li>
+		<hr>
+		<li><a href="wp_browse_01.jsp" target="phoneDisplay">Browse Genre - Featured Items</a></li>
+		<li><a href="wp_browse_02.jsp" target="phoneDisplay">Browse Genre - More Than 27 Items</a></li>
+		<li><a href="wp_browse_03.jsp" target="phoneDisplay">Browse Genre - Less Than 27 Items</a></li>
+		<li><a href="wp_browse_04.jsp" target="phoneDisplay">Browse Genre - Misc</a></li>
+		<hr>
+		<li><a href="wp_details.jsp" target="phoneDisplay">Details</a></li>
+		<li><a href="wp_details_rate.jsp" target="phoneDisplay">Details - Rate It</a></li>
+		<li><a href="wp_details_rate_save.jsp" target="phoneDisplay">Details - Rating Saved</a></li>
+		<li><a href="wp_receipt.jsp" target="phoneDisplay">Receipt</a></li>
+		<li><a href="wp_receipt_lp.jsp" target="phoneDisplay">Receipt - Loyalty Points</a></li>
+		<hr>
+		<li><a href="wp_download_success.jsp" target="phoneDisplay">Download - Success</a></li>
+		<li><a href="wp_download_cancel.jsp" target="phoneDisplay">Download - Canceled</a></li>
+		<li><a href="wp_download_error.jsp" target="phoneDisplay">Download - Error</a></li>
+		<li><a href="wp_download_failed.jsp" target="phoneDisplay">Download - Failed</a></li>
+		<hr>
+		<li><a href="wp_tell_friend.jsp" target="phoneDisplay">Tell a Friend</a></li>
+		<li><a href="wp_tell_friend_sent.jsp" target="phoneDisplay">Tell a Friend - Sent</a></li>
+	</ul>
+</li>
+<li>
+	<p class="hide_for_cell"><a href="javascript: void 0" onClick="toggle('Themes')"><span class="toggle" id="toggleThemes">+</span>Themes</a></p>
+	<ul id="Themes" class="hide">
+		<li><a href="theme.jsp" target="phoneDisplay">Themes</a></li>
+		<li><a href="theme_top.jsp" target="phoneDisplay">Top Themes</a></li>
+		<li><a href="theme_by_genre.jsp" target="phoneDisplay">Browse By Genre</a></li>
+		<li><a href="theme_by_title.jsp" target="phoneDisplay">Browse By Title</a></li>
+		<hr>
+		<li><a href="theme_browse_01.jsp" target="phoneDisplay">Browse Genre - Featured Items</a></li>
+		<li><a href="theme_browse_02.jsp" target="phoneDisplay">Browse Genre - More Than 27 Items</a></li>
+		<li><a href="theme_browse_03.jsp" target="phoneDisplay">Browse Genre - Less Than 27 Items</a></li>
+		<li><a href="theme_browse_04.jsp" target="phoneDisplay">Browse Genre - Misc</a></li>
+		<hr>
+		<li><a href="theme_details.jsp" target="phoneDisplay">Details</a></li>
+		<li><a href="theme_details_rate.jsp" target="phoneDisplay">Details - Rate It</a></li>
+		<li><a href="theme_details_rate_save.jsp" target="phoneDisplay">Details - Rating Saved</a></li>
+		<li><a href="theme_receipt.jsp" target="phoneDisplay">Receipt</a></li>
+		<li><a href="theme_receipt_lp.jsp" target="phoneDisplay">Receipt - Loyalty Points</a></li>
+		<hr>
+		<li><a href="theme_download_success.jsp" target="phoneDisplay">Download - Success</a></li>
+		<li><a href="theme_download_cancel.jsp" target="phoneDisplay">Download - Canceled</a></li>
+		<li><a href="theme_download_error.jsp" target="phoneDisplay">Download - Error</a></li>
+		<li><a href="theme_download_failed.jsp" target="phoneDisplay">Download - Failed</a></li>
+		<hr>
+		<li><a href="theme_tell_friend.jsp" target="phoneDisplay">Tell a Friend</a></li>
+		<li><a href="theme_tell_friend_sent.jsp" target="phoneDisplay">Tell a Friend - Sent</a></li>
+	</ul>
+</li>
+<li>
+	<p class="hide_for_cell"><a href="javascript: void 0" onClick="toggle('Music')"><span class="toggle" id="toggleMusic">+</span>Music</a></p>
+	<ul id="Music" class="hide">
+		<li><a href="music.jsp" target="phoneDisplay">Music</a></li>
+		<li><a href="music_top.jsp" target="phoneDisplay">Top Music</a></li>
+		<li><a href="music_by_genre.jsp" target="phoneDisplay">Browse By Genre</a></li>
+		<li><a href="music_by_artist.jsp" target="phoneDisplay">Browse By Artist</a></li>
+		<li><a href="music_by_title.jsp" target="phoneDisplay">Browse By Title</a></li>
+		<hr>
+		<li><a href="music_browse_01.jsp" target="phoneDisplay">Browse Genre - Featured Items</a></li>
+		<li><a href="music_browse_02.jsp" target="phoneDisplay">Browse Genre - More Than 27 Items</a></li>
+		<li><a href="music_browse_03.jsp" target="phoneDisplay">Browse Genre - Less Than 27 Items</a></li>
+		<li><a href="music_browse_04.jsp" target="phoneDisplay">Browse Genre - Misc</a></li>
+		<hr>
+		<li><a href="music_details.jsp" target="phoneDisplay">Details</a></li>
+		<li><a href="music_details_rate.jsp" target="phoneDisplay">Details - Rate It</a></li>
+		<li><a href="music_details_rate_save.jsp" target="phoneDisplay">Details - Rating Saved</a></li>
+		<li><a href="music_receipt.jsp" target="phoneDisplay">Receipt</a></li>
+		<li><a href="music_receipt_lp.jsp" target="phoneDisplay">Receipt - Loyalty Points</a></li>
+		<hr>
+		<li><a href="music_download_success.jsp" target="phoneDisplay">Download - Success</a></li>
+		<li><a href="music_download_cancel.jsp" target="phoneDisplay">Download - Canceled</a></li>
+		<li><a href="music_download_error.jsp" target="phoneDisplay">Download - Error</a></li>
+		<li><a href="music_download_failed.jsp" target="phoneDisplay">Download - Failed</a></li>
+		<hr>
+		<li><a href="music_tell_friend.jsp" target="phoneDisplay">Tell a Friend</a></li>
+		<li><a href="music_tell_friend_sent.jsp" target="phoneDisplay">Tell a Friend - Sent</a></li>
+	</ul>
+</li>
+<li>
+	<p class="hide_for_cell"><a href="javascript: void 0" onClick="toggle('Games')"><span class="toggle" id="toggleGames">+</span>Games</a></p>
+	<ul id="Games" class="hide">
+		<li><a href="game.jsp" target="phoneDisplay">Games</a></li>
+		<li><a href="game_top.jsp" target="phoneDisplay">Top Games</a></li>
+		<li><a href="game_by_genre.jsp" target="phoneDisplay">Browse By Genre</a></li>
+		<li><a href="game_by_title.jsp" target="phoneDisplay">Browse By Title</a></li>
+		<hr>
+		<li><a href="game_browse_01.jsp" target="phoneDisplay">Browse Genre - Featured Items</a></li>
+		<li><a href="game_browse_02.jsp" target="phoneDisplay">Browse Genre - More Than 27 Items</a></li>
+		<li><a href="game_browse_03.jsp" target="phoneDisplay">Browse Genre - Less Than 27 Items</a></li>
+		<li><a href="game_browse_04.jsp" target="phoneDisplay">Browse Genre - Misc</a></li>
+		<hr>
+		<li><a href="game_details.jsp" target="phoneDisplay">Details</a></li>
+		<li><a href="game_details_screenshot.jsp" target="phoneDisplay">Details - Screenshot</a></li>
+		<li><a href="game_details_rate.jsp" target="phoneDisplay">Details - Rate It</a></li>
+		<li><a href="game_details_rate_save.jsp" target="phoneDisplay">Details - Rating Saved</a></li>
+		<li><a href="game_receipt.jsp" target="phoneDisplay">Receipt</a></li>
+		<li><a href="game_receipt_lp.jsp" target="phoneDisplay">Receipt - Loyalty Points</a></li>
+		<li><a href="game_purchase_error.jsp" target="phoneDisplay">Purchase Error</a></li>
+		<hr>
+		<li><a href="game_download_success.jsp" target="phoneDisplay">Download - Success</a></li>
+		<li><a href="game_download_cancel.jsp" target="phoneDisplay">Download - Canceled</a></li>
+		<li><a href="game_download_error.jsp" target="phoneDisplay">Download - Error</a></li>
+		<li><a href="game_download_failed.jsp" target="phoneDisplay">Download - Failed</a></li>
+		<hr>
+		<li><a href="game_tell_friend.jsp" target="phoneDisplay">Tell a Friend</a></li>
+		<li><a href="game_tell_friend_sent.jsp" target="phoneDisplay">Tell a Friend - Sent</a></li>
+	</ul>
+</li>
+<li>
+	<p class="hide_for_cell"><a href="javascript: void 0" onClick="toggle('Applications')"><span class="toggle" id="toggleApplications">+</span>Applications</a></p>
+	<ul id="Applications" class="hide">
+		<li><a href="app.jsp" target="phoneDisplay">Applications</a></li>
+		<li><a href="app_top.jsp" target="phoneDisplay">Top Applications</a></li>
+		<li><a href="app_by_genre.jsp" target="phoneDisplay">Browse By Genre</a></li>
+		<li><a href="app_by_title.jsp" target="phoneDisplay">Browse By Title</a></li>
+		<hr>
+		<li><a href="app_browse_01.jsp" target="phoneDisplay">Browse Genre - Featured Items</a></li>
+		<li><a href="app_browse_02.jsp" target="phoneDisplay">Browse Genre - More Than 27 Items</a></li>
+		<li><a href="app_browse_03.jsp" target="phoneDisplay">Browse Genre - Less Than 27 Items</a></li>
+		<li><a href="app_browse_04.jsp" target="phoneDisplay">Browse Genre - Misc</a></li>
+		<hr>
+		<li><a href="app_details.jsp" target="phoneDisplay">Details</a></li>
+		<li><a href="app_details_screenshot.jsp" target="phoneDisplay">Details - Screenshot</a></li>
+		<li><a href="app_details_rate.jsp" target="phoneDisplay">Details - Rate It</a></li>
+		<li><a href="app_details_rate_save.jsp" target="phoneDisplay">Details - Rating Saved</a></li>
+		<li><a href="app_receipt.jsp" target="phoneDisplay">Receipt</a></li>
+		<li><a href="app_receipt_lp.jsp" target="phoneDisplay">Receipt - Loyalty Points</a></li>
+		<li><a href="app_purchase_error.jsp" target="phoneDisplay">Purchase Error</a></li>
+		<hr>
+		<li><a href="app_download_success.jsp" target="phoneDisplay">Download - Success</a></li>
+		<li><a href="app_download_cancel.jsp" target="phoneDisplay">Download - Canceled</a></li>
+		<li><a href="app_download_error.jsp" target="phoneDisplay">Download - Error</a></li>
+		<li><a href="app_download_failed.jsp" target="phoneDisplay">Download - Failed</a></li>
+		<hr>
+		<li><a href="app_tell_friend.jsp" target="phoneDisplay">Tell a Friend</a></li>
+		<li><a href="app_tell_friend_sent.jsp" target="phoneDisplay">Tell a Friend - Sent</a></li>
+	</ul>
+</li>
+<li><a href="terms.jsp" target="phoneDisplay">Terms</a></li>
+</ul>
+</td>
+<td class="hide_for_cell">
+<script type="text/javascript">
+<!--
+	function refreshMockup()
+	{
+		top.phoneDisplay.location.reload();
+	}
+//-->
+</script>
+<form name="refreshMockup" action="javascript:refreshMockup()">
+<input type="submit" value="Refresh Mockup">
+</form>
+<iframe width="148" height="170" frameborder="1" scrolling="yes" marginheight="0" marginwidth="0" name="phoneDisplay" src="waphome.jsp" align="left" />
+</td>
+</tr>
+</table>
+	
+	<jsp:include page="inc_search.jsp" flush="true"/>
+
+	<dl class="footer">
+		<dt>&lt; <a href="downloads.jsp"> qZone</a></dt>
+		<dt>&lt; <a href="waphome.jsp"> Qwest Home</a></dt>
+	</dl>
+
+</body>
+</html>

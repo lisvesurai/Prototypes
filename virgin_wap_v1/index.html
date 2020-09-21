@@ -1,0 +1,437 @@
+<html>
+<head>
+<title>Virgin Mobile WAP Phase6 mockup</title>
+<style type="text/css">
+a{color:#000;text-decoration:none;margin:0;}
+body{background:#fff;color:#000;font:normal 10px/12px tahoma,sans-serif;margin:5px;}
+td{font:normal 10px/12px tahoma,sans-serif;}
+h1{color:#8f001e;font:bold 12px/12px tahoma,sans-serif;margin:0 0 5px 0;text-decoration:underline;}
+li{margin:0;padding:0;}
+li li{margin:2px 0;}
+li li a:visited{color:#8f001e;}
+li li p{margin:0 0 3px 0;}
+li li p a:visited{color:#000;}
+li p{font-weight:bold;line-height:10px;margin:0 0 5px 0;text-transform:uppercase;}
+p{margin:2px 0;}
+ul{margin:0 0 10px 0;padding:0;}
+input{background:#D4D0C8;border:1px solid #000;width:100%;height:20px;font-size:10px;font-weight:bold;margin:0;padding:0;text-transform:uppercase;position:relative;}
+iframe, form{margin:0;padding:0;position:relative;}
+hr{border:none;border-bottom:1px solid #8f001e;height:1px;width:100%;margin:0;}
+
+.linkButton{position:relative;margin:5px 0 5px 5px !important;padding:5px;border:1px solid #666666;font-size:11px;height:20px;}
+.linkButton:hover{background:#e9f1bb;}
+.Hl{background:#cade5c;}
+
+@media screen {
+li ul{margin:8px 0 8px 22px;}
+.hide{display:none;visibility:hidden;}
+.toggle{font-family:courier,monospace;font-weight:normal;line-height:10px;margin:0 10px 0 0;}
+}
+
+@media handheld {
+.hide_for_cell{display:none;}
+}
+</style>
+<script type="text/javascript">
+function toggle (y) {
+	x = 'toggle' + y;
+
+	if ( document.getElementById(x).innerHTML == '+' )
+	{
+		document.getElementById(y).className = '';
+		document.getElementById(x).innerHTML = '-';
+	}
+	else
+	{
+		document.getElementById(y).className = 'hide';
+		document.getElementById(x).innerHTML = '+';
+	}
+}
+
+function showLink(elm)
+{
+	top.phoneDisplay.location.href=elm;
+	return false;
+}
+</script>
+</head>
+<body>
+<table border="0">
+<tr valign="top">
+<td width="200">
+<h1>Virgin Mobile WAP Phase6 Mockup</h1>
+
+<ul>
+<li>- <a href="downloads.jsp?" onClick="return showLink(this);">Downloads</a></li>
+<li>- <a href="surf_the_web.jsp?" onClick="return showLink(this);">Surf The Web</a></li>
+<li>
+	<p class="hide_for_cell"><a href="javascript: void 0" onClick="toggle('Promotions')"><span class="toggle" id="togglePromotions">+</span>Promotions</a></p>
+	<ul id="Promotions" class="hide">
+		<li><a href="promo.jsp?" onClick="return showLink(this);">Promotions</a></li>
+		<li><a href="promo_landing.jsp?t=PROMOTION+TITLE" onClick="return showLink(this);"> - Landing - Multiple Type - Items</a></li>
+		<li><a href="promo_landing_rt.jsp?t=PROMOTION+TITLE" onClick="return showLink(this);"> - Landing - Single Type - items</a></li>
+		<li><a href="promo_landing_cat.jsp?t=PROMOTION+TITLE" onClick="return showLink(this);"> - Landing - Multiple Type - Categories</a></li>
+		<li><a href="promo_landing_cat_game.jsp?t=PROMOTION+TITLE" onClick="return showLink(this);"> - Landing - Single Type - Categories</a></li>
+		<li><a href="rt_details.jsp?t=She+Got+It&by=2+Pistols&promo=yes" onClick="return showLink(this);"> - Item Details</a></li>
+	</ul>
+</li>
+<li>
+	<p class="hide_for_cell"><a href="javascript: void 0" onClick="toggle('Ringtones')"><span class="toggle" id="toggleRingtones">+</span>Ringtones</a></p>
+	<ul id="Ringtones" class="hide">
+		<li><a href="rt.jsp?" onClick="return showLink(this);">Ringtones</a></li>
+		<li><a href="rt_browse.jsp?cat=TOP+SELLERS" onClick="return showLink(this);">Top Sellers</a></li>
+		<li><a href="rt_by_genre.jsp?" onClick="return showLink(this);">More Categories</a></li>
+		<li><a href="rt_by_artist.jsp?" onClick="return showLink(this);">Browse by Artist</a></li>
+		<li><a href="rt_browse.jsp?cat=HIP+HOP" onClick="return showLink(this);">Genre - Item Listing</a></li>
+		<li><a href="rt_browse_ft.jsp?cat=HIP+HOP" onClick="return showLink(this);">Genre - Item Listing - With Featured</a></li>
+		<li><a href="rt_browse_ft_artist.jsp?cat=HIP+HOP" onClick="return showLink(this);">Custom Page - With Featured Artist</a></li>
+		<hr>
+		<li><a href="first_dibs.jsp?" onClick="return showLink(this);">First Dibs</a></li>
+		<li><a href="first_dibs_contest.jsp?" onClick="return showLink(this);">First Dibs - Contest</a></li>
+		<hr>
+		<li><a href="rt_featured_artist.jsp?" onClick="return showLink(this);">Featured Artist</a></li>
+		<hr>
+		<li><a href="rt_details.jsp?t=She+Got+It&by=2+Pistols" onClick="return showLink(this);">Details</a></li>
+		<hr>
+		<li><a href="rt_details.jsp?t=She+Got+It&by=2+Pistols&promo=yes" onClick="return showLink(this);">Details - Discount</a></li>
+		<!--
+		<li><a href="rt_details_rate.jsp?t=She+Got+It&by=2+Pistols" onClick="return showLink(this);">Details - Rate It</a></li>
+		<li><a href="rt_details.jsp?t=She+Got+It&by=2+Pistols&msg=1" onClick="return showLink(this);">Details - Rating Saved</a></li>
+		-->
+		<hr>
+		<li><a href="rt_details.jsp?t=She+Got+It&by=2+Pistols&credit=yes" onClick="return showLink(this);">Details - Have Credits</a></li>
+		<!--
+		<hr>
+		<li><a href="rt_tell_friend.jsp?t=She+Got+It&by=2+Pistols" onClick="return showLink(this);">Tell A Friend</a></li>
+		<li><a href="rt_tell_friend_sent.jsp?t=She+Got+It&by=2+Pistols&msg=3" onClick="return showLink(this);">Tell A Friend - Sent</a></li>
+		<li><a href="rt_tell_friend_sent.jsp?t=She+Got+It&by=2+Pistols&msg=4" onClick="return showLink(this);">Tell A Friend - Error 1</a></li>
+		<li><a href="rt_tell_friend_sent.jsp?t=She+Got+It&by=2+Pistols&msg=5" onClick="return showLink(this);">Tell A Friend - Error 2</a></li>
+		<li><a href="rt_tell_friend_sent.jsp?t=She+Got+It&by=2+Pistols&msg=6&c=rt" onClick="return showLink(this);">Tell A Friend - Error 3</a></li>
+		-->
+		<hr>
+		<li><a href="rt_purchase_success.jsp?t=She+Got+It&by=2+Pistols" onClick="return showLink(this);">Purchase - Success</a></li>
+		<li><a href="topup.jsp?" onClick="return showLink(this);">Purchase - Error - Insufficient Funds</a></li>
+		<li><a href="rt_download_error.jsp?t=She+Got+It&by=2+Pistols" onClick="return showLink(this);">Download - Error</a></li>
+		<hr>
+		<li><a href="mypurchases.jsp?" onClick="return showLink(this);">My Purchases</a></li>
+		<li><a href="rt_mypurchases_details.jsp?t=She+Got+It&by=2+Pistols" onClick="return showLink(this);"> - Item Details - one time</a></li>
+		<li><a href="rt_mypurchases_details.jsp?t=She+Got+It&by=2+Pistols&status=1" onClick="return showLink(this);"> - Item Details -one time - refunded</a></li>
+		<li><a href="rt_mypurchases_details2.jsp?t=She+Got+It&by=2+Pistols" onClick="return showLink(this);"> - Item Details - one time - credit</a></li>
+		<hr>
+		<!--<li><a href="mywishlist.jsp?" onClick="return showLink(this);">My Wish List</a></li>-->
+	</ul>
+</li>
+<li>
+	<p class="hide_for_cell"><a href="javascript: void 0" onClick="toggle('RingbackTones')"><span class="toggle" id="toggleRingbackTones">+</span>Ringback Tones</a></p>
+	<ul id="RingbackTones" class="hide">
+		<!--
+		<li><a href="ct.jsp?" onClick="return showLink(this);">Ringback Tones</a></li>
+		<li><a href="ct_browse.jsp?cat=TOP+SELLERS" onClick="return showLink(this);">Top Sellers</a></li>
+		<li><a href="ct_by_genre.jsp?" onClick="return showLink(this);">More Categories</a></li>
+		<li><a href="ct_by_artist.jsp?" onClick="return showLink(this);">Browse by Artist</a></li>
+		<li><a href="ct_browse.jsp?cat=HIP+HOP" onClick="return showLink(this);">Genre - Item Listing</a></li>
+		<hr>
+		-->
+		<li><a href="ct_details.jsp?t=She+Got+It&by=2+Pistols" onClick="return showLink(this);">Details</a></li>
+		<hr>
+		<li><a href="ct_details.jsp?t=She+Got+It&by=2+Pistols&promo=yes" onClick="return showLink(this);">Details - Discount</a></li>
+		<!--
+		<li><a href="ct_details_rate.jsp?t=She+Got+It&by=2+Pistols" onClick="return showLink(this);">Details - Rate It</a></li>
+		<li><a href="ct_details.jsp?t=She+Got+It&by=2+Pistols&msg=1" onClick="return showLink(this);">Details - Rating Saved</a></li>
+		-->
+		<hr>
+		<li><a href="ct_details.jsp?t=She+Got+It&by=2+Pistols&credit=yes" onClick="return showLink(this);">Details - Have Credits</a></li>
+		<!--
+		<hr>
+		<li><a href="ct_tell_friend.jsp?t=She+Got+It&by=2+Pistols" onClick="return showLink(this);">Tell A Friend</a></li>
+		<li><a href="ct_tell_friend_sent.jsp?t=She+Got+It&by=2+Pistols&msg=3" onClick="return showLink(this);">Tell A Friend - Sent</a></li>
+		<li><a href="ct_tell_friend_sent.jsp?t=She+Got+It&by=2+Pistols&msg=4" onClick="return showLink(this);">Tell A Friend - Error 1</a></li>
+		<li><a href="ct_tell_friend_sent.jsp?t=She+Got+It&by=2+Pistols&msg=5" onClick="return showLink(this);">Tell A Friend - Error 2</a></li>
+		<li><a href="ct_tell_friend_sent.jsp?t=She+Got+It&by=2+Pistols&msg=6&c=ct" onClick="return showLink(this);">Tell A Friend - Error 3</a></li>
+		-->
+		<hr>
+		<li><a href="ct_purchase_success.jsp?t=She+Got+It&by=2+Pistols" onClick="return showLink(this);">Purchase - Success</a></li>
+		<!--<li><a href="topup.jsp?" onClick="return showLink(this);">Purchase - Error - Insufficient Funds</a></li>-->
+		<li><a href="ct_purchase_error.jsp?lwm=ERROR_NEW_SUBSCRIBER" onClick="return showLink(this);">Purchase - ERROR_NEW_SUBSCRIBER</a></li>
+		<li><a href="ct_purchase_error.jsp?lwm=ERROR_EXPIRED_SUSBCRIBER" onClick="return showLink(this);">Purchase - ERROR_EXPIRED_SUSBCRIBER</a></li>
+		<li><a href="ct_purchase_error.jsp?lwm=ERROR_TERMINATED_SUBSCRIBER" onClick="return showLink(this);">Purchase - ERROR_TERMINATED_SUBSCRIBER</a></li>
+		<li><a href="ct_purchase_error.jsp?lwm=ERROR_INVALID_ACCOUNT+ID" onClick="return showLink(this);">Purchase - ERROR_INVALID_ACCOUNT ID</a></li>
+		<li><a href="ct_purchase_error.jsp?lwm=ERROR_ACCOUNT+ID_MDN+MISMATCH" onClick="return showLink(this);">Purchase - ERROR_ACCOUNT ID_MDN MISMATCH</a></li>
+		<li><a href="ct_purchase_error.jsp?lwm=ERROR_SONG_ALREADY_PURCHASED" onClick="return showLink(this);">Purchase - ERROR_SONG_ALREADY_PURCHASED</a></li>
+		<li><a href="ct_purchase_error.jsp?lwm=ERROR_ALBUM_LIMIT_REACHED" onClick="return showLink(this);">Purchase - ERROR_ALBUM_LIMIT_REACHED</a></li>
+		<li><a href="ct_purchase_error.jsp?lwm=ERROR_SONG_NOT_AVAILABLE" onClick="return showLink(this);">Purchase - ERROR_SONG_NOT_AVAILABLE</a></li>
+		<li><a href="ct_purchase_error.jsp?lwm=ERROR_INTERNAL" onClick="return showLink(this);">Purchase - ERROR_INTERNAL</a></li>
+		<hr>
+		<li><a href="mypurchases.jsp?" onClick="return showLink(this);">My Purchases</a></li>
+		<li><a href="ct_mypurchases_details.jsp?t=She+Got+It&by=2+Pistols" onClick="return showLink(this);"> - Item Details - one time</a></li>
+		<li><a href="ct_mypurchases_details.jsp?t=She+Got+It&by=2+Pistols&status=1" onClick="return showLink(this);"> - Item Details -one time - refunded</a></li>
+		<li><a href="ct_mypurchases_details2.jsp?t=She+Got+It&by=2+Pistols" onClick="return showLink(this);"> - Item Details - one time - credit</a></li>
+		<hr>
+		<!--<li><a href="mywishlist.jsp?" onClick="return showLink(this);">My Wish List</a></li>-->
+	</ul>
+</li>
+<li>
+	<p class="hide_for_cell"><a href="javascript: void 0" onClick="toggle('Graphics')"><span class="toggle" id="toggleGraphics">+</span>Graphics</a></p>
+	<ul id="Graphics" class="hide">
+		<li><a href="wp.jsp?" onClick="return showLink(this);">Graphics</a></li>
+		<li><a href="wp_browse.jsp?cat=TOP+SELLERS" onClick="return showLink(this);">Top Sellers</a></li>
+		<li><a href="wp_by_genre.jsp?" onClick="return showLink(this);">More Categories</a></li>
+		<li><a href="wp_browse.jsp?cat=HOT+GIRLS" onClick="return showLink(this);">Genre - Item Listing</a></li>
+		<hr>
+		<li><a href="wp_details.jsp?t=Sixties+Butterfly" onClick="return showLink(this);">Details</a></li>
+		<hr>
+		<li><a href="wp_details.jsp?t=Sixties+Butterfly&promo=yes" onClick="return showLink(this);">Details - Discount</a></li>
+		<!--
+		<li><a href="wp_details_rate.jsp?t=Sixties+Butterfly" onClick="return showLink(this);">Details - Rate It</a></li>
+		<li><a href="wp_details.jsp?t=Sixties+Butterfly&msg=1" onClick="return showLink(this);">Details - Rating Saved</a></li>
+		-->
+		<hr>
+		<li><a href="wp_details.jsp?t=Sixties+Butterfly&credit=yes" onClick="return showLink(this);">Details - Have Credits</a></li>
+		<!--
+		<hr>
+		<li><a href="wp_tell_friend.jsp?t=Sixties+Butterfly" onClick="return showLink(this);">Tell A Friend</a></li>
+		<li><a href="wp_tell_friend_sent.jsp?t=Sixties+Butterfly&msg=3" onClick="return showLink(this);">Tell A Friend - Sent</a></li>
+		<li><a href="wp_tell_friend_sent.jsp?t=Sixties+Butterfly&msg=4" onClick="return showLink(this);">Tell A Friend - Error 1</a></li>
+		<li><a href="wp_tell_friend_sent.jsp?t=Sixties+Butterfly&msg=5" onClick="return showLink(this);">Tell A Friend - Error 2</a></li>
+		<li><a href="wp_tell_friend_sent.jsp?t=Sixties+Butterfly&msg=6&c=wp" onClick="return showLink(this);">Tell A Friend - Error 3</a></li>
+		-->
+		<hr>
+		<li><a href="wp_purchase_success.jsp?t=Sixties+Butterfly" onClick="return showLink(this);">Purchase - Success</a></li>
+		<li><a href="topup.jsp?" onClick="return showLink(this);">Purchase - Error - Insufficient Funds</a></li>
+		<li><a href="wp_download_error.jsp?t=Sixties+Butterfly" onClick="return showLink(this);">Download - Error</a></li>
+		<hr>
+		<li><a href="mypurchases.jsp?" onClick="return showLink(this);">My Purchases</a></li>
+		<li><a href="wp_mypurchases_details.jsp?t=Sixties+Butterfly" onClick="return showLink(this);"> - Item Details - one time</a></li>
+		<li><a href="wp_mypurchases_details.jsp?t=Sixties+Butterfly&status=1" onClick="return showLink(this);"> - Item Details -one time - refunded</a></li>
+		<li><a href="wp_mypurchases_details2.jsp?t=Sixties+Butterfly" onClick="return showLink(this);"> - Item Details - one time - credit</a></li>
+		<hr>
+		<!--<li><a href="mywishlist.jsp?" onClick="return showLink(this);">My Wish List</a></li>-->
+	</ul>
+</li>
+<li>
+	<p class="hide_for_cell"><a href="javascript: void 0" onClick="toggle('Games')"><span class="toggle" id="toggleGames">+</span>Games</a></p>
+	<ul id="Games" class="hide">
+		<li><a href="game.jsp?" onClick="return showLink(this);">Games</a></li>
+		<li><a href="game_browse.jsp?cat=TOP+SELLERS" onClick="return showLink(this);">Top Sellers</a></li>
+		<li><a href="game_by_genre.jsp?" onClick="return showLink(this);">More Categories</a></li>
+		<li><a href="game_browse.jsp?cat=ARCADE" onClick="return showLink(this);">Genre - Item Listing</a></li>
+		<hr>
+		<li><a href="game_details.jsp?t=Need+For+Speed+ProStreet" onClick="return showLink(this);">Details</a></li>
+		<hr>
+		<li><a href="game_details.jsp?t=Need+For+Speed+ProStreet&promo=yes" onClick="return showLink(this);">Details - Discount</a></li>
+		<!--
+		<li><a href="game_details_rate.jsp?t=Need+For+Speed+ProStreet" onClick="return showLink(this);">Details - Rate It</a></li>
+		<li><a href="game_details.jsp?t=Need+For+Speed+ProStreet&msg=1" onClick="return showLink(this);">Details - Rating Saved</a></li>
+		<hr>
+		<li><a href="game_details.jsp?t=Need+For+Speed+ProStreet&nwa=yes" onClick="return showLink(this);">Details - Network Aware</a></li>
+		-->
+		<hr>
+		<li><a href="game_details.jsp?t=Need+For+Speed+ProStreet&credit=yes" onClick="return showLink(this);">Details - Have Credits</a></li>
+		<hr>
+		<!--<li><a href="game_details.jsp?t=Need+For+Speed+ProStreet&credit=no&rental=yes" onClick="return showLink(this);">Details - Item is part of Rental Bundle</a></li>-->
+		<li><a href="game_details.jsp?t=Need+For+Speed+ProStreet&credit=no&rental=ownone" onClick="return showLink(this);">Details - Own One Rental Bundle</a></li>
+		<li><a href="game_details.jsp?t=Need+For+Speed+ProStreet&credit=no&rental=ownmultiple" onClick="return showLink(this);">Details - Own Multiple Rental Bundles</a></li>
+		<li><a href="game_details.jsp?t=Need+For+Speed+ProStreet&credit=yes&rental=ownone" onClick="return showLink(this);">Details - Own One Rental Bundle &amp; Enum Credit</a></li>
+		<li><a href="game_details.jsp?t=Need+For+Speed+ProStreet&credit=yes&rental=ownmultiple" onClick="return showLink(this);">Details - Own Multiple Rental Bundles &amp; Enum Credit</a></li>
+		<li><a href="game_details.jsp?t=Need+For+Speed+ProStreet&credit=no&rental=return" onClick="return showLink(this);">Details - Item is rented</a></li>
+		<li><a href="game_details.jsp?t=Need+For+Speed+ProStreet&credit=no&rental=download" onClick="return showLink(this);">Details - Item is rented (not yet download)</a></li>
+		<!--
+		<hr>
+		<li><a href="game_tell_friend.jsp?t=Need+For+Speed+ProStreet&" onClick="return showLink(this);">Tell A Friend</a></li>
+		<li><a href="game_tell_friend_sent.jsp?t=Need+For+Speed+ProStreet&msg=3" onClick="return showLink(this);">Tell A Friend - Sent</a></li>
+		<li><a href="game_tell_friend_sent.jsp?t=Need+For+Speed+ProStreet&msg=4" onClick="return showLink(this);">Tell A Friend - Error 1</a></li>
+		<li><a href="game_tell_friend_sent.jsp?t=Need+For+Speed+ProStreet&msg=5" onClick="return showLink(this);">Tell A Friend - Error 2</a></li>
+		<li><a href="game_tell_friend_sent.jsp?t=Need+For+Speed+ProStreet&msg=6&c=game" onClick="return showLink(this);">Tell A Friend - Error 3</a></li>
+		-->
+		<hr>
+		<li><a href="game_purchase_success.jsp?t=Need+For+Speed+ProStreet" onClick="return showLink(this);">Purchase - Success</a></li>
+		<li><a href="topup.jsp?" onClick="return showLink(this);">Purchase - Error - Insufficient Funds</a></li>
+		<li><a href="game_download_error.jsp?t=Need+For+Speed+ProStreet" onClick="return showLink(this);">Download - Error</a></li>
+		<hr>
+		<li><a href="mypurchases.jsp?" onClick="return showLink(this);">My Purchases</a></li>
+		<li><a href="game_mypurchases_details.jsp?t=Need+For+Speed+ProStreet" onClick="return showLink(this);"> - Item Details - month subscription</a></li>
+		<li><a href="game_mypurchases_details.jsp?t=Need+For+Speed+ProStreet&status=1" onClick="return showLink(this);"> - Item Details - month subscription - cancelled</a></li>
+		<li><a href="game_mypurchases_details2.jsp?t=Need+For+Speed+ProStreet" onClick="return showLink(this);"> - Item Details - one time</a></li>
+		<li><a href="game_mypurchases_details2.jsp?t=Need+For+Speed+ProStreet&status=1" onClick="return showLink(this);"> - Item Details -one time - refunded</a></li>
+		<!--<li><a href="game_mypurchases_details3.jsp?t=Need+For+Speed+ProStreet" onClick="return showLink(this);"> - Item Details - one time - credit</a></li>-->
+		<hr>
+		<!--<li><a href="mywishlist.jsp?" onClick="return showLink(this);">My Wish List</a></li>-->
+	</ul>
+</li>
+<li>
+	<p class="hide_for_cell"><a href="javascript: void 0" onClick="toggle('GamesLite')"><span class="toggle" id="toggleGamesLite">+</span>Games Lite</a></p>
+	<ul id="GamesLite" class="hide">
+		<li><p>Not Subscribed</p></li>
+		<li><a href="game_lite.jsp?" onClick="return showLink(this);">Games Lite</a></li>
+		<li><a href="game_lite_browse.jsp?cat=TRIVIA+GAMES" onClick="return showLink(this);">Genre - Item Listing</a></li>
+		<li><a href="game_lite_subscribe.jsp?" onClick="return showLink(this);">Account Management/Subscribe</a></li>
+		<li><p>Subscribed</p></li>
+		<li><a href="game_lite.jsp?sub=yes" onClick="return showLink(this);">Games Lite</a></li>
+		<li><a href="game_lite_browse.jsp?cat=TRIVIA+GAMES&sub=yes" onClick="return showLink(this);">Genre - Item Listing</a></li>
+		<li><a href="game_lite_details.jsp?sub=yes" onClick="return showLink(this);">Games Title [hosted by vendor]</a></li>
+		<li><a href="game_lite_mypurchases_details.jsp?" onClick="return showLink(this);">Subscription Details</a></li>
+		<li><a href="game_lite_mypurchases_details.jsp?sub=no&status=1&msg=8" onClick="return showLink(this);">Subscription Canceled</a></li>
+	</ul>
+</li>
+<li>
+	<p class="hide_for_cell"><a href="javascript: void 0" onClick="toggle('Apps')"><span class="toggle" id="toggleApps">+</span>Apps &amp; Info</a></p>
+	<ul id="Apps" class="hide">
+		<li><a href="app.jsp?" onClick="return showLink(this);">Apps &amp; Info</a></li>
+		<li><a href="app_browse.jsp?cat=TOP+SELLERS" onClick="return showLink(this);">Top Sellers</a></li>
+		<li><a href="app_by_genre.jsp?" onClick="return showLink(this);">More Categories</a></li>
+		<li><a href="app_browse.jsp?cat=ARCADE" onClick="return showLink(this);">Genre - Item Listing</a></li>
+		<hr>
+		<li><a href="app_details.jsp?t=Driving+Log+2" onClick="return showLink(this);">Details</a></li>
+		<hr>
+		<li><a href="app_details.jsp?t=Driving+Log+2&promo=yes" onClick="return showLink(this);">Details - Discount</a></li>
+		<!--
+		<li><a href="app_details_rate.jsp?t=Driving+Log+2" onClick="return showLink(this);">Details - Rate It</a></li>
+		<li><a href="app_details.jsp?t=Driving+Log+2&msg=1" onClick="return showLink(this);">Details - Rating Saved</a></li>
+		<hr>
+		<li><a href="app_details.jsp?t=Driving+Log+2&nwa=yes" onClick="return showLink(this);">Details - Network Aware</a></li>
+		-->
+		<hr>
+		<li><a href="app_details.jsp?t=Driving+Log+2&credit=yes" onClick="return showLink(this);">Details - Have Credits</a></li>
+		<hr>
+		<!--<li><a href="app_details.jsp?t=Driving+Log+2&credit=no&rental=yes" onClick="return showLink(this);">Details - Item is part of Rental Bundle</a></li>-->
+		<li><a href="app_details.jsp?t=Driving+Log+2&credit=no&rental=ownone" onClick="return showLink(this);">Details - Own One Rental Bundle</a></li>
+		<li><a href="app_details.jsp?t=Driving+Log+2&credit=no&rental=ownmultiple" onClick="return showLink(this);">Details - Own Multiple Rental Bundles</a></li>
+		<li><a href="app_details.jsp?t=Driving+Log+2&credit=yes&rental=ownone" onClick="return showLink(this);">Details - Own One Rental Bundle &amp; Enum Credit</a></li>
+		<li><a href="app_details.jsp?t=Driving+Log+2&credit=yes&rental=ownmultiple" onClick="return showLink(this);">Details - Own Multiple Rental Bundles &amp; Enum Credit</a></li>
+		<li><a href="app_details.jsp?t=Driving+Log+2&credit=no&rental=return" onClick="return showLink(this);">Details - Item is rented</a></li>
+		<li><a href="app_details.jsp?t=Driving+Log+2&credit=no&rental=download" onClick="return showLink(this);">Details - Item is rented (not yet download)</a></li>
+		<!--
+		<hr>
+		<li><a href="app_tell_friend.jsp?t=Driving+Log+2" onClick="return showLink(this);">Tell A Friend</a></li>
+		<li><a href="app_tell_friend_sent.jsp?t=Driving+Log+2&msg=3" onClick="return showLink(this);">Tell A Friend - Sent</a></li>
+		<li><a href="app_tell_friend_sent.jsp?t=Driving+Log+2&msg=4" onClick="return showLink(this);">Tell A Friend - Error 1</a></li>
+		<li><a href="app_tell_friend_sent.jsp?t=Driving+Log+2&msg=5" onClick="return showLink(this);">Tell A Friend - Error 2</a></li>
+		<li><a href="app_tell_friend_sent.jsp?t=Driving+Log+2&msg=6&c=app" onClick="return showLink(this);">Tell A Friend - Error 3</a></li>
+		-->
+		<hr>
+		<li><a href="app_purchase_success.jsp?t=Driving+Log+2" onClick="return showLink(this);">Purchase - Success</a></li>
+		<li><a href="topup.jsp?" onClick="return showLink(this);">Purchase - Error - Insufficient Funds</a></li>
+		<li><a href="app_download_error.jsp?t=Driving+Log+2" onClick="return showLink(this);">Download - Error</a></li>
+		<hr>
+		<li><a href="mypurchases.jsp?" onClick="return showLink(this);">My Purchases</a></li>
+		<li><a href="app_mypurchases_details.jsp?t=Driving+Log+2" onClick="return showLink(this);"> - Item Details - month subscription</a></li>
+		<li><a href="app_mypurchases_details.jsp?t=Driving+Log+2&status=1" onClick="return showLink(this);"> - Item Details - month subscription - cancelled</a></li>
+		<li><a href="app_mypurchases_details2.jsp?t=Driving+Log+2" onClick="return showLink(this);"> - Item Details - one time</a></li>
+		<li><a href="app_mypurchases_details2.jsp?t=Driving+Log+2&status=1" onClick="return showLink(this);"> - Item Details -one time - refunded</a></li>
+		<!--<li><a href="app_mypurchases_details3.jsp?t=Driving+Log+2" onClick="return showLink(this);"> - Item Details - one time - credit</a></li>--?
+		<hr>
+		<!--<li><a href="mywishlist.jsp?" onClick="return showLink(this);">My Wish List</a></li>-->
+	</ul>
+</li>
+<li>
+	<p class="hide_for_cell"><a href="javascript: void 0" onClick="toggle('Bundle')"><span class="toggle" id="toggleBundle">+</span>Bundles</a></p>
+	<ul id="Bundle" class="hide">
+		<li><a href="bundle.jsp?" onClick="return showLink(this);">Bundles</a></li>
+		<!--<li><a href="rt_details_related_bundle.jsp?t=She%20Got%20It&by=2%20Pistols" onClick="return showLink(this);">Related Bundles</a></li>-->
+		<hr>
+		<li><a href="bundle_details.jsp?t=10+Ringtones+for+$10&type=1" onClick="return showLink(this);">Bundle Details - Enumerated</a></li>
+		<li><a href="bundle_purchase_success.jsp?t=10+Ringtones+for+$10&type=1" onClick="return showLink(this);">Purchase - Success</a></li>
+		<hr>
+		<li><a href="bundle_details.jsp?t=3+Ringtone+for+$3&type=4" onClick="return showLink(this);">Bundle Details - Enumerated - month subscription</a></li>
+		<li><a href="bundle_purchase_success.jsp?t=3+Ringtone+for+$3&type=4" onClick="return showLink(this);">Purchase - Success</a></li>
+		<hr>
+		<li><a href="bundle_details.jsp?t=Beyonce+Top+3&type=2" onClick="return showLink(this);">Bundle Details - Prepack - no ringback tones</a></li>
+		<li><a href="bundle_purchase_success.jsp?t=Beyonce+Top+3&type=2" onClick="return showLink(this);">Purchase - Success</a></li>
+		<hr>
+		<li><a href="bundle_details.jsp?t=Beyonce+Top+3+Ringtones+and+Ringback+Tones&type=3" onClick="return showLink(this);">Bundle Details - Prepack - with ringback tones</a></li>
+		<li><a href="bundle_purchase_success.jsp?t=Beyonce+Top+3+Ringtones+and+Ringback+Tones&type=3" onClick="return showLink(this);">Purchase - Success</a></li>
+		<!--
+		<hr>
+		<li><a href="bundle_details_rate.jsp?t=10+Ringtones+for+$10&type=1" onClick="return showLink(this);">Details - Rate It</a></li>
+		<li><a href="bundle_details.jsp?t=10+Ringtones+for+$10&type=1&msg=1" onClick="return showLink(this);">Details - Rating Saved</a></li>
+		<hr>
+		<li><a href="bundle_tell_friend.jsp?t=10+Ringtones+for+$10&type=1" onClick="return showLink(this);">Tell A Friend</a></li>
+		<li><a href="bundle_tell_friend_sent.jsp?t=10+Ringtones+for+$10&type=1&msg=3" onClick="return showLink(this);">Tell A Friend - Sent</a></li>
+		<li><a href="bundle_tell_friend_sent.jsp?t=10+Ringtones+for+$10&type=1&msg=4" onClick="return showLink(this);">Tell A Friend - Error 1</a></li>
+		<li><a href="bundle_tell_friend_sent.jsp?t=10+Ringtones+for+$10&type=1&msg=5" onClick="return showLink(this);">Tell A Friend - Error 2</a></li>
+		<li><a href="bundle_tell_friend_sent.jsp?t=10+Ringtones+for+$10&type=1&msg=6&c=bundle" onClick="return showLink(this);">Tell A Friend - Error 3</a></li>
+		-->
+		<hr>
+		<li><a href="topup.jsp?" onClick="return showLink(this);">Purchase - Error - Insufficient Funds</a></li>
+		<li><a href="bundle_purchase_error.jsp?t=10+Ringtones+for+$10&type=1" onClick="return showLink(this);">Purchase - Error</a></li>
+		<hr>
+		<li><a href="mypurchases.jsp?" onClick="return showLink(this);">My Purchases</a></li>
+		<hr>
+		<li><a href="bundle_mypurchases_details.jsp?t=10+Ringtones+for+$10&type=1" onClick="return showLink(this);">Purchase Details - Enumerated</a></li>
+		<li><a href="bundle_mypurchases_details.jsp?t=10+Ringtones+for+$10&type=1&status=1" onClick="return showLink(this);">---refunded</a></li>
+		<hr>
+		<li><a href="bundle_mypurchases_details.jsp?t=3+Ringtone+for+$3&type=4" onClick="return showLink(this);">Purchase Details - Enumerated - month subscription</a></li>
+		<li><a href="bundle_mypurchases_details.jsp?t=3+Ringtone+for+$3&type=4&status=1" onClick="return showLink(this);">---cancelled</a></li>
+		<hr>
+		<li><a href="bundle_mypurchases_details.jsp?t=Beyonce+Top+3&type=2" onClick="return showLink(this);">Purchase Details - Prepack - no ringback tones</a></li>
+		<li><a href="bundle_mypurchases_details.jsp?t=Beyonce+Top+3&type=2&status=1" onClick="return showLink(this);">---refunded</a></li>
+		<hr>
+		<li><a href="bundle_mypurchases_details.jsp?t=Beyonce+Top+3+Ringtones+and+Ringback+Tones&type=3" onClick="return showLink(this);">Purchase Details - Prepack - with ringback tones</a></li>
+		<li><a href="bundle_mypurchases_details.jsp?t=Beyonce+Top+3+Ringtones+and+Ringback+Tones&type=3&status=1" onClick="return showLink(this);">---refunded</a></li>
+		<hr>
+		<!--<li><a href="mywishlist.jsp?" onClick="return showLink(this);">My Wish List</a></li>-->
+		<p>Rental Bundles</p>
+		<!--<li><a href="bundle.jsp?" onClick="return showLink(this);">Rental Bundles</a></li>-->
+		<li><a href="rentalbundle_details.jsp?" onClick="return showLink(this);">Rental Bundle Details</a></li>
+		<li><a href="rentalbundle_details_items.jsp?" onClick="return showLink(this);">Available Items</a></li>
+		<li><a href="app_details.jsp?" onClick="return showLink(this);">Available Item - Details</a></li>
+		<hr>
+		<li><a href="rentalbundle_purchase_success.jsp?" onClick="return showLink(this);">Purchase - Success</a></li>
+		<li><a href="topup.jsp?" onClick="return showLink(this);">Purchase - Error - Insufficient Funds</a></li>
+		<li><a href="rentalbundle_purchase_error.jsp?" onClick="return showLink(this);">Purchase - Error</a></li>
+		<hr>
+		<!--<li><a href="rentalbundles_own.jsp?" onClick="return showLink(this);">My Rental Bundles</a></li>-->
+		<li><a href="rentalbundle_mypurchases_details.jsp?t=Driving+Log+2" onClick="return showLink(this);">My Purchases - Details - With No Rented Items</a></li>
+		<li><a href="rentalbundle_mypurchases_details2.jsp?t=Driving+Log+2" onClick="return showLink(this);">My Purchases - Details - With Rented Items</a></li>
+		<li><a href="rentalbundle_mypurchases_details_items.jsp?" onClick="return showLink(this);">View Available Items</a></li>
+		<li><a href="app_details.jsp?rental=ownone" onClick="return showLink(this);">Available Item - Details</a></li>
+		<li><a href="rentalbundle_mypurchases_details_rented_items.jsp?" onClick="return showLink(this);">View Rented Items</a></li>
+		<li><a href="app_details.jsp?rental=return" onClick="return showLink(this);">Rented Item - Details</a></li>
+		<hr>
+		<li><a href="rentalbundle_rent_confirm.jsp?rental=return" onClick="return showLink(this);">Rent Confirm</a></li>
+		<li><a href="rentalbundle_rent_not_available.jsp?rental=return" onClick="return showLink(this);">Rent Not Available</a></li>
+		<li><a href="rentalbundle_rent_success.jsp?rental=return" onClick="return showLink(this);">Rent Success</a></li>
+		<li><a href="rentalbundle_return_confirm.jsp?rental=return" onClick="return showLink(this);">Return Confirm</a></li>
+		<li><a href="rentalbundle_return_success.jsp?rental=return" onClick="return showLink(this);">Return Success</a></li>
+	</ul>
+</li>
+<li>- <a href="recommendations.jsp?" onClick="return showLink(this);">Virgin Mobile Recommends</a></li>
+<li>- <a href="mypurchases.jsp?" onClick="return showLink(this);">My Purchases</a></li>
+<li>- <a href="mypurchases_pending_downloads.jsp?" onClick="return showLink(this);">Pending Downloads</a></li>
+<li>- <a href="credits.jsp?" onClick="return showLink(this);">Credits</a></li>
+<li>- <a href="mywishlist.jsp?" onClick="return showLink(this);">My Wish List</a></li>
+<!--<li>- <a href="terms.jsp?" onClick="return showLink(this);">Terms</a></li>-->
+<li>- <a href="notice.jsp?" onClick="return showLink(this);">Notice</a></li>
+</ul>
+</td>
+<td>
+<script type="text/javascript">
+<!--
+function showLink(elm)
+{
+	top.phoneDisplay.location.href=elm+'&s=ccm';
+	top.phoneDisplay2.location.href=elm+'&s=vmu';
+	top.phoneDisplay3.location.href=elm+'&s=aw';
+	return false;
+}
+
+function refreshMockup()
+{
+	top.phoneDisplay.location.reload();
+	top.phoneDisplay2.location.reload();
+	top.phoneDisplay3.location.reload();
+}
+//-->
+</script>
+<form name="refreshMockup" action="javascript:refreshMockup()">
+<input type="submit" value="Refresh Mockup"/>
+</form>
+<iframe width="240" height="320" frameborder="1" scrolling="yes" marginheight="0" marginwidth="0" id="phoneDisplay" name="phoneDisplay" src="downloads.jsp?&s=ccm" align="left"></iframe>
+<iframe width="240" height="320" frameborder="1" scrolling="yes" marginheight="0" marginwidth="0" id="phoneDisplay2" name="phoneDisplay2" src="downloads.jsp?&s=vmu" align="left"></iframe>
+<iframe width="240" height="320" frameborder="1" scrolling="yes" marginheight="0" marginwidth="0" id="phoneDisplay3" name="phoneDisplay3" src="downloads.jsp?&s=aw" align="left"></iframe>
+</td>
+</tr>
+</table>
+	
+</body>
+</html>

@@ -1,0 +1,139 @@
+/*** review list *****/
+
+.vendorportal .review-list section {
+	border-bottom: 1px solid #dddddd;
+}
+
+.vendorportal .review-list section div.review-item {
+	clear: both;
+	height: 51px;
+}
+
+.vendorportal .review-list section div.review-body {
+	clear: both;
+	width:100%;
+	padding:.2em .2em 2em;
+}
+
+.vendorportal .review-list section.last {
+	border-bottom: 0;
+}
+
+.vendorportal .review-list section a.list-item {
+	float: left;
+}
+
+.vendorportal .review-list section a.list-item:hover {
+	background: #fff;
+}
+
+.vendorportal .review-list section a.list-item.review-title {
+	margin: 10px 0;
+	width: 628px;
+}
+
+.vendorportal .review-list section a.list-item.review-title h3 {
+	float: left;
+	margin: 0;
+}
+.vendorportal .review-list section a.list-item.review-title h3.title {
+	position:absolute;
+	left:100px;
+}
+.vendorportal .review-list section a.list-item.review-title i {
+	float:left;
+	color:#262626;
+	font-size:.7em;
+	line-height:2em;
+	margin:0;
+	padding:0;
+}
+.vendorportal .review-list section a.list-item.review-title:hover i {
+	color:#262626;
+}
+.vendorportal .review-list section a.list-item.review-title:hover i:hover {
+	color: #262626;
+}
+.vendorportal .review-list section a.list-item.review-title p {
+	float: right;
+	width: 100px;
+	margin: 5px 0 5px 20px;
+	color: #262626;
+}
+.vendorportal .review-list section a.list-item.review-actions {
+	margin: 10px 0 10px 1px;
+	padding: 8px 11px 8px 11px;
+	width: 51px;
+	height: 31px;
+}
+.vendorportal .review-list section a.list-item.review-actions:hover {
+	background:#efefef;
+}
+.vendorportal .review-list section a.list-item.review-actions i {
+	float: left;
+	margin-right: 3px;
+	color: #606060;
+}
+.vendorportal .review-list section a.list-item.review-actions:hover i {
+	color: #0098F0;
+}
+.vendorportal .review-list section a.list-item.review-actions {
+	margin: 10px 0 10px 1px;
+	padding: 8px 11px 8px 11px;
+	width: 51px;
+	height: 31px;
+}
+.vendorportal .review-list section a.list-item.review-actions i {
+	float: left;
+	margin-right: 3px;
+	color: #606060;
+}
+.vendorportal .review-list section a.list-item.review-actions:hover i {
+	color: #0098F0;
+}
+.action-dropdown.review {
+	background:#efefef;
+	color:#272727;
+	margin-top:.7em;
+}
+.action-dropdown.review > *:first-child {
+    margin-top: 0;    
+    border-bottom: 1px solid #606060;
+}
+.action-dropdown.review li:hover, .action-dropdown.review li:focus {
+    background: none repeat scroll 0 0 #cfcfcf;
+}
+.action-dropdown.review a {
+	color:#606060;
+}
+.action-dropdown.review a i{
+	background:#909090;
+	color:#efefef;
+}
+textarea.review_response{
+	height: 5em;
+	white-space:normal;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDDDDD;
+    color: #333333;
+    font-size: 15px;
+    line-height: 23px;
+    padding: 4px 8px 5px 6px;
+}
+textarea.review_response[disabled]{
+	height: 5em;
+	white-space:normal;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDDDDD;
+	background:#C2C2C2;
+    color: #333333;
+    font-size: 15px;
+    line-height: 23px;
+    padding: 4px 8px 5px 6px;
+}
+button.sortby, #sortby_actions  {
+	margin-top:.7em;
+}
+.vendorportal .review-body {
+	line-height:1.5em;
+}

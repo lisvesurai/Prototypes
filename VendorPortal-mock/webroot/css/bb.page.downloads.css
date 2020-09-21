@@ -1,0 +1,222 @@
+.badge-label{
+	-webkit-border-radius: 8px;
+	-webkit-border-top-right-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	-moz-border-radius: 8px;
+	-moz-border-radius-topright: 2px;
+	-moz-border-radius-bottomleft: 2px;
+	border-radius: 8px;
+	border-top-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	padding: 3px 13px 5px;
+	background:#f26e44;
+	color: #f7f5d6;
+	margin-right: 6px;
+}
+
+
+.downloads {
+	font-family: Helvetica;
+}
+/*Note: Temporary fix for h4 element*/
+.downloads h4{
+	font-size: 22px;
+}
+
+.downloads .arrow{
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.downloads .border-left{
+	border-left: solid;
+	border-width: 1px;
+	border-color: #f3f3f3;
+}
+
+.downloads article:last-child{
+	padding-top: 10px;
+}
+
+.downloads article ul{
+	padding-left: 11%;
+	margin-bottom: 0;
+}
+
+.downloads article > div.border{
+	padding-bottom: 3em;
+	border-bottom: solid;
+	border-top: solid;
+	border-width:1px;
+	border-color: #f3f3f3;
+}
+
+.downloads article form {
+	padding: 21px 0 13px;
+}
+
+.downloads article input[type="radio"]{
+	margin: 0 5px 10px 42px;
+}
+
+.downloads article form.border-bottom{
+	border-color: #f3f3f3;
+}
+
+.downloads article form span:first-child{
+	color: #909090;
+}
+
+.downloads article .margin-top{
+	margin-top: 2em;
+}
+
+.downloads article > div > div >p {
+	color: #909090;
+}
+
+.downloads button{
+	border: none;
+	padding: 0;
+}
+
+.downloads article button{
+	height: 76px;
+	background: #008ab8;
+	font-size: 18px;
+	text-align: left;
+}
+
+.downloads article button p{
+	font-size: 18px;
+	margin-right: 32px;
+}
+
+.downloads article .arrow{
+	padding: 11px 11px 9px;
+	float: left;
+	background: #007da9;
+	margin: 0 16px;
+}
+
+/* Aside */
+.downloads aside .arrow{
+	margin: 0px 8px;
+	padding: 5px;
+}
+
+.downloads aside .arrow.red{
+	background: #d9613d;
+}
+
+.downloads aside .arrow.grey{
+	background: #121212;
+}
+
+.downloads aside .arrow.blue{
+	background: #007da9;
+}
+
+.downloads aside .arrow.green{
+	background: #859400;
+}
+
+.downloads aside ul{
+	list-style-position: inside;
+	margin-bottom: 0;
+}
+
+.downloads aside .margin-bottom{
+	margin-bottom: 0;
+}
+
+.downloads aside > div p{
+	margin-bottom: 0;
+}
+
+.downloads aside > div > a {
+	color: #2ba6cb;
+}
+
+.downloads aside .border-right{
+	min-height: 118px;
+}
+
+.downloads aside .read-more{
+	margin-top:1em;
+	display: none;
+}
+
+.downloads aside .read-more > div{
+	margin-top: 1.5em;
+}
+
+.downloads aside button{
+	height: 34px;
+	font-size: 15px;
+	padding-right: 16px;
+	margin: 1.4em 0;
+}
+
+.downloads aside > div{
+	border-top: solid 6px black;
+}
+
+.downloads aside h3{
+	margin-top: 1.3em;
+	margin-bottom: 0.5em;
+}
+
+.downloads h3.grey, .downloads article .grey{
+	color: #4a4a4a;
+}
+
+.downloads h3.green{
+	color: #96b800;
+}
+
+.downloads h3.blue, .downloads ul{
+	color: #008ab8;
+}
+
+.downloads .download div.grey{
+	border-color: #6e6e6e;
+}
+
+.downloads button.grey{
+	background: #4a4a4a;
+}
+
+.downloads button.blue{
+	background: #008ab8;
+}
+
+.downloads button.green{
+	background: #96b800 ;
+}
+
+.downloads button.red{
+	background: #f26e44;
+}
+
+.downloads .border.red{
+	border-color: #f26e44;
+}
+
+.downloads .border.blue{
+	border-color: #33a1c6;
+}
+
+.downloads .border.green{
+	border-color: #abc633;
+}
+
+.downloads .border.grey{
+	border-color: #6e6e6e;
+}
+
+/*IE specifics*/
+.oldie .download-button{
+	white-space: nowrap;
+}

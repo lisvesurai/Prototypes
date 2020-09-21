@@ -1,0 +1,57 @@
+
+  <h2>New Listing</h2>
+  <form id="Form2" name="Form2" method="get">
+    <label>Language</label>
+    <select name="allLanguages" id="allLanguages">
+      <option value=""></option>
+      <option value="1">English (en)</option>
+      <option value="2">English (en_us)</option>
+      <option value="4">English (en_gb)</option>
+      <option value="5">Spanish (es)</option>
+      <option value="6">German (de)</option>
+      <option value="7">French (fr)</option>
+      <option value="10">Italian (it)</option>
+      <option value="11">Portuguese (pt)</option>
+      <option value="12">Portuguese (pt_br)</option>
+      <option value="13">Dutch (nl)</option>
+      <option value="14">Indonesian (id)</option>
+      <option value="15">Polish (pl)</option>
+      <option value="16">Turkish (tr)</option>
+      <option value="17">Japanese (ja)</option>
+      <option value="18">Romanian (ro)</option>
+      <option value="19">Croatian (hr)</option>
+      <option value="20">Swedish (sv)</option>
+      <option value="22">Arabic (ar)</option>
+      <option value="23">Catalan (ca)</option>
+      <option value="24">Czech (cs)</option>
+      <option value="25">Danish (da)</option>
+      <option value="26">Greek (el)</option>
+      <option value="27">Basque (eu)</option>
+      <option value="28">Galician (gl)</option>
+      <option value="29">Hebrew (he)</option>
+      <option value="30">Hindi (hi)</option>
+      <option value="31">Hungarian (hu)</option>
+      <option value="32">Korean (ko)</option>
+      <option value="33">Norwegian (no)</option>
+      <option value="34">Russian (ru)</option>
+      <option value="35">Thai (th)</option>
+      <option value="36">Vietnamese  (vi)</option>
+      <option value="37">Chinese (PRC) (zh_cn)</option>
+      <option value="38">Chinese (Taiwan)  (zh_tw)</option>
+      <option value="40">Finnish (fi)</option>
+      <option value="47">Bobian (BOB)</option>
+    </select>
+	<script>
+      $(document).ready(function() {
+        $("#allLanguages").select2({
+			placeholder: "Please choose a language",
+			allowClear: true
+		});
+      });
+    </script>
+    <div class="text-center action">
+      <input type="button" id="_ratingSubmitBtn" value=" Save " class="button" onclick="$('#EnglishListing').removeClass('active');$('#FrenchListing').removeClass('hide');$('#FrenchListing').addClass('active');$('.reveal-modal').foundation('reveal', 'close');">
+      <input type="button" id="_ratingCancelBtn" value=" Cancel " class="button" onclick="$('.reveal-modal').foundation('reveal', 'close');">
+    </div>
+  </form>
+  <a class="close-reveal-modal">&#215;</a> 

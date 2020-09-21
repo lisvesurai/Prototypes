@@ -1,0 +1,63 @@
+div#nav {background:#000 url(img/biz120/bg_navtab.gif) bottom left repeat-x;}
+div.tabs {background:#000 url(img/biz120/bg_tab.gif) bottom left repeat-x;}
+
+div.item {cursor:pointer;padding:5px;margin:0;background:#070707;}
+table.priceblock {height:18px;}
+td.price {text-align:right;font-weight:bold;padding:0;}
+div.price {background:#d9d9d9;padding:0 2px;}
+
+div.menucat {background:#040404;vertical-align:middle;padding:2px;}
+a.menucat {font-weight:bold;text-decoration:none;color:#b7b7b7;}
+
+div.toptitle, div.hdr, div.hdr2 {margin:0;color:#ffffff;font-weight:bold;background:#043047;}
+div.toptitleinner, div.hdrinner, div.hdr2inner {margin:2px 0 0 0;padding:5px 8px;}
+img.toptitle {margin-left:3px;vertical-align:middle;}
+p.txt {background:#272626;margin:0 1px;padding:3px 8px;}
+
+div.search {text-align:center;padding:3px;background:#464646 url(img/biz120/bg-searcharea.gif) top left repeat-x;}
+form.searchform {text-align:center;}
+input.text {color:#000;vertical-align:middle;background:#fff url(img/biz120/bg_search_box.gif) top left no-repeat;border:0;margin:2px 0;padding:2px;width:82px;height:13px;}
+
+div.page {background:#181818;vertical-align:middle;padding:0;}
+
+div.itemdetails {margin:2px 1px;background:#040404;}
+div.itemdetailsinner3 {padding:5px;}
+div.sshot {text-align:center;padding:3px 0;}
+img.sshot {width:100px;height:133px;}
+img.sshot2 {width:100%;}
+img.th {width:40px;height:40px;}
+td.details {vertical-align:top;}
+td.sshot {padding:0;text-align:center;}
+td.btnimg {padding:0;text-align:center;}
+td.rating {vertical-align:middle;padding:0 10px 0 0;}
+h1.itemTitle {color:#ffcc33;margin-bottom:5px;text-align:center;}
+p.btn {margin:2px 0;text-align:center;}
+p.tc {margin:15px 0;}
+a.tc {color:#047e9b;/*font-size:smaller;*/text-decoration:underline;}
+a.btn {color:#3fa7c4;text-decoration:underline;padding:0;margin:0;font-weight:bold;display:block;}
+a.btn1 {color:#ab890d;text-decoration:underline;padding:0;}
+a.btn2 {color:#3fa7c4;text-decoration:underline;padding:0;}
+a.cancel {text-align:center;vertical-align:middle;background:#6e6e6e;color:#fff;font-weight:bold;padding:1px;margin:2px 0 2px 2px;border:1px solid #333;text-decoration:none;}
+a.cancel:focus,a.cancel:hover {background:#eee;color:#000;border:1px solid #000;}
+input.btn {text-align:center;vertical-align:middle;background:#3fa7c4;color:#fff;font-weight:bold;padding:1px;margin:2px 0 2px 2px;border:1px solid #6e6e6e;}
+input.btn:focus,input.btn:hover {background:#eee;color:#000;border:1px solid #000;}
+input.btnimg {background:#666;color:#fff;padding:0;margin:0 0 10px 0;border:0;}
+a.signupnow {text-align:center;vertical-align:middle;background:#3fa7c4;color:#fff;font-weight:bold;padding:1px;margin:2px 0 2px 0;border:1px solid #6e6e6e;text-decoration:none;}
+a.signupnow:focus, a.signupnow:hover {background:#eee;color:#000;border:1px solid #000;}
+p.desc {border-top:1px solid #818080;border-bottom:1px solid #818080;margin:2px 0 8px 0;padding:5px 0;}
+h4.price {font-weight:bold;text-align:center;margin:5px 0;}
+p.note {/*font-size:xx-small;*/margin-top:5px;}
+/*a.note, b.note {font-size:xx-small;}*/
+p.note2 {font-size:xx-small;margin-top:5px;color:#ffcc33;}
+
+input.promocode {color:#000;width:40px;vertical-align:top;background:#fff;border:1px solid #000;margin:0 2px;padding:2px;}
+
+div.rateform {margin:0;}
+select.rating {padding:1px;border:1px solid #ccc;background:#fff;width:50px;}
+p.bl {color:#ffcc11;}
+
+p.msg {background:#272626;color:#ed4530;font-weight:bold;margin:2px;padding:3px;}
+.msg2 {color:#3b8f13;margin:5px 0 0 0;font-weight:bold;}
+.error {color:#ed4530;}
+
+#ftrlinks {background:#484848 url(img/biz120/bg-footer.gif) top left repeat-x;}

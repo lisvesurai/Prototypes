@@ -1,0 +1,62 @@
+*,h1,h2,h3,h4,h5,p {font-family:sans-serif;}
+* {border:0;margin:0;padding:0;}
+body {background:#fff;color:#353535;font-family:sans-serif;}
+a {color:#00779b;}
+h1 {color:#03485e;}
+h4 {font-weight:normal;}
+h4.q {font-weight:bold;}
+form {border:0;}
+
+div#nav {text-align:center;}
+table.nav {text-align:center;margin:0 auto;}
+
+div.banner {text-align:center;}
+div.banner img, img.banner {width:100%;}
+
+div.listing {background:#fff;margin:0;}
+div.item, div.menucat {border-top:1px solid #ffffff;border-bottom:1px solid #d5d5d5;}
+p.itemtitle {color:#00779b;font-weight:bold;text-decoration:none;}
+a.itemtitle {text-decoration:none;color:#00779b;font-weight:bold;}
+a.price {color:#00779b;font-weight:bold;text-decoration:none;}
+a.cat {text-decoration:none;}
+a.cat2 {font-size:inherit;}
+a.buy {color:#cf4d3d;text-decoration:underline;font-weight:bold;}
+img.star {margin:0 0 0 1px;}
+
+table.page {width:100%;margin:0 auto;}
+td.pagefirst {width:25%;border-right:1px solid #a4a4a4;}
+td.page {width:10%;border-right:1px solid #a4a4a4;text-align:center;}
+td.pagelast {width:25%;text-align:right;}
+a.inactive {color:#898989;text-decoration:none;font-weight:bold;}
+a.active {color:#006685;text-decoration:none;font-weight:bold;}
+
+div.menu {background:#ffd100;text-align:center;padding:6px 0;}
+input.srchbtn {text-align:center;vertical-align:middle;margin:0;padding:0;}
+input.srchbtn:focus,input.srchbtn:hover {border:1px solid #fff;}
+
+p.rateby {vertical-align:top;}
+a.reviews {font-weight:bold;}
+
+/*
+#zoo_header {border-bottom:0px !important;}
+#zoo_header span {vertical-align:top;}
+#zoo_header #title {vertical-align:top !important;margin:0 !important;padding:0 !important;}
+#zoo_header #title img {vertical-align:middle;height:auto !important;width:auto !important;margin:0 auto !important;top:0 !important;}
+*/
+
+div#ftrlinks {color:#fff;padding:5px 8px;}
+div#ftrlinks td {white-space:nowrap;}
+a.ftrlinks {color:#fff;text-decoration:none;}
+
+hr {border-top:1px solid #b9dde9;height:1px;background:#b9dde9;}
+textarea{width:99%;border:1px solid #000;}
+
+span.discountPrice{color:#ec432e;font-weight:bold;}
+span.strikeoutPrice{background:url(img/strikeout.gif) center center repeat-x;}
+
+div.itemdetails, div.itemdetailsinner, div.itemdetailsinner2, div.itemdetailsinner3 {border:0;margin:0;padding:0;}
+
+img.th {width:80px;height:80px;}
+td.sshot {padding:3px 13px 21px 0;}
+img.th_large {width:80px;height:80px;}
+td.sshot_large {padding:3px 13px 21px 0;}

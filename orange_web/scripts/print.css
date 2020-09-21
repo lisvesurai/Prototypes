@@ -1,0 +1,30 @@
+/* BODY STYLES */
+img, form {background:none;}
+p {background:none;}
+a {background:none;}
+h1, h2, h3, h4, h5 {background:none;}
+ul, li {background:none;}
+#mainContainer {width:100%;}
+
+/* HIDDEN TEXT */
+span, caption {position:static; height:auto; width:auto; font-size:10px;}
+
+/* IMAGE REPLACEMENT */
+.replace {position:static; height:auto; width:auto; background:none;}
+.replace em, .replace a {position:static; height:auto; width:auto; background:none;}
+* html>body .replace {background:none;}
+
+/* LEFT NAV */
+#generic #leftNavigation li span,
+#generic #leftNavigation li.selected span, 
+#downloads #leftNavigation ul li span {background:none !important;}
+
+/* HIDDEN SECTIONS */
+#navigation, 
+.skipNavigation, 
+.hidden,
+#promoColumn,
+#footerLinks {display:none;}
+
+#downloadsHome em.hidden {display:block; position:static; height:auto; width:auto; color:#000; font-weight:bold; font-style:normal;}
+#downloadsHome #phoneSelector h2.replace {width:400px; height:38px;}

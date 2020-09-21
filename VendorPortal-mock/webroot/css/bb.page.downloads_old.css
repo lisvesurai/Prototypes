@@ -1,0 +1,749 @@
+/*
+ * Gold Special
+ */
+
+ a.btn-large-gold {
+	 display: block;
+	 background: #e5c857 url(../img/downloads/golden-download-button.png) repeat 0 0;
+	 font-size: 13px;
+	 line-height: 18px;
+	 padding: 12px 20px 12px 8px;
+	 -webkit-background-clip: padding-box;
+}
+a.btn-large.btn-large-gold:hover {
+	background: #e5c857 url(../img/downloads/golden-download-button-hover.png) repeat 0 0;
+}
+
+span.btn-icon-download-gold{
+	background: url(../img/downloads/button_download_icon_large_gold.png) no-repeat 12px center;
+	display: block;
+	padding-left: 52px;
+}
+
+a.btn-large span.btn-title-gold{
+	color: #7e5d17;
+}
+
+a.btn-large span.btn-divider-gold{
+	background: url(../img/downloads/button_divider_large_gold.png) no-repeat 0 center;
+}
+
+span.btn-icon-nseries-download-gold{
+	background: url(../img/downloads/download_button-nseries_gold.png) no-repeat 12px center;
+	display: block;
+	padding-left: 52px;
+}
+
+span.btn-icon-lseries-download-gold{
+	background: url(../img/downloads/download_button-lseries_gold.png) no-repeat 12px center;
+	display: block;
+	padding-left: 52px;
+}
+
+span.btn-icon-nseries-download-blue{
+	background: url(../img/downloads/download_button-nseries_blue.png) no-repeat 12px center;
+	display: block;
+	padding-left: 52px;
+}
+
+span.btn-icon-lseries-download-blue{
+	background: url(../img/downloads/download_button-lseries_blue.png) no-repeat 12px center;
+	display: block;
+	padding-left: 52px;
+}
+/******************/
+
+.downloads .main label {
+	display:inline;
+}
+
+.downloads .downloadbox-main {
+	position: relative;
+	display: block;
+	margin-top: 40px;
+}
+.downloads .downloadbox-secondary {
+	position: relative;
+	display: block;
+	margin-top: 30px;
+}
+.downloads .downloadbox-main {
+	background: #202020 url('../img/common/pattern-carbon-dark-5p.png') repeat;
+}
+.downloads .downloadbox-secondary {
+	background: #EBEBEB url('../img/common/pattern-carbon-dark-5p.png') repeat;
+}
+.downloads .buttoncontainer {
+	padding: 45px 60px;
+}
+.downloads .illustration{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	height: 287px;
+	width: 461px;
+	background: url('../img/downloads/gold_main.png') no-repeat bottom center;
+}
+.downloads .downloadbox-main .illustration p{
+	color: #fff;
+	font-family:"TradeGothicNextW01-Ital";
+	margin: 200px 0px 0px 46px;
+} 
+.downloads .downloadbox-main .illustration p span{
+	color: #c48400;
+}
+.downloads .downloadbox-secondary.simulator .illustration {
+	height: 330px;
+	width: 430px;
+	top: 30px;
+	bottom: auto;
+	background: url('../img/downloads/simulator.png') no-repeat center center;
+}
+
+.downloads .downloadbox-secondary.psplugin .illustration {
+	height: 290px;
+	width: 430px;
+	background: url('../img/downloads/psd_to_phone.png') no-repeat center center;
+}
+.downloads .downloadbox-secondary.beta #download-simulator .illustration {
+	height: 306px;
+	width: 430px;
+	bottom: 48px;
+	background: url('../img/downloads/simulator-devc.png') no-repeat center center;
+}
+.downloads .downloadbox-secondary.beta .illustration {
+	height: 306px;
+	width: 430px;
+	bottom: 48px;
+	background: url('../img/downloads/wireframe-devc.png') no-repeat center center;
+}
+.downloads .downloadbox-secondary.beta #download-simulator .btn-title {
+	font-size: 16px;
+}
+.downloads .downloadbox-main h2 {
+	color: #ffffff;
+	margin-top: 0;
+}
+
+.downloads .downloadbox-secondary h2 {
+	margin-top: 0;
+	margin-bottom: 8px;
+}
+
+.downloads .downloadbox-main h2 span.light,
+.downloads .downloadbox-secondary h2 span.light {
+	display: block;
+	font-family: TradeGothicNextW01-Ligh, sans-serif;
+	margin-bottom: -13px;
+}
+
+.downloads .downloadbox-main .buttoncontainer,
+.downloads .downloadbox-secondary .buttoncontainer {
+	width: 520px;
+}
+
+.downloads .downloadbox-main .buttoncontainer .btn-large,
+.downloads .downloadbox-secondary .buttoncontainer .btn-large {
+	margin: 18px 0 8px 0;
+}
+.downloads .downloadbox-main .updatenote {
+	color: #767676;
+}
+/*
+.downloads .downloadbox-main .buttoncontainer .notes,
+.downloads .downloadbox-secondary .buttoncontainer .notes {
+	float: left;
+}
+*/
+.downloads .downloaddrawer .drawer_box {
+	display: block;
+	padding: 30px 10px 30px 60px;
+	background: #202020 url('../img/common/pattern-carbon-dark-5p.png') repeat;	
+	border-top: 1px solid #1d1d1d;
+}
+.downloads #downloaddrawer-main .drawer_box {
+	color: #999999;
+}
+.downloads #downloaddrawer-simulator .drawer_box,
+.downloads .downloaddrawer.downloaddrawer-secondary .drawer_box  {
+	border-top-color: #cccccc;
+	background-color: #EBEBEB;
+	color: #404040 !important;
+}
+
+.downloads .downloaddrawer .drawer_toggle {
+	display: block;
+	height: 24px;
+	padding: 4px 10px 0 60px !important;
+	background-color: #1a1a1a;
+	background-repeat: repeat;
+}
+.downloads #downloaddrawer-main .drawer_toggle {
+	color: #999999;
+	background-image: url('../img/common/pattern-carbon-dark-5p.png');
+}
+.downloads #downloaddrawer-simulator .drawer_toggle,
+.downloads .downloaddrawer.downloaddrawer-secondary .drawer_toggle {
+	color: #404040 !important;
+	background-color: #E1E1E1;
+}
+
+.downloads .downloaddrawer .drawer_toggle:hover {
+	text-decoration: none;
+}
+.downloads #downloaddrawer-main .drawer_toggle:hover {
+	color: #ffffff;
+}
+.downloads #downloaddrawer-simulator .drawer_toggle:hover,
+.downloads .downloaddrawer.downloaddrawer-secondary .drawer_toggle:hover {
+	color: #606060 !important;
+}
+.downloads .downloaddrawer .drawer_toggle:focus {
+	outline: none;
+}
+.downloads .downloaddrawer .drawer_toggle p {
+	padding-left: 20px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.downloads .downloaddrawer .drawer_toggle p.open,
+.downloads .downloaddrawer .drawer_toggle.active p.close {
+	display: block;
+}
+.downloads .downloaddrawer .drawer_toggle p.open {
+	background-image: url('../img/common/drawer-activator-open-white.png');
+}
+.downloads .downloaddrawer .drawer_toggle.active p.close {
+	background-image: url('../img/common/drawer-activator-close-white.png');
+}
+.downloads .downloaddrawer .drawer_toggle.active p.open,
+.downloads .downloaddrawer .drawer_toggle p.close {
+	display: none;
+}
+.downloads #downloaddrawer-simulator .drawer_toggle p.open,
+.downloads .downloaddrawer-secondary .drawer_toggle p.open {
+	background-image: url('../img/common/drawer-activator-open-grey.png');
+}
+.downloads #downloaddrawer-simulator .drawer_toggle.active p.open,
+.downloads .downloaddrawer-secondary .drawer_toggle.active p.open {
+	display: none;
+}
+/* TODO: Where is the grey variant?
+.downloads #downloaddrawer-simulator .drawer_toggle.active p.close,
+.downloads .downloaddrawer-secondary .drawer_toggle.active p.close {
+	background-image: url('../img/common/drawer-activator-close-grey.png');
+}*/
+
+.downloads .downloaddrawer .drawer_box input,
+.downloads .downloaddrawer .drawer_box label {
+	margin: 5px;
+}
+
+.downloads #downloaddrawer-main .drawer_box label.disabled {
+	color: #535353;
+}
+
+.downloads #downloaddrawer-simulator .drawer_box label.disabled {
+	color: #838383;
+}
+
+.downloads .mac_mountain_lion {
+	padding: 85px 570px 25px 105px;
+	background: transparent url('../img/downloads/mountainlion.png') no-repeat 370px 85px;
+}
+
+.downloads .setup_wizard {
+	padding: 80px 165px 60px 340px;
+	background: transparent url('../img/downloads/set_up_dev_env.png') no-repeat 165px center;
+}
+
+.downloads .release-section h2{
+	background: url("../img/common/carbon_pattern_8percent.png") repeat scroll 0 0 transparent;
+	padding: 0px 4px 0px 8px;
+}
+
+.downloads .release-section ul{
+	list-style: none;
+	padding: 0px 0px 0px 12px;
+}
+.downloads .release-section ul li{
+	font-family: 'TradeGothicNextW01-Regu', Helvetica, Verdana !important; font-weight: normal !important;
+	font-size: 1.0769em; /* 14px */
+	line-height: 1.3571em; /* 19px */
+	padding-bottom: 10px;
+}
+.downloads .release-section ul ul{
+	list-style: none;
+	padding: 0px 20px;
+	margin: 4px 0px 0px 0px;
+}
+.downloads .release-section ul ul li{
+	font-family: Arial, Helvetica, Verdana !important; font-weight: normal !important;
+	font-size: 13px; /* 14px */
+	padding-bottom: 10px;
+}
+
+.downloads .release-section h3{
+	margin-top: 19px;
+}
+
+.knownissues_pr,
+.knownissues_titlepr{
+	float: left;
+}
+.knownissues_pr{
+	color: #888;
+}
+.downloads .release-section .knownissues_text,
+.downloads .release-section .knownissues_titletext{
+	float: none;
+	padding-left: 110px;
+}
+
+/* This is for the banner in the release notes linking to the NDK release notes */
+
+.downloads #main .feedback span{
+	background: url('../img/common/feedback_black.png') no-repeat left top;
+	height: 30px;
+	width: 461px;
+	color: #fff;
+	display: block;
+	float:  left;
+	padding: 5px 0px 4px 8px;
+}
+
+.downloads #main .feedback a{
+	background: url("../img/common/feedback_linkblue.png") no-repeat scroll 469px top;
+	color: #FFFFFF;
+	display: block;
+	float: none;
+	height: 26px;
+	padding: 5px 0 0 469px;
+	text-align: center;
+	width: 130px;
+}
+
+.refresher{
+	position: absolute;
+	width: 64px;
+	height: 41px;
+	background: url("../img/downloads/reloaded.png") no-repeat scroll 0px top;
+	left: 380px;
+	top: 140px;
+}
+
+/*
+ * BETA ROADMAPS ARRIVALS BOARD
+ */
+.downloads #main .arrivals * {
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-o-box-sizing: content-box;
+	-ms-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.downloads #main .arrivals {
+	position: relative;
+	background: #505050;
+	padding: 0;
+}
+
+.downloads #main .arrivals #tiptip_holder {
+	top: 53px;
+	left: 240px;
+}
+.downloads #main .arrivals #tiptip_arrow {
+	top: 40px;
+	left: 50%;
+	margin-left: -5px;
+}
+
+.downloads #main .arrivals h1 {
+	color: #f3f3f3;
+	padding: 10px;
+	background: #262626 url('../img/common/pattern-carbon-dark-5p.png') 0 0 repeat;
+	border-bottom: 2px solid #96A701;
+}
+
+.downloads #main .arrivals h1 span.icon {
+	background: url('../img/downloads/arrivals_icon.png') 5px 8px no-repeat;
+	padding-left: 50px;
+}
+
+.downloads #main .arrivals div.legend {
+	position: absolute;
+	right: 10px;
+	top: 9px;
+	color: #c7c7c7;
+}
+.downloads #main .arrivals div.legend p {
+	float: right;
+	font-size: 14px;
+	margin: 0px 5px 0px 15px;
+	line-height: 20px;
+}
+
+.downloads #main .arrivals h1 {
+	margin-bottom: 5px;
+}
+
+.downloads #main .arrivals ul {
+	list-style: none;
+	padding: 0px 12px 8px 12px;
+	margin: 0;
+}
+
+.downloads #main .arrivals ul li {
+	position: relative;
+	margin: 0px;
+	padding: 0px 0px 5px 0px;
+}
+
+.downloads #main .arrivals ul li.titles {
+	color: #f2f2f2;
+	font-size: 1.0769em; /* 14px */
+	line-height: 1.3571em; /* 19px */
+	padding: 12px 0 0 0;
+}
+
+.downloads #main .arrivals ul li.released {
+	color: #f2f2f2;
+	border-bottom: 1px solid #6B6B6B;
+	font-size: 1.4em;
+	padding: 12px 0 0 0;
+}
+
+.downloads #main .arrivals ul li span.title {
+	display: inline-block;
+	margin-right: 17px;
+}
+
+.downloads #main .arrivals ul li span.status {
+	margin-right: 0;
+}
+
+.downloads #main .arrivals .feature_heading h2 {
+	margin: 0;
+	display: block;
+	height: 39px;
+	position: relative;
+	overflow: hidden;
+	color: #f3f3f3;
+	font-family: "Cousine", monospace;
+	text-shadow: 0px 0px 0px rgba(242,242,242,0.6);
+	-webkit-transition: text-shadow 0.1s linear;
+	text-transform: uppercase;
+	letter-spacing: 9px;
+	font-size: 29px;
+	line-height: 36px;	
+}
+.downloads #main .arrivals .feature_heading h2:hover {
+	text-shadow: 0px 0px 6px rgba(243,243,243,0.6);
+	-webkit-transition: text-shadow 0.2s linear;
+	cursor: pointer;
+}
+.ie9 .downloads #main .arrivals .feature_heading h2,
+.macosx .downloads #main .arrivals.firefox .feature_heading h2 {
+	letter-spacing: 8.7px;
+}
+
+.downloads #main .arrivals ul li span.release,
+.downloads #main .arrivals ul li span.date,
+.downloads #main .arrivals .feature_heading h2 .release,
+.downloads #main .arrivals .feature_heading h2 .date {
+	width: 77px;
+}
+
+.downloads #main .arrivals ul li span.feature,
+.downloads #main .arrivals .feature_heading h2 .feature {
+	width: 467px;
+}
+
+.downloads #main .arrivals ul li span.status,
+.downloads #main .arrivals .feature_heading h2 .status {
+	width: 207px;
+}
+
+.downloads #main .arrivals .feature_heading h2 .landed {
+	color: #c9e000;
+	text-shadow: 0px 0px 0px rgba(201, 224, 0, 0.6);
+	-webkit-transition: text-shadow 0.1s linear;
+}
+
+.downloads #main .arrivals .feature_heading h2:hover .landed {
+	text-shadow: 0px 0px 6px rgba(201, 224, 0, 0.6);
+}
+
+.downloads #main .arrivals .feature_heading h2 .enroute,
+.downloads #main .arrivals .feature_heading h2 .ontime {
+	color: #f2f2f2;
+	text-shadow: 0px 0px 0px rgba(242,242,242,0.6);
+	-webkit-transition: text-shadow 0.1s linear;
+}
+
+.downloads #main .arrivals .feature_heading h2:hover .enroute,
+.downloads #main .arrivals .feature_heading h2:hover .ontime {
+
+	text-shadow: 0px 0px 6px rgba(242,242,242,0.6);
+}
+
+.downloads #main .arrivals .feature_heading h2 .delayed,
+.downloads #main .arrivals .feature_heading h2 .planning {
+	color: #e18f00;
+	text-shadow: 0px 0px 0px rgba(225,143,0,0.6);
+	-webkit-transition: text-shadow 0.1s linear;
+}
+
+.downloads #main .arrivals .feature_heading h2:hover .delayed,
+.downloads #main .arrivals .feature_heading h2:hover .planning {
+	text-shadow: 0px 0px 6px rgba(225,143,0,0.6);
+}
+
+.downloads #main .arrivals .feature_heading h2 .canceled {
+	color: #e10000;
+	text-shadow: 0px 0px 0px rgba(225,0,0,0.6);
+	-webkit-transition: text-shadow 0.1s linear;
+}
+
+.downloads #main .arrivals .feature_heading h2:hover .canceled {
+	text-shadow: 0px 0px 6px rgba(225,0,0,0.6);
+}
+
+.downloads #main .arrivals .feature_heading h2 .arrivals_right {
+	display: block;
+	background: url("../img/downloads/arrivalsrow_bgright.png") no-repeat top right;
+	margin-left: -2px;
+	padding: 2px 0px 2px 3px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.ie7 .downloads #main .arrivals .feature_heading h2 .arrivals_right,
+.ie8 .downloads #main .arrivals .feature_heading h2 .arrivals_right,
+.ie9 .downloads #main .arrivals .feature_heading h2 .arrivals_right {
+	padding-left: 1px;
+	padding-top: 2px;
+}
+
+.downloads #main .arrivals .feature_heading h2 .arrivals_left {
+	display: inline-block;
+	position: relative;
+	background: url("../img/downloads/arrivalsrow_bgleft.png") no-repeat top left;
+	padding-left: 5px;
+	padding-bottom: 1px;
+	margin-right: -10px;
+}
+
+.ie7 .downloads #main .arrivals .feature_heading h2 .arrivals_left {
+	margin-right: 4px;
+}
+
+.downloads #main .arrivals .feature_heading h2 .arrivals_strikethrough {
+	height: 39px;
+	background: url("../img/downloads/arrivalsrow_strikethrough.png") 0px 0px repeat-x;
+	position: absolute;
+	top: 0px;
+	left: 1px;
+	right: 2px;
+}
+
+.downloads #main .arrivals .feature_details {
+	display: none;
+	color: #c7c7c7;
+	margin-top: 3px;
+	padding: 8px 2px 15px 2px;
+}
+
+.downloads #main .arrivals .feature_details a {
+	color: #22BFF3;
+}
+.downloads #main .arrivals .feature_details a:visited {
+	color: #ba6ddd;
+}
+
+.downloads #main .arrivals .feature_details ul {
+	margin: 0;
+	padding-left: 2em;
+	list-style: disc;
+}
+
+/* ----------------------------------------------------
+ * Download Manager
+ * -------------------------------------------------- */
+
+.dlmContainer { 
+        float:left;
+        clear:both; 
+        margin-bottom:16px; 
+}
+
+.dlmContainer .DLM {
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.dlmContainer .DLM .DLMprogressBar { 
+    float: left; 
+    display: block; 
+    
+    padding: 1px 1px 1px 1px;
+    margin-top:0; margin-right: 0; background: #E5EEF0;
+    clear: left;
+
+    -webkit-background-clip: padding-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+    border-top: 1px solid #008FB3;
+    border-left: 1px solid #0079AD;
+    border-bottom: 1px solid #005AA8;
+}
+.dlmContainer .DLM .DLMprogress {
+    height: 16px;
+    color: rgba(255,255,255,0.9);
+    background: rgba(0,0,0,0.3);
+
+    text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+
+    background: #39b1e5;
+
+    background-image: url(../img/blue-gradient.svg);
+    background-size: 100% 100%;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+
+    background: -moz-linear-gradient(top, #39b1e5 0%, #1782df 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#39b1e5), color-stop(100%,#1782df));
+    background: -webkit-linear-gradient(top, #39b1e5 0%,#1782df 100%);
+    background: -o-linear-gradient(top, #39b1e5 0%,#1782df 100%);
+    background: -ms-linear-gradient(top, #39b1e5 0%,#1782df 100%);
+    background: linear-gradient(top, #39b1e5 0%,#1782df 100%);
+}
+
+.dlmContainer .DLM .DLMpause,
+.dlmContainer .DLM .DLMresume {
+    top: 0px !important;
+    float: left;
+    width: 19px;
+    height: 19px;
+    margin-left: -1px;
+    border-bottom: 1px solid #005AA8;
+    border-right: 1px solid #005AA8;
+    cursor: pointer;
+}
+.dlmContainer .DLM .DLMpause {
+    background:url('../img/common/sprite-dlm-pause-resume.png') -1px 0 no-repeat;
+}
+.dlmContainer .DLM .DLMresume {
+    background:url('../img/common/sprite-dlm-pause-resume.png') -1px -24px no-repeat;
+}
+
+.dlmContainer .DLM .DLMstatus {
+    width: 250px;
+    float: left; clear:both;
+    font-size: 12px;
+    margin-top: 4px;
+}
+.dlmContainer .DLM .DLMpauseclick,
+.dlmContainer .DLM .DLMautoStart {
+    display: none;
+}
+
+.usedlm {
+    display: none;
+    float: right;
+}
+.usedlm input[type="checkbox"] {
+    float: none;
+    width: 13px;
+    height: 13px;
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
+    position: relative;
+    top: -2px;
+    *overflow: hidden;
+}
+.usedlm label {
+    display: inline-block;
+    padding-left: 15px;
+    text-indent: -11px;
+}
+.usedlm-notes {
+    display: none;
+    clear: left;
+}
+.usedlm-notes ul {
+    padding-left: 0;
+}
+.usedlm-notes ul li {
+    list-style: none;
+}
+.dlmContainer .DLM .DLMtitle,
+.dlmContainer .DLM .DLMstatus,
+.dlmContainer .DLM .DLMcompleteTitle {
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.download .dlmContainer .DLM,
+.download .dlm-notes {
+    width: 475px;
+}
+.download .dlmContainer .DLM .DLMprogressBar { 
+    width: 452px;
+} 
+
+.downloadbox-simulator-bb10_sim .dlmContainer .DLM,
+.downloadbox-simulator-pb_sim .dlmContainer .DLM,
+.downloadbox-simulator-bb10_sim .dlmContainer .dlm-notes,
+.downloadbox-simulator-pb_sim .dlmContainer .dlm-notes {
+    width: 442px;
+}
+.downloadbox-simulator-bb10_sim .dlmContainer .DLM .DLMprogressBar,
+.downloadbox-simulator-pb_sim .dlmContainer .DLM .DLMprogressBar {
+    width: 419px;
+}
+
+.downloads .downloadbox-main .dlmContainer .DLM,
+.downloads .downloadbox-secondary .dlmContainer .DLM,
+.downloads .downloadbox-main .dlm-notes,
+.downloads .downloadbox-secondary .dlm-notes {
+     width: 400px;
+}
+.downloads .downloadbox-main .dlmContainer .DLM .DLMprogressBar,
+.downloads .downloadbox-secondary .dlmContainer .DLM .DLMprogressBar { 
+    width: 377px;
+ }
+ 
+.downloads .downloadbox-main .dlmContainer .DLM .DLMtitle,
+.downloads .downloadbox-main .dlmContainer .DLM .DLMstatus, 
+.downloads .downloadbox-main .dlmContainer .DLM .DLMcompleteTitle { 
+    color: #FFFFFF;
+}
+.downloads .downloadbox-main .usedlm,
+.downloads .downloadbox-main .usedlm-notes {
+    color: #909090;
+}
+
+.downloadbox-simulator-bb10_sim .dlmContainer .DLM .DLM .DLMtitle,
+.downloadbox-simulator-bb10_sim .dlmContainer .DLM .DLM .DLMstatus,
+.downloadbox-simulator-bb10_sim .dlmContainer .DLM .DLM .DLMcompleteTitle,
+.downloadbox-simulator-pb_sim .dlmContainer .DLM .DLM .DLMtitle,
+.downloadbox-simulator-pb_sim .dlmContainer .DLM .DLM .DLMstatus,
+.downloadbox-simulator-pb_sim .dlmContainer .DLM .DLM .DLMcompleteTitle,
+.downloads .downloadbox-secondary .dlmContainer .DLM .DLMtitle,
+.downloads .downloadbox-secondary .dlmContainer .DLM .DLMstatus, 
+.downloads .downloadbox-secondary .dlmContainer .DLM .DLMcompleteTitle { 
+    color: #404040;
+}
+
+.downloadbox-simulator-bb10_sim .usedlm,
+.downloadbox-simulator-pb_sim .usedlm,
+.downloads .downloadbox-secondary .usedlm {
+    /*color: #404040;*/
+}

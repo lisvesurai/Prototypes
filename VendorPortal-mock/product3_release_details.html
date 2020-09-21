@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js macosx" lang="en">
+<!--<![endif]-->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta charset="utf-8">
+<meta name="author" content="Research In Motion">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link href="favicon.ico" rel="SHORTCUT ICON" />
+<title>BlackBerry Vendor Portal</title>
+
+<!--[if lt IE 9]>
+    <script src="webroot/js/common/html5.js"></script>
+    <style type="text/css">
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+    </style>
+<![endif]-->
+
+<link type="text/css" rel="stylesheet" href="webroot/css/common/normalize.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.fonts.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/foundation.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/foundation.override.css" />
+<!--[if lt IE 9]>
+		<link type="text/css" rel="stylesheet" href="webroot/css/common/foundation.ie8.css">
+	<![endif]-->
+<link type="text/css" rel="stylesheet" href="webroot/css/common/foundicon.general.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.base.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.layout.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.navigation.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.components.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/ext.tiptip.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.site.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.portals.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.documentations.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.downloads.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.references.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.sampleapps.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.screenshot.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.vp.components.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.vp.release.details.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.vp.fonts.css" />
+
+<script src="webroot/js/common/modernizr.custom.88393.js"></script>
+<script type="text/javascript" src="webroot/js/common/bb.global.js"></script>
+<link rel="stylesheet" href="webroot/css/font-awesome/css/font-awesome.min.css" />
+<!--[if IE 7]>
+	  <link rel="stylesheet" href="webroot/css/font-awesome/css/font-awesome-ie7.min.css">
+	<![endif]-->
+<link rel="stylesheet" href="webroot/css/common/jquery-ui-1.8.22.custom.css" />
+<script src="webroot/js/common/jquery-1.10.2.min.js"></script>
+<script src="webroot/js/common/jquery-ui-1.10.3.min.js"></script>
+
+<link rel="stylesheet" href="webroot/js/select2/select2.css" />
+<script src="webroot/js/select2/select2.min.js"></script>
+
+<script src="webroot/js/tree/jquery.jstree.js"></script>
+</head>
+<body class="portals vendorportal">
+<div id="myModal" class="reveal-modal"></div>
+<div id="myModalSmall" class="reveal-modal small"></div>
+<div id="myModalMedium" class="reveal-modal medium"></div>
+<div id="myModalLarge" class="reveal-modal large"></div>
+<div id="myModalXlarge" class="reveal-modal xlarge"></div>
+<div id="myModalExpand" class="reveal-modal expand"></div>
+  <div class="fixed">
+  <div>
+    <nav class="top-bar user-bar hide-for-small">
+      <ul class="title-area">
+        <li class="name"> <a href="http://developer.blackberry.com/" class="logo"> <img src="webroot/img/common/blackberry_logo.png" alt="BlackBerry"> Developer </a> </li>
+        <li class="toggle-topbar"><a href="#"><span>Useful links</span></a></li>
+      </ul>
+      <section class="top-bar-section">
+        <ul class="left">
+          <li class="divider hide-for-small"> </li>
+          <li><a href="http://devblog.blackberry.com" target="_blank">Blog</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li><a href="http://www.youtube.com/blackberrydev/" target="_blank">YouTube</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li><a href="http://supportforums.blackberry.com/t5/Developer-Support-Forums/ct-p/blackberrydev" target="_blank">Forum</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li><a href="https://www.blackberry.com/SignedKeys/codesigning.html" target="_blank">Signing</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li class="last"><a href="https://www.blackberry.com/jira/secure/Dashboard.jspa" target="_blank">Feedback</a></li>
+          <li class="divider hide-for-small"> </li>
+        </ul>
+        <ul class="right">
+          <li class="divider hide-for-small login-in-bar"> </li>
+          <li><a href="login.html" class="icon_login login-in-bar">Logout</a></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+</div>
+  <header class="nav-header">
+    <div class="topbar">
+      <nav>
+        <div class="nav-text">
+          <a href="index.html"> <span class="h1">Vendor Portal for BlackBerry World</span> </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div id="browser-msg" class="row hide">
+    <div class="large-12 columns">
+      <div class="notice warning">
+        <p>Sorry about the red box, but we really need you to update your browser. Read <a href="http://www.smashingmagazine.com/2012/07/10/dear-web-user-please-upgrade-your-browser/">this excellent article</a> if you're wondering why we are no longer supporting this browser version. Go to <a href="http://browsehappy.com/">Browse Happy</a> for browser suggestions and how to update.</p>
+      </div>
+    </div>
+  </div>
+  <div id="main" class="main" role="main">
+    <div class="row">
+      <nav role="navigation" class="large-3 columns side-nav-vp sticky">
+        <ul class="v-card">
+          <li class="app-name">Angry Birds Space</li>
+        </ul>
+        <div class="button-bar">
+          <button type="button"> <span><i class="icon-save blue"></i> Save</span> </button>
+          <button  data-dropdown="page_actions"> <span><i class="icon-reorder blue"></i> Actions</span> </button>
+          <br>
+          <ul id="page_actions" class="action-dropdown" data-dropdown-content="">
+            <li><a href="#">Publish</i></a></li>
+            <li><a href="#">Something else</a></li>
+          </ul>
+        </div>
+        <div class="link-block">
+          <ul class="links">
+            <li><a href="product3_details.html">Details <i data-tooltip title="Ready to publish" class="right icon-ok-sign"></i></a></li>
+            <li><a href="product3_listings.html">Listings <i data-tooltip title="Ready to publish" class="right icon-ok-sign"></i></a></li>
+            <li><a href="product3_releases.html" class="selected">Releases <i data-tooltip title="There are still things that needs your attention: <ul><li>Some things</li><li>That needs</li><li>That users</li><li>Attention</li></ul>" class="right icon-circle-blank"></i></a></li>
+            <li><a href="product3_inappprod.html">In-App Products</a></li>
+            <li><a href="product3_reviews.html">Reviews</a></li>
+            <li><a href="product3_stats.html">Stats</a></li>
+          </ul>
+          <ul id="top-level-links" class="top-level-links backnav-content links">
+            <li><a href="index.html">Products</a></li>
+            <li><a href="promotions.html">Promotions</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="changerequests.html">Change Requests</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="testing.html">Testers</a></li>
+            <li><a href="settings.html">Settings</a></li>
+          </ul>
+          <div class="backnav">
+            <a href="#" data-backnav-id="top-level-links"><i class="icon-chevron-left"></i></a>
+          </div>
+        </div>
+      </nav>
+      <div class="large-9 columns">
+        <div id="mainContentBody">
+        <form accept-charset="UTF-8" action="#" class="custom" id="basic_form" method="get" name="product3_form">
+          <div class="row">
+            <div class="small-6 columns">
+              <h1>Release 2.0.0</h1>
+            </div>
+            <div class="small-4 columns">
+              <h5 class="os">BlackBerry 10 / PlayBook</h5>
+            </div>
+            <div class="small-2 columns">
+              <h5 class="status"><i class="icon-pencil"></i> Draft</h5>
+            </div>
+          </div>
+          <div id="FileBundles" class="row">
+          	<div class="small-12 columns">
+              <fieldset>
+                <div class="row">
+                  <div class="small-4 columns">
+                    <h3>Files</h3>
+                  </div>
+                  <div class="small-2 columns">
+                    <h3>Locale</h3>
+                  </div>
+                  <div class="small-2 columns">
+                    <h3>Device</h3>
+                  </div>
+                  <div class="small-3 columns">
+                    <h3>Min OS</h3>
+                  </div>
+	              <div class="small-1 columns">
+	                <div class="step-ok">
+	                  1
+	                </div>
+	              </div>
+                </div>
+                <div class="row">
+                  <div class="small-4 columns">
+                    <div class="filename">
+                      Angry_Birds_Space_Z10_en.bar
+                    </div>
+                  </div>
+                  <div class="small-2 columns">
+                    <button type="button" data-dropdown="languageList1" class="full"> en (+2) </button>
+                  </div>
+                  <div class="small-2 columns">
+                    <button type="button" data-dropdown="deviceList1" class="full"> 6 devices </button>
+                  </div>
+                  <div class="small-3 columns">
+                    <div class="os left">
+                      10.2.0.123
+                    </div>
+                    <div class="actions right">
+                      <button type="button" data-dropdown="listitem_actions_1" class="list-item"><i class="icon-reorder"></i><i class="icon-angle-down"></i></button>
+                        <ul id="listitem_actions_1" class="action-dropdown" data-dropdown-content="">
+                          <li><a href="#">Delete</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="small-1 columns">
+                    <div class="error-info"><i data-tooltip title="This is a massive error with a lot of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <ul><li>There can be some html in here as well</li><li>Cool, isn't it?</li></ul>" class="icon-exclamation-sign"></i></div>
+                  </div>
+                </div>
+                
+                <div id="languageList1" class="f-dropdown large content languagelist" data-dropdown-content>
+                  <select id="language1" name="language1" multiple>
+                    <option value="">All</option>
+                    <option value="1" selected>English (en)</option>
+                    <option value="4">English (en_gb)</option>
+                    <option value="5">Spanish (es)</option>
+                    <option value="6" selected>German (de)</option>
+                    <option value="7">French (fr)</option>
+                    <option value="10" selected>Italian (it)</option>
+                    <option value="11">Portuguese (pt)</option>
+                    <option value="12">Portuguese (pt_br)</option>
+                    <option value="13">Dutch (nl)</option>
+                    <option value="14">Indonesian (id)</option>
+                    <option value="15">Polish (pl)</option>
+                    <option value="16">Turkish (tr)</option>
+                    <option value="17">Japanese (ja)</option>
+                    <option value="18">Romanian (ro)</option>
+                    <option value="19">Croatian (hr)</option>
+                    <option value="20">Swedish (sv)</option>
+                    <option value="22">Arabic (ar)</option>
+                    <option value="23">Catalan (ca)</option>
+                    <option value="24">Czech (cs)</option>
+                    <option value="25">Danish (da)</option>
+                    <option value="26">Greek (el)</option>
+                    <option value="27">Basque (eu)</option>
+                    <option value="28">Galician (gl)</option>
+                    <option value="29">Hebrew (he)</option>
+                    <option value="30">Hindi (hi)</option>
+                    <option value="31">Hungarian (hu)</option>
+                    <option value="32">Korean (ko)</option>
+                    <option value="33">Norwegian (no)</option>
+                    <option value="34">Russian (ru)</option>
+                    <option value="35">Thai (th)</option>
+                    <option value="36">Vietnamese  (vi)</option>
+                    <option value="37">Chinese (PRC) (zh_cn)</option>
+                    <option value="38">Chinese (Taiwan)  (zh_tw)</option>
+                    <option value="40">Finnish (fi)</option>
+                  </select>
+                </div>
+                
+                <div id="deviceList1" class="f-dropdown large content devicelist" data-dropdown-content>
+                
+                  <div id="treemenu1" class="treesearch">
+                    <input type="text" id="treemenu1_keyword" value="" class="keyword" />
+                    <button type="button" id="treemenu1_search" class="search"><i class="icon-search"></i></button>
+                    <button type="button" id="treemenu1_clear_search" class="clear hide"><i class="icon-remove"></i></button>
+                  </div>
+
+                  <div id="treeDeviceList1">
+                      <ul>
+                          <li id="device_family_1">
+                              <a href="#">Device Family One</a>
+                              <ul>
+                                  <li id="device_1.1">
+                                      <a href="#">Device One</a>
+                                  </li>
+                                  <li id="device_1.2">
+                                      <a href="#">Device Two</a>
+                                  </li>
+                                  <li id="device_1.3">
+                                      <a href="#">Device Three</a>
+                                  </li>
+                                  <li id="device_1.4">
+                                      <a href="#">Device Four</a>
+                                  </li>
+                                  <li id="device_1.5">
+                                      <a href="#">Device Five</a>
+                                  </li>
+                                  <li id="device_1.6">
+                                      <a href="#">Device Six</a>
+                                  </li>
+                                  <li id="device_1.7">
+                                      <a href="#">Device Seven</a>
+                                  </li>
+                                  <li id="device_1.8">
+                                      <a href="#">Device Eight</a>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li id="device_family_2">
+                              <a href="#">Device Family Two</a>
+                              <ul>
+                                  <li id="device_2.1">
+                                      <a href="#">Device One</a>
+                                  </li>
+                                  <li id="device_2.2">
+                                      <a href="#">Device Two</a>
+                                  </li>
+                                  <li id="device_2.3">
+                                      <a href="#">Device Three</a>
+                                  </li>
+                                  <li id="device_2.4">
+                                      <a href="#">Device Four</a>
+                                  </li>
+                                  <li id="device_2.5">
+                                      <a href="#">Device Five</a>
+                                  </li>
+                                  <li id="device_2.6">
+                                      <a href="#">Device Six</a>
+                                  </li>
+                                  <li id="device_2.7">
+                                      <a href="#">Device Seven</a>
+                                  </li>
+                                  <li id="device_2.8">
+                                      <a href="#">Device Eight</a>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li id="device_family_3">
+                              <a href="#">Device Family Three</a>
+                              <ul>
+                                  <li id="device_3.1">
+                                      <a href="#">Device One</a>
+                                  </li>
+                                  <li id="device_3.2">
+                                      <a href="#">Device Two</a>
+                                  </li>
+                                  <li id="device_3.3">
+                                      <a href="#">Device Three</a>
+                                  </li>
+                                  <li id="device_3.4">
+                                      <a href="#">Device Four</a>
+                                  </li>
+                                  <li id="device_3.5">
+                                      <a href="#">Device Five</a>
+                                  </li>
+                                  <li id="device_3.6">
+                                      <a href="#">Device Six</a>
+                                  </li>
+                                  <li id="device_3.7">
+                                      <a href="#">Device Seven</a>
+                                  </li>
+                                  <li id="device_3.8">
+                                      <a href="#">Device Eight</a>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </div>
+                  <script type="text/javascript">
+                  $(function () {
+                    $("#treeDeviceList1")
+					  .jstree({
+						  "themes" : {"theme" : "default","dots" : false,"icons" : false},
+						  "plugins" : ["themes","html_data","checkbox","ui","search"],
+						  "search" : {"show_only_matches" : true },
+						  "core" : { }
+					  })
+					  .bind("loaded.jstree", function (event, data) {
+					  });
+                  });
+                  </script>
+                  <script type="text/javascript">
+				  // Code for the menu buttons
+				  $(function () { 
+					$("#treemenu1 button").click(function () {
+					  switch(this.id) {
+						case "treemenu1_search":
+						  $("#treeDeviceList1").jstree("search", document.getElementById("treemenu1_keyword").value);
+						  if (document.getElementById("treemenu1_keyword").value!=''){$('#treemenu1_clear_search').removeClass('hide');};
+						  break;
+						case "treemenu1_clear_search":
+						  document.getElementById("treemenu1_keyword").value="";
+						  $('#treemenu1_clear_search').addClass('hide');
+						  $("#treeDeviceList1").jstree("search","");
+						  break;
+						default:
+						  $("#treeDeviceList1").jstree("search","");
+						  break;
+					  }
+					});
+					$("#treemenu1_keyword").keyup(function () {
+					  if (document.getElementById("treemenu1_keyword").value!=''){
+						$('#treemenu1_clear_search').removeClass('hide');
+					  }else{
+						$('#treemenu1_clear_search').addClass('hide');
+					  };
+					  $("#treeDeviceList1").jstree("search", document.getElementById("treemenu1_keyword").value);
+					});
+				  });
+				  </script>
+                </div>
+                
+                <div class="row">
+                  <div class="small-4 columns">
+                    <div class="filename">
+                      Angry_Birds_Space_Z10_fr.bar
+                    </div>
+                  </div>
+                  <div class="small-2 columns">
+                    <button type="button" data-dropdown="languageList2" class="full"> fr </button>
+                  </div>
+                  <div class="small-2 columns">
+                    <button type="button" data-dropdown="deviceList2" class="full"> 2 devices </button>
+                  </div>
+                  <div class="small-3 columns">
+                    <div class="os left">
+                      10.2.0.123
+                    </div>
+                    <div class="actions right">
+                      <button type="button" data-dropdown="listitem_actions_2" class="list-item"><i class="icon-reorder"></i><i class="icon-angle-down"></i></button>
+                        <ul id="listitem_actions_2" class="action-dropdown" data-dropdown-content="">
+                          <li><a href="#">Delete</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="small-1 columns">
+                    <div class="error-info"></div>
+                  </div>
+                </div>
+                
+                <div id="languageList2" class="f-dropdown large content languagelist" data-dropdown-content>
+                  <select id="language2" name="language2" multiple>
+                    <option value="">All</option>
+                    <option value="1">English (en)</option>
+                    <option value="4">English (en_gb)</option>
+                    <option value="5">Spanish (es)</option>
+                    <option value="6">German (de)</option>
+                    <option value="7" selected>French (fr)</option>
+                    <option value="10">Italian (it)</option>
+                    <option value="11">Portuguese (pt)</option>
+                    <option value="12">Portuguese (pt_br)</option>
+                    <option value="13">Dutch (nl)</option>
+                    <option value="14">Indonesian (id)</option>
+                    <option value="15">Polish (pl)</option>
+                    <option value="16">Turkish (tr)</option>
+                    <option value="17">Japanese (ja)</option>
+                    <option value="18">Romanian (ro)</option>
+                    <option value="19">Croatian (hr)</option>
+                    <option value="20">Swedish (sv)</option>
+                    <option value="22">Arabic (ar)</option>
+                    <option value="23">Catalan (ca)</option>
+                    <option value="24">Czech (cs)</option>
+                    <option value="25">Danish (da)</option>
+                    <option value="26">Greek (el)</option>
+                    <option value="27">Basque (eu)</option>
+                    <option value="28">Galician (gl)</option>
+                    <option value="29">Hebrew (he)</option>
+                    <option value="30">Hindi (hi)</option>
+                    <option value="31">Hungarian (hu)</option>
+                    <option value="32">Korean (ko)</option>
+                    <option value="33">Norwegian (no)</option>
+                    <option value="34">Russian (ru)</option>
+                    <option value="35">Thai (th)</option>
+                    <option value="36">Vietnamese  (vi)</option>
+                    <option value="37">Chinese (PRC) (zh_cn)</option>
+                    <option value="38">Chinese (Taiwan)  (zh_tw)</option>
+                    <option value="40">Finnish (fi)</option>
+                  </select>
+                </div>
+                
+                <div id="deviceList2" class="f-dropdown large content devicelist" data-dropdown-content>
+                
+                  <div id="treemenu2" class="treesearch">
+                    <input type="text" id="treemenu2_keyword" value="" class="keyword" />
+                    <button type="button" id="treemenu2_search" class="search"><i class="icon-search"></i></button>
+                    <button type="button" id="treemenu2_clear_search" class="clear hide"><i class="icon-remove"></i></button>
+                  </div>
+
+                  <div id="treeDeviceList2">
+                      <ul>
+                          <li id="device_family_1">
+                              <a href="#">Device Family One</a>
+                              <ul>
+                                  <li id="device_1.1">
+                                      <a href="#">Device One</a>
+                                  </li>
+                                  <li id="device_1.2">
+                                      <a href="#">Device Two</a>
+                                  </li>
+                                  <li id="device_1.3">
+                                      <a href="#">Device Three</a>
+                                  </li>
+                                  <li id="device_1.4">
+                                      <a href="#">Device Four</a>
+                                  </li>
+                                  <li id="device_1.5">
+                                      <a href="#">Device Five</a>
+                                  </li>
+                                  <li id="device_1.6">
+                                      <a href="#">Device Six</a>
+                                  </li>
+                                  <li id="device_1.7">
+                                      <a href="#">Device Seven</a>
+                                  </li>
+                                  <li id="device_1.8">
+                                      <a href="#">Device Eight</a>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li id="device_family_2">
+                              <a href="#">Device Family Two</a>
+                              <ul>
+                                  <li id="device_2.1">
+                                      <a href="#">Device One</a>
+                                  </li>
+                                  <li id="device_2.2">
+                                      <a href="#">Device Two</a>
+                                  </li>
+                                  <li id="device_2.3">
+                                      <a href="#">Device Three</a>
+                                  </li>
+                                  <li id="device_2.4">
+                                      <a href="#">Device Four</a>
+                                  </li>
+                                  <li id="device_2.5">
+                                      <a href="#">Device Five</a>
+                                  </li>
+                                  <li id="device_2.6">
+                                      <a href="#">Device Six</a>
+                                  </li>
+                                  <li id="device_2.7">
+                                      <a href="#">Device Seven</a>
+                                  </li>
+                                  <li id="device_2.8">
+                                      <a href="#">Device Eight</a>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li id="device_family_3">
+                              <a href="#">Device Family Three</a>
+                              <ul>
+                                  <li id="device_3.1">
+                                      <a href="#">Device One</a>
+                                  </li>
+                                  <li id="device_3.2">
+                                      <a href="#">Device Two</a>
+                                  </li>
+                                  <li id="device_3.3">
+                                      <a href="#">Device Three</a>
+                                  </li>
+                                  <li id="device_3.4">
+                                      <a href="#">Device Four</a>
+                                  </li>
+                                  <li id="device_3.5">
+                                      <a href="#">Device Five</a>
+                                  </li>
+                                  <li id="device_3.6">
+                                      <a href="#">Device Six</a>
+                                  </li>
+                                  <li id="device_3.7">
+                                      <a href="#">Device Seven</a>
+                                  </li>
+                                  <li id="device_3.8">
+                                      <a href="#">Device Eight</a>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </div>
+                  <script type="text/javascript">
+                  $(function () {
+                    $("#treeDeviceList2")
+					  .jstree({
+						  "themes" : {"theme" : "default","dots" : false,"icons" : false},
+						  "plugins" : ["themes","html_data","checkbox","ui","search"],
+						  "search" : {"show_only_matches" : true },
+						  "core" : { }
+					  })
+					  .bind("loaded.jstree", function (event, data) {
+					  });
+                  });
+                  </script>
+                  <script type="text/javascript">
+				  // Code for the menu buttons
+				  $(function () { 
+					$("#treemenu2 button").click(function () {
+					  switch(this.id) {
+						case "treemenu2_search":
+						  $("#treeDeviceList2").jstree("search", document.getElementById("treemenu2_keyword").value);
+						  if (document.getElementById("treemenu2_keyword").value!=''){$('#treemenu2_clear_search').removeClass('hide');};
+						  break;
+						case "treemenu2_clear_search":
+						  document.getElementById("treemenu2_keyword").value="";
+						  $('#treemenu2_clear_search').addClass('hide');
+						  $("#treeDeviceList2").jstree("search","");
+						  break;
+						default:
+						  $("#treeDeviceList2").jstree("search","");
+						  break;
+					  }
+					});
+					$("#treemenu2_keyword").keyup(function () {
+					  if (document.getElementById("treemenu2_keyword").value!=''){
+						$('#treemenu2_clear_search').removeClass('hide');
+					  }else{
+						$('#treemenu2_clear_search').addClass('hide');
+					  };
+					  $("#treeDeviceList2").jstree("search", document.getElementById("treemenu2_keyword").value);
+					});
+				  });
+				  </script>
+                </div>
+                
+                <div class="row">
+                  <div class="small-4 columns">
+                    <div class="filename">
+                      Angry_Birds_Space_Q10_en.bar
+                    </div>
+                  </div>
+                  <div class="small-2 columns">
+                    <button type="button" data-dropdown="languageList3" class="full"> All </button>
+                  </div>
+                  <div class="small-2 columns">
+                    <button type="button" data-dropdown="deviceList3" class="full"> 0 devices </button>
+                  </div>
+                  <div class="small-3 columns">
+                    <div class="os left">
+                      10.2.0.123
+                    </div>
+                    <div class="actions right">
+                      <button type="button" data-dropdown="listitem_actions_3" class="list-item"><i class="icon-reorder"></i><i class="icon-angle-down"></i></button>
+                        <ul id="listitem_actions_3" class="action-dropdown" data-dropdown-content="">
+                          <li><a href="#">Delete</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="small-1 columns">
+                    <div class="error-info"></div>
+                  </div>
+                </div>
+                
+                <div id="languageList3" class="f-dropdown large content languagelist" data-dropdown-content>
+                  <select id="language3" name="language3" multiple>
+                    <option value="" selected>All</option>
+                    <option value="1">English (en)</option>
+                    <option value="4">English (en_gb)</option>
+                    <option value="5">Spanish (es)</option>
+                    <option value="6">German (de)</option>
+                    <option value="7">French (fr)</option>
+                    <option value="10">Italian (it)</option>
+                    <option value="11">Portuguese (pt)</option>
+                    <option value="12">Portuguese (pt_br)</option>
+                    <option value="13">Dutch (nl)</option>
+                    <option value="14">Indonesian (id)</option>
+                    <option value="15">Polish (pl)</option>
+                    <option value="16">Turkish (tr)</option>
+                    <option value="17">Japanese (ja)</option>
+                    <option value="18">Romanian (ro)</option>
+                    <option value="19">Croatian (hr)</option>
+                    <option value="20">Swedish (sv)</option>
+                    <option value="22">Arabic (ar)</option>
+                    <option value="23">Catalan (ca)</option>
+                    <option value="24">Czech (cs)</option>
+                    <option value="25">Danish (da)</option>
+                    <option value="26">Greek (el)</option>
+                    <option value="27">Basque (eu)</option>
+                    <option value="28">Galician (gl)</option>
+                    <option value="29">Hebrew (he)</option>
+                    <option value="30">Hindi (hi)</option>
+                    <option value="31">Hungarian (hu)</option>
+                    <option value="32">Korean (ko)</option>
+                    <option value="33">Norwegian (no)</option>
+                    <option value="34">Russian (ru)</option>
+                    <option value="35">Thai (th)</option>
+                    <option value="36">Vietnamese  (vi)</option>
+                    <option value="37">Chinese (PRC) (zh_cn)</option>
+                    <option value="38">Chinese (Taiwan)  (zh_tw)</option>
+                    <option value="40">Finnish (fi)</option>
+                  </select>
+                </div>
+                
+                <div id="deviceList3" class="f-dropdown large content devicelist" data-dropdown-content>
+                
+                  <div id="treemenu3" class="treesearch">
+                    <input type="text" id="treemenu3_keyword" value="" class="keyword" />
+                    <button type="button" id="treemenu3_search" class="search"><i class="icon-search"></i></button>
+                    <button type="button" id="treemenu3_clear_search" class="clear hide"><i class="icon-remove"></i></button>
+                  </div>
+
+                  <div id="treeDeviceList3">
+                      <ul>
+                          <li id="device_family_1">
+                              <a href="#">Device Family One</a>
+                              <ul>
+                                  <li id="device_1.1">
+                                      <a href="#">Device One</a>
+                                  </li>
+                                  <li id="device_1.2">
+                                      <a href="#">Device Two</a>
+                                  </li>
+                                  <li id="device_1.3">
+                                      <a href="#">Device Three</a>
+                                  </li>
+                                  <li id="device_1.4">
+                                      <a href="#">Device Four</a>
+                                  </li>
+                                  <li id="device_1.5">
+                                      <a href="#">Device Five</a>
+                                  </li>
+                                  <li id="device_1.6">
+                                      <a href="#">Device Six</a>
+                                  </li>
+                                  <li id="device_1.7">
+                                      <a href="#">Device Seven</a>
+                                  </li>
+                                  <li id="device_1.8">
+                                      <a href="#">Device Eight</a>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li id="device_family_2">
+                              <a href="#">Device Family Two</a>
+                              <ul>
+                                  <li id="device_2.1">
+                                      <a href="#">Device One</a>
+                                  </li>
+                                  <li id="device_2.2">
+                                      <a href="#">Device Two</a>
+                                  </li>
+                                  <li id="device_2.3">
+                                      <a href="#">Device Three</a>
+                                  </li>
+                                  <li id="device_2.4">
+                                      <a href="#">Device Four</a>
+                                  </li>
+                                  <li id="device_2.5">
+                                      <a href="#">Device Five</a>
+                                  </li>
+                                  <li id="device_2.6">
+                                      <a href="#">Device Six</a>
+                                  </li>
+                                  <li id="device_2.7">
+                                      <a href="#">Device Seven</a>
+                                  </li>
+                                  <li id="device_2.8">
+                                      <a href="#">Device Eight</a>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li id="device_family_3">
+                              <a href="#">Device Family Three</a>
+                              <ul>
+                                  <li id="device_3.1">
+                                      <a href="#">Device One</a>
+                                  </li>
+                                  <li id="device_3.2">
+                                      <a href="#">Device Two</a>
+                                  </li>
+                                  <li id="device_3.3">
+                                      <a href="#">Device Three</a>
+                                  </li>
+                                  <li id="device_3.4">
+                                      <a href="#">Device Four</a>
+                                  </li>
+                                  <li id="device_3.5">
+                                      <a href="#">Device Five</a>
+                                  </li>
+                                  <li id="device_3.6">
+                                      <a href="#">Device Six</a>
+                                  </li>
+                                  <li id="device_3.7">
+                                      <a href="#">Device Seven</a>
+                                  </li>
+                                  <li id="device_3.8">
+                                      <a href="#">Device Eight</a>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </div>
+                  <script type="text/javascript">
+                  $(function () {
+                    $("#treeDeviceList3")
+					  .jstree({
+						  "themes" : {"theme" : "default","dots" : false,"icons" : false},
+						  "plugins" : ["themes","html_data","checkbox","ui","search"],
+						  "search" : {"show_only_matches" : true },
+						  "core" : { }
+					  })
+					  .bind("loaded.jstree", function (event, data) {
+					  });
+                  });
+                  </script>
+                  <script type="text/javascript">
+				  // Code for the menu buttons
+				  $(function () { 
+					$("#treemenu3 button").click(function () {
+					  switch(this.id) {
+						case "treemenu3_search":
+						  $("#treeDeviceList3").jstree("search", document.getElementById("treemenu3_keyword").value);
+						  if (document.getElementById("treemenu3_keyword").value!=''){$('#treemenu3_clear_search').removeClass('hide');};
+						  break;
+						case "treemenu3_clear_search":
+						  document.getElementById("treemenu3_keyword").value="";
+						  $('#treemenu3_clear_search').addClass('hide');
+						  $("#treeDeviceList3").jstree("search","");
+						  break;
+						default:
+						  $("#treeDeviceList3").jstree("search","");
+						  break;
+					  }
+					});
+					$("#treemenu3_keyword").keyup(function () {
+					  if (document.getElementById("treemenu3_keyword").value!=''){
+						$('#treemenu3_clear_search').removeClass('hide');
+					  }else{
+						$('#treemenu3_clear_search').addClass('hide');
+					  };
+					  $("#treeDeviceList3").jstree("search", document.getElementById("treemenu3_keyword").value);
+					});
+				  });
+				  </script>
+                </div>
+                
+                <div id="newlyAddedFile" class="row hide">
+                  <div class="small-4 columns">
+                    <div class="filename">
+                      Angry_Birds_Space_Q10_fr.bar
+                    </div>
+                  </div>
+                  <div class="small-2 columns">
+                    <button type="button" data-dropdown="languageList4" class="full"> All </button>
+                  </div>
+                  <div class="small-2 columns">
+                    <button type="button" data-dropdown="deviceList4" class="full"> 0 devices </button>
+                  </div>
+                  <div class="small-3 columns">
+                    <div class="os left">
+                      10.2.0.123
+                    </div>
+                    <div class="actions right">
+                      <button type="button" data-dropdown="listitem_actions_4" class="list-item"><i class="icon-reorder"></i><i class="icon-angle-down"></i></button>
+                        <ul id="listitem_actions_4" class="action-dropdown" data-dropdown-content="">
+                          <li><a href="#">Delete</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="small-1 columns">
+                    <div class="error-info"></div>
+                  </div>
+                </div>
+                
+                <div id="languageList4" class="f-dropdown large content languagelist" data-dropdown-content>
+                  <select id="language4" name="language4" multiple>
+                    <option value="" selected>All</option>
+                    <option value="1">English (en)</option>
+                    <option value="4">English (en_gb)</option>
+                    <option value="5">Spanish (es)</option>
+                    <option value="6">German (de)</option>
+                    <option value="7">French (fr)</option>
+                    <option value="10">Italian (it)</option>
+                    <option value="11">Portuguese (pt)</option>
+                    <option value="12">Portuguese (pt_br)</option>
+                    <option value="13">Dutch (nl)</option>
+                    <option value="14">Indonesian (id)</option>
+                    <option value="15">Polish (pl)</option>
+                    <option value="16">Turkish (tr)</option>
+                    <option value="17">Japanese (ja)</option>
+                    <option value="18">Romanian (ro)</option>
+                    <option value="19">Croatian (hr)</option>
+                    <option value="20">Swedish (sv)</option>
+                    <option value="22">Arabic (ar)</option>
+                    <option value="23">Catalan (ca)</option>
+                    <option value="24">Czech (cs)</option>
+                    <option value="25">Danish (da)</option>
+                    <option value="26">Greek (el)</option>
+                    <option value="27">Basque (eu)</option>
+                    <option value="28">Galician (gl)</option>
+                    <option value="29">Hebrew (he)</option>
+                    <option value="30">Hindi (hi)</option>
+                    <option value="31">Hungarian (hu)</option>
+                    <option value="32">Korean (ko)</option>
+                    <option value="33">Norwegian (no)</option>
+                    <option value="34">Russian (ru)</option>
+                    <option value="35">Thai (th)</option>
+                    <option value="36">Vietnamese  (vi)</option>
+                    <option value="37">Chinese (PRC) (zh_cn)</option>
+                    <option value="38">Chinese (Taiwan)  (zh_tw)</option>
+                    <option value="40">Finnish (fi)</option>
+                  </select>
+                </div>
+                
+                <div id="deviceList4" class="f-dropdown large content devicelist" data-dropdown-content>
+                
+                  <div id="treemenu4" class="treesearch">
+                    <input type="text" id="treemenu4_keyword" value="" class="keyword" />
+                    <button type="button" id="treemenu4_search" class="search"><i class="icon-search"></i></button>
+                    <button type="button" id="treemenu4_clear_search" class="clear hide"><i class="icon-remove"></i></button>
+                  </div>
+
+                  <div id="treeDeviceList4">
+                      <ul>
+                          <li id="device_family_1">
+                              <a href="#">Device Family One</a>
+                              <ul>
+                                  <li id="device_1.1">
+                                      <a href="#">Device One</a>
+                                  </li>
+                                  <li id="device_1.2">
+                                      <a href="#">Device Two</a>
+                                  </li>
+                                  <li id="device_1.3">
+                                      <a href="#">Device Three</a>
+                                  </li>
+                                  <li id="device_1.4">
+                                      <a href="#">Device Four</a>
+                                  </li>
+                                  <li id="device_1.5">
+                                      <a href="#">Device Five</a>
+                                  </li>
+                                  <li id="device_1.6">
+                                      <a href="#">Device Six</a>
+                                  </li>
+                                  <li id="device_1.7">
+                                      <a href="#">Device Seven</a>
+                                  </li>
+                                  <li id="device_1.8">
+                                      <a href="#">Device Eight</a>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li id="device_family_2">
+                              <a href="#">Device Family Two</a>
+                              <ul>
+                                  <li id="device_2.1">
+                                      <a href="#">Device One</a>
+                                  </li>
+                                  <li id="device_2.2">
+                                      <a href="#">Device Two</a>
+                                  </li>
+                                  <li id="device_2.3">
+                                      <a href="#">Device Three</a>
+                                  </li>
+                                  <li id="device_2.4">
+                                      <a href="#">Device Four</a>
+                                  </li>
+                                  <li id="device_2.5">
+                                      <a href="#">Device Five</a>
+                                  </li>
+                                  <li id="device_2.6">
+                                      <a href="#">Device Six</a>
+                                  </li>
+                                  <li id="device_2.7">
+                                      <a href="#">Device Seven</a>
+                                  </li>
+                                  <li id="device_2.8">
+                                      <a href="#">Device Eight</a>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li id="device_family_3">
+                              <a href="#">Device Family Three</a>
+                              <ul>
+                                  <li id="device_3.1">
+                                      <a href="#">Device One</a>
+                                  </li>
+                                  <li id="device_3.2">
+                                      <a href="#">Device Two</a>
+                                  </li>
+                                  <li id="device_3.3">
+                                      <a href="#">Device Three</a>
+                                  </li>
+                                  <li id="device_3.4">
+                                      <a href="#">Device Four</a>
+                                  </li>
+                                  <li id="device_3.5">
+                                      <a href="#">Device Five</a>
+                                  </li>
+                                  <li id="device_3.6">
+                                      <a href="#">Device Six</a>
+                                  </li>
+                                  <li id="device_3.7">
+                                      <a href="#">Device Seven</a>
+                                  </li>
+                                  <li id="device_3.8">
+                                      <a href="#">Device Eight</a>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </div>
+                  <script type="text/javascript">
+                  $(function () {
+                    $("#treeDeviceList4")
+					  .jstree({
+						  "themes" : {"theme" : "default","dots" : false,"icons" : false},
+						  "plugins" : ["themes","html_data","checkbox","ui","search"],
+						  "search" : {"show_only_matches" : true },
+						  "core" : { }
+					  })
+					  .bind("loaded.jstree", function (event, data) {
+					  });
+                  });
+                  </script>
+                  <script type="text/javascript">
+				  // Code for the menu buttons
+				  $(function () { 
+					$("#treemenu4 button").click(function () {
+					  switch(this.id) {
+						case "treemenu4_search":
+						  $("#treeDeviceList4").jstree("search", document.getElementById("treemenu4_keyword").value);
+						  if (document.getElementById("treemenu4_keyword").value!=''){$('#treemenu4_clear_search').removeClass('hide');};
+						  break;
+						case "treemenu4_clear_search":
+						  document.getElementById("treemenu4_keyword").value="";
+						  $('#treemenu4_clear_search').addClass('hide');
+						  $("#treeDeviceList4").jstree("search","");
+						  break;
+						default:
+						  $("#treeDeviceList4").jstree("search","");
+						  break;
+					  }
+					});
+					$("#treemenu4_keyword").keyup(function () {
+					  if (document.getElementById("treemenu4_keyword").value!=''){
+						$('#treemenu4_clear_search').removeClass('hide');
+					  }else{
+						$('#treemenu4_clear_search').addClass('hide');
+					  };
+					  $("#treeDeviceList4").jstree("search", document.getElementById("treemenu4_keyword").value);
+					});
+				  });
+				  </script>
+                </div>
+                
+				<script>
+                  $(document).ready(function() {
+                    $("select").select2({
+                        allowClear: true						  
+                    });
+                  });
+                </script>
+
+                <div class="row">
+                  <div class="small-11 columns">
+                    <div id="addFiles" class="dropTarget" onclick="$('#newlyAddedFile').removeClass('hide')">
+                      <h3>Add More Files</h3>
+                      <p>Drag &amp; drop your release files here<br> or click to browse.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </fieldset>
+            </div>
+          </div>          
+          
+          <div id="WhatsNew" class="row">
+            <div class="small-12 columns">
+              <fieldset>
+                <div class="row">
+                  <div class="small-11 columns">
+                    <h3>What is new in this release?</h3>
+                    <p>It's a good idea to let your customers know what's changed in your release. This information will be included in update email notifications sent to your customers</p>
+                  </div>
+                  <div class="small-1 columns">
+                    <div class="step-star">
+                      2
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-container accordion" data-section="accordion">
+                  <section id="EnglishListing" class="active">
+                    <p class="title" data-section-title><a href="#">English <span>(Default)</span></a></p>
+                    <div class="content" data-slug="English" data-section-content>
+                      <div class="row">
+                        <div class="small-11 columns">                        
+                          <div class="button-bar right">
+                            <ul class="button-group rich-text-editor" style="margin-left:0;">
+                              <li><a href="#" class="small button"><i class="icon-bold"></i></a></li>
+                              <li><a href="#" class="small button"><i class="icon-italic"></i></a></li>
+                              <li><a href="#" class="small button"><i class="icon-underline"></i></a></li>
+                              <li><a href="#" class="small button"><i class="icon-list-ul"></i></a></li>
+                            </ul>
+                          </div>
+                          <label>Description</label>
+                        </div>
+                      </div>                    
+                      
+                      <div class="row">
+                        <div class="small-11 columns">
+                          <textarea name="whatsnew_desc" class="long_desc error" placeholder="Provide some details"></textarea>
+                        </div>
+                        <div class="small-1 columns">
+                          <div class="error-info"><i data-tooltip title="This is a massive error with a lot of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <ul><li>There can be some html in here as well</li><li>Cool, isn't it?</li></ul>" class="icon-exclamation-sign"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section id="FrenchListing">
+                    <p class="title" data-section-title><a href="#">French</a></p>
+                    <div class="content" data-slug="French" data-section-content>
+                      <div class="row">
+                        <div class="small-11 columns">                        
+                          <div class="button-bar right">
+                            <ul class="button-group rich-text-editor" style="margin-left:0;">
+                              <li><a href="#" class="small button"><i class="icon-bold"></i></a></li>
+                              <li><a href="#" class="small button"><i class="icon-italic"></i></a></li>
+                              <li><a href="#" class="small button"><i class="icon-underline"></i></a></li>
+                              <li><a href="#" class="small button"><i class="icon-list-ul"></i></a></li>
+                            </ul>
+                          </div>
+                          <label>Description</label>
+                        </div>
+                      </div>                    
+                      
+                      <div class="row">
+                        <div class="small-11 columns">
+                          <textarea name="whatsnew_desc2" class="long_desc error" placeholder="Provide some details"></textarea>
+                        </div>
+                        <div class="small-1 columns">
+                          <div class="error-info"><i data-tooltip title="This is a massive error with a lot of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <ul><li>There can be some html in here as well</li><li>Cool, isn't it?</li></ul>" class="icon-exclamation-sign"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          
+          <div id="legal" class="row">
+            <div class="small-12 columns">
+              <fieldset>
+                <div class="row">
+                  <div class="small-11 columns">
+                    <h3>Legal</h3>
+                    <p>Has any legal stuff changed with this release?</p>
+                    <div class="row radio_choice">
+                      <div class="small-4 columns">
+                        <label for="legalChange1" onClick="$('#contentLegalChange').addClass('hide');">
+                          <input name="legalChange" type="radio" id="legalChange1" style="display:none;" checked>
+                          <span class="custom radio checked"></span> Nope, it's the same.</label>
+                      </div>
+                      <div class="small-8 columns">
+                        <label for="legalChange2" onClick="$('#contentLegalChange').removeClass('hide');">
+                          <input name="legalChange" type="radio" id="legalChange2" style="display:none;">
+                          <span class="custom radio"></span> Yup, stuff has changed.</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="small-1 columns">
+                    <div class="step-star">
+                      3
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="small-11 columns">
+                    <fieldset id="contentLegalChange" class="hide">
+                      <fieldset>
+                        <div id="contentExportControls">
+                          <h3>Export Control</h3>
+                          <p>For your software release, you will need to indicate any export controls related to it or its content.</p>
+      
+                          <label>Encryption <span class="help" data-tooltip title="This includes any encryption and/or information security functions directly or indirectly performed by your product. This includes any encryption within the Product on the BlackBerry (including HTTPS) AND/OR any encrypted connection the Product makes to an external system."><i class="icon-info-sign"></i></span></label>
+                          <p>Does your product use any encryption or information security functions?</p>
+                          <div class="small-4 switch radius" onClick="$('#ecq1SubquestionsGroup,#exportFormEncryption').toggleClass('hide');">
+                            <input id="enc" name="switch-enc" type="radio" checked="">
+                            <label for="enc" onClick="">No</label>
+                            <input id="enc1" name="switch-enc" type="radio">
+                            <label for="enc1" onClick="">Yes</label>
+                            <span></span>
+                          </div>
+      
+                          <div id="ecq1SubquestionsGroup" class="hide">
+                            <label class="forcheckbox" for="exportForm_ecq1aAnswer">
+                              <input type="checkbox" id="exportForm_ecq1aAnswer" style="display: none;" class="hidden-field">
+                              <span class="custom checkbox radius"></span> Authentication, Password Protection, Digital Signature</label>
+                            <label class="forcheckbox" for="exportForm_ecq1bAnswer">
+                              <input type="checkbox" id="exportForm_ecq1bAnswer" style="display: none;" class="hidden-field">
+                              <span class="custom checkbox radius"></span> Copy Protection</label>
+                            <label class="forcheckbox" for="exportForm_ecq1cAnswer">
+                              <input type="checkbox" id="exportForm_ecq1cAnswer" style="display: none;" class="hidden-field">
+                              <span class="custom checkbox radius"></span> Banking and Money Transactions</label>
+                            <label class="forcheckbox" for="exportForm_ecq1dAnswer">
+                              <input type="checkbox" id="exportForm_ecq1dAnswer" style="display: none;" class="hidden-field">
+                              <span class="custom checkbox radius"></span> Data Confidentiality</label>
+                            <label class="forcheckbox" for="exportForm_ecq1eAnswer">
+                              <input type="checkbox" id="exportForm_ecq1eAnswer" style="display: none;" class="hidden-field">
+                              <span class="custom checkbox radius"></span> Other Cryptographic features - Please explain</label>
+                            <textarea id="exportForm_ecq1eTextAnswer"></textarea>
+                          </div>
+      
+      
+                          <div id="exportFormEncryption" class="hide">
+                            <label>Has your Product received an import and supply permit in France?</label>
+                            <p>You will need to provide the details of the French import classification received by your Product from the French Government.</p>
+                            <div class="small-4 switch radius" onClick="$('#exportFormFrance').toggleClass('hide');">
+                              <input id="c" name="switch-c" type="radio" checked="">
+                              <label for="c" onClick="">No</label>
+                              <input id="c1" name="switch-c" type="radio">
+                              <label for="c1" onClick="">Yes</label>
+                              <span></span>
+                            </div>
+      
+                            <div id="exportFormFrance" class="hide">
+                              
+                              <label>File Number</label>
+                              <input type="text">
+                              <label>Date of Permit</label>
+                              <input type="text" id="dateOfPermit" class="date">
+      
+                              <script>
+                                $(function() {
+                                  $( "#dateOfPermit" ).datepicker({
+                                  changeMonth: true,
+                                  changeYear: true
+                                });
+                                });
+                              </script>
+      
+                              <p>Please attach a copy in PDF format of the Permit that confirms the import and supply into France for your Product.</p>
+                              <a href="#" class="button"><i class="icon-plus"></i> Upload Permit PDF</a> <em>* This is a required document</em>
+                            </div>
+      
+                            <label>Are you a US Vendor or was your Product developed using US technology?</label>
+                            <p>Please note that for purposes of this question, developed includes but is not limited to incorporating software from US companies and code developed by US employees.</p>
+                            <div class="small-4 switch radius" onClick="$('#exportFormECC').toggleClass('hide');">
+                              <input id="d" name="switch-d" type="radio" checked="">
+                              <label for="d" onClick="">No</label>
+                              <input id="d1" name="switch-d" type="radio">
+                              <label for="d1" onClick="">Yes</label>
+                              <span></span>
+                            </div>
+      
+                            <div id="exportFormECC" class="hide">
+                              <label>Export Classification Control Number</label>
+                              <p>Please provide the Export Classification Control Number applicable to your product. <em>This answer is mandatory if you are a US Vendor or your Product contains US technology.</em></p>
+                              <input type="text">
+                            </div>
+      
+                            <label>Has your Application received a Commodity Classification Automated Tracking System (CCATS) Number from the Bureau of Industry and Security (BIS), US Department of Commerce?</label>
+                            <p>For more information, please visit: <a href="http://www.bis.doc.gov/" target="_blank">http://www.bis.doc.gov/</a></p>
+                            <div class="small-4 switch radius" onClick="$('#exportFormCCATS').toggleClass('hide');">
+                              <input id="e" name="switch-e" type="radio" checked="">
+                              <label for="e" onClick="">No</label>
+                              <input id="e1" name="switch-e" type="radio">
+                              <label for="e1" onClick="">Yes</label>
+                              <span></span>
+                            </div>
+      
+                            <div id="exportFormCCATS" class="hide">
+                              <p>Please attach a copy of the Commodity Classification Automated Tracking System (CCATS) that confirms the classification for your Product.</p>
+                              <p>For more information, please visit: <a href="http://www.bis.doc.gov/licensing/bis_eccn.pdf">http://www.bis.doc.gov/licensing/bis_eccn.pdf</a></p>
+                              <a href="#" class="button"><i class="icon-plus"></i> Upload CCATS PDF</a> <em>* This is a required document</em>
+                            </div>
+      
+                            <p>If you have received an Encryption Registration number in accordance with Part 742.15(b) of the US Export Administration Regulations, please provide it below.</p>
+                            <p>For more information, please visit: <a href="http://www.bis.doc.gov/encryption/default.htm" target="_blank">http://www.bis.doc.gov/encryption/default.htm</a></p>
+                            <div class="row collapse">
+                              <div class="small-12 columns">
+                                <label>Encryption Registration Number</label>
+                                <input type="text">
+                              </div>
+                            </div>
+                          </div>
+                          
+      
+                          <label>Cryptography <span class="help" data-tooltip title="This includes any encryption and/or information security functions directly or indirectly performed by your product. This includes any encryption within the Product on the BlackBerry (including HTTPS) AND/OR any encrypted connection the Product makes to an external system."><i class="icon-info-sign"></i></span></label>
+                          <p>Does your product use cryptographic functionality? <span class="help" data-tooltip title="Does your Product call cryptographic libraries from the BlackBerry Device Software or BlackBerry PlayBook Operating System in order to perform any cryptographic functionality or to enable any protocol that uses cryptography (e.g. HTTPS, SSL)?"><i class="icon-info-sign"></i></span></p>
+                          <div class="small-4 switch radius">
+                            <input id="a" name="switch-a" type="radio" checked="">
+                            <label for="a" onClick="">No</label>
+                            <input id="a1" name="switch-a" type="radio">
+                            <label for="a1" onClick="">Yes</label>
+                            <span></span>
+                          </div>
+                          <p>Does your product provide cryptographic functionality? <span class="help" data-tooltip title="Does your Product provide any other cryptographic functionality in addition or unrelated to the encryption functionality provided by or available in the BlackBerry Device Software or BlackBerry PlayBook Operating System?"><i class="icon-info-sign"></i></span></p>
+                          <div class="small-4 switch radius">
+                            <input id="b" name="switch-b" type="radio" checked="">
+                            <label for="b" onClick="">No</label>
+                            <input id="b1" name="switch-b" type="radio">
+                            <label for="b1" onClick="">Yes</label>
+                            <span></span>
+                          </div>
+                        </div>
+                      </fieldset>
+    
+                      <fieldset>  
+                        <h3>Third Party Content</h3>
+                        <p>Does your product contain third party content?</p>
+      
+                        <div class="small-4 switch radius" onClick="$('#contentDigitalRights').toggleClass('hide');">
+                          <input id="tpc" name="switch-tpc" type="radio" checked="">
+                          <label for="tpc" onClick="">No</label>
+                          <input id="tpc1" name="switch-tpc" type="radio">
+                          <label for="tpc1" onClick="">Yes</label>
+                          <span></span>
+                        </div>
+                        
+                        <div id="contentDigitalRights" class="hide">
+                          <label>Confirmation of Digital Rights</label>
+                          <p>If your product contains third party content you will need to confirm the digital rights associated with your product.</p>
+                          <p>1. Who are the third-party content providers you have fully executed agreements with and, if possible, who are the vendors identified as targets to sign with you in the near future?</p>
+                          <textarea></textarea>
+                          <p>2. a) What is the extent of the rights obtained from those third party content providers?</p>
+                          <textarea></textarea>
+                          <p>2. b) What territories are covered by the rights identified in 2 a)?</p>
+                          <textarea></textarea>
+                          <div class="row">
+                            <div class="small-1 columns">
+                              <label class="forcheckbox" for="confirmDigitalRights">
+                                <input type="checkbox" id="confirmDigitalRights" style="display: none;" class="hidden-field" >
+                                <span class="custom checkbox"></span></label>
+                            </div>
+                            <div class="small-11 columns">
+                              <label class="forcheckbox" for="confirmDigitalRights">I confirm that I have obtained all consents and authorizations necessary from those third party content providers to enable the app to be commercially distributed in the manner contemplated (i.e. through BlackBerry World) without violating any third party rights.</label>
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                        
+                      <fieldset>
+                        <h3>User Generated Content</h3>
+                        <p>Does your product support user generated content?</p>
+      
+                        <div class="small-4 switch radius" onClick="$('#contentUserGeneratedSafeguards').toggleClass('hide');">
+                          <input id="ugs" name="switch-ugs" type="radio" checked="">
+                          <label for="ugs" onClick="">No</label>
+                          <input id="ugs1" name="switch-ugs" type="radio">
+                          <label for="ugs1" onClick="">Yes</label>
+                          <span></span>
+                        </div>
+                        
+                        <div id="contentUserGeneratedSafeguards" class="hide">
+                          <label>User Generated Safeguards</label>
+                          <p>If your product supports user generated content such as images, text, profile names and messages, you will need to confirm that appropriate safeguard are in place to protect users - especially minors, and monitor and manage inappropriate conduct.</p>
+                          <p>You prominently disclose the existence and nature of the safeguards.</p>
+                          <textarea></textarea>
+                          <p>You conform to relevant business practices to the disclosure made about the safeguards.</p>
+                          <textarea></textarea>
+                          <p>You established processes to accept complaints from Subscribers about nudity, pornography, harassment, unwelcome contact, fraud or other inappropriate conduct or activity.</p>
+                          <textarea></textarea>
+                          <p>You established processes to immediately (within 24 hours) acknowledge receipt of a complaint about inappropriate conduct or activity and promptly (within three (3) business days) provide an explanation to the complainant of the steps taken to address the complaint.</p>
+                          <textarea></textarea>
+                          <p>You established processes to ensure compliance with applicable laws, rules and regulations.</p>
+                          <textarea></textarea>
+                        </div>
+                    </fieldset>
+                    </fieldset>
+                  </div>
+                </div>
+              </fieldset>  
+            </div>
+          </div>
+        <script type="text/javascript" src="webroot/js/autosave/sisyphus.min.js"></script> 
+        <script>
+        $( function() {
+          /*$( "form" ).sisyphus();*/
+        } );
+        </script>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="footer" class="footer">
+  <div class="inner_footer">
+    <div class="row">
+      <div class="columns grid_footer technologies">
+        <h2 class="h5">Technologies</h2>
+        <ul>
+          <li><a href="http://developer.blackberry.com/native/">Native</a></li>
+          <li><a href="http://developer.blackberry.com/html5/">HTML5</a></li>
+          <li><a href="http://developer.blackberry.com/air/">AIR</a></li>
+          <li><a href="http://developer.blackberry.com/android/">Android</a></li>
+          <li><a href="http://developer.blackberry.com/playbook/">PlayBook</a></li>
+          <li><a href="http://developer.blackberry.com/bbos/">BlackBerry OS</a></li>
+          <li><a href="http://developer.blackberry.com/develop/platform_partners/">Platform Partners</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer programs">
+        <h2 class="h5">Programs</h2>
+        <ul>
+          <li><a href="https://www.blackberry.com/beta/" target="_blank">Beta Zone</a></li>
+          <li><a href="https://partners.blackberry.com/web/guest/home/" target="_blank">Alliance programs</a></li>
+          <li><a href="http://us.blackberry.com/ataglance/academic/" target="_blank">Academic programs</a></li>
+          <li><a href="https://developer.blackberry.com/jamcommunity/groups/">Developer groups</a></li>
+          <li><a href="https://developer.blackberry.com/blackberry10devalpha/">BlackBerry 10 Dev Alpha</a></li>
+          <li><a href="https://developer.blackberry.com/builtforblackberry/">Built for BlackBerry</a></li>
+          <li><a href="http://developer.blackberry.com/blackberrybuilder/">BlackBerry Builder</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer support">
+        <h2 class="h5">Support</h2>
+        <ul>
+          <li><a href="https://bdsc.webapps.blackberry.com/CodeSigningHelp/" target="_blank">Code Signing Help</a></li>
+          <li><a href="http://www.youtube.com/blackberrydev/" target="_blank">YouTube Channel</a></li>
+          <li><a href="http://supportforums.blackberry.com/t5/Developer-Support-Forums/ct-p/blackberrydev" target="_blank">Developer forums</a></li>
+          <li><a href="https://www.blackberry.com/jira/secure/Dashboard.jspa" target="_blank">Developer Issue Tracker</a></li>
+          <li><a href="http://supportforums.blackberry.com/t5/Application-Platforms/tkbc-p/app_plat" target="_blank">Knowledge Base</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer app_store">
+        <h2 class="h5">BlackBerry World</h2>
+        <ul>
+          <li><a href="https://www.blackberry.com/SignedKeys/codesigning.html" target="_blank">Sign your app</a></li>
+          <li><a href="http://developer.blackberry.com/blackberryworld/">Submitting your app</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer_last social">
+        <h2 class="h5">Follow us on:</h2>
+        <ul class="inline-list">
+          <li><a href="http://www.facebook.com/BlackBerryDeveloperCommunity" title="Follow us on Facebook" class="icon-20 facebook" target="_blank"><span class="hide">Facebook</span></a></li>
+          <li><a href="http://www.youtube.com/blackberrydev/" title="Catch us on YouTube" class="icon-20 youtube" target="_blank"><span class="hide">YouTube</span></a></li>
+          <li><a href="http://twitter.com/blackberrydev" title="Hear the BlackBerry tweet" class="icon-20 twitter" target="_blank"><span class="hide">Twitter</span></a></li>
+          <li><a href="http://devblog.blackberry.com/" title="Developer Blogs" class="icon-20 blackberry" target="_blank"><span class="hide">BlackBerry Blogs</span></a></li>
+          <li><a href="#bbmchannelcode" title="BBM Channels" class="icon-20 channels lightboxtrigger"><span class="hide">BBM Channels</span></a></li>
+        </ul>
+        <div style='display:none'>
+          <div id='bbmchannelcode' class="lightbox">
+            <div class="lightbox-desc" style="width:400px;"> <img src="webroot/img/common/channelonwhite.png" alt="BBM Channels" /> </div>
+            <div class="lightbox-desc" style="width:370px;">
+              <div class="lightbox-text" style="margin: 40px 100px 0px 0px;">
+                <h1 style="margin-left:0px;">BBM Channels</h1>
+                <p>Developer Relations is on BBM Channels! Join the conversation by <a href="https://beta.webapps.blackberry.com/BBMChannels/" target="_blank">signing up for the beta program</a> and scanning the barcode to the right.</p>
+                <a href="https://beta.webapps.blackberry.com/BBMChannels/" target="_blank"> Register for BBM Channels beta &rsaquo;</a> </div>
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li><a href="http://www.blackberry.com/legal/" target="_blank">Legal &amp; Trademarks</a> </li>
+        </ul>
+      </div>
+      <div class="copyright_notice">Copyright &copy; 2014 BlackBerry Limited, unless otherwise noted.</div>
+    </div>
+  </div>
+</footer>
+  
+  <!-- Included JS Files (Uncompressed) --> 
+  <!--
+  <script src="javascripts/jquery.js"></script><script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script><script src="javascripts/jquery.foundation.forms.js"></script><script src="javascripts/jquery.foundation.reveal.js"></script><script src="javascripts/jquery.foundation.orbit.js"></script><script src="javascripts/jquery.foundation.navigation.js"></script><script src="javascripts/jquery.foundation.buttons.js"></script><script src="javascripts/jquery.foundation.tabs.js"></script><script src="javascripts/jquery.foundation.tooltips.js"></script><script src="javascripts/jquery.foundation.accordion.js"></script><script src="javascripts/jquery.placeholder.js"></script><script src="javascripts/jquery.foundation.alerts.js"></script><script src="javascripts/jquery.foundation.topbar.js"></script><script src="javascripts/jquery.foundation.joyride.js"></script><script src="javascripts/jquery.foundation.clearing.js"></script><script src="javascripts/jquery.foundation.magellan.js"></script>
+  --> 
+  
+  <!--<script type="text/javascript" src="webroot/js/common/jquery-1.8.2.min.js"></script>--> 
+  <script type="text/javascript" src="webroot/js/common/foundation.min.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/foundation/foundation.topbar.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/foundation/foundation.joyride.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/foundation/foundation.backnav.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/jquery.easing.1.3.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/bb.dropdown.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/bb.searchbar.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/bb.expandable.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/bb.nav.doc.js"></script> 
+  <script type="text/javascript" src="webroot/js/bb.segment_hover.js"></script> 
+  <script type="text/javascript" src="webroot/js/jquery.tipTip.minified.js"></script> 
+  <script type="text/javascript" src="webroot/js/jquery.colorbox.js"></script> 
+  <script type="text/javascript" src="webroot/js/jquery.mockjson.js"></script> 
+  <script type="text/javascript" src="webroot/js/datamockery.js"></script> 
+  <script type="text/javascript" src="webroot/js/bb.site.js"></script> 
+  <script type="text/javascript" src="webroot/js/bb.focuscontrol.js"></script> 
+  <script type="text/javascript" src="webroot/js/bb.nav.js"></script> 
+  
+  <!-- Note should this be a separate .js file or be part of bb.site.js  --> 
+  
+  <script type="text/javascript">
+	  global.init('', 'portals', 'index', '', 'webroot/');
+	  global.setFocus('cascades');
+  </script> 
+  <script type="text/javascript" src="webroot/js/pageload.js"></script> 
+  
+  <!-- Piwik --> 
+  <script type="text/javascript">
+	  var pkBaseURL, server, pkId;
+	  server = 'dxlab013qbolabvm.labqbo.testnet.rim.net/stats/';
+	  pkId = -1;
+	  pkBaseURL = (("https:" == document.location.protocol) ? "https://"+server : "http://"+server);
+	  document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+	  </script><script type="text/javascript">
+	  try {
+	  var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", -1);
+	  piwikTracker.trackPageView();
+	  piwikTracker.enableLinkTracking();
+  } catch( err ) {}
+  </script>
+  <noscript>
+  <p><img src="http://dxlab013qbolabvm.labqbo.testnet.rim.net/stats/piwik.php?idsite=-1" style="border:0" alt="" /></p>
+  </noscript>
+  <!-- End Piwik Tracking Code --> 
+  <!--[if lt IE 7 ]>
+	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+	<script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+  <![endif]-->
+  
+
+<script>
+  $(document).ready(function() {
+	$('.reveal-modal').css({
+	  maxHeight: $(window).height() - 150 + 'px'
+	});
+  });
+  $(window).resize(function() {
+	$('.reveal-modal').css({
+	  maxHeight: $(window).height() - 150 + 'px'
+	});
+  });
+</script>
+
+</body>
+</html>

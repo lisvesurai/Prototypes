@@ -1,0 +1,89 @@
+*,h1,h2,h3,p,td {font-family:sans-serif;}
+
+a {color:#000;font-family:sans-serif;}
+a:active {color:#005f92}
+
+body {background:#fff;color:#333;margin:0;padding:0;}
+div,h1,h2,hr,p,table,tr,td,dl {margin:0;padding:0;border:none;}
+td {vertical-align:top;}
+form {text-align:center;}
+
+#container {margin:0;padding:0;}
+#body {margin:0;padding:0;}
+#header {margin:0;padding:0;background:#ffffff;}
+
+h1.title{background:#fff;padding:0;margin:0;text-align:center;}
+
+div.promo {background:#fff;padding:0;margin:0;text-align:center;}
+img.promo {border:0;padding:0;margin:0;}
+a.promo {color:#fff;}
+
+img.full {width:100%;padding:0;margin:0;}
+
+div.promo2 {color:#005f92;text-align:center;border:0;padding:8px 0 2px 0;margin:0;}
+a.promo2 {color:#005f92;}
+
+div.desc {background:#ffffff;color:#1a4bb4;padding:3px;}
+div.desc2 {padding:3px;background:#cc0000;color:#fff;}
+img.prod_img {float:left; margin:5px 0 10px 0;}
+h2.desc{text-align:center;}
+p.desc{margin:0 0 5px 0;}
+p.hl{margin:0 0 3px 0;color:#000;}
+p.ttt{border-bottom:1px solid #fff;color:#fff;}
+p.copyright{font-size:smaller;color:#1a4bb4;}
+span.copyright{font-size:smaller;color:#1a4bb4;}
+p.white{color:#ffffff;}
+ul.small{font-size:small;color:#ffffff;}
+
+div.prize {margin:0;padding:0;/*background:url(../../images/promoimages/POPPromo_prize.jpg) bottom right no-repeat;*/}
+p.prize{color:#1a4bb4;font-weight:bold;}
+
+div.ctr2 {background:#4d4d4d;color:#000000;margin:0;padding:1px;clear:both;float:none;vertical-align:bottom;}
+p.ctr2{float:left;margin:0;padding:1px;text-align:left;vertical-align:bottom;}
+a.ctr2{white-space:nowrap;color:#000000;font-weight:normal;font-size:smaller;text-decoration:underline;vertical-align:bottom;}
+img.ctr2{float:left;margin:3px;vertical-align:bottom;}
+span.ctr2{color:#000000;font-size:smaller;vertical-align:bottom;}
+div.clear {margin:0;padding:0;clear:both;float:none;}
+div.tt2{color:#000000;font-weight:bold;}
+
+div.ctr {background:#000;color:#fff;margin:0;padding:1px;clear:both;float:none;vertical-align:bottom;}
+p.ctr{/*float:left;*/margin:0;padding:1px;text-align:left;vertical-align:bottom;}
+a.ctr{/*white-space:nowrap;*/color:#fff;font-weight:normal;font-size:smaller;text-decoration:underline;vertical-align:bottom;}
+img.ctr{float:left;margin:3px;vertical-align:bottom;}
+span.ctr{color:#fff;font-size:smaller;font-weight:bold;vertical-align:bottom;padding:0 3px 0 0;}
+span.ctrs{color:#fff;font-size:smaller;font-weight:normal;vertical-align:bottom;}
+div.clear {margin:0;padding:0;clear:both;float:none;}
+div.tt{color:#fff;font-weight:bold;}
+
+div.link, div.results {margin:0;padding:0;}
+dt.mnr {font-weight:bold;background:#fff;margin:2px 0;padding:1px;text-align:center;}
+img.mnr {margin:0 1px 0 0;}
+a.mnr, .mnr a, .mnr {color:#1679ce;}
+
+dt.mnr2 {font-weight:bold;background:#ffcc00;margin:0;padding:1px;text-align:center;}
+a.mnr2 {color:#000;}
+
+a.page {color:#002c61;}
+
+div.ico {padding:2px 0;}
+table.ico {padding:0;width:100%;}
+td.icons {text-align:center;vertical-align:top;width:50%;padding:3px;}
+a.icon {white-space:nowrap;}
+
+#footer {background:#000 url(../../images/promoimages/POPPromo_footer.jpg) top right repeat;;margin:0;padding:5px 3px;clear:both;float:none;}
+img.ftr {margin:0 1px 0 0;}
+dt.ftr {white-space:nowrap;}
+.afooterlink{text-decoration:none;color:#fff;}
+
+hr.w4 {background:#954199;border-bottom:6px solid #954199;color:#954199;height:1px;clear:both;float:none;}
+hr.r4 {background:#cc0000;border-bottom:4px solid #cc0000;color:#cc0000;height:1px;clear:both;float:none;}
+hr.w2 {background:#954199;border-bottom:2px solid #954199;color:#954199;height:1px;clear:both;float:none;}
+hr.o1 {background:#fff;border-bottom:1px solid #fff;color:#fff;height:1px;clear:both;float:none;}
+
+div.spe {background:#00a1e9;border-top:2px solid #ffffff;border-bottom:2px solid #ffffff;margin:3px 0;}
+table.spe {background:#00a1e9;margin:11px 0;}
+td.spe {padding:0 2px 0 0;}
+td.spec {padding:0 2px 0 0;text-align:center;}
+h4.spe {background:#970100;color:#ffffff;padding:0 0 0 3px;margin:0;}
+p.spe {color:#000000;padding:0 0 0 3px;}
+a.spe {color:#000000;font-size:smaller;text-decoration:underline;}

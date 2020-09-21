@@ -1,0 +1,2 @@
+span, p, div, a, h2, h3, ul, li, img, #landing h1 {behavior: url("UI/iepngfix.htc");}
+body { behavior: url("UI/csshover3.htc"); } 

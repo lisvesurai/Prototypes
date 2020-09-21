@@ -1,0 +1,27 @@
+div.banner, div.content, div.ftr {width:310px;}
+div.blocktitle {background:#06380c url(img/320/bg_title_bar.gif) top left no-repeat;height:50px;line-height:37px;padding-left:12px;}
+p.ftdesc {padding:3px 11px;}
+div.sepdot {background:url(img/320/div_dot.gif) center left repeat-x;height:2px;border-top:4px solid #fff;border-bottom:4px solid #fff;}
+div.sepsolid {background:url(img/320/div_solid.gif) center left repeat-x;height:2px;}
+div.topcurve {background:#06380c url(img/320/top_curve.gif) top left no-repeat;height:17px;}
+div.endcurve {background:#06380c url(img/320/end_curve.gif) top left no-repeat;height:30px;}
+div.ftrcurve {background:#06380c url(img/320/ftr_curve.gif) top left no-repeat;height:18px;}
+div.tabcurve {background:#06380c url(img/320/tab_curve.gif) top left no-repeat;height:16px;}
+div.contentpad {/*padding:0 0 8px 8px;*/*/border-right:8px solid #fff;border-bottom:8px solid #fff;border-left:8px solid #fff;}
+div.contentpad p {margin:8px 0 3px;}
+td.itemth {width:52px;}
+td.item {width:260px;table-layout:fixed;}
+td.price {width:200px;table-layout:fixed;}
+td.arrow {width:55px;table-layout:fixed;}
+img.itemth {margin:5px 0 0 4px;}
+div.action {margin:0 0 0 54px;}
+dt {padding:3px 3px 1px  11px;}
+dt.cat {padding:3px 3px 3px 11px;}
+td.pl3th {width:55px;}
+td.pl3title {width:95px;}
+/*img.ss {width:130px;}*/
+img.ftbanner {width:310px;height:119px;}
+img.pl3th {width:55px;height:48px;}
+dt.ftr, dt.ftr2 {padding-top:3px;padding-bottom:3px;}
+table.pagination {table-layout:fixed;border-right:10px solid #fff;border-left:10px solid #fff;}
+table.pagination td {table-layout:fixed;width:50%;}

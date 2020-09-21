@@ -1,0 +1,28 @@
+.link-box {
+	margin-top: 46px;
+	padding: 20px 0 0 0;
+}
+.link-box p {
+	text-align: center;
+}
+
+.quote-box {
+	background: url('../img/mockimages/devices.png') center bottom no-repeat;
+	border-bottom: 1px solid #DFDFDF;
+	margin-bottom: 46px;
+	height: 276px;
+	width: 100%;
+}
+
+.login-box {
+	text-align: center;
+	margin-bottom: 46px;
+}
+
+.login-box h3 {
+	margin-top: 0.133em;
+}
+
+.login-box a {
+	margin-top: 23px;
+}

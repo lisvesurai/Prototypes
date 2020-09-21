@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js macosx" lang="en">
+<!--<![endif]-->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta charset="utf-8">
+<meta name="author" content="Research In Motion">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link href="favicon.ico" rel="SHORTCUT ICON" />
+<title>BlackBerry Vendor Portal</title>
+
+<!--[if lt IE 9]>
+    <script src="webroot/js/common/html5.js"></script>
+    <style type="text/css">
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+    </style>
+<![endif]-->
+
+<link type="text/css" rel="stylesheet" href="webroot/css/common/normalize.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.fonts.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/foundation.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/foundation.override.css" />
+<!--[if lt IE 9]>
+    <link type="text/css" rel="stylesheet" href="webroot/css/common/foundation.ie8.css">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="webroot/css/common/foundicon.general.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.base.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.layout.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.navigation.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.components.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/ext.tiptip.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.site.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.portals.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.documentations.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.downloads.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.references.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.sampleapps.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.screenshot.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.vp.components.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.vp.fonts.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.vp.product.details.css" />
+<script src="webroot/js/common/modernizr.custom.88393.js"></script>
+<script type="text/javascript" src="webroot/js/common/bb.global.js"></script>
+<link rel="stylesheet" href="webroot/css/font-awesome/css/font-awesome.min.css" />
+<!--[if IE 7]>
+  <link rel="stylesheet" href="webroot/css/font-awesome/css/font-awesome-ie7.min.css">
+<![endif]-->
+<link rel="stylesheet" href="webroot/css/common/jquery-ui-1.8.22.custom.css" />
+<script src="webroot/js/common/jquery-1.10.2.min.js"></script>
+<script src="webroot/js/common/jquery-ui-1.10.3.min.js"></script>
+
+<link rel="stylesheet" href="webroot/js/select2/select2.css" />
+<script src="webroot/js/select2/select2.min.js"></script>
+</head>
+<body class="portals vendorportal">
+<div id="myModal" class="reveal-modal"></div>
+<div id="myModalSmall" class="reveal-modal small"></div>
+<div id="myModalMedium" class="reveal-modal medium"></div>
+<div id="myModalLarge" class="reveal-modal large"></div>
+<div id="myModalXlarge" class="reveal-modal xlarge"></div>
+<div id="myModalExpand" class="reveal-modal expand"></div>
+  <div class="fixed">
+  <div>
+    <nav class="top-bar user-bar hide-for-small">
+      <ul class="title-area">
+        <li class="name"> <a href="http://developer.blackberry.com/" class="logo"> <img src="webroot/img/common/blackberry_logo.png" alt="BlackBerry"> Developer </a> </li>
+        <li class="toggle-topbar"><a href="#"><span>Useful links</span></a></li>
+      </ul>
+      <section class="top-bar-section">
+        <ul class="left">
+          <li class="divider hide-for-small"> </li>
+          <li><a href="http://devblog.blackberry.com" target="_blank">Blog</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li><a href="http://www.youtube.com/blackberrydev/" target="_blank">YouTube</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li><a href="http://supportforums.blackberry.com/t5/Developer-Support-Forums/ct-p/blackberrydev" target="_blank">Forum</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li><a href="https://www.blackberry.com/SignedKeys/codesigning.html" target="_blank">Signing</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li class="last"><a href="https://www.blackberry.com/jira/secure/Dashboard.jspa" target="_blank">Feedback</a></li>
+          <li class="divider hide-for-small"> </li>
+        </ul>
+        <ul class="right">
+          <li class="divider hide-for-small login-in-bar"> </li>
+          <li><a href="login.html" class="icon_login login-in-bar">Logout</a></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+</div>
+  <header class="nav-header">
+    <div class="topbar">
+      <nav>
+        <div class="nav-text">
+          <a href="index.html"> <span class="h1">Vendor Portal for BlackBerry World</span> </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div id="browser-msg" class="row hide">
+    <div class="large-12 columns">
+      <div class="notice warning">
+        <p>Sorry about the red box, but we really need you to update your browser. Read <a href="http://www.smashingmagazine.com/2012/07/10/dear-web-user-please-upgrade-your-browser/">this excellent article</a> if you're wondering why we are no longer supporting this browser version. Go to <a href="http://browsehappy.com/">Browse Happy</a> for browser suggestions and how to update.</p>
+      </div>
+    </div>
+  </div>
+  <div id="main" class="main" role="main">
+    <div class="row">
+      <nav role="navigation" class="large-3 columns side-nav-vp sticky">
+        <ul class="v-card">
+          <li class="app-name">Kool App</li>
+        </ul>
+        <div class="button-bar">
+          <button type="button"> <span><i class="icon-save blue"></i> Save</span> </button>
+          <button  data-dropdown="page_actions"> <span><i class="icon-reorder blue"></i> Actions</span> </button>
+          <br>
+          <ul id="page_actions" class="action-dropdown" data-dropdown-content="">
+            <li><a href="#">Publish</i></a></li>
+            <li><a href="#">Something else</a></li>
+          </ul>
+        </div>
+        <div class="link-block">
+          <ul class="links">
+            <li><a href="product_ph_details.html">Details <i data-tooltip title="There are still things that needs your attention: <ul><li>Some things</li><li>That needs</li><li>That users</li><li>Attention</li></ul>" class="right icon-circle-blank"></i></a></li>
+            <li><a href="product_ph_listings.html">Listings <i data-tooltip title="There are still things that needs your attention: <ul><li>Some things</li><li>That needs</li><li>That users</li><li>Attention</li></ul>" class="right icon-circle-blank"></i></a></li>
+            <li><a href="product_ph_releases.html">Releases <i data-tooltip title="There are still things that needs your attention: <ul><li>Some things</li><li>That needs</li><li>That users</li><li>Attention</li></ul>" class="right icon-circle-blank"></i></a></li>
+            <li><a href="product_ph_inappprod.html" class="selected">In-App Products</a></li>
+            <li><a href="product_ph_reviews.html">Reviews</a></li>
+            <li><a href="product_ph_stats.html">Stats</a></li>
+          </ul>
+          <ul id="top-level-links" class="top-level-links backnav-content links">
+            <li><a href="index.html">Products</a></li>
+            <li><a href="promotions.html">Promotions</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="changerequests.html">Change Requests</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="testing.html">Testers</a></li>
+            <li><a href="settings.html">Settings</a></li>
+          </ul>
+          <div class="backnav">
+            <a href="#" data-backnav-id="top-level-links"><i class="icon-chevron-left"></i></a>
+          </div>
+        </div>
+      </nav>
+      <div class="large-9 columns">
+        <div id="mainContentBody">
+        <form accept-charset="UTF-8" action="#" class="custom" id="basic_form" method="get" name="product_ph_inapp_form">
+          <h1>In-App Product Details</h1>
+          <fieldset>
+            <h5>ID: 21683495</h5>
+          </fieldset>
+          
+          <div class="row">
+            <div class="small-12 columns">
+              <fieldset>
+                <div class="row">
+                  <div class="small-11 columns">
+                    <h3>Name <span class="help" data-tooltip title="Help text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis ante non orci eleifend consectetur ut et sapien."><i class="icon-info-sign"></i></span></h3>
+                  </div>
+                  <div class="small-1 columns">
+                    <div class="step-star"> 1 </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="small-11 columns">
+                    <input type="text" name="inapp_name" value="">
+                  </div>
+                  <div class="small-1 columns">
+                    <div class="error-info">
+                      
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="small-12 columns">
+              <fieldset>
+                <div class="row">
+                  <div class="small-11 columns">
+                    <h3>License Type <span class="help" data-tooltip title="Help text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis ante non orci eleifend consectetur ut et sapien."><i class="icon-info-sign"></i></span></h3>
+                  </div>
+                  <div class="small-1 columns">
+                    <div class="step-star">
+                      2
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="small-11 columns">
+                    <select id="selectLicenseType" name="selectLicenseType" onchange="changeLicenseType();">
+                      <option value="Paid" selected>Non-Consumable</option>
+                      <option value="Paid">Consumable</option>
+                      <option value="Subscriptions7Days">7-Day Subscription</option>
+                      <option value="Subscriptions30Days">30-Day Subscription</option>
+                    </select>
+                    <script>
+                        function changeLicenseType(){
+                            //alert($('#selectLicenseType').val());
+                            $('#contentPaid').addClass('hide');
+                            $('#contentSubscriptions7Days').addClass('hide');
+                            $('#contentSubscriptions30Days').addClass('hide');
+                            $('#contentTaxWitholdings').addClass('hide');
+                            $('#contentLicenseModel').addClass('hide');
+                            if($('#selectLicenseType').val()!='Free'){
+                                $('#content'+$('#selectLicenseType').val()).removeClass('hide');
+                                $('#contentTaxWitholdings').removeClass('hide');
+                                $('#contentLicenseModel').removeClass('hide');
+                            }
+                        }
+                    </script>
+                  </div>
+                  <div class="small-1 columns">
+                    <div class="error-info">
+                      
+                    </div>
+                  </div>
+                </div>
+                
+                <div id="contentPaid" class="">
+                  <div class="row"><div class="small-11 columns"><label>Price</label></div></div>
+                  <div class="row">
+                    <div class="small-11 columns">                     
+                      <select onchange="$('#contentViewPrice').addClass('hide');if(this.value!='')$('#contentViewPrice').removeClass('hide');">
+                        <option value="">Please choose a price</option>
+                        <option value="41">$0.99</option>
+                        <option value="42">$1.99</option>
+                        <option value="2">$2.99</option>
+                        <option value="3">$3.99</option>
+                        <option value="4">$4.99</option>
+                        <option value="5">$5.99</option>
+                        <option value="6">$6.99</option>
+                        <option value="7">$7.99</option>
+                        <option value="8">$8.99</option>
+                        <option value="9">$9.99</option>
+                        <option value="10">$10.99</option>
+                        <option value="11">$11.99</option>
+                        <option value="12">$12.99</option>
+                        <option value="13">$13.99</option>
+                        <option value="14">$14.99</option>
+                        <option value="15">$15.99</option>
+                        <option value="16">$16.99</option>
+                        <option value="17">$17.99</option>
+                        <option value="18">$18.99</option>
+                        <option value="19">$19.99</option>
+                        <option value="20">$29.99</option>
+                        <option value="21">$39.99</option>
+                        <option value="22">$49.99</option>
+                        <option value="23">$59.99</option>
+                        <option value="24">$69.99</option>
+                        <option value="25">$79.99</option>
+                        <option value="26">$89.99</option>
+                        <option value="27">$99.99</option>
+                        <option value="28">$149.99</option>
+                        <option value="29">$199.99</option>
+                        <option value="30">$249.99</option>
+                        <option value="31">$299.99</option>
+                        <option value="32">$349.99</option>
+                        <option value="33">$399.99</option>
+                        <option value="34">$449.99</option>
+                        <option value="35">$499.99</option>
+                        <option value="36">$599.99</option>
+                      </select>
+                      <a href="#" id="contentViewPrice" class="viewprice hide"><i class="icon-search"></i> View Price in Different Currencies</a>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div id="contentSubscriptions7Days" class="hide">
+                  <div class="row"><div class="small-11 columns"><label>Initial Price</label></div></div>
+                  <div class="row">
+                    <div class="small-11 columns">                     
+                      <select onchange="$('#contentViewPrice2').addClass('hide');if(this.value!='')$('#contentViewPrice2').removeClass('hide');">
+                        <option value="">Please choose a price</option>
+                        <option value="1">FREE</option>
+                        <option value="41">$0.99</option>
+                        <option value="42">$1.99</option>
+                        <option value="2">$2.99</option>
+                        <option value="3">$3.99</option>
+                        <option value="4">$4.99</option>
+                        <option value="5">$5.99</option>
+                        <option value="6">$6.99</option>
+                        <option value="7">$7.99</option>
+                        <option value="8">$8.99</option>
+                        <option value="9">$9.99</option>
+                        <option value="10">$10.99</option>
+                        <option value="11">$11.99</option>
+                        <option value="12">$12.99</option>
+                        <option value="13">$13.99</option>
+                        <option value="14">$14.99</option>
+                        <option value="15">$15.99</option>
+                        <option value="16">$16.99</option>
+                        <option value="17">$17.99</option>
+                        <option value="18">$18.99</option>
+                        <option value="19">$19.99</option>
+                        <option value="20">$29.99</option>
+                        <option value="21">$39.99</option>
+                        <option value="22">$49.99</option>
+                        <option value="23">$59.99</option>
+                        <option value="24">$69.99</option>
+                        <option value="25">$79.99</option>
+                        <option value="26">$89.99</option>
+                        <option value="27">$99.99</option>
+                        <option value="28">$149.99</option>
+                        <option value="29">$199.99</option>
+                        <option value="30">$249.99</option>
+                        <option value="31">$299.99</option>
+                        <option value="32">$349.99</option>
+                        <option value="33">$399.99</option>
+                        <option value="34">$449.99</option>
+                        <option value="35">$499.99</option>
+                        <option value="36">$599.99</option>
+                      </select>
+                      <a href="#" id="contentViewPrice2" class="viewprice hide"><i class="icon-search"></i> View Price in Different Currencies</a>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>
+                  </div>
+                    
+                  <div class="row"><div class="small-11 columns"><label>Renewal Price</label></div></div>
+                  <div class="row">
+                    <div class="small-11 columns">                     
+                      <select onchange="$('#contentViewPrice3').addClass('hide');if(this.value!='')$('#contentViewPrice3').removeClass('hide');">
+                        <option value="">Please choose a price</option>
+                        <option value="41">$0.99</option>
+                        <option value="42">$1.99</option>
+                        <option value="2">$2.99</option>
+                        <option value="3">$3.99</option>
+                        <option value="4">$4.99</option>
+                        <option value="5">$5.99</option>
+                        <option value="6">$6.99</option>
+                        <option value="7">$7.99</option>
+                        <option value="8">$8.99</option>
+                        <option value="9">$9.99</option>
+                        <option value="10">$10.99</option>
+                        <option value="11">$11.99</option>
+                        <option value="12">$12.99</option>
+                        <option value="13">$13.99</option>
+                        <option value="14">$14.99</option>
+                        <option value="15">$15.99</option>
+                        <option value="16">$16.99</option>
+                        <option value="17">$17.99</option>
+                        <option value="18">$18.99</option>
+                        <option value="19">$19.99</option>
+                        <option value="20">$29.99</option>
+                        <option value="21">$39.99</option>
+                        <option value="22">$49.99</option>
+                        <option value="23">$59.99</option>
+                        <option value="24">$69.99</option>
+                        <option value="25">$79.99</option>
+                        <option value="26">$89.99</option>
+                        <option value="27">$99.99</option>
+                        <option value="28">$149.99</option>
+                        <option value="29">$199.99</option>
+                        <option value="30">$249.99</option>
+                        <option value="31">$299.99</option>
+                        <option value="32">$349.99</option>
+                        <option value="33">$399.99</option>
+                        <option value="34">$449.99</option>
+                        <option value="35">$499.99</option>
+                        <option value="36">$599.99</option>
+                      </select>
+                      <a href="#" id="contentViewPrice3" class="viewprice hide"><i class="icon-search"></i> View Price in Different Currencies</a>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row"><div class="small-11 columns"><label>Initial Trial Period (in days)</label></div></div>
+                  <div class="row">
+                    <div class="small-11 columns">                     
+                      <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="7" selected="selected">7</option>
+                        <option value="14">14</option>
+                      </select>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div id="contentSubscriptions30Days" class="hide">
+                  <div class="row"><div class="small-11 columns"><label>Initial Price</label></div></div>
+                  <div class="row">
+                    <div class="small-11 columns">                     
+                      <select onchange="$('#contentViewPrice4').addClass('hide');if(this.value!='')$('#contentViewPrice4').removeClass('hide');">
+                        <option value="">Please choose a price</option>
+                        <option value="1">FREE</option>
+                        <option value="41">$0.99</option>
+                        <option value="42">$1.99</option>
+                        <option value="2">$2.99</option>
+                        <option value="3">$3.99</option>
+                        <option value="4">$4.99</option>
+                        <option value="5">$5.99</option>
+                        <option value="6">$6.99</option>
+                        <option value="7">$7.99</option>
+                        <option value="8">$8.99</option>
+                        <option value="9">$9.99</option>
+                        <option value="10">$10.99</option>
+                        <option value="11">$11.99</option>
+                        <option value="12">$12.99</option>
+                        <option value="13">$13.99</option>
+                        <option value="14">$14.99</option>
+                        <option value="15">$15.99</option>
+                        <option value="16">$16.99</option>
+                        <option value="17">$17.99</option>
+                        <option value="18">$18.99</option>
+                        <option value="19">$19.99</option>
+                        <option value="20">$29.99</option>
+                        <option value="21">$39.99</option>
+                        <option value="22">$49.99</option>
+                        <option value="23">$59.99</option>
+                        <option value="24">$69.99</option>
+                        <option value="25">$79.99</option>
+                        <option value="26">$89.99</option>
+                        <option value="27">$99.99</option>
+                        <option value="28">$149.99</option>
+                        <option value="29">$199.99</option>
+                        <option value="30">$249.99</option>
+                        <option value="31">$299.99</option>
+                        <option value="32">$349.99</option>
+                        <option value="33">$399.99</option>
+                        <option value="34">$449.99</option>
+                        <option value="35">$499.99</option>
+                        <option value="36">$599.99</option>
+                      </select>
+                      <a href="#" id="contentViewPrice4" class="viewprice hide"><i class="icon-search"></i> View Price in Different Currencies</a>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>
+                  </div>
+                    
+                  <div class="row"><div class="small-11 columns"><label>Renewal Price</label></div></div>
+                  <div class="row">
+                    <div class="small-11 columns">                     
+                      <select onchange="$('#contentViewPrice5').addClass('hide');if(this.value!='')$('#contentViewPrice5').removeClass('hide');">
+                        <option value="">Please choose a price</option>
+                        <option value="41">$0.99</option>
+                        <option value="42">$1.99</option>
+                        <option value="2">$2.99</option>
+                        <option value="3">$3.99</option>
+                        <option value="4">$4.99</option>
+                        <option value="5">$5.99</option>
+                        <option value="6">$6.99</option>
+                        <option value="7">$7.99</option>
+                        <option value="8">$8.99</option>
+                        <option value="9">$9.99</option>
+                        <option value="10">$10.99</option>
+                        <option value="11">$11.99</option>
+                        <option value="12">$12.99</option>
+                        <option value="13">$13.99</option>
+                        <option value="14">$14.99</option>
+                        <option value="15">$15.99</option>
+                        <option value="16">$16.99</option>
+                        <option value="17">$17.99</option>
+                        <option value="18">$18.99</option>
+                        <option value="19">$19.99</option>
+                        <option value="20">$29.99</option>
+                        <option value="21">$39.99</option>
+                        <option value="22">$49.99</option>
+                        <option value="23">$59.99</option>
+                        <option value="24">$69.99</option>
+                        <option value="25">$79.99</option>
+                        <option value="26">$89.99</option>
+                        <option value="27">$99.99</option>
+                        <option value="28">$149.99</option>
+                        <option value="29">$199.99</option>
+                        <option value="30">$249.99</option>
+                        <option value="31">$299.99</option>
+                        <option value="32">$349.99</option>
+                        <option value="33">$399.99</option>
+                        <option value="34">$449.99</option>
+                        <option value="35">$499.99</option>
+                        <option value="36">$599.99</option>
+                      </select>
+                      <a href="#" id="contentViewPrice5" class="viewprice hide"><i class="icon-search"></i> View Price in Different Currencies</a>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row"><div class="small-11 columns"><label>Initial Trial Period (in days)</label></div></div>
+                  <div class="row">
+                    <div class="small-11 columns">                     
+                      <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="7">7</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                        <option value="30" selected="selected">30</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="60">60</option>
+                      </select>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="contentTaxWitholdings" class="">
+                  <div class="row"><div class="small-11 columns"><label>US Withholding Tax Classification <span class="optional">(optional)</span></label></div></div>
+                  <div class="row">
+                    <div class="small-11 columns">                     
+                      <select>
+                        <option value="">Please select a tax classification</option>
+                        <option value="1">One-time</option>
+                        <option value="3">Rental</option>
+                        <option value="2">Service</option>
+                      </select>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row"><div class="small-11 columns"><label>Canada Withholding Tax Classification <span class="optional">(optional)</span></label></div></div>
+                  <div class="row">
+                    <div class="small-11 columns">                     
+                      <select>
+                        <option value="">Please select a tax classification</option>
+                        <option value="4">One-time</option>
+                        <option value="5">Royalty</option>
+                      </select>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div id="contentLicenseModel" class="">
+                  <div class="row"><div class="small-11 columns"><label>License Model for BlackBerry OS and PlayBook <span class="optional">(optional)</span></label></div></div>
+                  <div class="row">
+                    <div class="small-11 columns">                     
+                      <select id="selectLicenseModel" onChange="changeLicenseModel()">
+                        <option value="Static">Static</option>
+                        <option value="Single">Single</option>
+                        <option value="Dynamic">Dynamic</option>
+                        <option value="Pool">Pool</option>
+                      </select>
+                      <script>
+                        function changeLicenseModel(){
+                            //alert($('#selectLicenseType').val());
+                            $('#contentLicenseSingle').addClass('hide');
+                            $('#contentLicenseDynamic').addClass('hide');
+                            $('#contentLicensePool').addClass('hide');
+                            if($('#selectLicenseType').val()!='Free'){
+                                $('#contentLicense'+$('#selectLicenseModel').val()).removeClass('hide');
+                            }
+                        }
+                      </script>
+                    </div>
+                    <div class="small-1 columns">
+                      <div class="error-info">
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="contentLicenseSingle" class="hide">
+                    <div class="row"><div class="small-11 columns"><label>License Key</label></div></div>
+                    <div class="row">
+                      <div class="small-11 columns">                     
+                        <input name="LicenseKey" type="text">
+                      </div>
+                      <div class="small-1 columns">
+                        <div class="error-info">
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="contentLicenseDynamic" class="hide">
+                    <div class="row"><div class="small-11 columns"><label>HTTP URL for keys</label></div></div>
+                    <div class="row">
+                      <div class="small-11 columns">                     
+                        <input name="HTTPURLforkeys" type="text">
+                        <a href="#" class="small button"><i class="icon-retweet"></i> Test</a>
+                      </div>
+                      <div class="small-1 columns">
+                        <div class="error-info">
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="contentLicensePool" class="hide">
+                    <div class="row"><div class="small-11 columns"><label>License Pool File</label></div></div>
+                    <div class="row">
+                      <div class="small-11 columns">                     
+                        <a href="#" class="small button"><i class="icon-plus"></i> Upload License File</a> <em>.txt files only; one key per line</em>
+                      </div>
+                      <div class="small-1 columns">
+                        <div class="error-info">
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+              </fieldset>
+            </div>
+          </div>          
+
+          <div class="row">
+            <div class="small-12 columns">
+              <fieldset>
+                <div class="row">
+                  <div class="small-11 columns">
+                    <div class="right">
+                      <button type="button" data-reveal-id="myModalSmall" data-reveal-ajax="modalAddNewLanguage.html"> <span><i class="icon-plus blue"></i> New Language</span> </button>
+                    </div>
+                    <h3>Languages</h3>
+                  </div>
+                  <div class="small-1 columns">
+                    <div class="step-star">
+                      3
+                    </div>
+                  </div>
+                </div>
+                <div class="section-container accordion" data-section="accordion">
+                  <section id="EnglishListing" class="active">
+                    <p class="title" data-section-title><a href="#">English <span>(Default)</span></a></p>
+                    <div class="content" data-slug="English" data-section-content>
+                      <div class="row">
+                        <div class="small-11 columns">                        
+                          <div class="button-bar right">
+                            <ul class="button-group rich-text-editor" style="margin-left:0;">
+                              <li><a href="#" class="small button"><i class="icon-bold"></i></a></li>
+                              <li><a href="#" class="small button"><i class="icon-italic"></i></a></li>
+                              <li><a href="#" class="small button"><i class="icon-underline"></i></a></li>
+                              <li><a href="#" class="small button"><i class="icon-list-ul"></i></a></li>
+                            </ul>
+                          </div>
+                          <label>Description</label>
+                        </div>
+                      </div>                    
+                      
+                      <div class="row">
+                        <div class="small-11 columns">
+                          <input type="text" name="inapp_short_desc" class="short_desc" placeholder="Short description" value=""/>
+                          <textarea name="inapp_long_desc" class="long_desc" placeholder="Long description"></textarea>
+                        </div>
+                        <div class="small-1 columns">
+                          <div class="error-info">
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section id="FrenchListing" class="hide">
+                    <p class="title" data-section-title><a href="#">French</a></p>
+                    <div class="content" data-slug="French" data-section-content>
+                    
+                      <div class="row">
+                        <div class="small-11 columns">
+                          <label>Name of In-App Product</label>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="small-11 columns">
+                          <input type="text" value="">
+                        </div>
+                        <div class="small-1 columns">
+                          <div class="error-info">
+                            
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="small-11 columns">                        
+                          <div class="button-bar right">
+                            <ul class="button-group rich-text-editor" style="margin-left:0;">
+                              <li><a href="#" class="small button"><i class="icon-bold"></i></a></li>
+                              <li><a href="#" class="small button"><i class="icon-italic"></i></a></li>
+                              <li><a href="#" class="small button"><i class="icon-underline"></i></a></li>
+                              <li><a href="#" class="small button"><i class="icon-list-ul"></i></a></li>
+                            </ul>
+                          </div>
+                          <label>Description</label>
+                        </div>
+                      </div>                    
+                      
+                      <div class="row">
+                        <div class="small-11 columns">
+                          <input type="text" name="inapp_short_desc2" class="short_desc" placeholder="Short description" value=""/>
+                          <textarea name="inapp_long_desc2" class="long_desc" placeholder="Long description"></textarea>
+                        </div>
+                        <div class="small-1 columns">
+                          <div class="error-info">
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </fieldset>
+            </div>
+          </div>          
+
+          <div class="row">
+            <div class="small-12 columns">
+              <fieldset>
+                <div class="row">
+                  <div class="small-11 columns">
+                    <h3>Stock Keeping</h3>
+                    <p class="description">SKU (stock keeping unit) is a handy way to manage and track your products performance across multiple platforms and can be used with analytics tools such as <a href="http://www.flurry.com" target="_blank">Flurry</a></p>
+                  </div>
+                  <div class="small-1 columns">
+                    <div class="step-star">
+                      4
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="small-11 columns">
+                    <label>SKU ID <span class="optional">(optional)</span> <span class="help" data-tooltip title="Help text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis ante non orci eleifend consectetur ut et sapien."><i class="icon-info-sign"></i></span></label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="small-11 columns">
+                    <input name="SKU_ID" type="text" value="" placeholder="some random numbers">
+                  </div>
+                  <div class="small-1 columns">
+                    <div class="error-info">
+                      
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+
+		  <script type="text/javascript" src="webroot/js/autosave/sisyphus.min.js"></script> 
+          <script>
+          $( function() {
+            /*$( "form" ).sisyphus();*/
+          } );
+          </script>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="footer" class="footer">
+  <div class="inner_footer">
+    <div class="row">
+      <div class="columns grid_footer technologies">
+        <h2 class="h5">Technologies</h2>
+        <ul>
+          <li><a href="http://developer.blackberry.com/native/">Native</a></li>
+          <li><a href="http://developer.blackberry.com/html5/">HTML5</a></li>
+          <li><a href="http://developer.blackberry.com/air/">AIR</a></li>
+          <li><a href="http://developer.blackberry.com/android/">Android</a></li>
+          <li><a href="http://developer.blackberry.com/playbook/">PlayBook</a></li>
+          <li><a href="http://developer.blackberry.com/bbos/">BlackBerry OS</a></li>
+          <li><a href="http://developer.blackberry.com/develop/platform_partners/">Platform Partners</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer programs">
+        <h2 class="h5">Programs</h2>
+        <ul>
+          <li><a href="https://www.blackberry.com/beta/" target="_blank">Beta Zone</a></li>
+          <li><a href="https://partners.blackberry.com/web/guest/home/" target="_blank">Alliance programs</a></li>
+          <li><a href="http://us.blackberry.com/ataglance/academic/" target="_blank">Academic programs</a></li>
+          <li><a href="https://developer.blackberry.com/jamcommunity/groups/">Developer groups</a></li>
+          <li><a href="https://developer.blackberry.com/blackberry10devalpha/">BlackBerry 10 Dev Alpha</a></li>
+          <li><a href="https://developer.blackberry.com/builtforblackberry/">Built for BlackBerry</a></li>
+          <li><a href="http://developer.blackberry.com/blackberrybuilder/">BlackBerry Builder</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer support">
+        <h2 class="h5">Support</h2>
+        <ul>
+          <li><a href="https://bdsc.webapps.blackberry.com/CodeSigningHelp/" target="_blank">Code Signing Help</a></li>
+          <li><a href="http://www.youtube.com/blackberrydev/" target="_blank">YouTube Channel</a></li>
+          <li><a href="http://supportforums.blackberry.com/t5/Developer-Support-Forums/ct-p/blackberrydev" target="_blank">Developer forums</a></li>
+          <li><a href="https://www.blackberry.com/jira/secure/Dashboard.jspa" target="_blank">Developer Issue Tracker</a></li>
+          <li><a href="http://supportforums.blackberry.com/t5/Application-Platforms/tkbc-p/app_plat" target="_blank">Knowledge Base</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer app_store">
+        <h2 class="h5">BlackBerry World</h2>
+        <ul>
+          <li><a href="https://www.blackberry.com/SignedKeys/codesigning.html" target="_blank">Sign your app</a></li>
+          <li><a href="http://developer.blackberry.com/blackberryworld/">Submitting your app</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer_last social">
+        <h2 class="h5">Follow us on:</h2>
+        <ul class="inline-list">
+          <li><a href="http://www.facebook.com/BlackBerryDeveloperCommunity" title="Follow us on Facebook" class="icon-20 facebook" target="_blank"><span class="hide">Facebook</span></a></li>
+          <li><a href="http://www.youtube.com/blackberrydev/" title="Catch us on YouTube" class="icon-20 youtube" target="_blank"><span class="hide">YouTube</span></a></li>
+          <li><a href="http://twitter.com/blackberrydev" title="Hear the BlackBerry tweet" class="icon-20 twitter" target="_blank"><span class="hide">Twitter</span></a></li>
+          <li><a href="http://devblog.blackberry.com/" title="Developer Blogs" class="icon-20 blackberry" target="_blank"><span class="hide">BlackBerry Blogs</span></a></li>
+          <li><a href="#bbmchannelcode" title="BBM Channels" class="icon-20 channels lightboxtrigger"><span class="hide">BBM Channels</span></a></li>
+        </ul>
+        <div style='display:none'>
+          <div id='bbmchannelcode' class="lightbox">
+            <div class="lightbox-desc" style="width:400px;"> <img src="webroot/img/common/channelonwhite.png" alt="BBM Channels" /> </div>
+            <div class="lightbox-desc" style="width:370px;">
+              <div class="lightbox-text" style="margin: 40px 100px 0px 0px;">
+                <h1 style="margin-left:0px;">BBM Channels</h1>
+                <p>Developer Relations is on BBM Channels! Join the conversation by <a href="https://beta.webapps.blackberry.com/BBMChannels/" target="_blank">signing up for the beta program</a> and scanning the barcode to the right.</p>
+                <a href="https://beta.webapps.blackberry.com/BBMChannels/" target="_blank"> Register for BBM Channels beta &rsaquo;</a> </div>
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li><a href="http://www.blackberry.com/legal/" target="_blank">Legal &amp; Trademarks</a> </li>
+        </ul>
+      </div>
+      <div class="copyright_notice">Copyright &copy; 2014 BlackBerry Limited, unless otherwise noted.</div>
+    </div>
+  </div>
+</footer>
+  <!-- Included JS Files (Uncompressed) --> 
+  <script type="text/javascript" src="webroot/js/common/foundation.min.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/foundation/foundation.topbar.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/foundation/foundation.joyride.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/foundation/foundation.backnav.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/jquery.easing.1.3.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/bb.dropdown.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/bb.searchbar.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/bb.expandable.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/bb.nav.doc.js"></script> 
+  <script type="text/javascript" src="webroot/js/bb.segment_hover.js"></script> 
+  <script type="text/javascript" src="webroot/js/jquery.tipTip.minified.js"></script> 
+  <script type="text/javascript" src="webroot/js/jquery.colorbox.js"></script> 
+  <script type="text/javascript" src="webroot/js/jquery.mockjson.js"></script> 
+  <script type="text/javascript" src="webroot/js/datamockery.js"></script> 
+  <script type="text/javascript" src="webroot/js/bb.site.js"></script> 
+  <script type="text/javascript" src="webroot/js/bb.focuscontrol.js"></script> 
+  <script type="text/javascript" src="webroot/js/bb.nav.js"></script> 
+  
+  <!-- Note should this be a separate .js file or be part of bb.site.js  --> 
+  
+  <script type="text/javascript">
+	  global.init('', 'portals', 'index', '', 'webroot/');
+	  global.setFocus('cascades');
+  </script> 
+  <script type="text/javascript" src="webroot/js/pageload.js"></script> 
+  
+  <!-- Piwik --> 
+  <script type="text/javascript">
+	  var pkBaseURL, server, pkId;
+	  server = 'dxlab013qbolabvm.labqbo.testnet.rim.net/stats/';
+	  pkId = -1;
+	  pkBaseURL = (("https:" == document.location.protocol) ? "https://"+server : "http://"+server);
+	  document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+	  </script><script type="text/javascript">
+	  try {
+	  var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", -1);
+	  piwikTracker.trackPageView();
+	  piwikTracker.enableLinkTracking();
+  } catch( err ) {}
+  </script>
+  <noscript>
+  <p><img src="http://dxlab013qbolabvm.labqbo.testnet.rim.net/stats/piwik.php?idsite=-1" style="border:0" alt="" /></p>
+  </noscript>
+  <!-- End Piwik Tracking Code --> 
+  <!--[if lt IE 7 ]>
+	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+	<script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+  <![endif]--> 
+  
+<script>
+  $(document).ready(function() {
+	$('.reveal-modal').css({
+	  maxHeight: $(window).height() - 150 + 'px'
+	});
+  });
+  $(window).resize(function() {
+	$('.reveal-modal').css({
+	  maxHeight: $(window).height() - 150 + 'px'
+	});
+  });
+</script>
+
+</body>
+</html>

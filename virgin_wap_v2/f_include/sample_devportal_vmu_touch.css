@@ -1,0 +1,144 @@
+/*** styles from admin portal ***/
+div.styleName1 {
+	white-space:nowrap; /* This is for "Text Wrap", Scroll="white-space:nowrap", Wrap="white-space:normal". The scrolling only works on the phone. */
+	font-size:xx-large;
+	font-weight:bold;
+	font-style:normal;
+	text-decoration:none;
+	text-align:left;
+	background:#cc0000;
+	color:#ffffff;
+	border:0; /* border:0 is used as default value to reset everything to 0 before applying other borders. */
+	border-top:2px solid #ffffff; /*solid is default to all borders, you will only fetch the border color and size*/
+	border-left:2px solid #ffffff;
+	border-right:2px solid #ffffff;
+	border-bottom:2px solid #ffffff;
+}
+a.styleName1 {color:#ffffff;text-decoration:none;}
+
+div.styleName2 {
+	white-space:nowrap; /* This is for "Text Wrap", Scroll="white-space:nowrap", Wrap="white-space:normal". The scrolling only works on the phone. */
+	font-size:xx-large;
+	font-weight:bold;
+	font-style:normal;
+	text-decoration:none;
+	text-align:left;
+	background:#ffffff;
+	color:#333333;
+	border:0; /* border:0 is used as default value to reset everything to 0 before applying other borders. */
+	border-top:0px solid #ffffff; /*solid is default to all borders, you will only fetch the border color and size*/
+	border-left:0px solid #ffffff;
+	border-right:0px solid #ffffff;
+	border-bottom:0px solid #ffffff;
+}
+a.styleName2 {color:#333333;text-decoration:none;}
+
+div.styleName3 {
+	white-space:nowrap; /* This is for "Text Wrap", Scroll="white-space:nowrap", Wrap="white-space:normal". The scrolling only works on the phone. */
+	font-size:xx-large;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:underline;
+	text-align:center;
+	background:#ffffff;
+	color:#000000;
+	border:0; /* border:0 is used as default value to reset everything to 0 before applying other borders. */
+	border-top:0px solid #ffffff; /*solid is default to all borders, you will only fetch the border color and size*/
+	border-left:0px solid #ffffff;
+	border-right:0px solid #ffffff;
+	border-bottom:0px solid #ffffff;
+}
+a.styleName3 {color:#000000;text-decoration:underline;}
+
+div.Android_VMU_New_Header {
+	white-space:nowrap; /* This is for "Text Wrap", Scroll="white-space:nowrap", Wrap="white-space:normal". The scrolling only works on the phone. */
+	font-size:xx-large;
+	font-weight:bold;
+	font-style:normal;
+	text-decoration:none;
+	text-align:left;
+	background:#494949;
+	color:#ffffff;
+	border:0; /* border:0 is used as default value to reset everything to 0 before applying other borders. */
+	border-top:5px solid #494949; /*solid is default to all borders, you will only fetch the border color and size*/
+	border-left:12px solid #494949;
+	border-right:12px solid #494949;
+	border-bottom:5px solid #494949;
+}
+a.Android_VMU_New_Header {color:#ffffff;text-decoration:none;}
+
+div.Android_VMU_New_Style_1 {
+	white-space:nowrap; /* This is for "Text Wrap", Scroll="white-space:nowrap", Wrap="white-space:normal". The scrolling only works on the phone. */
+	font-size:xx-large;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none;
+	text-align:left;
+	background:#ffffff;
+	color:#000000;
+	border:0; /* border:0 is used as default value to reset everything to 0 before applying other borders. */
+	border-top:0px solid #ffffff; /*solid is default to all borders, you will only fetch the border color and size*/
+	border-left:0px solid #ffffff;
+	border-right:0px solid #ffffff;
+	border-bottom:1px solid #C1C1C1;
+	padding:12px;
+}
+a.Android_VMU_New_Style_1 {color:#000000;text-decoration:none;}
+
+div.Android_VMU_New_Style_2 {
+	white-space:nowrap; /* This is for "Text Wrap", Scroll="white-space:nowrap", Wrap="white-space:normal". The scrolling only works on the phone. */
+	font-size:xx-large;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:underline;
+	text-align:left;
+	background:#e8e8e8;
+	color:#000000;
+	border:0; /* border:0 is used as default value to reset everything to 0 before applying other borders. */
+	border-top:5px solid #e8e8e8; /*solid is default to all borders, you will only fetch the border color and size*/
+	border-left:12px solid #e8e8e8;
+	border-right:12px solid #e8e8e8;
+	border-bottom:5px solid #e8e8e8;
+}
+a.Android_VMU_New_Style_2 {color:#000000;text-decoration:underline;}
+
+div.Android_VMU_New_Style_TH {
+	white-space:nowrap; /* This is for "Text Wrap", Scroll="white-space:nowrap", Wrap="white-space:normal". The scrolling only works on the phone. */
+	font-size:xx-large;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none;
+	text-align:left;
+	background:#ffffff;
+	color:#000000;
+	border:0; /* border:0 is used as default value to reset everything to 0 before applying other borders. */
+	border-top:0px solid #ffffff; /*solid is default to all borders, you will only fetch the border color and size*/
+	border-left:0px solid #ffffff;
+	border-right:0px solid #ffffff;
+	border-bottom:1px solid #C1C1C1;
+	padding:2px 12px;
+}
+a.Android_VMU_New_Style_TH {color:#000000;text-decoration:none;}
+div.Android_VMU_New_Style_TH:hover {background:#df352a;}
+div.Android_VMU_New_Style_TH img {max-height:40px;max-width:40px;vertical-align:middle;margin-right:10px;}
+
+div.android_banner_rotate {
+	white-space:normal;
+	font-size:small;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none;
+	text-align:center;
+	background:#dfdfdf;
+	color:#ffffff;
+	border:0;
+	border-top:0px solid #ffffff;
+	border-left:0px solid #ffffff;
+	border-right:0px solid #ffffff;
+	border-bottom:0px solid #ffffff;
+}
+a.android_banner_rotate {color:#ffffff;text-decoration:none;}
+
+
+
+

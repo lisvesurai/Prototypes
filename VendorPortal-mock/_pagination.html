@@ -1,0 +1,1920 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js macosx" lang="en">
+<!--<![endif]-->
+<!-- TODO for UX refresh ISVP: 
+           1. create 2 baselayout- one with no left nav for login and another with left nav for rest of the pages
+           2. logic to display left nav
+       -->
+
+<head>
+<!-- below code is commented as it was showing some image on UX refresh -->
+
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" / -->
+
+<script type="text/javascript" src="struts/js/base/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="struts/js/base/jquery.ui.core.js?s2j=3.5.1"></script>
+<script type="text/javascript" src="struts/js/plugins/jquery.subscribe.js"></script>
+<script type="text/javascript" src="struts/js/struts2/jquery.struts2.js?s2j=3.5.1"></script>
+<script type="text/javascript">
+$(function() {
+	jQuery.struts2_jquery.version="3.5.1";
+	jQuery.struts2_jquery.debug = true;
+  	jQuery.scriptPath = "struts/";
+	jQuery.struts2_jquery.minSuffix = "";
+  jQuery.struts2_jquery.gridLocal = "en";
+  jQuery.struts2_jquery.timeLocal = "en";
+	jQuery.ajaxSettings.traditional = true;
+
+	jQuery.ajaxSetup ({
+		cache: false
+	});
+	
+	jQuery.struts2_jquery.require("js/struts2/jquery.ui.struts2.js");
+	
+});
+</script>
+<link id="jquery_theme_link" rel="stylesheet" href="themes/rimTheme/jquery-ui.css?s2j=3.5.1" type="text/css"/>
+<script src="js/ieButtonFix.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/isvportal.js" type="text/javascript" charset="utf-8"></script>
+<script language="javascript" type="text/javascript" charset="utf-8">
+	var s_account = "rimdev";
+</script>
+<script src="js/s_code.js" type="text/javascript" charset="utf-8"></script>
+<!-- script src="js/fileuploader.js" type="text/javascript" charset="utf-8"></script -->
+<!-- <noscript>
+<style type="text/css">
+
+#content-start {
+	visibility:visible;
+}
+</style>
+</noscript>
+<noscript>
+<style type="text/css">
+#docmgrd ul#sidenav li ul li {
+	display:block;
+}
+</style>
+
+</noscript> -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta charset="utf-8">
+<meta name="author" content="Research In Motion">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<!-- <link href="favicon.ico" rel="SHORTCUT ICON" /> -->
+
+<!--[if lt IE 9]>
+    <script src="webroot/js/common/html5.js"></script>
+    <style type="text/css">
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+    </style>
+<![endif]-->
+
+<link type="text/css" rel="stylesheet" href="webroot/css/common/normalize.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.fonts.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/foundation.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/foundation.override.css" />
+<!--[if lt IE 9]>
+		<link type="text/css" rel="stylesheet" href="webroot/css/common/foundation.ie8.css">
+	<![endif]-->
+<link type="text/css" rel="stylesheet" href="webroot/css/common/foundicon.general.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.base.css" />
+<!-- <link type="text/css" rel="stylesheet" href="webroot/css/common/bb.layout.css" /> -->
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.navigation.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/common/bb.components.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/ext.tiptip.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.site.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.portals.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.documentations.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.downloads.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.references.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.page.sampleapps.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.screenshot.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.vp.components.css" />
+<link type="text/css" rel="stylesheet" href="webroot/css/bb.vp.fonts.css" />
+<script src="webroot/js/common/modernizr.custom.88393.js"></script>
+<script type="text/javascript" src="webroot/js/common/bb.global.js"></script>
+<link rel="stylesheet" href="webroot/css/font-awesome/css/font-awesome.min.css" />
+<!--[if IE 7]>
+	  <link rel="stylesheet" href="webroot/css/font-awesome/css/font-awesome-ie7.min.css">
+	<![endif]-->
+<link rel="stylesheet" href="webroot/css/common/jquery-ui-1.8.22.custom.css" />
+<title>Vendor Portal for BlackBerry World&#153;</title>
+</head>
+
+<body class="portals vendorportal">
+  <div class="fixed">
+  <div>
+    <nav class="top-bar user-bar hide-for-small">
+      <ul class="title-area">
+        <li class="name"> <a href="http://developer.blackberry.com/" class="logo"> <img src="webroot/img/common/blackberry_logo.png" alt="BlackBerry"> Developer </a> </li>
+        <li class="toggle-topbar"><a href="#"><span>Useful links</span></a></li>
+      </ul>
+      <section class="top-bar-section">
+        <ul class="left">
+          <li class="divider hide-for-small"> </li>
+          <li><a href="http://devblog.blackberry.com" target="_blank">Blog</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li><a href="http://www.youtube.com/blackberrydev/" target="_blank">YouTube</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li><a href="http://supportforums.blackberry.com/t5/Developer-Support-Forums/ct-p/blackberrydev" target="_blank">Forum</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li><a href="https://www.blackberry.com/SignedKeys/codesigning.html" target="_blank">Signing</a></li>
+          <li class="divider hide-for-small"> </li>
+          <li class="last"><a href="https://www.blackberry.com/jira/secure/Dashboard.jspa" target="_blank">Feedback</a></li>
+          <li class="divider hide-for-small"> </li>
+        </ul>
+        <ul class="right">
+          <li class="divider hide-for-small login-in-bar"> </li>
+          <li><a href="login.html" class="icon_login login-in-bar">Logout</a></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+</div>
+  <header class="nav-header">
+    <div class="topbar">
+      <nav>
+        <div class="nav-text">
+          <a href="index.html"> <span class="h1">Vendor Portal for BlackBerry World</span> </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div id="browser-msg" class="row hide">
+    <div class="large-12 columns">
+      <div class="notice warning">
+        <p>Sorry about the red box, but we really need you to update your browser. Read <a href="http://www.smashingmagazine.com/2012/07/10/dear-web-user-please-upgrade-your-browser/">this excellent article</a> if you're wondering why we are no longer supporting this browser version. Go to <a href="http://browsehappy.com/">Browse Happy</a> for browser suggestions and how to update.</p>
+      </div>
+    </div>
+  </div>
+  <div id="main" class="main" role="main">
+    <div class="row">
+      <nav role="navigation" class="large-3 columns side-nav-vp sticky">
+        <ul class="v-card">
+          <li class="vendor-name">Gameloft inc.</li>
+          <li class="user-name light italic">Diem Duong</li>
+        </ul>
+        <div class="link-block">
+          <ul class="links">
+            <li class="first"><a href="index.html" class="selected">Products</a></li>
+            <li><a href="promotions.html">Promotions</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="changerequests.html">Change Requests</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="testing.html">Testers</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            
+            <!-- logout menu -->
+            <div>
+              <li class=""><a id="logout" href="javascript:void(0)">Logout</a> 
+                <script type='text/javascript'>
+jQuery(document).ready(function () { 
+	var options_logout = {};
+	options_logout.opendialog = "modalLogout";
+	options_logout.jqueryaction = "anchor";
+	options_logout.id = "logout";
+	options_logout.href = "#";
+
+jQuery.struts2_jquery.bind(jQuery('#logout'),options_logout);
+
+ });  
+</script></li>
+            </div>
+          </ul>
+        </div>
+      </nav>
+      <!--  for no left nav use "large-12 columns" and for left nav use "large-9 columns"  -->
+      <div class="large-9 columns">
+        <div id="mainContentBody">
+          
+          <!--  Announcement Box Begins --> 
+          
+          <!--  Announcement Box Ends -->
+          
+          <div class="action right">
+            <form id="_productHomeSrchFrm" name="_productHomeSrchFrm" action="product/filterProducts.do" method="post">
+              <div id="search" class="right">
+                <input type="hidden"
+		    id="productName"		 	name="productName"		/>
+                <input type="text" name="productName_widget" id="productName_widget" placeholder="Search for Products"/>
+                <script type='text/javascript'>
+jQuery(document).ready(function () {
+	var options_productName_widget = {};
+	options_productName_widget.hiddenid = "productName";
+	options_productName_widget.selectBox = false;
+	options_productName_widget.forceValidOption = true;
+	options_productName_widget.list = new Array();
+	options_productName_widget.list.push("1 vs 100 ???");
+	options_productName_widget.list.push("2006 Real Football");
+	options_productName_widget.list.push("Air Strike 1944");
+	options_productName_widget.list.push("American Gangster: The Mobile Game");
+	options_productName_widget.list.push("American Popstar: Road to Celebrity");
+	options_productName_widget.list.push("And 1 Street Basketball");
+	options_productName_widget.list.push("Asphalt 4 Elite Racing");
+	options_productName_widget.list.push("Asphalt 6: Adrenaline HD");
+	options_productName_widget.list.push("Assassin s Creed");
+	options_productName_widget.list.push("Assassin's Creed Brotherhood");
+	options_productName_widget.list.push("Assassin's Creed Revelations");
+	options_productName_widget.list.push("Assassins Creed II");
+	options_productName_widget.list.push("Asterix and Obelix encounter Cleopatra");
+	options_productName_widget.list.push("Avalanche Snowboarding");
+	options_productName_widget.list.push("Battle for the White House");
+
+	options_productName_widget.jqueryaction = "autocompleter";
+	options_productName_widget.id = "productName_widget";
+	options_productName_widget.name = "productName_widget";
+	options_productName_widget.href = "#";
+	options_productName_widget.formids = "_productHomeSrchFrm";
+  
+
+jQuery.struts2_jquery_ui.bind(jQuery('#productName_widget'),options_productName_widget);
+
+ });
+</script> 
+                <a id="prdFilterBtn" href="javascript:void(0)" class="button prefix"> <i class="icon-search"></i> </a> 
+                <script type='text/javascript'>
+jQuery(document).ready(function () { 
+	var options_prdFilterBtn = {};
+	options_prdFilterBtn.jqueryaction = "anchor";
+	options_prdFilterBtn.id = "prdFilterBtn";
+	options_prdFilterBtn.targets = "productListingDiv";
+	options_prdFilterBtn.href = "product/filterProducts.do";
+	options_prdFilterBtn.formids = "_productHomeSrchFrm";
+
+jQuery.struts2_jquery.bind(jQuery('#prdFilterBtn'),options_prdFilterBtn);
+
+ });  
+</script>
+              </div>
+              <input type="hidden" name="pageStartIndex" value="0" id="_productHomeSrchFrm_pageStartIndex"/>
+              <input type="hidden" name="pageTotalRecCount" value="0" id="_productHomeSrchFrm_pageTotalRecCount"/>
+              <button class="right" data-dropdown="createNewProduct"> <i class="icon-plus blue"></i> New Product </button>
+            </form>
+          </div>
+          <h1>Product</h1>
+          <!--  Create a new product Drop box Starts -->
+          
+          <div id="createNewProduct" class="f-dropdown large content" data-dropdown-content>
+            <label>Name</label>
+            <input type="text"
+			placeholder="The name that will show in BlackBerry World" />
+            <div class="releaseUpload">
+              <!-- <div id="dropTarget" class="dropTarget"
+				onclick="location.href='product_release_details.html';">
+				<h3>New Product</h3>
+				<p>
+					Drag &amp; drop your release files here<br> or click to browse.
+				</p>
+			</div> -->
+              <form id="upload" name="upload" action=""
+			method="post" enctype="multipart/form-data">
+                <fieldset>
+                  <input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE"
+					value="300000" />
+                  <div id="dropTarget" class="dropTarget">
+                    <label for="fileselectl">Files to upload</label>
+                    <input type="file" name="fileselect" value="" id="fileselect" multiple/>
+                    <div id="filedrag">
+                      or drop files here
+                    </div>
+                  </div>
+                  <!-- <div id="submitbutton">
+					<button type="submit">Upload Files</button>
+				</div> -->
+                  <div id="messages">
+                  </div>
+                  <script src="js/filedrag.js"></script>
+                </fieldset>
+              </form>
+              <div class="togglePlatform">
+                <div class="rows">
+                  <div class="small-5 columns">
+                    <label for="platformSwitch" class="text-right">BlackBerry 10 / PlayBook</label>
+                  </div>
+                  <div class="small-2 columns">
+                    <div class="switch round">
+                      <input id="platformSwitch1" name="platformSwitch" type="radio"
+								value="BBOS">
+                      <input id="platformSwitch"
+								name="platformSwitch" type="radio" value="BB10" checked="">
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="small-5 columns">
+                    <label for="platformSwitch1">BlackBerry OS</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="notready">
+              <label>Not Ready to Upload Just Yet?</label>
+              <a
+				href="product_ph_details.html" class="button">Create a Placeholder</a>
+            </div>
+          </div>
+          <!--  Create a new product Drop box Ends -->
+          
+          <div id="productListingDiv"
+
+
+
+
+>
+            <form id="productHomeSrchFrm" name="productHomeSrchFrm" action="product/filterProducts.do" method="post" enctype="application/x-www-form-urlencoded">
+              <input type="hidden" name="pageStartIndex" value="0" id="productHomeSrchFrm_pageStartIndex"/>
+              <input type="hidden" name="pageTotalRecCount" value="0" id="productHomeSrchFrm_pageTotalRecCount"/>
+              <input type="hidden" name="productName" value="" id="productHomeSrchFrm_productName"/>
+            </form>
+            <br/>
+            <div id="app-list" class="app-list section-container" data-section="accordion">
+              <section>
+                <div class="app-item clearfix">
+                  <a href="#product_488" class="list-item app-title title" data-section-title> <img src="product/getProductImage.do?id=488&amp;tableName=PRODUCT&amp;columnName=ICONID"/>
+                  <div>
+                    <h3> 1 vs 100 ???</h3>
+                    <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star-empty"></i>
+                  </div>
+                  <div class="app-accordion">
+                  </div>
+                  <div class="app-cr">
+                    <i data-tooltip data-options="disable-for-touch:true" title="No change requests are pending for this app." class="circleicon-checkmark-big" ></i>
+                  </div>
+                  </a>
+                </div>
+                <div class="content" data-slug="product_488" data-content-section>
+                  <div class="row">
+                    <div class="large-4 columns">
+                      <div class="row">
+                        <ul class="accordion-nav">
+                          <li> <a href="product/editProduct.do?productId=488"><i class="circleicon-base circleicon-details"></i> <span>Details</span></a> </li>
+                          <li><a href="product1_listings.html"><i class="circleicon-base circleicon-listings"></i> <span>Listing</span></a></li>
+                          <li><a href="product1_releases.html"><i class="circleicon-base circleicon-releases-spark"><i class="circleicon-overlay circleicon-spark"></i></i> <span>Releases</span></a></li>
+                          <li><a href="product1_inappprod.html"><i class="circleicon-base circleicon-releases"></i> <span>In-App Products</span></a></li>
+                          <li><a href="product1_reviews.html"><i class="circleicon-base circleicon-releases"></i> <span>Reviews</span></a></li>
+                          <li><a href="product1_stats.html"><i class="circleicon-base circleicon-reports"></i> <span>Stats</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="large-6 columns">
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-today">
+                            <p class="number">5</p>
+                            <p class="title">Downloads Today</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-total">
+                            <p class="number">40k</p>
+                            <p class="title">Downloads total</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-releases">
+                            <p class="number">1</p>
+                            <p class="title">Interesting stat</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-reviews">
+                            <p class="number">14</p>
+                            <p class="title">New bad reviews</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="large-2 columns">
+                      <button data-dropdown="listitem_actions_1" class="right"><i class="icon-reorder"></i><i class="icon-angle-down"></i></button>
+                      <ul id="listitem_actions_1" class="action-dropdown" data-dropdown-content="">
+                        <li> <a href="#">Submit for review</i></a> </li>
+                        <li> <a href="#">Pin to top</a> </li>
+                        <li> <a href="#">Hide this product</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div class="app-item clearfix">
+                  <a href="#product_489" class="list-item app-title title" data-section-title> <img src="product/getProductImage.do?id=489&amp;tableName=PRODUCT&amp;columnName=ICONID"/>
+                  <div>
+                    <h3> 2006 Real Football</h3>
+                    <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star-empty"></i>
+                  </div>
+                  <div class="app-accordion">
+                  </div>
+                  <div class="app-cr">
+                    <i data-tooltip data-options="disable-for-touch:true" title="No change requests are pending for this app." class="circleicon-checkmark-big" ></i>
+                  </div>
+                  </a>
+                </div>
+                <div class="content" data-slug="product_489" data-content-section>
+                  <div class="row">
+                    <div class="large-4 columns">
+                      <div class="row">
+                        <ul class="accordion-nav">
+                          <li> <a href="product/editProduct.do?productId=489"><i class="circleicon-base circleicon-details"></i> <span>Details</span></a> </li>
+                          <li><a href="product1_listings.html"><i class="circleicon-base circleicon-listings"></i> <span>Listing</span></a></li>
+                          <li><a href="product1_releases.html"><i class="circleicon-base circleicon-releases-spark"><i class="circleicon-overlay circleicon-spark"></i></i> <span>Releases</span></a></li>
+                          <li><a href="product1_inappprod.html"><i class="circleicon-base circleicon-releases"></i> <span>In-App Products</span></a></li>
+                          <li><a href="product1_reviews.html"><i class="circleicon-base circleicon-releases"></i> <span>Reviews</span></a></li>
+                          <li><a href="product1_stats.html"><i class="circleicon-base circleicon-reports"></i> <span>Stats</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="large-6 columns">
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-today">
+                            <p class="number">5</p>
+                            <p class="title">Downloads Today</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-total">
+                            <p class="number">40k</p>
+                            <p class="title">Downloads total</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-releases">
+                            <p class="number">1</p>
+                            <p class="title">Interesting stat</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-reviews">
+                            <p class="number">14</p>
+                            <p class="title">New bad reviews</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="large-2 columns">
+                      <button data-dropdown="listitem_actions_1" class="right"><i class="icon-reorder"></i><i class="icon-angle-down"></i></button>
+                      <ul id="listitem_actions_1" class="action-dropdown" data-dropdown-content="">
+                        <li> <a href="#">Submit for review</i></a> </li>
+                        <li> <a href="#">Pin to top</a> </li>
+                        <li> <a href="#">Hide this product</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div class="app-item clearfix">
+                  <a href="#product_497" class="list-item app-title title" data-section-title> <img src="product/getProductImage.do?id=497&amp;tableName=PRODUCT&amp;columnName=ICONID"/>
+                  <div>
+                    <h3> Air Strike 1944&trade;</h3>
+                    <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star-empty"></i>
+                  </div>
+                  <div class="app-accordion">
+                  </div>
+                  <div class="app-cr">
+                    <i data-tooltip data-options="disable-for-touch:true" title="No change requests are pending for this app." class="circleicon-checkmark-big" ></i>
+                  </div>
+                  </a>
+                </div>
+                <div class="content" data-slug="product_497" data-content-section>
+                  <div class="row">
+                    <div class="large-4 columns">
+                      <div class="row">
+                        <ul class="accordion-nav">
+                          <li> <a href="product/editProduct.do?productId=497"><i class="circleicon-base circleicon-details"></i> <span>Details</span></a> </li>
+                          <li><a href="product1_listings.html"><i class="circleicon-base circleicon-listings"></i> <span>Listing</span></a></li>
+                          <li><a href="product1_releases.html"><i class="circleicon-base circleicon-releases-spark"><i class="circleicon-overlay circleicon-spark"></i></i> <span>Releases</span></a></li>
+                          <li><a href="product1_inappprod.html"><i class="circleicon-base circleicon-releases"></i> <span>In-App Products</span></a></li>
+                          <li><a href="product1_reviews.html"><i class="circleicon-base circleicon-releases"></i> <span>Reviews</span></a></li>
+                          <li><a href="product1_stats.html"><i class="circleicon-base circleicon-reports"></i> <span>Stats</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="large-6 columns">
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-today">
+                            <p class="number">5</p>
+                            <p class="title">Downloads Today</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-total">
+                            <p class="number">40k</p>
+                            <p class="title">Downloads total</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-releases">
+                            <p class="number">1</p>
+                            <p class="title">Interesting stat</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-reviews">
+                            <p class="number">14</p>
+                            <p class="title">New bad reviews</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="large-2 columns">
+                      <button data-dropdown="listitem_actions_1" class="right"><i class="icon-reorder"></i><i class="icon-angle-down"></i></button>
+                      <ul id="listitem_actions_1" class="action-dropdown" data-dropdown-content="">
+                        <li> <a href="#">Submit for review</i></a> </li>
+                        <li> <a href="#">Pin to top</a> </li>
+                        <li> <a href="#">Hide this product</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div class="app-item clearfix">
+                  <a href="#product_498" class="list-item app-title title" data-section-title> <img src="product/getProductImage.do?id=498&amp;tableName=PRODUCT&amp;columnName=ICONID"/>
+                  <div>
+                    <h3> American Gangster: The Mobile...</h3>
+                    <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star-empty"></i>
+                  </div>
+                  <div class="app-accordion">
+                  </div>
+                  <div class="app-cr">
+                    <i data-tooltip data-options="disable-for-touch:true" title="No change requests are pending for this app." class="circleicon-checkmark-big" ></i>
+                  </div>
+                  </a>
+                </div>
+                <div class="content" data-slug="product_498" data-content-section>
+                  <div class="row">
+                    <div class="large-4 columns">
+                      <div class="row">
+                        <ul class="accordion-nav">
+                          <li> <a href="product/editProduct.do?productId=498"><i class="circleicon-base circleicon-details"></i> <span>Details</span></a> </li>
+                          <li><a href="product1_listings.html"><i class="circleicon-base circleicon-listings"></i> <span>Listing</span></a></li>
+                          <li><a href="product1_releases.html"><i class="circleicon-base circleicon-releases-spark"><i class="circleicon-overlay circleicon-spark"></i></i> <span>Releases</span></a></li>
+                          <li><a href="product1_inappprod.html"><i class="circleicon-base circleicon-releases"></i> <span>In-App Products</span></a></li>
+                          <li><a href="product1_reviews.html"><i class="circleicon-base circleicon-releases"></i> <span>Reviews</span></a></li>
+                          <li><a href="product1_stats.html"><i class="circleicon-base circleicon-reports"></i> <span>Stats</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="large-6 columns">
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-today">
+                            <p class="number">5</p>
+                            <p class="title">Downloads Today</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-total">
+                            <p class="number">40k</p>
+                            <p class="title">Downloads total</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-releases">
+                            <p class="number">1</p>
+                            <p class="title">Interesting stat</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-reviews">
+                            <p class="number">14</p>
+                            <p class="title">New bad reviews</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="large-2 columns">
+                      <button data-dropdown="listitem_actions_1" class="right"><i class="icon-reorder"></i><i class="icon-angle-down"></i></button>
+                      <ul id="listitem_actions_1" class="action-dropdown" data-dropdown-content="">
+                        <li> <a href="#">Submit for review</i></a> </li>
+                        <li> <a href="#">Pin to top</a> </li>
+                        <li> <a href="#">Hide this product</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div class="app-item clearfix">
+                  <a href="#product_499" class="list-item app-title title" data-section-title> <img src="product/getProductImage.do?id=499&amp;tableName=PRODUCT&amp;columnName=ICONID"/>
+                  <div>
+                    <h3> American Popstar: Road to Cel...</h3>
+                    <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star-empty"></i>
+                  </div>
+                  <div class="app-accordion">
+                  </div>
+                  <div class="app-cr">
+                    <i data-tooltip data-options="disable-for-touch:true" title="No change requests are pending for this app." class="circleicon-checkmark-big" ></i>
+                  </div>
+                  </a>
+                </div>
+                <div class="content" data-slug="product_499" data-content-section>
+                  <div class="row">
+                    <div class="large-4 columns">
+                      <div class="row">
+                        <ul class="accordion-nav">
+                          <li> <a href="product/editProduct.do?productId=499"><i class="circleicon-base circleicon-details"></i> <span>Details</span></a> </li>
+                          <li><a href="product1_listings.html"><i class="circleicon-base circleicon-listings"></i> <span>Listing</span></a></li>
+                          <li><a href="product1_releases.html"><i class="circleicon-base circleicon-releases-spark"><i class="circleicon-overlay circleicon-spark"></i></i> <span>Releases</span></a></li>
+                          <li><a href="product1_inappprod.html"><i class="circleicon-base circleicon-releases"></i> <span>In-App Products</span></a></li>
+                          <li><a href="product1_reviews.html"><i class="circleicon-base circleicon-releases"></i> <span>Reviews</span></a></li>
+                          <li><a href="product1_stats.html"><i class="circleicon-base circleicon-reports"></i> <span>Stats</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="large-6 columns">
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-today">
+                            <p class="number">5</p>
+                            <p class="title">Downloads Today</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-total">
+                            <p class="number">40k</p>
+                            <p class="title">Downloads total</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-releases">
+                            <p class="number">1</p>
+                            <p class="title">Interesting stat</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-reviews">
+                            <p class="number">14</p>
+                            <p class="title">New bad reviews</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="large-2 columns">
+                      <button data-dropdown="listitem_actions_1" class="right"><i class="icon-reorder"></i><i class="icon-angle-down"></i></button>
+                      <ul id="listitem_actions_1" class="action-dropdown" data-dropdown-content="">
+                        <li> <a href="#">Submit for review</i></a> </li>
+                        <li> <a href="#">Pin to top</a> </li>
+                        <li> <a href="#">Hide this product</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div class="app-item clearfix">
+                  <a href="#product_501" class="list-item app-title title" data-section-title> <img src="product/getProductImage.do?id=501&amp;tableName=PRODUCT&amp;columnName=ICONID"/>
+                  <div>
+                    <h3> And 1&reg; Street Basketball</h3>
+                    <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star-empty"></i>
+                  </div>
+                  <div class="app-accordion">
+                  </div>
+                  <div class="app-cr">
+                    <i data-tooltip data-options="disable-for-touch:true" title="No change requests are pending for this app." class="circleicon-checkmark-big" ></i>
+                  </div>
+                  </a>
+                </div>
+                <div class="content" data-slug="product_501" data-content-section>
+                  <div class="row">
+                    <div class="large-4 columns">
+                      <div class="row">
+                        <ul class="accordion-nav">
+                          <li> <a href="product/editProduct.do?productId=501"><i class="circleicon-base circleicon-details"></i> <span>Details</span></a> </li>
+                          <li><a href="product1_listings.html"><i class="circleicon-base circleicon-listings"></i> <span>Listing</span></a></li>
+                          <li><a href="product1_releases.html"><i class="circleicon-base circleicon-releases-spark"><i class="circleicon-overlay circleicon-spark"></i></i> <span>Releases</span></a></li>
+                          <li><a href="product1_inappprod.html"><i class="circleicon-base circleicon-releases"></i> <span>In-App Products</span></a></li>
+                          <li><a href="product1_reviews.html"><i class="circleicon-base circleicon-releases"></i> <span>Reviews</span></a></li>
+                          <li><a href="product1_stats.html"><i class="circleicon-base circleicon-reports"></i> <span>Stats</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="large-6 columns">
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-today">
+                            <p class="number">5</p>
+                            <p class="title">Downloads Today</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-total">
+                            <p class="number">40k</p>
+                            <p class="title">Downloads total</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-releases">
+                            <p class="number">1</p>
+                            <p class="title">Interesting stat</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-reviews">
+                            <p class="number">14</p>
+                            <p class="title">New bad reviews</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="large-2 columns">
+                      <button data-dropdown="listitem_actions_1" class="right"><i class="icon-reorder"></i><i class="icon-angle-down"></i></button>
+                      <ul id="listitem_actions_1" class="action-dropdown" data-dropdown-content="">
+                        <li> <a href="#">Submit for review</i></a> </li>
+                        <li> <a href="#">Pin to top</a> </li>
+                        <li> <a href="#">Hide this product</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div class="app-item clearfix">
+                  <a href="#product_505" class="list-item app-title title" data-section-title> <img src="product/getProductImage.do?id=505&amp;tableName=PRODUCT&amp;columnName=ICONID"/>
+                  <div>
+                    <h3> Asphalt 4 Elite Racing</h3>
+                    <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star-empty"></i>
+                  </div>
+                  <div class="app-accordion">
+                  </div>
+                  <div class="app-cr">
+                    <i data-tooltip data-options="disable-for-touch:true" title="No change requests are pending for this app." class="circleicon-checkmark-big" ></i>
+                  </div>
+                  </a>
+                </div>
+                <div class="content" data-slug="product_505" data-content-section>
+                  <div class="row">
+                    <div class="large-4 columns">
+                      <div class="row">
+                        <ul class="accordion-nav">
+                          <li> <a href="product/editProduct.do?productId=505"><i class="circleicon-base circleicon-details"></i> <span>Details</span></a> </li>
+                          <li><a href="product1_listings.html"><i class="circleicon-base circleicon-listings"></i> <span>Listing</span></a></li>
+                          <li><a href="product1_releases.html"><i class="circleicon-base circleicon-releases-spark"><i class="circleicon-overlay circleicon-spark"></i></i> <span>Releases</span></a></li>
+                          <li><a href="product1_inappprod.html"><i class="circleicon-base circleicon-releases"></i> <span>In-App Products</span></a></li>
+                          <li><a href="product1_reviews.html"><i class="circleicon-base circleicon-releases"></i> <span>Reviews</span></a></li>
+                          <li><a href="product1_stats.html"><i class="circleicon-base circleicon-reports"></i> <span>Stats</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="large-6 columns">
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-today">
+                            <p class="number">5</p>
+                            <p class="title">Downloads Today</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-total">
+                            <p class="number">40k</p>
+                            <p class="title">Downloads total</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-releases">
+                            <p class="number">1</p>
+                            <p class="title">Interesting stat</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-reviews">
+                            <p class="number">14</p>
+                            <p class="title">New bad reviews</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="large-2 columns">
+                      <button data-dropdown="listitem_actions_1" class="right"><i class="icon-reorder"></i><i class="icon-angle-down"></i></button>
+                      <ul id="listitem_actions_1" class="action-dropdown" data-dropdown-content="">
+                        <li> <a href="#">Submit for review</i></a> </li>
+                        <li> <a href="#">Pin to top</a> </li>
+                        <li> <a href="#">Hide this product</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div class="app-item clearfix">
+                  <a href="#product_60727" class="list-item app-title title" data-section-title> <img src="product/getProductImage.do?id=60727&amp;tableName=PRODUCT&amp;columnName=ICONID"/>
+                  <div>
+                    <h3> Asphalt 6: Adrenaline HD</h3>
+                    <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star-empty"></i>
+                  </div>
+                  <div class="app-accordion">
+                  </div>
+                  <div class="app-cr">
+                    <i data-tooltip data-options="disable-for-touch:true" title="No change requests are pending for this app." class="circleicon-checkmark-big" ></i>
+                  </div>
+                  </a>
+                </div>
+                <div class="content" data-slug="product_60727" data-content-section>
+                  <div class="row">
+                    <div class="large-4 columns">
+                      <div class="row">
+                        <ul class="accordion-nav">
+                          <li> <a href="product/editProduct.do?productId=60727"><i class="circleicon-base circleicon-details"></i> <span>Details</span></a> </li>
+                          <li><a href="product1_listings.html"><i class="circleicon-base circleicon-listings"></i> <span>Listing</span></a></li>
+                          <li><a href="product1_releases.html"><i class="circleicon-base circleicon-releases-spark"><i class="circleicon-overlay circleicon-spark"></i></i> <span>Releases</span></a></li>
+                          <li><a href="product1_inappprod.html"><i class="circleicon-base circleicon-releases"></i> <span>In-App Products</span></a></li>
+                          <li><a href="product1_reviews.html"><i class="circleicon-base circleicon-releases"></i> <span>Reviews</span></a></li>
+                          <li><a href="product1_stats.html"><i class="circleicon-base circleicon-reports"></i> <span>Stats</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="large-6 columns">
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-today">
+                            <p class="number">5</p>
+                            <p class="title">Downloads Today</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-total">
+                            <p class="number">40k</p>
+                            <p class="title">Downloads total</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-releases">
+                            <p class="number">1</p>
+                            <p class="title">Interesting stat</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-reviews">
+                            <p class="number">14</p>
+                            <p class="title">New bad reviews</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="large-2 columns">
+                      <button data-dropdown="listitem_actions_1" class="right"><i class="icon-reorder"></i><i class="icon-angle-down"></i></button>
+                      <ul id="listitem_actions_1" class="action-dropdown" data-dropdown-content="">
+                        <li> <a href="#">Submit for review</i></a> </li>
+                        <li> <a href="#">Pin to top</a> </li>
+                        <li> <a href="#">Hide this product</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div class="app-item clearfix">
+                  <a href="#product_616" class="list-item app-title title" data-section-title> <img src="product/getProductImage.do?id=616&amp;tableName=PRODUCT&amp;columnName=ICONID"/>
+                  <div>
+                    <h3> Assassin s Creed</h3>
+                    <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star-empty"></i>
+                  </div>
+                  <div class="app-accordion">
+                  </div>
+                  <div class="app-cr">
+                    <i data-tooltip data-options="disable-for-touch:true" title="No change requests are pending for this app." class="circleicon-checkmark-big" ></i>
+                  </div>
+                  </a>
+                </div>
+                <div class="content" data-slug="product_616" data-content-section>
+                  <div class="row">
+                    <div class="large-4 columns">
+                      <div class="row">
+                        <ul class="accordion-nav">
+                          <li> <a href="product/editProduct.do?productId=616"><i class="circleicon-base circleicon-details"></i> <span>Details</span></a> </li>
+                          <li><a href="product1_listings.html"><i class="circleicon-base circleicon-listings"></i> <span>Listing</span></a></li>
+                          <li><a href="product1_releases.html"><i class="circleicon-base circleicon-releases-spark"><i class="circleicon-overlay circleicon-spark"></i></i> <span>Releases</span></a></li>
+                          <li><a href="product1_inappprod.html"><i class="circleicon-base circleicon-releases"></i> <span>In-App Products</span></a></li>
+                          <li><a href="product1_reviews.html"><i class="circleicon-base circleicon-releases"></i> <span>Reviews</span></a></li>
+                          <li><a href="product1_stats.html"><i class="circleicon-base circleicon-reports"></i> <span>Stats</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="large-6 columns">
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-today">
+                            <p class="number">5</p>
+                            <p class="title">Downloads Today</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-total">
+                            <p class="number">40k</p>
+                            <p class="title">Downloads total</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-releases">
+                            <p class="number">1</p>
+                            <p class="title">Interesting stat</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-reviews">
+                            <p class="number">14</p>
+                            <p class="title">New bad reviews</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="large-2 columns">
+                      <button data-dropdown="listitem_actions_1" class="right"><i class="icon-reorder"></i><i class="icon-angle-down"></i></button>
+                      <ul id="listitem_actions_1" class="action-dropdown" data-dropdown-content="">
+                        <li> <a href="#">Submit for review</i></a> </li>
+                        <li> <a href="#">Pin to top</a> </li>
+                        <li> <a href="#">Hide this product</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div class="app-item clearfix">
+                  <a href="#product_26236" class="list-item app-title title" data-section-title> <img src="product/getProductImage.do?id=26236&amp;tableName=PRODUCT&amp;columnName=ICONID"/>
+                  <div>
+                    <h3> Assassin's Creed Brotherhood</h3>
+                    <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star-empty"></i>
+                  </div>
+                  <div class="app-accordion">
+                  </div>
+                  <div class="app-cr">
+                    <i data-tooltip data-options="disable-for-touch:true" title="No change requests are pending for this app." class="circleicon-checkmark-big" ></i>
+                  </div>
+                  </a>
+                </div>
+                <div class="content" data-slug="product_26236" data-content-section>
+                  <div class="row">
+                    <div class="large-4 columns">
+                      <div class="row">
+                        <ul class="accordion-nav">
+                          <li> <a href="product/editProduct.do?productId=26236"><i class="circleicon-base circleicon-details"></i> <span>Details</span></a> </li>
+                          <li><a href="product1_listings.html"><i class="circleicon-base circleicon-listings"></i> <span>Listing</span></a></li>
+                          <li><a href="product1_releases.html"><i class="circleicon-base circleicon-releases-spark"><i class="circleicon-overlay circleicon-spark"></i></i> <span>Releases</span></a></li>
+                          <li><a href="product1_inappprod.html"><i class="circleicon-base circleicon-releases"></i> <span>In-App Products</span></a></li>
+                          <li><a href="product1_reviews.html"><i class="circleicon-base circleicon-releases"></i> <span>Reviews</span></a></li>
+                          <li><a href="product1_stats.html"><i class="circleicon-base circleicon-reports"></i> <span>Stats</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="large-6 columns">
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-today">
+                            <p class="number">5</p>
+                            <p class="title">Downloads Today</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-total">
+                            <p class="number">40k</p>
+                            <p class="title">Downloads total</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-releases">
+                            <p class="number">1</p>
+                            <p class="title">Interesting stat</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-reviews">
+                            <p class="number">14</p>
+                            <p class="title">New bad reviews</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="large-2 columns">
+                      <button data-dropdown="listitem_actions_1" class="right"><i class="icon-reorder"></i><i class="icon-angle-down"></i></button>
+                      <ul id="listitem_actions_1" class="action-dropdown" data-dropdown-content="">
+                        <li> <a href="#">Submit for review</i></a> </li>
+                        <li> <a href="#">Pin to top</a> </li>
+                        <li> <a href="#">Hide this product</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div class="app-item clearfix">
+                  <a href="#product_64387" class="list-item app-title title" data-section-title> <img src="product/getProductImage.do?id=64387&amp;tableName=PRODUCT&amp;columnName=ICONID"/>
+                  <div>
+                    <h3> Assassin's Creed Revelations</h3>
+                    <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star-empty"></i>
+                  </div>
+                  <div class="app-accordion">
+                  </div>
+                  <div class="app-cr">
+                    <i data-tooltip data-options="disable-for-touch:true" title="No change requests are pending for this app." class="circleicon-checkmark-big" ></i>
+                  </div>
+                  </a>
+                </div>
+                <div class="content" data-slug="product_64387" data-content-section>
+                  <div class="row">
+                    <div class="large-4 columns">
+                      <div class="row">
+                        <ul class="accordion-nav">
+                          <li> <a href="product/editProduct.do?productId=64387"><i class="circleicon-base circleicon-details"></i> <span>Details</span></a> </li>
+                          <li><a href="product1_listings.html"><i class="circleicon-base circleicon-listings"></i> <span>Listing</span></a></li>
+                          <li><a href="product1_releases.html"><i class="circleicon-base circleicon-releases-spark"><i class="circleicon-overlay circleicon-spark"></i></i> <span>Releases</span></a></li>
+                          <li><a href="product1_inappprod.html"><i class="circleicon-base circleicon-releases"></i> <span>In-App Products</span></a></li>
+                          <li><a href="product1_reviews.html"><i class="circleicon-base circleicon-releases"></i> <span>Reviews</span></a></li>
+                          <li><a href="product1_stats.html"><i class="circleicon-base circleicon-reports"></i> <span>Stats</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="large-6 columns">
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-today">
+                            <p class="number">5</p>
+                            <p class="title">Downloads Today</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-total">
+                            <p class="number">40k</p>
+                            <p class="title">Downloads total</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-releases">
+                            <p class="number">1</p>
+                            <p class="title">Interesting stat</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-reviews">
+                            <p class="number">14</p>
+                            <p class="title">New bad reviews</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="large-2 columns">
+                      <button data-dropdown="listitem_actions_1" class="right"><i class="icon-reorder"></i><i class="icon-angle-down"></i></button>
+                      <ul id="listitem_actions_1" class="action-dropdown" data-dropdown-content="">
+                        <li> <a href="#">Submit for review</i></a> </li>
+                        <li> <a href="#">Pin to top</a> </li>
+                        <li> <a href="#">Hide this product</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div class="app-item clearfix">
+                  <a href="#product_3956" class="list-item app-title title" data-section-title> <img src="product/getProductImage.do?id=3956&amp;tableName=PRODUCT&amp;columnName=ICONID"/>
+                  <div>
+                    <h3> Assassins Creed II</h3>
+                    <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star-empty"></i>
+                  </div>
+                  <div class="app-accordion">
+                  </div>
+                  <div class="app-cr">
+                    <i data-tooltip data-options="disable-for-touch:true" title="No change requests are pending for this app." class="circleicon-checkmark-big" ></i>
+                  </div>
+                  </a>
+                </div>
+                <div class="content" data-slug="product_3956" data-content-section>
+                  <div class="row">
+                    <div class="large-4 columns">
+                      <div class="row">
+                        <ul class="accordion-nav">
+                          <li> <a href="product/editProduct.do?productId=3956"><i class="circleicon-base circleicon-details"></i> <span>Details</span></a> </li>
+                          <li><a href="product1_listings.html"><i class="circleicon-base circleicon-listings"></i> <span>Listing</span></a></li>
+                          <li><a href="product1_releases.html"><i class="circleicon-base circleicon-releases-spark"><i class="circleicon-overlay circleicon-spark"></i></i> <span>Releases</span></a></li>
+                          <li><a href="product1_inappprod.html"><i class="circleicon-base circleicon-releases"></i> <span>In-App Products</span></a></li>
+                          <li><a href="product1_reviews.html"><i class="circleicon-base circleicon-releases"></i> <span>Reviews</span></a></li>
+                          <li><a href="product1_stats.html"><i class="circleicon-base circleicon-reports"></i> <span>Stats</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="large-6 columns">
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-today">
+                            <p class="number">5</p>
+                            <p class="title">Downloads Today</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-total">
+                            <p class="number">40k</p>
+                            <p class="title">Downloads total</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-releases">
+                            <p class="number">1</p>
+                            <p class="title">Interesting stat</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-reviews">
+                            <p class="number">14</p>
+                            <p class="title">New bad reviews</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="large-2 columns">
+                      <button data-dropdown="listitem_actions_1" class="right"><i class="icon-reorder"></i><i class="icon-angle-down"></i></button>
+                      <ul id="listitem_actions_1" class="action-dropdown" data-dropdown-content="">
+                        <li> <a href="#">Submit for review</i></a> </li>
+                        <li> <a href="#">Pin to top</a> </li>
+                        <li> <a href="#">Hide this product</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div class="app-item clearfix">
+                  <a href="#product_4188" class="list-item app-title title" data-section-title> <img src="product/getProductImage.do?id=4188&amp;tableName=PRODUCT&amp;columnName=ICONID"/>
+                  <div>
+                    <h3> Asterix and Obelix encounter ...</h3>
+                    <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star-empty"></i>
+                  </div>
+                  <div class="app-accordion">
+                  </div>
+                  <div class="app-cr">
+                    <i data-tooltip data-options="disable-for-touch:true" title="No change requests are pending for this app." class="circleicon-checkmark-big" ></i>
+                  </div>
+                  </a>
+                </div>
+                <div class="content" data-slug="product_4188" data-content-section>
+                  <div class="row">
+                    <div class="large-4 columns">
+                      <div class="row">
+                        <ul class="accordion-nav">
+                          <li> <a href="product/editProduct.do?productId=4188"><i class="circleicon-base circleicon-details"></i> <span>Details</span></a> </li>
+                          <li><a href="product1_listings.html"><i class="circleicon-base circleicon-listings"></i> <span>Listing</span></a></li>
+                          <li><a href="product1_releases.html"><i class="circleicon-base circleicon-releases-spark"><i class="circleicon-overlay circleicon-spark"></i></i> <span>Releases</span></a></li>
+                          <li><a href="product1_inappprod.html"><i class="circleicon-base circleicon-releases"></i> <span>In-App Products</span></a></li>
+                          <li><a href="product1_reviews.html"><i class="circleicon-base circleicon-releases"></i> <span>Reviews</span></a></li>
+                          <li><a href="product1_stats.html"><i class="circleicon-base circleicon-reports"></i> <span>Stats</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="large-6 columns">
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-today">
+                            <p class="number">5</p>
+                            <p class="title">Downloads Today</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-total">
+                            <p class="number">40k</p>
+                            <p class="title">Downloads total</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-releases">
+                            <p class="number">1</p>
+                            <p class="title">Interesting stat</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-reviews">
+                            <p class="number">14</p>
+                            <p class="title">New bad reviews</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="large-2 columns">
+                      <button data-dropdown="listitem_actions_1" class="right"><i class="icon-reorder"></i><i class="icon-angle-down"></i></button>
+                      <ul id="listitem_actions_1" class="action-dropdown" data-dropdown-content="">
+                        <li> <a href="#">Submit for review</i></a> </li>
+                        <li> <a href="#">Pin to top</a> </li>
+                        <li> <a href="#">Hide this product</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div class="app-item clearfix">
+                  <a href="#product_6048" class="list-item app-title title" data-section-title> <img src="product/getProductImage.do?id=6048&amp;tableName=PRODUCT&amp;columnName=ICONID"/>
+                  <div>
+                    <h3> Avalanche Snowboarding</h3>
+                    <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star-empty"></i>
+                  </div>
+                  <div class="app-accordion">
+                  </div>
+                  <div class="app-cr">
+                    <i data-tooltip data-options="disable-for-touch:true" title="No change requests are pending for this app." class="circleicon-checkmark-big" ></i>
+                  </div>
+                  </a>
+                </div>
+                <div class="content" data-slug="product_6048" data-content-section>
+                  <div class="row">
+                    <div class="large-4 columns">
+                      <div class="row">
+                        <ul class="accordion-nav">
+                          <li> <a href="product/editProduct.do?productId=6048"><i class="circleicon-base circleicon-details"></i> <span>Details</span></a> </li>
+                          <li><a href="product1_listings.html"><i class="circleicon-base circleicon-listings"></i> <span>Listing</span></a></li>
+                          <li><a href="product1_releases.html"><i class="circleicon-base circleicon-releases-spark"><i class="circleicon-overlay circleicon-spark"></i></i> <span>Releases</span></a></li>
+                          <li><a href="product1_inappprod.html"><i class="circleicon-base circleicon-releases"></i> <span>In-App Products</span></a></li>
+                          <li><a href="product1_reviews.html"><i class="circleicon-base circleicon-releases"></i> <span>Reviews</span></a></li>
+                          <li><a href="product1_stats.html"><i class="circleicon-base circleicon-reports"></i> <span>Stats</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="large-6 columns">
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-today">
+                            <p class="number">5</p>
+                            <p class="title">Downloads Today</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-total">
+                            <p class="number">40k</p>
+                            <p class="title">Downloads total</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-releases">
+                            <p class="number">1</p>
+                            <p class="title">Interesting stat</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-reviews">
+                            <p class="number">14</p>
+                            <p class="title">New bad reviews</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="large-2 columns">
+                      <button data-dropdown="listitem_actions_1" class="right"><i class="icon-reorder"></i><i class="icon-angle-down"></i></button>
+                      <ul id="listitem_actions_1" class="action-dropdown" data-dropdown-content="">
+                        <li> <a href="#">Submit for review</i></a> </li>
+                        <li> <a href="#">Pin to top</a> </li>
+                        <li> <a href="#">Hide this product</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div class="app-item clearfix">
+                  <a href="#product_625" class="list-item app-title title" data-section-title> <img src="product/getProductImage.do?id=625&amp;tableName=PRODUCT&amp;columnName=ICONID"/>
+                  <div>
+                    <h3> Battle for the White House</h3>
+                    <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star-empty"></i>
+                  </div>
+                  <div class="app-accordion">
+                  </div>
+                  <div class="app-cr">
+                    <i data-tooltip data-options="disable-for-touch:true" title="No change requests are pending for this app." class="circleicon-checkmark-big" ></i>
+                  </div>
+                  </a>
+                </div>
+                <div class="content" data-slug="product_625" data-content-section>
+                  <div class="row">
+                    <div class="large-4 columns">
+                      <div class="row">
+                        <ul class="accordion-nav">
+                          <li> <a href="product/editProduct.do?productId=625"><i class="circleicon-base circleicon-details"></i> <span>Details</span></a> </li>
+                          <li><a href="product1_listings.html"><i class="circleicon-base circleicon-listings"></i> <span>Listing</span></a></li>
+                          <li><a href="product1_releases.html"><i class="circleicon-base circleicon-releases-spark"><i class="circleicon-overlay circleicon-spark"></i></i> <span>Releases</span></a></li>
+                          <li><a href="product1_inappprod.html"><i class="circleicon-base circleicon-releases"></i> <span>In-App Products</span></a></li>
+                          <li><a href="product1_reviews.html"><i class="circleicon-base circleicon-releases"></i> <span>Reviews</span></a></li>
+                          <li><a href="product1_stats.html"><i class="circleicon-base circleicon-reports"></i> <span>Stats</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="large-6 columns">
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-today">
+                            <p class="number">5</p>
+                            <p class="title">Downloads Today</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-downloads-total">
+                            <p class="number">40k</p>
+                            <p class="title">Downloads total</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-releases">
+                            <p class="number">1</p>
+                            <p class="title">Interesting stat</p>
+                          </div>
+                        </div>
+                        <div class="large-6 columns stats-block">
+                          <div class="app-stats app-reviews">
+                            <p class="number">14</p>
+                            <p class="title">New bad reviews</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="large-2 columns">
+                      <button data-dropdown="listitem_actions_1" class="right"><i class="icon-reorder"></i><i class="icon-angle-down"></i></button>
+                      <ul id="listitem_actions_1" class="action-dropdown" data-dropdown-content="">
+                        <li> <a href="#">Submit for review</i></a> </li>
+                        <li> <a href="#">Pin to top</a> </li>
+                        <li> <a href="#">Hide this product</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <img alt="" class="rich-spacer" height="10" src="images/spacer.gif" width="1" />
+            
+            <div align="center" class="pagination">
+              <!--  Pagination calculation -->
+              
+              <div id="loadingBar_productHomeSrchFrm_productListingDiv_0" style="display:none"  align="center">
+                <img  alt="loading..." src="images/loading-bar.gif" height="10px" >
+              </div>
+              <div class="records">
+                Record(s) 
+                1 -
+                
+                
+                15
+                
+                of 
+                249
+              </div>
+              <table border="1" cellpadding="0" cellspacing="1" class="dr-dscr-t">
+                <tbody>
+                  <tr> 
+                    <!-- First Page Button START -->
+                    
+                    <td class="dr-dscr-button dr-dscr-button-dsbld ">First</td>
+                    <!-- First Page  Disabled--> 
+                    
+                    <!-- First Page Button End --> 
+                    
+                    <!-- Previous Pages Set Button START -->
+                    
+                    <td class="dr-dscr-button dr-dscr-button-dsbld">&#171;&#171;</td>
+                    <!-- To Prev Page Set  Disabled--> 
+                    
+                    <!-- Previous Pages Set Button END --> 
+                    
+                    <!-- Previous Page Button START -->
+                    
+                    <td class="dr-dscr-button dr-dscr-button-dsbld">&#171;</td>
+                    <!-- Prev Page Disabled --> 
+                    
+                    <!-- Previous Page Button END --> 
+                    
+                    <!-- Page Numbers START -->
+                    
+                    <td class="dr-dscr-act rich-datascr-act ">1 </td>
+                    <td class="dr-dscr-inact"><a id="page_productHomeSrchFrm_0_2" style="display:block;text-decoration:none" title="2" onclick="_scrollPage(15,249,'productHomeSrchFrm');return true;"> 2 </a> 
+                      <script type='text/javascript'>
+jQuery(document).ready(function () { 
+	var options_page_productHomeSrchFrm_0_2 = {};
+	options_page_productHomeSrchFrm_0_2.jqueryaction = "anchor";
+	options_page_productHomeSrchFrm_0_2.id = "page_productHomeSrchFrm_0_2";
+	options_page_productHomeSrchFrm_0_2.targets = "productListingDiv";
+	options_page_productHomeSrchFrm_0_2.href = "#";
+	options_page_productHomeSrchFrm_0_2.formids = "productHomeSrchFrm";
+	options_page_productHomeSrchFrm_0_2.indicatorid = "loadingBar_productHomeSrchFrm_productListingDiv_0";
+
+jQuery.struts2_jquery.bind(jQuery('#page_productHomeSrchFrm_0_2'),options_page_productHomeSrchFrm_0_2);
+
+ });  
+</script></td>
+                    <td class="dr-dscr-inact"><a id="page_productHomeSrchFrm_0_3" style="display:block;text-decoration:none" title="3" onclick="_scrollPage(30,249,'productHomeSrchFrm');return true;"> 3 </a> 
+                      <script type='text/javascript'>
+jQuery(document).ready(function () { 
+	var options_page_productHomeSrchFrm_0_3 = {};
+	options_page_productHomeSrchFrm_0_3.jqueryaction = "anchor";
+	options_page_productHomeSrchFrm_0_3.id = "page_productHomeSrchFrm_0_3";
+	options_page_productHomeSrchFrm_0_3.targets = "productListingDiv";
+	options_page_productHomeSrchFrm_0_3.href = "#";
+	options_page_productHomeSrchFrm_0_3.formids = "productHomeSrchFrm";
+	options_page_productHomeSrchFrm_0_3.indicatorid = "loadingBar_productHomeSrchFrm_productListingDiv_0";
+
+jQuery.struts2_jquery.bind(jQuery('#page_productHomeSrchFrm_0_3'),options_page_productHomeSrchFrm_0_3);
+
+ });  
+</script></td>
+                    <td class="dr-dscr-inact"><a id="page_productHomeSrchFrm_0_4" style="display:block;text-decoration:none" title="4" onclick="_scrollPage(45,249,'productHomeSrchFrm');return true;"> 4 </a> 
+                      <script type='text/javascript'>
+jQuery(document).ready(function () { 
+	var options_page_productHomeSrchFrm_0_4 = {};
+	options_page_productHomeSrchFrm_0_4.jqueryaction = "anchor";
+	options_page_productHomeSrchFrm_0_4.id = "page_productHomeSrchFrm_0_4";
+	options_page_productHomeSrchFrm_0_4.targets = "productListingDiv";
+	options_page_productHomeSrchFrm_0_4.href = "#";
+	options_page_productHomeSrchFrm_0_4.formids = "productHomeSrchFrm";
+	options_page_productHomeSrchFrm_0_4.indicatorid = "loadingBar_productHomeSrchFrm_productListingDiv_0";
+
+jQuery.struts2_jquery.bind(jQuery('#page_productHomeSrchFrm_0_4'),options_page_productHomeSrchFrm_0_4);
+
+ });  
+</script></td>
+                    <td class="dr-dscr-inact"><a id="page_productHomeSrchFrm_0_5" style="display:block;text-decoration:none" title="5" onclick="_scrollPage(60,249,'productHomeSrchFrm');return true;"> 5 </a> 
+                      <script type='text/javascript'>
+jQuery(document).ready(function () { 
+	var options_page_productHomeSrchFrm_0_5 = {};
+	options_page_productHomeSrchFrm_0_5.jqueryaction = "anchor";
+	options_page_productHomeSrchFrm_0_5.id = "page_productHomeSrchFrm_0_5";
+	options_page_productHomeSrchFrm_0_5.targets = "productListingDiv";
+	options_page_productHomeSrchFrm_0_5.href = "#";
+	options_page_productHomeSrchFrm_0_5.formids = "productHomeSrchFrm";
+	options_page_productHomeSrchFrm_0_5.indicatorid = "loadingBar_productHomeSrchFrm_productListingDiv_0";
+
+jQuery.struts2_jquery.bind(jQuery('#page_productHomeSrchFrm_0_5'),options_page_productHomeSrchFrm_0_5);
+
+ });  
+</script></td>
+                    <td class="dr-dscr-inact"><a id="page_productHomeSrchFrm_0_6" style="display:block;text-decoration:none" title="6" onclick="_scrollPage(75,249,'productHomeSrchFrm');return true;"> 6 </a> 
+                      <script type='text/javascript'>
+jQuery(document).ready(function () { 
+	var options_page_productHomeSrchFrm_0_6 = {};
+	options_page_productHomeSrchFrm_0_6.jqueryaction = "anchor";
+	options_page_productHomeSrchFrm_0_6.id = "page_productHomeSrchFrm_0_6";
+	options_page_productHomeSrchFrm_0_6.targets = "productListingDiv";
+	options_page_productHomeSrchFrm_0_6.href = "#";
+	options_page_productHomeSrchFrm_0_6.formids = "productHomeSrchFrm";
+	options_page_productHomeSrchFrm_0_6.indicatorid = "loadingBar_productHomeSrchFrm_productListingDiv_0";
+
+jQuery.struts2_jquery.bind(jQuery('#page_productHomeSrchFrm_0_6'),options_page_productHomeSrchFrm_0_6);
+
+ });  
+</script></td>
+                    <td class="dr-dscr-inact"><a id="page_productHomeSrchFrm_0_7" style="display:block;text-decoration:none" title="7" onclick="_scrollPage(90,249,'productHomeSrchFrm');return true;"> 7 </a> 
+                      <script type='text/javascript'>
+jQuery(document).ready(function () { 
+	var options_page_productHomeSrchFrm_0_7 = {};
+	options_page_productHomeSrchFrm_0_7.jqueryaction = "anchor";
+	options_page_productHomeSrchFrm_0_7.id = "page_productHomeSrchFrm_0_7";
+	options_page_productHomeSrchFrm_0_7.targets = "productListingDiv";
+	options_page_productHomeSrchFrm_0_7.href = "#";
+	options_page_productHomeSrchFrm_0_7.formids = "productHomeSrchFrm";
+	options_page_productHomeSrchFrm_0_7.indicatorid = "loadingBar_productHomeSrchFrm_productListingDiv_0";
+
+jQuery.struts2_jquery.bind(jQuery('#page_productHomeSrchFrm_0_7'),options_page_productHomeSrchFrm_0_7);
+
+ });  
+</script></td>
+                    <td class="dr-dscr-inact"><a id="page_productHomeSrchFrm_0_8" style="display:block;text-decoration:none" title="8" onclick="_scrollPage(105,249,'productHomeSrchFrm');return true;"> 8 </a> 
+                      <script type='text/javascript'>
+jQuery(document).ready(function () { 
+	var options_page_productHomeSrchFrm_0_8 = {};
+	options_page_productHomeSrchFrm_0_8.jqueryaction = "anchor";
+	options_page_productHomeSrchFrm_0_8.id = "page_productHomeSrchFrm_0_8";
+	options_page_productHomeSrchFrm_0_8.targets = "productListingDiv";
+	options_page_productHomeSrchFrm_0_8.href = "#";
+	options_page_productHomeSrchFrm_0_8.formids = "productHomeSrchFrm";
+	options_page_productHomeSrchFrm_0_8.indicatorid = "loadingBar_productHomeSrchFrm_productListingDiv_0";
+
+jQuery.struts2_jquery.bind(jQuery('#page_productHomeSrchFrm_0_8'),options_page_productHomeSrchFrm_0_8);
+
+ });  
+</script></td>
+                    <td class="dr-dscr-inact"><a id="page_productHomeSrchFrm_0_9" style="display:block;text-decoration:none" title="9" onclick="_scrollPage(120,249,'productHomeSrchFrm');return true;"> 9 </a> 
+                      <script type='text/javascript'>
+jQuery(document).ready(function () { 
+	var options_page_productHomeSrchFrm_0_9 = {};
+	options_page_productHomeSrchFrm_0_9.jqueryaction = "anchor";
+	options_page_productHomeSrchFrm_0_9.id = "page_productHomeSrchFrm_0_9";
+	options_page_productHomeSrchFrm_0_9.targets = "productListingDiv";
+	options_page_productHomeSrchFrm_0_9.href = "#";
+	options_page_productHomeSrchFrm_0_9.formids = "productHomeSrchFrm";
+	options_page_productHomeSrchFrm_0_9.indicatorid = "loadingBar_productHomeSrchFrm_productListingDiv_0";
+
+jQuery.struts2_jquery.bind(jQuery('#page_productHomeSrchFrm_0_9'),options_page_productHomeSrchFrm_0_9);
+
+ });  
+</script></td>
+                    <td class="dr-dscr-inact"><a id="page_productHomeSrchFrm_0_10" style="display:block;text-decoration:none" title="10" onclick="_scrollPage(135,249,'productHomeSrchFrm');return true;"> 10 </a> 
+                      <script type='text/javascript'>
+jQuery(document).ready(function () { 
+	var options_page_productHomeSrchFrm_0_10 = {};
+	options_page_productHomeSrchFrm_0_10.jqueryaction = "anchor";
+	options_page_productHomeSrchFrm_0_10.id = "page_productHomeSrchFrm_0_10";
+	options_page_productHomeSrchFrm_0_10.targets = "productListingDiv";
+	options_page_productHomeSrchFrm_0_10.href = "#";
+	options_page_productHomeSrchFrm_0_10.formids = "productHomeSrchFrm";
+	options_page_productHomeSrchFrm_0_10.indicatorid = "loadingBar_productHomeSrchFrm_productListingDiv_0";
+
+jQuery.struts2_jquery.bind(jQuery('#page_productHomeSrchFrm_0_10'),options_page_productHomeSrchFrm_0_10);
+
+ });  
+</script></td>
+                    
+                    <!-- Page Numbers END --> 
+                    
+                    <!-- Next Page Button START -->
+                    
+                    <td class="dr-dscr-button rich-datascr-button"><a id="page_next_productHomeSrchFrm_0" style="display:block;text-decoration:none" title="Next Page" onclick="_scrollPage(15,249,'productHomeSrchFrm');return true;"> &#187; </a> 
+                      <script type='text/javascript'>
+jQuery(document).ready(function () { 
+	var options_page_next_productHomeSrchFrm_0 = {};
+	options_page_next_productHomeSrchFrm_0.jqueryaction = "anchor";
+	options_page_next_productHomeSrchFrm_0.id = "page_next_productHomeSrchFrm_0";
+	options_page_next_productHomeSrchFrm_0.targets = "productListingDiv";
+	options_page_next_productHomeSrchFrm_0.href = "#";
+	options_page_next_productHomeSrchFrm_0.formids = "productHomeSrchFrm";
+	options_page_next_productHomeSrchFrm_0.indicatorid = "loadingBar_productHomeSrchFrm_productListingDiv_0";
+
+jQuery.struts2_jquery.bind(jQuery('#page_next_productHomeSrchFrm_0'),options_page_next_productHomeSrchFrm_0);
+
+ });  
+</script></td>
+                    
+                    <!-- Next Page Button END --> 
+                    
+                    <!-- Next PageSet Button START -->
+                    
+                    <td class="dr-dscr-button "><a id="page_fastForward_productHomeSrchFrm_0" style="display:block;text-decoration:none" title="Next Page Set" onclick="_scrollPage(150,249,'productHomeSrchFrm');return true;"> &#187;&#187; </a> 
+                      <script type='text/javascript'>
+jQuery(document).ready(function () { 
+	var options_page_fastForward_productHomeSrchFrm_0 = {};
+	options_page_fastForward_productHomeSrchFrm_0.jqueryaction = "anchor";
+	options_page_fastForward_productHomeSrchFrm_0.id = "page_fastForward_productHomeSrchFrm_0";
+	options_page_fastForward_productHomeSrchFrm_0.targets = "productListingDiv";
+	options_page_fastForward_productHomeSrchFrm_0.href = "#";
+	options_page_fastForward_productHomeSrchFrm_0.formids = "productHomeSrchFrm";
+	options_page_fastForward_productHomeSrchFrm_0.indicatorid = "loadingBar_productHomeSrchFrm_productListingDiv_0";
+
+jQuery.struts2_jquery.bind(jQuery('#page_fastForward_productHomeSrchFrm_0'),options_page_fastForward_productHomeSrchFrm_0);
+
+ });  
+</script></td>
+                    
+                    <!-- Next PageSet Button END --> 
+                    
+                    <!-- Last Page Button START -->
+                    
+                    <td class="dr-dscr-button "><a id="page_last_productHomeSrchFrm_0" style="display:block;text-decoration:none" title="Last Page" onclick="_scrollPage(240.0,249,'productHomeSrchFrm');return true;"> Last </a> 
+                      <script type='text/javascript'>
+jQuery(document).ready(function () { 
+	var options_page_last_productHomeSrchFrm_0 = {};
+	options_page_last_productHomeSrchFrm_0.jqueryaction = "anchor";
+	options_page_last_productHomeSrchFrm_0.id = "page_last_productHomeSrchFrm_0";
+	options_page_last_productHomeSrchFrm_0.targets = "productListingDiv";
+	options_page_last_productHomeSrchFrm_0.href = "#";
+	options_page_last_productHomeSrchFrm_0.formids = "productHomeSrchFrm";
+	options_page_last_productHomeSrchFrm_0.indicatorid = "loadingBar_productHomeSrchFrm_productListingDiv_0";
+
+jQuery.struts2_jquery.bind(jQuery('#page_last_productHomeSrchFrm_0'),options_page_last_productHomeSrchFrm_0);
+
+ });  
+</script></td>
+                    
+                    <!-- Last Page Button END --> 
+                    
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <script type='text/javascript'>
+jQuery(document).ready(function () { 
+	var options_productListingDiv = {};
+	options_productListingDiv.jqueryaction = "container";
+	options_productListingDiv.id = "productListingDiv";
+	options_productListingDiv.href = "product/filterProducts.do";
+	options_productListingDiv.formids = "_productHomeSrchFrm";
+	options_productListingDiv.listentopics = "certificationComplete";
+	options_productListingDiv.deferredloading = true;
+  
+
+jQuery.struts2_jquery.bind(jQuery('#productListingDiv'),options_productListingDiv);
+
+ });  
+</script> 
+          
+          <!-- Add Release Pop up -->
+          
+          <div id="addReleaseDialog"
+ style="display:none">
+            <form id="addReleaseFrm" name="addReleaseFrm">
+              <h2 class="marginBottom-Ten">Select any changes that apply to this release</h2>
+              Legal disclosures from release <span id="_lastRelease"></span> will be maintained for this new release provided there have been no changes regarding each respective disclosure. Check any items that have changed in this release as you will need to re-enter them for this release.
+              <table class="marginTop-Ten">
+                <tbody>
+                  <tr>
+                    <td><input id="exportControl" type="checkbox" name="exportControl" /></td>
+                    <td><label>Export Control</label></td>
+                  </tr>
+                  <tr>
+                    <td><input id="digitalRights" type="checkbox" name="digitalRights" /></td>
+                    <td><label>Digital Rights</label></td>
+                  </tr>
+                  <tr>
+                    <td><input id="userGenerated" type="checkbox" name="userGenerated" /></td>
+                    <td><label>User Generated Content Safeguards</label></td>
+                  </tr>
+                </tbody>
+              </table>
+              <input type="hidden" name="addOnRelease" value="true" />
+              <input type="hidden" name="productId" value="" id="_productId"/>
+            </form>
+          </div>
+          <script type='text/javascript'>
+jQuery(document).ready(function () { 
+	var options_addReleaseDialog = {};
+	options_addReleaseDialog.height = 300;
+	options_addReleaseDialog.width = 420;
+	options_addReleaseDialog.buttons = { 
+	   		'Continue':function() { okButton(); },
+    		'Cancel':function() { cancelButton(); } 
+    		};
+	options_addReleaseDialog.autoOpen = false;
+	options_addReleaseDialog.modal = true;
+	options_addReleaseDialog.jqueryaction = "dialog";
+	options_addReleaseDialog.id = "addReleaseDialog";
+	options_addReleaseDialog.href = "#";
+
+jQuery.struts2_jquery_ui.bind(jQuery('#addReleaseDialog'),options_addReleaseDialog);
+
+ });  
+</script>
+          <div id="contentCertificationDialog"
+ style="dr-mpnl-header rich-mpnl-header-cell">
+          </div>
+          <script type='text/javascript'>
+jQuery(document).ready(function () { 
+	var options_contentCertificationDialog = {};
+	options_contentCertificationDialog.height = 320;
+	options_contentCertificationDialog.width = 420;
+	options_contentCertificationDialog.title = "Built for BlacKBerry Testing";
+	options_contentCertificationDialog.draggable = false;
+	options_contentCertificationDialog.resizable = false;
+	options_contentCertificationDialog.autoOpen = false;
+	options_contentCertificationDialog.closeOnEscape = true;
+	options_contentCertificationDialog.modal = true;
+	options_contentCertificationDialog.onopentopics = "refreshcontentCertificationDialog";
+	options_contentCertificationDialog.jqueryaction = "dialog";
+	options_contentCertificationDialog.id = "contentCertificationDialog";
+	options_contentCertificationDialog.href = "#";
+
+jQuery.struts2_jquery_ui.bind(jQuery('#contentCertificationDialog'),options_contentCertificationDialog);
+
+ });  
+</script> 
+          <script type="text/javascript">
+	$.subscribe('refreshcontentCertificationDialog', function(event,ui) {
+    	document.getElementById('contentCertificationDialog').innerHTML="<p align=\"center\"><img  alt=\"loading...\" src=\"images/loading-bar.gif\" height=\"10px\" ></p>";
+	});
+	function okButton(){
+       var ec= document.getElementById('exportControl').checked;
+       var dr= document.getElementById('digitalRights').checked;
+       var usg= document.getElementById('userGenerated').checked;
+       var actionUrl='addRelease.do?ec='+ec+'&dr='+dr+'&usg='+usg;
+       $('#addReleaseDialog').dialog('close');
+       //document.addReleaseFrm.action=actionUrl;
+       var formElement = document.getElementById("addReleaseFrm");
+	   formElement.action = actionUrl;
+
+       formElement.submit();
+       //document.addReleaseFrm.submit();
+     };
+	function cancelButton(){
+      $('#addReleaseDialog').dialog('close');
+     };
+     
+    // Once user clicks on Dismiss. Save the decision in session so they dont see the announcement box again for that session.
+    function dismissAnnouncementSaveInSession() {
+
+		$.ajax({
+			  type: 'POST',
+			  url: '/isvportal/product/ajaxDismissAnnouncementSaveInSession.do',
+			  cache: false,
+			  dataType: "html" //optional
+			});
+
+	}
+</script> 
+          <!-- End of Add Release popup --> 
+          
+          <!-- Omniture Code Integration -->
+          <div id="d_omniture_code" style="display:none;">
+          </div>
+          <!-- End of Omniture Code Integration -->
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ISVP REdesign UX starts here  -->
+  <footer id="footer" class="footer">
+  <div class="inner_footer">
+    <div class="row">
+      <div class="columns grid_footer technologies">
+        <h2 class="h5">Technologies</h2>
+        <ul>
+          <li><a href="http://developer.blackberry.com/native/">Native</a></li>
+          <li><a href="http://developer.blackberry.com/html5/">HTML5</a></li>
+          <li><a href="http://developer.blackberry.com/air/">AIR</a></li>
+          <li><a href="http://developer.blackberry.com/android/">Android</a></li>
+          <li><a href="http://developer.blackberry.com/playbook/">PlayBook</a></li>
+          <li><a href="http://developer.blackberry.com/bbos/">BlackBerry OS</a></li>
+          <li><a href="http://developer.blackberry.com/develop/platform_partners/">Platform Partners</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer programs">
+        <h2 class="h5">Programs</h2>
+        <ul>
+          <li><a href="https://www.blackberry.com/beta/" target="_blank">Beta Zone</a></li>
+          <li><a href="https://partners.blackberry.com/web/guest/home/" target="_blank">Alliance programs</a></li>
+          <li><a href="http://us.blackberry.com/ataglance/academic/" target="_blank">Academic programs</a></li>
+          <li><a href="https://developer.blackberry.com/jamcommunity/groups/">Developer groups</a></li>
+          <li><a href="https://developer.blackberry.com/blackberry10devalpha/">BlackBerry 10 Dev Alpha</a></li>
+          <li><a href="https://developer.blackberry.com/builtforblackberry/">Built for BlackBerry</a></li>
+          <li><a href="http://developer.blackberry.com/blackberrybuilder/">BlackBerry Builder</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer support">
+        <h2 class="h5">Support</h2>
+        <ul>
+          <li><a href="https://bdsc.webapps.blackberry.com/CodeSigningHelp/" target="_blank">Code Signing Help</a></li>
+          <li><a href="http://www.youtube.com/blackberrydev/" target="_blank">YouTube Channel</a></li>
+          <li><a href="http://supportforums.blackberry.com/t5/Developer-Support-Forums/ct-p/blackberrydev" target="_blank">Developer forums</a></li>
+          <li><a href="https://www.blackberry.com/jira/secure/Dashboard.jspa" target="_blank">Developer Issue Tracker</a></li>
+          <li><a href="http://supportforums.blackberry.com/t5/Application-Platforms/tkbc-p/app_plat" target="_blank">Knowledge Base</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer app_store">
+        <h2 class="h5">BlackBerry World</h2>
+        <ul>
+          <li><a href="https://www.blackberry.com/SignedKeys/codesigning.html" target="_blank">Sign your app</a></li>
+          <li><a href="http://developer.blackberry.com/blackberryworld/">Submitting your app</a></li>
+        </ul>
+      </div>
+      <div class="columns grid_footer_last social">
+        <h2 class="h5">Follow us on:</h2>
+        <ul class="inline-list">
+          <li><a href="http://www.facebook.com/BlackBerryDeveloperCommunity" title="Follow us on Facebook" class="icon-20 facebook" target="_blank"><span class="hide">Facebook</span></a></li>
+          <li><a href="http://www.youtube.com/blackberrydev/" title="Catch us on YouTube" class="icon-20 youtube" target="_blank"><span class="hide">YouTube</span></a></li>
+          <li><a href="http://twitter.com/blackberrydev" title="Hear the BlackBerry tweet" class="icon-20 twitter" target="_blank"><span class="hide">Twitter</span></a></li>
+          <li><a href="http://devblog.blackberry.com/" title="Developer Blogs" class="icon-20 blackberry" target="_blank"><span class="hide">BlackBerry Blogs</span></a></li>
+          <li><a href="#bbmchannelcode" title="BBM Channels" class="icon-20 channels lightboxtrigger"><span class="hide">BBM Channels</span></a></li>
+        </ul>
+        <div style='display:none'>
+          <div id='bbmchannelcode' class="lightbox">
+            <div class="lightbox-desc" style="width:400px;"> <img src="webroot/img/common/channelonwhite.png" alt="BBM Channels" /> </div>
+            <div class="lightbox-desc" style="width:370px;">
+              <div class="lightbox-text" style="margin: 40px 100px 0px 0px;">
+                <h1 style="margin-left:0px;">BBM Channels</h1>
+                <p>Developer Relations is on BBM Channels! Join the conversation by <a href="https://beta.webapps.blackberry.com/BBMChannels/" target="_blank">signing up for the beta program</a> and scanning the barcode to the right.</p>
+                <a href="https://beta.webapps.blackberry.com/BBMChannels/" target="_blank"> Register for BBM Channels beta &rsaquo;</a> </div>
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li><a href="http://www.blackberry.com/legal/" target="_blank">Legal &amp; Trademarks</a> </li>
+        </ul>
+      </div>
+      <div class="copyright_notice">Copyright &copy; 2014 BlackBerry Limited, unless otherwise noted.</div>
+    </div>
+  </div>
+</footer>
+  <!-- Included JS Files (Uncompressed) --> 
+  <script type="text/javascript" src="webroot/js/common/foundation.min.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/foundation/foundation.topbar.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/foundation/foundation.joyride.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/foundation/foundation.backnav.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/jquery.easing.1.3.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/bb.dropdown.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/bb.searchbar.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/bb.expandable.js"></script> 
+  <script type="text/javascript" src="webroot/js/common/bb.nav.doc.js"></script> 
+  <script type="text/javascript" src="webroot/js/bb.segment_hover.js"></script> 
+  <script type="text/javascript" src="webroot/js/jquery.tipTip.minified.js"></script> 
+  <script type="text/javascript" src="webroot/js/jquery.colorbox.js"></script> 
+  <script type="text/javascript" src="webroot/js/bb.site.js"></script> 
+  <script type="text/javascript" src="webroot/js/bb.focuscontrol.js"></script> 
+  <script type="text/javascript" src="webroot/js/bb.nav.js"></script> 
+  
+  <!-- Note should this be a separate .js file or be part of bb.site.js  --> 
+  
+  <script type="text/javascript">
+	  global.init('', 'portals', 'index', '', '/isvportal/webroot/');
+	  global.setFocus('cascades');
+  </script> 
+  <script type="text/javascript" src="webroot/js/pageload.js"></script> 
+  
+  <!-- Piwik --> 
+  <script type="text/javascript">
+	  var pkBaseURL, server, pkId;
+	  server = 'dxlab013qbolabvm.labqbo.testnet.rim.net/stats/';
+	  pkId = -1;
+	  pkBaseURL = (("https:" == document.location.protocol) ? "https://"+server : "http://"+server);
+	  document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+	  </script><script type="text/javascript">
+	  try {
+	  var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", -1);
+	  piwikTracker.trackPageView();
+	  piwikTracker.enableLinkTracking();
+  } catch( err ) {}
+  </script>
+  <noscript>
+  <p><img src="http://dxlab013qbolabvm.labqbo.testnet.rim.net/stats/piwik.php?idsite=-1" style="border:0" alt="" /></p>
+  </noscript>
+  <!-- End Piwik Tracking Code --> 
+  <!--[if lt IE 7 ]>
+  <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+  <script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+<![endif]--> 
+  
+  <!-- ISVP REdesign UX ends here  --> 
+  
+  <script type="text/javascript">
+		function okButton_logout(){
+			var randomnumber=Math.floor(Math.random(1000)*10000);
+		  	location.href="logout.do?rand="+randomnumber;
+		};
+		
+		function cancelButton_logout(){
+		 $('#modalLogout').dialog('close');
+		};
+	</script>
+  <div id="modalLogout"
+ style="display:none;z-index:98" class="dr-mpnl-header rich-mpnl-header-cell">
+    <BR>
+    <center>
+      Are you sure you would like to logout of the Vendor Portal?
+    </center>
+  </div>
+  <script type='text/javascript'>
+jQuery(document).ready(function () { 
+	var options_modalLogout = {};
+	options_modalLogout.width = 400;
+	options_modalLogout.title = "Logout Confirmation!";
+	options_modalLogout.buttons = { 
+	           'Logout':function() { okButton_logout(); },
+	           'Cancel':function() { cancelButton_logout(); } 
+	           };
+	options_modalLogout.draggable = false;
+	options_modalLogout.resizable = false;
+	options_modalLogout.autoOpen = false;
+	options_modalLogout.closeOnEscape = true;
+	options_modalLogout.modal = true;
+	options_modalLogout.jqueryaction = "dialog";
+	options_modalLogout.id = "modalLogout";
+	options_modalLogout.href = "#";
+
+jQuery.struts2_jquery_ui.bind(jQuery('#modalLogout'),options_modalLogout);
+
+ });  
+</script>
+</body>
+</html>

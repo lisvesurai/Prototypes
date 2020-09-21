@@ -1,0 +1,310 @@
+<html>
+<head>
+<title>Nextel Brazil xHTML Mockup</title>
+<style type="text/css">
+a {color:#666666;font-size:10px;font-weight:normal;font-family:sans-serif;margin:0;text-decoration:none;}
+a:active {color:#731522;}
+a:hover {color:#731522;}
+body{background:#ffffff;color:#666666;font:normal 10px sans-serif;margin:0px;}
+h1{color:#731522;font:bold 12px sans-serif;margin:5px 5px;text-decoration:underline;}
+h2{color:#666;font:bold 11px tahoma,sans-serif;margin:0;}
+p{margin:2px 0;}
+ul{margin:0 0 10px 0;padding:0;}
+li{margin:0;padding:0;}
+li li{margin:2px 0;}
+li li a:visited{color:#666;}
+li li p{margin:0 0 3px 0;}
+li li p a:visited{color:#000;}
+li p{font-weight:bold;line-height:10px;margin:0 0 5px 0;text-transform:uppercase;}
+dl{margin:0 0 5px 5px;padding:0;}
+dt{margin:2px 0;padding:0;}
+td{vertical-align:top;padding:0 10px 0 0;font:normal 10px sans-serif;}
+
+input{background:#D4D0C8;border:1px solid #000;width:100%;height:20px;font-size:10px;font-weight:bold;margin:0;padding:0;text-transform:uppercase;position:relative;}
+iframe, form{margin:0 10px 0 0;padding:0;position:relative !important;}
+iframe {border:1px solid #000;}
+hr{border:none;border-bottom:1px solid #8f001e;height:1px;width:100%;margin:0;}
+
+.linkButton{position:relative;margin:5px 0 5px 5px !important;padding:5px;border:1px solid #666666;font-size:11px;height:20px;}
+.linkButton:hover{background:#e9f1bb;}
+.Hl{background:#cade5c;}
+
+@media screen {
+li ul{margin:8px 0 8px 22px;}
+.hide{display:none;visibility:hidden;}
+.toggle{font-family:courier,monospace;font-weight:normal;line-height:10px;margin:0 10px 0 0;}
+}
+
+@media handheld {
+.hide_for_cell{display:none;}
+}
+</style>
+<script type="text/javascript">
+function toggle (y) {
+	x = 'toggle' + y;
+
+	if ( document.getElementById(x).innerHTML == '+' )
+	{
+		document.getElementById(y).className = '';
+		document.getElementById(x).innerHTML = '-';
+	}
+	else
+	{
+		document.getElementById(y).className = 'hide';
+		document.getElementById(x).innerHTML = '+';
+	}
+}
+</script>
+</head>
+<body>
+<table border="0">
+<tr valign="top">
+<td width="200">
+<h1>Nextel Brazil xHTML Mockup</h1>
+<ul>
+	<li><a onClick="return showLink(this);" href='default.jsp?'>Home</a></li>
+	<li><hr/></li>
+	<li><a onClick="return showLink(this);" href='nextel_ilimitado.jsp?'>Nextel Ilimitado</a></li>
+	<li><hr/></li>
+	<li><a onClick="return showLink(this);" href='acesso_ilimitado.jsp?'>Acesso Ilimitado</a></li>
+	<li><hr/></li>
+	<li><a onClick="return showLink(this);" href='sobre.jsp?'>Sobre o Wap Nextel</a></li>
+	<li><a onClick="return showLink(this);" href='sobre_vantagens.jsp?'>- Vantagens</a></li>
+	<li><a onClick="return showLink(this);" href='sobre_o_que_wap.jsp?'>- O que é Wap</a></li>
+	<li><a onClick="return showLink(this);" href='sobre_como_assinar.jsp?'>- Como assinar</a></li>
+	<li><a onClick="return showLink(this);" href='sobre_conteudo_wap.jsp?'>- Conteúdos Wap</a></li>
+	<li><hr/></li>
+<li>
+	<p class="hide_for_cell"><a href="javascript: void 0" onClick="toggle('Downloads')"><span class="toggle" id="toggleDownloads">+</span>Downloads</a></p>
+	<ul id="Downloads" class="hide">
+		<li><a href="downloads.jsp?" onClick="return showLink(this);">Downloads</a></li>
+		<hr>
+		<li><a href="promo.jsp?" onClick="return showLink(this);">Promotions</a></li>
+		<li><a href="promo_landing.jsp?" onClick="return showLink(this);">Promotions - Landing</a></li>
+		<li><a href="promo_type.jsp?" onClick="return showLink(this);">Promotions - By Media Type</a></li>
+		<li><a href="promo_cat.jsp?" onClick="return showLink(this);">Promotions - By Genre</a></li>
+		<li><a href="promo_cat_01.jsp?" onClick="return showLink(this);">Promotions - Browse Genre</a></li>
+		<li><a href="promo_item.jsp?" onClick="return showLink(this);">Promotions - By Title</a></li>
+		<hr>
+		<li><a href="recommendations.jsp?" onClick="return showLink(this);">Recommendations</a></li>
+		<li><a href="credits.jsp?" onClick="return showLink(this);">Credits</a></li>
+		<hr>
+		<li><a href="vault.jsp?" onClick="return showLink(this);">Vault</a></li>
+		<li><a href="vault_details.jsp?" onClick="return showLink(this);">Vault - Item Details - Postpaid</a></li>
+		<li><a href="vault_details2.jsp?" onClick="return showLink(this);">Vault - Item Details - Prepaid</a></li>
+		<hr>
+		<li><a href="search_no_results.jsp?" onClick="return showLink(this);">Search - No Results</a></li>
+		<li><a href="search_results.jsp?" onClick="return showLink(this);">Search - Results</a></li>
+		<li><a href="rt_search_results.jsp?" onClick="return showLink(this);">Search - Results - More Ringtones</a></li>
+		<li><a href="wp_search_results.jsp?" onClick="return showLink(this);">Search - Results - More Wallpapers</a></li>
+		<li><a href="game_search_results.jsp?" onClick="return showLink(this);">Search - Results - More Games</a></li>
+		<li><a href="app_search_results.jsp?" onClick="return showLink(this);">Search - Results - More Applications</a></li>
+	</ul>
+</li>
+<li>
+	<p class="hide_for_cell"><a href="javascript: void 0" onClick="toggle('Ringtones')"><span class="toggle" id="toggleRingtones">+</span>Ringtones</a></p>
+	<ul id="Ringtones" class="hide">
+		<li><a href="rt.jsp?" onClick="return showLink(this);">Ringtones</a></li>
+		<li><a href="rt_top.jsp?" onClick="return showLink(this);">Top Tones</a></li>
+		<li><a href="rt_by_genre.jsp?" onClick="return showLink(this);">Browse By Genre</a></li>
+		<li><a href="rt_by_artist.jsp?" onClick="return showLink(this);">Browse By Artist</a></li>
+		<li><a href="rt_by_title.jsp?" onClick="return showLink(this);">Browse By Title</a></li>
+		<hr>
+		<li><a href="rt_browse_01.jsp?" onClick="return showLink(this);">Browse Genre - Featured Items</a></li>
+		<li><a href="rt_browse_02.jsp?" onClick="return showLink(this);">Browse Genre - More Than 27 Items</a></li>
+		<li><a href="rt_browse_03.jsp?" onClick="return showLink(this);">Browse Genre - Less Than 27 Items</a></li>
+		<li><a href="rt_browse_04.jsp?" onClick="return showLink(this);">Browse Genre - Misc</a></li>
+		<hr>
+		<li><a href="rt_details.jsp?" onClick="return showLink(this);">Details</a></li>
+		<li><a href="rt_details_rate.jsp?" onClick="return showLink(this);">Details - Rate It</a></li>
+		<li><a href="rt_details_rate_save.jsp?" onClick="return showLink(this);">Details - Rating Saved</a></li>
+		<li><a href="rt_pmnt.jsp?" onClick="return showLink(this);">Payment Options</a></li>
+		<li><a href="rt_login.jsp?" onClick="return showLink(this);">Login</a></li>
+		<li><a href="rt_terms.jsp?" onClick="return showLink(this);">Terms</a></li>
+		<li><a href="rt_receipt.jsp?" onClick="return showLink(this);">Receipt</a></li>
+		<li><a href="rt_purchase_error.jsp?" onClick="return showLink(this);">Purchase Error</a></li>
+		<hr>
+		<li><a href="rt_details_credit.jsp?" onClick="return showLink(this);">Details - Have credit</a></li>
+		<hr>
+		<li><a href="rt_download_success.jsp?" onClick="return showLink(this);">Download - Success</a></li>
+		<li><a href="rt_download_cancel.jsp?" onClick="return showLink(this);">Download - Canceled</a></li>
+		<li><a href="rt_download_error.jsp?" onClick="return showLink(this);">Download - Error</a></li>
+		<li><a href="rt_download_failed.jsp?" onClick="return showLink(this);">Download - Failed</a></li>
+		<hr>
+		<li><a href="rt_gift.jsp?" onClick="return showLink(this);">Gift It</a></li>
+		<li><a href="rt_gift_bad_phn.jsp?" onClick="return showLink(this);">Gift It - Invalid Phone Number</a></li>
+		<li><a href="rt_gift_not_compat.jsp?" onClick="return showLink(this);">Gift It - Not Compatible</a></li>
+		<li><a href="rt_gift_confirm_purchase.jsp?" onClick="return showLink(this);">Gift It - Confirm Purchase</a></li>
+		<li><a href="rt_gift_pmnt.jsp?" onClick="return showLink(this);">Gift It - Payment Options</a></li>
+		<li><a href="rt_gift_login.jsp?" onClick="return showLink(this);">Gift It - Login</a></li>
+		<li><a href="rt_gift_receipt.jsp?" onClick="return showLink(this);">Gift It - Receipt</a></li>
+		<hr>
+		<li><a href="rt_tell_friend.jsp?" onClick="return showLink(this);">Tell a Friend</a></li>
+		<li><a href="rt_tell_friend_sent.jsp?" onClick="return showLink(this);">Tell a Friend - Sent</a></li>
+	</ul>
+</li>
+<li>
+	<p class="hide_for_cell"><a href="javascript: void 0" onClick="toggle('Bundle')"><span class="toggle" id="toggleBundle">+</span>Bundle</a></p>
+	<ul id="Bundle" class="hide">
+		<li><a href="rt_details_related_bundles.jsp?" onClick="return showLink(this);">Related Bundles</a></li>
+		<hr>
+		<li><a href="bundle_details.jsp?" onClick="return showLink(this);">Bundle Details</a></li>
+		<li><a href="bundle_details2.jsp?" onClick="return showLink(this);">Bundle Details - with 3 Items</a></li>
+		<li><a href="bundle_pmnt.jsp?" onClick="return showLink(this);">Payment Options</a></li>
+		<li><a href="bundle_login.jsp?" onClick="return showLink(this);">Login</a></li>
+		<li><a href="bundle_terms.jsp?" onClick="return showLink(this);">Terms</a></li>
+		<li><a href="bundle_receipt.jsp?" onClick="return showLink(this);">Receipt</a></li>
+	</ul>
+</li>
+<li>
+	<p class="hide_for_cell"><a href="javascript: void 0" onClick="toggle('Wallpapers')"><span class="toggle" id="toggleWallpapers">+</span>Wallpapers</a></p>
+	<ul id="Wallpapers" class="hide">
+		<li><a href="wp.jsp?" onClick="return showLink(this);">Wallpapers</a></li>
+		<li><a href="wp_top.jsp?" onClick="return showLink(this);">Top Wallpapers</a></li>
+		<li><a href="wp_by_genre.jsp?" onClick="return showLink(this);">Browse By Genre</a></li>
+		<li><a href="wp_by_title.jsp?" onClick="return showLink(this);">Browse By Title</a></li>
+		<hr>
+		<li><a href="wp_browse_01.jsp?" onClick="return showLink(this);">Browse Genre - Featured Items</a></li>
+		<li><a href="wp_browse_02.jsp?" onClick="return showLink(this);">Browse Genre - More Than 27 Items</a></li>
+		<li><a href="wp_browse_03.jsp?" onClick="return showLink(this);">Browse Genre - Less Than 27 Items</a></li>
+		<li><a href="wp_browse_04.jsp?" onClick="return showLink(this);">Browse Genre - Misc</a></li>
+		<hr>
+		<li><a href="wp_details.jsp?" onClick="return showLink(this);">Details</a></li>
+		<li><a href="wp_details_rate.jsp?" onClick="return showLink(this);">Details - Rate It</a></li>
+		<li><a href="wp_details_rate_save.jsp?" onClick="return showLink(this);">Details - Rating Saved</a></li>
+		<li><a href="wp_pmnt.jsp?" onClick="return showLink(this);">Payment Options</a></li>
+		<li><a href="wp_login.jsp?" onClick="return showLink(this);">Login</a></li>
+		<li><a href="wp_terms.jsp?" onClick="return showLink(this);">Terms</a></li>
+		<li><a href="wp_receipt.jsp?" onClick="return showLink(this);">Receipt</a></li>
+		<li><a href="wp_purchase_error.jsp?" onClick="return showLink(this);">Purchase Error</a></li>
+		<hr>
+		<li><a href="wp_download_success.jsp?" onClick="return showLink(this);">Download - Success</a></li>
+		<li><a href="wp_download_cancel.jsp?" onClick="return showLink(this);">Download - Canceled</a></li>
+		<li><a href="wp_download_error.jsp?" onClick="return showLink(this);">Download - Error</a></li>
+		<li><a href="wp_download_failed.jsp?" onClick="return showLink(this);">Download - Failed</a></li>
+		<hr>
+		<li><a href="wp_gift.jsp?" onClick="return showLink(this);">Gift It</a></li>
+		<li><a href="wp_gift_bad_phn.jsp?" onClick="return showLink(this);">Gift It - Invalid Phone Number</a></li>
+		<li><a href="wp_gift_not_compat.jsp?" onClick="return showLink(this);">Gift It - Not Compatible</a></li>
+		<li><a href="wp_gift_confirm_purchase.jsp?" onClick="return showLink(this);">Gift It - Confirm Purchase</a></li>
+		<li><a href="wp_gift_pmnt.jsp?" onClick="return showLink(this);">Gift It - Payment Options</a></li>
+		<li><a href="wp_gift_login.jsp?" onClick="return showLink(this);">Gift It - Login</a></li>
+		<li><a href="wp_gift_receipt.jsp?" onClick="return showLink(this);">Gift It - Receipt</a></li>
+		<hr>
+		<li><a href="wp_tell_friend.jsp?" onClick="return showLink(this);">Tell a Friend</a></li>
+		<li><a href="wp_tell_friend_sent.jsp?" onClick="return showLink(this);">Tell a Friend - Sent</a></li>
+	</ul>
+</li>
+<li>
+	<p class="hide_for_cell"><a href="javascript: void 0" onClick="toggle('Games')"><span class="toggle" id="toggleGames">+</span>Games</a></p>
+	<ul id="Games" class="hide">
+		<li><a href="game.jsp?" onClick="return showLink(this);">Games</a></li>
+		<li><a href="game_top.jsp?" onClick="return showLink(this);">Top Games</a></li>
+		<li><a href="game_by_genre.jsp?" onClick="return showLink(this);">Browse By Genre</a></li>
+		<li><a href="game_by_title.jsp?" onClick="return showLink(this);">Browse By Title</a></li>
+		<hr>
+		<li><a href="game_browse_01.jsp?" onClick="return showLink(this);">Browse Genre - Featured Items</a></li>
+		<li><a href="game_browse_02.jsp?" onClick="return showLink(this);">Browse Genre - More Than 27 Items</a></li>
+		<li><a href="game_browse_03.jsp?" onClick="return showLink(this);">Browse Genre - Less Than 27 Items</a></li>
+		<li><a href="game_browse_04.jsp?" onClick="return showLink(this);">Browse Genre - Misc</a></li>
+		<hr>
+		<li><a href="game_details.jsp?" onClick="return showLink(this);">Details</a></li>
+		<li><a href="game_details_screenshot.jsp?" onClick="return showLink(this);">Details - Screenshot</a></li>
+		<li><a href="game_details_rate.jsp?" onClick="return showLink(this);">Details - Rate It</a></li>
+		<li><a href="game_details_rate_save.jsp?" onClick="return showLink(this);">Details - Rating Saved</a></li>
+		<li><a href="game_pmnt.jsp?" onClick="return showLink(this);">Payment Options</a></li>
+		<li><a href="game_login.jsp?" onClick="return showLink(this);">Login</a></li>
+		<li><a href="game_terms.jsp?" onClick="return showLink(this);">Terms</a></li>
+		<li><a href="game_receipt.jsp?" onClick="return showLink(this);">Receipt</a></li>
+		<li><a href="game_purchase_error.jsp?" onClick="return showLink(this);">Purchase Error</a></li>
+		<hr>
+		<li><a href="game_download_success.jsp?" onClick="return showLink(this);">Download - Success</a></li>
+		<li><a href="game_download_cancel.jsp?" onClick="return showLink(this);">Download - Canceled</a></li>
+		<li><a href="game_download_error.jsp?" onClick="return showLink(this);">Download - Error</a></li>
+		<li><a href="game_download_failed.jsp?" onClick="return showLink(this);">Download - Failed</a></li>
+		<hr>
+		<li><a href="game_gift.jsp?" onClick="return showLink(this);">Gift It</a></li>
+		<li><a href="game_gift_bad_phn.jsp?" onClick="return showLink(this);">Gift It - Invalid Phone Number</a></li>
+		<li><a href="game_gift_not_compat.jsp?" onClick="return showLink(this);">Gift It - Not Compatible</a></li>
+		<li><a href="game_gift_confirm_purchase.jsp?" onClick="return showLink(this);">Gift It - Confirm Purchase</a></li>
+		<li><a href="game_gift_pmnt.jsp?" onClick="return showLink(this);">Gift It - Payment Options</a></li>
+		<li><a href="game_gift_login.jsp?" onClick="return showLink(this);">Gift It - Login</a></li>
+		<li><a href="game_gift_receipt.jsp?" onClick="return showLink(this);">Gift It - Receipt</a></li>
+		<hr>
+		<li><a href="game_tell_friend.jsp?" onClick="return showLink(this);">Tell a Friend</a></li>
+		<li><a href="game_tell_friend_sent.jsp?" onClick="return showLink(this);">Tell a Friend - Sent</a></li>
+	</ul>
+</li>
+<li>
+	<p class="hide_for_cell"><a href="javascript: void 0" onClick="toggle('Applications')"><span class="toggle" id="toggleApplications">+</span>Applications</a></p>
+	<ul id="Applications" class="hide">
+		<li><a href="app.jsp?" onClick="return showLink(this);">Applications</a></li>
+		<li><a href="app_top.jsp?" onClick="return showLink(this);">Top Applications</a></li>
+		<li><a href="app_by_genre.jsp?" onClick="return showLink(this);">Browse By Genre</a></li>
+		<li><a href="app_by_title.jsp?" onClick="return showLink(this);">Browse By Title</a></li>
+		<hr>
+		<li><a href="app_browse_01.jsp?" onClick="return showLink(this);">Browse Genre - Featured Items</a></li>
+		<li><a href="app_browse_02.jsp?" onClick="return showLink(this);">Browse Genre - More Than 27 Items</a></li>
+		<li><a href="app_browse_03.jsp?" onClick="return showLink(this);">Browse Genre - Less Than 27 Items</a></li>
+		<li><a href="app_browse_04.jsp?" onClick="return showLink(this);">Browse Genre - Misc</a></li>
+		<hr>
+		<li><a href="app_details.jsp?" onClick="return showLink(this);">Details</a></li>
+		<li><a href="app_details_screenshot.jsp?" onClick="return showLink(this);">Details - Screenshot</a></li>
+		<li><a href="app_details_rate.jsp?" onClick="return showLink(this);">Details - Rate It</a></li>
+		<li><a href="app_details_rate_save.jsp?" onClick="return showLink(this);">Details - Rating Saved</a></li>
+		<li><a href="app_pmnt.jsp?" onClick="return showLink(this);">Payment Options</a></li>
+		<li><a href="app_login.jsp?" onClick="return showLink(this);">Login</a></li>
+		<li><a href="app_terms.jsp?" onClick="return showLink(this);">Terms</a></li>
+		<li><a href="app_receipt.jsp?" onClick="return showLink(this);">Receipt</a></li>
+		<li><a href="app_purchase_error.jsp?" onClick="return showLink(this);">Purchase Error</a></li>
+		<hr>
+		<li><a href="app_download_success.jsp?" onClick="return showLink(this);">Download - Success</a></li>
+		<li><a href="app_download_cancel.jsp?" onClick="return showLink(this);">Download - Canceled</a></li>
+		<li><a href="app_download_error.jsp?" onClick="return showLink(this);">Download - Error</a></li>
+		<li><a href="app_download_failed.jsp?" onClick="return showLink(this);">Download - Failed</a></li>
+		<hr>
+		<li><a href="app_gift.jsp?" onClick="return showLink(this);">Gift It</a></li>
+		<li><a href="app_gift_bad_phn.jsp?" onClick="return showLink(this);">Gift It - Invalid Phone Number</a></li>
+		<li><a href="app_gift_not_compat.jsp?" onClick="return showLink(this);">Gift It - Not Compatible</a></li>
+		<li><a href="app_gift_confirm_purchase.jsp?" onClick="return showLink(this);">Gift It - Confirm Purchase</a></li>
+		<li><a href="app_gift_pmnt.jsp?" onClick="return showLink(this);">Gift It - Payment Options</a></li>
+		<li><a href="app_gift_login.jsp?" onClick="return showLink(this);">Gift It - Login</a></li>
+		<li><a href="app_gift_receipt.jsp?" onClick="return showLink(this);">Gift It - Receipt</a></li>
+		<hr>
+		<li><a href="app_tell_friend.jsp?" onClick="return showLink(this);">Tell a Friend</a></li>
+		<li><a href="app_tell_friend_sent.jsp?" onClick="return showLink(this);">Tell a Friend - Sent</a></li>
+	</ul>
+</li>
+<li><a href="terms.jsp?" onClick="return showLink(this);">Terms</a></li>
+</ul>
+<script type="text/javascript">
+<!--
+function showLink(elm)
+{
+	top.phoneDisplay1.location.href=elm+"&w=128";
+	top.phoneDisplay2.location.href=elm+"&w=176";
+	top.phoneDisplay3.location.href=elm+"&w=240";
+	return false;
+}
+//-->
+</script>
+
+</td>
+	<td>
+		<h2>128x160</h2>
+		<iframe width="148" height="180" scrolling="yes" name="phoneDisplay1" id="phoneDisplay1" src="default.jsp?w=128"></iframe>
+	</td>
+
+	<td>
+		<h2>176x220</h2>
+		<iframe width="196" height="240" scrolling="yes" name="phoneDisplay2" id="phoneDisplay2" src="default.jsp?w=176"></iframe>
+	</td>
+	<td>
+		<h2>240x320</h2>
+		<iframe width="260" height="340" scrolling="yes" name="phoneDisplay3" id="phoneDisplay3" src="default.jsp?w=240"></iframe>
+	</td>
+</tr>
+</table>
+	
+</body>
+</html>

@@ -1,0 +1,44 @@
+*,h1,h2,h3,p,td {font-family:sans-serif;}
+
+a {color:#fff;font-family:sans-serif;text-decoration:none;}
+a:active {color:#666}
+
+body {background:#000;color:#fff;margin:0;padding:0;}
+div,h1,h2,hr,p,table,tr,td,dl {margin:0;padding:0;border:none;}
+td {vertical-align:top;}
+form {text-align:center;}
+
+#body {margin:0;}
+#header {padding-bottom:3px;}
+
+h1.title{padding:0 0 8px 0;margin:0;text-align:center;background:url(../../images/805/goldencompass_line.gif) bottom left repeat-x;}
+h1.header{background:#666;color:#fff;padding:2px 5px;margin:1px;text-align:left;}
+
+div.promo {border:0;padding:0;margin:0;text-align:center;}
+img.promo {border:0;padding:0;margin:0;}
+a.promo {color:#fff;}
+
+div.promo2 {color:#005f92;text-align:center;border:0;padding:8px 0 2px 0;margin:0;}
+a.promo2 {color:#005f92;}
+
+div.desc {padding:3px;}
+img.prod_img {float:left; margin:5px 0 10px 0;}
+h2.desc{text-align:center;}
+p.desc{margin:0 0 5px 0;}
+p.hl{margin:0 0 3px 0;color:#000;}
+
+div.link, div.results {margin:0;padding:0;}
+dt.mnr {font-weight:bold;background:#fbf31a url(../../images/805/goldencompass_dt_bg.gif) top left repeat-x;margin:0 0 2px 0;padding:1px;border-top:2px solid #ffff66;border-left:2px solid #eecc22;border-bottom:2px solid #6b3919;border-right:2px solid #7b6310; /*white-space:nowrap;*/ vertical-align:middle;}
+img.mnr {margin:0 1px 0 0;}
+a.mnr, .mnr a, .mnr {color:#000;}
+
+a.page {color:#002c61;}
+
+div.ico {padding:2px 0;}
+table.ico {padding:0;width:100%;}
+td.icons {text-align:center;vertical-align:top;width:50%;padding:3px;}
+a.icon {white-space:nowrap;}
+
+#footer {background:#fff;margin:0;padding:0 0 5px 0;}
+img.ftr {margin:0 1px 0 0;}
+.afooterlink{text-decoration:none;color:#0033FF;}

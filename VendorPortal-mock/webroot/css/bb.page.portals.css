@@ -1,0 +1,15 @@
+.portals .bb-expandable .bb-expandable-trigger {
+	position:relative;
+}
+.portals .bb-expandable .bb-expandable-trigger h1,
+.portals .bb-expandable .bb-expandable-trigger p {
+	margin-bottom: 25px;
+}
+.portals .bb-expandable .bb-expandable-trigger img {
+	position: absolute;
+	top: -44px;
+	right: 20px;
+}
+.portals .bb-expandable .bb-expandable-content  {
+	padding-bottom: 40px;
+}

@@ -1,0 +1,1 @@
+<div class="banner"><a href="landing/index.jsp" title="Home"><img src="images/ctia/ctia2007logo.gif" alt="CTIA WIRELESS I.T. &amp; ENTERTAINMENT 2007"/></a></div>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<html>
+  <head>
+    <title>Applications</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1 class="logo"><img src="images/orange/orange_logo_240.gif" alt="Orange World"/></h1>
+      </div>
+	  
+	  <!-- BEG : NAV -->
+	  <div class="nav">
+	    
+	  	<table cellspacing="0" class="navtable">
+		  <tr>
+		    <td class="navtd"><a href='#' class="anavlink">Fun</a></td>
+			<td class="navtd"><a href='#' class="anavlink">Info</a></td>
+			<td class="navtdhl"><a href='#' class="anavlinkhl">Tools</a></td>
+			<td class="navtdlast"><a href='#' class="anavlink">Your Page</a></td>
+		  </tr>
+		</table>
+
+
+	  </div>
+	  <!-- END : NAV -->
+
+      <div id="body">
+
+		<h1 class="toptitle"><a href='home_about.jsp?a=SonyEricssonW810i&w=240&t=Applications' class="toptitle">Applications</a></h1>
+
+	    <div class="preview">
+		  <img src="images/orange/DL_thumb.gif" alt="Product Thumbnail" class="prvw"/>
+		</div>
+		<p class="desc"><span class="headline">What's New:</span> promo text. <a href='item.jsp?a=SonyEricssonW810i&w=240&t=Driving%20Log%202' class="orangelink">&gt;&gt;</a></p>
+		<hr />
+
+		<dl class="mnr">
+		  <dt class="mnr">&gt; <a title="" href='list.jsp?a=SonyEricssonW810i&w=240&t=New%20Applications'>New Applications</a></dt>
+		  <dt class="mnr">&gt; <a title="" href='list.jsp?a=SonyEricssonW810i&w=240&t=Featured'>Featured</a></dt>
+		  <dt class="mnr">&gt; <a title="" href='genres_browse.jsp?a=SonyEricssonW810i&w=240&t=Categories'>Categories</a></dt>
+		</dl>
+		<hr />
+		<dl class="mnr">
+		  <dt class="mnr">&gt; <a title="" href='previous_purchases.jsp?a=SonyEricssonW810i&w=240&t=Previous%20Purchases'>Previous Purchases</a></dt>
+		  <dt class="mnr">&gt; <a title="" href='help.jsp?a=SonyEricssonW810i&w=240&t=Help'>Help</a></dt>
+		  <dt class="mnr">&gt; <a title="" href='terms2.jsp?a=SonyEricssonW810i&w=240&t=Application+Terms'>Application Terms</a></dt>
+		</dl>
+
+
+		<!-- BEG : SEARCH -->
+	  	
+		<div class="search">
+		  <form action="search_results.jsp" method="get" class="searchform">
+		    <p>Application search</p>
+	  	  	<input class="text" name="keyword" type="text" size="7" value=""/><input class="srch" type="submit" value="Go"/>
+			<input type="hidden" name="list" value="yes"/>
+			<input type="hidden" name="t" value="Search Results"/>
+			<input type="hidden" name="a" value='SonyEricssonW810i'/>
+			<input type="hidden" name="w" value='240'/>
+		  </form>
+        </div>
+
+	  	<!-- END : SEARCH -->
+
+      </div>
+
+	  <!-- BEG : NAV -->
+	  <div class="nav">
+	    
+	  	<table cellspacing="0" class="navtable">
+		  <tr>
+		    <td class="navtd"><a href='#' class="anavlink">Fun</a></td>
+			<td class="navtd"><a href='#' class="anavlink">Info</a></td>
+			<td class="navtdhl"><a href='#' class="anavlinkhl">Tools</a></td>
+			<td class="navtdlast"><a href='#' class="anavlink">Your Page</a></td>
+		  </tr>
+		</table>
+
+
+	  </div>
+	  <!-- END : NAV -->
+
+      <div id="footer">
+	  	<dl>
+            <dt>&lt; <a href='http://wap.orange.co.uk'>Home</a></dt>
+		</dl>	  
+	  </div>
+    </div>
+  </body>
+</html>
+
